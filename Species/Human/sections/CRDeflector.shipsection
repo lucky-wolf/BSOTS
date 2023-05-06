@@ -1,0 +1,85 @@
+shipsection
+{
+	model					Species/Human/art/sections/CruiserDeflector.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					1920
+	mass					3800
+	cost					25000
+	maintenance_cost		3000
+	cpoints					2304
+	crew					12
+
+	requires				SLD_Def
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			3e+8
+		torque_pitch		3e+8
+		torque_roll			3e+8
+
+		speed				-15
+		rotspeed			25
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -70
+			max_azimuth 150
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth 70
+			max_azimuth -150
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+}

@@ -1,0 +1,58 @@
+weapon
+{
+	name						@WEAPON_BEM_SHIELD
+
+	weaponclass					shieldprojector
+	weaponfamily				conventionalbeam
+
+	model1						barrel_l1_Mesonbeam.x
+
+	turretclass					standard
+	turretsize					large
+
+	requires					SLD_Proj
+	cost						10000
+
+	burst_volleys				1
+	volley_period				.2
+	volley_duration				15
+	recharge_time				20
+
+	muzzle_effect				effects/MesonBeam_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_meson_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beams.tga
+	icon_rect					"128 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	secondary_pd				true	// Take on point defence role when not otherwise busy.
+
+	range						10000
+
+	projectedshield
+	{
+		beam_effect 			effects/SheildBeam_Bullet.effect
+		model					Models/Shields/sld_projector.X
+		radius					36.3
+		expand_rate				36.3
+		length					100
+		beams					4
+		spin_rate				360
+		fade_time				2
+	}
+
+//	dam_est			0
+
+	rating_frate	1
+	rating_dam		0
+	rating_acc		9
+	rating_range	10
+}

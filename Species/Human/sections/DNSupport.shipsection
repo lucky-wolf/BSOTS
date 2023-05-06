@@ -1,0 +1,132 @@
+shipsection
+{
+	model					Species/Human/art/sections/DreadnoughtSupport.X
+	socket_aft				MissionNode02
+	socket_fore				MissionNode01
+	section_type			mission
+	section_class			dreadnought
+
+	health					12800
+	mass					50000
+	cost					600000
+	maintenance_cost		15000
+	cpoints					44800
+	crew					120
+
+	requires				IND_SlvgTech
+
+	repair_capacity			60000		// 6x CRRepairandSalvage
+	refueling_capacity 		150			// 3x CRRefinery
+	refinery				true
+
+	death_effect			"Effects/CR_Fuel_Explosion.effect"
+	death_area_impact_effect ""
+	death_dam				3050
+	death_damradius			1040
+
+	preview_ofs				"-11 -40 6"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed        		-20
+		rotspeed      		-20
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -10
+			max_azimuth 130
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -130
+			max_azimuth 10
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -60
+			max_azimuth 100
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode06
+			min_azimuth -40
+			max_azimuth 120
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -100
+			max_azimuth 60
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -120
+			max_azimuth 40
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+}

@@ -1,0 +1,30 @@
+^ Added Warcat's new Bomber Drones for Hiver, Human, Liir, Tarkas, and Zuul
+^ Added Warcat's new triple-barrel super-heavy ballistic mounts
+^ Added many new tech icons from Drages
+^ Fixed color effects for heavy plasma cannon (green->orange)
+^ Fixed icon color for plasma torpedo (green->orange)
+^ Moved x-ray level of tech (including HCLs) to fusion era
+^ Moved phasers to antimatter era
+^ Moved expert systems to fusion age
+^ Predictive gunnery now requires expert systems
+^ Tripled $ cost of dual mount weapons (other than missiles which were already correct)
+^ Slowed reload times of all dual mount weapons (except missiles) by 1.33x which translates to making dual mounts 1.5x damage / second over a single barrel version (instead of the previous 2x damage) to better balance out your technology choices
+^ Doubled health of all NPC aliens & ships
+^ Fixed NPC armor and reflectives to conform to BSOTS 2.0 redesign
+^ Fixed VN Mom ships missing topredo weapon (added new NPC torpedo for this)
+^ Renamed some sections to try for something more consistent:
+	Barrage -> Combat
+	Battle Bridge / Heavy Combat / Blazer -> Assault
+	Torpedo -> Barrage
+	Point Defense -> Escort
+	Extended Range -> Scout
+  So now:
+	Assault - Hosts multiple assault beam weapons, such as the HCL
+	Barrage - Hosts multiple torpedo weapon mounts, for a barrage of long-range ordinance
+	Battle  - General purpose mix of small, medium, and large weapons for multiple roles
+	Combat  - Mixture of Assault and Barrage to offer both assault beams and torpedo launchers
+	Escort	- Maximizes point defense weapons to operate in a fleet escort (or screen) role
+	Impactor - Specialized rail gun turrets at expense of all other turrets
+	Projector - Specialized projector turrets at expense of all other turrets
+	Scout	- With extra fuel capacity is able to scout far greater distances than others
+	War     - Maximizes large turrets at the expense of medium and small mounts

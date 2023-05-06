@@ -1,0 +1,75 @@
+weapon
+{
+	name						@WEAPON_MIN_LEAP
+
+	weaponclass					mine
+	weaponfamily				conventionalmine
+
+	turretclass					mine
+	turretsize					large
+
+	requires					WEP_LpMine
+	cost						6000
+
+	solution_tolerance			360
+	burst_volleys				1	// 1 mine dropped per cycle (1/2 vanilla to improve balance)
+	buildup_delay				1	// 1-s before first mine dropped
+	volley_period				2	// 2-s between mine drops
+	volley_duration				0	// mines are deployed instantaneously
+	recharge_time				4	// cycle is done at t=4
+
+	muzzle_speed				50
+	muzzle_effect				effects/PlasmaCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/min_nuke_drop.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Mines.tga
+	icon_rect					"64 64 64 64"
+
+	fc_requires_los				false
+	fc_requires_inrange			false
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			true
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	mine
+	{
+		impact_sound					Sounds/Weapons/min_leap_det.wav
+		impact_sound_minrange			100
+		impact_effect					effects/NuclearMine_Impact.effect
+		area_impact_effect				"effects/collide_asteroid.effect"
+
+		thrust_sound					Sounds/Weapons/min_leap_travel_det.wav
+		thrust_sound_minrange			150
+
+		leap							true
+		speed							300
+		seek_attenuation				9	// Higher number = tighter turns/faster accel
+
+		model							mine.X
+		ttl								120
+		health							20
+		dam								300
+		dam_radius						20
+		coll_lookahead					15
+		affect_radius					562
+		mass							50
+		dumbfire_period					0.1
+
+		dam_pop							52
+		dam_infra						0.5625
+		dam_terra						0.009375
+	}
+
+	dam_est			75
+
+	rating_frate	8
+	rating_dam		3
+	rating_acc		0
+	rating_range	4
+}

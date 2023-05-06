@@ -1,0 +1,57 @@
+weapon
+{
+	name		@WEAPON_NPC_ORTGAY_EMT_HEAVY
+	weaponclass	emitter
+	weaponfamily	emitter
+	model1		"Species/_NPC/art/weapons/gort_hvyemitter.X"
+	turretmodel1	"Species/_NPC/art/weapons/gort_largeturret.X"
+	
+	
+	requires 	WEP_HvyEmitr				
+	hpbonus		100
+	cost		5000
+	turretsize		Large
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	.75
+	recharge_time	8
+	muzzle_effect	effects/heavyEmitter_muzzle.effect
+	muzzle_sound	Sounds/Weapons/emt_light_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"32 192 32 32"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+
+	range 650
+	range_planet 950
+
+	chainlightning
+	{
+		impact_sound	Sounds/Weapons/emt_light_impact.wav
+		impact_sound_minrange	75
+		effect		effects/heavyEmitter_Bullet.effect
+		dam			1075
+		branches	10
+		
+		dam_pop		2000000
+		dam_infra	.0002	
+		dam_terra	0
+	}
+
+	dam_est		200
+
+	rating_frate	5
+	rating_dam	5
+	rating_acc	10
+	rating_range	3
+}

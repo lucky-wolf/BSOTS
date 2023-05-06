@@ -1,0 +1,86 @@
+weapon
+{
+	name						@WEAPON_CAN_FUSPROJ
+
+	weaponclass					energy
+	weaponfamily				energycannon
+
+	model1						barrel_l1_fusproj.X
+
+	turretclass					projector
+	turretsize					large
+	munitionsize				medium
+
+	requires					WEP_FusProj
+	cost						30000
+
+	burst_volleys				30
+	volley_period				.03
+	recharge_time				13
+
+	muzzle_speed				350
+	muzzle_effect				effects/FusionCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/can_proj_fusion_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/EnergyCannons.tga
+	icon_rect					"64 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						750
+	range_planet				1000
+
+	bolt
+	{
+		volley_deviation				6
+		round_muzzle					true
+		muzzle_size						"6"
+
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/FusionCannon_Bullet.effect
+		impact_effect					effects/FusionCannon_Impact.effect
+		expire_effect					"effects/FusionCannon_Expire.effect"
+
+		impact_sound					Sounds/Weapons/can_fusion_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange			15
+
+		rangetable
+		{
+			pb_range		250
+			pb_range_dev	1
+			pb_range_dam	120
+
+			eff_range		400
+			eff_range_dev	2
+			eff_range_dam	220
+
+			max_range		750
+			max_range_dev	3
+			max_range_dam	90
+		}
+
+		dam_pop							4100
+		dam_infra						0.000057
+		dam_terra						0.0000095
+	}
+
+	dam_est			850
+
+	rating_frate	2
+	rating_dam		8
+	rating_acc		1
+	rating_range	3
+}

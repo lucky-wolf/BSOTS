@@ -1,0 +1,242 @@
+shipsection
+{
+	model					Species/Human/art/sections/CruiserPointDefence.X
+	socket_aft				MissionNode
+	socket_fore				MissionNode01
+	preview_ofs				"0 -50 2"
+
+	section_type			mission
+	section_class			cruiser
+
+	health					3200
+	mass					4800
+	cost					31000
+	maintenance_cost		3000
+	cpoints					3600
+	crew					25
+
+	requires				WEP_PDtech
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			10
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode08
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode07
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode06
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode09
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode10
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode11
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode12
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode13
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode14
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode15
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode16
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 15
+			max_inclination 90
+		}
+	}
+}

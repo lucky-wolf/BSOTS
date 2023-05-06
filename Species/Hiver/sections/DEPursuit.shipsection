@@ -1,0 +1,146 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DestroyerPursuit.X
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			destroyer
+	requires				DRV_OvrThrust
+	health					960
+	mass					4000
+	cost					8500
+	maintenance_cost		300
+	cpoints					3180
+	preview_ofs				"-4 10 1.5"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		8000
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				30
+		rotspeed			-5
+	}
+
+	thruster
+	{
+		node EngineFXNode03
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode04
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode05
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode06
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode07
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode08
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode04
+			min_inclination -3
+			max_inclination 90
+			min_azimuth -150
+			max_azimuth 150
+		}
+
+		mount
+		{
+			node LightGunNode05
+			min_inclination -3
+			max_inclination 90
+			min_azimuth -150
+			max_azimuth 150
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode06
+			min_inclination -5
+			max_inclination 90
+			min_azimuth -150
+			max_azimuth 150
+		}
+
+		mount
+		{
+			node LightGunNode07
+			min_inclination -1
+			max_inclination 90
+			min_azimuth -150
+			max_azimuth 150
+		}
+	}
+}

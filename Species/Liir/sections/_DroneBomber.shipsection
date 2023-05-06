@@ -1,0 +1,76 @@
+shipsection
+{
+	model					Species/Liir/art/sections/DroneBomber.X
+	dam_model				Species/Liir/art/sections/DroneBomber.X
+	entity_class			"DroneRider"
+
+	requires				DRN_Assault
+
+	health					480
+	mass					450
+
+	preview_ofs				"0 40 -2"
+
+	command_cost			0
+	maintenance_cost		0
+
+	section_class			destroyer
+	design_class			rider
+	autonomous				true	// actually means this is a ship with only a mission section
+
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		speed				275
+
+		// NOT USED BY DRONES:
+		// (Force_xxx values still used by traffic to determine whether ship can move though, so leave non-zero for now.)
+		//
+		rotspeed			120
+		force_forward		190000
+		force_right			140000
+		force_up			140000
+		torque_yaw			7500000
+		torque_pitch		7500000
+		torque_roll			7500000
+	}
+
+	bank
+	{
+		turretclass nodemissilerider
+		turretsize medium
+		showturrets false
+
+		mount
+		{
+			node Torpedo01
+			min_azimuth	-10
+			max_azimuth	10
+			min_inclination	-10
+			max_inclination	10
+		}
+	}
+
+	engine_sound			Sounds/Ships/Shared/_Drone_travel.wav
+
+}

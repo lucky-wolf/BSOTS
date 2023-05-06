@@ -1,0 +1,65 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/CruiserProjector.X
+	preview_ofs				"-16.5 120 0"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+
+	health					8480
+	mass					10000
+	cost					45000
+	maintenance_cost		3000
+	cpoints					6300
+	crew					45
+
+	requires				GRP_PRJCTR
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+		invincible false
+
+		mount
+		{
+			node Projector
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -30
+			max_inclination 90
+		}
+	}
+}

@@ -1,0 +1,81 @@
+weapon
+{
+	name						@WEAPON_CAN_AM_TRIPLE
+
+	weaponclass					energy
+	weaponfamily				energycannon
+
+	model1						barrel_l3_heavydriver.x
+	turretmodel1				turret_l1standard.x
+
+	turretclass					projector
+	turretsize					large
+
+	requires					WEP_DualAmCan
+	cost						15000	// 3x
+
+	burst_volleys				1
+	recharge_time				8		// 1.33
+
+	muzzle_speed				700
+	muzzle_effect				effects/AntimatterCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/can_am_muzzle.wav
+	muzzle_sound_minrange		200
+
+	icon_file					GUI/Weapons/EnergyCannons.tga
+	icon_rect					"192 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						3000
+	range_planet				3000
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/AntimatterCannon_Bullet.effect
+		impact_effect					effects/AntimatterCannon_Impact.effect
+		expire_effect					effects/AntimatterCannon_Expire.effect
+
+		impact_sound					Sounds/Weapons/can_am_impact.wav
+		impact_sound_minrange			200
+
+		thrust_sound					Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange			15
+
+		rangetable
+		{
+			pb_range		300		// 10% of range
+			pb_range_dev	3
+			pb_range_dam	250
+
+			eff_range		2700	// 90% of range
+			eff_range_dev	4
+			eff_range_dam	350
+
+			max_range		3000
+			max_range_dev	5
+			max_range_dam	250
+		}
+
+		dam_pop							12304
+		dam_infra						0.000168
+		dam_terra						0.000028
+	}
+
+	dam_est			750
+
+	rating_frate	5
+	rating_dam		9
+	rating_acc		2
+	rating_range	8
+}

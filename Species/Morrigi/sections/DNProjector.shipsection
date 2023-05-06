@@ -1,0 +1,385 @@
+shipsection
+{
+	model					Species/Morrigi/art/sections/DreadnoughtProjector.X
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			dreadnought
+	requires				GRP_PRJCTR
+
+	health					16000
+	mass					30000
+	cost					242000
+	maintenance_cost		15000
+	cpoints					27200
+	crew					90
+
+	preview_ofs				"-23 -40 9"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				5
+		rotspeed			0
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatReady"
+		start_frame "0"
+		speed_scale "2"
+		loop "1"
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatRest"
+		start_frame "end"
+		speed_scale "-2"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+
+		mount
+		{
+			node Projector01
+			min_azimuth -120
+			max_azimuth 120
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+
+		mount
+		{
+			node Projector02
+			min_azimuth -40
+			max_azimuth 200
+			min_inclination -30
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+
+		mount
+		{
+			node Projector03
+			min_azimuth -200
+			max_azimuth 40
+			min_inclination -30
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -65
+			max_azimuth 75
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -40
+			max_azimuth 75
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -75
+			max_azimuth 40
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -70
+			max_azimuth 65
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode07
+			min_azimuth -75
+			max_azimuth 90
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node MediumGunNode08
+			min_azimuth -75
+			max_azimuth 80
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node MediumGunNode05
+			min_azimuth -75
+			max_azimuth 75
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode10
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node MediumGunNode11
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node MediumGunNode09
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode06
+			min_azimuth -200
+			max_azimuth 60
+			min_inclination 20
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node MediumGunNode12
+			min_azimuth -200
+			max_azimuth 60
+			min_inclination 20
+			max_inclination 90
+			home_inclination 0
+		}
+
+	}
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode13
+			min_azimuth -60
+			max_azimuth 200
+			min_inclination 20
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node MediumGunNode14
+			min_azimuth -60
+			max_azimuth 200
+			min_inclination 20
+			max_inclination 90
+			home_inclination 0
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -10
+			max_azimuth 100
+			min_inclination -10
+			max_inclination 90
+			home_inclination 0
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -100
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 90
+			home_inclination 0
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode06
+			min_azimuth -60
+			max_azimuth 90
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node LightGunNode07
+			min_azimuth -90
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+}

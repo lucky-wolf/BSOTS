@@ -1,0 +1,66 @@
+weapon
+{
+	name						@WEAPON_BEM_BEAMER_XRAY_DUAL
+
+	weaponclass					beamer
+	weaponfamily				laser
+
+	model1						barrel_s2_uvlaser.x
+	turretmodel1				turret_s2standard.x
+	model2						barrel_s2_uvlaser.x
+	turretmodel2				turret_s2standard.x
+	model3						barrel_s2_uvlaser.x
+	turretmodel3				turret_s2standard.x
+
+	turretclass					standard // missile stops them from being in strafe and drone, but restricts azimuth and turret speed :'(
+	turretsize					small
+
+	requires					WEP_DualAdvBmr
+	cost						1500	// 3x
+
+	burst_volleys				1
+	volley_duration				.75
+	lock_period					0
+	recharge_time				10.66	// 1.33
+	trackspeed_mod				.5
+
+	muzzle_effect				effects/XRayBeamer_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_beamer_uv.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beamers.tga
+	icon_rect					"192 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						900
+	range_planet				1000
+
+	beam
+	{
+		impact_effect					effects/XRayBeamer_impact.effect
+		impact_sound					Sounds/Weapons/phaser_impact.wav
+		impact_sound_minrange			100
+		effect							effects/XRayBeamer_Bullet.effect
+		dam								160
+		force							0
+
+		dam_pop							4375		// 8/3 of xray laser (ROF)
+		dam_infra						0.0000639	// 8/3 of xray laser (ROF)
+		dam_terra						0
+	}
+
+	dam_est			60
+
+	rating_frate	3
+	rating_dam		6
+	rating_acc		10
+	rating_range	4
+}

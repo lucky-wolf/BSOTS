@@ -1,0 +1,79 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DestroyerDeflector.X
+	requires				SLD_Def
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			destroyer
+	preview_ofs				"-3.5 10 2.5"
+
+	health					720
+	mass					2000
+	cost					15000
+	maintenance_cost		300
+	cpoints					1840
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward 0
+		force_right   0
+		force_up      0
+
+		torque_yaw    0
+		torque_pitch  0
+		torque_roll   0
+
+		speed         -15
+		rotspeed      -10
+	}
+
+bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -3
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -3
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -3
+			max_inclination 90
+		}
+}

@@ -1,0 +1,180 @@
+shipsection
+{
+	model Species/Human/art/sections/DNconstruction.X
+	preview_ofs "-70 -1200 0"
+	section_type mission
+	section_class destroyer
+
+	requires IND_DSCon
+
+	health					8000
+	mass 					19000
+	cost 					115000
+	maintenance_cost		2500
+	cpoints 				10800
+	crew					0
+
+	command_cost 			0
+	construction_capacity	15000
+	huge 					1			// huge ship (larger than normal for ship class) gets placed above the plane in combat
+	autonomous				true	// actually means this is a ship with only a mission section
+	nodespeed				4
+	ftlspeed				.92
+	range					9
+
+	option	DRV_RecFiss
+
+	netforcelimits
+	{
+		force_forward		53000
+		force_right			53000
+		force_up			53000
+
+		torque_yaw			9e+7
+		torque_pitch		9e+7
+		torque_roll			9e+7
+
+		speed				55
+		rotspeed			40
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster04
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster05
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster06
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster07
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster08
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster09
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster10
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster11
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster12
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster13
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster14
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster15
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster16
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster17
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster18
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster19
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+
+	thruster
+	{
+		node EngineThruster20
+		effect effects/Engine_FusionDs.effect
+		idle_effect effects/Engine_FusionIdleDs.effect
+	}
+}

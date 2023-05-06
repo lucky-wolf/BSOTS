@@ -1,0 +1,91 @@
+weapon
+{
+	name						@WEAPON_MIS_DUAL
+
+	weaponclass					missile
+	weaponfamily				missile
+
+	model1						barrel_l2_missile.x
+	turretmodel2				turret_l2standard.x
+	model2						barrel_l2_missile.x
+	turretmodel2				turret_l2standard.x
+
+	turretclass					missile
+	turretsize					medium
+
+	requires					WEP_DualMsl
+	cost						9000			// 3x cost
+
+	solution_tolerance			180
+	burst_volleys				1
+	recharge_time				33
+
+	muzzle_speed				160
+	muzzle_effect				effects/Missile_muzzle.effect
+	muzzle_sound				Sounds/Weapons/mis_missile_muzzle.wav
+	muzzle_sound_minrange		60
+
+	icon_file					GUI/Weapons/Missiles.tga
+	icon_rect					"64 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	range						3750	// 75% of ttl
+	range_planet				3750
+
+	missile
+	{
+		tracking						true
+		warhead_dam_scale				true
+
+		impact_decal					decals/WeaponHit.decal
+		impact_decal_width				.5
+		impact_decal_height				.5
+		impact_decal_depth				.1
+
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/mis_missile_impact.wav
+		impact_sound_minrange			200
+		impact_effect					effects/Missile_Impact.effect
+		area_impact_effect				"effects/collide_asteroid.effect"
+		planet_impact_effect			"effects/Missile_Planet.effect"
+
+		thrust_sound					Sounds/Weapons/mis_missile_travel.wav
+
+		speed							160
+		ttl								31.25	// range: 5000
+
+		seek_attenuation				4	// Higher number = tighter turns/faster accel
+
+		model							missile.X
+		health							10
+		dam								50
+		dam_radius						25
+		mass							50
+		thrust_effect					effects/missletrail.effect
+		thrust_node						EffectNode
+		dumbfire_period					1.5
+
+		dam_pop							12304
+		dam_infra						0.0003
+		dam_terra						0.00025
+	}
+
+	dam_est			120
+
+	rating_frate	1
+	rating_dam		2
+	rating_acc		10
+	rating_range	10
+}

@@ -1,0 +1,24 @@
+//Modded Originals
+
+//Stellar Class	- RBG - Colour Name
+
+//O "157 180 255"	// Blue
+//B "191 170 255"	// Deep Blue White
+//A "216 202 255"	// Blue White
+//F "251 248 255"	// White
+//G "255 244 232"	// Yellowish White
+//K "255 221 180"	// Pale Yellow Orange
+//M "255 189 111"	// Light Orange Red
+//L "248 66 53"		// Scarlet
+//T "186 48 89"		// Magenta
+//Y "96 81 112"		// Dark Purple
+
+//Code Name	"R B G"
+
+Orange		"223 112 38"
+Yellow		"201 155 61"
+DarkGreen	"216 202 255"
+GreyBlue	"157 180 255"
+Purple		"96 81 112"
+Red			"248 66 53"
+Olive		"97 109 37"

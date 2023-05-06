@@ -1,0 +1,48 @@
+shipsection
+{
+	model Species/_NPC/art/sections/DestroyerCommand.X
+	dam_model Species/_NPC/art/sections_dam/DestroyerCommand.X
+	socket_aft CommandNode
+	dam_socket_aft CommandNode
+	section_type command
+	section_class destroyer
+	crew false
+	health 840
+	mass 800
+	cost 2000
+	cpoints 500
+
+	option
+	{
+		option 	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward			0
+		force_right			0
+		force_up			0
+
+		torque_yaw			2e+7
+		torque_pitch			2e+7
+		torque_roll			2e+7
+
+		speed				0
+		rotspeed			60
+	}
+
+
+
+
+}

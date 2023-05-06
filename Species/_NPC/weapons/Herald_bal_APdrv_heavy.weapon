@@ -1,0 +1,82 @@
+weapon
+{
+	name			@WEAPON_NPC_HERALD_BAL_HEAVY_AP
+
+	weaponclass		bullet
+	weaponfamily	gauss
+	model1			"Species/Zuul/art/weapons/barrel_L1_APHeavyDriver.X"
+	turretmodel1	"Species/Zuul/art/weapons/turret_L1standard.X"
+
+	hpbonus			350
+	cost			2500
+	turretsize		Large
+	turretclass		standard
+	trackspeed_mod	1.0
+	burst_volleys	1
+	recharge_time	3
+	muzzle_speed	600
+
+	muzzle_effect	effects/APHeavyDriver_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bal_hvy_driver_muzzle.wav
+	muzzle_sound_minrange	100
+
+	icon_file		GUI/WeaponIcons.tga
+	icon_rect		"224 224 32 32"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range	1350
+	range_planet 1550
+
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+
+		impact_effect	effects/HeavyDriver_impact.effect
+		expire_effect   "effects/AP_HeavyGuass_Expire.effect"
+		impact_sound	Sounds/Weapons/bal_drv_impact.wav
+		impact_sound_minrange	50
+
+		rangetable
+		{
+			pb_range	600
+			pb_range_dev	1
+			pb_range_dam	250
+
+			eff_range	900
+			eff_range_dev	1
+			eff_range_dam	250
+
+			max_range	1350
+			max_range_dev	1
+			max_range_dam	250
+		}
+
+		effect			effects/APHeavyDriver_bullet.effect
+		ricochet_mod 	-1.9
+		ricochet_sound	Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange		50
+
+		mass 300
+
+		dam_pop		200000
+		dam_infra	.005
+		dam_terra	.001
+	}
+
+	rating_frate	7
+	rating_dam	4
+	rating_acc	7
+	rating_range	7
+
+	dam_est		450
+
+}

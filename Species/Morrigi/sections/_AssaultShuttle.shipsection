@@ -1,0 +1,49 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model Species/Morrigi/art/sections/AssaultShuttle.X
+	dam_model Species/Morrigi/art/sections/AssaultShuttle.X
+
+	requires GRP_INVASION
+
+	section_class destroyer
+	design_class rider
+	autonomous true	// actually means this is a ship with only a mission section
+
+	health 400
+	mass 1200
+
+	command_cost 0
+	maintenance_cost 0
+
+	netforcelimits
+	{
+		force_forward		100000
+		force_right			100000
+		force_up			100000
+
+		torque_yaw			7000000
+		torque_pitch		7000000
+		torque_roll			7000000
+
+		speed				93.3
+		rotspeed			90
+	}
+
+	engine_sound		Sounds/Ships/Shared/_AssaultShuttle_travel.wav
+
+
+	thruster
+	{
+		node EngineA
+		effect effects/HumanShuttle_Thrust.effect
+		idle_effect effects/HumanShuttle_Idle.effect
+	}
+
+	thruster
+	{
+		node EngineB
+		effect effects/HumanShuttle_Thrust.effect
+		idle_effect effects/HumanShuttle_Idle.effect
+	}
+}

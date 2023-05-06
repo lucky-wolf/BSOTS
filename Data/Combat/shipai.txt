@@ -1,0 +1,36 @@
+shipai_targeting
+{
+	// update_period     : time between AI update ticks (s)
+	// follow_period     : time between position checks for following targets
+	// attacker_limit    : max attackers on a target at any time
+	// timeout           : time before switching to a new target (s)
+	
+	update_period      0.067        
+
+	destroyer
+	{
+		follow_period      0.5
+ 		attacker_limit     9			// stock = 3
+//	    follow_range       500
+		timeout            3
+		pdtimeout          0.067
+	}
+	
+	cruiser
+	{
+		follow_period      1
+ 		attacker_limit     6			// stock = 3
+//	    follow_range       700
+		timeout            3
+		pdtimeout          0.067
+	}
+	
+	dreadnought
+	{
+		follow_period      2
+		attacker_limit     3
+//		follow_range       900
+		timeout            3
+		pdtimeout          0.067
+	}
+}

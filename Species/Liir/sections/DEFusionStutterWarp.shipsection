@@ -1,0 +1,71 @@
+shipsection
+{
+	model					Species/Liir/art/sections/DestroyerFusion.X
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			destroyer
+	engine_techera			fusion
+
+	health					704
+	mass					1500
+	cost					9000
+	maintenance_cost		300
+	cpoints					1472
+	ftlspeed				5
+	range					10
+
+	requires				DRV_Fusn
+	requires				DRV_StrWrp
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option	DRV_PlsmFoc
+
+	engine_sound			Sounds/Ships/Shared/DEStutterwarp_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEStutterwarp_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		65000
+		force_right			65000
+		force_up			65000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				91.7125
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node mediumGunNode01
+			min_azimuth -80
+			max_azimuth 80
+			min_inclination -8
+			max_inclination 90
+		}
+
+	}
+}

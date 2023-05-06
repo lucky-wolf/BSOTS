@@ -1,0 +1,47 @@
+shipsection
+{
+
+	model Species/Morrigi/art/sections/BeltTrickster.X
+	section_type mission
+	section_class destroyer
+	preview_ofs "0 0 1"
+
+	requires DRV_Fissn
+	requires DRV_VdCtr
+	requires DRN_Auto
+
+	health 3200
+	mass 14000
+	cost 60500
+	maintenance_cost		300
+	cpoints	10912
+
+	mining_trap true
+
+	autonomous true	// actually means this is a ship with only a mission section
+	ftlspeed 2
+	range	12
+	crew 0
+	preview_ofs "-30 -250 0"
+
+	netforcelimits
+	{
+		force_forward		43000
+		force_right			43000
+		force_up			43000
+
+		torque_yaw			5e+7
+		torque_pitch		5e+7
+		torque_roll			5e+7
+
+		speed				73.2875
+		rotspeed			45
+	}
+
+
+
+
+
+
+
+}

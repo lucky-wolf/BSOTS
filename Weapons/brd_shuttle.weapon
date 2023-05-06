@@ -1,0 +1,58 @@
+weapon
+{
+	name						@WEAPON_BRD_SHUTTLE
+
+	weaponclass					rider
+
+	turretclass					assaultshuttlerider
+	turretsize					large
+
+	cost						1000
+
+	solution_tolerance			360
+	burst_volleys				1
+	buildup_delay				0	// time delay before rider disconnects
+	volley_period				1
+	volley_duration				0
+	recharge_time				10
+
+	muzzle_speed				75
+	muzzle_sound				Sounds/Ships/Shared/_AssaultShuttle_launch.wav
+	muzzle_sound_minrange		200
+
+	icon_file					GUI/Weapons/Riders.tga
+	icon_rect					"64 0 64 64"
+
+	fc_requires_los				false
+	fc_requires_inrange			false
+	fc_requires_enemycolony		true
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			true
+	fc_controllable				true
+	fc_holdsfire				false
+
+	compatible_section			_AssaultShuttle
+
+	rider
+	{
+		section_file					"_AssaultShuttle.shipsection"
+		entity_type						"assaultshuttle"
+		impact_effect					"effects/Shuttle_Death.effect"
+		impact_sound					"Sounds/Weapons/mis_missile_impact.wav"
+		impact_sound_minrange			100
+
+		detach_effect					""
+		detach_sound					""
+
+		attach_effect					""
+		attach_sound					"Sounds/Ships/Shared/_AssaultShuttle_dock.wav"
+		attach_sound_minrange			"10"
+		attach_sound_maxrange			"150000"
+
+		strafe_duration	62
+		dam_pop_rate	200000
+		dam_infra_rate	0.003000
+		dam_terra_rate	0.000000
+	}
+}

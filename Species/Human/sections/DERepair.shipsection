@@ -1,0 +1,61 @@
+shipsection
+{
+	model					Species/Human/art/sections/DERepair.x
+	preview_ofs				"2 0 -1"
+
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+
+	section_type			mission
+	section_class			destroyer
+
+	health					400
+	mass					3000
+	cost					11000
+	maintenance_cost		300
+	cpoints					1472
+
+	requires				IND_SlvgTech
+	repair_capacity			2500
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed        		-20
+		rotspeed      		-20
+	}
+}

@@ -1,0 +1,77 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/CruiserDeflector.X
+
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					1360
+	mass					4500
+	cost					13333
+	maintenance_cost		3000
+	cpoints					1368
+	crew					12
+
+	requires				SLD_Disr
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			9e+7
+		torque_pitch		9e+7
+		torque_roll			9e+7
+
+		speed				-10
+		rotspeed			20
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth 0
+			max_azimuth 120
+			min_inclination -3
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -120
+			max_azimuth 0
+			min_inclination -3
+			max_inclination 90
+		}
+	}
+}

@@ -1,0 +1,83 @@
+weapon
+{
+	name						@WEAPON_CAN_HVYAM_SPINAL
+
+	weaponclass					energy
+	weaponfamily				energycannon
+
+	model1						barrel_l1_HeavyAntimatter.X
+
+	turretclass					spinal
+	turretsize					large
+	munitionsize				medium
+
+	requires					WEP_HvyACan
+	cost						7000
+
+	solution_tolerance			2
+	burst_volleys				3
+	volley_period				.1
+	recharge_time				7
+
+	muzzle_speed				650
+	muzzle_effect				effects/HeavyAntimatterCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/can_plasma_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/EnergyCannons.tga
+	icon_rect					"128 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						2400 	// 1800
+	range_planet				2400
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/HeavyAntimatterCannon_Bullet.effect
+		impact_effect					effects/HeavyAntimatterCannon_Impact.effect
+		expire_effect					"effects/AntimatterCannon_Expire.effect"
+
+		impact_sound					Sounds/Weapons/can_am_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange			15
+
+		rangetable
+		{
+			pb_range		120		// 5% of range
+			pb_range_dev	3
+			pb_range_dam	250
+
+			eff_range		2160 	// 90% of range
+			eff_range_dev	3
+			eff_range_dam	350
+
+			max_range		2400
+			max_range_dev	3
+			max_range_dam	250
+		}
+
+		dam_pop							12304
+		dam_infra						0.000168
+		dam_terra						0.000028
+	}
+
+	dam_est			300
+
+	rating_frate	6
+	rating_dam		7
+	rating_acc		3
+	rating_range	9
+}

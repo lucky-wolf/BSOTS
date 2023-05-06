@@ -1,0 +1,81 @@
+weapon
+{
+	name			@WEAPON_NPC_MON_DUAL_APDRV
+	weaponclass		bullet
+	weaponfamily	gauss
+	model1			"Species/_NPC/art/weapons/Monitorbarrel_l1standard.X"
+	turretmodel1	"Species/_NPC/art/weapons/Monitorturret_l1standard.X"
+
+	hpbonus			80
+	cost			750
+	turretsize		large
+	turretclass		standard
+	trackspeed_mod	1.0
+	burst_volleys	1
+
+	recharge_time	5
+	muzzle_speed	450
+
+	muzzle_effect	effects/APMassDriver_Muzzle.effect
+	muzzle_sound	Sounds/Weapons/bal_drv_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"0 160 32 32"
+	
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range	1580
+	range_planet	1500
+		
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+
+		impact_effect	effects/MassDriver_impact.effect
+		expire_effect   "effects/APMassDriver_Expire.effect"
+		impact_sound	Sounds/Weapons/bal_drv_impact.wav
+		impact_sound_minrange	50
+
+		rangetable
+		{
+			pb_range	480
+			pb_range_dev	1
+			pb_range_dam	160
+
+			eff_range	675
+			eff_range_dev	2
+			eff_range_dam	160
+
+			max_range	1580
+			max_range_dev	1
+			max_range_dam	160
+		}
+		
+		effect		effects/APMassDriver_bullet.effect
+		ricochet_mod 	-1.7
+		ricochet_sound	Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange		50
+		mass 125
+
+		dam_pop		60000
+		dam_infra	.0003	
+		dam_terra	0
+	}
+
+	dam_est		95
+
+	rating_frate	7
+	rating_dam	3
+	rating_acc	6
+	rating_range	5
+
+}
+

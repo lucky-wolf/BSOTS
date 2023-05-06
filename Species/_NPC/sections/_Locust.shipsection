@@ -1,0 +1,55 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model "Species/_NPC/art/sections/Locust.X"
+	section_type mission
+	section_class Destroyer
+	health 300
+	mass 100
+
+	autonomous true	// actually means this is a ship with only a mission section
+	crew 0
+	death_effect "Effects/Swarmer_Death.effect"
+
+	command_cost 0
+	maintenance_cost 0
+
+	option	IND_RefCoat
+
+	netforcelimits
+	{
+		force_forward 10000
+		force_right   10000
+		force_up      10000
+
+		torque_yaw    50000000
+		torque_pitch  50000000
+		torque_roll   50000000
+
+		speed         250
+		rotspeed      360
+	}
+
+	bank
+	{
+		turretclass beam
+		turretsize large
+		weapon "Species/_NPC/weapons/LocustLaser.weapon"
+
+		mount
+		{
+			node WeaponNode01
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -30
+			max_inclination 30
+		}
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+}

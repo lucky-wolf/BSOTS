@@ -1,0 +1,72 @@
+weapon
+{
+	name						@WEAPON_MIN_MINI_FUS
+
+	weaponclass					mine
+	weaponfamily				conventionalmine
+
+	turretclass					mine
+	turretsize					medium
+
+	requires					WEP_FusMine
+	cost						2000
+
+	solution_tolerance			360
+	burst_volleys				1	// 1 mine dropped per cycle (1/2 vanilla to improve balance)
+	buildup_delay				2	// 2-s before first mine dropped
+	volley_period				4	// 4-s between mine drops
+	volley_duration				0	// mines are deployed instantaneously
+	recharge_time				4	// cycle is done at t=4
+
+	muzzle_speed				50
+	muzzle_effect				effects/PlasmaCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/min_nuke_drop.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Mines-Mini.tga
+	icon_rect					"64 0 64 64"
+
+	fc_requires_los				false
+	fc_requires_inrange			false
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			true
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	mine
+	{
+		impact_sound					Sounds/Weapons/min_fusion_det.wav
+		impact_sound_minrange			75
+		impact_effect					effects/FusionMine_Impact.effect
+		area_impact_effect				"effects/collide_asteroid.effect"
+
+		leap							false
+		speed							90
+		seek_attenuation				1	// Higher number = tighter turns/faster accel
+
+		model							mine.X
+		ttl								120
+		health							30
+		dam								333		// 2/3 powerful dropped 1/2 as often = 1/3 as powerful as a standard mine
+		dam_radius						50
+		coll_lookahead					20
+		affect_radius					125
+		mass							50
+		dumbfire_period					0
+
+		dam_pop							0
+		dam_infra						0
+		dam_terra						0
+	}
+
+	dam_est			40
+
+	rating_frate	4
+	rating_dam		3
+	rating_acc		0
+	rating_range	2
+}

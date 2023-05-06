@@ -1,0 +1,72 @@
+3.0.2:
+
+Advanced Emitters
+	Now subject to sadorandomizer
+	We have no tech box in tech tree, so they're free :(
+
+Autocannons
+	Disabled all but light autocannons (stormers are the logical progression, and never come in duals)
+
+Drones
+	Now a guaranteed tech for all races
+		Morrigi still start with them researched automatically
+	Drone Carrier techs are now free with the necessary prequisites
+		drones already cost a premium over other weapons due to having to invest in combat drones, advanced drones, etc.
+		no need to add a second tech-cost premium for drones
+	Drone Minelayers switched to use new mini-mines instead of standard mines (approx 1/3 the damage output)
+	Using some of ACM's gunship, gunboat, and drone models as improved visuals over our previous models
+		
+Mines
+	Increased cost of all mine weapons (used to be dirt cheap)
+	Added mini-mines for satellites and drones (approx 1/3 the damage output vs. standard mines)
+
+Missiles
+	Nanites requires corrosives (mines & missiles)
+	Huge missiles requires heavy missiles (automatically acquired)
+		Now cost more than they did (they still also give planetary missiles, and still are retargetting)
+	Added a single huge missile projector as a default weapon for projector mounts (in case you get Asteroid Monitors or other huge-mount designs before researching any projector based mount weapons)
+		Cannot be selected, but has no prequisites and will act as a default automatically
+
+PD
+	Improved (tweaked using in-game testing)
+		Considerably tightened the firing arcs and clustering of emissions (so more of them are likely to hit if the shot is on target)
+	Requires Large or Mega Combat Construction
+		PD is really for CR and above, though can be mounted on DE once you have CRs for them to protect
+
+Planetary Invasion
+	Ships are now granted for free
+	
+Pulsed Lasers
+	Bolts move faster by 50% (from 1000m/s to 1500m/s)
+		(slow for light speed, but improves laser accuracy a bit, and looks better IMO)
+		
+Miscellaneous
+	Fusion tech now requires Orbital Economy (industrial tech)
+		This avoids having fusion sometimes given out as a freebie when setting up a new game!
+	
+Satellites
+	Added techs for various satellite blueprints (standard defense, large defense, minlelayer, etc.)
+		You will get notification when you gain techs that enable a satellite to be designed
+	Satellites requires combat construction for the size-class in question
+	Minelayer sats also requires any mine tech
+	Sats now use mini-mines instead of standard mines (approx 1/3 the damage output)
+
+Shields
+	Now require you to research shield prototype tech first
+		you won't know what you have access to until you research this progenitor tech
+	Nerfed shields compared to 3.0.1
+		Rapid shields cost less
+		Heavy shields cost more
+	Quantum Capacitors and Shield Magnifiers now each give +50% shield strength (was 25% and 100% respectively)
+	
+Tractor Beams
+	Require huge mount instead of large
+		Fixes spamming of them (a world needs DN sized defense platforms to have them - similarly, they can be mounted only as a special cruiser or on battleships)
+
+-----------------
+		
+NEED: 
+	3D: Small missile turret & small missile barrel & 2x barrels
+
+??? Bugs:
+	single nanite missile not ever enabling in combat...

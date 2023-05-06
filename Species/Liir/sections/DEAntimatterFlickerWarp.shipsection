@@ -1,0 +1,95 @@
+shipsection
+{
+	model					Species/Liir/art/sections/DestroyerAntiMatterFlickerWarp.X
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			Destroyer
+	engine_techera			antimatter
+
+	health					1152
+	mass					1800
+	cost					25000
+	maintenance_cost		300
+	cpoints					1280
+	ftlspeed				14
+	range					22
+
+	requires				DRV_AntiMat
+	requires				DRV_Flicker
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	engine_sound			Sounds/Ships/Shared/DEFlickerwarp_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEStutterwarp_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		1250000
+		force_right			1250000
+		force_up			1250000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				146.7125
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -70
+			max_azimuth 90
+			min_inclination -5
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -90
+			max_azimuth 70
+			min_inclination -5
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node mediumGunNode01
+			min_azimuth -85
+			max_azimuth 85
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+}
+

@@ -1,0 +1,5 @@
+4.0.2:
+	Advanced CNC availble in fusion age
+	AI techs require fusion
+	Dual mounted weapons should work as they used to (allowed in strafe mounts, better tracking properties)
+	Normalized all turrets health & speed

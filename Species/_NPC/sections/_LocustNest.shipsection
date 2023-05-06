@@ -1,0 +1,526 @@
+shipsection
+{
+	model "Species/_NPC/art/sections/LocustNest.X"
+	section_type mission
+	section_class Dreadnought
+	health 100000
+	mass 5e+6
+	cost 1000000
+	cpoints 50000
+	scanrange 6
+	tacticalsensorrange 6000
+	engine_sound Sounds/SFX/systemkiller_pulse.wav
+	engine_sound Sounds/SFX/systemkiller_pulse.wav
+	engine_sound_minrange 185
+	autonomous true	// actually means this is a ship with only a mission section
+	node_cannon_fling 0
+	crew 0
+	death_effect effects/Locust_death.effect
+
+	split_traffic_volume "false"
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	ftlspeed	0.99
+	range		1e+20	// Huge range
+
+	command_cost 0
+	maintenance_cost 0
+
+	option	IND_MagLat
+	option	IND_ImpRfCt
+
+	netforcelimits
+	{
+		force_forward 1e+8
+		force_right   1e+8
+		force_up      1e+8
+
+		torque_yaw    1e+11
+		torque_pitch  1e+10
+		torque_roll   1e+10
+
+		speed         60
+		rotspeed      20
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode02
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode03
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode04
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode05
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode06
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode07
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode08
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode09
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode10
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode11
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode12
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode13
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode14
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode15
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode16
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode17
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode18
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode19
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node NeutronNode20
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_emt_light.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node EmitterNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_emt_light.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node EmitterNode02
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_emt_light.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node EmitterNode03
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_emt_light.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node EmitterNode04
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_emt_light.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node EmitterNode05
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_emt_light.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node EmitterNode06
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_emt_light.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node EmitterNode07
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_emt_light.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node EmitterNode08
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_emt_light.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node EmitterNode09
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Locust_emt_light.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node EmitterNode10
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+}

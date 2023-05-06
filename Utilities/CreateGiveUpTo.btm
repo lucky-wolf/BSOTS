@@ -1,0 +1,10 @@
+@echo off
+cdd %~dp0
+
+set x=50000
+querybox /de "Give Up to X" What RP level should all races start with: %%x
+if %_? NE 0 quit -1
+
+perl "give up to X.pl" "..\techtree\MasterMasterTechList.tech" %x > "..\techtree\MasterTechList.tech"
+
+pause All research up to %@comma[%x] was given to all races...

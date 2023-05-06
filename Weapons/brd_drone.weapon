@@ -1,0 +1,61 @@
+weapon
+{
+	name						@WEAPON_BRD_DRONE
+
+	weaponclass					rider
+
+	turretclass					dronerider
+	turretsize					large
+
+	requires					DRN_Cmbt
+	cost						5000
+
+	solution_tolerance			180
+	burst_volleys				1
+	buildup_delay				0	// time delay before rider disconnects
+	volley_period				1
+	volley_duration				0
+	recharge_time				10
+
+	muzzle_speed				75
+	muzzle_sound				Sounds/Ships/Shared/_Drone_launch.wav
+	muzzle_sound_minrange		200
+
+	icon_file					GUI/Weapons/Riders.tga
+	icon_rect					"0 64 64 64"
+
+	fc_requires_los				false
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	compatible_section			_Drone
+
+	rider
+	{
+		section_file					"_Drone.shipsection"
+		entity_type						"DroneRider"
+		impact_effect					"effects/Shuttle_Death.effect"
+		impact_sound					"Sounds/Weapons/mis_missile_impact.wav"
+		impact_sound_minrange			100
+
+		detach_effect					"effects/Drone_muzzle.effect"
+		detach_sound					""
+
+		attach_effect					""
+		attach_sound					"Sounds/Ships/Shared/_Drone_dock.wav"
+		attach_sound_minrange			"100"
+		attach_sound_maxrange			"150000"
+
+		strafe_duration	62
+		dam_pop_rate	200000
+		dam_infra_rate	0.030000
+		dam_terra_rate	0.000000
+	}
+}

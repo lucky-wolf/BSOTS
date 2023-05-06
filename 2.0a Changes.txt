@@ -1,0 +1,19 @@
+^ improved balance of Improved hull reinforcement (+50% health, not +100%)
+^ improved balance of Fast and Heavy shields
+^ improved balance of Pirate Raiders
+^ improved plasma-torpedo visual effects (extended for full lifetime of the torpedos)
+^ improved gatling gun visuals
+^ improved mass driver visuals
+^ fixed weapon icon placements for various ship sections in the ship designer
+^ moved all constructor ships into destroyers list (so in same place)
+^ moved all freighter ships into destroyers list (so in same place)
+^ improved many descriptions of technologies and weapons to be more accurate for BSOTS
+^ brightened fast shields (were hard to see at all)
+^ fixed speed of some ship sections
+^ added missing art piece for gatling cannons
+^ adjusted health rating of all CNC sections to help AI always choose better model
+^ greatly increased range of CR Scout ships to give them some more reason to ever be used
+^ fixed Zuul CR Torpedo section 3d-model
+^ improved starting techs to better reflect different race personalities better
+^ polished pulsed lasers (faster projectile speed, split into 3 pulses, more like blasters now)
+^ fixed fusion mine icon

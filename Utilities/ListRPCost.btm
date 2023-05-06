@@ -1,0 +1,9 @@
+@echo off
+cdd %~dp0
+
+set Title=List RP Cost
+set filename=List RP Cost.txt
+
+perl "list RP.pl" "..\techtree\MasterMasterTechList.tech" > "%filename"
+
+start "" "%filename"

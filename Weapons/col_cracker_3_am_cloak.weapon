@@ -1,0 +1,69 @@
+weapon
+{
+	name						@WEAPON_COL_CRACKER_CLOAK_AM
+
+	weaponclass					col
+
+	turretclass					col
+	turretsize					large
+
+	requires					DRN_CrakCOL
+	requires					WEP_ClkMine
+	cost						100000
+
+	solution_tolerance			5
+	burst_volleys				1
+	buildup_delay				0
+	volley_period				1
+	volley_duration				0
+	recharge_time				30
+
+	muzzle_speed				360
+	muzzle_effect				"effects/COl_muzzle.effect"
+	muzzle_sound				"Sounds/Weapons/col_muzzle.wav"
+	muzzle_sound_minrange		200
+
+	icon_file					GUI/Weapons/COL-2.tga
+	icon_rect					"64 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			true
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_explicit_target			true
+	fc_exclusive_launch			true
+	fc_targets_expire			true
+	fc_controllable				true
+	fc_holdsfire				true
+	pinpoint					false
+	target_queue_size			1
+
+	col
+	{
+		entity_type						"CrackerCol"
+		model							"cracker.X"
+		mass							"1000"
+		dumbfire_period					"30"
+		expire_time						"0"
+		health							"1800"
+		warhead_glow_effect				"effects/Warhead_Glow.effect"
+		travel_effect					"effects/COL_NUKE_Transit.effect"
+		impact_effect					"effects/GravMine_trigger.effect"
+		impact_sound					"Sounds/Weapons/mis_missile_impact.wav"
+		impact_sound_minrange			"100"
+		expire_effect					"effects/Missile_Impact.effect"
+		expire_sound					"Sounds/Weapons/col_cracker_deploy.wav"
+		expire_sound_minrange			"100"
+
+		warhead_weapon					"Weapons/min_3_am_cloak.weapon"
+		warheads						30
+		warhead_scatter_speed			"100 500"
+	}
+
+	rating_frate	1
+	rating_dam		7
+	rating_acc		4
+	rating_range	10
+}

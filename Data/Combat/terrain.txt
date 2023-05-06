@@ -1,0 +1,23 @@
+ASTEROIDBELT_INNER_RADIUS			3500.0
+ASTEROIDBELT_OUTER_RADIUS			7500.0
+ASTEROIDBELT_ASTEROID_ROTSPEED		20.0	// deg/s
+ASTEROIDBELT_ASTEROID_COUNT			100
+
+SMALL_ASTEROID_SENSOR_SHADOW_DIST	300.0  // metres from asteroid radius
+LARGE_ASTEROID_SENSOR_SHADOW_DIST	400.0  // metres from asteroid radius
+
+MOON_SPAWN_DISTANCE					5500.0	// m from map center (right in the center of the asteroid field)
+MOON_SENSOR_SHADOW_DIST				600.0	// m from the moon's radius
+
+COMBAT_NODEPOINT_RINGMODEL			"Models/Planets/Ring.X"
+COMBAT_NODEPOINT_PSYS				"Effects/Node_Point.effect"
+COMBAT_NODEPOINT_EFFECT				"Render/NodePointGlow.fx"
+COMBAT_NODEPOINT_RADIUS				300.0
+COMBAT_NODEPOINT_RINGSCALE			0.2
+COMBAT_NODEPOINT_RANGE				7000.0
+COMBAT_NODEPOINT_RINGCOLOR			"0 0 0 128"	// 50% transparent so you can see stuff there more easily!
+COMBAT_NODEPOINT_RINGINTENSITY		1.0
+COMBAT_NODEPOINT_TEXTURENAME		"Models/Planets/Glow.dds"
+
+DYING_SHADOW_TIME					15		// Seconds
+DYING_SHADOW_RADIUS_SCALE			0.75	// Percentage of original shadow to grow to

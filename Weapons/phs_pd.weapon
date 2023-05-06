@@ -1,0 +1,58 @@
+weapon
+{
+	name		"phs_pd"				// This is here just to stop mars.exe from generating endless complaints in the session.log
+	requires	IND_HIDDEN
+
+	weaponclass	beam
+	weaponfamily	conventionalbeam
+	model1		""						// insert barrel model for tiny mounts here if we get them
+	model2		barrel_pdlaser.X		// NOTE: model2 for tiny pd weapons in small mounts
+	requires 	WEP_PDPhas
+	hpbonus		30
+	cost		2000
+	turretsize		tiny
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	.3
+	recharge_time	2.0
+	muzzle_effect	effects/phaser_muzzle.effect
+	muzzle_sound	Sounds/Weapons/phaser_pd_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"160 96 32 32"
+
+	range 575
+	range_planet 0
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				false
+	fc_holdsfire				false
+
+	beam
+	{
+		impact_effect	effects/phaser_impact.effect
+		impact_sound	Sounds/Weapons/phaser_pd_impact.wav
+		impact_sound_minrange	100
+		effect		effects/pdphaser_Bullet.effect
+		dam			250
+		force		0
+
+		dam_pop		0
+		dam_infra	0
+		dam_terra	0
+	}
+
+
+	rating_frate	8
+	rating_dam	2
+	rating_acc	9
+	rating_range	3
+
+//	dam_est		15
+}

@@ -1,0 +1,125 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/CruiserStrafe.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					2880
+	mass					4000
+	cost					20000
+	maintenance_cost		3000
+	cpoints					3400
+	crew					35
+
+	requires				IND_CRStrafe
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	shield_model_offset 	"0 5 0"
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			2e+8
+		torque_pitch		2e+8
+		torque_roll			2e+8
+
+		speed				0
+		rotspeed			40
+	}
+
+	bank
+	{
+		turretclass strafe
+		turretsize medium
+		showturrets false
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node MediumGunNode05
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node MediumGunNode06
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+	}
+}

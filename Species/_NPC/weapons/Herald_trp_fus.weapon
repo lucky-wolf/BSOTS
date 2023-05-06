@@ -1,0 +1,97 @@
+weapon
+{
+	name		@WEAPON_NPC_HERALD_TRP_FUS
+	weaponclass		torpedo
+	weaponfamily	torpedo
+	weapondamagetype trackingtorpedo
+	turretclass		torpedo
+	turretsize		large
+	requires 	WEP_FusTrp
+	hpbonus		150
+	Cost		12000
+	burst_volleys	1
+	volley_period	.2
+	recharge_time	10
+	muzzle_speed	120
+	muzzle_effect	effects/AcidTorpedo_muzzle.effect
+	muzzle_sound	Sounds/Weapons/trp_fusion_muzzle.wav
+	muzzle_sound_minrange	100
+	solution_tolerance	90
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"96 32 32 32"
+	range			2000
+	range_planet	2500
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	torpedo
+	{
+		tracking 1
+		plasma 1
+
+		beam_origin	-3
+		beam_length	5.5
+
+		impact_effect	effects/FusionTorpedo_impact.effect
+		impact_sound	Sounds/Weapons/trp_fusion_impact.wav
+		impact_sound_minrange	100
+
+
+		thrust_sound		Sounds/Weapons/trp_fusion_travel.wav
+		thrust_sound_minrange	20
+
+		rangetable
+		{
+			pb_range	200
+			pb_range_dev	2
+			pb_range_dam	100
+			eff_range	1000
+			eff_range_dev	2
+			eff_range_dam	600
+			max_range	2000
+			max_range_dev	3
+			max_range_dam	850
+		}
+
+		effect		effects/FusionTorpedo_bullet.effect
+		health			850	// same as max damage
+		dam_radius		50
+		mass			300
+		dumbfire_period		0.5
+
+		speed 115
+		seek_attenuation 2	// Higher number = tighter turns/faster accel
+
+//		netforcelimits
+//		{
+//			force     30000
+//			torque    35000
+//			speed     125
+//			rotspeed  300
+//		}
+
+		ttl			24.5
+
+		dam_pop		1000000
+		dam_infra	.002
+		dam_terra	.0005
+	}
+
+
+	rating_frate	2
+	rating_dam	5
+	rating_acc	9
+	rating_range	8
+
+	dam_est		300
+
+}

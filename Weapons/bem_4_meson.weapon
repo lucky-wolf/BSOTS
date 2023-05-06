@@ -1,0 +1,61 @@
+weapon
+{
+	name						@WEAPON_BEM_MESON
+
+	weaponclass					beam
+	weaponfamily				conventionalbeam
+	weapondamagetype			meson
+
+	model1						barrel_l1_Mesonbeam.x
+
+	turretclass					standard
+	turretsize					large
+
+	requires					WEP_MesBm
+	cost						12000
+
+	burst_volleys				1
+	volley_duration				2
+	recharge_time				10
+
+	muzzle_effect				effects/MesonBeam_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_meson_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beams.tga
+	icon_rect					"192 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1750 // 900
+	range_planet				1750
+
+	beam
+	{
+		impact_effect					effects/MesonBeam_impact.effect
+		impact_sound					Sounds/Weapons/bem_meson_impact.wav
+		impact_sound_minrange			75
+		effect							effects/MesonBeam_Bullet.effect
+
+		dam								550
+		force							0
+
+		dam_pop							1640625
+		dam_infra						0.01125
+		dam_terra						0.009375
+	}
+
+	dam_est			300
+
+	rating_frate	4
+	rating_dam		7
+	rating_acc		10
+	rating_range	7
+}

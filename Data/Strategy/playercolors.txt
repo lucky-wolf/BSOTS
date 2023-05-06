@@ -1,0 +1,29 @@
+//	r	g	b
+1	250	250	250	// white
+2	255 0   0	// red
+3	0   0   255	// blue
+4	0	204 0	// green
+5	100 45  130 // purple
+6	137	137	216	// lavender
+7	0	128	192	// powder blue
+8	255 255 128	// light yellow
+9	255	187	119	// dreamsicle
+10	140	255 140	// pastel green
+11	128	64	0	// saddle brown
+12	128	0	64	// pomegranate (dark red)
+13	43	43	128	// cobalt
+14  32	96  32	// dark green
+
+// 0x009977  gun metal green
+// 0x8899ff  periwinkle
+// 0x660011  deep red
+// 0x330000  clotted blood
+// 0xff3300  redish orange
+
+//10	40	110 30	// green
+//15	255 0   255	// magenta
+//16	255 125 0	// orange
+//17	0   255 255	// neon light blue
+//18	223 223 184	// off-white
+//19	255	228	225	// misty rose
+//20	101	67	33	// dark brown

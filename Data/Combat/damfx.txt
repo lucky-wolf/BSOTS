@@ -1,0 +1,17 @@
+// The damage effect appearances are dictated by damfx_levels.txt.
+//
+// BSOTS 2.0
+//
+// shipClass	health	maxEffects	maxLvl	name
+
+destroyer    	0.750   	3  		2  		spark
+destroyer    	0.500   	6  		3  		vent
+destroyer    	0.250   	3  		3  		glow
+	
+cruiser      	0.625   	6  		3  		spark
+cruiser      	0.375   	12  	3  		vent
+cruiser      	0.167   	4  		3  		glow
+
+dreadnought  	0.500   	8  		3  		spark
+dreadnought  	0.250   	16 		3  		vent
+dreadnought  	0.125   	6  		3  		glow

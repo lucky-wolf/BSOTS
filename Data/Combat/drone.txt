@@ -1,0 +1,26 @@
+// Tracking tweaks
+DRONE_AVOID_OUTER_DISTANCE         100.0   // Buffer around avoidance spheres
+DRONE_AVOID_APPROACH_ATTENUATION   1.0     // Higher number = harder avoid deflection
+DRONE_MISSION_SEEK_ATTENUATION     1.0     // Higher number = tighter turns/accel
+DRONE_MISSION_TARGETFACING_DIST    800.0   // Distance within which drone points at target
+DRONE_DOCK_APPROACH_ATTENUATION    5.0     // Higher number = tighter docking maneuver (for success)
+DRONE_DOCK_BRAKE_OUTER_DISTANCE    100.0   // Dist from dock point at which braking starts
+DRONE_ROT_VELOCITY_DAMPING         0.5     // Spin counteracting 0..1 (1 means never stops spinning)
+DRONE_ORIENTATION_INTERP_AMOUNT    0.25    // 0..1: Higher means faster tendency to desired orientation (1 is instantaneous)
+DRONE_MISSION_BANK_ACCEL_FACTOR    0.1     // How much to bank, higher = more.
+
+// General
+DRONE_MISSION_TIME                         45.0   // Sortie timeout for restocking
+DRONE_MISSION_ABANDON_TIME                 1.0    // Sortie abandoned if no target for this long
+DRONE_MISSION_WAYPOINT_ARRIVED_DIST        100.0  // Threshold for path waypoints
+DRONE_MISSION_WAYPOINT_OVERSHOOT_DIST      500.0  // How far beyond target path waypoints are plotted
+DRONE_MISSION_WAYPOINT_PLANET_STRAFE_DIST  1000.0 // How far to retreat from planet for strafing runs
+DRONE_MISSION_WAYPOINT_UP_DIST             100.0  // Waypoints are raised this amount to keep drones 'up'
+DRONE_TARGET_SEEK_RADIUS                   4000.0
+
+DRONE_DAMAGE_FACTOR                        1.0    // Damage done by Drones is multiplied by this number.
+DRONE_REDOCK_REPAIR_FACTOR                 1.0    // 1 = Repair 100%
+DRONE_UNDOCKED_RECOVERY_CHANCE				95    // percent chance that drones will be recovered after combat ends
+
+DRONE_COL_MISSION_TIME_FACTOR              0.5    // COL variant: Multiply sortie timeout by this value
+DRONE_COL_HEALTH_FACTOR                    0.5    // COL variant: Multiply initial health by this value

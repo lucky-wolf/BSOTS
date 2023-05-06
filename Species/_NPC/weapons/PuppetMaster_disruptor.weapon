@@ -1,0 +1,86 @@
+weapon
+{
+	name		@WEAPON_NPC_PMASTER_TRP_PULSAR
+	weaponclass		torpedo
+	weaponfamily	torpedo
+	turretclass		torpedo
+	turretsize		large
+	requires 	WEP_PlsTrp
+	hpbonus		150
+	Cost		8000
+	burst_volleys	1
+	volley_period	.2
+	recharge_time	8
+	muzzle_speed	120
+	muzzle_effect	effects/AcidTorpedo_muzzle.effect
+	muzzle_sound	Sounds/Weapons/trp_pulsar_muzzle.wav
+	muzzle_sound_minrange	100
+	solution_tolerance	25
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"160 128 32 32"
+	range			2000
+	range_planet	1500
+
+	torpedo
+	{
+		disruptor 1		// drain guns
+		tracking 1
+		plasma 0
+		emptime 3
+		empradius 0		// direct hit only
+
+		beam_origin	-3
+		beam_length	5.5
+
+		impact_effect	effects/Pulsar_impact.effect
+		impact_sound	Sounds/Weapons/trp_pulsar_impact.wav
+		impact_sound_minrange	100
+			area_impact_effect "effects/collide_asteroid.effect"
+
+
+		thrust_sound		Sounds/Weapons/trp_pulsar_travel.wav
+		thrust_sound_minrange	20
+
+		rangetable
+		{
+			pb_range	500
+			pb_range_dev	2
+			pb_range_dam	75
+			eff_range	1500
+			eff_range_dev	2
+			eff_range_dam	75
+			max_range	2000
+			max_range_dev	3
+			max_range_dam	75
+		}
+
+		effect		effects/Pulsar_bullet.effect
+		health			200	// same as max damage
+		dam_radius		200
+		mass			500
+		dumbfire_period		0.5
+
+		speed 300
+		seek_attenuation 5	// Higher number = tighter turns/faster accel
+
+		//netforcelimits
+		//{
+		//	force     30000
+		//	torque    35000
+		//	speed     120
+		//	rotspeed  300
+		//}
+
+		dam_pop		1000
+		dam_infra	.02
+		dam_terra	0
+	}
+
+	rating_frate	4
+	rating_dam	3
+	rating_acc	9
+	rating_range	5
+
+
+	dam_est		200
+}

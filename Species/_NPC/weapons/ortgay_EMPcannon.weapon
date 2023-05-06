@@ -1,0 +1,59 @@
+weapon
+{
+	name		@WEAPON_NPC_ORTGAY_EMPCANNON
+	weaponclass	beam
+	weaponfamily	conventionalbeam
+	model1		"Species/_NPC/art/weapons/gort_EMPcannon.X"
+	turretmodel1	"Species/_NPC/art/weapons/gort_xtralargeturret.X"
+	requires 	WEP_NeutBm
+	hpbonus		200
+	cost		6000
+	turretsize		large
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	2
+	recharge_time	8
+	muzzle_effect	effects/Neutronbeam_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bem_neutron_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"0 64 32 32"
+
+	range 1400
+	range_planet 1400
+			
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	beam
+	{
+		impact_effect	effects/EMPCannon_impact.effect
+		impact_sound	Sounds/Weapons/bem_neutron_impact.wav
+		impact_sound_minrange	75
+		effect		effects/EMP_Cannon.effect
+		dam			0
+		force		0
+		emptime		"20"
+
+		beam_lock "true"	// tells the beam to stay 'locked on' to the target point even if the turret isn't truly lined up
+
+		dam_pop		0
+		dam_infra	0	
+		dam_terra	0
+	}
+
+	rating_frate	5
+	rating_dam	5
+	rating_acc	9
+	rating_range	3
+
+	dam_est		300
+
+}

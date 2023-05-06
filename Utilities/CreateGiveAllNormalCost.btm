@@ -1,0 +1,9 @@
+@echo off
+cdd %~dp0
+
+echo This will change your tech tree to give 100% odds to all techs for all races:
+pause so each race will play normally except as if they rolled a perfect set of rolls for all possible techs...
+
+perl "give all normal cost.pl" "..\techtree\MasterMasterTechList.tech" > "..\techtree\MasterTechList.tech"
+
+pause Press any key to exit %~n0...

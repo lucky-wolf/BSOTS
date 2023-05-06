@@ -1,0 +1,67 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/CruiserDeflector.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					2720
+	mass					4100
+	cost					30000
+	maintenance_cost		3000
+	cpoints					3240
+	crew					25
+
+	requires				SLD_Disr
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			2.2e+8
+		torque_pitch		2.2e+8
+		torque_roll			2.2e+8
+
+		speed				-10
+		rotspeed			25
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -115
+			max_azimuth 115
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+}

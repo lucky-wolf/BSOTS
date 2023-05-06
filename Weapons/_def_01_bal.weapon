@@ -1,0 +1,85 @@
+weapon
+{
+	name						@WEAPON_BAL_GAUSS_PD
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						""						// insert barrel model for tiny mounts here if we get them
+	model2						barrel_pdgauss.X		// NOTE: model2 for tiny pd weapons in small mounts
+
+	turretclass					standard
+	turretsize					tiny
+
+	requires					WEP_PDBal
+	cost						500
+
+	trackspeed_mod				1.0
+
+	burst_volleys				2
+	volley_period				0.1
+	recharge_time				2.0						// laser & pulsed phaser = 1.5, ballistic = 2.0, beamer & phaser = 2.5, emitter = 3.0
+
+	muzzle_speed				700
+	muzzle_effect				effects/PDGauss_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_gauss_pd_muzzle.wav
+	muzzle_sound_minrange		50
+
+	icon_file					GUI/Weapons/Ballistic.tga
+	icon_rect					"192 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				false
+	fc_holdsfire				false
+
+	range						800
+	range_planet				0
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/pdgauss_bullet.effect
+		impact_effect					effects/gauss_impact.effect
+		impact_sound					sounds/weapons/bal_gauss_pd_impact.wav
+		impact_sound_minrange			50
+
+		rangetable
+		{
+			pb_range		400
+			pb_range_dev	.1
+			pb_range_dam	25	// stock is 40, but that makes this too strong
+
+			eff_range		600
+			eff_range_dev	.1
+			eff_range_dam	25	// 25 * 2 / 2 = 25 dps
+
+			max_range		800
+			max_range_dev	.1
+			max_range_dam	25
+		}
+
+		ricochet_mod					-1.7
+		ricochet_sound					Sounds/Weapons/bal_gauss_pd_rico.wav
+		ricochet_sound_minrange			20
+
+		mass							5 		// 40  -- will stop creating so much knock back on small targets (which causes them to be way out of normal range)
+
+		dam_pop							0
+		dam_infra						0
+		dam_terra						0
+	}
+
+	dam_est			0		// PD always zero
+
+	rating_frate	9
+	rating_dam		2
+	rating_acc		8
+	rating_range	3
+}

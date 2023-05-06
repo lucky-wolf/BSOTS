@@ -1,0 +1,80 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/DestroyerAbsorbtion.X
+	preview_ofs				"1.2 0 .5"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			Destroyer
+
+	health					640
+	mass					1200
+	cost					28000
+	maintenance_cost		300
+	cpoints					1104
+
+	requires				SLD_ErgAb
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			60
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -75
+			max_azimuth 60
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Medium
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -60
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+}

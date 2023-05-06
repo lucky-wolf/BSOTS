@@ -1,0 +1,86 @@
+weapon
+{
+	name						@WEAPON_BAL_HEAVY_TRIPLE_SNIPER
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						barrel_l3_heavydriver.x
+	turretmodel1				turret_l1standard.x
+
+	turretclass					projector
+	turretsize					large
+
+	requires					WEP_SnpHvyDrvr
+	requires					WEP_TriHvyDrvr
+	cost						50000
+
+	trackspeed_mod				0.5
+	burst_volleys				1
+	recharge_time				10
+
+	muzzle_speed				1000		// 5/3x
+	muzzle_effect				effects/APHeavyDriver_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_sniper_muzzle.wav
+	muzzle_sound_minrange		600
+
+	icon_file					GUI/Weapons/Ballistic.tga
+	icon_rect					"192 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						4500	// 1.5 triple
+	range_planet				4500
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/HeavyDriver_bullet.effect
+		impact_effect					effects/HeavyDriver_impact.effect
+		expire_effect					effects/HeavyDriver_Expire.effect
+
+		impact_sound					Sounds/Weapons/bal_drv_impact.wav
+		impact_sound_minrange			600
+
+		rangetable
+		{
+			pb_range		1125	// 1.5 triple
+			pb_range_dev	.5
+			pb_range_dam	450
+
+			eff_range		2700
+			eff_range_dev	1
+			eff_range_dam	450
+
+			max_range		4500
+			max_range_dev	1.5
+			max_range_dam	450
+		}
+
+		ricochet_mod					-1.4
+		ricochet_sound					Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange			300
+
+		mass							300		// 900 for full salvo (vs. 1000 for a rail cannon)
+
+		dam_pop							24608
+		dam_infra						0.000225
+		dam_terra						0.0000375
+	}
+
+	dam_est			800
+
+	rating_frate	4
+	rating_dam		9
+	rating_acc		7
+	rating_range	10
+}

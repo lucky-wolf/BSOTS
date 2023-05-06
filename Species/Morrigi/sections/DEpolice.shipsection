@@ -1,0 +1,118 @@
+shipsection
+{
+	model					Species/Morrigi/art/sections/DestroyerPolice.X
+	section_type			mission
+	section_class			destroyer
+	preview_ofs				"-30 -200 0"
+
+//	requires				CCC_FTLEcon
+
+	health					1680
+	mass					3000
+	cost					22000
+	maintenance_cost		300
+	cpoints					4000
+
+	police 1
+	autonomous				true	// actually means this is a ship with only a mission section
+	ftlspeed				0	// 2
+	range					0	// 12
+	crew					0
+
+	netforcelimits
+	{
+		force_forward		95000
+		force_right			65000
+		force_up			65000
+
+		torque_yaw			5e+8
+		torque_pitch		5e+8
+		torque_roll			5e+8
+
+		speed				201.7125
+		rotspeed			55
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatReady"
+		start_frame "0"
+		speed_scale "2"
+		loop "1"
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatRest"
+		start_frame "end"
+		speed_scale "-2"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -160
+			max_azimuth 160
+			min_inclination -12
+			max_inclination 90
+			home_inclination 0
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -160
+			max_azimuth 160
+			min_inclination -12
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -2
+			max_azimuth 150
+			min_inclination -12
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -150
+			max_azimuth 2
+			min_inclination -12
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+}

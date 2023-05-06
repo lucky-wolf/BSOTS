@@ -1,0 +1,63 @@
+weapon
+{
+	name						@WEAPON_PHS_HEAVY_DUAL
+
+	weaponclass					beam
+	weaponfamily				conventionalbeam
+
+	model1						barrel_m2_xraylaser.x
+	turretmodel1				turret_m2standard.x
+	model2						barrel_m2_xraylaser.x
+	turretmodel2				turret_m2standard.x
+
+	turretclass					standard // missile stops them from being in strafe and drone, but restricts azimuth and turret speed :'(
+	turretsize					medium
+
+	requires					WEP_DualHvyPhas
+	cost						45000	// 3x
+
+	burst_volleys				1
+	volley_duration				1.0
+	recharge_time				14.66	// 1.33
+	trackspeed_mod				.8
+
+	muzzle_effect				effects/phaser_muzzle.effect
+	muzzle_sound				Sounds/Weapons/phaser_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beamers.tga
+	icon_rect					"192 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1250
+	range_planet				1250
+
+	beam
+	{
+		impact_effect					effects/phaser_impact.effect
+		impact_sound					Sounds/Weapons/phaser_impact.wav
+		impact_sound_minrange			100
+		effect							effects/phaser_Bullet.effect
+		dam								495
+		force							0
+
+		dam_pop							13125
+		dam_infra						0.000114
+		dam_terra						0.000003
+	}
+
+	dam_est			135
+
+	rating_frate	2
+	rating_dam		7
+	rating_acc		10
+	rating_range	5
+}

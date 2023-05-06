@@ -1,0 +1,21 @@
+ORTGAY_LEAVE_NUM_DE_EQUIVALENTS    20       // num destroyer equivalent ships to equalize down to
+ORTGAY_NUM_SEEK_PASSES             5        // number of increasing range passes to find best target
+ORTGAY_SEEK_RANGE_STEP             1000.0   // increase in range each step
+ORTGAY_FAST_TARGET_ABANDON_RANGE   3000.0   // give up chasing faster targets if they get this far away
+ORTGAY_RETARGET_PERIOD             1.0      // delay between refreshing targets
+ORTGAY_RETREAT_DISTANCE            8000.0   // range at which ortgay warps out
+ORTGAY_EMP_RANGE                   1000.0   // range at which to seek targets for emp disabling
+ORTGAY_EMP_HISTORY_SIZE            30       // size of history queue used to avoid obsessing about previously failed emps
+ORTGAY_TARGET_FIRED_GUN_TIMEOUT    20       // ortgay will eventually drop target from this list if it hasn't fired in a while
+
+// grand menace encounter tweaks
+ORTGAY_ODDS							1.0
+ORTGAY_MINTURN						125
+ORTGAY_MINSYS						80
+ORTGAY_LEAVE_MIN_TURNS				15
+ORTGAY_LEAVE_MAX_TURNS				20
+ORTGAY_SYSTEM_SEPARATION			3.0      // ly
+ORTGAY_SPOTTED_ODDS_PER_DE			0.01     // 0 - 1.  10% for a DN, which is 9 DE equivalents.
+ORTGAY_RESPAWN_FREQ					100
+ORTGAY_RESPAWN_ODDS_BASE			15
+ORTGAY_RESPAWN_ODDS_INC				0

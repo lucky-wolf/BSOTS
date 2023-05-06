@@ -1,0 +1,62 @@
+weapon
+{
+	name						@WEAPON_EMT_PD_ADV
+
+	weaponclass					emitter
+	weaponfamily				emitter
+
+	model1						""						// insert barrel model for tiny mounts here if we get them
+	model2						barrel_pdlaser.X		// NOTE: model2 for tiny pd weapons in small mounts
+
+	turretsize					tiny
+	turretclass					standard
+
+	requires					WEP_EmitrPD
+	requires					WEP_EmtAdv
+	cost						900		// 3x
+
+	burst_volleys				1
+	volley_duration				1
+	recharge_time				2.5
+
+	muzzle_effect				effects/LightEmitter_muzzle_adv.effect
+	muzzle_sound				Sounds/Weapons/emt_light_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/EMP-2.tga
+	icon_rect					"0 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	primary_pd					true		// Take on point defence role always
+
+	range						800
+	range_planet				0
+
+	chainlightning
+	{
+		impact_sound					Sounds/Weapons/emt_light_impact.wav
+		impact_sound_minrange			75
+		effect							effects/LightEmitter_Bullet_adv.effect
+
+		dam								60
+		branches						3
+		dam_pop							0
+		dam_infra						0
+		dam_terra						0
+	}
+
+	dam_est			0		// PD always zero
+
+	rating_frate	9
+	rating_dam		3
+	rating_acc		10
+	rating_range	3
+}

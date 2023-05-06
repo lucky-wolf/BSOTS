@@ -1,0 +1,89 @@
+weapon
+{
+	name						@WEAPON_MIS_KINETIC
+
+	weaponclass					missile
+	weaponfamily				missile
+
+	model1						barrel_l1_missile.X
+
+	turretclass					missile
+	turretsize					large
+
+	requires					WEP_KKMsl
+	cost						5000
+
+	solution_tolerance			180
+	burst_volleys				1
+	recharge_time				33
+
+	muzzle_sound				Sounds/Weapons/mis_missile_muzzle.wav
+	muzzle_sound_minrange		60
+	muzzle_effect				effects/Missile_muzzle.effect
+	muzzle_speed				800
+
+	icon_file					GUI/Weapons/Missiles.tga
+	icon_rect					"0 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	range						3000
+	range_planet				3000
+
+	missile
+	{
+		tracking						true
+		warhead_dam_scale				false	// not using standard warhead tech
+
+		impact_decal					decals/WeaponHit.decal
+		impact_decal_width				.5
+		impact_decal_height				.5
+		impact_decal_depth				.1
+
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/mis_kinetic_impact.wav
+		impact_sound_minrange			200
+		impact_effect					effects/Kinetic_Missile_Impact.effect
+		area_impact_effect				"effects/collide_asteroid.effect"
+		planet_impact_effect			"effects/Missile_Planet.effect"
+
+		thrust_sound					Sounds/Weapons/mis_missile_travel.wav
+
+		speed							800	// dumbfire = 5 seconds, so that's 10 seconds going out & back, leaving 5 seconds
+		ttl								15	// 5x800 = 4K
+
+		seek_attenuation				1.5	// Higher number = tighter turns/faster accel
+
+		model							missile_kinetic.X
+		health							50
+		dam								40
+		dam_radius						0.1
+		dam_collision					1000	// Add damage to target based on relative speed (up to specified amount when rel speed >= (max) speed)
+		mass							2000	// 5000 mod: tone down the knock-back!
+		thrust_effect					effects/Kinetic_Missile_Trail.effect
+		thrust_node						EffectNode
+		dumbfire_period					5		// Forces the angle of attack to be from above or below usually...
+
+		dam_pop							12304
+		dam_infra						0.001125
+		dam_terra						0.0009375
+	}
+
+	dam_est			360
+
+	rating_frate	10
+	rating_dam		10
+	rating_acc		10
+	rating_range	10
+}

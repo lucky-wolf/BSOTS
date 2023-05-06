@@ -1,0 +1,152 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DestroyerFission.X
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			destroyer
+	engine_techera			fission
+
+	requires				DRV_Fissn
+
+	health					800
+	mass					3500
+	cost					4000
+	maintenance_cost		300
+	cpoints					2300
+	ftlspeed				.5
+	range					5
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option	DRV_RecFiss
+
+	engine_sound			Sounds/Ships/Shared/DEFission_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEFission_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		22000
+		force_right			22000
+		force_up			22000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				82.5
+		rotspeed			0
+	}
+
+	thruster
+	{
+		node EngineFXNode03
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode04
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode05
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode06
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode07
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode08
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode09
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -130
+			max_azimuth 130
+			min_inclination -5
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -130
+			max_azimuth 130
+			min_inclination -5
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		mount
+		{
+			node LightGunNode03
+			min_azimuth 50
+			max_azimuth 310
+			min_inclination -5
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode07
+			min_azimuth 50
+			max_azimuth 310
+			min_inclination -5
+			max_inclination 90
+		}
+	}
+}

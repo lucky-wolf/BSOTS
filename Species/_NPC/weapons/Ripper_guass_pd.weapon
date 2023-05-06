@@ -1,0 +1,65 @@
+weapon
+{
+	name		@WEAPON_NPC_SLAVER_GAUSS_PD
+	weaponclass	bullet
+	model1		""						// insert barrel model for tiny mounts here if we get them
+	model2		"Species/_NPC/art/weapons/Ripperbarrel_s1standard.X"		// NOTE: model2 for tiny pd weapons in small mounts
+	turretmodel2	"Species/_NPC/art/weapons/Ripperturret_s1standard.X"
+	requires	WEP_PDtech
+	hpbonus		5
+	cost		500
+	turretsize		tiny
+	turretclass		standard
+	trackspeed_mod	1.0
+	burst_volleys	5
+	recharge_time	1.5
+	muzzle_speed	500
+
+	muzzle_effect	effects/PDGauss_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bal_gauss_pd_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"64 0 32 32"
+	range	450
+	range_planet	450
+
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+
+		impact_effect	effects/guass_impact.effect
+		impact_sound	Sounds/Weapons/bal_gauss_pd_impact.wav
+		impact_sound_minrange	50
+
+		rangetable
+		{
+			pb_range	245
+			pb_range_dev	.25
+			pb_range_dam	15
+
+			eff_range	365
+			eff_range_dev	.5
+			eff_range_dam	15
+
+			max_range	425
+			max_range_dev	.5
+			max_range_dam	15
+		}
+
+		effect		effects/PDGauss_bullet.effect
+		ricochet_mod 	-.5
+		ricochet_sound	Sounds/Weapons/bal_gauss_pd_rico.wav
+		ricochet_sound_minrange		50
+		mass 0
+
+		dam_pop		0
+		dam_infra	0
+		dam_terra	0
+	}
+
+	dam_est		0
+
+}
+
+

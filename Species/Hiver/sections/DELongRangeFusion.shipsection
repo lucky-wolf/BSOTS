@@ -1,0 +1,155 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DestroyerLongRangeFusion.X
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			destroyer
+	engine_techera			fusion
+	requires				DRV_LRFusn
+	health					1280
+	mass					4000
+	cost					13000
+	maintenance_cost		300
+	cpoints					2300
+	ftlspeed				.75
+	range					16
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option	DRV_PlsmFoc
+
+	engine_sound			Sounds/Ships/Shared/DEFusion_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEFusion_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		38000
+		force_right			38000
+		force_up			38000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				119.2125
+		rotspeed			0
+	}
+
+	thruster
+	{
+		node EngineFXNode01
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode02
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode03
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode04
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode05
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode06
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode07
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode08
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode09
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode10
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode11
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MedGunNode01
+			min_azimuth -140
+			max_azimuth 140
+			min_inclination -5
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MedGunNode02
+			min_azimuth -140
+			max_azimuth 140
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+}

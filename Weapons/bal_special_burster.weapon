@@ -1,0 +1,90 @@
+weapon
+{
+	name						@WEAPON_BAL_BURSTER
+
+	weaponclass					burster
+	weaponfamily				gauss
+
+	turretclass					standard
+	turretsize					large
+
+	model1						barrel_l1_HeavyDriver.X
+
+	requires					WEP_BrstrDrvr
+	cost						5000
+
+	burst_volleys				1
+	recharge_time				5
+
+	muzzle_speed				400
+	muzzle_effect				effects/HeavyDriver_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_burster_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Ballistic-2.tga
+	icon_rect					"0 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						2000	// 1300
+	range_planet				2000
+
+	bolt
+	{
+		beam_origin						0
+		beam_length						0.1
+
+		burster_shot_count				12
+
+		effect							effects/Burster_bullet.effect
+		expire_effect					effects/Burster_impact.effect
+		expire_sound					Sounds/Weapons/bal_burster_impact.wav
+		expire_sound_minrange			50
+
+		impact_effect					effects/Burster_impact.effect
+		impact_sound					Sounds/Weapons/bal_burster_impact.wav
+		impact_sound_minrange			50
+		impact_backoff					5				// so that the shells don't explode right against the target
+
+		dam_radius						25
+
+		rangetable
+		{
+			pb_range		700	// 350
+			pb_range_dev	5
+			pb_range_dam	250
+
+			eff_range		1400 // 800
+			eff_range_dev	7.5
+			eff_range_dam	250
+
+			max_range		2000 // 1300
+			max_range_dev	10
+			max_range_dam	250
+		}
+
+		ricochet_mod					-1.0
+		ricochet_sound					Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange			50
+
+		mass							500
+
+		dam_pop							41014
+		dam_infra						0.005625
+		dam_terra						0
+	}
+
+	dam_est			300		// based on 1/4 submunitions hitting
+
+	rating_frate	8
+	rating_dam		7
+	rating_acc		1
+	rating_range	8
+}

@@ -1,0 +1,8 @@
+@echo off
+cdd %~dp0
+
+pause This will change your tech tree to give all techs a given race could have to all races at the start of the game...
+
+perl "give all zero cost.pl" "..\techtree\MasterMasterTechList.tech" > "..\techtree\MasterTechList.tech"
+
+pause Press any key to exit %~n0...

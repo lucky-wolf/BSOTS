@@ -1,0 +1,225 @@
+2.5:
+^ Fixed: 
+	Morrigi CR Barrage firing arcs
+	Morrigi Freighter, Mega-Freighter weapon icon placements
+	DE Minelayer Sat icon placements (all races)
+	Corrosive and Nanite mines now work properly (messy, like their missile counterparts, but they do work)
+	Human Spinal Mount shoots from the correct node (visuals are improved)
+	Flagship command requires huge construction
+	Many weapon icon placements fixed & made more flexible (more options)
+	Many ships firing arcs improved
+
+^ Updated:
+	Tech Tree snapshot image (should be 100% accurate)
+	
+^ Added:
+	Fusion age start variant tech file
+	BTM script for choosing tech file
+	Many new triple barrel huge mount weapon variants
+	Mini-Torpedo weapons for bomber drones
+	
+^ Technology:
+	Dual mounts are all core techs now
+	Reduced tech costs and scaled them with a better curve
+	Sclaed tech costs of early technology to make early game flow better
+	Warheads start with conventional explosive, and then move to nukes
+	Nuclear Mines requires Nuclear Warheads (not the starting conventional warheads)
+	Autocannons require the underlying level of ballistics size tech (so light requires gauss, ACs require mass drivers, etc.)
+	Many weapon techs follow the principle that if you get the base technology, you'll get several more before another roll is made to see if you get the most advanced varieties
+		Means either you have a base tech or not, but you'll be able to flesh it out and improve it significantly before your scientists can't proceed (if they roll badly)
+	Advanced Sensors now require Fusion (same as advanced cloaking)
+	Small Fusion Drives now requires something that can benefit from it - bio-misiles, assault shuttles, drones
+	Deconstruction is now free (Ai and players were having a hard time finding repair - which is behind that)
+	Disabled commerce raiding (Ai wastes a ton of ships on pointless raiding that doesn't work worth a damn)
+	
+^ Weapons:
+	Reduced population damage by about half from ship based weapons (with a few obvious exceptions, such as the siege driver, which was dramatically increased)
+	Increased infrastructure damage by 3x
+	Reduced climate damage by about 1/2
+	Rebalanced the Siege Drive (imagine throwing an extinction level event asteroid at a world - with every shot) 
+	Mines self-destruct as they used to (2 min timer) due to battlefield becoming utterly overwhelmed with them
+	Turret tracking is greatly reduced (so that this actually has some effect on whether weapons can fire or not)
+	PD weapons are no better than 1x turret speed (beam PD is .5 turret speed)
+	Enhanced Pulsed Laser visuals (and X-Ray in particular)
+	Photon torpedos
+		get 1,2,4 shots for type I, II, III
+		have some armor penetration for type II and type III
+	Disruptor line is a bit less damaging, but has stronger EMP effects
+	Revamped the autocannon line 
+		made the costs much more reasonable
+		as long ranged as standard ballistics
+		as poor accuracy as standard ballistics
+		have less ricochet as standard ballistics
+		scaled the ROF to be fastest for the light AC, and get slower with size, which gives a better asthetic visually (and doesn't crush your frame rates as badly)
+		improved the sound effects
+	Enhanced shotgun PD (but ballistic PD is just... not any good at shooting down small targets!)
+	Added triple barrel huge weapons for huge (aka projector) mounts
+		triple ballistic cannons is now a huge mount
+		triple energy cannons (comes with with dual energy cannons)
+		triple beam weapons (comes with dual beam weapons such as positron beam, etc.)
+	Added dedicated mini-torpedos
+		generally shoot 2x as often, but do 1/3 the damage (hence 2/3 as powerful as a standard torp)
+		only allowed to be mounted on bomber drones
+	Improved Shotgun PD
+	Enhanced visuals for fast missiles
+	
+^ Ships:
+	Ships are -20% health
+	Liir are -20% health more than everyone else, making them truly the glass cannons that they're supossed to be
+	Stations now require maintainance (see maintainance, below)
+	DE -> [S]
+	CR -> [L]
+	DN -> [H]
+	DNWar -> Broadside
+	Ai option for a bridge section increases the section's cost by 2x
+	Ships can have deflective and reflective enhancements simultaneously
+	Shileds are more extreme (fast shields are really fast, but really low stopping power vs. heavy shields are slow, but quite high stopping power)
+	Scanner Satts no longer allow Quantum Chaff or Jammer options
+	DeepScan bridge no longer allow Quantum Chaff or Jammer options
+	Deep Scan mission no longer allows Jammer or Quantum Chaff as options (made no sense on DE)
+
+^ Drones
+	Bomber Drones now have dedicated mini-torpedo mounts and weapons
+		So what you can place on a bomber drone makes much more sense now
+		They're shorter ranged than their full ship based counterparts
+		Seeking mini-torps move faster but explode much sooner
+	All mounts changed to strafe
+		Hence missiles are never allowed (except for bomber drones)
+	Firing arcs for drones has been massively narrowed (they should never have been able to fire sideways out of their fixed mounts)
+		This may help SOTS point the drones at their targets when shooting!
+	
+^ Encounters:
+	The galaxy is a bit rougher in general
+
+^ Maintanance:
+	Greatly incrased maintainance costs to better balance the economy:
+	ship class			bsots cost	vanilla cost
+	-----------------	----------	------------
+	[S] satellite		$250		$100
+	[L] satellite		$750		$500
+	[H] satellite		$1,500		$1,000
+	[S] ship			$3,000		$500
+	[L] ship			$15,000		$3,000
+	[H] ship			$45,000		$15,000
+	[H] flagship		$60,000		$15,000
+	Asteroid Monitor	$10,000		$0
+	Trade Station		$0			$15,000
+	Habitat Station		$0			$15,000
+	Science Station		$10,000		$15,000
+	Sensor Station		$10,000		$15,000
+	Command Station		$10,000		$15,000
+	Ship Yard			$50,000		$15,000
+	
+^ Thanks:
+	To Puglebuble's Ngen mod for some of these ideas (especially reduced turret tracking)
+	
+Want:
+- Redo the autocannon line to spawn off of main mass driver line (i.e. medium requires medium mass driver, etc.)
+	- Allow autocannon duals based on ballistic duals
+	- Provide an AP variant of ACs
+	- enlarge the effects of ACs so you can see them better
+		- maybe slow down their ROF so you can see them better...
+	- force ACs & dual turrets not to be able to use strafe
+		- ??? they'd have to be class dumbfiremissile?!  but I want them to benefit from other ballistic characteristics
+			STUPID, STUPID, STUPID!
+	
+	
+Ideas:
+- antimatter only available after getting various other techs (various fusion age weapons, battleships, ? should enable it?)
+? Extended focus beams?
+	medium mount beams with longer range?
+		Prereq for HCL types...
+ 
+New BSOTS
+- Increase DN HP ~ 20%?
+- give cruiser construction at start, and dn construction
+	- but add "battle cruisers" and "battleships" as prereqs for the battle versions of these things...
+	- allow all sats?
+	- allow noncom cruisers?
+		- refinery
+		- biome (with biome tech)
+		- sats? [could req. combat]
+	- allow noncom DNs?
+		- constructors (make them all DN sized)
+		- sats? [could req. combat]
+- restrict DE sats - req. combat DE?
+- Huge weapons
+	- pulsed lancers (turreted HCLs)
+
+TODO:
+	Add tech to tree to research for projector missile mounts
+		? separate out planetary missile techs?
+	Put CR carriers and DN carriers on industrial tree (DN don't require CR, just construction + combat drones)
+		? optional: move DE carriers to industrial as a separate tech from combat drones themselves :)
+		
+IDEAS:
+	Invert speed?
+		DE slowest
+		CR moderate
+		DN fastest
+		
+		... strat speed especially ...
+		Biggest ships = biggest engines
+		
+	DE = minor armor / reflectives only
+	CR = minor of both
+	DN = major of both
+
+	Require one advanced combat bridge (AiC, HH or Strafe) for auto bridge unlocks (Assault, etc.)
+	Update stations to indicate that they're not DNs (make them section_class destroyers?)
+		
+Fix Construction Tree
+	Projector sections (Artillery) needs its own tech (CR & DN)
+
+Dual Weapons
+	* Require DRN_AdvRob and IND_CyberInt (integrated robotics + cybernetic integration)
+
+
+New Weapon Variants
+	* Miniature Medium Emitter (small mount)
+	* Miniature Heavy Emitter (medium mount)
+	* Improved Heavy Emitter (large mount)
+	* Improved Emitter Projector
+
+***
+Tech Tree Mount Indicators
+	* Use the enable section to enable mount(s)
+	* can only be used with weapons which don't enable a section
+		^ stop enabling sections with weapons - they should be specified in the construction tree!
+
+***
+Make satellites and weapons beyond basics require combat starship engineering
+
+***
+Add cpoint increase for all weapons (? can be done ?)
+Normalize all health values for DE/CR/DN (mainly reduce Armour/Battle)
+
+
+-----------------------------------------
+Adde all of the hard-coded weapons & sections - and just hide them behind requires IND_Hidden
+-----------------------------------------
+Warning: Weapon not found: "Weapons/trp_plasma.weapon" - Was it added to the index file?
+Warning: Weapon not found: "Weapons/las_pd.weapon" - Was it added to the index file?
+Warning: Weapon not found: "Weapons/phs_pd.weapon" - Was it added to the index file?
+
+Warning: [Species/Human/sections/DEAntimatter.shipsection] Can't find ship section in dictionary.
+Warning: [Species/Human/sections/CRAntimatter.shipsection] Can't find ship section in dictionary.
+Warning: [Species/Human/sections/DNAntimatter.shipsection] Can't find ship section in dictionary.
+Warning: [Species/Human/sections/DEShield.shipsection] Can't find ship section in dictionary.
+Warning: [Species/Human/sections/CRShield.shipsection] Can't find ship section in dictionary.
+
+
+new				= old
+--------------------------------------------------------
+Barrage [B] 	= CRAssault (mixed torpedo +)
+Battle [B]		= CRBattleBridge (mixed fixed beams +)
+Bridge [B]		= CRCommand
+Hammerhead [B]	= CRHammerHead
+Strafe [B]		= CRStrafe
+
+Barrage [M]		= CRBarrage (mixed torpedo +)
+Battle [M]		= CRArmor
+Big Gun [M] 	= CRProjector
+Blazer [M]		= CRBlazer
+Torpedo [M]		= CRTorpedo (repurposed CRBlazer)
+War [M]			= CRWar

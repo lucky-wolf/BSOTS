@@ -1,0 +1,486 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/Hunter_Fusion.X
+	dam_model				Species/Tarkas/art/sections/Hunter_Fusion.X
+	requires				DRV_Fusn
+	requires				DRN_BtlRdrs
+	section_type			mission
+	section_class			cruiser
+	preview_ofs				"2 -170 0"
+	entity_class			"Hunter"
+	design_class			rider
+
+	health					16800
+	mass					20000
+	cost					92000
+	cpoints					18880
+
+	autonomous				true	// actually means this is a ship with only a mission section
+
+	ftlspeed				.5
+	range					10
+	crew					20
+
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		180000
+		force_right			180000
+		force_up			180000
+
+		torque_yaw			900000000
+		torque_pitch		900000000
+		torque_roll			900000000
+
+		speed				120.0
+		rotspeed			60
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -70
+			max_azimuth 70
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -10
+			max_azimuth 90
+			min_inclination 0
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -90
+			max_azimuth 10
+			min_inclination 0
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -70
+			max_azimuth 70
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -70
+			max_azimuth 70
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode06
+			min_azimuth -70
+			max_azimuth 70
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode07
+			min_azimuth -70
+			max_azimuth 70
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+		showturrets false
+
+		mount
+		{
+			node MediumStrafe01
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+		mount
+		{
+			node MediumStrafe02
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+		mount
+		{
+			node MediumStrafe03
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+		mount
+		{
+			node MediumStrafe04
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+		mount
+		{
+			node MediumStrafe05
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+		mount
+		{
+			node MediumStrafe06
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+		mount
+		{
+			node MediumStrafe07
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+		mount
+		{
+			node MediumStrafe08
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -120
+			max_azimuth 0
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode02
+			min_azimuth 0
+			max_azimuth 120
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -120
+			max_azimuth 0
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth 0
+			max_azimuth 120
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode05
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode06
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode07
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode08
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode09
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode10
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode11
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode12
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode03
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+	thruster
+	{
+		node EngineThruster04
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+	thruster
+	{
+		node EngineThruster05
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+	thruster
+	{
+		node EngineThruster06
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+	thruster
+	{
+		node EngineThruster07
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+	thruster
+	{
+		node EngineThruster08
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+	thruster
+	{
+		node EngineThruster09
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+	thruster
+	{
+		node EngineThruster10
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+	thruster
+	{
+		node EngineThruster11
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+}

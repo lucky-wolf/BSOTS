@@ -1,0 +1,65 @@
+weapon
+{
+	name						@WEAPON_EMT_LIGHT_ADV
+	weaponclass					emitter
+	weaponfamily				emitter
+
+	model1						barrel_s1_xraylaser.x
+	turretmodel1				turret_s1standard.x
+	model2						barrel_s1_xraylaser.x
+	turretmodel2				turret_s1standard.x
+	model3						barrel_s1_xraylaser.x
+	turretmodel3				turret_s1standard.x
+
+	turretclass					standard
+	turretsize					small
+
+	requires					WEP_LtEmitr
+	requires					WEP_EmtAdv
+	cost						1500			// 3x
+
+	burst_volleys				1
+	volley_duration				.75
+	recharge_time				7.5			// 25% faster
+
+	muzzle_effect				effects/LightEmitter_muzzle_adv.effect
+	muzzle_sound				Sounds/Weapons/emt_light_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/EMP-2.tga
+	icon_rect					"64 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	secondary_pd				true		// Take on point defence role sometimes
+
+	range						600		// +250m
+	range_planet				1000
+
+	chainlightning
+	{
+		impact_sound					Sounds/Weapons/emt_light_impact.wav
+		impact_sound_minrange			75
+		effect							effects/LightEmitter_Bullet_adv.effect
+
+		dam								140			// 2x
+		branches						2			// +1
+		dam_pop							320
+		dam_infra						0.000225
+		dam_terra						0
+	}
+
+	dam_est			40
+
+	rating_frate	5
+	rating_dam		5
+	rating_acc		10
+	rating_range	2
+}

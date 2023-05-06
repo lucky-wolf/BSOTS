@@ -1,0 +1,91 @@
+weapon
+{
+	name						@WEAPON_MIS_SMALL_FAST
+
+	weaponclass					missile
+	weaponfamily				missile
+
+	model1						barrel_pdmissile.X
+	model2						barrel_pdmissile.X
+	turretmodel2				turret_pd.x
+
+	turretclass					missile
+	turretsize					small
+
+	requires					WEP_SmMis
+	requires					WEP_FMsl
+	cost						1000		// 2x
+
+	solution_tolerance			180
+	burst_volleys				1
+	recharge_time				22
+
+	muzzle_speed				180
+	muzzle_effect				effects/Missile_muzzle.effect
+	muzzle_sound				Sounds/Weapons/mis_missile_muzzle.wav
+	muzzle_sound_minrange		60
+
+	icon_file					GUI/Weapons/Missiles-3.tga
+	icon_rect					"128 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	range						1800	// fire at 75% of max range
+	range_planet				1800
+
+	missile
+	{
+		tracking						true
+		warhead_dam_scale				true
+
+		impact_decal					decals/WeaponHit.decal
+		impact_decal_width				.5
+		impact_decal_height				.5
+		impact_decal_depth				.1
+
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/mis_missile_impact.wav
+		impact_sound_minrange			200
+		impact_effect					effects/Missile_Impact.effect
+		area_impact_effect				"effects/collide_asteroid.effect"
+		planet_impact_effect			"effects/Missile_Planet.effect"
+
+		thrust_sound					Sounds/Weapons/mis_missile_travel.wav
+
+		speed							180
+		ttl								13.333	// range: 2400m
+
+		seek_attenuation				12	// Higher number = tighter turns/faster accel
+
+		model							missile.X
+		health							5
+		dam								25
+		dam_radius						12
+		mass							25
+		thrust_effect					effects/FastSmallMissile_Trail.effect
+		thrust_node						EffectNode
+		dumbfire_period					1.333
+
+		dam_pop							6151
+		dam_infra						0.00015
+		dam_terra						0.000125
+	}
+
+	dam_est			50
+
+	rating_frate	2
+	rating_dam		1
+	rating_acc		10
+	rating_range	7
+}

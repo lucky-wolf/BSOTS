@@ -1,0 +1,47 @@
+weapon
+{
+	name		@WEAPON_NPC_SYSK_DEFENCEBEAM
+	weaponclass	beam
+	model1		"Species/_NPC/art/weapons/DefenceBarrel.X"
+	turretmodel1	"Species/_NPC/art/weapons/DefenceTurret.X"
+	requires 	WEP_MesBm
+	hpbonus		500
+	cost		10000
+	turretsize		small
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	1
+	recharge_time	2
+	muzzle_effect	effects/MesonBeam_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bem_meson_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"128 0 32 32"
+	
+	range 2000
+	range_planet 2000
+		
+	beam
+	{
+		impact_effect	effects/SK_Defencebeam_Impact.effect
+		impact_sound	Sounds/Weapons/bem_meson_impact.wav
+		impact_sound_minrange	50
+		effect		effects/SK_Defencebeam_Bullet.effect
+		dam			600
+		force		0
+
+		dam_pop		50000
+		dam_infra	.0005	
+		dam_terra	0.05
+	}
+
+
+	rating_frate	4
+	rating_dam	9
+	rating_acc	9
+	rating_range	7
+
+	dam_est		300
+
+}

@@ -1,0 +1,59 @@
+weapon
+{
+	name						@WEAPON_CAN_NODECANNON
+
+	weaponclass					nodecannon
+	weaponfamily				heavybeam
+
+	model1						NodeCannon.x
+
+	turretclass					nodecannon
+	turretsize					large
+
+	requires					DRV_Rend
+	cost						22000
+
+	solution_tolerance			5
+	burst_volleys				1
+	volley_duration				3
+	recharge_time				90
+
+	muzzle_sound				Sounds/Weapons/bem_rippernode_muzzle.wav
+	muzzle_effect				effects/Lancer_muzzle.effect
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Ballistic-2.tga
+	icon_rect					"128 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			true
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_explicit_target			true
+	fc_exclusive_launch			true
+	fc_targets_expire			true
+	fc_controllable				true
+	fc_holdsfire				true
+	pinpoint					false
+
+	range						1250
+
+	nodecannon
+	{
+		impact_sound				Sounds/Weapons/bem_lancer_impact.wav
+		impact_sound_minrange		100
+		impact_effect				effects/NodePoint_impact.effect
+		impact_radius				300
+		impact_duration				5
+		beam_effect					effects/Node_Beam.effect
+	}
+
+	dam_est			500
+
+	rating_frate	1
+	rating_dam		10
+	rating_acc		10
+	rating_range	5
+}

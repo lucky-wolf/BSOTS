@@ -1,0 +1,151 @@
+shipsection
+{
+	model					Species/Human/art/sections/DreadnoughtDeflector.X
+	requires				SLD_Def
+	socket_aft				CommandNode
+	section_type			command
+	section_class			Dreadnought
+
+	health					11200
+	mass					20000
+	cost					200000
+	maintenance_cost		15000
+	cpoints					11200
+	crew					60
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			32000000000
+		torque_pitch		3000000000
+		torque_roll			3000000000
+
+		speed				-10
+		rotspeed			15
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth 30
+			max_azimuth -160
+			min_inclination -20
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode06
+			min_azimuth -30
+			max_azimuth 160
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightGunNode01
+			min_azimuth -30
+			max_azimuth 160
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightGunNode02
+			min_azimuth -20
+			max_azimuth 120
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightGunNode03
+			min_azimuth 0
+			max_azimuth -110
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightGunNode04
+			min_azimuth 110
+			max_azimuth 0
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightGunNode05
+			min_azimuth 20
+			max_azimuth -120
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode06
+			min_azimuth 30
+			max_azimuth -160
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+}

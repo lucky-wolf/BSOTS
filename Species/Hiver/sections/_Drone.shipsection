@@ -1,0 +1,95 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/Drone.X
+	preview_ofs				"1 40 0"
+	section_class			destroyer
+	design_class			rider
+	dam_model				Species/Hiver/art/sections/Drone.X
+	entity_class			"DroneRider"
+
+	health					640
+	mass					400
+	command_cost			0
+	maintenance_cost		0
+	autonomous				true	// actually means this is a ship with only a mission section
+
+	requires				DRN_Cmbt
+
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		speed				350
+
+		// NOT USED BY DRONES:
+		// (Force_xxx values still used by traffic to determine whether ship can move though, so leave non-zero for now.)
+		//
+		rotspeed			90
+		force_forward		160000
+		force_right			100000
+		force_up			100000
+		torque_yaw			7000000
+		torque_pitch		7000000
+		torque_roll			7000000
+	}
+
+	bank
+	{
+		turretclass strafe
+		turretsize small
+		showturrets false
+
+		mount
+		{
+			node gunnode01
+			min_azimuth	-10
+			max_azimuth	10
+			min_inclination	-10
+			max_inclination	10
+		}
+	}
+
+	bank
+	{
+		turretclass strafe
+		turretsize small
+		showturrets false
+
+		mount
+		{
+			node gunnode02
+			min_azimuth	-10
+			max_azimuth	10
+			min_inclination	-10
+			max_inclination	10
+		}
+	}
+
+	engine_sound			Sounds/Ships/Shared/_Drone_travel.wav
+
+	thruster
+	{
+		node engineNode
+		effect effects/HumanShuttle_Thrust.effect
+		idle_effect effects/HumanShuttle_Idle.effect
+	}
+}

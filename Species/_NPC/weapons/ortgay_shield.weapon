@@ -1,0 +1,55 @@
+weapon
+{
+	name		@WEAPON_NPC_ORTGAY_SHIELD
+	weaponclass	shieldprojector
+	weaponfamily	conventionalbeam
+	model1		"Weapons/art/DummyBarrel.X"
+	turretmodel1	"Species/_NPC/art/weapons/gort_shield.X"
+	requires 	SLD_Proj
+	hpbonus		500
+	cost		10000
+	turretsize		large
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	15
+	recharge_time	20
+	muzzle_effect	effects/MesonBeam_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bem_meson_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons_2.tga
+	icon_rect	"96 32 32 32"
+
+	range 10000
+	range_planet 10000
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	secondary_pd 				true	// Take on point defence role when not otherwise busy
+
+	projectedshield
+	{
+		beam_effect "effects/SheildBeam_Bullet.effect"
+		model "Models/Shields/sld_projector.X"
+		radius 36.3
+		expand_rate 36.3
+		length 100
+		beams 4
+		spin_rate 360
+		fade_time 2
+	}
+
+	rating_frate	5
+	rating_dam	0
+	rating_acc	9
+	rating_range	5
+
+	dam_est		700
+
+}

@@ -1,0 +1,89 @@
+weapon
+{
+	name						@WEAPON_CAN_AM_POL_DUAL
+
+	weaponclass					polarizedplasma
+	weaponfamily				energycannon
+
+	model1						barrel_m2_warquoit.x
+	turretmodel1				turret_m2standard.x
+	model2						barrel_m2_warquoit.x
+	turretmodel2				turret_m2standard.x
+
+	turretclass					standard // missile stops them from being in strafe and drone, but restricts azimuth and turret speed :'(
+	turretsize					medium
+
+	requires					WEP_PolAm
+	requires					WEP_DualAmCan
+	cost						45000	// 3x
+
+	burst_volleys				1
+	recharge_time				8		// 1.33
+
+	muzzle_speed				600
+	muzzle_effect				effects/Chakram_Muzzle.effect
+	muzzle_sound				Sounds/Weapons/Dsc_Chakram_muzzle.wav
+	muzzle_sound_minrange		100
+
+	buildup_delay				1
+	buildup_sound				Sounds/Weapons/Dsc_Chakram_charge.wav
+	buildup_sound_minrange		100
+
+	icon_file					GUI/Weapons/Polarized.tga
+	icon_rect					"128 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						2000
+	range_planet				2000
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/Chakram_bullet.effect
+		impact_effect					effects/Chakram_impact.effect
+		expire_effect					effects/Chakram_Expire.effect
+
+		impact_sound					Sounds/Weapons/Dsc_hvy_impact.wav
+		impact_sound_minrange			50
+
+		rangetable
+		{
+			pb_range		100		// 5% of range
+			pb_range_dev	3
+			pb_range_dam	200		// .8 am
+
+			eff_range		1800	// 90% of range
+			eff_range_dev	4
+			eff_range_dam	280
+
+			max_range		2000
+			max_range_dev	5
+			max_range_dam	200
+		}
+
+		ricochet_mod					-2.5
+		ricochet_sound					Sounds/Weapons/las_all_rico.wav
+		ricochet_sound_minrange			10
+
+		dam_pop							6151		// .5 am
+		dam_infra						0.000336	// 2x am
+		dam_terra						0.000028
+	}
+
+	dam_est			180
+
+	rating_frate	5
+	rating_dam		7
+	rating_acc		2
+	rating_range	8
+}

@@ -1,0 +1,73 @@
+shipsection
+{
+	model					Species/Human/art/sections/DestroyerBiowar.X
+	preview_ofs				"1.8 0 -1.8"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			destroyer
+
+	health					320
+	mass					1500
+	cost					42000
+	maintenance_cost		300
+	cpoints					3680
+
+	requires				GRP_BIOMISSILE
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-20
+		rotspeed			-15
+	}
+
+	bank
+	{
+		turretclass missilerider
+		turretsize	large
+
+		mount
+		{
+			node "Missile"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+}

@@ -1,0 +1,181 @@
+shipsection
+{
+	model					Species/Human/art/sections/CruiserFusion.X
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			cruiser
+
+	requires				DRV_Fusn
+	requires				DRV_Node
+
+	health					2880
+	mass					6000
+	cost					30000
+	maintenance_cost		3000
+	cpoints					4032
+
+	engine_techera			fusion
+	nodespeed				5
+	ftlspeed				.95
+	range					18
+
+	crew					30
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option	DRV_PlsmFoc
+
+	engine_sound			Sounds/Ships/Shared/DEFusion_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEFusion_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		45000
+		force_right			45000
+		force_up			45000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				110
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -7
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -7
+			max_inclination 90
+		}
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster04
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster05
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster06
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+	thruster
+	{
+		node EngineThruster07
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster08
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster09
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster10
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+	thruster
+	{
+		node EngineThruster11
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster12
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster13
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+}

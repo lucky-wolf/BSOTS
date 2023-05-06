@@ -1,0 +1,129 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/CruiserHammerHead.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					2080
+	mass					3500
+	cost					15000
+	maintenance_cost		3000
+	cpoints					1872
+	crew					24
+
+	requires				IND_CRHmrHead
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	shield_model_offset "0 -10 0"
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		7000
+		force_right			7000
+		force_up			7000
+
+		torque_yaw			5.2e+8
+		torque_pitch		5.2e+8
+		torque_roll			5.2e+8
+
+		speed				0
+		rotspeed			85
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -115
+			max_azimuth 115
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -115
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -115
+			max_azimuth 60
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth 115
+			max_azimuth -115
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode05
+			min_azimuth 115
+			max_azimuth -90
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode06
+			min_azimuth 115
+			max_azimuth -60
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+}

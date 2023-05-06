@@ -1,0 +1,68 @@
+weapon
+{
+	hidden			1						// not selectable by user
+	name		@WEAPON_NPC_SILQUEEN_CANNON
+	weaponclass	energy
+	model1		"Species/_NPC/art/weapons/DefenceBarrel.X"
+	turretmodel1	"Species/_NPC/art/weapons/HeadTurret.X"
+	requires 	WEP_plsmcan
+	hpbonus		20
+	cost		3000
+	turretsize		medium
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	recharge_time	5
+	muzzle_speed	350
+	muzzle_sound	Sounds/Weapons/can_plasma_silicoid_muzzle.wav
+	muzzle_effect	effects/AcidCannon_muzzle.effect
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"32 96 32 32"
+	solution_tolerance 5
+
+	range 500
+	range_planet  1240
+
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+
+		impact_sound	Sounds/Weapons/can_plasma_impact.wav
+		impact_sound_minrange	50
+		impact_effect	effects/AcidCannon_Impact.effect
+		expire_effect   "effects/AcidCannon_Expire.effect"
+
+		thrust_sound	Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange		25
+
+		rangetable
+		{
+			pb_range	230
+			pb_range_dev	.5
+			pb_range_dam	70
+
+			eff_range	400
+			eff_range_dev	1.5
+			eff_range_dam	120
+
+			max_range	580
+			max_range_dev	2.0
+			max_range_dam	75
+		}
+
+		effect		effects/AcidCannon_Bullet.effect
+
+		dam_pop		25000
+		dam_infra	0
+		dam_terra	0
+	}
+
+	dam_est		50
+
+	rating_frate	5
+	rating_dam	5
+	rating_acc	4
+	rating_range	5
+}

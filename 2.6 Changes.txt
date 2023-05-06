@@ -1,0 +1,237 @@
+TEST:
+	Corrosive and Nanite mines
+		using "missile" data instead of "mine" - do they work?
+		Do they act like mines?
+		Do they explode like corrosive & nanite missiles?
+	Wraith & Spyship
+		Removed range - does that make a difference?
+	Shield Bursters
+		Based on COL - seems reasonable that they may be workable...
+
+TODO!
+			
+	Analyze the projector mount weapons (especially wrt new 3x barrel variants) and fix estdam - so that AI players make good choices & good suggestions are made to player)
+
+ICING:
+	replace mis_mirv_*.weapon's thrust_effect with mirv-specific missile trails (normal & fast)
+	fast corrosive / fast nanite - missile trail effects...
+	set missile muzzle_speed to 1/2 their final speed?  does this look better?
+		
+DELETE: 
+	shield bursters ?
+		?? add a shield burster beam?
+
+CHANGES:
+	Armor:
+		Reinforced hulls now requires antimatter (to give standard armors more a day in the sun - rather than immediately having access to reinforced hulls)
+	Ships:
+		Fixed a number of bugs with turret models and drone models
+		Standardized section naming between size classes
+	CnC:
+		Standard CNC -> Bonus #1 -> Improved CnC -> Bonus #2 -> Advanced CnC -> Flag CnC
+	Economy:
+		Removed Trade (it's just too tedious with it)
+			Except Morrigi, who retain it, but was nerfed by 1/2
+		Tech costs 2/3 what it did in BSOTS 2.5 to account for the loss of trade
+	Weapons:
+		corrosive & nanite missiles fire every 36s instead of every 35s
+		other missiles fire every 33s instead of every 32s
+		added fast direct fire and dual fast direct fire missile racks (fire every 10s instead of every 15s)
+		added fast corrosive & fast nanite missiles (fire every 24s)
+		fast missiles fire every 22s instead of every 24s
+		fast missiles are 50% faster than standard, and fire 50% more often (3:2)
+		fast missiles are now exactly as robust as standard missiles
+		fast missiles are 2x as maneuverable
+		fast missiles have the same range as standard variants (they just get there sooner)
+		removed spinal heavy beams (OP - spinal beams make more sense)
+		added heavy beams as huge weapons (single barreled HCL, Lancer, Cutting Beam)
+		dual huge missiles are nerfed to fire at the same rate as all other missiles (33s std, 24s fast)
+		dual huge missiles range are a bit extended to allow them to find additional targets
+	Tech:
+		weapon techs now show you what size of turret is native for the given weapon type (small, medium, etc.)
+		weaponized corrosives now requires terraforming bacteria (used to be advanced genomics)
+		dual huge missile launchers requires any combat construction
+		fast missiles requires antimatter
+		dual missile launchers require antimatter
+		corrosive and nanite missiles require large missiles
+		KK missiles require neutronium rounds
+		Several techs are available without any combat construction techs (emitters, plasma cannons, cloaking, ...)
+		most dual turrets now require fusion tech (missiles require antimatter)
+		autocannons do not require other types of ballistic weapons (they're independent)
+		stations are zero-cost techs that come with the necessary prerequisites
+	
+FIXES/IMPROVEMENTS
+	New drone models from Warcat
+	New hiver 3x barrel huge turret (fixed)
+	Fast missiles fire every 24s, instead of every 32s for all sizes
+	Huge missile mounts fire every 32s, instead of every 16s (was way OP)
+	Huge Fast missiles fire every 24s
+	Nerfed ballistic weapons knock-back (with dual and triple turrets was knocking things around more than destroying them!) (rescaled all ballistic knock-back effects)
+	Improved turret trackign for higher tier PD (1, 1.5, 2.0 laser & ballistic) or (.75, 1.125, 1.5 for beamer PD)
+	
+IDEAS
+	Tech tree: have core concept techs that unlock whole trees
+		Superconductivity: ballistics
+		Weaponized Photonics: Lasers & Photonic Torps
+		Weaponized Plasma: Plasma cannons & Plasma Torps & Lightning Emitters
+		Micro Fission Engines: Missiles
+		Gravity Control: tractor beams, gravity mines, repulsars
+	
+	Spinal Mounts
+		Could have S = destroyer, M = cruiser, L = dreadnought
+		similarly with 'seige' or other types - strafe?
+		
+New technologies to match existing weapons:
+	3x Ballistic Gun
+	3x Plasma Cannons (could do a very large single barrel variation)
+	3x Beam weapons
+	2x Huge missile launchers
+	1x Huge lightning emitter
+	1x Huge laser beams / pulse cannons
+	
+New Weapons + Tech:
+	Rapid fire missile launcher (just once, automatically applied for all sizes and standard missile types: rapid fire standard missiles, rapid fire fast missiles, not for corrosive or nanite?)
+	Advanced Emitters
+	3x barrel standard weapons:
+		3x small/medium/large turrets (doesn't work for huge turrets - since many start with 3x barrels)
+		3x laser, ballistic, plasma
+	Cloaked Missiles (Torps?)
+	Armored Missiels (lower yeild, duh)
+	Swarmer Missiles (not MW - or make MW much better - faster for one thing)
+		But really, we need a swarmer launcher - huge mount?  rapid fire a group as a salvo...
+	Micro Cloaking Device
+		Cloaked mines
+		Cloaked missiles
+		Cloaked drones
+		Cloaked torps?
+	
+	2nd / 3rd Tier Ballistic PD
+		AP PD?
+		Autocannon PD?
+		AP Autocannon PD?
+		
+Tech Changes:
+	Nuke mines linked from "nuclear warhead" not "explosive warhead"
+	Nanite missiles and Corrosive missiles linked from "explosive warhead" not from "heavy missiles" nor each other
+	Added "Dual Huge Missile Launchers" linked from "heavy missiles"
+	
+	Moved cloaking & adv. cloaking from shield tree to sensors tree linked from "FTL Communications"
+	
+	Redid disruptor cannon line:
+		disruptor torp -> disruptor cannon
+			disruptor cannon -> heavy disruptor cannon
+			disruptor cannon -> disruptor projector
+			disruptor cannon -> dual disruptor cannon
+	Added "Dual Inertial Cannons" linked from "Inertial Cannon"
+	Added "Advanced Emitters" to energy weapons linked from "Emitter Projector"
+	Added "Xray PD Beamers" off of "Xray Beamer"
+	Added "Xray PD Lasers" off of "Xray Lasers"
+	Added "Triple Plasma Cannons"
+	Added "Triple Fusion Cannons"
+	Added "Triple Antimatter Cannons"
+	Added "Triple Neutron Beams"
+	Added "Triple Positron Beams"
+	Added "Triple Meson Beams"
+	Added "Triple Gravity Beams"
+	Added "Triple Pulsed Gravity Beams"
+
+	Moved "Reinforced Hull" to branch off of "Hardened Structures" (used to be off of heavy platforms)
+
+	Rearranged CnC:
+		Holo -> DE CNC -> Resonant Aglo -> CR CNC -> Holo Algo -> DN CnC
+		*** This means that links from these have changed as well:
+			improved cnc -> AI techs (used to be resonant algorithms)
+			holographic algorithms  -> AI techs (used to be advanced CNC aka DN CnC)
+			
+	Nuke mines linked from "nuclear warhead" not "explosive warhead"
+		WEP_NukeWhd -> WEP_NukMine
+
+	Nanite missiles and Corrosive missiles linked from "explosive warhead" not from "heavy missiles" nor each other
+		WEP_Nukes -> WEP_CorMsl
+		WEP_Nukes -> WEP_NanMsl
+
+	Added "Dual Huge Missile Launchers" linked from "heavy missiles"
+		WEP_HvyMsl -> WEP_DualHugeMsl (new) "ProjectorMissiles.tga"
+	
+	Moved cloaking & adv. cloaking from shield tree to sensors tree linked from "FTL Communications"
+		CCC_FTLCom -> SLD_Clk
+	
+	Redid disruptor cannon line:
+		disruptor torp (WEP_Dsrptr) -> disruptor cannon (WEP_DsrCan)
+			WEP_DsrCan -> heavy disruptor cannon (WEP_HvyDsrCan)
+			WEP_DsrCan -> disruptor projector (WEP_DsrPrj)
+			WEP_DsrCan -> dual disruptor cannon (WEP_DualDsrCan) (new) "DualDisruptorCannons.tga"
+		Note: WEP_HvyDsr (deleted)
+
+	Added "Dual Inertial Cannons" linked from "Inertial Cannon"
+		WEP_IntCan -> WEP_DualIntCan (new) "DualInertialCannons.tga"
+
+	Added "Advanced Emitters" to energy weapons linked from "Heavy Emitter"
+		WEP_HvyEmitr -> WEP_AdvEmitr (new) "AdvancedEmitter.tga"
+
+	Added "Heavy Photonics" to improved beamrers & improved lasers
+		WEP_GrnBmr -> WEP_HvyPhot (new) "HeavyPhotonics.tga"
+		WEP_GrnLas -> WEP_HvyPhot
+		WEP_HvyPhot -> WEP_HCLas
+		WEP_HvyPhot -> WEP_PrtBm
+		
+	Added "Xray PD Beamers" off of "Xray Beamer"
+		WEP_XrayBmr -> WEP_PDXrayBmr (new) "pd_xray_beamer.tga"
+
+	Added "Xray PD Lasers" off of "Xray Lasers"
+		WEP_XryLas -> WEP_PDXryLas (new) "pd_xray_laser.tga"
+
+	Added "Triple Plasma Cannons"
+		WEP_PlsmCan -> WEP_3xPlsmCan (new) "TriplePlasmaCannon.tga"
+		
+	Added "Triple Fusion Cannons"
+		WEP_FusCan -> WEP_3xFusCan (new) "TripleFusionCannon.tga"
+		WEP_3xPlsmCan -> WEP_3xFusCan
+
+	Added "Triple Antimatter Cannons"
+		WEP_AmCan -> WEP_3xAmCan (new) "TripleAntimatterCannon.tga"
+		WEP_3xFusCan -> WEP_3xAmCan
+
+	Added "Triple Neutron Beams"
+		WEP_NeutBm -> WEP_3xNeutBm (new) "TripleNeutronBeam.tga"
+
+	Added "Triple Positron Beams"
+		WEP_PosiBm -> WEP_3xPosiBm (new) "TriplePositronBeam.tga"
+		WEP_3xNeutBm -> WEP_3xPosiBm  (new)
+
+	Added "Triple Meson Beams"
+		WEP_MesBm -> WEP_3xMesBm (new) "TripleMesonBeam.tga"
+		WEP_3xPosiBm -> WEP_3xMesBm  (new)
+
+	Added "Triple Gravity Beams"
+		WEP_GravBm -> WEP_3xGravBm (new) "TripleGravitonBeam.tga"
+		WEP_3xMesBm -> WEP_3xGravBm  (new)
+
+	Added "Triple Pulsed Gravity Beams"
+		WEP_PulGrvBm -> WEP_3xPulGrvBm (new) "TriplePulsedGravitonBeam.tga"
+		WEP_3xGravBm -> WEP_3xPulGrvBm (new)
+
+	Moved "Reinforced Hull" to branch off of "Hardened Structures" (used to be off of heavy platforms)
+		IND_HrdStrct -> IND_QrkRes
+
+	Rearranged CnC:
+		Holo -> Basic  CNC -> Resonant Aglo -> Imporoved CNC -> Holo Algo -> Advanced CnC
+		*** This means that links from these have changed as well:
+			improved cnc -> AI techs (used to be resonant algorithms)
+			holographic algorithms  -> AI techs (used to be advanced CNC aka DN CnC)
+
+		CCC_BtlCmp -> CCC_CmbtAlg -> CCC_DatSyn ->  CCC_HoloTac -> CCC_ArmCom
+	
+	(delete Ai links from CCC_CmbtAlg and from CCC_ArmCom)
+
+	Add links for:
+		CCC_DatSyn ->	CCC_AI 
+		CCC_DatSyn ->	CCC_AIAdmin
+		CCC_DatSyn ->	CCC_AIFac
+		CCC_DatSyn ->	CCC_AIFrCon
+	And:
+		CCC_HoloTac ->	CCC_AI 
+		CCC_HoloTac ->	CCC_AIAdmin
+		CCC_HoloTac ->	CCC_AIFac
+		CCC_HoloTac ->	CCC_AIFrCon
+			

@@ -1,0 +1,152 @@
+shipsection
+{
+	model					Species/Morrigi/art/sections/CruiserWar.X
+	preview_ofs				"0 -50 0"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+
+	health					3520
+	mass					7000
+	cost					35200
+	maintenance_cost		3000
+	cpoints					6400
+	crew					25
+
+	requires				IND_CRWarEng
+	requires				GRP_LRGWEP
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-10
+		rotspeed			-5
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatReady"
+		start_frame "0"
+		speed_scale "2"
+		loop "1"
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatRest"
+		start_frame "end"
+		speed_scale "-2"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -150
+			max_azimuth 20
+			home_azimuth 0
+			min_inclination -15
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode02
+			min_azimuth -20
+			max_azimuth 150
+			home_azimuth -0
+			min_inclination -15
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode03
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -25
+			max_inclination 90
+			home_inclination 0
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -110
+			max_azimuth 70
+			min_inclination -8
+			max_inclination 90
+			home_inclination 0
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -70
+			max_azimuth 110
+			min_inclination -8
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+}

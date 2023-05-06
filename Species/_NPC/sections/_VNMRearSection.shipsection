@@ -1,0 +1,51 @@
+shipsection
+{
+	model Species/_NPC/art/sections/VNM_UCSK_Rearsection.X
+	dam_model Species/_NPC/art/sections/VNM_UCSK_Rearsection.X
+	socket_fore EngineNode
+	section_type engine
+	section_class Dreadnought
+	crew false
+
+	health 8600
+	mass 5500
+	cost 35000
+	cpoints 2200
+	ftlspeed 13
+	range	20
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	option
+	{
+		option 	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+		{
+		force_forward		50000
+		force_right			50000
+		force_up			50000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				73.3
+		rotspeed			5
+	}
+
+}
+

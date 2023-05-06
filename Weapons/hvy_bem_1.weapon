@@ -1,0 +1,60 @@
+weapon
+{
+	name						@WEAPON_HVY_BEM_HCLAS
+
+	weaponclass					heavybeam
+	weaponfamily				heavybeam
+
+	turretclass					beam
+	turretsize					large
+
+	requires					WEP_HCLAS
+	cost						10000
+
+	solution_tolerance			5
+	burst_volleys				1
+	volley_duration				2.5
+	recharge_time				22
+
+	muzzle_effect				effects/Lancer_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_hvy_combat_las_muzzle.wav
+	muzzle_sound_minrange		150
+
+	icon_file					GUI/Weapons/Beams.tga
+	icon_rect					"0 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1200 // 850
+	range_planet				1200
+
+	beam
+	{
+		impact_effect					effects/HCL_impact.effect
+		impact_sound					Sounds/Weapons/bem_hvy_combat_las_impact.wav
+		impact_sound_minrange			100
+		planet_impact_effect			effects/BeamPlanet.effect
+		effect							effects/HCL_bullet.effect
+
+		dam								200
+		force							0
+
+		dam_pop							74648
+		dam_infra						0.000114
+		dam_terra						0.000028
+	}
+
+	dam_est			80
+
+	rating_frate	1
+	rating_dam		5
+	rating_acc		5
+	rating_range	5
+}

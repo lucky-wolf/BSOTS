@@ -1,0 +1,33 @@
+shipsection
+{
+	model Species/_NPC/art/sections/CR_GasCloud.X
+	section_type mission
+	section_class cruiser
+	health 6000
+	mass 1000
+
+
+	engine_sound Sounds/SFX/CRgascloud.wav
+	engine_sound_minrange 100
+
+	crew 0
+	autonomous true	// actually means this is a ship with only a mission section
+	tacticalsensorrange 4000
+
+	command_cost 0
+	maintenance_cost 0
+	
+	netforcelimits
+	{
+		force_forward 100000000
+		force_right   100000000
+		force_up      100000000
+		
+		torque_yaw    100000000
+		torque_pitch  100000000
+		torque_roll   100000000
+		
+		speed         80
+		rotspeed      90
+	}
+}

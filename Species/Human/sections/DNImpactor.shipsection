@@ -1,0 +1,229 @@
+shipsection
+{
+	model					Species/Human/art/sections/DreadnoughtImpactor.X
+	socket_aft				MissionNode02
+	socket_fore				MissionNode01
+
+	section_type			mission
+	section_class			dreadnought
+
+	requires				WEP_RailGun
+
+	health					22400
+	mass					45000
+	cost					340000
+	maintenance_cost		15000
+	cpoints					30400
+	crew					100
+
+	preview_ofs				"-11 -40 6"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-5
+		rotspeed			-5
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -140
+			max_azimuth 140
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node HeavyGunNode03
+			min_azimuth -140
+			max_azimuth 140
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node HeavyGunNode11
+			min_azimuth -140
+			max_azimuth 140
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node HeavyGunNode12
+			min_azimuth -90
+			max_azimuth 140
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node HeavyGunNode13
+			min_azimuth -140
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode14
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode16
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 45
+		}
+
+		mount
+		{
+			node MediumGunNode17
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 45
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode15
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode18
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 45
+		}
+
+		mount
+		{
+			node MediumGunNode19
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 45
+		}
+	}
+
+	bank
+	{
+		turretclass railcannon
+		turretsize large
+
+		mount
+		{
+			node RailCannon01
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node RailCannon02
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node RailCannon03
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node RailCannon04
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node RailCannon05
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node RailCannon06
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+		}
+	}
+}

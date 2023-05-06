@@ -1,0 +1,94 @@
+shipsection
+{
+	model					Species/Human/art/sections/CruiserWar.X
+	preview_ofs				"0 -50 0"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+
+	health					4160
+	mass					7000
+	cost					30000
+	cpoints					4608
+	crew					30
+
+	requires				IND_CRWarEng
+	requires				GRP_LRGWEP
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-10
+		rotspeed			-5
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -10
+			max_azimuth 180
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode02
+			min_azimuth -180
+			max_azimuth 10
+			min_inclination -5
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode03
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+}

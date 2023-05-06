@@ -1,0 +1,95 @@
+techcolors
+{
+// from..to define the glow effects
+// tech is the tech box & icon (usually only want to change intensity, not color)
+// branch is the ugly orange line (orange once researched)
+// selected tech seems to be 1.0 1.0 1.0
+
+	researched_tech				"0.8	0.8		0.8"	// semi-bright
+	researched_branch			"0.3	0.3		0.3"	// dim
+
+	researchable_tech			"0.5	0.5		0.5"	// dim
+	researchable_branch			"0.0	0.5		0.0"	// green
+	
+	researching_tech_from		"0.5	0.5		0.5"
+	researching_tech_to			"1.0	1.0		1.0"
+	
+	researching_branch_from		"0.5	0.5		0.5"
+	researching_branch_to		"1.0	1.0		1.0"
+	
+	selected_branch				"0.8	0.0		0.0"	// semi-bright red (color for choosing next to research)
+	selected_researched_branch	"0.8	0.0		0.0"	// semi-bright red (highlight of previously researched link)
+	
+	hidden_tech					"1.0	1.0		1.0"
+	
+	static_mesh					"0.75	0.75	0.75"	// brightness of the little statues underneath each tech
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_BAL.X
+	Label						@TECHDESC_BAL_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_BIO.X
+	Label						@TECHDESC_BIO_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_CCC.X
+	Label						@TECHDESC_CCC_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_DRV.X
+	Label						@TECHDESC_DRV_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_EWP.X
+	Label						@TECHDESC_EWP_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_IND.X
+	Label						@TECHDESC_IND_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_NRG.X
+	Label						@TECHDESC_NRG_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_SLD.X
+	Label						@TECHDESC_SLD_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_TRP.X
+	Label						@TECHDESC_TRP_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_WHD.X
+	Label						@TECHDESC_WHD_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_DRN.X
+	Label						@TECHDESC_DRN_ROOT
+}
+TechTreeModelInfo
+{
+	ModelFilename				TechTree/TechTree_XNC.X
+	Label						@TECHDESC_XNC_ROOT
+}
+
+TechTreeBackground
+{
+	ModelFilename				TechTree/Rings.X
+	rotation_speed				0.3
+	rotation_speed				.6
+	rotation_speed				.8
+	rotation_speed				1
+}

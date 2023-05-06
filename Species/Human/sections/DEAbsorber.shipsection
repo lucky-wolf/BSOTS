@@ -1,0 +1,71 @@
+shipsection
+{
+	model					Species/Human/art/sections/DestroyerAbsorbtion.X
+	requires				SLD_ErgAb
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			Destroyer
+	health					800
+	mass					1500
+	cost					24000
+	maintenance_cost		300
+	cpoints					1472
+	preview_ofs				"0 0 .5"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			50
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -5
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -160
+			max_azimuth 160
+			min_inclination -5
+			max_inclination 90
+		}
+
+	}
+}

@@ -1,0 +1,81 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/CruiserMining.X
+	requires				IND_MsMine
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+	preview_ofs				"-10 50 0"
+
+	health					1680
+	mass					11000
+	cost					35000
+	maintenance_cost		3000
+	cpoints					4608
+	crew					20
+
+	mining_capacity	700
+	mining_rate		100
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-20
+		rotspeed			-15
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -50
+			max_azimuth 60
+			min_inclination -5
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -60
+			max_azimuth 50
+			min_inclination -5
+			max_inclination 90
+		}
+	}
+}

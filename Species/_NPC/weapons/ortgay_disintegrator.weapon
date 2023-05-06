@@ -1,0 +1,46 @@
+weapon
+{
+	name		@WEAPON_NPC_ORTGAY_DISINTEGRATOR
+	weaponclass	beam
+	weapondamagetype energy
+	turretmodel1	"Species/_NPC/art/weapons/OrtEye_Turret.X"
+	model1		"Species/_NPC/art/weapons/OrtEye.X"
+	hpbonus		500
+	cost		10000
+	turretsize		large
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	5
+	recharge_time	5
+	muzzle_effect	effects/MesonBeam_muzzle.effect
+	muzzle_sound	Sounds/Weapons/ortgay_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"128 0 32 32"
+	trackspeed_mod 0.1
+	
+	range 1700
+	range_planet 1700
+		
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	blindfire					false
+
+	disintegrator
+	{
+		sound           "Sounds/SFX/vonneuman_eat.wav"
+		beam_effect     "Effects/ORTDIS_Bullet.effect"
+		glow_effect     "Effects/VonGlow.effect"
+		type            "ortgaydisintegrate"
+		rate			"5000"			// Construction points disintegrated per second. Target gone when cps = 0.
+	}
+
+}

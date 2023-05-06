@@ -1,0 +1,90 @@
+weapon
+{
+	name						@WEAPON_MIS_INTERCEPTOR_PD
+
+	weaponclass					pdmissile
+	weaponfamily				missile
+
+	model1						""						// insert barrel model for tiny mounts here if we get them
+	model2						barrel_pdmissile.X		// NOTE: model2 for tiny pd weapons in small mounts
+
+	turretclass					standard
+	turretsize					tiny
+
+	requires					DRV_Ints
+	cost						3000
+
+	solution_tolerance			90
+	burst_volleys				1
+	recharge_time				6			// laser & pulsed phaser = 1.5, ballistic = 2.0, beamer & phaser = 2.5, emitter = 3.0
+
+	muzzle_sound				Sounds/Weapons/mis_interceptor_pd_muzzle.wav
+	muzzle_sound_minrange		60
+	muzzle_effect				effects/Missile_muzzle.effect
+	muzzle_speed				600
+
+	icon_file					GUI/Weapons/Missiles.tga
+	icon_rect					"64 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				false
+	fc_holdsfire				false
+	blindfire					false
+	pinpoint					false
+
+	range						600		// fires at this range
+	range_planet				0
+
+	missile
+	{
+		tracking						true
+		pd								true
+		warhead_dam_scale				true	// add standard missile warhead damage modifier
+
+		impact_decal					decals/WeaponHit.decal
+		impact_decal_width				.5
+		impact_decal_height				.5
+		impact_decal_depth				.1
+
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/mis_interceptor_pd_impact.wav
+		impact_sound_minrange			200
+		impact_effect					effects/Missile_Impact.effect
+		area_impact_effect				"effects/collide_asteroid.effect"
+		planet_impact_effect			"effects/Missile_Planet.effect"
+
+		thrust_sound					Sounds/Weapons/mis_missile_travel.wav
+
+		speed							600
+		ttl								3	// 1800m
+
+		seek_attenuation				11	// Higher number = tighter turns/faster accel
+
+		model							missile.X
+		health							4		// .4x standard missile
+		dam								50		// designed to kill drones (with Antimatter = 200 dam -> or 1/4 of a drone)
+		dam_radius						6		// .4x standard missile
+		mass							20		// .4x standard missile
+		thrust_effect					effects/Interceptor_Trail.effect
+		thrust_node						EffectNode
+		dumbfire_period					0.2
+
+		dam_pop							0
+		dam_infra						0
+		dam_terra						0
+	}
+
+	dam_est			0		// PD always zero
+
+	rating_frate	7
+	rating_dam		1
+	rating_acc		10
+	rating_range	3
+}

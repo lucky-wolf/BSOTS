@@ -1,0 +1,82 @@
+weapon
+{
+	name						@WEAPON_BAL_LEECH
+
+	weaponclass					leechround
+	weaponfamily				gauss
+
+	model1						barrel_l1_HeavyDriver.X
+
+	turretclass					standard
+	turretsize					large
+
+	requires					WEP_ErgDrain
+	cost						2000
+
+	burst_volleys				1
+	recharge_time				5
+
+	muzzle_speed				400
+	muzzle_effect				effects/HeavyDriver_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_hvy_driver_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Ballistic-2.tga
+	icon_rect					"192 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1850 // 1350
+	range_planet				1850
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/Leech_bullet.effect
+		impact_effect					effects/Leech_impact.effect
+		expire_effect					"effects/Leech_Expire.effect"
+		impact_sound					Sounds/Weapons/bal_energydrain_impact.wav
+		impact_sound_minrange			50
+
+		rangetable
+		{
+			pb_range		550
+			pb_range_dev	3
+			pb_range_dam	75
+
+			eff_range		1050 // 800
+			eff_range_dev	4
+			eff_range_dam	75
+
+			max_range		1850 // 1350
+			max_range_dev	5
+			max_range_dam	75
+		}
+
+		ricochet_mod					-1.5
+		ricochet_sound					Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange			50
+
+		mass							10
+
+		dam_pop							0
+		dam_infra						0.000114
+		dam_terra						0
+	}
+
+	dam_est			160
+
+	rating_frate	8
+	rating_dam		1
+	rating_acc		3
+	rating_range	8
+}

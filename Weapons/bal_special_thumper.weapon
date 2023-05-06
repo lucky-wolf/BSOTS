@@ -1,0 +1,88 @@
+weapon
+{
+	name						@WEAPON_BAL_THUMPER
+
+	weaponclass					thumper
+
+	model1						barrel_l1_HeavyDriver.X
+
+	turretclass					standard
+	turretsize					large
+
+	requires					WEP_ThmpDrvr
+	cost						5000
+
+	burst_volleys				1
+	recharge_time				5
+
+	muzzle_speed				500
+	muzzle_effect				effects/HeavyDriver_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_thumper_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Ballistic-2.tga
+	icon_rect					"192 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1950
+	range_planet				1950
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/Thumper_bullet.effect
+		expire_effect					effects/Thumper_impact.effect
+		impact_effect					effects/Thumper_impact.effect
+		expire_sound					Sounds/Weapons/bal_thumper_impact.wav
+		expire_sound_minrange			50
+
+		gravforce						-6000000
+		gravradius						80
+		gravtime						0.08
+
+		dam_radius						50;
+		area_impact_effect				""
+
+		rangetable
+		{
+			pb_range		750
+			pb_range_dev	3
+			pb_range_dam	200
+
+			eff_range		1400
+			eff_range_dev	4
+			eff_range_dam	200
+
+			max_range		1950
+			max_range_dev	5
+			max_range_dam	200
+		}
+
+		ricochet_mod					-1.2
+		ricochet_sound					Sounds/Weapons/bal_thumper_rico.wav
+		ricochet_sound_minrange			50
+
+		mass							1980
+
+		dam_pop							162
+		dam_infra						0.00225
+		dam_terra						0
+	}
+
+	dam_est			80
+
+	rating_frate	8
+	rating_dam		2
+	rating_acc		3
+	rating_range	8
+}

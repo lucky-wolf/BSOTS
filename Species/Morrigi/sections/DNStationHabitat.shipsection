@@ -1,0 +1,49 @@
+shipsection
+{
+	model Species/Morrigi/art/sections/DNStationHabitat.x
+	dam_model Species/Morrigi/art/sections_dam/DNStationHabitat.X
+	section_type mission
+	section_class dreadnought
+	Socket_Aft Aft
+	Socket_Fore Fore
+	dam_socket_aft aft
+	dam_socket_fore fore
+
+	requires			"IND_HabStn"
+
+	health				19200
+	mass				100000
+	cost				300000
+	maintenance_cost	0
+	cpoints				28800
+	crew				100
+
+	entity_class		"Station"
+	design_class		station
+	station				habitat
+	imperial_population	100000000
+	civilian_population 100000000
+
+	explicit_command_section "DNStationHabitat_Fore"
+	explicit_engine_section "DNStationHabitat_Aft"
+
+	preview_ofs "50 -240 -10"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	netforcelimits
+	{
+		force_forward		1e+9
+		force_right			1e+9
+		force_up			1e+9
+
+		torque_yaw			1e+9
+		torque_pitch		1e+9
+		torque_roll			1e+9
+
+		speed				30
+		rotspeed			6
+	}
+}
+

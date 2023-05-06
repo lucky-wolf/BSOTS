@@ -1,0 +1,37 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model "Species/_NPC/art/sections/VNeumannBerserker.X"
+	section_type mission
+	section_class Dreadnought
+	health 49000
+	mass 1000000
+	cost 100000
+	cpoints 5000
+	engine_sound ""
+	engine_idle_sound ""
+	autonomous true	// actually means this is a ship with only a mission section
+	node_cannon_fling 0
+	crew 0
+	split_traffic_volume "false"
+
+	option	IND_ImpRfCt
+
+	command_cost 0
+	maintenance_cost 0
+
+	netforcelimits
+	{
+		force_forward 100000000
+		force_right   100000000
+		force_up      100000000
+
+		torque_yaw    1000000000
+		torque_pitch  1000000000
+		torque_roll   1000000000
+
+		speed         120
+		rotspeed      120
+	}
+
+}

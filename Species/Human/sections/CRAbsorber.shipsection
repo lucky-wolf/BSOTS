@@ -1,0 +1,76 @@
+shipsection
+{
+	model					Species/Human/art/sections/Cruiserabsorber.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					3680
+	mass					4500
+	cost					60000
+	maintenance_cost		3000
+	cpoints					2016
+	crew					15
+
+	requires				SLD_ErgAb
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			6e+8
+		torque_pitch		6e+8
+		torque_roll			6e+8
+
+		speed				0
+		rotspeed			40
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -45
+			max_azimuth 150
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -150
+			max_azimuth 45
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+}

@@ -1,0 +1,86 @@
+weapon
+{
+	name						@WEAPON_LAS
+
+	weaponclass					laser
+	weaponfamily				laser
+
+	model1						barrel_s1_redlaser.x
+	model2						barrel_s1_redlaser.x
+	turretmodel2				turret_s1standard.x
+	model3						barrel_s1_redlaser.x
+	turretmodel3				turret_s1standard.x
+
+	turretsize					small
+	turretclass					standard
+
+	requires					WEP_RedLas
+	cost						100
+
+	burst_volleys				3
+	volley_period				.1
+	recharge_time				3
+	muzzle_speed				1500
+
+	muzzle_effect				effects/RL_muzzle.effect
+	muzzle_sound				Sounds/Weapons/las_all_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Lasers.tga
+	icon_rect					"0 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1000
+	range_planet				1000
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/las_all_impact.wav
+		impact_sound_minrange			50
+
+		impact_effect					effects/redlaserimpact.effect
+		planet_impact_effect			"effects/Laser_PlanetImpact.effect"
+
+		rangetable
+		{
+			pb_range		200
+			pb_range_dev	.5
+			pb_range_dam	10
+
+			eff_range		600		// 3x pp_range
+			eff_range_dev	1
+			eff_range_dam	8
+
+			max_range		1000	// 5x pb_range
+			max_range_dev	1.5
+			max_range_dam	6
+		}
+
+		effect							effects/redlaser.effect
+		ricochet_mod					-1.0
+		ricochet_sound					Sounds/Weapons/las_all_rico.wav
+		ricochet_sound_minrange			20
+
+		dam_pop							218
+		dam_infra						0.000006
+		dam_terra						0.0000005
+	}
+
+	dam_est			10
+
+	rating_frate	9
+	rating_dam		2
+	rating_acc		7
+	rating_range	4
+}

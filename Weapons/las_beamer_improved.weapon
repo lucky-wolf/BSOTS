@@ -1,0 +1,67 @@
+weapon
+{
+	name						@WEAPON_BEM_BEAMER_GREEN
+
+	weaponclass					beamer
+	weaponfamily				laser
+
+	model1						barrel_s1_greenlaser.x
+	model2						barrel_s1_greenlaser.x
+	turretmodel2				turret_s1standard.x
+	model3						barrel_s1_greenlaser.x
+	turretmodel3				turret_s1standard.x
+
+	turretclass					standard
+	turretsize					small
+
+	requires					WEP_GrnBmr
+
+	cost						300
+
+	burst_volleys				1
+	volley_duration				.75
+	lock_period					0
+	recharge_time				8
+	trackspeed_mod				.5
+
+	muzzle_sound				Sounds/Weapons/bem_beamer_green.wav
+	muzzle_sound_minrange		100
+	muzzle_effect				effects/GreenBeamer_muzzle.effect
+
+	icon_file					GUI/Weapons/Beamers.tga
+	icon_rect					"128 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						500
+	range_planet				1000
+
+	beam
+	{
+		impact_effect					effects/GreenBeamer_impact.effect
+		impact_sound					Sounds/Weapons/phaser_impact.wav
+		impact_sound_minrange			100
+
+		effect							effects/GreenBeamer_Bullet.effect
+		dam								100
+		force							0
+
+		dam_pop							656
+		dam_infra						0.000114
+		dam_terra						0
+	}
+
+	dam_est			15
+
+	rating_frate	5
+	rating_dam		3
+	rating_acc		10
+	rating_range	2
+}

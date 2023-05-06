@@ -1,0 +1,85 @@
+weapon
+{
+	name						@WEAPON_LAS_UV
+
+	weaponclass					laser
+	weaponfamily				laser
+
+	model1						barrel_s1_uvlaser.x
+	model2						barrel_s1_uvlaser.x
+	turretmodel2				turret_s1standard.x
+	model3						barrel_s1_uvlaser.x
+	turretmodel3				turret_s1standard.x
+
+	turretsize					small
+	turretclass					standard
+
+	requires					WEP_UVlas
+	cost						300
+
+	burst_volleys				3
+	volley_period				.1
+	recharge_time				3
+	muzzle_speed				1500
+
+	muzzle_effect				effects/UVL_muzzle.effect
+	muzzle_sound				Sounds/Weapons/las_all_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Lasers.tga
+	icon_rect					"0 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1500
+	range_planet				1500
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/las_all_impact.wav
+		impact_sound_minrange			50
+		impact_effect					effects/UVlaserimpact.effect
+		planet_impact_effect			"effects/Laser_PlanetImpact.effect"
+
+		rangetable
+		{
+			pb_range		300
+			pb_range_dev	.5
+			pb_range_dam	16
+
+			eff_range		900		// 3x pb_range
+			eff_range_dev	1
+			eff_range_dam	14
+
+			max_range		1500	// 5x pb_range
+			max_range_dev	1.5
+			max_range_dam	12
+		}
+
+		effect							effects/UVLaser_bullet.effect
+		ricochet_mod					-1.4
+		ricochet_sound					Sounds/Weapons/las_all_rico.wav
+		ricochet_sound_minrange			20
+
+		dam_pop							437
+		dam_infra						0.000018
+		dam_terra						0.0000015
+	}
+
+	dam_est			20
+
+	rating_frate	9
+	rating_dam		4
+	rating_acc		7
+	rating_range	7
+}

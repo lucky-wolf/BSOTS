@@ -1,0 +1,122 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/CruiserMinelayer.X
+	preview_ofs				"-5 50 5"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+
+	health					1680
+	mass					10500
+	cost					35000
+	maintenance_cost		3000
+	cpoints					5040
+	crew					15
+
+	requires				IND_CruisCon
+	requires				GRP_MINES
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-10
+		rotspeed			-10
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth 0
+			max_azimuth 150
+			min_inclination -5
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth 0
+			max_azimuth 150
+			min_inclination -5
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -150
+			max_azimuth 0
+			min_inclination -5
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -150
+			max_azimuth 0
+			min_inclination -5
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass mine
+		turretsize large
+
+		mount
+		{
+			node Mine1
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node Mine02
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+}

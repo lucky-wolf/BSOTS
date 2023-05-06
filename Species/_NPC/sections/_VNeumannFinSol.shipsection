@@ -1,0 +1,852 @@
+shipsection
+{
+	model "Species/_NPC/art/sections/VNMFinSol.X"
+	section_type mission
+	section_class Dreadnought
+	health 110000
+	mass 500000000
+	cost 1000000
+	cpoints 50000
+	preview_ofs "3 -2500 2"
+	engine_sound Sounds/SFX/systemkiller_pulse.wav
+	engine_sound_minrange 185
+	autonomous true	// actually means this is a ship with only a mission section
+	node_cannon_fling 0
+	crew 0
+
+	command_cost 0
+	maintenance_cost 0
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	ftlspeed	8
+	range		1e+20	// Huge range
+
+	option	IND_MagLat
+	option	IND_ImpRfCt
+
+	netforcelimits
+	{
+		force_forward 10000000000
+		force_right   10000000000
+		force_up      10000000000
+
+		torque_yaw    100000000000
+		torque_pitch  100000000000
+		torque_roll   100000000000
+
+		speed         60
+		rotspeed      30
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/von_bem_finsol.weapon"
+		turretclass beam
+		turretsize large
+
+		mount
+		{
+			node Weapon
+			min_azimuth -1
+			max_azimuth 1
+			min_inclination -1
+			max_inclination 1
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/von_disintegrator.weapon"
+
+		mount
+		{
+			node Collector01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 0
+			max_inclination 90
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/von_disintegrator.weapon"
+
+		mount
+		{
+			node Collector02
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 0
+			max_inclination 90
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/von_disintegrator.weapon"
+
+		mount
+		{
+			node Collector03
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 0
+			max_inclination 90
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/von_disintegrator.weapon"
+
+		mount
+		{
+			node Collector04
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 0
+			max_inclination 90
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/von_disintegrator.weapon"
+
+		mount
+		{
+			node Collector05
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 0
+			max_inclination 90
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/von_disintegrator.weapon"
+
+		mount
+		{
+			node Collector06
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 0
+			max_inclination 90
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/von_disintegrator.weapon"
+
+		mount
+		{
+			node Collector07
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 0
+			max_inclination 90
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/von_disintegrator.weapon"
+
+		mount
+		{
+			node Collector08
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 0
+			max_inclination 90
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam01
+			min_azimuth -45
+			max_azimuth 45
+			min_inclination -45
+			max_inclination 45
+		}
+
+
+		mount
+		{
+			node Beam02
+			min_azimuth -45
+			max_azimuth 45
+			min_inclination -45
+			max_inclination 45
+		}
+
+		mount
+		{
+			node Beam03
+			min_azimuth -45
+			max_azimuth 45
+			min_inclination -45
+			max_inclination 45
+		}
+
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam06
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+		mount
+		{
+			node Beam08
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+
+		mount
+		{
+			node Beam07
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+		mount
+		{
+			node Beam04
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam09
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+		mount
+		{
+			node Beam05
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam10
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam11
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam12
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam13
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam14
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+
+		mount
+		{
+			node Beam15
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam16
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam17
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam18
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -60
+			max_inclination 60
+		}
+
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/VNSYSK_Defence.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node Beam19
+			min_azimuth -45
+			max_azimuth 45
+			min_inclination -45
+			max_inclination 45
+		}
+
+		mount
+		{
+			node Beam20
+			min_azimuth -45
+			max_azimuth 45
+			min_inclination -45
+			max_inclination 45
+		}
+
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/SystemKiller_ICBM.weapon"
+		turretclass PlanetMissile
+		turretsize Large
+
+		mount
+		{
+			node ICBM01
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node ICBM02
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node ICBM03
+			min_azimuth 0
+			max_azimuth 0
+		}
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/SystemKiller_ICBM.weapon"
+		turretclass PlanetMissile
+		turretsize Large
+
+		mount
+		{
+			node ICBM04
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node ICBM05
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node ICBM06
+			min_azimuth 0
+			max_azimuth 0
+		}
+	}
+
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/SK_Mis.weapon"
+		turretclass missile
+		turretsize medium
+
+		mount
+		{
+			node MiniMissile01
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile02
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile03
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile04
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile05
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile06
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile07
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile08
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile09
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile10
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile11
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile12
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile13
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile14
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile15
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile16
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile17
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile18
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/SK_Mis.weapon"
+		turretclass Missile
+		turretsize medium
+
+		mount
+		{
+			node MiniMissile19
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile20
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile21
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile22
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile23
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile24
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile25
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile26
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile27
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile28
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile29
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile30
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile31
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile32
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile33
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile34
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile35
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile36
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+	}
+
+
+
+
+}

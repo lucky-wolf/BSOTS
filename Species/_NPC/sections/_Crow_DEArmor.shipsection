@@ -1,0 +1,135 @@
+shipsection
+{
+	model Species/_NPC/art/sections/CrowDestroyerArmor.X
+	socket_aft CommandNode
+	socket_fore EngineNode
+	section_type mission
+	section_class destroyer
+	health 1100
+	mass 2000
+	cost 4000
+	cpoints 900
+	preview_ofs "-4 0 -2"
+
+
+	option	IND_StlthArm
+	option	IND_MagLat
+	option	IND_ImpRfCt
+
+	netforcelimits
+	{
+		force_forward			0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch			0
+		torque_roll			0
+
+		speed				10
+		rotspeed			0
+	}
+
+	anim
+	{
+		name "combatready"
+		event "StartIdle"
+		start_frame "0"
+		speed_scale "1"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+		weapon "Species/_NPC/weapons/crowphaser.weapon"
+
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -10
+			max_inclination 90
+
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/crowphaser_pulsed.weapon"
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/crowphaser_pulsed.weapon"
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/crowphaser_pulsed.weapon"
+
+		mount
+		{
+			node LightGunNode06
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+}

@@ -1,0 +1,45 @@
+weapon
+{
+	name		@WEAPON_NPC_PMASTER_EMT_HEAVY
+	weaponclass	emitter
+	weaponfamily	emitter
+	model1		"Species/_NPC/art/weapons/DefenceBarrel.X"
+	turretmodel1	"Species/_NPC/art/weapons/DefenceTurret.X"
+	requires 	WEP_HvyEmitr				
+	hpbonus		100
+	cost		5000
+	turretsize		Large
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	1.5
+	recharge_time	9
+	muzzle_effect	effects/Control_Muzzle.effect
+	muzzle_sound	Sounds/Weapons/emt_light_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"32 192 32 32"
+
+	range 1400
+	range_planet 1050
+
+	chainlightning
+	{
+		impact_sound	Sounds/Weapons/emt_light_impact.wav
+		impact_sound_minrange	75
+		effect		effects/Control_Beam.effect
+		dam			0
+		branches	8
+		
+		dam_pop		20000
+		dam_infra	.0002	
+		dam_terra	0
+	}
+
+	dam_est		0
+
+	rating_frate	5
+	rating_dam	6
+	rating_acc	10
+	rating_range	5
+}

@@ -1,0 +1,83 @@
+weapon
+{
+	name		@WEAPON_NPC_ORTGAY_CAN_AMPROJ
+	weaponclass	energy
+	weaponfamily	energycannon
+	model1		"Species/_NPC/art/weapons/gort_projbarrel.X"
+	turretmodel1	"Weapons/art/DummyTurret.X"
+	requires 	WEP_AmProj
+	hpbonus		1000
+	cost		5000
+	turretsize		large
+	turretclass		projector
+	burst_volleys	45
+	volley_period	.02
+	recharge_time	10
+	muzzle_speed	300
+	munitionsize	medium
+
+	muzzle_sound	Sounds/Weapons/can_proj_plasma_muzzle.wav
+	muzzle_sound_minrange	100
+	muzzle_effect	effects/AntimatterCannon_muzzle.effect
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"160 224 32 32"
+		
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range 1200
+	range_planet 900
+	
+	bolt
+	{
+		volley_deviation 6
+		round_muzzle 1
+		muzzle_size "6"
+
+		beam_origin	-0.5
+		beam_length	1.5
+
+		impact_sound	Sounds/Weapons/can_am_impact.wav
+		impact_sound_minrange	100
+		impact_effect	effects/AntimatterCannon_Impact.effect
+
+		expire_effect   "effects/AntimatterCannon_Expire.effect"
+
+		thrust_sound	Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange	15
+
+		rangetable
+		{
+			pb_range	200
+			pb_range_dev	1.0
+			pb_range_dam	160
+
+			eff_range	800
+			eff_range_dev	2.0
+			eff_range_dam	300
+
+			max_range	1200
+			max_range_dev	3.0
+			max_range_dam	120
+		}
+			
+		effect		effects/AntimatterCannon_Bullet.effect
+
+		dam_pop		20000
+		dam_infra	.00005	
+		dam_terra	.00005
+	}
+	
+	dam_est		1000
+
+	rating_frate	3
+	rating_dam	9
+	rating_acc	6
+	rating_range	4
+}

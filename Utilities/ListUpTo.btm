@@ -1,0 +1,19 @@
+@echo off
+cdd %~dp0
+
+set Title=List up to
+
+set x=50000
+querybox /de "%Title" What RP level should we list up to: %%x
+if %_? NE 0 quit -1
+
+set filename=Tech up to %x.txt
+querybox /de "%Title" Where should we save the list to: %%filename
+if %_? NE 0 quit -1
+
+perl "list up to X.pl" "..\techtree\MasterMasterTechList.tech" %x > "%filename"
+
+start "" "%filename"
+
+pause Press any key to end...
+ 

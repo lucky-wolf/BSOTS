@@ -1,0 +1,85 @@
+weapon
+{
+	name						@WEAPON_TRP_PHOTON3
+
+	weaponclass					torpedo
+	weaponfamily				torpedo
+	weapondamagetype			photon
+
+	turretclass					torpedo
+	turretsize					large
+
+	requires					WEP_PhotTrp3
+	cost						16000
+
+	burst_volleys				4
+	volley_period				.25
+	recharge_time				18
+
+	muzzle_speed				900
+	muzzle_effect				effects/PlasmaTorpedo_muzzle.effect
+	muzzle_sound				Sounds/Weapons/trp_photon_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Torpedos.tga
+	icon_rect					"0 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	pinpoint					true		// allow the weapon to target exact polygon
+
+	range						3750 // 2000
+	range_planet				3750
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		effect							effects/photonictorpedo3_Bullet.effect
+
+		impact_effect					effects/photonictorpedo_impact.effect
+		impact_sound					Sounds/Weapons/trp_photon_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/trp_photon_travel.wav
+		thrust_sound_minrange			20
+
+		rangetable
+		{
+			pb_range		1250
+			pb_range_dev	1.5
+			pb_range_dam	200
+
+			eff_range		2500
+			eff_range_dev	1.0
+			eff_range_dam	200
+
+			max_range		3750
+			max_range_dev	0.5
+			max_range_dam	200
+		}
+
+		mass							.01
+		ricochet_mod					-2.5
+
+		speed							900
+
+		dam_pop							17225
+		dam_infra						0.000846
+		dam_terra						0
+	}
+
+	dam_est			400
+
+	rating_frate	2
+	rating_dam		9
+	rating_acc		7
+	rating_range	9
+}

@@ -1,0 +1,106 @@
+shipsection
+{
+	model "Species/_NPC/art/sections/RefugeeDrone.X"
+	section_type mission
+	section_class Destroyer
+	health 4000
+	mass 500
+	nodesign true
+
+	autonomous true	// actually means this is a ship with only a mission section
+	crew 0
+
+	command_cost 0
+	maintenance_cost 0
+
+	option	IND_ImpRfCt
+
+	netforcelimits
+	{
+		force_forward 100000
+		force_right   80000
+		force_up      80000
+
+		torque_yaw    10000000
+		torque_pitch  30000000
+		torque_roll   30000000
+
+		speed         275
+		rotspeed      250
+	}
+
+
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+		weapon "Species/_NPC/weapons/Refugee_med.weapon"
+
+
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -140
+			max_azimuth 140
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/Refugee_sml.weapon"
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -240
+			max_azimuth 20
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/Refugee_sml.weapon"
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -20
+			max_azimuth 240
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+}

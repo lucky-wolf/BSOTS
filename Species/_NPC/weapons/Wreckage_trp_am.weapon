@@ -1,0 +1,81 @@
+weapon
+{
+	name		@WEAPON_NPC_WRECK_TRP_AM
+	weaponclass		torpedo
+	turretclass		torpedo
+	model1		"Species\_NPC\art\weapons\Wreckagebarrel_Torp.X"
+	Turretmodel1	"Species\_NPC\art\weapons\Wreckageturret_Torp.X"
+	turretsize		large
+	requires 	WEP_AmTrp
+	hpbonus		250
+	Cost		17000
+	burst_volleys	1
+	volley_period	.2
+	recharge_time	25
+	muzzle_speed	90
+	muzzle_effect	effects/AcidTorpedo_muzzle.effect
+	muzzle_sound	Sounds/Weapons/trp_am_muzzle.wav
+	muzzle_sound_minrange	100
+	solution_tolerance	25
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"96 0 32 32"
+	range			2300
+	range_planet	2000
+
+	torpedo
+	{
+		tracking 1
+		plasma 1
+
+		beam_origin	-3
+		beam_length	5.5
+
+		impact_effect	effects/AntiMatterTorpedo_impact.effect
+		impact_sound	Sounds/Weapons/trp_am_impact.wav
+		impact_sound_minrange	50
+
+		thrust_sound		Sounds/Weapons/trp_am_travel.wav
+		thrust_sound_minrange	25
+
+		rangetable
+		{
+			pb_range	150
+			pb_range_dev	2
+			pb_range_dam	175
+			eff_range	1000
+			eff_range_dev	2
+			eff_range_dam	700
+			max_range	2000
+			max_range_dev	3
+			max_range_dam	1000
+		}
+
+		effect		effects/AntimatterTorpedo_bullet.effect
+		health			1000	// same as max damage
+		dam_radius		0
+		mass			500
+		dumbfire_period		0.5
+
+		speed 120
+		seek_attenuation 3	// Higher number = tighter turns/faster accel
+
+//		netforcelimits
+//		{
+//			force     60000
+//			torque    35000
+//			speed     120
+//			rotspeed  300
+//		}
+
+		dam_pop		200000
+		dam_infra	.01
+		dam_terra	.001
+	}
+
+	rating_frate	2
+	rating_dam	9
+	rating_acc	9
+	rating_range	9
+
+	dam_est		700
+}

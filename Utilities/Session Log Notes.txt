@@ -1,0 +1,35 @@
+Session.log errors & warnings you can safely ignore:
+	1. At the start of any game, you may see the following if you look.  They are irrelevant and harmless - they occur because I renamed various ship sections to force the game NOT to create stupid default ship designs at the start of every game:
+		Warning: [Species/Zuul/sections/DEArmor.shipsection] Can't find ship section in dictionary.
+		Warning: [Species/Zuul/sections/DETanker.shipsection] Can't find ship section in dictionary.
+		Warning: [Species/Zuul/sections/DEColonizer.shipsection] Can't find ship section in dictionary.
+		Warning: [Species/Zuul/sections/DEExtendedRange.shipsection] Can't find ship section in dictionary.
+		Warning: [Species/Zuul/sections/DEDefencePlatform.shipsection] Can't find ship section in dictionary.
+		Warning: [Species/Liir/sections/DEAntimatter.shipsection] Can't find ship section in dictionary.
+		Warning: [Species/Liir/sections/CRAntimatter.shipsection] Can't find ship section in dictionary.
+		Warning: [Species/Liir/sections/DNAntimatter.shipsection] Can't find ship section in dictionary.
+	NOTE: the above will repeat for each player...
+	
+	2. You may possibly see these as well, depending on who you play as:
+		Warning: [Species/Tarkas/sections/CRTerrorize.shipsection] Can't find ship section in dictionary.
+	   These do not matter.
+
+	3.These warnings are from vanilla SOTS and are meaningless:
+		Warning: GameSetup: No starmap shape selected, using default.
+		Warning: [GUI/MainMenu/Title.tga] Texture load failed.
+		Warning: [GUI/MainMenu/NebulaA.tga] Texture load failed.
+		Warning: [GUI/MainMenu/NebulaB.tga] Texture load failed.
+		Warning: [GUI/MainMenu/NebulaC.tga] Texture load failed.
+		Warning: [GUI/MainMenu/NebulaD.tga] Texture load failed.
+		Warning: [GUI/MainMenu/NebulaE.tga] Texture load failed.
+		Warning: [GUI/MainMenu/NebulaF.tga] Texture load failed.
+		Warning: [Models/Planets/PlanetSphere_1350.X] failed to load
+		Warning: [Models/Planets/Ring.X] failed to load
+		Warning: [Models/Planets/Human_Surface_Poor.dds] Texture load failed.
+		Warning: [Models/Planets/Human_PoorPop_Low.dds] Texture load failed.
+		Warning: [Models/Planets/Human_Atmosphere_Poor.dds] Texture load failed.
+
+	4. These warnings are due to renaming all of the weapon files, and are harmless:
+		Warning: Weapon not found: "Weapons/trp_plasma.weapon" - Was it added to the index file?
+		Warning: Weapon not found: "Weapons/las_pd.weapon" - Was it added to the index file?
+

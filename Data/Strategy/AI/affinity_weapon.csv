@@ -1,0 +1,159 @@
+# weapon-family,purpose
+# choices are not included if we don't care about which weapon is selected
+#
+# For a larger discussion by R2dical, see:
+#    http://kerberos-productions.com/forums/viewtopic.php?f=16&t=48875&p=508055&hilit=AI+Priorities#p508055
+#
+# These might work here (and in section_affinity):
+#
+# bal_aid
+# bal_cm
+# cloaking_aid
+# cnc_aid
+# colonize
+# colonize_cheap
+# construction
+# damage_cm
+# default
+# deflector_cm
+# drone_rider
+# energy_cm
+# gate
+# hunteram_rider
+# hunterfus_rider
+# jammer_aid
+# las_cm
+# mine_cm
+# minelayer
+# miner
+# missile_cm
+# nodebore
+# orbit_def
+# orbit_def_attack
+# planet_attack
+# planet_attack_bio
+# reflect_cm
+# repair_aid
+# scavenger_rider
+# scout
+# sensor_aid
+# shield_cm
+# shuttle_rider
+# station_command
+# station_habitat
+# station_repair
+# station_science
+# station_sensor
+# station_trade
+# tanker
+#
+# These are all of the weapon families (there are weapons of no family):
+#
+# conventionalbeam
+# conventionalmine
+# emitter
+# energycannon
+# gauss
+# heavybeam
+# laser
+# missile
+# torpedo
+
+gauss,reflect_cm
+conventionalmine,reflect_cm
+conventionalbeam,reflect_cm
+heavybeam,reflect_cm
+missile,reflect_cm
+emitter,reflect_cm
+energycannon,reflect_cm
+torpedo,reflect_cm
+
+energycannon,deflector_cm
+conventionalmine,deflector_cm
+conventionalbeam,deflector_cm
+heavybeam,deflector_cm
+emitter,deflector_cm
+laser,deflector_cm
+
+laser,shield_cm
+gauss,shield_cm
+energycannon,shield_cm
+conventionalbeam,shield_cm
+heavybeam,shield_cm
+
+gauss,energy_cm
+missile,energy_cm
+conventionalmine,energy_cm
+
+laser,planet_attack
+gauss,planet_attack
+energycannon,planet_attack
+conventionalbeam,planet_attack
+heavybeam,planet_attack
+missile,planet_attack
+torpedo,planet_attack
+
+laser,orbit_def_attack
+gauss,orbit_def_attack
+energycannon,orbit_def_attack
+emitter,orbit_def_attack
+heavybeam,orbit_def_attack
+conventionalbeam,orbit_def_attack
+missile,orbit_def_attack
+conventionalmine,orbit_def_attack
+torpedo,orbit_def_attack
+
+gauss,colonize
+laser,colonize
+energycannon,colonize
+conventionalbeam,colonize
+missile,colonize
+
+gauss,colonize_cheap
+laser,colonize_cheap
+energycannon,colonize_cheap
+
+gauss,colony_trap
+laser,colony_trap
+energycannon,colony_trap
+
+laser,mining_trap
+gauss,mining_trap
+energycannon,mining_trap
+
+laser,repair_aid
+gauss,repair_aid
+energycannon,repair_aid
+
+laser,gate
+gauss,gate
+energycannon,gate
+conventionalbeam,gate
+missile,gate
+
+laser,tanker
+gauss,tanker
+energycannon,tanker
+
+laser,miner
+gauss,miner
+energycannon,miner
+
+laser,refinery
+gauss,refinery
+energycannon,refinery
+
+laser,bal_aid
+gauss,bal_aid
+energycannon,bal_aid
+
+laser,scout
+gauss,scout
+energycannon,scout
+missile,scout
+
+laser,freighter
+gauss,freighter
+emitter,freighter
+energycannon,freighter
+conventionalbeam,freighter

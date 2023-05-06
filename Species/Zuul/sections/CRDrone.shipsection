@@ -1,0 +1,153 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/CruiserDrone.X
+	preview_ofs				"1 -50 2"
+
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+
+	requires				DRN_Squad
+
+	health					3680
+	mass					6000
+	cost					60000
+	maintenance_cost		3000
+	cpoints					4400
+	crew					25
+
+	repair_capacity			2500	// small amount of repair to better handle replenishing drones
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-20
+		rotspeed			-5
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node mediumgunnode01
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -30
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node mediumgunnode02
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass dronerider
+		turretsize large
+
+		mount
+		{
+			node Drone01
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node Drone02
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node Drone03
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+	}
+
+	bank
+	{
+		turretclass dronerider
+		turretsize large
+
+		mount
+		{
+			node Drone04
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node Drone05
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node Drone06
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+	}
+}
+

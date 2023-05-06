@@ -1,0 +1,86 @@
+weapon
+{
+	name						@WEAPON_BAL_AUTO_MEDIUM
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						barrel_m1_gatling.x
+	model2						barrel_m1_gatling.x
+	turretmodel2				turret_m1standard.x
+
+	turretclass					missile
+	turretsize					medium
+	munitionsize				small
+
+	requires					WEP_AutCan
+	cost						2000
+
+	burst_volleys				1
+	recharge_time				1
+
+	muzzle_speed				450										// 1x medium mass driver
+	muzzle_effect				effects/m_gatling_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_ac.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Stormers.tga
+	icon_rect					"128 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1200	// 780
+	range_planet				1200
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/m_gatling_bullet.effect
+		impact_effect					effects/m_gatling_impact.effect
+		expire_effect					effects/m_gatling_expire.effect
+		impact_sound					sounds/weapons/bal_gauss_impact.wav
+		impact_sound_minrange			200
+
+		rangetable
+		{
+			pb_range		300
+			pb_range_dev	1
+			pb_range_dam	60			// approx 2x mass driver
+
+			eff_range		800
+			eff_range_dev	2
+			eff_range_dam	60
+
+			max_range		1200
+			max_range_dev	2
+			max_range_dam	60
+		}
+
+		ricochet_mod					-1.3		// 1.2 light, 1.3 med, 1.4 heavy
+		ricochet_sound					Sounds/Weapons/bal_gauss_rico.wav
+		ricochet_sound_minrange			100
+
+//		recoil_factor					0.2			// 1/5 mass driver
+		mass							5
+
+		dam_pop							1639		// total = mass driver
+		dam_infra						0.0000228
+		dam_terra						0.0000038
+	}
+
+	dam_est			120		// 2x Mass drivers
+
+	rating_frate	10
+	rating_dam		4
+	rating_acc		2
+	rating_range	5
+}

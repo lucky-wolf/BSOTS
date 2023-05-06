@@ -1,0 +1,55 @@
+weapon
+{
+	name		@WEAPON_NPC_VN_EMT_LIGHT
+	weaponclass	emitter
+	weaponfamily	emitter
+	model1		"Species/_NPC/art/weapons/DefenceBarrel.X"
+	turretmodel1	"Species/_NPC/art/weapons/DefenceTurret.X"
+	requires 	WEP_LtEmitr				
+	hpbonus		10
+	cost		500
+	turretsize		small
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	.75
+	recharge_time	10
+	muzzle_effect	effects/LightEmitter_muzzle.effect
+	muzzle_sound	Sounds/Weapons/emt_light_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"224 160 32 32"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+
+	range 250
+	range_planet 950
+
+	chainlightning
+	{
+		impact_sound	Sounds/Weapons/emt_light_impact.wav
+		impact_sound_minrange	75
+		effect		effects/LightEmitter_Bullet.effect
+		dam			70
+		branches	1
+
+		dam_pop		5000
+		dam_infra	.00005	
+		dam_terra	0
+	}
+
+	dam_est		60
+
+	rating_frate	5
+	rating_dam	4
+	rating_acc	10
+	rating_range	3
+}

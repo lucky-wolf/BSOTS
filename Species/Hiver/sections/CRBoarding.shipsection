@@ -1,0 +1,199 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/CruiserBoarding.X
+	preview_ofs				"-15 120 3"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+
+	health					5120
+	mass					8000
+	cost					25000
+	maintenance_cost		3000
+	cpoints					5040
+	crew					35
+
+	requires				IND_BrdPod
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				10
+		rotspeed			5
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth 150
+			max_azimuth -150
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -150
+			max_azimuth 150
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -150
+			max_azimuth 150
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -150
+			max_azimuth 150
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -60
+			max_azimuth 80
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -45
+			max_azimuth 80
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -80
+			max_azimuth 45
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -80
+			max_azimuth 60
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass boardingpod
+		turretsize large
+
+		mount
+		{
+			node BoardingPod01
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node BoardingPod02
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node BoardingPod03
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node BoardingPod04
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+	}
+}
+

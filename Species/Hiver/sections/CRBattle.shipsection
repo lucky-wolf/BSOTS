@@ -1,0 +1,134 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/CruiserArmour.X
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+	health					5760
+	mass					9000
+	cost					16500
+	maintenance_cost		3000
+	cpoints					5400
+	crew					65
+
+	preview_ofs				"-15 120 4"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				10
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_inclination -8
+			max_inclination 90
+			min_azimuth -180
+			max_azimuth 180
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_inclination -5
+			max_inclination 90
+			min_azimuth -70
+			max_azimuth 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_inclination -5
+			max_inclination 90
+			min_azimuth -70
+			max_azimuth 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode03
+			min_inclination -5
+			max_inclination 90
+			min_azimuth -90
+			max_azimuth 70
+		}
+
+		mount
+		{
+			node MediumGunNode04
+			min_inclination -5
+			max_inclination 90
+			min_azimuth -90
+			max_azimuth 70
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -1
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -1
+			max_inclination 90
+		}
+	}
+}

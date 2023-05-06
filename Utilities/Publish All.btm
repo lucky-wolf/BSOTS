@@ -1,0 +1,24 @@
+@echo off
+cdd %~dp0
+
+echo This will create all of the variant tech lists:
+echo (Fusion Age), (100%% Chances), (All Tech), and (End Game)
+echo Fusion Age - starts you with early Fusion age technology
+echo 100%% Chances - no sadorandomizer - you can research all possible techs (for your race)
+echo All Tech - starts you with every possible technology already researched (for testing purposes)
+echo End Game - starts you with all of the technology you rolled already researed (for testing purposes)
+echo with the normal tech tree as the default.
+pause
+
+perl "give all normal cost.pl" "..\techtree\MasterMasterTechList.tech" > "..\techtree\MasterTechList (100%% Chances).tech"
+perl "give all zero cost.pl" "..\techtree\MasterMasterTechList.tech" > "..\techtree\MasterTechList (All Tech).tech"
+perl "give normal zero cost.pl" "..\techtree\MasterMasterTechList.tech" > "..\techtree\MasterTechList (End Game).tech"
+perl "give listed.pl" "..\techtree\MasterMasterTechList.tech" "Fusion Age.txt" > "..\techtree\MasterTechList (Fusion Age).tech"
+
+rem NEW - create streamlined versions (no trade)
+
+echo generating the default standard tech tree
+copy /q "..\techtree\MasterMasterTechList.tech" "..\techtree\MasterTechList.tech"
+
+@rem echo choose the tech tree you want to use...
+"%~dp0\Pick Tech Tree.btm"

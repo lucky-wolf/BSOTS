@@ -1,0 +1,7160 @@
+// BSOTS 4.0.2
+
+//******************************************************************************************
+// Roots
+//******************************************************************************************
+
+tech
+{
+	name		"DRV_ROOT"		// Star Drives
+	family		"DRV"
+
+	allows		"DRV_Node		RP:0		Human:100	Zuul:0		Hiver:0		Tarkas:0	Liir:0		Morrigi:0"
+	allows		"DRV_Hyper		RP:0		Human:0		Zuul:0		Hiver:0		Tarkas:100	Liir:0		Morrigi:0"
+	allows		"DRV_StrWrp		RP:0		Human:0		Zuul:0		Hiver:0		Tarkas:0	Liir:100	Morrigi:0"
+	allows		"DRV_TpGate		RP:0		Human:0		Zuul:0		Hiver:100	Tarkas:0	Liir:0		Morrigi:0"
+	allows		"DRV_Rip		RP:0		Human:0		Zuul:100	Hiver:0		Tarkas:0	Liir:0		Morrigi:0"
+	allows		"DRV_VdCtr		RP:0		Human:0		Zuul:0		Hiver:0		Tarkas:0	Liir:0		Morrigi:100"
+
+	// guaranteed starting weapons:  (to give every race a small weapon so that all mounts have at least something to put in them)
+	allows		"WEP_RedLas		RP:0		Human:100 	Zuul:0  	Hiver:0  	Tarkas:0  	Liir:100 	Morrigi:0"
+	allows		"WEP_RedBmr		RP:0		Human:0  	Zuul:100 	Hiver:0  	Tarkas:0  	Liir:0  	Morrigi:100"
+	allows		"WEP_GsDrvr		RP:0		Human:0  	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:0  	Morrigi:0"
+}
+
+tech
+{
+	name		"WHD_ROOT"		// Warheads (Missiles & Mines)
+	family		"WAR"
+	type		P
+
+	// these must be core for the game engine
+	allows		"WEP_PMsl		RP:0"	// planetary missiles
+	allows		"WEP_Nukes		RP:0"	// basic warhead
+	allows		"WEP_Missile	RP:0"	// standard missiles
+}
+
+tech
+{
+	name		"SLD_Root"		// Shields
+	family		"SLD"
+
+	allows		"SLD_Tech		RP:3000"
+}
+
+tech
+{
+	name		"NRG_Root"		// Power Technology
+	family		"DRV"
+
+	allows		"DRV_Fissn		RP:0"
+}
+
+tech
+{
+	name		"TRP_ROOT"		// Torpedo
+	family		"TRP"
+
+	allows		"WEP_PhotTrp	RP:0	Human:90 	Zuul:25 	Hiver:60 	Tarkas:60 	Liir:50 	Morrigi:70"
+	allows		"WEP_PlsmTrp	RP:0	Human:70 	Zuul:25 	Hiver:90 	Tarkas:60 	Liir:90 	Morrigi:70"
+	allows		"WEP_Dsrptr		RP:0	Human:70 	Zuul:100 	Hiver:60 	Tarkas:60 	Liir:50 	Morrigi:90"	// Zuul 1000 obtain disruptor whip racial tech
+}
+
+tech
+{
+	name		"EWP_ROOT"		// Energy Weapons
+	family		"NRG"
+
+	allows		"WEP_RedLas		RP:0		Human:100	Zuul:25 	Hiver:60 	Tarkas:60 	Liir:100	Morrigi:70"
+	allows		"WEP_RedBmr		RP:0		Human:70 	Zuul:100	Hiver:60 	Tarkas:60 	Liir:50 	Morrigi:100"
+	allows		"WEP_PrtBm		RP:0		Human:90 	Zuul:25 	Hiver:60 	Tarkas:60 	Liir:90 	Morrigi:90"
+	allows		"WEP_PlsmCan	RP:0		Human:70 	Zuul:25 	Hiver:60 	Tarkas:60 	Liir:90 	Morrigi:70"
+	allows		"WEP_LtEmitr	RP:0		Human:50 	Zuul:25 	Hiver:50 	Tarkas:25 	Liir:50 	Morrigi:50"
+}
+
+tech
+{
+	name		"BAL_ROOT"		// Ballistics
+	family		"BAL"
+
+	allows		"WEP_GsDrvr		RP:0	Human:70 	Zuul:100 	Hiver:100 	Tarkas:100 	Liir:80 	Morrigi:80"
+}
+
+tech
+{
+	name		"CCC_ROOT"		// Communications (Sensors & Trade)
+	family		"CCC"
+
+	allows		"CCC_FTLCom		RP:0"
+}
+
+tech
+{
+	name		"XNC_ROOT"		// Xenotech
+	family		"XNC"
+
+	allows		"CCC_TrnsHum	RP:360"	// 6.9a very cheap (1-turn)
+	allows		"CCC_TrnsLir	RP:360"	// making it zero doesn't crash, but reports strange numbers
+	allows		"CCC_TrnsTrk	RP:360"
+	allows		"CCC_TrnsHvr	RP:360"
+	allows		"CCC_TrnsZul	RP:360"
+	allows		"CCC_TrnsMorr	RP:360"
+}
+
+tech
+{
+	name		"IND_ROOT"		// Industrial
+	family		"IND"
+
+	allows		"IND_OrbFound	RP:0"
+	allows		"IND_StlthArm	RP:0		Human:0  	Zuul:0  	Hiver:0  	Tarkas:0  	Liir:0  	Morrigi:100"
+}
+
+tech
+{
+	name		"BIO_ROOT"		// Biological
+	family		"BIO"
+
+	allows		"BIO_GnMod		RP:0"
+}
+
+tech
+{
+	name		"DRN_ROOT"		// Automation (Robotics, Drones, AI, & CNC)
+	family		"DRN"
+
+	allows		"IND_CyberInt	RP:0"
+}
+
+//***************************************************************************************************************
+// Star Drives
+//***************************************************************************************************************
+
+
+/////////////////////////////////////////////
+// Human
+
+tech
+{
+	name		"DRV_Node"
+
+	allows		"DRV_NodFoc		RP:0"
+
+	ship
+	{
+		section DEFissionS-Node
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_NodFoc"
+	threat		1
+
+	allows		"DRV_NodPath	RP:225000"	// 100% Racial
+
+// disable node missiles - we've commandeered nodemissilerider for our mini-torpedo mounts
+//	allows		"WEP_NdMsl		RP:9000"	// 100% Racial
+
+	ship
+	{
+		section DEFissionR-Node
+//		section CRFusionR-Node
+//		section DNAntimatterR-Node
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"WEP_NdMsl"
+	family		"WAR"
+	threat		3
+
+	requires	GRP_WARHEAD
+
+	ship
+	{
+		section DENodeMissile
+	}
+	weapon
+	{
+		filename	"Weapons/mis_special_node.weapon"
+	}
+}
+
+tech
+{
+	name		"DRV_NodPath"
+	threat		2
+
+	requires	"DRV_AntiMat"
+
+	ship
+	{
+		section DEFusionH-Node
+//		section CRFusionH-Node
+//		section DNFusionH-Node
+//		section DEAntimatterH-Node
+//		section CRAntimatterH-Node
+//		section DNAntimatterH-Node
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+/////////////////////////////////////////////
+// Hiver
+
+tech
+{
+	name		"DRV_TpGate"
+
+	allows		"DRV_GatAmp		RP:0"
+
+	ship
+	{
+		section DEGate
+	}
+	strategy
+	{
+		inc TECHBEN_GATCAP
+	}
+}
+
+tech
+{
+	name		"DRV_GatAmp"
+	threat		2
+
+	requires	"DRV_Fusn"
+
+	allows		"DRV_FarCast	RP:225000"
+
+	ship
+	{
+		section CRGate
+	}
+	strategy
+	{
+		inc TECHBEN_GATCAP
+	}
+}
+
+tech
+{
+	name		"DRV_FarCast"
+	threat		3
+
+	requires	"DRV_AntiMat"
+
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+	}
+}
+
+/////////////////////////////////////////////
+// Tarka
+
+tech
+{
+	name		"DRV_Hyper"
+
+	allows		"DRV_HyprFld	RP:0"
+
+	ship
+	{
+		section DEFissionHyperdrive
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_HyprFld"
+	threat		2
+
+	requires	"DRV_Fusn"
+
+	allows		"DRV_Warp		RP:225000"
+
+	ship
+	{
+		section DEFusionShapedHyperField
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_Warp"
+	threat		3
+
+	requires	"DRV_AntiMat"
+
+	ship
+	{
+		section DEAntimatterWarp
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+/////////////////////////////////////////////
+// Liir
+
+tech
+{
+	name		"DRV_StrWrp"
+
+	allows		"DRV_ImpStWrp	RP:0"
+
+	ship
+	{
+		section DEFissionStutterWarp	// text in the ship-box looks better with only name shown
+//		section DEFusionStutterWarp
+//		section DEAntimatterStutterWarp
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_ImpStWrp"
+	threat		2
+
+	requires	"DRV_Fusn"
+
+	allows		"DRV_Flicker	RP:225000"
+
+	ship
+	{
+		section DEFusionImpStutterWarp	// text in the ship-box looks better with only name shown
+//		section DEAntimatterImpSW
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_Flicker"
+	threat		3
+
+	requires	"DRV_AntiMat"
+
+	allows		"DRV_McrFlkr	RP:40000"	// 100% Racial
+
+	ship
+	{
+		section DEAntimatterFlickerWarp
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_McrFlkr"
+	threat		2
+}
+
+/////////////////////////////////////////////
+// Zuul
+
+tech
+{
+	name		"DRV_Rip"
+	allows		"DRV_Rend		RP:0"
+
+	ship
+	{
+		section DENodeBore
+	}
+	strategy
+	{
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_Rend"
+	threat		1
+
+	requires	"DRV_Fusn"
+	requires	"IND_CruisCon"
+
+	allows		"DRV_Rad		RP:75000"
+
+	ship
+	{
+		section CRNodeBore
+	}
+	strategy
+	{
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_Rad"
+	threat		2
+
+	requires	"DRV_AntiMat"
+	requires	"IND_DreadCon"
+
+	ship
+	{
+		section DNNodeBore
+	}
+	strategy
+	{
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+/////////////////////////////////////////////
+// Morrigi
+
+tech
+{
+	name		"DRV_VdCtr"
+
+	allows		"DRV_VdCrv		RP:0"
+
+	ship
+	{
+		section DEFission_Cutter	// text in the ship-box looks better with only name shown
+//		section DEFusion_Cutter
+//		section DEAntimatter_Cutter
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_VdCrv"
+	threat		1
+
+	requires	"DRV_Fusn"
+
+	allows		"DRV_VdMstr		RP:225000"
+
+	ship
+	{
+		section DEFusion_Carver		// text in the ship-box looks better with only name shown
+//		section DEAntimatter_Carver
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_VdMstr"
+	threat		2
+
+	requires	"DRV_AntiMat"
+
+	allows		"DRV_GrvSyn		RP:75000"
+
+	ship
+	{
+		section DEAntimatter_Mastery
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_GrvSyn"
+
+	requires	"IND_GravCon"
+
+	strategy
+	{
+		inc TECHBEN_STRATSPD
+	}
+}
+
+//******************************************************************************************
+// Warheads
+//******************************************************************************************
+
+/////////////////////////////////////////////
+// Mines
+
+tech
+{
+	name		"WEP_NukMine"
+	family		"WAR"
+	threat		1
+
+	group		MINES
+
+	allows		"WEP_CorMine	RP:20000	Human:70 	Zuul:90 	Hiver:60 	Tarkas:60 	Liir:50 	Morrigi:70"
+	allows		"WEP_FusMine	RP:0	Human:90 	Zuul:65 	Hiver:90 	Tarkas:70 	Liir:70 	Morrigi:70"
+	allows		"WEP_NanMine	RP:40000	Human:70 	Zuul:90 	Hiver:60 	Tarkas:60 	Liir:90 	Morrigi:70"
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_1_nuke.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_CorMine"
+	family		"WAR"
+	threat		2
+
+	group		MINES
+
+	requires	"BIO_TerBac"
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_1_weaponized_corrosive.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_NanMine"
+	family		"WAR"
+	threat		3
+
+	group		MINES
+
+	requires	"IND_EleNans"
+
+	allows		"BIO_SmrtNan	RP:75000	Human:70 	Zuul:40 	Hiver:50 	Tarkas:60 	Liir:80 	Morrigi:90"
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_1_weaponized_nanite.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_FusMine"
+	family		"WAR"
+	threat		2
+
+	group		MINES
+
+	requires	"WEP_NukMine"
+	requires	"WEP_FusWhd"
+
+	allows		"WEP_LpMine		RP:40000	Human:70 	Zuul:25 	Hiver:90 	Tarkas:60 	Liir:80 	Morrigi:90"
+	allows		"WEP_AmMine		RP:60000	Human:90 	Zuul:65 	Hiver:90 	Tarkas:70 	Liir:70 	Morrigi:70"
+	allows		"WEP_ClkMine	RP:40000	Human:70 	Zuul:25 	Hiver:90 	Tarkas:60 	Liir:80 	Morrigi:90"
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_2_fus.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_LpMine"
+	family		"WAR"
+	threat		2
+
+	group		MINES
+
+	requires	"IND_TrctBm"
+
+	allows		"WEP_AMLeapMine		RP:40000"	// guaranteed if you get AM mines
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_2_fus_leap.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_ClkMine"
+	family		"WAR"
+	threat		2
+
+	group		MINES
+
+	requires	"SLD_Clk"
+
+	allows		"WEP_AMClkMine		RP:40000"	// guaranteed if you get AM mines
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_2_fus_clk.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_AmMine"
+	family		"WAR"
+	threat		3
+
+	group		MINES
+
+	requires	"WEP_FusMine"
+	requires	"WEP_AmWhd"
+
+	allows		"WEP_AMLeapMine		RP:80000	Human:90 	Zuul:65 	Hiver:90 	Tarkas:70 	Liir:80 	Morrigi:90"
+	allows		"WEP_GrvMine		RP:100000	Human:90 	Zuul:65 	Hiver:90 	Tarkas:70 	Liir:70 	Morrigi:90"
+	allows		"WEP_AMClkMine		RP:80000	Human:90 	Zuul:65 	Hiver:90 	Tarkas:70 	Liir:80 	Morrigi:90"
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_3_am.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_AMLeapMine"
+	family		"WAR"
+	threat		3
+
+	group		MINES
+
+	requires	"WEP_AmMine"
+	requires	"IND_TrctBm"
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_3_am_leap.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_AMClkMine"
+	family		"WAR"
+	threat		3
+
+	group		MINES
+
+	requires	"WEP_AmMine"
+	requires	"SLD_Clk"
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_3_am_cloak.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_GrvMine"
+	family		"WAR"
+	threat		3
+
+	group		MINES
+
+	requires	"IND_GravCon"
+
+	allows		"WEP_ImpMine	RP:225000	Human:70 	Zuul:25 	Hiver:90 	Tarkas:50 	Liir:50 	Morrigi:90"
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_3_am_grav.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_ImpMine"
+	family		"WAR"
+	threat		3
+
+	group		MINES
+
+	requires	"IND_GravCon"
+
+	ship
+	{
+		section DEMinelayer
+		section CRMinelayer
+	}
+	weapon
+	{
+		filename  "Weapons/min_3_am_implo.weapon"
+	}
+}
+
+/////////////////////////////////////////
+// Missiles
+
+// this allows us to have a weapon that requires a tech-group, because weapons cannot require a tech-group, but techs can!
+tech
+{
+	name		"WEP_Missile"
+	family		"WAR"
+
+//	group		MEDWEP			// do NOT enable DE War nor CR Strafe from standard missiles!
+
+	requires	GRP_WARHEAD
+}
+
+tech
+{
+	name		"WEP_PMsl"		// Planetary Missiles
+	family		"WAR"
+
+	weapon
+	{
+		filename  "Weapons/mis_planet.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HvyPMsl"	// Heavy Planetary Missiles
+	family		"WAR"
+
+	requires	"WEP_PMsl"
+	requires	"WEP_HvyMsl"
+
+	weapon
+	{
+		filename  "Weapons/mis_planet_hvy.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_MWPMsl"	// MW Planetary Missiles
+	family		"WAR"
+
+	requires	"WEP_PMsl"
+	requires	"WEP_MWMsl"
+
+	weapon
+	{
+		filename  "Weapons/mis_planet_mirv.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_Nukes"		// Explosive Warhead
+	family		"WAR"
+	type		P
+
+	group		WARHEAD
+
+	allows		"WEP_NukeWhd	RP:0		Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:50 	Morrigi:50"
+	allows		"WEP_FMsl		RP:225000	Human:90 	Zuul:25 	Hiver:90 	Tarkas:90 	Liir:50 	Morrigi:70"
+	allows		"WEP_MWMsl		RP:40000	Human:70 	Zuul:25 	Hiver:90 	Tarkas:60 	Liir:50 	Morrigi:70"
+	allows		"WEP_HvyMsl		RP:0	Human:50 	Zuul:50 	Hiver:50 	Tarkas:50 	Liir:50 	Morrigi:50"
+	allows		"WEP_SmMis		RP:0		Human:90 	Zuul:25 	Hiver:90 	Tarkas:60 	Liir:50 	Morrigi:70"
+	allows		"WEP_DFMsl		RP:0		Human:70 	Zuul:90 	Hiver:60 	Tarkas:90 	Liir:50 	Morrigi:70"
+	allows		"WEP_CorMsl		RP:15000	Human:70 	Zuul:90 	Hiver:60 	Tarkas:90 	Liir:50 	Morrigi:70"
+	allows		"WEP_NanMsl		RP:50000	Human:70 	Zuul:90 	Hiver:60 	Tarkas:60 	Liir:90 	Morrigi:70"
+
+	ship
+	{
+		section Turret_Missile_Medium
+	}
+	weapon
+	{
+		filename  "Weapons/mis_a.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_NukeWhd"	// Nuclear Warhead
+	family		"WAR"
+	threat		2
+	type		P
+
+	group		WARHEAD
+
+	allows		"WEP_HvyMsl		RP:0	Human:50 	Zuul:50 	Hiver:50 	Tarkas:50 	Liir:50 	Morrigi:50"
+	allows		"WEP_GmaWhd		RP:0		Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:90"
+	allows		"WEP_DFMsl		RP:0		Human:50 	Zuul:50 	Hiver:50 	Tarkas:50 	Liir:40 	Morrigi:35"
+	allows		"WEP_NukMine	RP:0		Human:90 	Zuul:65 	Hiver:90 	Tarkas:70 	Liir:70 	Morrigi:70"
+
+	strategy
+	{
+		inc TECHBEN_MSLDAM
+	}
+}
+
+tech
+{
+	name		"WEP_GmaWhd"	// Gamma Warhead
+	family		"WAR"
+	threat		2
+	type		P
+
+	group		WARHEAD
+
+	allows		"WEP_HvyMsl		RP:0	Human:50 	Zuul:50 	Hiver:50 	Tarkas:50 	Liir:50 	Morrigi:50"
+	allows		"WEP_FusWhd		RP:0	Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:50 	Morrigi:50"
+	allows		"WEP_DFMsl		RP:0		Human:50 	Zuul:90 	Hiver:50 	Tarkas:50 	Liir:50 	Morrigi:50"
+
+	strategy
+	{
+		inc TECHBEN_MSLDAM
+	}
+}
+
+tech
+{
+	name		"WEP_FusWhd"	// Fusion Warhead
+	family		"WAR"
+	threat		3
+	type		P
+
+	group		WARHEAD
+
+	allows		"WEP_NukMine	RP:0		Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:95 	Morrigi:95"
+	allows		"WEP_FusMine	RP:0	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:95 	Morrigi:95"
+	allows		"WEP_HvyMsl		RP:0	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:50 	Morrigi:50"
+	allows		"WEP_DualHvyMsl	RP:30000	Human:80 	Zuul:40 	Hiver:80 	Tarkas:80 	Liir:40 	Morrigi:80"
+	allows		"WEP_AmWhd		RP:135000	Human:60 	Zuul:10 	Hiver:70 	Tarkas:80 	Liir:65 	Morrigi:50"
+	allows		"WEP_DualMsl	RP:30000	Human:80 	Zuul:40 	Hiver:80 	Tarkas:80 	Liir:40 	Morrigi:80"
+	allows		"WEP_FMsl		RP:225000	Human:95 	Zuul:90 	Hiver:95 	Tarkas:90 	Liir:90 	Morrigi:95"
+	allows		"WEP_SmMis		RP:0		Human:80 	Zuul:40 	Hiver:80 	Tarkas:90 	Liir:40 	Morrigi:80"
+
+	strategy
+	{
+		inc TECHBEN_MSLDAM
+	}
+}
+
+tech
+{
+	name		"WEP_AmWhd"		// Antimatter Warhead
+	family		"WAR"
+	threat		3
+	type		P
+
+	group		WARHEAD
+
+	requires	"DRV_Fusn"
+
+	allows		"WEP_AmMine		RP:20000	Human:80 	Zuul:80 	Hiver:95 	Tarkas:70 	Liir:50 	Morrigi:80"
+
+	strategy
+	{
+		inc TECHBEN_MSLDAM
+	}
+}
+
+tech
+{
+	name		"WEP_HvyMsl"	// Heavy Missiles
+	family		"WAR"
+	threat		2
+	type		P
+
+	group		LRGWEP
+	group		HVYMSL
+
+	requires	GRP_DECRDN
+
+	allows		"WEP_MWMsl		RP:40000	Human:80 	Zuul:40 	Hiver:60 	Tarkas:50 	Liir:30 	Morrigi:90"
+	allows		"WEP_DualHvyMsl	RP:30000	Human:80 	Zuul:40 	Hiver:80 	Tarkas:80 	Liir:40 	Morrigi:80"
+	allows		"WEP_HvyPMsl	RP:0"	// automatically get heavy planetary with heavy standard
+	allows		"WEP_PrjMsl		RP:0"	// huge missile launchers (we have no tech box for this yet)
+
+	ship
+	{
+		section Turret_Missile_Large
+	}
+	weapon
+	{
+		filename  "Weapons/mis_heavy.weapon"
+	}
+}
+
+// this allows us to have a tech that corresponds with unlocking projector mounted heavy missiles
+// which in turn gives us a member of the projector group to unlock asteroid monitors and heavy sats
+// and any projector sections more generally (if no other projector weapon has yet been discovered)
+tech
+{
+	name		"WEP_PrjMsl"	// Dual Heavy Missiles on Projector Turret
+	family		"WAR"
+
+	group		PRJCTR
+
+	requires	GRP_DECRDN		// allow for any combat construction since this is required for asteroid monitors
+
+	allows		"WEP_FastPrjMsl	RP:0"
+
+	ship
+	{
+		section Turret_Missile_Huge
+	}
+	weapon
+	{
+		filename  "Weapons/mis_huge.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_FastPrjMsl"	// Dual Fast Heavy Missiles on Projector Turret
+	family		"WAR"
+
+	group		PRJCTR
+
+	requires	GRP_CRDN
+	requires	"WEP_FMsl"
+
+	ship
+	{
+		section Turret_Missile_Huge
+	}
+	weapon
+	{
+		filename  "Weapons/mis_huge_fast.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_FMsl"		// Fast Missiles
+	family		"WAR"
+
+	requires	"DRV_IncThrst"
+
+	allows		"WEP_KKMsl		RP:450000	Human:75 	Zuul:50 	Hiver:90 	Tarkas:80 	Liir:40 	Morrigi:80"
+
+	weapon
+	{
+		filename  "Weapons/mis_a_fast.weapon"
+	}
+	strategy
+	{
+		inc TECHBEN_MSLSPD
+		inc TECHBEN_MSLROF
+	}
+}
+
+tech
+{
+	name		"WEP_MWMsl"		// Multi-Warhead Missiles
+	family		"WAR"
+	threat		2
+
+	group		LRGWEP
+	group		HVYMSL
+
+	requires	GRP_DECRDN
+	requires	"DRV_McroFus"
+
+	allows		"DRV_Ints		RP:12000	Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:90"
+	allows		"WEP_MWPMsl		RP:0"	// automatically get MW planetary with MW standard
+
+	ship
+	{
+		section Turret_Missile_Large
+	}
+	weapon
+	{
+		filename  "Weapons/mis_mirv.weapon"
+	}
+}
+
+tech
+{
+	name		"DRV_Ints"		// Interceptor Missiles
+	family		"WAR"
+	threat		1
+
+	group		PD
+
+	requires	"DRV_McroFus"
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_PD
+	}
+	weapon
+	{
+		filename  "Weapons/_def_06_mis.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DFMsl"		// Dumbfire Racks
+	family		"WAR"
+	threat		1
+
+	group		MEDWEP
+
+	requires	GRP_DECRDN
+
+	allows		"WEP_DualMsl	RP:30000	Human:80 	Zuul:40 	Hiver:80 	Tarkas:80 	Liir:40 	Morrigi:80"
+	allows		"DRV_SmMis		RP:12000	Human:80 	Zuul:40 	Hiver:80 	Tarkas:90 	Liir:40 	Morrigi:80"
+
+	ship
+	{
+		section Turret_DF_1x
+	}
+	weapon
+	{
+		filename  "Weapons/mis_dfire.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_SmMis"		// Small Missiles
+	family		"WAR"
+	threat		1
+	type		P
+
+	allows		"WEP_DualSmMis	RP:30000	Human:80 	Zuul:40 	Hiver:80 	Tarkas:80 	Liir:40 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Missile_Small
+	}
+	weapon
+	{
+		filename  "Weapons/mis_small.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualSmMis"	// Dual Small Missile Racks
+	family		"WAR"
+	threat		1
+
+	requires	GRP_DECRDN
+	requires	"DRV_AntiMat"
+
+	ship
+	{
+		section Turret_Missile_Small
+	}
+	weapon
+	{
+		filename  "Weapons/mis_small_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualMsl"	// Dual Missile Racks
+	family		"WAR"
+	threat		1
+
+	requires	GRP_DECRDN
+	requires	"DRV_AntiMat"
+
+	ship
+	{
+		section Turret_Missile_Medium
+	}
+	weapon
+	{
+		filename  "Weapons/mis_a_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualHvyMsl"	// Dual Heavy Missile Racks
+	family		"WAR"
+	threat		1
+
+	requires	GRP_DECRDN
+	requires	GRP_HVYMSL
+	requires	"DRV_AntiMat"
+
+	ship
+	{
+		section Turret_Missile_Large
+	}
+	weapon
+	{
+		filename  "Weapons/mis_heavy_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_CorMsl"		// Corrosive Missiles
+	family		"WAR"
+	threat		2
+
+	group		LRGWEP
+	group		HVYMSL
+
+	requires	GRP_CRDN
+	requires	"BIO_TerBac"
+	requires	"WEP_HvyMsl"
+
+	allows		"WEP_NanMsl		RP:50000	Human:70 	Zuul:90 	Hiver:60 	Tarkas:60 	Liir:90 	Morrigi:70"
+
+	ship
+	{
+		section Turret_Missile_Large
+	}
+	weapon
+	{
+		filename  "Weapons/mis_special_cor_nano.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_NanMsl"		// Nanite Missiles
+	family		"WAR"
+	threat		3
+
+	group		LRGWEP
+	group		HVYMSL
+
+	requires	GRP_CRDN
+	requires	"IND_EleNans"
+
+	allows		"BIO_SmrtNan	RP:75000	Human:70 	Zuul:40 	Hiver:50 	Tarkas:60 	Liir:80 	Morrigi:90"
+
+	ship
+	{
+		section Turret_Missile_Large
+	}
+	weapon
+	{
+		filename  "Weapons/mis_special_cor_nano.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_KKMsl"			// Kintetic-Kill Missiles
+	family		"WAR"
+	threat		2
+
+	group		LRGWEP
+	group		HVYMSL
+
+	requires	GRP_CRDN
+
+	requires	"DRV_IncThrst"
+	requires	"WEP_NeutRnd"
+
+	ship
+	{
+		section Turret_Missile_Large
+	}
+	weapon
+	{
+		filename  "Weapons/mis_special_kinetic.weapon"
+	}
+}
+
+//**************************************************************************************************
+//SHIELDS
+//**************************************************************************************************
+
+tech
+{
+	name		"SLD_Tech"		// Shield Technology (visual root)
+	family		"SLD"
+
+	requires	GRP_DECRDN		// don't show this before there is maybe something beyond it...
+
+	// early cloak (better chance with fusion)
+	allows		"SLD_Clk		RP:12000	Human:70	Zuul:25		Hiver:60	Tarkas:20	Liir:50		Morrigi:90"
+	allows		"SLD_MkOne		RP:36000	Human:70 	Zuul:25 	Hiver:60 	Tarkas:60 	Liir:90 	Morrigi:90"
+	allows		"SLD_MkThree	RP:36000	Human:70 	Zuul:25 	Hiver:60 	Tarkas:90 	Liir:90 	Morrigi:70"
+	allows		"SLD_Def		RP:0		Human:70 	Zuul:50 	Hiver:60 	Tarkas:90 	Liir:50 	Morrigi:70"
+	allows		"SLD_Disr		RP:0		Human:70 	Zuul:50 	Hiver:60 	Tarkas:60 	Liir:50 	Morrigi:90"
+}
+
+tech
+{
+	name		"SLD_Def"		// Deflector Field
+
+	requires	GRP_DECRDN
+
+	allows		"SLD_MkOne		RP:28000	Human:70 	Zuul:25 	Hiver:60 	Tarkas:60 	Liir:90 	Morrigi:90"
+
+	ship
+	{
+		section DEDeflector
+		section CRDeflector
+		section DNDeflector
+	}
+	strategy
+	{
+		inc TECHBEN_DEFENCEBAL
+	}
+}
+
+tech
+{
+	name		"SLD_Disr"		// Disruptor Field
+
+	requires	GRP_DECRDN
+
+	allows		"SLD_MkThree	RP:28000	Human:70 	Zuul:25 	Hiver:60 	Tarkas:90 	Liir:90 	Morrigi:70"
+
+	ship
+	{
+		section DEDisruptor
+		section CRDisruptor
+		section DNDisruptor
+	}
+	strategy
+	{
+		inc TECHBEN_DEFENCELASER
+	}
+}
+
+tech
+{
+	name		"SLD_Clk"		// Cloaking Device
+
+	requires	GRP_DECRDN		// can't allow for scouts unless we change the DE scount to have a cloaking bridge (currently it is cloaking mission)
+
+	allows		"SLD_ImpClk		RP:60000"
+
+	ship
+	{
+		section DECloaking
+		section CRCloaking
+	}
+	strategy
+	{
+		dec TECHBEN_SHIPDETECT
+	}
+}
+
+tech
+{
+	name		"SLD_ImpClk"	// Improved Cloaking Device
+
+	requires	"DRV_Fusn"
+
+	strategy
+	{
+		dec TECHBEN_SHIPDETECT
+	}
+}
+
+tech
+{
+	name		"SLD_MkOne"		// Light Shields
+	OPTION_COST	2.0
+
+	group		SHIELDS
+
+	requires	GRP_DECRDN
+	requires	"DRV_Fusn"
+
+	allows		"SLD_MkTwo		RP:337500"
+
+	ship
+	{
+		section DEShield
+		section CRShield
+	}
+	strategy
+	{
+		dec TECHBEN_SHIELDREGEN
+	}
+}
+
+tech
+{
+	name		"SLD_MkThree"	// Heavy Shields
+	OPTION_COST	3.0
+
+	group		SHIELDS
+
+	requires	GRP_DECRDN
+	requires	"DRV_Fusn"
+
+	allows		"SLD_MkFour		RP:337500"
+
+	ship
+	{
+		section DEShield
+		section CRShield
+	}
+	strategy
+	{
+		inc TECHBEN_SHIELDSTR
+	}
+}
+
+tech
+{
+	name		"SLD_MkTwo"		// Improved Light Shields
+	OPTION_COST	3.0
+
+	group		SHIELDS
+
+	allows		"SLD_Magni		RP:675000	Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:95"
+
+	strategy
+	{
+		dec TECHBEN_SHIELDREGEN
+		inc TECHBEN_SHIELDSTR
+	}
+}
+
+tech
+{
+	name		"SLD_MkFour"	// Improved Heavy Shields
+	OPTION_COST	4.0
+
+	group		SHIELDS
+
+	allows		"SLD_Magni		RP:675000	Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:90"
+
+	strategy
+	{
+		inc TECHBEN_SHIELDSTR
+	}
+}
+
+tech
+{
+	name		"SLD_Magni"		// Shield Magnifier
+
+	requires	GRP_SHIELDS
+
+	strategy
+	{
+		inc TECHBEN_SHIELDSTR
+	}
+}
+
+tech
+{
+	name		"SLD_ErgAb"		// Energy Absorbers
+	OPTION_COST	4.0
+
+	requires	GRP_DECRDN
+
+	allows		"SLD_MesShld	RP:675000	Human:75 	Zuul:50 	Hiver:50 	Tarkas:50 	Liir:90 	Morrigi:95"
+
+	ship
+	{
+		section DEAbsorber
+		section CRAbsorber
+		section DNAbsorber
+	}
+	strategy
+	{
+		inc TECHBEN_DEFENCENRG
+		inc TECHBEN_NRGRATE
+	}
+}
+
+tech
+{
+	name		"SLD_MesShld"	// Meson Shields
+	OPTION_COST	4.0
+
+	group		SHIELDS
+
+	requires	GRP_DECRDN
+
+	strategy
+	{
+		inc TECHBEN_DEFENCEMESON
+	}
+}
+
+tech
+{
+	name		"DRV_QntCap"	// Quantum Capacitors
+	family		"SLD"
+
+	allows		"SLD_GrvShld	RP:675000	Human:20 	Zuul:10 	Hiver:20 	Tarkas:40 	Liir:80 	Morrigi:90"
+
+	strategy
+	{
+		inc TECHBEN_BEAMRATE
+		inc TECHBEN_SHIELDSTR
+	}
+}
+
+tech
+{
+	name		"SLD_GrvShld"	// Grav Shields
+	OPTION_COST	4.0
+
+	group		SHIELDS
+
+	requires	GRP_DECRDN
+
+	strategy
+	{
+		inc TECHBEN_DEFENCEGRAV
+	}
+}
+
+tech
+{
+	name		"SLD_Proj"		// Shield Projector (Projector Mounted Shields)
+
+	requires	GRP_CRDN
+	requires    GRP_SHIELDS
+
+	allows		"SLD_Focus		RP:675000"	// Liir Racial = 100%
+}
+
+tech
+{
+	name		"SLD_Focus"		// Shield Protectorate (Liir only)
+
+	requires	GRP_CRDN
+	requires    GRP_SHIELDS
+	requires	"DRV_StrWrp"	// Liir only
+
+	ship
+	{
+		section CRProtectorate
+		section DNProtectorate
+	}
+}
+
+tech
+{
+	name		"SLD_Intang"	// Intangibility (intentionally unreachable!)
+	OPTION_COST	4.0
+
+	requires	"SLD_Clk"
+	requires	"DRV_AntiMat"
+}
+
+//******************************************************************************************
+// Power Technology
+//******************************************************************************************
+
+tech
+{
+	name		"DRV_Fissn"		// Fission
+
+	allows		"DRV_Fusn		RP:0"  // ~1.33x cost
+
+	allows		"DRV_OvrThrust	RP:0		Human:0  	Zuul:0  	Hiver:0     Tarkas:0    Liir:95     Morrigi:95"
+	allows		"DRV_PlsFiss	RP:0		Human:100 	Zuul:100 	Hiver:100 	Tarkas:100 	Liir:0  	Morrigi:0"
+	allows		"DRV_RecFiss	RP:0"
+
+	ship
+	{
+		section DEFission
+		section CRFission
+	}
+	strategy
+	{
+		inc TECHBEN_SHPTACSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_PlsFiss"	// Pulsed Fission
+
+	allows		"DRV_LRFiss		RP:0		Human:0  	 Zuul:0  	 Hiver:100 	Tarkas:0  	 Liir:0  	Morrigi:0"
+	allows		"DRV_OvrThrust	RP:0		Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:0  	Morrigi:0"
+
+	ship
+	{
+		section DEPulsedFission
+		section CRPulsedFission
+	}
+	strategy
+	{
+		inc TECHBEN_SHPTACSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_OvrThrust"	// Overthrusting
+
+	requires	GRP_DECRDN		// technically, GRP_DECR (dreads don't benefit)
+
+	ship
+	{
+		section DEPursuit
+	}
+	strategy
+	{
+		inc TECHBEN_SHPTACSPD
+	}
+}
+
+tech
+{
+	name		"DRV_LRFiss"	// Long-Range Fission Drive
+
+	allows		"DRV_RecFiss	RP:0	Human:0  	Zuul:0  	Hiver:90 	Tarkas:0  	Liir:0  	Morrigi:0"
+
+	ship
+	{
+		section DELongRangeFission
+		section CRLongRangeFission
+	}
+	strategy
+	{
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_RecFiss"	// Recombinant Fission
+	OPTION_COST	1.2
+	type		P
+
+	strategy
+	{
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_Fusn"		// Fusion
+	threat		2
+
+	requires	"IND_OrbDry"	// We require this to force the "free techs" not to include "Fusion"
+
+	allows		"DRV_AntiMat	RP:337500"  // make it expensive enough to make fusion era stuff worth while
+
+	allows		"WEP_FusWhd		RP:0	Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:50 	Morrigi:50"
+	allows		"SLD_Clk		RP:12000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+	allows		"DRV_SmlFus		RP:12000"
+	allows		"DRV_PlsmFoc	RP:9000"
+	allows		"DRV_McroFus	RP:30000"
+	allows		"DRV_LRFusn		RP:9000		Human:0  	 Zuul:0  	 Hiver:100 	Tarkas:0  	 Liir:0  	 Morrigi:0"	// 100% Racial
+	allows		"WEP_GluTrp		RP:66000	Human:95 	Zuul:75 	Hiver:75 	Tarkas:70 	Liir:80 	Morrigi:90"
+	allows		"WEP_PhotTrp	RP:0	Human:90 	Zuul:25 	Hiver:60 	Tarkas:60 	Liir:50 	Morrigi:70"	// 2nd chances (to allow gluonic torps which now require photon torps)
+	allows		"WEP_PlsmTrp	RP:0	Human:70 	Zuul:25 	Hiver:90 	Tarkas:60 	Liir:90 	Morrigi:70"	// 2nd chances (to allow fusion torps which now require plasma torps)
+	allows		"WEP_FusTrp		RP:60000	Human:30 	Zuul:20 	Hiver:30 	Tarkas:55 	Liir:90 	Morrigi:80"
+	allows		"WEP_FusCan		RP:40000	Human:80 	Zuul:50 	Hiver:70 	Tarkas:80 	Liir:90 	Morrigi:80"
+
+	strategy
+	{
+		inc TECHBEN_SHPTACSPD
+		inc TECHBEN_STRATRNGE
+	}
+	ship
+	{
+		section DEfusion
+		section CRfusion
+		section DNfusion
+	}
+}
+
+tech
+{
+	name		"DRV_SmlFus"		// Small-scale Fusion Drives
+	threat		2
+	type		P
+
+	requires	GRP_SMALL_DRIVES
+
+	allows		"DRV_IncThrst	RP:40000	Human:80 	Zuul:40 	Hiver:80 	Tarkas:60 	Liir:50 	Morrigi:50"
+
+	strategy
+	{
+		inc TECHBEN_RDRSPD
+	}
+}
+
+tech
+{
+	name		"DRV_McroFus"		// Micro-Fusion Drives
+	threat		2
+	type		P
+
+	requires	GRP_WARHEAD
+
+	allows		"DRV_IncThrst	RP:40000	Human:80 	Zuul:40 	Hiver:80 	Tarkas:60 	Liir:50 	Morrigi:50"
+
+	strategy
+	{
+		inc TECHBEN_MSLSPD
+	}
+}
+
+tech
+{
+	name		"DRV_IncThrst"		// Ionic Thrusters
+	threat		2
+
+	strategy
+	{
+		inc TECHBEN_MANEUVER
+	}
+}
+
+tech
+{
+	name		"DRV_PlsmFoc"		// Plasma Focusing
+	threat		2
+	type		P
+
+	OPTION_COST	1.4
+
+	strategy
+	{
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_LRFusn"		// Long Range Fusion
+	threat		2
+
+	allows		"DRV_Rmscps		RP:0	Human:0  	Zuul:0  	Hiver:100 	Tarkas:0  	Liir:0  	Morrigi:0"	// 100% Racial
+
+	ship
+	{
+		section DELongRangeFusion
+		section CRLongRangeFusion
+		section DNLongRangeFusion
+	}
+	strategy
+	{
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_Rmscps"
+	threat		1
+
+	ship
+	{
+		section DERamscoop
+		section CRRamscoop
+	}
+	strategy
+	{
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+tech
+{
+	name		"DRV_AntiMat"		// Antimatter
+	threat		3
+
+	requires	"IND_HvyPlat"	// like Fusion, require some industrial upgrades first...
+
+	allows		"WEP_AmWhd		RP:135000	Human:60 	Zuul:10 	Hiver:70 	Tarkas:80 	Liir:50 	Morrigi:50"
+	allows		"SLD_ErgAb		RP:450000	Human:85 	Zuul:80 	Hiver:70 	Tarkas:70 	Liir:95 	Morrigi:95"
+	allows		"DRV_QntCap		RP:450000	Human:70 	Zuul:20 	Hiver:40 	Tarkas:55 	Liir:95 	Morrigi:95"
+	allows		"SLD_Proj		RP:450000	Human:70 	Zuul:50 	Hiver:60 	Tarkas:70 	Liir:100 	Morrigi:90"	// Liir Racial = 100%
+	allows		"WEP_AmTrp		RP:450000	Human:40 	Zuul:20 	Hiver:40 	Tarkas:60 	Liir:85 	Morrigi:80"
+	allows		"WEP_AmCan		RP:337500	Human:70 	Zuul:40 	Hiver:60 	Tarkas:60 	Liir:90 	Morrigi:70"
+
+	ship
+	{
+		section DEAntimatter
+		section CRAntimatter
+		section DNAntimatter
+	}
+	strategy
+	{
+		inc TECHBEN_SHPTACSPD
+		inc TECHBEN_STRATRNGE
+	}
+}
+
+//********************************************************************************************************
+//   Torpedo Technology Tree
+//********************************************************************************************************
+
+/////////////////////////////////////////////
+// Photonic, Gluonic, Mesonic, & Kelvenic Torpedos
+
+tech
+{
+	name		"WEP_PhotTrp"
+	family		"TRP"
+	threat		2
+
+	group		TORPS
+
+	requires	GRP_CRDN	// CR/DN unlock torpedos and large weapons, which then unlock getting DE Spinal
+
+	allows		"WEP_GluTrp		RP:60000	Human:95 	Zuul:75 	Hiver:75 	Tarkas:70 	Liir:80 	Morrigi:90"
+	allows		"WEP_PhotTrp2	RP:50000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:95 	Morrigi:95"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_photon.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PhotTrp2"
+	family		"TRP"
+	threat		2
+
+	group		TORPS
+
+	requires	"DRV_Fusn"
+	requires	"WEP_PhotTrp"
+
+	allows		"WEP_PhotTrp3	RP:360000	Human:95 	Zuul:75 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:90"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_photon2.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PhotTrp3"
+	family		"TRP"
+	threat		3
+
+	group		TORPS
+
+	requires	"DRV_AntiMat"
+	requires	"WEP_PhotTrp2"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_photon3.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_GluTrp"
+	family		"TRP"
+	threat		2
+
+	group		TORPS
+
+	requires	"DRV_Fusn"
+	requires	"WEP_PhotTrp"
+
+	allows		"WEP_MesTrp		RP:675000	Human:85 	Zuul:25 	Hiver:40 	Tarkas:25 	Liir:70 	Morrigi:80"
+	allows		"WEP_KelTrp		RP:450000	Human:75 	Zuul:25 	Hiver:50 	Tarkas:35 	Liir:90 	Morrigi:70"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_nic_gluonic.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_KelTrp"
+	family		"TRP"
+	threat		3
+
+	group		TORPS
+
+	requires	"DRV_AntiMat"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_nic_kelvinic.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_MesTrp"
+	family		"TRP"
+	threat		3
+
+	group		TORPS
+
+	requires	"DRV_AntiMat"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_nic_mesonic.weapon"
+	}
+}
+
+/////////////////////////////////////////////
+// Energy Torpedos (Plasma, Fusion, AM)
+
+tech
+{
+	name		"WEP_PlsmTrp"
+	family		"TRP"
+	threat		2
+
+	group		TORPS
+
+	requires	GRP_CRDN	// CR/DN unlock torpedos, which then unlock getting DE Spinal
+	allows		"WEP_FusTrp		RP:48000	Human:80 	Zuul:70 	Hiver:70 	Tarkas:75 	Liir:80 	Morrigi:85"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_plasma_1.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_FusTrp"
+	family		"TRP"
+	threat		2
+
+	group		TORPS
+
+	requires	"DRV_Fusn"
+	requires	"WEP_PlsmTrp"
+
+	allows		"WEP_DtFsTrp	RP:112500	Human:80 	Zuul:70 	Hiver:70 	Tarkas:75 	Liir:80 	Morrigi:85"
+	allows		"WEP_AmTrp		RP:450000	Human:80 	Zuul:70 	Hiver:70 	Tarkas:75 	Liir:80 	Morrigi:85"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_plasma_2.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DtFsTrp"
+	family		"TRP"
+	threat		3
+
+	group		TORPS
+
+	requires	"WEP_FusTrp"
+	requires	"IND_PredGun"	// requires Predictive Gunnery 
+
+	allows		"WEP_DtAmTrp	RP:540000"	// guaranteed, but you need the base AM Torp to get them...
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_plasma_2_det.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_AmTrp"
+	family		"TRP"
+	threat		3
+
+	group		TORPS
+
+	requires	"DRV_AntiMat"
+	requires	"WEP_FusTrp"
+
+	allows		"WEP_DtAmTrp	RP:675000	Human:80 	Zuul:70 	Hiver:70 	Tarkas:75 	Liir:80 	Morrigi:85"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_plasma_3.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DtAmTrp"
+	family		"TRP"
+	threat		3
+
+	group		TORPS
+
+	requires	"WEP_AmTrp"		// requires base AM Torps
+	requires	"IND_PredGun"	// requires Predictive Gunnery 
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_plasma_3_det.weapon"
+	}
+}
+
+/////////////////////////////////////////////
+// Disruptors, Pulsars, & Inertial Cannons
+
+tech
+{
+	name		"WEP_Dsrptr"	// Disruptor Torpedo
+	family		"TRP"
+	threat		2
+
+	group		TORPS
+	group		EMTRS
+
+	requires	GRP_CRDN	// CR/DN unlock torpedos, which then unlock getting DE Spinal
+
+	allows		"WEP_EmPulse	RP:0	Human:75 	Zuul:90 	Hiver:70 	Tarkas:70	Liir:80 	Morrigi:95"
+	allows		"WEP_DsrPrj		RP:0	Human:75 	Zuul:85 	Hiver:70 	Tarkas:70	Liir:80 	Morrigi:95"
+	allows		"WEP_HvyDsrCan	RP:0	Human:75 	Zuul:50 	Hiver:70 	Tarkas:70	Liir:90 	Morrigi:95"
+	allows		"WEP_DsrCan		RP:12000	Human:75 	Zuul:50 	Hiver:70 	Tarkas:70	Liir:90 	Morrigi:95"
+
+	allows		"WEP_DsrptrWhp	RP:0"	// 100% Racial, zero cost due to no tech box
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_disruptor.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DsrptrWhp"		// Disruptor Whip
+	family		"NRG"
+	threat		2
+
+	group		EMTRS
+
+	requires	GRP_CRDN			// doesn't have to be limited to cruisers - but that's where it starts to make sense
+
+	requires	"DRV_Rip"			// zuul rip drive
+
+	weapon
+	{
+		filename  "Weapons/bal_special_grapple_disruptorwhip.weapon"
+    }
+}
+
+tech
+{
+	name		"WEP_DsrPrj"		// Disruptor Projector
+	family		"NRG"
+	threat		2
+
+	group		PRJCTR
+	group		EMTRS
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section CRProjector
+		section DNProjector
+	}
+	weapon
+	{
+		filename  "Weapons/dsr_projector.weapon"
+    }
+}
+
+tech
+{
+	name		"WEP_DsrCan"		// Disruptor Bolt
+	family		"NRG"
+	threat		2
+
+	group		MEDWEP
+	group		EMTRS
+
+	allows		"WEP_DualDsrCan		RP:14400	Human:75 	Zuul:50 	Hiver:70 	Tarkas:70	Liir:90 	Morrigi:95"
+	allows		"WEP_IntCan			RP:40000	Human:75 	Zuul:90 	Hiver:60 	Tarkas:70 	Liir:90 	Morrigi:85"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/dsr_bolt.weapon"
+    }
+}
+
+tech
+{
+	name		"WEP_DualDsrCan"		// Dual Disruptor Bolts
+	family		"NRG"
+	threat		2
+
+	group		MEDWEP
+	group		EMTRS
+
+
+	ship
+	{
+		section Turret_Medium_2x
+	}
+	weapon
+	{
+		filename  "Weapons/dsr_bolt_dual.weapon"
+    }
+}
+
+tech
+{
+	name		"WEP_HvyDsrCan"		// Heavy Disruptor Cannon
+	family		"NRG"
+	threat		2
+
+	group		LRGWEP
+	group		EMTRS
+	group		SPINAL
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/dsr_heavy_cannon.weapon"
+    }
+}
+
+tech
+{
+	name		"WEP_EmPulse"		// Electro-magnetic Pulse Torpedo
+	family		"TRP"
+	threat		3
+
+	group		TORPS
+	group		EMTRS
+
+	requires	GRP_CRDN
+
+	allows		"WEP_PlsTrp		RP:48000	Human:75 	Zuul:90 	Hiver:60 	Tarkas:70 	Liir:90 	Morrigi:85"	// pulsar torp
+	allows		"WEP_IntCan		RP:40000	Human:75 	Zuul:90 	Hiver:60 	Tarkas:70 	Liir:90 	Morrigi:85"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_disruptor_empulsar.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_IntCan"		// Inertial Cannon
+	family		"NRG"
+	threat		2
+
+	group		MEDWEP
+
+	requires	"DRV_Fusn"
+
+	allows		"WEP_HvyIntCan	RP:72000	Human:75 	Zuul:90 	Hiver:60 	Tarkas:70 	Liir:90 	Morrigi:85"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/dsr_inertial.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HvyIntCan"		// Heavy Inertial Cannon
+	family		"NRG"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+	requires	"DRV_Fusn"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/dsr_inertial_hvy.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PlsTrp"		// Pulsar Torpedo
+	family		"TRP"
+	threat		2
+
+	group		TORPS
+
+	requires	GRP_CRDN
+	requires	"DRV_Fusn"
+
+	ship
+	{
+		section CRTorpedo
+	}
+	weapon
+	{
+		filename  "Weapons/trp_disruptor_pulsar.weapon"
+	}
+}
+
+//******************************************************************************************
+// ENERGY WEAPONS
+//******************************************************************************************
+
+/////////////////////////////////////////////
+// Energy Cannons
+
+tech
+{
+	name		"WEP_PlsmCan"
+	family		"NRG"
+	threat		2
+
+	group		MEDWEP
+
+	requires	GRP_DECRDN
+
+	allows		"WEP_PlsmTrp		RP:0	Human:80 	Zuul:70 	Hiver:95 	Tarkas:75 	Liir:95 	Morrigi:85"
+	allows		"WEP_PolPlsm		RP:9000 	Human:85 	Zuul:70 	Hiver:70 	Tarkas:70 	Liir:95 	Morrigi:95"
+	allows		"WEP_FusCan			RP:32000	Human:80 	Zuul:50 	Hiver:95 	Tarkas:80 	Liir:95 	Morrigi:80"
+	allows		"WEP_HvyPCan		RP:0	Human:70 	Zuul:30 	Hiver:85 	Tarkas:70 	Liir:95 	Morrigi:80"
+	allows		"WEP_PlsmProj		RP:0	Human:60 	Zuul:20 	Hiver:80 	Tarkas:50 	Liir:90 	Morrigi:70"
+	allows		"WEP_DualPlsmCan	RP:14400	Human:80 	Zuul:50 	Hiver:95 	Tarkas:80 	Liir:95 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/can_1_plasma.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_FusCan"
+	family		"NRG"
+	threat		2
+
+	group		MEDWEP
+
+	requires	"DRV_Fusn"
+	requires	"WEP_PlsmCan"
+
+	allows		"WEP_FusTrp			RP:64000	Human:80 	Zuul:70 	Hiver:90 	Tarkas:75 	Liir:90 	Morrigi:85"
+	allows		"WEP_PolFus			RP:60000	Human:75 	Zuul:30 	Hiver:95 	Tarkas:50 	Liir:95 	Morrigi:90"
+	allows		"WEP_AmCan			RP:120000	Human:70 	Zuul:40 	Hiver:95 	Tarkas:60 	Liir:95 	Morrigi:70"
+	allows		"WEP_HvyFCan		RP:60000	Human:50 	Zuul:30 	Hiver:90 	Tarkas:60 	Liir:90 	Morrigi:70"
+	allows		"WEP_FusProj		RP:60000	Human:45 	Zuul:20 	Hiver:90 	Tarkas:40 	Liir:90 	Morrigi:50"
+	allows		"WEP_DualFusCan		RP:75000	Human:80 	Zuul:50 	Hiver:95 	Tarkas:80 	Liir:95 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/can_2_fus.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_AmCan"
+	family		"NRG"
+	threat		3
+
+	group		MEDWEP
+
+	requires	"DRV_AntiMat"
+	requires	"WEP_FusCan"
+
+	allows		"WEP_AmTrp			RP:450000	Human:80 	Zuul:70 	Hiver:90 	Tarkas:75 	Liir:95 	Morrigi:85"
+	allows		"WEP_PolAm			RP:337500	Human:80 	Zuul:50 	Hiver:95 	Tarkas:80 	Liir:90 	Morrigi:80"
+	allows		"WEP_HvyACan		RP:337500	Human:50 	Zuul:20 	Hiver:90 	Tarkas:60 	Liir:90 	Morrigi:60"
+	allows		"WEP_AMProj			RP:450000	Human:25 	Zuul:10 	Hiver:85 	Tarkas:20 	Liir:90 	Morrigi:50"
+	allows		"WEP_DualAMCan		RP:562500	Human:80 	Zuul:50 	Hiver:95 	Tarkas:80 	Liir:95 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/can_3_am.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HvyPCan"
+	family		"NRG"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+	requires	"WEP_PlsmCan"
+
+	allows		"WEP_HvyFCan	RP:48000"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/can_hvy_1_plasma.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HvyFCan"
+	family		"NRG"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+	requires	"WEP_FusCan"
+
+	allows		"WEP_HvyACan	RP:270000"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/can_hvy_2_fus.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HvyACan"
+	family		"NRG"
+	threat		3
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+	requires	"WEP_AmCan"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/can_hvy_3_am.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PolPlsm"
+	family		"NRG"
+	threat		2
+
+	group		MEDWEP
+
+	requires	GRP_ARMOR
+	requires	"WEP_PlsmCan"
+
+	allows		"WEP_PolFus		RP:48000"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/can_1_plasma_polarized.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PolFus"
+	family		"NRG"
+	threat		2
+
+	group		MEDWEP
+
+	requires	GRP_ARMOR
+	requires	"WEP_FusCan"
+
+	allows		"WEP_PolAm		RP:270000"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/can_2_fus_polarized.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PolAm"
+	family		"NRG"
+	threat		3
+
+	group		MEDWEP
+
+	requires	GRP_ARMOR
+	requires	"WEP_AmCan"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/can_3_am_polarized.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PlsmProj"
+	family		"NRG"
+	threat		2
+
+	group		PRJCTR
+
+	requires	GRP_CRDN
+	requires	"WEP_PlsmCan"
+
+	allows		"WEP_FusProj	RP:64000"
+
+	ship
+	{
+		section CRProjector
+		section DNProjector
+	}
+	weapon
+	{
+		filename  "Weapons/can_prj_1_plasma.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_FusProj"
+	family		"NRG"
+	threat		2
+
+	group		PRJCTR
+
+	requires	GRP_CRDN
+	requires	"WEP_FusCan"
+
+	allows		"WEP_AMProj		RP:360000"
+
+	ship
+	{
+		section CRProjector
+		section DNProjector
+	}
+	weapon
+	{
+		filename  "Weapons/can_prj_2_fus.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_AmProj"
+	family		"NRG"
+	threat		3
+
+	group		PRJCTR
+
+	requires	GRP_CRDN
+	requires	"WEP_AmCan"
+
+	ship
+	{
+		section CRProjector
+		section DNProjector
+	}
+	weapon
+	{
+		filename  "Weapons/can_prj_3_am.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualPlsmCan"
+	family		"NRG"
+	threat		2
+
+	requires	"WEP_PlsmCan"
+
+	allows		"WEP_DualFusCan		RP:60000"
+
+	ship
+	{
+		section Turret_Medium_2x
+	}
+	weapon
+	{
+		filename  "Weapons/can_1_plasma_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualFusCan"
+	family		"NRG"
+	threat		2
+
+	requires	"WEP_FusCan"
+
+	allows		"WEP_DualAMCan		RP:450000"
+
+	ship
+	{
+		section Turret_Medium_2x
+	}
+	weapon
+	{
+		filename  "Weapons/can_2_fus_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualAmCan"
+	family		"NRG"
+	threat		3
+
+	requires	"WEP_AmCan"
+
+	ship
+	{
+		section Turret_Medium_2x
+	}
+	weapon
+	{
+		filename  "Weapons/can_3_am_dual.weapon"
+	}
+}
+
+/////////////////////////////////////////////
+// Emitters
+
+tech
+{
+	name		"WEP_LtEmitr"
+	family		"NRG"
+	threat		2
+
+	group		EMTRS
+	group		SMLWEP
+
+	allows		"WEP_Emitr		RP:0	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:95 	Morrigi:95"
+	allows		"WEP_EmitrPD	RP:0		Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:90"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/emt_light.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_EmitrPD"
+	family		"NRG"
+	threat		2
+
+	group		PD
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_PD
+	}
+	weapon
+	{
+		filename  "Weapons/_def_04_emt.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_Emitr"
+	family		"NRG"
+	threat		2
+
+	group		EMTRS
+	group		MEDWEP
+
+	allows		"WEP_HvyEmitr	RP:40000	Human:90 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:90 	Morrigi:90"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/emt_medium.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HvyEmitr"
+	family		"NRG"
+	threat		3
+
+	group		EMTRS
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+
+	allows		"WEP_EmtPrj		RP:0"	// no tech box: so free with cruisers & fusion
+
+	allows		"WEP_EmtAdv		RP:450000     Human:90 	Zuul:25 	Hiver:60 	Tarkas:60 	Liir:90 	Morrigi:90"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/emt_heavy.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_EmtPrj"
+	family		"NRG"
+	threat		3
+
+	group		EMTRS
+	group		PRJCTR
+
+	requires	GRP_CRDN
+	requires	"DRV_Fusn"
+
+	ship
+	{
+		section CRProjector
+		section DNProjector
+	}
+	weapon
+	{
+		filename  "Weapons/emt_proj.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_EmtAdv"
+	family		"NRG"
+	threat		3
+
+	requires	"DRV_AntiMat"
+	requires	GRP_DECRDN
+}
+
+/////////////////////////////////////////////
+// Beamers
+
+tech
+{
+	name		"WEP_RedBmr"
+	family		"NRG"
+
+	group		LASERS
+
+	allows		"WEP_GrnBmr		RP:0		Human:95 	Zuul:100	Hiver:95 	Tarkas:95 	Liir:95 	Morrigi:100"
+	allows		"WEP_PDBmr		RP:0		Human:90 	Zuul:90		Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:90"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_beamer_basic.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PDBmr"
+	family		"NRG"
+	threat		1
+
+	group		PD
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_PD
+	}
+	weapon
+	{
+		filename  "Weapons/_def_02_las.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_GrnBmr"
+	family		"NRG"
+	threat		1
+
+	group		SMLWEP
+
+	requires	"WEP_RedBmr"
+
+	allows		"WEP_UvBmr		RP:0		Human:95 	Zuul:100	Hiver:95 	Tarkas:95 	Liir:95 	Morrigi:100"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_beamer_improved.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_UvBmr"
+	family		"NRG"
+	threat		2
+
+	requires	"WEP_GrnBmr"
+
+	allows		"WEP_XrayBmr	RP:30000	Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:95 	Morrigi:95"
+	allows		"WEP_HCLas		RP:36000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+	allows		"WEP_DualBmr	RP:18000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_beamer_uv.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_XrayBmr"
+	family		"NRG"
+	threat		3
+
+	requires	GRP_DECRDN
+	requires	"DRV_Fusn"
+	requires	"WEP_UvBmr"
+
+	allows		"WEP_Phas		RP:60000	Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:95 	Morrigi:95"
+	allows		"WEP_HCLas		RP:36000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+	allows		"WEP_DualAdvBmr	RP:67500	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+			filename "Weapons/las_beamer_xray.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualBmr"
+	family		"NRG"
+	threat		2
+
+	requires	GRP_DECRDN
+	requires	"WEP_UvBmr"
+
+	allows		"WEP_DualAdvBmr	RP:67500"
+
+	ship
+	{
+		section Turret_Small_2x
+	}
+	weapon
+	{
+		filename  "Weapons/las_beamer_uv_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualAdvBmr"
+	family		"NRG"
+	threat		2
+
+	requires	"WEP_XrayBmr"
+
+	allows		"WEP_DualPhas	RP:60000"
+
+	ship
+	{
+		section Turret_Small_2x
+	}
+	weapon
+	{
+		filename  "Weapons/las_beamer_xray_dual.weapon"
+	}
+}
+
+/////////////////////////////////////////////
+// Lasers
+
+tech
+{
+	name		"WEP_RedLas"
+	family		"NRG"
+
+	group		LASERS
+
+	allows		"WEP_GrnLas		RP:0		Human:100 	Zuul:95		Hiver:95 	Tarkas:95 	Liir:100 	Morrigi:95"
+	allows		"WEP_PDLas		RP:0		Human:90 	Zuul:90		Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:90"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_laser_basic.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PDLas"
+	family		"NRG"
+	threat		1
+
+	group		PD
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_PD
+	}
+	weapon
+	{
+		filename  "Weapons/_def_03_las_pulsed.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_GrnLas"
+	family		"NRG"
+	threat		1
+
+	group		SMLWEP
+
+	requires	"WEP_RedLas"
+
+	allows		"WEP_UvLas		RP:0		Human:100 	Zuul:95		Hiver:95 	Tarkas:95 	Liir:100 	Morrigi:95"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_laser_improved.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_UvLas"
+	family		"NRG"
+	threat		2
+
+	requires	"WEP_GrnLas"
+
+	allows		"WEP_XryLas		RP:30000	Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:95 	Morrigi:95"
+	allows		"WEP_HCLas		RP:36000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+	allows		"WEP_DualLas	RP:20000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_laser_uv.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_XryLas"
+	family		"NRG"
+	threat		3
+
+	requires	GRP_DECRDN
+	requires	"DRV_Fusn"
+	requires	"WEP_UvLas"
+
+	allows		"WEP_PlsPhas	RP:60000	Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:95 	Morrigi:95"
+	allows		"WEP_HCLas		RP:36000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+	allows		"WEP_DualAdvLas	RP:60000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_laser_xray.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualLas"
+	family		"NRG"
+	threat		2
+
+	requires	GRP_DECRDN
+	requires	"WEP_UvLas"
+
+	allows		"WEP_DualAdvLas	RP:40000"	// once you discover how to make dual lasers, you can always build them (but you still have to research the next level)
+
+	ship
+	{
+		section Turret_Small_2x
+	}
+	weapon
+	{
+		filename  "Weapons/las_laser_uv_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualAdvLas"
+	family		"NRG"
+	threat		2
+
+	requires	"WEP_XryLas"
+
+	allows		"WEP_DualPlsPhas	RP:60000"
+
+	ship
+	{
+		section Turret_Small_2x
+	}
+	weapon
+	{
+		filename  "Weapons/las_laser_xray_dual.weapon"
+	}
+}
+
+/////////////////////////////////////////////
+// Phasers
+
+tech
+{
+	name		"WEP_Phas"
+	family		"NRG"
+	threat		2
+
+	requires	"DRV_AntiMat"
+
+	allows		"WEP_HvyPhas		RP:225000	Human:80 	Zuul:50 	Hiver:75 	Tarkas:70 	Liir:90 	Morrigi:95"
+	allows		"WEP_PDPhas			RP:135000	Human:80 	Zuul:50 	Hiver:75 	Tarkas:70 	Liir:90 	Morrigi:95"
+	allows		"WEP_Lancer			RP:105000	Human:90 	Zuul:70 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:90"
+	allows		"WEP_DualPhas		RP:135000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_phs_light.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PDPhas"
+	family		"NRG"
+	threat		3
+
+	group		PD
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_PD
+	}
+	weapon
+	{
+		filename  "Weapons/_def_05_phs.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualPhas"
+	family		"NRG"
+	threat		3
+
+	requires	"WEP_Phas"
+
+	allows		"WEP_DualHvyPhas	RP:675000"
+
+	ship
+	{
+		section Turret_Small_2x
+	}
+	weapon
+	{
+		filename  "Weapons/las_phs_light_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HvyPhas"
+	family		"NRG"
+	threat		3
+
+	group		MEDWEP
+
+	allows		"WEP_DualHvyPhas	RP:675000"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_phs_heavy.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualHvyPhas"
+	family		"NRG"
+	threat		3
+
+	requires	"WEP_HvyPhas"
+
+	ship
+	{
+		section Turret_Medium_2x
+	}
+	weapon
+	{
+		filename  "Weapons/las_phs_heavy_dual.weapon"
+	}
+}
+
+/////////////////////////////////////////////
+// Pulsed Phasers
+
+tech
+{
+	name		"WEP_PlsPhas"
+	family		"NRG"
+	threat		2
+
+	requires	"DRV_AntiMat"
+
+	allows		"WEP_HvyPlsPhas 	RP:225000	Human:80 	Zuul:50 	Hiver:75 	Tarkas:70 	Liir:90 	Morrigi:95"
+	allows		"WEP_PlsPhasPD		RP:135000	Human:80 	Zuul:50 	Hiver:75 	Tarkas:70 	Liir:90 	Morrigi:95"
+	allows		"WEP_Lancer			RP:105000	Human:90 	Zuul:70 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:90"
+	allows		"WEP_DualPlsPhas	RP:135000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_phs_pulsed_light.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PlsPhasPD"
+	family		"NRG"
+	threat		2
+
+	group		PD
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_PD
+	}
+	weapon
+	{
+		filename  "Weapons/_def_05_phs_pulsed.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualPlsPhas"
+	family		"NRG"
+	threat		3
+
+	requires	"WEP_PlsPhas"
+
+	allows		"WEP_DualHvyPlsPhas		RP:450000"
+
+	ship
+	{
+		section Turret_Small_2x
+	}
+	weapon
+	{
+		filename  "Weapons/las_phs_pulsed_light_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HvyPlsPhas"
+	family		"NRG"
+	threat		3
+
+	group		MEDWEP
+
+	allows		"WEP_DualHvyPlsPhas		RP:562500"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/las_phs_pulsed_heavy.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualHvyPlsPhas"
+	family		"NRG"
+	threat		3
+
+	requires	"WEP_HvyPlsPhas"
+
+	ship
+	{
+		section Turret_Medium_2x
+	}
+	weapon
+	{
+		filename  "Weapons/las_phs_pulsed_heavy_dual.weapon"
+	}
+}
+
+/////////////////////////////////////////////
+// Fixed Beams (HClass, Lancer, Cutting)
+
+tech
+{
+	name		"WEP_HCLas"
+	family		"NRG"
+	threat		2
+
+	group		HVYBEAM
+	group		SPINAL
+
+	requires	GRP_CRDN
+	requires	"DRV_Fusn"
+
+	allows		"WEP_Lancer		RP:84000	Human:85 	Zuul:70 	Hiver:85 	Tarkas:85 	Liir:90 	Morrigi:90"
+
+	ship
+	{
+		section CRBattleBridge
+		section DNBattleBridge
+	}
+	weapon
+	{
+		filename  "Weapons/hvy_bem_1.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_Lancer"
+	family		"NRG"
+	threat		2
+
+	group		HVYBEAM
+	group		SPINAL
+
+	requires	GRP_CRDN
+	requires	"DRV_AntiMat"
+
+	allows		"WEP_CtngBm		RP:450000	Human:75 	Zuul:50 	Hiver:75 	Tarkas:75 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section CRBattleBridge
+		section DNBattleBridge
+	}
+	weapon
+	{
+		filename  "Weapons/hvy_bem_2.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_CtngBm"
+	family		"NRG"
+	threat		3
+
+	group		HVYBEAM
+	group		SPINAL
+
+	requires	GRP_CRDN
+	requires	"DRV_AntiMat"
+
+	ship
+	{
+		section CRBattleBridge
+		section DNBattleBridge
+	}
+	weapon
+	{
+		filename  "Weapons/hvy_bem_3.weapon"
+	}
+}
+
+/////////////////////////////////////////////
+// Large Beams (Particle, Neutron, Positron, Meson, Graviton)
+
+tech
+{
+	name		"WEP_PrtBm"
+	family		"NRG"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+
+	allows		"WEP_NeutBm		RP:0	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:95 	Morrigi:95"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_1_part.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_NeutBm"
+	family		"NRG"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	allows		"WEP_PosiBm		RP:40000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:95 	Morrigi:95"
+	allows		"WEP_DualNeutBm	RP:60000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+	allows		"WEP_HCLas		RP:40000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_2_neut.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PosiBm"
+	family		"NRG"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	"DRV_Fusn"
+
+	allows		"WEP_MesBm		RP:450000	Human:90 	Zuul:75 	Hiver:80 	Tarkas:90 	Liir:90 	Morrigi:90"
+	allows		"WEP_DualPosiBm	RP:90000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_3_pos.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_MesBm"
+	family		"NRG"
+	threat		3
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	"DRV_AntiMat"
+
+	allows		"WEP_GravBm		RP:675000	Human:90 	Zuul:75 	Hiver:80 	Tarkas:90 	Liir:90 	Morrigi:95"
+	allows		"WEP_MesProj	RP:675000	Human:90 	Zuul:75 	Hiver:80 	Tarkas:90 	Liir:90 	Morrigi:90"
+	allows		"WEP_DualMesBm	RP:675000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_4_meson.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_MesProj"
+	family		"NRG"
+	threat		3
+
+	group		PRJCTR
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section CRProjector
+		section DNProjector
+	}
+	weapon
+	{
+		filename  "Weapons/bem_prj_meson.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_GravBm"
+	family		"NRG"
+	threat		3
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	"IND_TrctBm"
+
+	allows		"WEP_PulGrvBm	RP:750000	Human:90 	Zuul:75 	Hiver:80 	Tarkas:90 	Liir:90 	Morrigi:95"
+	allows		"WEP_DualGravBm	RP:750000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_5_grav.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PulGrvBm"
+	family		"NRG"
+	threat		3
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	"IND_GravCon"
+
+	allows		"WEP_DualPulGrvBm	RP:900000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_6_pulsedgrav.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualNeutBm"
+	family		"NRG"
+	threat		2
+
+	group		LRGWEP
+
+	requires	"WEP_NeutBm"
+
+	allows		"WEP_DualPosiBm	RP:90000	Human:80 	Zuul:80 	Hiver:80 	Tarkas:80 	Liir:80 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Large_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_2_neut_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualPosiBm"
+	family		"NRG"
+	threat		2
+
+	group		LRGWEP
+
+	requires	"WEP_PosiBm"
+
+	allows		"WEP_DualMesBm	RP:675000"
+
+	ship
+	{
+		section Turret_Large_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_3_pos_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualMesBm"
+	family		"NRG"
+	threat		3
+
+	group		LRGWEP
+
+	requires	"WEP_MesBm"
+
+
+	allows		"WEP_DualGravBm	RP:750000"
+
+	ship
+	{
+		section Turret_Large_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_4_meson_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualGravBm"
+	family		"NRG"
+	threat		3
+
+	group		LRGWEP
+
+	requires	"WEP_GravBm"
+
+	allows		"WEP_DualPulGrvBm	RP:900000"
+
+	ship
+	{
+		section Turret_Large_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_5_grav_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualPulGrvBm"
+	family		"NRG"
+	threat		3
+
+	group		LRGWEP
+
+	requires	"WEP_PulGrvBm"
+
+	ship
+	{
+		section Turret_Large_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bem_6_pulsedgrav_dual.weapon"
+	}
+}
+
+//***********************************************************************************************************
+// Ballistic Weapons
+//***********************************************************************************************************
+
+tech
+{
+	name		"WEP_GsDrvr"		// Gauss (small)
+	family		"BAL"
+	threat		1
+
+	allows		"WEP_PDShotgun	RP:7200		Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_PDBal		RP:0		Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_APGauss	RP:3600		Human:95 	Zuul:70 	Hiver:90 	Tarkas:85 	Liir:50 	Morrigi:50"
+	allows		"WEP_MasDrvr	RP:0"
+	allows		"WEP_SnpCanDrvr	RP:0		Human:95 	Zuul:70 	Hiver:90 	Tarkas:85 	Liir:50 	Morrigi:50"
+	allows		"WEP_DualGauss	RP:18000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_VRFtech	RP:0"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_gauss_a.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PDShotgun"		// Gauss Shotgun Point-Defense (tiny)
+	family		"BAL"
+	threat		1
+
+	group		PD
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_PD
+	}
+	weapon
+	{
+		filename  "Weapons/_def_01_bal_shotgun.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_PDBal"			// Gauss Point-Defense (tiny)
+	family		"BAL"
+	threat		1
+
+	group		PD
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_PD
+	}
+	weapon
+	{
+		filename  "Weapons/_def_01_bal.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_APGauss"			// AP Gauss
+	family		"BAL"
+	threat		1
+
+	group		SMLWEP
+	group		AP
+
+	requires	GRP_ARMOR
+
+	allows		"WEP_APMasDrvr		RP:9000"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_gauss_ap.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_SnpCanDrvr"	// Sniper Cannon (gauss) (small)
+	family		"BAL"
+	threat		1
+
+	group		SMLWEP
+
+	allows		"WEP_SnpMasDrvr		RP:9000"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_gauss_sniper.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualGauss"		// Dual Gauss (small)
+	family		"BAL"
+	threat		2
+
+	requires	GRP_DECRDN
+
+
+	allows		"WEP_DualMasDrvr	RP:28800"
+
+	ship
+	{
+		section Turret_Small_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_gauss_a_dual.weapon"
+	}
+}
+
+/////////////////////////////////
+// Medium Drivers
+
+tech
+{
+	name		"WEP_MasDrvr"		// Mass Driver (medium)
+	family		"BAL"
+	threat		2
+
+	group		MEDWEP
+
+	allows		"WEP_BrstrDrvr		RP:40000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_ShldDrvr		RP:40000	Human:80 	Zuul:80 	Hiver:50 	Tarkas:50 	Liir:90 	Morrigi:95"
+	allows		"WEP_APMasDrvr		RP:9000		Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_HvyDrvr		RP:40000"
+	allows		"WEP_SnpMasDrvr		RP:9000		Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_DualMasDrvr	RP:28800	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_medium_a.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_BrstrDrvr"		// Bursters (large)
+	family		"BAL"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_special_burster.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_ShldDrvr"		// Shield Breakers (large)
+	family		"BAL"
+	threat		2
+
+	group		LRGWEP
+
+	requires	GRP_CRDN
+	requires	GRP_SHIELDS
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_special_shield.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_APMasDrvr"		// Armor Piercing Mass Driver (medium)
+	family		"BAL"
+	threat		2
+
+	group		AP
+	group		MEDWEP
+
+	requires	GRP_ARMOR
+	requires	"WEP_MasDrvr"
+
+	allows		"WEP_APHvyDrvr		RP:40000"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_medium_ap.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_SnpMasDrvr"	// Mass Sniper Cannon (medium)
+	family		"BAL"
+	threat		2
+
+	group		MEDWEP
+
+	requires	"WEP_MasDrvr"
+
+	allows		"WEP_SnpHvyDrvr		RP:40000"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_medium_sniper.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualMasDrvr"	// Dual Mass Drivers (medium)
+	family		"BAL"
+	threat		2
+
+	group		MEDWEP
+
+	requires	"WEP_MasDrvr"
+
+	allows		"WEP_DualHvyDrvr	RP:90000"
+
+	ship
+	{
+		section Turret_Medium_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_medium_a_dual.weapon"
+	}
+}
+
+//////////////////////////////////////////////////
+// Heavy Ballistics
+
+tech
+{
+	name		"WEP_HvyDrvr"		// Heavy driver (large)
+	family		"BAL"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+
+	allows		"WEP_ErgDrain			RP:225000	Human:70 	Zuul:90 	Hiver:50 	Tarkas:50 	Liir:90 	Morrigi:95"
+	allows		"WEP_ThmpDrvr			RP:225000	Human:75 	Zuul:95 	Hiver:70 	Tarkas:60 	Liir:80 	Morrigi:95"
+	allows		"WEP_APHvyDrvr			RP:40000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_NeutRnd			RP:675000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_SnpHvyDrvr			RP:40000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_DualHvyDrvr		RP:90000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_heavy_a.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_ErgDrain"		// Leech Rounds (large)
+	family		"BAL"
+	threat		3
+
+	group		LRGWEP
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_special_leech.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_ThmpDrvr"		// Thumpers (large)
+	family		"BAL"
+	threat		3
+
+	group		LRGWEP
+
+	requires	GRP_CRDN
+	requires	"IND_GravCon"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_special_thumper.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_APHvyDrvr"		// Armor Piercing Heavy Driver (large)
+	family		"BAL"
+	threat		2
+
+	group		AP
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+	requires	GRP_ARMOR
+	requires	"WEP_HvyDrvr"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_heavy_ap.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_NeutRnd"			// Neutronium Rounds
+	family		"BAL"
+	threat		3
+
+	requires	"DRV_AntiMat"
+
+	strategy
+	{
+		inc TECHBEN_BALDAM
+	}
+}
+
+tech
+{
+	name		"WEP_SnpHvyDrvr"			// Heavy Sniper Cannon (large)
+	family		"BAL"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+	requires	"WEP_HvyDrvr"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_heavy_sniper.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualHvyDrvr"			// Dual Heavy Drivers (large)
+	family		"BAL"
+	threat		2
+
+	group		LRGWEP
+
+	requires	GRP_CRDN
+	requires	"WEP_HvyDrvr"
+
+
+	allows		"WEP_TriHvyDrvr	RP:337500	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:90 	Morrigi:85"
+
+	ship
+	{
+		section Turret_Large_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_heavy_a_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_TriHvyDrvr"			// Triple Heavy Drivers (huge)
+	family		"BAL"
+	threat		3
+
+	group		PRJCTR
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_Huge_3x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_heavy_triple.weapon"
+	}
+}
+
+/////////////////////////////////////////////////////////
+// VRF Tech Ballistics Weapons
+
+tech
+{
+	name		"WEP_VRFtech"		// Very Rapid Fire Tech
+	family		"BAL"
+	threat		1
+	type		P
+
+	allows		"WEP_LtAutCan	RP:0		Human:80 	Zuul:90 	Hiver:90 	Tarkas:85 	Liir:80 	Morrigi:80"
+	allows		"WEP_AccAmp		RP:40000	Human:95 	Zuul:90 	Hiver:95 	Tarkas:95 	Liir:95 	Morrigi:90"
+	allows		"WEP_StrmDrvr	RP:0		Human:80 	Zuul:90 	Hiver:90 	Tarkas:85 	Liir:80 	Morrigi:80"
+
+	strategy
+	{
+		inc TECHBEN_BALRATE
+	}
+}
+
+tech
+{
+	name		"WEP_AccAmp"		// Accelerator Amplification
+	family		"BAL"
+	threat		2
+
+	requires	"DRV_Fusn"
+
+	allows		"WEP_AutCan		RP:12000	Human:80 	Zuul:90 	Hiver:90 	Tarkas:85 	Liir:80 	Morrigi:80"
+	allows		"WEP_RailGun	RP:450000	Human:90 	Zuul:80 	Hiver:95 	Tarkas:95 	Liir:80 	Morrigi:75"
+	allows		"WEP_HStrmDrvr	RP:40000	Human:80 	Zuul:90 	Hiver:90 	Tarkas:85 	Liir:80 	Morrigi:80"
+
+	strategy
+	{
+		inc TECHBEN_BALSPD
+		inc TECHBEN_BALDAM
+	}
+}
+
+tech
+{
+	name		"WEP_RailGun"		// Rail Gun (section)
+	family		"BAL"
+	threat		2
+
+	requires	GRP_CRDN
+	requires	"DRV_AntiMat"
+
+	ship
+	{
+		section CRImpactor
+		section DNImpactor
+	}
+	weapon
+	{
+		filename  "Weapons/bal_railcannon.weapon"
+	}
+}
+
+////////////////////////////////
+// Autocannons
+
+tech
+{
+	name		"WEP_LtAutCan"		// Light Autocannon (small)
+	family		"BAL"
+	threat		2
+
+	group		SMLWEP
+
+	requires	"WEP_VRFtech"
+
+	allows		"WEP_AutCan			RP:9000		Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_DualLtAutCan	RP:9000"
+
+	ship
+	{
+		section Turret_Small_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_auto_light.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_AutCan"		// Autocannon (medium)
+	family		"BAL"
+	threat		2
+
+	group		MEDWEP
+
+	requires	"IND_Hidden"		// force this to be unavailable
+	requires	"WEP_VRFtech"
+	requires	GRP_DECRDN
+
+	allows		"WEP_HvyAutCan		RP:40000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_DualAutCan		RP:28800"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_auto_medium.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HvyAutCan"		// Autocannon (large)
+	family		"BAL"
+	threat		3
+
+	group		LRGWEP
+
+	requires	GRP_CRDN
+	requires	"WEP_AccAmp"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	allows		"WEP_DualHvyAutCan	RP:90000"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_auto_heavy.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualLtAutCan"	// Dual Light Autocannon (small)
+	family		"BAL"
+	threat		2
+
+	requires	"IND_Hidden"		// force this to be unavailable
+	requires	"WEP_LtAutoCan"
+
+	requires	GRP_DECRDN
+
+	allows		"WEP_DualAutCan		RP:28800"
+
+	ship
+	{
+		section Turret_Small_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_auto_light_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualAutCan"	// Dual Autocannon (medium)
+	family		"BAL"
+	threat		2
+
+	requires	"IND_Hidden"		// force this to be unavailable
+	requires	"WEP_AutCan"
+
+	requires	GRP_DECRDN
+
+	allows		"WEP_DualHvyAutCan		RP:90000"
+
+	ship
+	{
+		section Turret_Medium_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_auto_medium_dual.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_DualHvyAutCan"	// Dual Heavy Autocannon (large)
+	family		"BAL"
+	threat		2
+
+	requires	"IND_Hidden"		// force this to be unavailable
+	requires	"WEP_HvyAutCan"
+
+	requires	GRP_CRDN
+
+	ship
+	{
+		section Turret_Large_2x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_auto_heavy_dual.weapon"
+	}
+}
+
+//////////////////////////////////////////////
+// Stormers
+
+tech
+{
+	name		"WEP_StrmDrvr"		// Stormers (medium)
+	family		"BAL"
+	threat		2
+
+	group		MEDWEP
+
+	requires	GRP_DECRDN
+
+	allows		"WEP_HStrmDrvr	RP:40000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_APStrmDrvr	RP:16200	Human:80 	Zuul:90 	Hiver:90 	Tarkas:85 	Liir:70 	Morrigi:70"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_stormer.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HStrmDrvr"		// Heavy Stormer (large)
+	family		"BAL"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_CRDN
+
+
+	allows		"WEP_HugeStrmDrvr	RP:225000	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+	allows		"WEP_APHStrmDrvr	RP:60000	Human:80 	Zuul:90 	Hiver:90 	Tarkas:85 	Liir:70 	Morrigi:70"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_hvystormer.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_HugeStrmDrvr"		// Huge Stormer (projector)
+	family		"BAL"
+	threat		3
+
+	group		PRJCTR
+
+	requires	GRP_CRDN
+
+
+	allows		"WEP_APHugeStrmDrvr	RP:337500	Human:95 	Zuul:95 	Hiver:95 	Tarkas:95 	Liir:85 	Morrigi:80"
+
+	ship
+	{
+		section Turret_Huge_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_hugestormer.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_APStrmDrvr"	// AP Stormer (medium)
+	family		"BAL"
+	threat		2
+
+	group		MEDWEP
+
+	requires	GRP_ARMOR
+	requires	"WEP_StrmDrvr"
+
+	allows		"WEP_APHStrmDrvr	RP:48000"
+
+	ship
+	{
+		section Turret_Medium_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_stormer_ap.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_APHStrmDrvr"	// AP Heavy Stormer (large)
+	family		"BAL"
+	threat		2
+
+	group		LRGWEP
+	group		SPINAL
+
+	requires	GRP_ARMOR
+	requires	"WEP_HStrmDrvr"
+
+	allows		"WEP_APHugeStrmDrvr	RP:270000"
+
+	ship
+	{
+		section Turret_Large_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_hvystormer_ap.weapon"
+	}
+}
+
+tech
+{
+	name		"WEP_APHugeStrmDrvr"	// AP Huge Stormer (huge)
+	family		"BAL"
+	threat		3
+
+	group		PRJCTR
+
+	requires	GRP_CRDN
+	requires	GRP_ARMOR
+	requires	"WEP_HugeStrmDrvr"
+
+	ship
+	{
+		section Turret_Huge_1x
+	}
+	weapon
+	{
+		filename  "Weapons/bal_hugestormer_ap.weapon"
+	}
+}
+
+//***************************************************************************************************
+// Communications
+//***************************************************************************************************
+
+tech
+{
+	name		"CCC_FTLCom"	// FTL Communications
+
+	allows		"CCC_HypCom		RP:0"	// Hyper-link Communications (Tarkas only)
+	allows		"CCC_IntSens	RP:0"
+	allows		"CCC_DatCor		RP:0"		// Data Correlation (Pen & Paper Tech)
+	allows		"CCC_FTLEcon	RP:0		Human:0  	Zuul:0  	Hiver:0  	Tarkas:0  	Liir:0  	Morrigi:100"	// morrigi get cheaper access
+	allows		"CCC_FTLEcon	RP:0		Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:0"
+	allows		"CCC_ComRaid	RP:2160		Human:0  	Zuul:100 	Hiver:0  	Tarkas:0  	Liir:0  	Morrigi:0"		// direct link for Zuul
+}
+
+tech
+{
+	name		"CCC_HypCom"	// Hyper-link Communications
+
+	requires	"DRV_Hyper"		// Tarkas only
+}
+
+tech
+{
+	name		"CCC_IntSens"	// Integrated Sensors
+	type		P
+
+	allows		"CCC_SnsJam		RP:0		Human:85 	Zuul:95 	Hiver:80 	Tarkas:80 	Liir:90 	Morrigi:95"
+	allows		"CCC_AdvSens	RP:20000"
+}
+
+tech
+{
+	name		"CCC_DatCor"	// Data Correlation (Pen & Paper Tech)
+	type		P
+
+	allows		"CCC_FTLBrdB	RP:0"	// FTL Spy Beam
+}
+
+tech
+{
+	name		"CCC_FTLBrdB"	// FTL Spy Beam (FTL Broadband)
+
+	allows		"CCC_SpyBm		RP:5400		Human:80 	Zuul:100 	Hiver:80 	Tarkas:90 	Liir:90 	Morrigi:95"
+	allows		"CCC_SpJam		RP:9000		Human:70 	Zuul:90 	Hiver:70 	Tarkas:80 	Liir:80 	Morrigi:95"
+
+	ship
+	{
+		section CRPropaganda
+		section CRTerrorize
+	}
+	strategy
+	{
+		inc TECHBEN_MORALE
+		dec TECHBEN_MORALE
+	}
+}
+
+tech
+{
+	name		"CCC_SpyBm"		// Subspace Spy Beam
+	type		P
+
+	allows		"CCC_NdTrkHum	RP:5400		Human:100 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:100"
+	allows		"CCC_NdTrkZul	RP:5400		Human:90 	Zuul:100 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:100"
+	allows		"CCC_SpJam		RP:9000		Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:0"
+}
+
+tech
+{
+	name		"CCC_NdTrkHum"
+	type		P
+
+	requires	"CCC_TrnsHum"
+
+	allows		"CCC_NdTrkZul	RP:2520		Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+}
+
+tech
+{
+	name		"CCC_NdTrkZul"
+	type		P
+
+	requires	"CCC_TrnsZul"
+
+	allows		"CCC_NdTrkHum	RP:2520		Human:0  	Zuul:100 	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+}
+
+tech
+{
+	name		"CCC_SpJam"
+	type		P
+
+	group		JAMMING
+
+	strategy
+	{
+		dec TECHBEN_ENEMYINTEL
+	}
+}
+
+tech
+{
+	name		"CCC_SnsJam"
+	OPTION_COST	1.5		// cost only applied to section it's in
+
+	group		JAMMING
+
+	allows		"CCC_QntChaf	RP:16000	Human:60 	Zuul:95 	Hiver:50 	Tarkas:50 	Liir:80 	Morrigi:90"
+	allows		"CCC_SpJam		RP:12000	Human:90 	Zuul:90 	Hiver:90 	Tarkas:90 	Liir:90 	Morrigi:0"
+
+	ship
+	{
+		section DEJammer
+	}
+	strategy
+	{
+		dec TECHBEN_ENEMYINTEL
+		inc TECHBEN_EWAR
+	}
+}
+
+tech
+{
+	name		"CCC_AdvSens"
+
+
+
+	allows		"CCC_QntChaf	RP:20000	Human:60 	Zuul:80 	Hiver:50 	Tarkas:50 	Liir:90 	Morrigi:95"
+	allows		"CCC_TunSens	RP:0"
+	allows		"CCC_ScanSats	RP:12000"
+
+	ship
+	{
+		section DEDeepscan
+		section CRDeepscan
+	}
+	strategy
+	{
+		inc TECHBEN_SENSORS
+		inc TECHBEN_DETECTCLOAK
+	}
+}
+
+tech
+{
+	name		"CCC_QntChaf"
+	OPTION_COST	1.5		// cost only applied to section it's in
+
+	group		JAMMING
+
+
+
+	ship
+	{
+		section DEWildWeasel
+	}
+	strategy
+	{
+		inc TECHBEN_EWAR
+	}
+}
+
+tech
+{
+	name		"CCC_TunSens"
+
+	requires	"DRV_Fusn"
+	requires	"SLD_Clk"
+
+	strategy
+	{
+		inc TECHBEN_DETECTCLOAK
+	}
+}
+
+tech
+{
+	name		"CCC_ScanSats"
+
+
+	requires	"IND_CruisCon"
+
+	ship
+	{
+		section CRDeepScanPlatform
+	}
+	strategy
+	{
+		inc TECHBEN_TACSENSORS
+		inc TECHBEN_DETECTCLOAK
+	}
+}
+
+//////////////////////////////
+// Trade
+
+tech
+{
+	name		"CCC_FTLEcon"	// FTL Economics (Trade)
+
+//	allows		"IND_ModCon		RP:2520		Human:100 	Zuul:0  	Hiver:85 	Tarkas:95 	Liir:45 	Morrigi:100"
+//	allows		"CCC_ComRaid	RP:2160		Human:100 	Zuul:0  	Hiver:0  	Tarkas:100 	Liir:100 	Morrigi:100"
+//	allows		"IND_MegFrght	RP:0		Human:0 	Zuul:0  	Hiver:0  	Tarkas:0 	Liir:0	 	Morrigi:100"
+
+//	requires	"IND_Hidden"		// force this to be unavailable	// Steamlined: no trade except Morrigi
+	requires	"DRV_VdCtr"		// Morrigi only
+
+	ship
+	{
+		section DEFreighter
+	}
+	strategy
+	{
+		inc TECHBEN_TRADEROUTES
+		inc TECHBEN_MORALE
+	}
+}
+
+tech
+{
+	name		"CCC_ComRaid"	// Commerce Raiding
+
+	// if raiding is enabled, then the Ai sends piles of ships on a pointless journey
+	// (almost never accomplishes anything due to mod's drop in numbers of freighters)
+	// (it was never a very solid feature anyway)
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	allows		"IND_ModCon		RP:2520		Human:100 	Zuul:00 	Hiver:85 	Tarkas:95 	Liir:45 	Morrigi:100"
+}
+
+tech
+{
+	name		"IND_ModCon"	// Q-Ship Construction (Modular Construction)
+
+	requires	GRP_DECRDN		// some form of battle construction
+
+	ship
+	{
+		section CrFreighterQ
+	}
+	strategy
+	{
+		inc TECHBEN_DEFENCEPIRATE
+	}
+}
+
+tech
+{
+	name		"IND_MegFrght"	// Mega-Freighter Construction
+
+	requires	"IND_CruisCon"
+
+	ship
+	{
+		section CRFreighter
+	}
+	strategy
+	{
+		inc TECHBEN_TRADEINCOME
+	}
+}
+
+//*********************************************************************************************
+//*                       XENO-CULTURE
+//*********************************************************************************************
+
+//////////////////////////////
+// Human
+
+tech
+{
+	name		"CCC_TrnsHum"
+	family		"XNC"
+	allows		"XNC_TrnsHum2	RP:3600"
+	unlock_explicitly	true
+
+	strategy
+	{
+		inc TECHBEN_CEASEFIRE
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsHum2"
+	family		"XNC"
+	allows		"XNC_IncHum		RP:7560"
+	requires	"CCC_TrnsHum"
+
+	strategy
+	{
+		inc TECHBEN_NAP
+		inc TECHBEN_TRADEROUTES
+	}
+}
+
+tech
+{
+	name		"XNC_IncHum"
+	family		"XNC"
+	allows		"XNC_AdctHum	RP:24000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+	allows		"XNC_TrnsHum3	RP:16200"
+	allows		"XNC_TempHum	RP:16200	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+	requires	"XNC_TrnsHum2"
+
+	strategy
+	{
+		inc TECHBEN_INCORPORATE
+	}
+}
+
+tech
+{
+	name		"XNC_AdctHum"
+	family		"XNC"
+
+	requires	"XNC_IncHum"
+	requires	"CCC_FTLEcon"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	strategy
+	{
+		inc TECHBEN_ADDICT
+	}
+}
+
+tech
+{
+	name		"XNC_TempHum"
+	family		"XNC"
+
+	requires	"XNC_IncHum"
+	requires	"CCC_FTLEcon"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	strategy
+	{
+		dec TECHBEN_ADDICT
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsHum3"
+	family		"XNC"
+
+	allows		"XNC_SubHum	RP:32000"
+
+	requires	"XNC_IncHum"
+
+	strategy
+	{
+		inc TECHBEN_SCIENCEPROJ
+	}
+}
+
+tech
+{
+	name		"XNC_SubHum"
+	family		"XNC"
+
+	allows		"XNC_AccHum		RP:40000	Human:0  	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+	allows		"XNC_ProfHum	RP:40000	Human:0  	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+
+	requires	"XNC_TrnsHum3"
+
+	strategy
+	{
+		inc TECHBEN_CAPITULATE
+	}
+}
+
+tech
+{
+	name		"XNC_AccHum"
+	family		"XNC"
+
+	requires	"XNC_SubHum"
+	requires	"BIO_AtmoAd"
+
+	strategy
+	{
+		inc TECHBEN_ACCOMODATE
+	}
+}
+
+tech
+{
+	name		"XNC_ProfHum"
+	family		"XNC"
+
+	requires	"XNC_SubHum"
+
+	strategy
+	{
+		inc TECHBEN_PROLIFERATE
+	}
+}
+
+//////////////////////////////
+// Hiver
+
+tech
+{
+	name		"CCC_TrnsHvr"
+	family		"XNC"
+
+	allows		"XNC_TrnsHvr2	RP:3600"
+
+	unlock_explicitly	true
+
+	strategy
+	{
+		inc TECHBEN_CEASEFIRE
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsHvr2"
+	family		"XNC"
+
+	allows		"XNC_IncHvr		RP:7920"
+
+	requires	"CCC_TrnsHvr"
+
+	strategy
+	{
+		inc TECHBEN_NAP
+		inc TECHBEN_TRADEROUTES
+	}
+}
+
+tech
+{
+	name		"XNC_IncHvr"
+	family		"XNC"
+
+	allows		"XNC_AdctHvr	RP:24000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+	allows		"XNC_TrnsHvr3	RP:14400"
+	allows		"XNC_TempHvr	RP:9000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+
+	requires	"XNC_TrnsHvr2"
+
+	strategy
+	{
+		inc TECHBEN_INCORPORATE
+	}
+}
+
+tech
+{
+	name		"XNC_AdctHvr"
+	family		"XNC"
+
+	requires	"XNC_IncHvr"
+	requires	"CCC_FTLEcon"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	strategy
+	{
+		inc TECHBEN_ADDICT
+	}
+}
+
+tech
+{
+	name		"XNC_TempHvr"
+	family		"XNC"
+
+	requires	"XNC_IncHvr"
+	requires	"CCC_FTLEcon"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	strategy
+	{
+		dec TECHBEN_ADDICT
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsHvr3"
+	family		"XNC"
+
+	allows		"XNC_SubHvr	RP:24000"
+
+	requires	"XNC_IncHvr"
+
+	strategy
+	{
+		inc TECHBEN_SCIENCEPROJ
+	}
+}
+
+tech
+{
+	name		"XNC_SubHvr"
+	family		"XNC"
+
+	allows		"XNC_AccHvr		RP:40000	Human:100 	Zuul:0  	Hiver:0  	Tarkas:100 	Liir:100 	Morrigi:100"
+	allows		"XNC_ProfHvr	RP:40000	Human:100 	Zuul:0  	Hiver:0  	Tarkas:100 	Liir:100 	Morrigi:100"
+
+	requires	"XNC_TrnsHvr3"
+
+	strategy
+	{
+		inc TECHBEN_CAPITULATE
+	}
+}
+
+tech
+{
+	name		"XNC_AccHvr"
+	family		"XNC"
+
+	requires	"XNC_SubHvr"
+	requires	"BIO_AtmoAd"
+
+	strategy
+	{
+		inc TECHBEN_ACCOMODATE
+	}
+}
+
+tech
+{
+	name		"XNC_ProfHvr"
+	family		"XNC"
+
+	requires	"XNC_SubHvr"
+
+	strategy
+	{
+		inc TECHBEN_PROLIFERATE
+	}
+}
+
+//////////////////////////////
+// Tarkas
+
+tech
+{
+	name		"CCC_TrnsTrk"
+	family		"XNC"
+
+	allows		"XNC_TrnsTrk2	RP:2880"
+
+	unlock_explicitly	true
+
+	strategy
+	{
+		inc TECHBEN_CEASEFIRE
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsTrk2"
+	family		"XNC"
+
+	allows		"XNC_IncTrk		RP:6480"
+
+	requires	"CCC_TrnsTrk"
+
+	strategy
+	{
+		inc TECHBEN_NAP
+		inc TECHBEN_TRADEROUTES
+	}
+}
+
+tech
+{
+	name		"XNC_IncTrk"
+	family		"XNC"
+
+	allows		"XNC_AdctTrk	RP:36000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+	allows		"XNC_TrnsTrk3	RP:14400"
+	allows		"XNC_TempTrk	RP:9000		Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+
+	requires	"XNC_TrnsTrk2"
+
+	strategy
+	{
+		inc TECHBEN_INCORPORATE
+	}
+}
+
+tech
+{
+	name		"XNC_AdctTrk"
+	family		"XNC"
+
+	requires	"XNC_IncTrk"
+	requires	"CCC_FTLEcon"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	strategy
+	{
+		inc TECHBEN_ADDICT
+	}
+}
+
+tech
+{
+	name		"XNC_TempTrk"
+	family		"XNC"
+
+	requires	"XNC_IncTrk"
+	requires	"CCC_FTLEcon"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	strategy
+	{
+		dec TECHBEN_ADDICT
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsTrk3"
+	family		"XNC"
+	allows		"XNC_SubTrk		RP:24000"
+	requires	"XNC_IncTrk"
+
+	strategy
+	{
+		inc TECHBEN_SCIENCEPROJ
+	}
+}
+
+tech
+{
+	name		"XNC_SubTrk"
+	family		"XNC"
+
+	allows		"XNC_AccTrk		RP:40000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:0  	Liir:100 	Morrigi:100"
+	allows		"XNC_ProfTrk	RP:32000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:0  	Liir:100 	Morrigi:100"
+
+	requires	"XNC_TrnsTrk3"
+
+	strategy
+	{
+		inc TECHBEN_CAPITULATE
+	}
+}
+
+tech
+{
+	name		"XNC_AccTrk"
+	family		"XNC"
+
+	requires	"XNC_SubTrk"
+	requires	"BIO_AtmoAd"
+
+	strategy
+	{
+		inc TECHBEN_ACCOMODATE
+	}
+}
+
+tech
+{
+	name		"XNC_ProfTrk"
+	family		"XNC"
+
+	requires	"XNC_SubTrk"
+
+	strategy
+	{
+		inc TECHBEN_PROLIFERATE
+	}
+}
+
+//////////////////////////////
+// Liir
+
+tech
+{
+	name		"CCC_TrnsLir"
+	family		"XNC"
+
+	allows		"XNC_TrnsLir2	RP:7560"
+
+	unlock_explicitly	true
+
+	strategy
+	{
+		inc TECHBEN_CEASEFIRE
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsLir2"
+	family		"XNC"
+
+	allows		"XNC_IncLir		RP:9000"
+
+	requires	"CCC_TrnsLir"
+
+	strategy
+	{
+		inc TECHBEN_NAP
+		inc TECHBEN_TRADEROUTES
+	}
+}
+
+tech
+{
+	name		"XNC_IncLir"
+	family		"XNC"
+
+	allows		"XNC_AdctLir	RP:24000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+	allows		"XNC_TrnsLir3	RP:16200"
+	allows		"XNC_TempLir	RP:9000		Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+
+	requires	"XNC_TrnsLir2"
+
+	strategy
+	{
+		inc TECHBEN_INCORPORATE
+	}
+}
+
+tech
+{
+	name		"XNC_AdctLir"
+	family		"XNC"
+
+	requires	"XNC_IncLir"
+	requires	"CCC_FTLEcon"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	strategy
+	{
+		inc TECHBEN_ADDICT
+	}
+}
+
+tech
+{
+	name		"XNC_TempLir"
+	family		"XNC"
+
+	requires	"XNC_IncLir"
+	requires	"CCC_FTLEcon"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	strategy
+	{
+		dec TECHBEN_ADDICT
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsLir3"
+	family		"XNC"
+
+	allows		"XNC_SubLir		RP:36000"
+
+	requires	"XNC_IncLir"
+
+	strategy
+	{
+		inc TECHBEN_SCIENCEPROJ
+	}
+}
+
+tech
+{
+	name		"XNC_SubLir"
+	family		"XNC"
+
+	allows		"XNC_AccLir		RP:50000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:0  	Morrigi:100"
+	allows		"XNC_ProfLir	RP:36000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:0  	Morrigi:100"
+
+	requires	"XNC_TrnsLir3"
+
+	strategy
+	{
+		inc TECHBEN_CAPITULATE
+	}
+}
+
+tech
+{
+	name		"XNC_AccLir"
+	family		"XNC"
+
+	requires	"XNC_SubLir"
+	requires	"BIO_AtmoAd"
+
+	strategy
+	{
+		inc TECHBEN_ACCOMODATE
+	}
+}
+
+tech
+{
+	name		"XNC_ProfLir"
+	family		"XNC"
+
+	requires	"XNC_SubLir"
+
+	strategy
+	{
+		inc TECHBEN_PROLIFERATE
+	}
+}
+
+//////////////////////////////
+// Zuul
+
+tech
+{
+	name		"CCC_TrnsZul"
+	family		"XNC"
+
+	allows		"XNC_TrnsZuul2	RP:9000"
+
+	unlock_explicitly	true
+
+	strategy
+	{
+		inc TECHBEN_CEASEFIRE
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsZuul2"
+	family		"XNC"
+
+	allows		"XNC_DomZuul	RP:16200"
+
+	requires	"CCC_TrnsZul"
+
+	strategy
+	{
+		inc TECHBEN_NAP
+	}
+}
+
+tech
+{
+	name		"XNC_DomZuul"
+	family		"XNC"
+
+	allows		"XNC_SubZuul	RP:28000"
+
+	requires	"XNC_TrnsZuul2"
+
+	strategy
+	{
+		inc TECHBEN_SCIENCEPROJ
+	}
+}
+
+tech
+{
+	name		"XNC_SubZuul"
+	family		"XNC"
+
+	requires	"XNC_DomZuul"
+
+	strategy
+	{
+		inc TECHBEN_ENSLAVE
+	}
+}
+
+//////////////////////////////
+// Morrigi
+
+tech
+{
+	name		"CCC_TrnsMorr"
+	family		"XNC"
+
+	allows		"XNC_TrnsMorr2	RP:4320"
+
+	unlock_explicitly	true
+
+	strategy
+	{
+		inc TECHBEN_CEASEFIRE
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsMorr2"
+	family		"XNC"
+
+	allows		"XNC_IncMorr	RP:7560"
+
+	requires	"CCC_TrnsMorr"
+
+	strategy
+	{
+		inc TECHBEN_NAP
+		inc TECHBEN_TRADEROUTES
+	}
+}
+
+tech
+{
+	name		"XNC_IncMorr"
+	family		"XNC"
+
+	allows		"XNC_AdctMorr	RP:16200	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+	allows		"XNC_TrnsMorr3  RP:16200"
+	allows		"XNC_TempMorr	RP:24000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+
+	strategy
+	{
+		inc TECHBEN_INCORPORATE
+	}
+}
+
+tech
+{
+	name		"XNC_AdctMorr"
+	family		"XNC"
+
+	requires	"XNC_IncMorr"
+	requires	"CCC_FTLEcon"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	strategy
+	{
+		inc TECHBEN_ADDICT
+	}
+}
+
+tech
+{
+	name		"XNC_TempMorr"
+	family		"XNC"
+
+	requires	"XNC_IncMorr"
+	requires	"CCC_FTLEcon"
+	requires	"IND_Hidden"		// force this to be unavailable
+
+	strategy
+	{
+		dec TECHBEN_ADDICT
+	}
+}
+
+tech
+{
+	name		"XNC_TrnsMorr3"
+	family		"XNC"
+
+	allows		"XNC_SubMorr	RP:28000"
+
+	requires	"XNC_IncMorr"
+
+	strategy
+	{
+		inc TECHBEN_SCIENCEPROJ
+	}
+}
+
+tech
+{
+	name		"XNC_SubMorr"
+	family		"XNC"
+
+	allows		"XNC_AccMorr	RP:36000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:0"
+	allows		"XNC_ProfMorr	RP:36000	Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:0"
+
+	requires	"XNC_TrnsMorr3"
+
+	strategy
+	{
+		inc TECHBEN_CAPITULATE
+	}
+}
+
+tech
+{
+	name		"XNC_AccMorr"
+	family		"XNC"
+
+	requires	"XNC_SubMorr"
+	requires	"BIO_AtmoAd"
+
+	strategy
+	{
+		inc TECHBEN_ACCOMODATE
+	}
+}
+
+tech
+{
+	name		"XNC_ProfMorr"
+	family		"XNC"
+
+	requires	"XNC_SubMorr"
+
+	strategy
+	{
+		inc TECHBEN_PROLIFERATE
+	}
+}
+
+//******************************************************************************************
+//INDUSTRIAL
+//******************************************************************************************
+
+tech
+{
+	// This tech simply allows me to force techs, shipsections, and weapons to be hidden (never available) by requiring this impossible to obtain tech
+	name		"IND_Hidden"
+	family		"IND"
+}
+
+tech
+{
+	name		"IND_OrbFound"		// Orbital Foundries
+	threat		2
+	type		P
+
+	allows		"IND_DSCon		RP:0"	// deep space constructors
+	allows		"IND_DEConstr	RP:0"	// destroyer construction
+	allows		"IND_TrkStl		RP:0"
+	allows		"IND_StlthArm	RP:0	Human:60 	Zuul:70 	Hiver:40 	Tarkas:40 	Liir:80 	Morrigi:100"
+
+	strategy
+	{
+		inc TECHBEN_SHIPCONRATE
+	}
+}
+
+/////////////////////////////////////////////
+// Destroyer Construction
+
+tech
+{
+	name		"IND_DEConstr"		// Destroyer Combat Construction
+	threat		1
+
+	group		DECRDN
+
+	allows		"IND_SpnlMnt	RP:0"
+	allows		"IND_DEWarEng	RP:0"
+	allows		"IND_DEStrafe	RP:0"
+	allows		"IND_DEHmrHead	RP:0"
+	allows		"IND_DEInvasion	RP:0"
+
+	allows		"IND_DESat		RP:0"		// we need to add this to the tech tree
+	allows		"IND_MineSat	RP:0"		// we need to add this to the tech tree
+
+	strategy
+	{
+		inc TECHBEN_FIREPOWER
+	}
+	ship
+	{
+		section DEBattle
+	}
+}
+
+tech
+{
+	name		"IND_SpnlMnt"		// Destroyer Spinal Mount
+	threat		1
+
+	requires	GRP_SPINAL
+	// careful!  this is easy to make circular!
+	// spinal needs a spinal weapon (large), large weapons need DECRDN (because small satts need only DE combat construction, all sizes host large weapons)
+	// once you've researched any large weapon, you can research spinal to mount them on DEs
+
+	strategy
+	{
+		inc TECHBEN_FIREPOWER
+		inc TECHBEN_LRGWEP
+	}
+	ship
+	{
+		section DESpinalMount
+	}
+}
+
+tech
+{
+	name		"IND_DEWarEng"		// Destroyer War Engineering
+	threat		1
+
+	requires	GRP_MEDWEP
+
+	strategy
+	{
+		inc TECHBEN_FIREPOWER
+		inc TECHBEN_MEDWEP
+	}
+	ship
+	{
+		section DEWar
+	}
+}
+
+tech
+{
+	name		"IND_DEStrafe"		// Destroyer Strafe
+	threat		1
+
+	requires	GRP_SMLWEP
+
+	strategy
+	{
+		inc TECHBEN_FIREPOWER
+		inc TECHBEN_SMLWEP
+	}
+	ship
+	{
+		section DEStrafe
+	}
+}
+
+tech
+{
+	name		"IND_DEHmrHead"		// Destroyer Hammerhead
+	threat		1
+
+	strategy
+	{
+		inc TECHBEN_MANEUVER
+	}
+	ship
+	{
+		section DEHammerhead
+	}
+}
+
+tech
+{
+	name		"IND_DEInvasion"	// Planetary invasion
+	threat		1
+
+	group		INVASION
+	group		SMALL_DRIVES
+
+	strategy
+	{
+		inc TECHBEN_POPDAM
+	}
+	ship
+	{
+		section DEAssaultShuttle
+	}
+}
+
+tech
+{
+	name		"IND_DESat"			// Stamdard Defensive Satellites
+	threat		1
+
+	ship
+	{
+		section DESatellite
+	}
+	strategy
+	{
+		inc TECHBEN_SYSDEFENSE
+	}
+}
+
+tech
+{
+	name		"IND_MineSat"		// Mine Layer Satellites
+	threat		1
+
+	requires	GRP_MINES
+
+	ship
+	{
+		section DEMinelayerSatellite
+	}
+	strategy
+	{
+		inc TECHBEN_SYSDEFENSE
+	}
+}
+
+tech
+{
+	name		"IND_CRSat"		// Large defense satellites
+	threat		1
+
+	ship
+	{
+		section CRSatellite
+	}
+	strategy
+	{
+		inc TECHBEN_SYSDEFENSE
+	}
+}
+
+tech
+{
+	name		"IND_DNSat"		// Mega defense satellites
+	threat		1
+
+	ship
+	{
+		section DNSatellite
+	}
+	strategy
+	{
+		inc TECHBEN_SYSDEFENSE
+	}
+}
+
+/////////////////////////////////////////////
+// Deep-space Construction
+
+tech
+{
+	name		"IND_DSCon"			// Deep Space construction
+	threat		1
+
+	allows		"IND_OrbDry		RP:0"
+
+	allows		"IND_ShipYard	RP:0"
+	allows		"IND_AstMon		RP:0"
+	allows		"IND_CmdStn		RP:0"
+	allows		"IND_HabStn		RP:0"
+	allows		"IND_SenStn		RP:0"
+	allows		"IND_TradeStn	RP:0"
+	allows		"IND_SciStn		RP:0"
+
+	ship
+	{
+		section DEConstruction
+		section CRConstruction
+	}
+	strategy
+	{
+		inc TECHBEN_BUILDSTNS
+	}
+}
+
+tech
+{
+	name		"IND_AstMon"
+	threat		1
+	type		P
+
+	requires	"IND_AstMine"
+	requires	GRP_PRJCTR			// asteroid monitors need a huge (projector) mount based weapon
+
+	ship
+	{
+		section _AsteroidMonitor
+	}
+	strategy
+	{
+		inc TECHBEN_SYSDEFENSE
+		inc TECHBEN_REPAIR
+	}
+}
+
+tech
+{
+	name		"IND_ShipYard"
+	threat		1
+	type		P
+
+	ship
+	{
+		section DNStationRepair
+	}
+	strategy
+	{
+		inc TECHBEN_SHIPCONRATE
+		inc TECHBEN_REPAIR
+	}
+}
+
+tech
+{
+	name		"IND_CmdStn"
+	threat		1
+	type		P
+
+	requires	"CCC_BtlCmp"	// basic CnC
+
+	ship
+	{
+		section DNStationCommand
+	}
+	strategy
+	{
+		inc TECHBEN_SYSDEFENSE
+		inc TECHBEN_LOCALCNC
+	}
+}
+
+tech
+{
+	name		"IND_HabStn"
+	threat		1
+	type		P
+
+	requires	"DRV_VdCtr"		// Morrigi only
+
+	ship
+	{
+		section DNStationHabitat
+	}
+	strategy
+	{
+		inc TECHBEN_MAXPOP
+	}
+}
+
+tech
+{
+	name		"IND_SenStn"
+	threat		1
+	type		P
+
+	requires	"CCC_AdvSens"
+
+	ship
+	{
+		section DNStationSensor
+	}
+	strategy
+	{
+		inc TECHBEN_STRATSENSORS
+		inc TECHBEN_DETECTCLOAK
+	}
+}
+
+tech
+{
+	name		"IND_TradeStn"
+	threat		1
+	type		P
+
+	requires	"CCC_FTLEcon"
+
+	ship
+	{
+		section DNStationTrade
+	}
+	strategy
+	{
+		inc TECHBEN_TRADEROUTES
+		inc TECHBEN_TRADEINCOME
+	}
+}
+
+tech
+{
+	name		"IND_SciStn"
+	threat		1
+	type		P
+
+	requires	"IND_CyberInt"
+
+	ship
+	{
+		section DNStationScience
+	}
+	strategy
+	{
+		inc TECHBEN_SCIENCE
+		inc TECHBEN_NPCDETECT
+	}
+}
+
+/////////////////////////////////////////////
+// Industrial (cont.) - Orbital Drydocks...
+
+tech
+{
+	name		"IND_OrbDry"	// Orbital Economy
+	threat		2
+
+	allows		"IND_HvyPlat	RP:40000"
+
+	allows		"IND_AtProc		RP:0	Human:95 	Zuul:0  	Hiver:95 	Tarkas:90 	Liir:50 	Morrigi:75"
+	allows		"IND_Decon		RP:0"		// Zero-G Deconstruction - keep at zero because otherwise it tends to hide salvage tech from players
+	allows		"IND_AstMine	RP:0"
+	allows		"IND_CruisCon	RP:0"
+	allows		"IND_PlyAlloy	RP:0"
+	allows		"IND_RefCoat	RP:0"
+
+	strategy
+	{
+		inc TECHBEN_SHIPCONRATE
+	}
+}
+
+tech
+{
+	name		"IND_AtProc"	// Atmostpheric Processors
+	threat		3
+	type		P
+
+	strategy
+	{
+		inc TECHBEN_TERAFORMSPD
+	}
+}
+
+tech
+{
+	name		"IND_Decon"		// Zero-G Deconstruction
+	threat		1
+
+	allows		"IND_SlvgTech	RP:0"
+}
+
+tech
+{
+	name		"IND_SlvgTech"	// Salvage & Repair
+	threat		1
+
+	ship
+	{
+		section DERepair
+		section CRRepairAndSalvage
+	}
+	strategy
+	{
+		inc TECHBEN_REPAIR
+		inc TECHBEN_SALVAGE
+	}
+}
+
+tech
+{
+	name		"IND_AstMine"	// Asteroid Mining
+	threat		2
+	type		P
+
+	allows		"IND_MsMine		RP:0	Human:95 	Zuul:100 	Hiver:95 	Tarkas:90 	Liir:50 	Morrigi:75"
+
+	strategy
+	{
+		inc TECHBEN_SYSRES
+	}
+}
+
+tech
+{
+	name		"IND_MsMine"	// Mega-strip mining
+	threat		2
+	type		P
+
+	ship
+	{
+		section CRMining
+	}
+	strategy
+	{
+		inc TECHBEN_OHVSTRATE
+	}
+}
+
+/////////////////////////////////////////////
+// Cruiser Construction
+
+tech
+{
+	name		"IND_CruisCon"		// Cruiser Construction
+	threat		2
+
+	group		DECRDN
+	group		CRDN
+
+	allows		"IND_BrdPod		RP:0		Human:95	Zuul:100	Hiver:95	Tarkas:75	Liir:0 	Morrigi:50"
+	allows		"IND_CRWarEng	RP:0"
+	allows		"IND_CRStrafe	RP:0"
+	allows		"IND_CRHmrHead	RP:0"
+	allows		"IND_CRInvasion	RP:0"
+
+	allows		"DRN_Squad		RP:0"		// free (as long as you have drone combat)
+	allows		"IND_CRSat		RP:0"		// we need a tech tree box for this
+
+	ship
+	{
+		section CRBattle
+	}
+	strategy
+	{
+		inc TECHBEN_HULLSIZE
+		inc TECHBEN_FIREPOWER
+	}
+}
+
+tech
+{
+	name		"IND_BrdPod"
+	threat		1
+
+	strategy
+	{
+		inc TECHBEN_BOARDING
+	}
+	ship
+	{
+		section CRBoarding
+	}
+}
+
+tech
+{
+	name		"IND_CRWarEng"		// Cruiser War Engineering
+	threat		1
+
+	requires	GRP_LRGWEP
+
+	strategy
+	{
+		inc TECHBEN_FIREPOWER
+		inc TECHBEN_LRGWEP
+	}
+	ship
+	{
+		section CRWar
+	}
+}
+
+tech
+{
+	name		"IND_CRStrafe"		// Cruiser Strafe
+	threat		1
+
+	requires	GRP_MEDWEP
+
+	strategy
+	{
+		inc TECHBEN_FIREPOWER
+		inc TECHBEN_MEDWEP
+	}
+	ship
+	{
+		section CRStrafe
+	}
+}
+
+tech
+{
+	name		"IND_CRHmrHead"		// Cruiser Hammerhead
+	threat		1
+
+	strategy
+	{
+		inc TECHBEN_MANEUVER
+	}
+	ship
+	{
+		section CRHammerhead
+	}
+}
+
+tech
+{
+	name		"IND_CRInvasion"	// Planetary invasion
+	threat		1
+
+	group		INVASION
+	group		SMALL_DRIVES
+
+	strategy
+	{
+		inc TECHBEN_POPDAM
+	}
+	ship
+	{
+		section CRAssaultShuttle
+	}
+}
+
+/////////////////////////////////////////////
+// Armors
+
+tech
+{
+	name		"IND_TrkStl"		// Tarka Living Steel
+	threat		1
+
+//	group		ARMOR				// This shouldn't unlock AP weapons
+
+	requires	"DRV_Hyper"			// tarka hyper drive
+	requires	"BIO_GnMod"			// gene modification
+
+	strategy
+	{
+		inc TECHBEN_DEFENCEBAL
+		inc TECHBEN_REPAIR
+	}
+}
+
+tech
+{
+	name		"IND_PlyAlloy"		// Deflecting Armor
+	threat		1
+	OPTION_COST	1.25
+
+	group		ARMOR
+
+	requires	GRP_DECRDN
+
+	allows		"IND_MagLat		RP:40000	Human:70 	Zuul:70 	Hiver:90 	Tarkas:80 	Liir:20 	Morrigi:20"
+
+	strategy
+	{
+		inc TECHBEN_DEFENCEBAL
+	}
+}
+
+tech
+{
+	name		"IND_MagLat"		// Improved Deflecting Armor
+	threat		1
+	OPTION_COST	1.5
+
+	group		ARMOR
+
+
+	requires	"IND_HvyPlat"
+
+	strategy
+	{
+		inc TECHBEN_DEFENCEBAL
+	}
+}
+
+tech
+{
+	name		"IND_QrkRes"		// Reinforced Hull
+	threat		1
+	OPTION_COST	2.0
+
+	requires	GRP_DECRDN
+//	requires	"DRV_AntiMat"
+
+	allows		"IND_AdmAly		RP:675000	Human:80 	Zuul:50 	Hiver:90 	Tarkas:85 	Liir:70 	Morrigi:75"
+
+	strategy
+	{
+		inc TECHBEN_HULLSTR
+	}
+}
+
+tech
+{
+	name		"IND_AdmAly"		// Improved Reinforced Hull
+	threat		1
+	OPTION_COST	4.0
+
+//	requires	"DRV_AntiMat"
+
+	strategy
+	{
+		inc TECHBEN_HULLSTR
+	}
+}
+
+/////////////////////////////////////////////
+// Coatings
+
+tech
+{
+	name		"IND_StlthArm"		// Stealth Coating
+	threat		1
+	OPTION_COST	1.10
+
+	strategy
+	{
+		dec TECHBEN_SHIPDETECT
+	}
+}
+
+tech
+{
+	name		"IND_RefCoat"		// Reflective Coating
+	threat		1
+	OPTION_COST	1.25
+
+	requires	GRP_DECRDN
+
+	allows		"IND_ImpRfCt	RP:40000	Human:70 	Zuul:20 	Hiver:50 	Tarkas:50 	Liir:90 	Morrigi:90"
+
+	strategy
+	{
+		inc TECHBEN_DEFENCELASER
+	}
+}
+
+tech
+{
+	name		"IND_ImpRfCt"		// Improved Reflective Coating
+	threat		1
+	OPTION_COST	1.5
+
+
+	requires	"IND_HvyPlat"
+
+	strategy
+	{
+		inc TECHBEN_DEFENCELASER
+	}
+}
+
+/////////////////////////////////////////////
+// Industrial (cont.) - Heavy Platforms...
+
+tech
+{
+	name		"IND_HvyPlat"	// Heavy Construction Systems
+	threat		2
+
+	allows		"IND_TrctBm		RP:12000	Human:85 	Zuul:70 	Hiver:70 	Tarkas:70	Liir:90		Morrigi:100"
+	allows		"IND_HrdStrct	RP:12000"
+	allows		"IND_QrkRes		RP:225000"	// reinforced hull
+	allows		"IND_GravCon	RP:225000	Human:85 	Zuul:70 	Hiver:70 	Tarkas:70	Liir:90		Morrigi:100"
+	allows		"IND_DreadCon	RP:337500"
+	allows		"IND_TrpSat		RP:12000	Human:85 	Zuul:70 	Hiver:70 	Tarkas:70	Liir:90		Morrigi:90"
+	allows		"IND_HrdElec	RP:135000	Human:85 	Zuul:70 	Hiver:70 	Tarkas:70	Liir:100	Morrigi:90"
+	allows		"IND_AdvEWAR	RP:225000"
+
+	strategy
+	{
+		inc TECHBEN_INDOUTPUT
+	}
+}
+
+tech
+{
+	name		"IND_TrctBm"
+	threat		2
+
+	requires	"DRV_Fusn"
+
+	weapon
+	{
+		filename  "Weapons/bem_tractor.weapon"
+	}
+}
+
+tech
+{
+	name		"IND_HrdStrct"
+	threat		1
+	type		P
+
+	allows		"IND_ArcCon		RP:40000"
+
+	strategy
+	{
+		dec TECHBEN_INDOUTPUT
+		dec TECHBEN_POPDAM
+	}
+}
+
+tech
+{
+	name		"IND_ArcCon"
+	threat		2
+	type		P
+
+	strategy
+	{
+		inc TECHBEN_POPGROW
+		inc TECHBEN_MAXPOP
+	}
+}
+
+tech
+{
+	name		"IND_TrpSat"
+	threat		2
+
+	requires	GRP_CRDN
+	requires	GRP_TORPS
+
+	ship
+	{
+		section CRTorpedoPlatform
+		section DNTorpedoPlatform
+	}
+	strategy
+	{
+		inc TECHBEN_SYSDEFENSE
+	}
+}
+
+tech
+{
+	name		"IND_HrdElec"
+	threat		3
+	type		P
+
+//	requires	GRP_EMTRS		// allow defense without having the offensive capability for these...
+
+	strategy
+	{
+		inc TECHBEN_DEFENCEEMP
+		inc TECHBEN_DEFENCEEMT
+	}
+}
+
+tech
+{
+	name		"IND_AdvEWAR"		// Advanced Electronic Warfare (EWAR)
+	threat		2
+
+	requires	"DRV_AntiMat"		// antimatter
+	requires	"CCC_AdvSens"		// advanced sensors - required by EWAR
+	requires	"CCC_QntChaf"		// quantuum chaff - required by EWAR
+	requires	"CCC_SnsJam"		// sensor jammers - required by EWAR
+
+	ship
+	{
+		section CREW
+		section DNEW
+	}
+}
+
+tech
+{
+	name		"IND_GravCon"
+	threat		3
+	type		P
+
+	requires	"DRV_AntiMat"
+
+	strategy
+	{
+		inc TECHBEN_SHIPCONRATE
+	}
+}
+
+/////////////////////////////////////////////
+// Dreadnought Construction
+
+tech
+{
+	name		"IND_DreadCon"		// Dreadnought Construction
+	threat		1
+
+	group		DECRDN
+	group		CRDN
+
+// Requiring GRP_PRJCTR crashes MARS.EXE when creating a new game
+// Must be something ciruclar about this...
+//	requires	GRP_PRJCTR			// dreads now make heavy use of "projector" mounts - so we need one to build these things!
+// 3.0.2 added single huge missile for projector turrets default with no prerequisites - so should just auto-choose that in the design screen if no alternative techs available..
+
+
+	allows		"IND_DNWarEng		RP:50000"
+	allows		"WEP_SgeDrvr		RP:50000	Human:95 	Zuul:85 	Hiver:95 	Tarkas:95 	Liir:80 	Morrigi:75"
+	allows		"DRN_BtlRdrs		RP:50000"
+
+	allows		"DRN_WingMan		RP:0"	// Drones already cost extra - just allow this with the correct combat construction tech
+	allows		"IND_DNSat			RP:0"	// Huge defense sattelites (we need a tech box for this)
+	ship
+	{
+		section DNArmour
+	}
+	strategy
+	{
+		inc TECHBEN_HULLSIZE
+		inc TECHBEN_FIREPOWER
+	}
+}
+
+tech
+{
+	name		"IND_DNWarEng"		// Dreadnought War Engineering
+	threat		1
+
+	requires	GRP_LRGWEP
+	requires	GRP_HVYBEAM
+
+	strategy
+	{
+		inc TECHBEN_FIREPOWER
+		inc TECHBEN_LRGWEP
+	}
+	ship
+	{
+		section DNWar
+	}
+}
+
+tech
+{
+	name		"WEP_SgeDrvr"		// Siege Driver
+	family		"IND"
+	threat		3
+
+	requires	"WEP_AccAmp"		// accelerator amplification
+
+	strategy
+	{
+		inc TECHBEN_POPDAM
+	}
+	ship
+	{
+		section DNSiegeDriver
+	}
+}
+
+tech
+{
+	name		"DRN_BtlRdrs"		// Battle Riders
+	family		"IND"
+	threat		2
+
+	requires	"DRV_Hyper"		// Tarkas only
+	requires	"DRN_AdvRob"	// advanced robotics
+
+	strategy
+	{
+		inc TECHBEN_FIREPOWER
+	}
+	ship
+	{
+		section DNCarrier
+		section _HunterShip_Fusion
+		section _HunterShip_Antimatter
+	}
+}
+
+//**************************************************************************************************
+//BIOLOGICAL
+//**************************************************************************************************
+
+tech
+{
+	name		"BIO_GnMod"		// Advanced Genetic Modification
+
+	allows		"BIO_SpndAni	RP:0		Human:95 	Zuul:0  	Hiver:80 	Tarkas:90 	Liir:95 	Morrigi:90"
+	allows		"BIO_AtmoAd		RP:0"
+	allows		"BIO_TerBac		RP:0		Human:80 	Zuul:20 	Hiver:75 	Tarkas:60 	Liir:90 	Morrigi:80"
+	allows		"BIO_Plg		RP:12000	Human:100 	Zuul:0  	 Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"
+
+	strategy
+	{
+		inc TECHBEN_POPGROW
+	}
+}
+
+tech
+{
+	name		"BIO_SpndAni"	// Suspended Animation
+
+	OPTION_COST	1.4
+
+	allows		"BIO_Btrans		RP:24000	Human:80 	Zuul:20 	Hiver:90 	Tarkas:70 	Liir:100 	Morrigi:90"	// cost x3
+
+	strategy
+	{
+		inc TECHBEN_COLCAP
+	}
+}
+
+tech
+{
+	name		"BIO_Btrans"	// Biological Transfer
+
+	requires	"IND_CruisCon"
+
+	ship
+	{
+		section CRBiomeColonizer
+	}
+	strategy
+	{
+		inc TECHBEN_COLCAP
+		inc TECHBEN_TERAFORMSPD
+	}
+}
+
+tech
+{
+	name		"BIO_AtmoAd"	// Atmospheric Adaptation
+	type		P
+
+	allows		"BIO_SpndAni	RP:0		Human:100 	Zuul:0  	Hiver:100 	Tarkas:100 	Liir:100 	Morrigi:100"	// 2nd chance (100%)
+	allows		"BIO_EnvTail	RP:24000"
+	allows		"BIO_TerBac		RP:0		Human:80 	Zuul:20 	Hiver:75 	Tarkas:60 	Liir:90 	Morrigi:80"		// 2nd chance (cheaper)
+
+	strategy
+	{
+		inc TECHBEN_ENVIROMENT
+		inc TECHBEN_TERAFORMSPD
+	}
+}
+
+tech
+{
+	name		"BIO_TerBac"
+	type		P
+
+	allows		"IND_EleNans	RP:26000	Human:75 	Zuul:20 	Hiver:55 	Tarkas:70 	Liir:95 	Morrigi:85"
+
+	strategy
+	{
+		inc	TECHBEN_TERAFORMSPD
+	}
+}
+
+tech
+{
+	name		"BIO_EnvTail"
+	type		P
+
+	allows		"BIO_GrvAdpt	RP:60000	Human:80 	Zuul:33 	Hiver:60 	Tarkas:70 	Liir:90 	Morrigi:90"
+	allows		"BIO_Btrans		RP:36000	Human:80 	Zuul:20 	Hiver:90 	Tarkas:70 	Liir:80 	Morrigi:80" // added extra path to tech, higher cost
+
+	strategy
+	{
+
+		inc TECHBEN_POPGROW
+		inc TECHBEN_TERAFORMSPD
+	}
+}
+
+tech
+{
+	name		"BIO_GrvAdpt"
+	type		P
+
+	requires	"DRV_Fusn"
+
+	strategy
+	{
+		inc TECHBEN_ENVIROMENT
+		inc TECHBEN_TERAFORMSPD
+	}
+}
+
+tech
+{
+	name		"IND_EleNans"
+	threat		3
+	type		P
+
+	allows		"BIO_NanVir		RP:44000	Human:70 	Zuul:40 	Hiver:50 	Tarkas:60 	Liir:80 	Morrigi:90"
+//	smart nanites are linked from every nanite weapon related tech + viruses, but not here...
+
+	strategy
+	{
+		inc TECHBEN_TERAFORMSPD
+	}
+}
+
+tech
+{
+	name		"BIO_NanVir"
+	threat		3
+
+	requires	"DRV_Fusn"
+
+	group		BIOMISSILE
+
+	allows		"BIO_ConNan		RP:22000	Human:50 	Zuul:0  	Hiver:40 	Tarkas:40 	Liir:60 	Morrigi:80"
+	allows		"BIO_SmrtNan	RP:50000	Human:70 	Zuul:40 	Hiver:50 	Tarkas:60 	Liir:80 	Morrigi:90"
+
+	ship
+	{
+		section DEBiowar
+		section CRBiowar
+		section DNBiowar
+	}
+	weapon
+	{
+		filename  "Weapons/bio_5_nanvir.weapon"
+	}
+}
+
+tech
+{
+	name		"BIO_ConNan"	// counter nanites
+	threat		3
+
+	requires	"DRV_Fusn"
+
+	allows		"BIO_SmrtNan	RP:50000	Human:70 	Zuul:10 	Hiver:50 	Tarkas:60 	Liir:70 	Morrigi:90"
+}
+
+tech
+{
+	name		"BIO_SmrtNan"	// smart nanites
+	threat		3
+
+	requires	"DRV_Fusn"
+}
+
+/////////////////////////////////////////////
+// Plagues
+
+tech
+{
+	name		"BIO_Plg"
+	threat		3
+
+	group		BIOMISSILE
+	group		SMALL_DRIVES
+
+	allows		"BIO_PlgVac		RP:12000	Human:80 	Zuul:0  	Hiver:80 	Tarkas:80 	Liir:95 	Morrigi:85"
+	allows		"BIO_RtPlg		RP:36000	Human:70 	Zuul:0  	Hiver:70 	Tarkas:60 	Liir:90 	Morrigi:70"
+	allows		"BIO_Bst		RP:81000	Human:30 	Zuul:0  	Hiver:30 	Tarkas:25 	Liir:40 	Morrigi:30"
+
+	ship
+	{
+		section DEBiowar
+		section CRBiowar
+		section DNBiowar
+	}
+	weapon
+	{
+		filename  "Weapons/bio_1_plague.weapon"
+	}
+}
+
+tech
+{
+	name		"BIO_PlgVac"
+	threat		3
+
+	allows		"BIO_UniAnti	RP:360000	Human:05 	Zuul:0  	Hiver:05 	Tarkas:05 	Liir:10 	Morrigi:5"
+}
+
+tech
+{
+	name		"BIO_RtPlg"
+	threat		3
+
+	group		BIOMISSILE
+	group		SMALL_DRIVES
+
+	requires	"DRV_Fusn"
+
+	allows		"BIO_RtPlgVac	RP:36000		Human:70 	Zuul:0  	Hiver:70 	Tarkas:70 	Liir:90 	Morrigi:75"
+	allows		"BIO_Bst		RP:81000	Human:30 	Zuul:0  	Hiver:30 	Tarkas:25 	Liir:40 	Morrigi:30"
+	allows		"BIO_AsPlg		RP:360000	Human:30 	Zuul:0  	Hiver:30 	Tarkas:25 	Liir:40 	Morrigi:30"
+
+	weapon
+	{
+		filename  "Weapons/bio_2_retplague.weapon"
+	}
+}
+
+tech
+{
+	name		"BIO_RtPlgVac"
+	threat		3
+
+	allows		"BIO_UniAnti	RP:360000	Human:10 	Zuul:0  	Hiver:10 	Tarkas:10 	Liir:25 	Morrigi:15"
+}
+
+tech
+{
+	name		"BIO_Bst"
+	threat		3
+
+	group		BIOMISSILE
+	group		SMALL_DRIVES
+
+	requires	"DRV_AntiMat"
+
+	allows		"BIO_BstVac		RP:81000	Human:70 	Zuul:0  	Hiver:70 	Tarkas:70 	Liir:90 	Morrigi:70"
+	allows		"BIO_AsPlg		RP:360000	Human:30 	Zuul:0  	Hiver:30 	Tarkas:25 	Liir:40 	Morrigi:30"
+
+	weapon
+	{
+		filename  "Weapons/bio_3_beast.weapon"
+	}
+}
+
+tech
+{
+	name		"BIO_BstVac"
+	threat		3
+
+	allows		"BIO_UniAnti	RP:360000	Human:15 	Zuul:0  	Hiver:15 	Tarkas:15 	Liir:40 	Morrigi:30"
+}
+
+tech
+{
+	name		"BIO_AsPlg"
+	threat		3
+
+	group		BIOMISSILE
+	group		SMALL_DRIVES
+
+	requires	"DRV_AntiMat"
+
+	allows		"BIO_AsPlgVac	RP:360000	Human:35 	Zuul:0  	Hiver:35 	Tarkas:45 	Liir:70 	Morrigi:50"
+
+	weapon
+	{
+		filename  "Weapons/bio_4_assim.weapon"
+	}
+}
+
+tech
+{
+	name		"BIO_AsPlgVac"
+	threat		3
+
+	allows		"BIO_UniAnti	RP:360000	Human:25 	Zuul:0  	Hiver:25 	Tarkas:35 	Liir:70 	Morrigi:40"
+}
+
+tech
+{
+	name		"BIO_UniAnti"
+	threat		3
+
+	requires	"DRV_AntiMat"
+}
+
+//******************************************************************************
+//   Automation (formerly "Drone")
+//******************************************************************************
+
+tech
+{
+	name		"IND_CyberInt"	// Cybernetic Interfaces
+	family		"DRN"
+	threat		1
+	type		P
+
+	allows		"CCC_AdvCnC		RP:0"		// Holographic command interface (select in sensor mode)
+	allows		"IND_Waldo		RP:0"
+	allows		"DRN_AdvRob		RP:0"
+
+	strategy
+	{
+		inc TECHBEN_INDOUTPUT
+		inc TECHBEN_SHIPCONRATE
+	}
+}
+
+tech
+{
+	name		"CCC_AdvCnC"	// Holographic Command Interface
+
+	allows		"CCC_BtlCmp		RP:0"	// Basic CnC
+}
+
+tech
+{
+	name		"IND_Waldo"		// Waldo Units
+	threat		1
+	type		P
+
+	allows		"IND_ExpSys		RP:0"
+
+	strategy
+	{
+		inc TECHBEN_INDOUTPUT
+		inc TECHBEN_SHIPCONRATE
+	}
+}
+
+tech
+{
+	name		"DRN_AdvRob"	// Advanced Robotics
+	threat		2
+	type		P
+
+	allows		"DRN_Cmbt		RP:0"
+	allows		"WEP_PDtech		RP:0"
+	allows		"IND_PredGun	RP:20000"
+
+	strategy
+	{
+		inc TECHBEN_SHIPCONRATE
+	}
+}
+
+tech
+{
+	name		"IND_ExpSys"	// Expert Systems
+	family		"DRN"
+	threat		2
+	type		P
+
+	allows		"CCC_AI			RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIAdmin	RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIFac		RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIFrCon	RP:75000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+
+	strategy
+	{
+		inc TECHBEN_INDOUTPUT
+		inc TECHBEN_SHIPCONRATE
+	}
+}
+
+tech
+{
+	name		"IND_PredGun"	// Predictive Gunnery
+	family		"DRN"
+	threat		1
+
+	requires	"IND_ExpSys"
+
+	OPTION_COST	2.0		// cost only applied to section it's in
+
+	strategy
+	{
+		inc TECHBEN_GUNACC
+	}
+}
+
+tech
+{
+	name		"WEP_PDtech"
+	family		"DRN"
+	threat		1
+
+	requires	GRP_PD
+
+	ship
+	{
+		section DEPointDefence
+		section CRPointDefence
+	}
+}
+
+tech
+{
+	name		"DRN_Cmbt"		// Combat Drones
+	threat		2
+
+	group		SMALL_DRIVES
+
+	allows		"DRN_AdvFrm		RP:40000"
+	allows		"DRN_COL		RP:0	Human:80 	Zuul:50 	Hiver:70 	Tarkas:80 	Liir:85 	Morrigi:100"
+
+	allows		"DRN_Sats		RP:0"		// If you have drones, you just get drone sats
+	allows		"DRN_Squad		RP:0"		// keep this link for the visual in the tech tree
+
+	ship
+	{
+		section DEDrone
+		section _Drone
+	}
+}
+
+tech
+{
+	name		"DRN_Sats"
+	threat		2
+
+	requires	GRP_CRDN
+
+	allows		"DRN_Auto		RP:0"
+
+	ship
+	{
+		section CRDronePlatform
+		section DNDronePlatform
+	}
+	strategy
+	{
+		inc TECHBEN_SYSDEFENSE
+	}
+}
+
+tech
+{
+	name		"DRN_Auto"		// Autonomous Drones (Trickster Traps)
+	threat		1
+
+	requires	"DRV_VdCtr"		// morrigi only
+
+	ship
+	{
+		section DEColonyTrickster
+		section DEBeltTrickster
+	}
+}
+
+tech
+{
+	name		"DRN_AdvFrm"	// Advanced Drone Frames
+	threat		1
+
+	group		SMALL_DRIVES
+
+	requires	"IND_ExpSys"
+
+	allows		"DRN_Assault	RP:40000"	// bomber drones
+	allows		"DRN_Mine		RP:40000"	// mine layer drones
+
+	ship
+	{
+		section _DroneHeavy
+	}
+}
+
+tech
+{
+	name		"DRN_Assault"	// Assault Drones (mini torpedo bombers)
+	threat		1
+
+	requires	GRP_TORPS
+
+	ship
+	{
+		section _DroneBomber
+	}
+}
+
+tech
+{
+	name		"DRN_Mine"		// Mine Layer Drones
+	threat		1
+
+	requires	GRP_MINES
+
+	ship
+	{
+		section _DroneMineLayer
+	}
+}
+
+tech
+{
+	name		"DRN_Squad"		// Drone Squadrons (CR drone tenders)
+	threat		2
+
+	requires	"IND_CruisCon"
+	requires	"DRN_Cmbt"
+
+	allows		"DRN_WingMan	RP:0"		// keep this link for the visual in the tech tree
+
+	ship
+	{
+		section CRDrone
+	}
+}
+
+tech
+{
+	name		"DRN_WingMan"	// DN Drone Tenders
+	threat		2
+
+	requires	"IND_DreadCon"
+	requires	"DRN_Cmbt"
+
+	allows		"CCC_AI			RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIAdmin	RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIFac		RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIFrCon	RP:75000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+
+	ship
+	{
+		section DNDrone
+	}
+}
+
+tech
+{
+	name		"DRN_COL"		// Complex Ordinance Launchers (base = drones)
+	threat		2
+
+	requires	GRP_CRDN
+	requires	"DRN_Cmbt"
+
+	allows		"DRN_CrakCOL	RP:22000"
+	allows		"DRN_TPCOL		RP:34000"
+	allows		"DRN_CryCOL		RP:22000"
+
+	ship
+	{
+		section CRCOL
+	}
+	weapon
+	{
+		filename  "Weapons/col_drone.weapon"
+	}
+
+}
+
+tech
+{
+	name		"DRN_CryCOL"	// Cry-baby (Quantum Chaff)
+
+	requires	"CCC_QntChaf"
+	requires	GRP_CRDN
+
+	ship
+	{
+		section CRCOL
+	}
+	weapon
+	{
+		filename  "Weapons/col_crybaby.weapon"
+	}
+}
+
+tech
+{
+	name		"DRN_CrakCOL"	// Cracker (mines)
+
+	requires	GRP_MINES
+	requires	GRP_CRDN
+
+	ship
+	{
+		section CRCOL
+	}
+	weapon
+	{
+		filename  "Weapons/col_cracker_1_nuke.weapon"
+	}
+}
+
+tech
+{
+	name		"DRN_TPCOL"		// Gravity well
+	requires	"DRV_VdCrv"		// Void Carver (Morrigi only)
+
+	ship
+	{
+		section CRCOL
+	}
+	weapon
+	{
+		filename  "Weapons/col_tarpit.weapon"
+	}
+}
+
+//////////////////////////////////
+// Command & Control (CnC)
+
+tech
+{
+	name		"CCC_BtlCmp"	// Basic CnC
+
+	requires	GRP_DECRDN		// Force everyone to have real ships before trying to create CNC
+
+	allows		"CCC_CmbtAlg	RP:0"	// bonus cp #1
+
+	ship
+	{
+		section DESquadronCNC
+		section CRSquadronCNC
+		section DNSquadronCNC
+	}
+	strategy
+	{
+		inc TECHBEN_CNC
+	}
+}
+
+tech
+{
+	name		"CCC_CmbtAlg"	// Bonus CP #1
+
+	allows		"CCC_DatSyn		RP:50000"	// Improved CnC
+
+	strategy
+	{
+		inc TECHBEN_CNC
+	}
+}
+
+tech
+{
+	name		"CCC_DatSyn"	// Improved CnC
+
+	allows		"CCC_HoloTac	RP:75000"	// bonus cp #2
+
+	allows		"CCC_AI			RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIAdmin	RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIFac		RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIFrCon	RP:75000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+
+	ship
+	{
+		section DEStrikeForceCNC
+		section CRStrikeForceCNC
+		section DNStrikeForceCNC
+	}
+	strategy
+	{
+		inc TECHBEN_CNC
+	}
+}
+
+tech
+{
+	name		"CCC_HoloTac"	// bonus CP #2
+
+	requires	"IND_ExpSys"
+
+	allows		"CCC_ArmCom		RP:225000"
+
+	allows		"CCC_AI			RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIAdmin	RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIFac		RP:225000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+	allows		"CCC_AIFrCon	RP:75000	Human:25 	Zuul:15 	Hiver:25 	Tarkas:20 	Liir:30 	Morrigi:30"
+
+	strategy
+	{
+		inc TECHBEN_CNC
+	}
+}
+
+tech
+{
+	name		"CCC_ArmCom"	// Advanced CnC (DN CnC)
+
+	requires	"DRV_Fusn"
+
+	allows		"CCC_FCCom		RP:450000"
+
+	ship
+	{
+		section DEArmadaCNC
+		section CRArmadaCNC
+		section DNArmadaCNC
+	}
+	strategy
+	{
+		inc TECHBEN_CNC
+	}
+}
+
+tech
+{
+	name		"CCC_FCCom"		// Flag Command
+
+	requires	GRP_LRGWEP
+	requires	GRP_HVYBEAM
+	requires	"CCC_AdvSens"
+	requires	"IND_DreadCon"
+
+	allows		"IND_MltFlg		RP:0"	// allow multiple flag ships
+
+	ship
+	{
+		section DNFlagship
+	}
+	strategy
+	{
+		inc TECHBEN_CNC
+	}
+}
+
+tech
+{
+	name		"IND_MltFlg"		// note: this only exists to enable flagship construction
+	family		"CCC"				//       while disassociating it from "CCC_FCCom"
+
+	group		FLAG				// can't just put group FLAG in CCC_FCCom!  That only allows one. :(
+}
+
+/////////////////////////////////////////
+// AI Technologies
+
+tech
+{
+	name		"CCC_AI"
+	family		"DRN"
+	threat		1
+	type		P
+
+	requires	"DRV_Fusn"
+
+	allows		"CCC_AIVrus		RP:225000	Human:50 	Zuul:50 	Hiver:50 	Tarkas:50 	Liir:50 	Morrigi:50"
+	allows		"CCC_AISlv		RP:450000	Human:25 	Zuul:25 	Hiver:25 	Tarkas:25 	Liir:25 	Morrigi:25"
+
+	strategy
+	{
+		inc TECHBEN_SCIENCE
+	}
+}
+
+tech
+{
+	name		"CCC_AIAdmin"
+	family		"DRN"
+	threat		1
+	type		P
+
+	requires	"DRV_Fusn"
+
+	allows		"CCC_AIVrus		RP:225000	Human:50 	Zuul:50 	Hiver:50 	Tarkas:50 	Liir:50 	Morrigi:50"
+	allows		"CCC_AISlv		RP:450000	Human:25 	Zuul:25 	Hiver:25 	Tarkas:25 	Liir:25 	Morrigi:25"
+
+	strategy
+	{
+		inc TECHBEN_INCOME
+	}
+}
+
+tech
+{
+	name		"CCC_AIFac"
+	family		"DRN"
+	threat		1
+	type		P
+
+	requires	"DRV_Fusn"
+
+	allows		"CCC_AIVrus		RP:225000	Human:50 	Zuul:50 	Hiver:50 	Tarkas:50 	Liir:50 	Morrigi:50"
+	allows		"CCC_AISlv		RP:450000	Human:25 	Zuul:25 	Hiver:25 	Tarkas:25 	Liir:25 	Morrigi:25"
+
+	strategy
+	{
+		inc TECHBEN_INDOUTPUT
+	}
+}
+
+tech
+{
+	name		"CCC_AIFrCon"
+	family		"DRN"
+	threat		1
+	OPTION_COST	4.0
+
+	requires	"DRV_Fusn"
+
+	allows		"CCC_AIVrus		RP:225000	Human:50 	Zuul:50 	Hiver:50 	Tarkas:50 	Liir:50 	Morrigi:50"
+	allows		"CCC_AISlv		RP:450000	Human:25 	Zuul:25 	Hiver:25 	Tarkas:25 	Liir:25 	Morrigi:25"
+
+	ship
+	{
+		section DEAIC
+		section CRAIC
+		section DNAIC
+	}
+	strategy
+	{
+		inc TECHBEN_GUNACC
+		inc TECHBEN_MANEUVER
+	}
+}
+
+tech
+{
+	name		"CCC_AIVrus"
+	family		"DRN"
+	threat		3
+	type		P
+
+	allows		"CCC_AISlv		RP:450000	Human:25 	Zuul:25 	Hiver:25 	Tarkas:25 	Liir:25 	Morrigi:25"
+}
+
+tech
+{
+	name		"CCC_AISlv"
+	family		"DRN"
+	threat		3
+	type		P
+}

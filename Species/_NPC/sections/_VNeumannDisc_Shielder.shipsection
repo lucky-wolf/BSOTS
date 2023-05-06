@@ -1,0 +1,132 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model "Species/_NPC/art/sections/VNeumannDisc_Shielder.X"
+	section_type mission
+	section_class Destroyer
+	health 14000
+	mass 2000
+	cost 100000
+	cpoints 5000
+	engine_sound ""
+	engine_idle_sound ""
+	autonomous true	// actually means this is a ship with only a mission section
+	crew 0
+
+	command_cost 0
+	maintenance_cost 0
+	
+	netforcelimits
+	{
+		force_forward 100000
+		force_right   100000
+		force_up      100000
+		
+		torque_yaw    10000000
+		torque_pitch  10000000
+		torque_roll   10000000
+		
+		speed         120
+		rotspeed      30
+	}
+
+//VNeumannDisc.X file has a node called 'WeaponNode01' that can be used to attach weapons to.
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node WeaponNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}	
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node WeaponNode02
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}	
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node WeaponNode03
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}	
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node WeaponNode04
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}	
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node WeaponNode05
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}	
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node WeaponNode06
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}	
+	}
+
+
+}

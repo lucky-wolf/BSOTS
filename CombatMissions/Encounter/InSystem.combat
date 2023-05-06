@@ -1,0 +1,105 @@
+summary
+{
+	user_ships_allowed	1
+}
+
+combatenv
+{
+}
+
+endcondition
+{
+	elimination true
+	time 240			// 4 mins
+}
+
+planet
+{
+	defer_init 1	// let combat initialize this entity
+	pos "0 0 0"
+}
+
+orbit
+{
+	type meetingencounter
+	radius 4000
+}
+
+orbit
+{
+	type raider
+	radius 10500	// 1000m out from freighters
+}
+
+orbit
+{
+	type station
+	radius 8500		// needs to be out far enough to avoid asteroid field (asteroids go out to 7500 - see terrain.txt)
+}
+
+orbit
+{
+	type freighter
+	radius 9500		// away from stations
+}
+
+orbit
+{
+	type attacker
+	transport stl
+	radius 5900
+}
+
+orbit
+{
+	type attacker
+	transport flock
+	radius 5000
+}
+
+orbit
+{
+	type attacker
+	transport farcast
+	radius 5000
+}
+
+orbit
+{
+	type attacker
+	transport warp
+	radius 4950
+}
+
+orbit
+{
+	type attacker
+	transport stutter
+	radius 5550
+}
+
+orbit
+{
+	type attacker
+	transport node
+	radius 5100
+}
+
+orbit
+{
+	type attacker
+	transport teleport
+	radius 5500
+}
+
+orbit
+{
+	type defender
+	radius 2000
+}
+
+orbit
+{
+	type smallsat
+	radius 900
+}

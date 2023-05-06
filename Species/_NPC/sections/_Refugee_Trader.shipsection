@@ -1,0 +1,395 @@
+shipsection
+{
+	model "Species/_NPC/art/sections/RefugeeTrader.X"
+	section_type mission
+	section_class Dreadnought
+	health 50000
+	mass 5e+6
+	cost 1000000
+	cpoints 50000
+	engine_sound Sounds/SFX/systemkiller_pulse.wav
+	engine_sound Sounds/SFX/systemkiller_pulse.wav
+	engine_sound_minrange 185
+	autonomous true	// actually means this is a ship with only a mission section
+	node_cannon_fling 0
+	crew 0
+	nodesign true
+
+	entity_class "KorrRefugee"
+	death_effect "effects/ort_Death.effect"
+
+	command_cost 0
+	maintenance_cost 0
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	ftlspeed	0.99
+	range		1e+20	// Huge range
+
+	option	IND_MagLat
+	option	IND_ImpRfCt
+
+	netforcelimits
+	{
+		force_forward 8e+8
+		force_right   8e+7
+		force_up      8e+7
+
+		torque_yaw    1e+12
+		torque_pitch  7e+11
+		torque_roll   7e+11
+
+		speed         100
+		rotspeed      40
+	}
+
+
+
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/Refugee_LRG.weapon"
+
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+		weapon "Species/_NPC/weapons/Refugee_med.weapon"
+
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode06
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+		weapon "Species/_NPC/weapons/Refugee_med.weapon"
+
+
+
+		mount
+		{
+			node MediumGunNode10
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode11
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+
+
+
+
+
+
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+		weapon "Species/_NPC/weapons/Refugee_med.weapon"
+
+
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+	}
+
+
+
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+		weapon "Species/_NPC/weapons/Refugee_med.weapon"
+
+		mount
+		{
+			node MediumGunNode05
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode12
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+
+	}
+
+
+
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+		weapon "Species/_NPC/weapons/Refugee_med.weapon"
+
+
+		mount
+		{
+			node MediumGunNode07
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode08
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode09
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+
+
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/Refugee_sml.weapon"
+
+
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -20
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode07
+			min_azimuth -90
+			max_azimuth 20
+			min_inclination -10
+			max_inclination 90
+		}
+
+
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/Refugee_sml.weapon"
+
+
+
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/Refugee_sml.weapon"
+
+
+
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+	       mount
+		{
+			node LightGunNode06
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/Refugee_sml.weapon"
+
+
+		mount
+		{
+			node LightGunNode08
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+		mount
+		{
+			node LightGunNode09
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+		mount
+		{
+			node LightGunNode10
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/Refugee_sml.weapon"
+
+
+
+		mount
+		{
+			node LightGunNode11
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+		mount
+		{
+			node LightGunNode12
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+}

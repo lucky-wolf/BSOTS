@@ -1,0 +1,36 @@
+shipsection
+{
+	model Species/_NPC/art/sections/DR_GasCloud.X
+	section_type mission
+	section_class dreadnought
+	health 20000
+	mass 4000
+	split_traffic_volume "false"
+
+
+	engine_sound Sounds/SFX/DNgascloud.wav
+	engine_sound_minrange 100
+
+
+
+	crew 0
+	autonomous true	// actually means this is a ship with only a mission section
+	tacticalsensorrange 4000
+
+	command_cost 0
+	maintenance_cost 0
+	
+	netforcelimits
+	{
+		force_forward 400000000
+		force_right   400000000
+		force_up      400000000
+		
+		torque_yaw    400000000
+		torque_pitch  400000000
+		torque_roll   400000000
+		
+		speed         55
+		rotspeed      90
+	}
+}

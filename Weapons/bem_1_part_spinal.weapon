@@ -1,0 +1,60 @@
+weapon
+{
+	name						@WEAPON_BEM_PART_SPINAL
+
+	weaponclass					beam
+	weaponfamily				conventionalbeam
+
+	model1						barrel_l1_ParticleBeam.X
+
+	turretclass					spinal
+	turretsize					large
+
+	requires					WEP_prtBm
+	cost						7000
+
+	solution_tolerance			2
+	burst_volleys				1
+	volley_duration				2
+	recharge_time				10
+
+	muzzle_effect				effects/ParticleBeam_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_particle_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beams.tga
+	icon_rect					"0 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1000 // 600
+	range_planet				1000
+
+	beam
+	{
+		impact_effect					effects/ParticleBeam_Impact.effect
+		impact_sound					Sounds/Weapons/bem_particle_impact.wav
+		impact_sound_minrange			75
+		effect							effects/ParticleBeam_Bullet.effect
+		dam								200
+		force							0
+
+		dam_pop							123046
+		dam_infra						0.000564
+		dam_terra						0.000019
+	}
+
+	dam_est			80
+
+	rating_frate	4
+	rating_dam		4
+	rating_acc		5
+	rating_range	4
+}

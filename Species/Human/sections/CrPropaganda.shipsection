@@ -1,0 +1,114 @@
+shipsection
+{
+	model					Species/Human/art/sections/CrPropaganda.X
+	section_type			mission
+	section_class			cruiser
+	preview_ofs				"0 0 1"
+
+	requires				DRV_Fusn
+	requires				DRV_Node
+	requires				CCC_FTLBrdB
+
+	health					8000
+	mass					60000
+	cost					400000
+	maintenance_cost		3000
+	cpoints					32000
+
+	propaganda 1
+	autonomous				true	// actually means this is a ship with only a mission section
+	nodespeed				5
+	ftlspeed				.95
+	range					12
+	crew					120
+	preview_ofs				"-40 -270 0"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		23000
+		force_right			23000
+		force_up			23000
+
+		torque_yaw			2e+7
+		torque_pitch		2e+7
+		torque_roll			2e+7
+
+		speed				55
+		rotspeed			35
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+
+        thruster
+        {
+		node EngineThruster02
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+
+        thruster
+        {
+		node EngineThruster04
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster05
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+
+        thruster
+        {
+		node EngineThruster06
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster07
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+
+        thruster
+        {
+		node EngineThruster08
+		effect effects/Engine_FusionB.effect
+		idle_effect effects/Engine_FusionIdleB.effect
+	}
+
+   }
+}

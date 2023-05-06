@@ -1,0 +1,76 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/CrPropaganda.X
+//	preview_ofs				"0 0 1"
+	preview_ofs				"-40 -270 0"
+	section_type			mission
+	section_class			cruiser
+
+	health					8800
+	mass					50000
+	cost					450000
+	maintenance_cost		3000
+	cpoints					51500
+
+	propaganda				1
+	autonomous				true	// actually means this is a ship with only a mission section
+	ftlspeed				.75
+	range					12
+	crew					200
+
+	requires				DRV_Fusn
+	requires				CCC_FTLBrdB
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option	DRV_PlsmFoc
+
+	netforcelimits
+	{
+		force_forward		25000
+		force_right			25000
+		force_up			25000
+
+		torque_yaw			2e+7
+		torque_pitch		2e+7
+		torque_roll			2e+7
+
+		speed				64.2125
+		rotspeed			30
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+}

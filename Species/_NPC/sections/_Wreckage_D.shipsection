@@ -1,0 +1,263 @@
+shipsection
+{
+	nodesign 1
+	model Species/_NPC/art/sections/Wreckage_d.X
+	section_type mission
+	section_class dreadnought
+	health 28000
+	mass 5000000000
+	cost 150000
+	cpoints 14000
+	autonomous true	// actually means this is a ship with only a mission section
+	node_cannon_fling 0
+	crew 0
+	split_traffic_volume "false"
+
+	entity_class "AlienDerelict"
+
+	command_cost 0
+	maintenance_cost 0
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	section_sound	"Sounds/SFX/derelict_transmission.wav"
+	section_sound_repeat	15
+
+	option
+	{
+		option 	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward			0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch			0
+		torque_roll			0
+
+		speed				5
+		rotspeed			0
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Wreckage_trp_am.weapon"
+		turretclass torpedo
+		turretsize large
+
+		mount
+		{
+			node Torp01
+			min_azimuth -1
+			max_azimuth 1
+			min_inclination -1
+			max_inclination 1
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Wreckage_bem_part.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Wreckage_phs.weapon"
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Wreckage_las_xray.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode06
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode09
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode10
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Wreckage_bal_gauss.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode08
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode12
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Wreckage_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode07
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode11
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+
+}

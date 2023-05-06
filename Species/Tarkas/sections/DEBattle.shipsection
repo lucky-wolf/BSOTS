@@ -1,0 +1,102 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/DestroyerArmour.X
+	preview_ofs				"-4 0 -2"
+	socket_aft				MissionNode
+	socket_fore				MissionNode01
+	section_type			mission
+	section_class			destroyer
+
+	health						880
+	mass						2000
+	cost						4000
+	maintenance_cost		300
+	cpoints					1664
+
+	requires				IND_DEConstr
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				10
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -8
+			max_inclination 90
+
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGun01
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -5
+			max_inclination 90
+
+		}
+
+		mount
+		{
+			node MediumGun02
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -2
+			max_inclination 90
+
+		}
+
+	}
+}

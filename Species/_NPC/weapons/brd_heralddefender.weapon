@@ -1,0 +1,57 @@
+weapon
+{
+	name				@WEAPON_NPC_HERALD_DEFENDER
+	weaponclass			rider
+	cost				50000
+	turretsize			large
+	turretclass			tarkahunter
+	
+	burst_volleys		1
+	buildup_delay		0	// time delay before rider disconnects
+	volley_period		1
+	volley_duration		0
+	recharge_time		10
+
+	muzzle_speed 		100
+	solution_tolerance	180
+
+	icon_file			GUI/WeaponIcons_2.tga
+	icon_rect			"96 160 32 32"
+	
+	muzzle_sound			Sounds/Ships/Shared/_AssaultShuttle_launch.wav
+	muzzle_sound_minrange	200
+
+	fc_requires_los				false
+	fc_requires_inrange			false
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			true
+	fc_controllable				true
+	fc_holdsfire				false
+
+	compatible_section _HeraldDefender
+	
+	rider
+	{
+		section_file	"_HeraldDefender.shipsection"
+		entity_type		"HeraldDefender"
+		Impact_effect   "effects/Shuttle_Death.effect"
+		impact_sound	"Sounds/SFX/explosion_DEship_001.wav"
+		impact_sound_minrange	150
+		
+		strafe_duration		30
+		capture_pop_rate	1670000
+		dam_pop_rate		0
+		dam_infra_rate		0.08
+		dam_terra_rate		0
+
+		detach_effect          ""
+		detach_sound           ""
+
+		attach_effect          ""
+		attach_sound           "Sounds/Ships/Shared/_AssaultShuttle_dock.wav"
+		attach_sound_minrange  "10"
+		attach_sound_maxrange  "150000"
+	}
+}

@@ -1,0 +1,148 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DestroyerAntiMatter.X
+	requires				DRV_AntiMat
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			destroyer
+	engine_techera			antimatter
+	health					1440
+	mass					2500
+	cost					13000
+	maintenance_cost		300
+	cpoints					1840
+	ftlspeed				.99
+	range					25
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	engine_sound			Sounds/Ships/Shared/DEAM_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEAM_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		42000
+		force_right			42000
+		force_up			42000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				155.7875
+		rotspeed			10
+	}
+
+	thruster
+	{
+		node EngineFXNode01
+		effect effects/Engine_Antimatteraa.effect
+		idle_effect effects/EngineAntimatterIdleaa.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode02
+		effect effects/Engine_Antimatteraa.effect
+		idle_effect effects/EngineAntimatterIdleaa.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode03
+		effect effects/Engine_Antimatteraa.effect
+		idle_effect effects/EngineAntimatterIdleaa.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode04
+		effect effects/Engine_Antimatteraa.effect
+		idle_effect effects/EngineAntimatterIdleaa.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode05
+		effect effects/Engine_Antimatteraa.effect
+		idle_effect effects/EngineAntimatterIdleaa.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode06
+		effect effects/Engine_Antimatteraa.effect
+		idle_effect effects/EngineAntimatterIdleaa.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode07
+		effect effects/Engine_Antimatteraa.effect
+		idle_effect effects/EngineAntimatterIdleaa.effect
+	}
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -10
+			max_azimuth 150
+			min_inclination -7
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -150
+			max_azimuth 10
+			min_inclination -7
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -130
+			max_azimuth 130
+			min_inclination -3
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -140
+			max_azimuth 140
+			min_inclination -3
+			max_inclination 90
+		}
+
+	}

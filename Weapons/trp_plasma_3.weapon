@@ -1,0 +1,96 @@
+weapon
+{
+	name						@WEAPON_TRP_AM
+
+	weaponclass					torpedo
+	weaponfamily				torpedo
+	weapondamagetype			trackingtorpedo
+
+	turretclass					torpedo
+	turretsize					large
+
+	requires					WEP_AmTrp
+	cost						17000
+
+	solution_tolerance			90
+	burst_volleys				1
+	recharge_time				30
+
+	muzzle_speed				375
+	muzzle_effect				effects/PlasmaTorpedo_muzzle.effect
+	muzzle_sound				Sounds/Weapons/trp_am_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Torpedos.tga
+	icon_rect					"128 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	range						5000	// 2/3 of actual maximum
+	range_planet				5000
+
+	torpedo
+	{
+		tracking						true
+		plasma							true
+
+		beam_origin						-3
+		beam_length						5.5
+
+		effect							effects/AntimatterTorpedo_bullet.effect
+
+		impact_effect					effects/AntimatterTorpedo_impact.effect
+		impact_sound					Sounds/Weapons/trp_am_impact.wav
+		impact_sound_minrange			75
+
+		area_impact_effect				"effects/collide_asteroid.effect"
+
+		thrust_sound					Sounds/Weapons/trp_am_travel.wav
+		thrust_sound_minrange			20
+
+		rangetable
+		{
+			pb_range		750			// spd * 2
+			pb_range_dev	2
+			pb_range_dam	900
+
+			eff_range		2250		// spd * 6
+			eff_range_dev	2
+			eff_range_dam	1350
+
+			max_range		7500		// actual max
+			max_range_dev	3
+			max_range_dam	1950
+		}
+
+		health							1350		// same as eff damage
+		dam_radius						300
+		mass							500
+		dumbfire_period					0.5
+
+		speed							375		// 120
+		ttl								20		// actual range: 7500m
+
+		seek_attenuation				2	// Higher number = tighter turns/faster accel
+
+		dam_pop							205077
+		dam_infra						0.01125
+		dam_terra						0.0001875
+	}
+
+	dam_est			500
+
+	rating_frate	1
+	rating_dam		10
+	rating_acc		10
+	rating_range	10
+}

@@ -1,0 +1,87 @@
+weapon
+{
+	name						@WEAPON_MIN_CORROSIVE
+
+//	weaponclass					mine
+	weaponclass					corrosivemissile
+	weaponfamily				conventionalmine
+
+	turretclass					mine
+	turretsize					large
+
+	requires					WEP_CorMine
+	cost						5000
+
+	solution_tolerance			360
+	burst_volleys				1	// 1 mine dropped per cycle (1/2 vanilla to improve balance)
+	buildup_delay				1	// 1-s before first mine dropped
+	volley_period				2	// 2-s between mine drops
+	volley_duration				0	// mines are deployed instantaneously
+	recharge_time				4	// cycle is done at t=4
+
+	muzzle_speed				50
+	muzzle_effect				effects/PlasmaCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/min_nuke_drop.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Mines.tga
+	icon_rect					"192 0 64 64"
+
+	fc_requires_los				false
+	fc_requires_inrange			false
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			true
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	missile
+	{
+		tracking						false
+		warhead_dam_scale				false 	// not using standard warhead tech
+
+		dot_rate						225
+		dot_radius						150
+		dot_time						15
+
+		impact_decal					decals/WeaponHit.decal
+		impact_decal_width				.5
+		impact_decal_height				.5
+		impact_decal_depth				.1
+
+		impact_sound					Sounds/Weapons/mis_nanite_impact.wav
+		impact_sound_minrange			200
+		impact_effect					effects/CorrosiveMissile_Impact.effect
+		sticky_impact					false
+		area_impact_effect				"effects/collide_asteroid.effect"
+		planet_impact_effect			"effects/Missile_Planet.effect"
+
+		speed							50
+		seek_attenuation				1	// Higher number = tighter turns/faster accel
+
+		model							mine.X
+		ttl								120
+		health							30
+		dam								25
+		dam_radius						35
+		mass							50
+		coll_lookahead					50
+		affect_radius					200
+		dumbfire_period					0
+		trigger_range					"10 90"	// Random in here
+
+		dam_pop							329
+		dam_infra						0
+		dam_terra						0.0009375
+	}
+
+	dam_est			650
+
+	rating_frate	8
+	rating_dam		2
+	rating_acc		0
+	rating_range	5
+}

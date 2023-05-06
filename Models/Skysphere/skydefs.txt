@@ -1,0 +1,681 @@
+// Additional models in a sky are specified like this:
+//   model "<model-filename>;<texture-filename>;<effect-filename>;<yaw> <pitch> <roll>"
+//   model "<model-filename>;<texture-filename>;<effect-filename>;<yaw> <pitch> <roll>" ...
+//
+// Star attractors pull stars to the given area of the sky and are specified like this:
+//   star_attractors "<yaw pitch>;<yaw pitch>;..."
+//
+// To remove star attractors from a sky:
+//   star_attractors ""
+//
+// To specify lighting (light1 is the main source, light2 is intended for backlight):
+//   light1 "<yaw pitch>;<diffuse r g b>;<specular r g b>;<ambient r g b>"
+
+// Default values for skies (may be altered by each sky).
+bgmodel "Models/Skysphere/skysphere.x"
+bgtexture "Models/Skysphere/Neb01.tga"
+numstars "10000"
+light1 " 160   40 ; 255 255 255; 255 255 255 ;  60  20  120"
+light2 " -50   -10 ; 50 50 255 ; 0 0   255 ;  20 20 20"
+star_attractors "0 0 ; 90 40 ; 90 30"
+spacedust_texture "Models/Skysphere/spacedust.tga"
+spacedust_numparticles "300"
+spacedust_particlesize "0.5"
+spacedust_fieldsize "500.0"
+spacedust_endfadein "0.9"
+spacedust_beginfadeout "0.0"
+
+//-------------------------------------------------------------
+// Deep space skies.
+//-------------------------------------------------------------
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDS_01.tga"
+
+	light1 " 160   10 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " -20  -10 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDS_02.tga"
+	model "Models/Skysphere/ElementF.x;Models/Skysphere/Skybox-DS.tga;Models/Skysphere/SkyObject.fx;0 20 0"
+	light1 " 160   10 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " -20  -10 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDS_02.tga"
+	light1 " 160   10 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " -20  -10 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDS_03.tga"
+	light1 " 160   10 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " -20  -10 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDS_04.tga"
+	light1 " 160   10 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " -20  -10 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDS_05.tga"
+	light1 "  100   10 ; 175 230 170 ; 255 255 255 ;  16  16  16"
+	light2 " -320  -10 ;  90 100 120 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/Amoc_Update_A.tga"
+	light1 "  50  10 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " 220 -10 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/Amoc_Update_B.tga"
+	light1 "  50  10 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " 220 -10 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/AmocAddition_A.tga"
+	light1 "  50  10 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " 220 -10 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/AmocAddition_B.tga"
+	light1 "  100   10 ; 175 230 170 ; 255 255 255 ;  16  16  16"
+	light2 " -320  -10 ;  90 100 120 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/AmocAddition_C.tga"
+	light1 " 135  10 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " 315 -10 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/AmocAddition_D.tga"
+	light1 "  90  3 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " 270 -3 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+sky
+{
+	name "DeepSpace-AnyColor-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/AmocAddition_E.tga"
+	light1 "  50  -10 ; 255 255 255 ; 255 255 255 ;  16  16  16"
+	light2 " 220   10 ;  75  80 100 ;  75  80 100 ;  40  40  50"
+}
+
+//-------------------------------------------------------------
+// In-system skies.
+//-------------------------------------------------------------
+
+//Red
+
+sky
+{
+	name "InSystem-Red-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebR_01.tga"
+	model "Models/Skysphere/NebR_01_PlanetJ.x;Models/Skysphere/PlanetJ.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_red.tga"
+	light1 " 160    40 ; 255  71 68 ; 119 31 32 ; 15 4 4"
+	light2 " -50   -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+
+sky
+{
+	name "InSystem-Red-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebR_01.tga"
+	model "Models/Skysphere/ElementC.x;Models/Skysphere/Skybox-R.tga;Models/Skysphere/SkyObject.fx;-60 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_red.tga"
+	light1 " 160    40 ; 255  71 68 ; 119 31 32 ; 15 4 4"
+	light2 " -50   -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Red-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebR_02.tga"
+	spacedust_texture "Models/Skysphere/spacedust_red.tga"
+	light1 "  90    3 ; 255  95  73 ; 119 44 34 ; 12 4 3"
+	light2 " 220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Red-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebR_03.tga"
+	spacedust_texture "Models/Skysphere/spacedust_red.tga"
+	light1 "  50  10  ;  255  95 73 ; 119 44 34 ; 12 4 3"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Red-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebR_04.tga"
+	model "Models/Skysphere/NebR_04_PlanetD.x;Models/Skysphere/PlanetD.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_red.tga"
+	light1 "  160   40 ; 255  71  68 ; 119 31 32 ; 12 7 7"
+	light2 "  220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Red-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebR_05.tga"
+	spacedust_texture "Models/Skysphere/spacedust_red.tga"
+	light1 "  50   -10 ; 255  71  68 ; 119 31 32 ; 12 7 7"
+	light2 " -50   -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Red-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebR_06.tga"
+	model "Models/Skysphere/NebR_06_PlanetI.x;Models/Skysphere/PlanetI.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_red.tga"
+	light1 "  50  10  ;  255  95 73 ; 119 44 34 ; 12 4 3"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+//Orange
+
+sky
+{
+	name "InSystem-Orange-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebO_01.tga"
+	spacedust_texture "Models/Skysphere/spacedust_orange.tga"
+	light1 " 160   40 ; 255 170 86 ; 127 85 43 ;  12 10  6"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Orange-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebO_01.tga"
+	model "Models/Skysphere/ElementE.x;Models/Skysphere/Skybox-O.tga;Models/Skysphere/SkyObject.fx;0 0 100"
+	spacedust_texture "Models/Skysphere/spacedust_orange.tga"
+	light1 " 160   40 ; 255 170 86 ; 127 85 43 ;  12  10  6"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Orange-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebO_02.tga"
+	spacedust_texture "Models/Skysphere/spacedust_orange.tga"
+	light1 "  50  -10 ; 255 145 81 ; 127 72 40 ;  13  7  4"
+	light2 " 220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Orange-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebO_03.tga"
+	model "Models/Skysphere/NebO_03_PlanetM.x;Models/Skysphere/PlanetM.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_orange.tga"
+	light1 "  160   40 ; 255 145 81 ; 127 72 40 ;  13  7  4"
+	light2 "  220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Orange-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebO_04.tga"
+	spacedust_texture "Models/Skysphere/spacedust_orange.tga"
+	light1 "  160  40 ; 255 170 86 ; 127 85 43 ;  12  10  6"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Orange-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebO_05.tga"
+	spacedust_texture "Models/Skysphere/spacedust_orange.tga"
+	light1 "  160  40 ; 255 170 86 ; 127 85 43 ;  12  10  6"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Orange-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebO_06.tga"
+	model "Models/Skysphere/NebO_06_PlanetK.x;Models/Skysphere/PlanetK.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_orange.tga"
+	light1 "  50  -10 ; 255 145 81 ; 127 72 40 ;  13  7  4"
+	light2 " 220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+//Yellow
+
+sky
+{
+	name "InSystem-Yellow-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebY_01.tga"
+	model "Models/Skysphere/ElementE.x;Models/Skysphere/Skybox-Y.tga;Models/Skysphere/SkyObject.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_yellow.tga"
+	light1 " 160   40 ; 255 244 124 ; 122 117 59 ;  15  14  7"
+	light2 " 220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Yellow-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebY_01.tga"
+	model "Models/Skysphere/NebY_01_PlanetB.x;Models/Skysphere/PlanetB.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_yellow.tga"
+	light1 " 160   40 ; 255 244 124 ; 122 117 59 ;  15  14  7"
+	light2 " 220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Yellow-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebY_02.tga"
+	spacedust_texture "Models/Skysphere/spacedust_yellow.tga"
+	light1 " 50   -10 ; 255 234 206 ; 127 117 103 ;  13  12  10"
+	light2 " 220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Yellow-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebY_03.tga"
+	spacedust_texture "Models/Skysphere/spacedust_yellow.tga"
+	light1 "  50  -10 ; 255 234 206 ; 127 117 103 ;  13  12  10"
+	light2 " 220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Yellow-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebY_04.tga"
+	spacedust_texture "Models/Skysphere/spacedust_yellow.tga"
+	light1 " 50   -10 ; 255 234 206 ; 127 117 103 ;  13  12  10"
+	light2 " 220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Yellow-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebY_05.tga"
+	spacedust_texture "Models/Skysphere/spacedust_yellow.tga"
+	light1 " 50   -10 ; 255 234 206 ; 127 117 103 ;  13  12  10"
+	light2 " 220   10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Yellow-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebY_06.tga"
+	model "Models/Skysphere/NebY_06_PlanetN.x;Models/Skysphere/PlanetN.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_yellow.tga"
+	light1 "  50  10  ; 255 234 206 ; 127 117 103 ;  13  12  10"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+// AS: Olive changed to Light Orange :D
+
+sky
+{
+	name "InSystem-Olive-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebOL_01.tga"
+	spacedust_texture "Models/Skysphere/spacedust_OL.tga"
+	light1 "  160  40 ; 255 195 122 ; 130 99 62 ;  13  10  6"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Olive-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebOL_02.tga"
+	spacedust_texture "Models/Skysphere/spacedust_OL.tga"
+	light1 " 160   40 ; 255 195 122; 130 99 62 ;  13  10  6"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Olive-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebOL_03.tga"
+	model "Models/Skysphere/ElementC.x;Models/Skysphere/Skybox-OL.tga;Models/Skysphere/SkyObject.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_OL.tga"
+	light1 " 160   40 ; 255 174 142 ; 130 89 72 ;  13  9  7"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Olive-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebOL_03.tga"
+	model "Models/Skysphere/NebOL_03_PlanetO.x;Models/Skysphere/PlanetO.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_OL.tga"
+	light1 " 160   40 ; 255 174 142; 130 89 72 ;  13  9  7"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Olive-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebOL_04.tga"
+	spacedust_texture "Models/Skysphere/spacedust_OL.tga"
+	light1 "  50   10 ; 255 225 191 ; 130 114 97 ;  22  15  9"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Olive-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebOL_05.tga"
+	spacedust_texture "Models/Skysphere/spacedust_OL.tga"
+	light1 " 160   40 ; 255 225 191 ; 130 114 97 ;  22  15  9"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Olive-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebOL_06.tga"
+	model "Models/Skysphere/NebOL_06_PlanetL.x;Models/Skysphere/PlanetL.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_OL.tga"
+	light1 "  50   10 ; 255 225 191 ; 130 114 97 ;  22  15  9"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+//Dark Green
+
+sky
+{
+	name "InSystem-DarkGreen-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDG_01.tga"
+	model "Models/Skysphere/ElementB.x;Models/Skysphere/Skybox-DG.tga;Models/Skysphere/SkyObject.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_green.tga"
+	light1 "  50   10 ; 114 255  33 ;  57 127 16 ;  6  13  2"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-DarkGreen-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDG_01.tga"
+
+	spacedust_texture "Models/Skysphere/spacedust_green.tga"
+	light1 "  50  10  ; 114 255  33 ;  57 127 16 ;  6  13  2"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-DarkGreen-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDG_02.tga"
+	spacedust_texture "Models/Skysphere/spacedust_green.tga"
+	light1 "  160  40 ; 73 255  146 ;  35 122 70 ;  4  12  7"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-DarkGreen-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDG_03.tga"
+	spacedust_texture "Models/Skysphere/spacedust_green.tga"
+	light1 "  50  -10 ; 114 255  33 ;  57 127 16 ;  6  13  2"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-DarkGreen-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDG_04.tga"	
+	model "Models/Skysphere/NebDG_04_PlanetF.x;Models/Skysphere/PlanetF.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_green.tga"
+	light1 " 160   40 ;  73 255 146 ;  35 122 70 ;  4  12  7"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-DarkGreen-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDG_05.tga"	
+	spacedust_texture "Models/Skysphere/spacedust_green.tga"
+	light1 " 135   10 ; 114 255  33 ;  57 127 16 ;  6  13  2"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"	
+}
+
+sky
+{
+	name "InSystem-DarkGreen-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebDG_06.tga"
+	model "Models/Skysphere/NebDG_06_PlanetE.x;Models/Skysphere/PlanetE.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_green.tga"
+	light1 "  50  -10 ; 114 255  33 ;  57 127 16 ;  6  13  2"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+//Grey Blue
+
+sky
+{
+	name "InSystem-GreyBlue-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebGB_01.tga"
+	spacedust_texture "Models/Skysphere/spacedust_blue.tga"
+	light1 "  160  40 ; 102 145 255 ; 51 72 127 ;  5 7 13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-GreyBlue-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebGB_01.tga"
+	model "Models/Skysphere/NebGB_01_PlanetA.x;Models/Skysphere/PlanetA.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_blue.tga"
+	light1 "  160  40 ; 102 145 255 ;  51 72 127 ;  5 7 13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-GreyBlue-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebGB_02.tga"
+	spacedust_texture "Models/Skysphere/spacedust_blue.tga"
+	light1 "  160  40 ; 186 196 255 ;  93 98 127 ;  9 10 13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-GreyBlue-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebGB_03.tga"
+	spacedust_texture "Models/Skysphere/spacedust_blue.tga"
+	light1 "  50  -10 ; 186 196 255 ;  93 98 127 ;  9 10 13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-GreyBlue-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebGB_04.tga"
+	model "Models/Skysphere/ElementA.x;Models/Skysphere/Skybox-GB.tga;Models/Skysphere/SkyObject.fx;200 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_blue.tga"
+	light1 "  160  40 ; 186  196  255 ;  93 98 127 ;  9 10 13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-GreyBlue-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebGB_05.tga"
+	spacedust_texture "Models/Skysphere/spacedust_blue.tga"
+	light1 " 135   10 ; 186 196 255 ;  93 98 127 ;  9 10 13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-GreyBlue-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebGB_06.tga"
+	model "Models/Skysphere/NebGB_06_PlanetC.x;Models/Skysphere/PlanetC.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_blue.tga"
+	light1 "  50  -10 ; 186 196 255 ;  93 98 127 ;  9 10 13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+//Purple
+
+sky
+{
+	name "InSystem-Purple-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebP_01.tga"
+	spacedust_texture "Models/Skysphere/spacedust_purple.tga"
+	light1 " 135   10 ; 240 168 255 ; 121 85 130 ; 12  8  15"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Purple-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebP_02.tga"
+	model "Models/Skysphere/NebP_02_PlanetH.x;Models/Skysphere/PlanetH.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_purple.tga"
+	light1 " 160   40 ; 200 119 255 ; 100 50 127 ;  10  5  13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Purple-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebP_02.tga"
+	spacedust_texture "Models/Skysphere/spacedust_purple.tga"
+	light1 " 160   40 ; 200 119 255 ; 100 50 127 ;  10  5  13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Purple-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebP_03.tga"
+	spacedust_texture "Models/Skysphere/spacedust_purple.tga"
+	light1 "  160  40 ; 240 168 255 ; 121 85 130 ;  12  8  15"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Purple-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebP_04.tga"
+	model "Models/Skysphere/ElementC.x;Models/Skysphere/Skybox-P.tga;Models/Skysphere/SkyObject.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_purple.tga"
+	light1 "  160  40 ; 200 119 255 ; 100 50 127 ;  10  5  13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Purple-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebP_05.tga"
+	spacedust_texture "Models/Skysphere/spacedust_purple.tga"
+	light1 "  50  -10 ; 200 119 255 ; 100 50 127 ;  10  5  13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}
+
+sky
+{
+	name "InSystem-Purple-A"
+	bgmodel "Models/Skysphere/skysphere_tact.x"
+	bgtexture "Models/Skysphere/NebP_06.tga"
+	model "Models/Skysphere/NebP_06_PlanetG.x;Models/Skysphere/PlanetG.tga;Models/Skysphere/SkyObjectGeneric.fx;0 0 0"
+	spacedust_texture "Models/Skysphere/spacedust_purple.tga"
+	light1 "  50  -10 ; 200 119 255 ; 100 50 127 ;  10  5  13"
+	light2 " -50  -10 ; 30  30  30 ; 0  0  0 ;  30 30 30"
+}

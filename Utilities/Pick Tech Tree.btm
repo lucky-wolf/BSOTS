@@ -1,0 +1,23 @@
+@echo off
+cdd %~dp0
+
+::get the list of technologies to give to all players (if they roll them)
+:retry
+set folder=%@unquotes[%@full["%~dp0\..\TechTree"]]
+set filename=%@unquotes[%@GetFile["%folder\*.tech",TechTree Files,Choose TechTree]]
+if not exist %filename quit
+
+:: if they say master - then they presumably really maean "reset to default"
+if %filename=%folder\MasterTechList.tech set filename=%folder\MasterMasterTechList.tech
+
+msgbox yesnocancel "Confirm" Swtich to %@name[%filename]?
+set choice=%_?
+if %choice=11 goto retry
+if %choice=12 quit
+
+copy "%folder\MasterTechList.tech" "%folder\MasterTechList.bak" /qz
+copy "%filename" "%folder\MasterTechList.tech" /qz
+
+echo MasterTechList.tech backed up as MasterTechList.bak
+echo Now using %@filename[%filename]
+pause

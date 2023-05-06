@@ -1,0 +1,63 @@
+weapon
+{
+	name						@WEAPON_BAL_SIEGE
+
+	weaponclass					siege
+
+	turretsize					large
+	turretclass					siege
+
+	requires					WEP_SgeDrvr
+	cost						100000
+
+	solution_tolerance			5
+	burst_volleys				1
+	buildup_delay				0
+	volley_period				1
+	volley_duration				0
+	recharge_time				35
+
+	anim						"SiegeDeploy"
+	muzzle_effect				"effects/Siege_Muzzle.effect"
+	muzzle_sound				"Sounds/Weapons/bal_siege_driver_muzzle.wav"
+	muzzle_sound_minrange		200
+	muzzle_speed				300
+
+	icon_file					GUI/Weapons/Ballistic-2.tga
+	icon_rect					"64 192 64 64"
+
+	fc_requires_los				false
+	fc_requires_inrange			false
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			true
+	fc_controllable				true
+	fc_holdsfire				false
+
+	siege
+	{
+		model							"Models/Asteroids/Asteroid_S02.X"
+		visdist							5000
+		coll_effect						"effects/collide_asteroid.effect"
+		coll_sound						"Sounds/Weapons/bal_siege_driver_impact.wav"
+		mass							50000
+		health							2000
+		rotspeed 						100
+		expire_effect					"effects/collide_asteroid.effect"
+		expire_sound					"Sounds/Weapons/bal_siege_driver_impact.wav"
+
+		planet_impact_effect			"effects/Siege_Impact.effect"
+		planet_impact_sound				"Sounds/Weapons/bal_siege_driver_impact.wav"
+		planet_impact_sound_minrange	500
+
+		dam_pop							875000000
+		dam_infra						100
+		dam_terra						225
+	}
+
+	rating_frate	1
+	rating_dam		10
+	rating_acc		1
+	rating_range	10
+}

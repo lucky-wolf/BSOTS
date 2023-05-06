@@ -1,0 +1,130 @@
+shipsection
+{
+	model					Species/Liir/art/sections/CruiserStrafe.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					1664
+	mass					3600
+	cost					15000
+	maintenance_cost		3000
+	cpoints					2400
+	crew					8
+
+	requires				IND_CRStrafe
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			7.5e+9
+		torque_pitch		7.5e+9
+		torque_roll			7.5e+9
+
+		speed				0
+		rotspeed			35
+	}
+
+	bank
+	{
+		turretclass strafe
+		turretsize medium
+		showturrets false
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -45
+			max_inclination 45
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -45
+			max_inclination 45
+		}
+	}
+}

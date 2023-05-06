@@ -1,0 +1,68 @@
+weapon
+{
+	name		@WEAPON_NPC_WRECK_LAS
+	weaponclass	laser
+	model1		"Species/_NPC/art/weapons/Wreckagebarrel_s1standard.X"
+	turretmodel1	"Species/_NPC/art/weapons/Wreckageturret_s1standard.X"
+	requires 	WEP_xrylas
+	hpbonus		30
+	cost		500
+	turretsize		small
+	turretclass		standard
+	trackspeed_mod	1.0
+	burst_volleys	1
+	volley_period	.2
+	recharge_time	2
+	muzzle_speed	600
+	muzzle_sound	Sounds/Weapons/las_all_muzzle.wav
+	muzzle_sound_minrange	100
+	muzzle_effect	effects/Laser_muzzle.effect
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"32 32 32 32"
+	range	500
+	range_planet	1375
+		
+	bolt
+	{
+		beam_origin	-3
+		beam_length	5.5
+
+		impact_sound	Sounds/Weapons/las_all_impact.wav
+		impact_sound_minrange	50
+		impact_effect	effects/XRaylaserimpact.effect
+		Planet_Impact_Effect	"effects/Laser_PlanetImpact.effect"
+
+	
+		rangetable
+		{
+			pb_range	325
+			pb_range_dev	.5
+			pb_range_dam	30
+
+			eff_range	485
+			eff_range_dev	.5
+			eff_range_dam	30
+
+			max_range	525
+			max_range_dev	2
+			max_range_dam	30
+		}
+
+		effect		effects/XRayLaser_bullet.effect
+		ricochet_mod	-1.6
+		ricochet_sound	Sounds/Weapons/las_all_rico.wav
+		ricochet_sound_minrange		100
+
+		dam_pop		20000
+		dam_infra	.00002	
+		dam_terra	0
+	}
+
+	dam_est		30
+
+	rating_frate	8
+	rating_dam	4
+	rating_acc	9
+	rating_range	5
+
+}

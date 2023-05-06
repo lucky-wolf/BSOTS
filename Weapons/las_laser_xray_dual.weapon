@@ -1,0 +1,87 @@
+weapon
+{
+	name						@WEAPON_LAS_XRAY_DUAL
+
+	weaponclass					laser
+	weaponfamily				laser
+
+	model1						barrel_s2_uvlaser.x
+	turretmodel1				turret_s2standard.x
+	model2						barrel_s2_uvlaser.x
+	turretmodel2				turret_s2standard.x
+	model3						barrel_s2_uvlaser.x
+	turretmodel3				turret_s2standard.x
+
+	turretclass					standard // missile stops them from being in strafe and drone, but restricts azimuth and turret speed :'(
+	turretsize					small
+
+	requires					WEP_DualAdvLas
+	cost						1500	// 3x
+
+	burst_volleys				3
+	volley_period				.1
+	recharge_time				4	// 1.33
+	muzzle_speed				1500
+
+	muzzle_effect				effects/XRL_muzzle.effect
+	muzzle_sound				Sounds/Weapons/las_all_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Lasers.tga
+	icon_rect					"192 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1750
+	range_planet				1750
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/las_all_impact.wav
+		impact_sound_minrange			50
+		impact_effect					effects/XRaylaserimpact.effect
+		planet_impact_effect			"effects/Laser_PlanetImpact.effect"
+
+		rangetable
+		{
+			pb_range		350
+			pb_range_dev	.5
+			pb_range_dam	18
+
+			eff_range		1050	// 3x pb_range
+			eff_range_dev	1.0
+			eff_range_dam	16
+
+			max_range		1750	// 5x pb_range
+			max_range_dev	1.5
+			max_range_dam	14
+		}
+
+		effect							effects/XRayLaser_bullet.effect
+
+		ricochet_mod					-1.7
+		ricochet_sound					Sounds/Weapons/las_all_rico.wav
+		ricochet_sound_minrange			20
+
+		dam_pop							656
+		dam_infra						0.000024
+		dam_terra						0.000002
+	}
+
+	dam_est			60
+
+	rating_frate	8
+	rating_dam		6
+	rating_acc		7
+	rating_range	7
+}

@@ -1,0 +1,57 @@
+weapon
+{
+	name		@WEAPON_NPC_VN_MESON
+	weaponclass	beam
+	weaponfamily	conventionalbeam
+	weapondamagetype meson
+	model1		"Species/_NPC/art/weapons/DefenceBarrel.X"
+	turretmodel1	"Species/_NPC/art/weapons/DefenceTurret.X"
+	hpbonus		500
+	cost		10000
+	turretsize		large
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	2
+	recharge_time	11
+	muzzle_effect	effects/MesonBeam_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bem_meson_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"128 0 32 32"
+	
+	range 900
+	range_planet 950
+		
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	beam
+	{
+		impact_effect	effects/MesonBeam_impact.effect
+		impact_sound	Sounds/Weapons/bem_meson_impact.wav
+		impact_sound_minrange	75
+		effect		effects/MesonBeam_Bullet.effect
+		dam			550
+		force		0
+
+		dam_pop		10000000
+		dam_infra	.01	
+		dam_terra	0.05
+	}
+
+
+	rating_frate	5
+	rating_dam	8
+	rating_acc	9
+	rating_range	5
+
+	dam_est		700
+
+}

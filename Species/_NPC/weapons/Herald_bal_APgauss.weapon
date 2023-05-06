@@ -1,0 +1,83 @@
+weapon
+{
+	name			@WEAPON_NPC_HERALD_BAL_APGAUSS
+	weaponclass		bullet
+	weaponfamily	gauss
+
+	model1			"Species/Zuul/art/weapons/barrel_s1_APGauss.X"
+	turretmodel1	"Species/Zuul/art/weapons/turret_s1standard.X"
+	model2			"Species/Zuul/art/weapons/barrel_m2_APGauss.X"
+	turretmodel2	"Species/Zuul/art/weapons/turret_m2standard.X"
+	model3			"Species/Zuul/art/weapons/barrel_l3_APGauss.X"
+	turretmodel3	"Species/Zuul/art/weapons/turret_l3standard.X"
+
+	cost			70
+	turretsize		small
+	turretclass		standard
+	trackspeed_mod	1.0
+	burst_volleys	1
+	recharge_time	6
+	muzzle_speed	700
+
+	muzzle_effect	effects/APGuass_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bal_gauss_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"192 224 32 32"
+	range	555
+	range_planet	1175
+	
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+	
+		impact_effect	effects/APguass_impact.effect
+		expire_effect   "effects/APguass_Expire.effect"
+		impact_sound	Sounds/Weapons/bal_gauss_impact.wav
+		impact_sound_minrange	50
+	
+		rangetable
+		{
+			pb_range		205
+			pb_range_dev	.5
+			pb_range_dam	25
+
+			eff_range		420
+			eff_range_dev	.5
+			eff_range_dam	25
+
+			max_range		555
+			max_range_dev	.5
+			max_range_dam	25
+		}
+		
+		effect						effects/APguass_bullet.effect
+		ricochet_mod 				-1.5
+		ricochet_sound				Sounds/Weapons/bal_gauss_rico.wav
+		ricochet_sound_minrange		50
+		mass 						20
+
+		dam_pop		1500
+		dam_infra	.00003	
+		dam_terra	0
+	}
+
+	dam_est			12
+
+
+	rating_frate	7
+	rating_dam		2
+	rating_acc		6
+	rating_range	3
+
+}

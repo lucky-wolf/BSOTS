@@ -1,0 +1,5 @@
+# Techs listed here are not available in the streamlined versions (except for Morrigi)
+CCC_FTLEcon
+CCC_ComRaid
+IND_ModCon
+IND_MegFrght

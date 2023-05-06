@@ -1,0 +1,91 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/CruiserAIC.X
+	requires				CCC_AIFrCon
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+	aicontrol true
+
+	health					2640
+	mass					2800
+	cost					46667
+	maintenance_cost		3000
+	cpoints					936
+	rebelai_scanrange				7
+	rebelai_tacticalsensorrange		4700
+	crew					4
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		10000
+		force_right			10000
+		force_up			10000
+
+		torque_yaw			6e+8
+		torque_pitch		6e+8
+		torque_roll			6e+8
+
+		speed				10
+		rotspeed			75
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth 0
+			max_azimuth 120
+			min_inclination -3
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -120
+			max_azimuth 0
+			min_inclination -3
+			max_inclination 90
+		}
+	}
+}

@@ -1,0 +1,60 @@
+weapon
+{
+	name						@WEAPON_BEM_POS_TRIPLE
+
+	weaponclass					beam
+	weaponfamily				conventionalbeam
+
+	model1						barrel_l3_heavydriver.x
+	turretmodel1				turret_l1standard.x
+
+	turretclass					projector
+	turretsize					large
+
+	requires					WEP_DualPosiBm
+	cost						33000			// 3x
+
+	burst_volleys				1
+	volley_duration				2
+	recharge_time				13				// 1.33
+
+	muzzle_effect				effects/PositronBeam_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_positron_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beams-2.tga
+	icon_rect					"64 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1500 // 800
+	range_planet				1500
+
+	beam
+	{
+		impact_effect					effects/PositronBeam_impact.effect
+		impact_sound					Sounds/Weapons/bem_positron_impact.wav
+		impact_sound_minrange			75
+		effect							effects/PositronBeam_Bullet.effect
+		dam								350
+		force							0
+
+		dam_pop							820312
+		dam_infra						0.010125
+		dam_terra						0.0009375
+	}
+
+	dam_est			550
+
+	rating_frate	3
+	rating_dam		6
+	rating_acc		10
+	rating_range	7
+}

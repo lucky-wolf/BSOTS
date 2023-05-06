@@ -1,0 +1,56 @@
+shipsection
+{
+	model Models/Asteroids/spy_asteroid.x
+	dam_model Models/Asteroids/spy_asteroid.x
+	entity_class "SpyShip"
+
+	nodesign 1
+	section_type mission
+	section_class destroyer
+	autonomous true	// actually means this is a ship with only a mission section
+	
+	cost		20000
+	cpoints		1280
+	ftlspeed	0
+	range		0
+	spy			1
+	
+	requires CCC_SpyBm
+	requires IND_SlvgTech
+
+	health 320
+	mass 1200
+
+	command_cost 0
+	maintenance_cost 0
+	
+	netforcelimits
+	{
+		force_forward		100000
+		force_right			100000
+		force_up			100000
+		
+		torque_yaw			7000000
+		torque_pitch		7000000
+		torque_roll			700000
+		
+		speed				86.7
+		rotspeed			90
+	}
+
+	bank 
+	{
+		turretclass spyship
+		turretsize large
+		
+		mount
+		{
+			node origin // Hack, doesn't matter since this gun is a dummy for control over the wraith
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+	
+}

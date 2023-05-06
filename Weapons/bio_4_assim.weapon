@@ -1,0 +1,58 @@
+weapon
+{
+	name						@WEAPON_BIO_ASSIM
+
+	weaponclass					rider
+
+	turretclass					missilerider
+	turretsize					large
+
+	requires					BIO_AsPlg
+	cost						80000
+
+	solution_tolerance			180
+	burst_volleys				1
+	buildup_delay				3	// time delay before rider disconnects
+	volley_period				1
+	volley_duration				0
+	recharge_time				10
+
+	muzzle_sound				Sounds/Weapons/bio_plague_muzzle.wav
+	muzzle_sound_minrange		200
+	muzzle_speed				100
+
+	icon_file					GUI/Weapons/Missiles-2.tga
+	icon_rect					"192 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		true
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			true
+	fc_controllable				true
+	fc_holdsfire				true
+
+	rider
+	{
+		section_file					"_Biomissile.shipsection"
+		entity_type						"biomissile"
+		prefire_effect					"Effects/BioMuzzle.effect"
+		impact_effect					"effects/Plague_Death.effect"
+		impact_sound					"Sounds/Weapons/mis_missile_impact.wav"
+		impact_sound_minrange			100
+		planet_impact_effect			"effects/Plague_Impact.effect"
+		planet_impact_sound				"Sounds/Weapons/bio_assim_plague_impact.wav"
+		planet_impact_sound_minrange	200
+
+		thrust_sound					"Sounds/Weapons/bio_plague_travel.wav"
+		thrust_sound_minrange			25
+	}
+
+//	dam_est			10
+
+	rating_frate	2
+	rating_dam		9
+	rating_acc		10
+	rating_range	10
+}

@@ -1,0 +1,38 @@
+PLANET_GROUNDUNIT_LEAVE_DELAY				5.0		// In case a host for ie assault shuttle isn't found immediately, it will check again after this delay.
+PLANET_TAC_SENSOR_RANGE						7000.0	// m out from surface
+PLANET_SPOTTER_RANGE						3000.0	// m out from surface (this is what is revealed by 'naked eye')
+PLANET_THINK_PERIOD							1.5
+PLANET_INITIAL_HOLDFIRE_DELAY				10.0	// secs until it starts launching missiles (NOTE: you must set this >600 if you disable planetary missiles)
+PLANET_TARGET_SEEK_RANGE					9000.0	// m from center
+PLANET_SELECT_TARGET_FROM_X_NEAREST			5
+PLANET_TARGET_MIN_VOLLEYS					1
+PLANET_TARGET_MAX_VOLLEYS					5
+
+// Name of the decal to leave on the planet when a missile hits it
+PLANET_MISSILE_IMPACT_DECALNAME				"decals/PlanetImpactMissile.decal"
+
+// Amount to scale the impact decal when it hits a planet
+PLANET_MISSILE_IMPACT_DECALWIDTHSCALE		250.0
+PLANET_MISSILE_IMPACT_DECALHEIGHTSCALE		200.0
+PLANET_MISSILE_IMPACT_DECALDEPTHSCALE		200.0
+
+// Name of the decal to leave on the planet when a bolt hits it
+PLANET_BOLT_IMPACT_DECALNAME				"decals/PlanetImpactBolt.decal"
+
+// Amount to scale the impact decal when it hits a planet
+PLANET_BOLT_IMPACT_DECALWIDTHSCALE			100.0
+PLANET_BOLT_IMPACT_DECALHEIGHTSCALE			100.0
+PLANET_BOLT_IMPACT_DECALDEPTHSCALE			100.0	
+
+// Name of the decal to leave on the planet when a beam hits it
+PLANET_BEAM_IMPACT_DECALNAME				"decals/PlanetImpactHeavyBeam.decal"
+PLANET_HEAVYBEAM_IMPACT_DECALNAME			"decals/PlanetImpactHeavyBeam.decal"
+
+// Amount to scale the impact decal when it hits a planet
+PLANET_BEAM_IMPACT_DECALWIDTHSCALE			100.0
+PLANET_BEAM_IMPACT_DECALHEIGHTSCALE			40.0
+PLANET_BEAM_IMPACT_DECALDEPTHSCALE			50.0	
+
+PLANET_HEAVYBEAM_IMPACT_DECALWIDTHSCALE		200.0
+PLANET_HEAVYBEAM_IMPACT_DECALHEIGHTSCALE	100.0
+PLANET_HEAVYBEAM_IMPACT_DECALDEPTHSCALE		100.0	

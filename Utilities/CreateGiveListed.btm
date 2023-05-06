@@ -1,0 +1,15 @@
+@echo off
+cdd %~dp0
+
+::get the list of technologies to give to all players (if they roll them)
+set filename=%@GetFile[%~dp0\Fusion Age.txt,*.txt]
+if not exist %filename quit
+
+set name=MasterTechList (%@name[%filename]).tech
+perl "give listed.pl" "..\techtree\MasterMasterTechList.tech" %filename > "..\techtree\%name"
+
+::type %filename
+@echo Created %name
+@echo All listed research in %@filename[%filename] was given to all races (normal chances to roll them)
+@echo To use, just overwrite MasterTechList.tech with %name
+pause

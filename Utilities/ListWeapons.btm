@@ -1,0 +1,28 @@
+@echo off
+cdd %~dp0
+on break quit -1
+
+set Title=List Weapons
+set filename=%~dp0\List Weapons.csv
+set folder=..\Weapons
+set filter=*
+
+:retry_filter
+querybox /e "%~n0" Specify filename filter (* for all): %%filter
+if %_? NE 0 quit -1
+
+iff not exist "%folder\%filter.weapon" then
+	MSGBOX /s okcancel "%~n0" %folder\%filter.weapon not found!
+	if %_? NE 10 quit -1
+	goto retry_filter
+endiff
+
+@rem ensure we start with a blank file!
+erase "%filename"
+
+:: create column header (leave off for now - since we already have this at this time)
+@rem echo filename,weaponclass,weaponfamily,turretclass,turretsize,dam_pop,dam_infra,dam_terra,dam,dps,dam_est,recharge_time,rating_frate,rating_dam,rating_acc,range,max_range,rating_range,cost > "%filename"
+
+for /r "%folder" %source in (%filter.weapon) (echo "%source" & perl "%~dp0\List Weapon.pl" "%source" >> "%filename")
+
+start "" "%filename"

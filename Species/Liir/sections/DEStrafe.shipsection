@@ -1,0 +1,98 @@
+shipsection
+{
+	model					Species/Liir/art/sections/DestroyerStrafe.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			destroyer
+
+	health					230
+	mass					1050
+	cost					4500
+	maintenance_cost		300
+	cpoints					1328
+
+	requires				IND_DEStrafe
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			3e+8
+		torque_pitch		3e+8
+		torque_roll			3e+8
+
+		speed				0
+		rotspeed			55
+	}
+
+	bank
+	{
+		turretclass strafe
+		turretsize small
+		showturrets false
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+
+		}
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+
+		}
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+
+		}
+	}
+}

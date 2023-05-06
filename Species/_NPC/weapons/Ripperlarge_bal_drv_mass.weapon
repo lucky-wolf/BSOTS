@@ -1,0 +1,69 @@
+weapon
+{
+	name		@WEAPON_NPC_SLAVER_DRV_HVY
+	weaponclass	bullet
+	model1		"Species/_NPC/art/weapons/Ripperbarrel_l1standard.X"
+	turretmodel1	"Species/_NPC/art/weapons/Ripperturret_l1standard.X"
+	requires	WEP_MasDrvr
+	hpbonus		60
+	cost		550
+	turretsize		Large
+	turretclass		standard
+	trackspeed_mod	1.0
+	burst_volleys	1
+	recharge_time	5
+	muzzle_speed	300
+
+	muzzle_effect	effects/MassDriver_Muzzle.effect
+	muzzle_sound	Sounds/Weapons/bal_drv_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"224 32 32 32"
+	
+	range	600
+	range_planet	1490
+		
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+
+		impact_effect	effects/MassDriver_impact.effect
+		expire_effect   "effects/MD_Expire.effect"
+		impact_sound	Sounds/Weapons/bal_drv_impact.wav
+		impact_sound_minrange	50
+
+		rangetable
+		{
+			pb_range	300
+			pb_range_dev	3
+			pb_range_dam	150
+
+			eff_range	475
+			eff_range_dev	4
+			eff_range_dam	150
+
+			max_range	580
+			max_range_dev	5
+			max_range_dam	150
+		}
+		
+		effect		effects/MassDriver_bullet.effect
+		ricochet_mod 	-1.0
+		ricochet_sound	Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange		50
+		mass 450
+
+		dam_pop		80000
+		dam_infra	.0005	
+		dam_terra	0
+	}
+
+	dam_est		65
+
+	rating_frate	6
+	rating_dam	5
+	rating_acc	2
+	rating_range	6
+
+}

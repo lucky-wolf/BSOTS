@@ -1,0 +1,70 @@
+weapon
+{
+	name						@WEAPON_BEM_PRJMESON
+
+	weaponclass					beam
+	weapondamagetype			meson
+
+	model1						barrel_l1_amproj.X
+
+	turretclass					projector
+	turretsize					large
+
+	requires					WEP_MesProj
+	cost						25000
+
+	burst_volleys				1
+	volley_period				.2		// I doubt that this value is relevant - but it does make the damage come out right: 1 * .2 * 5 = 1 (ergo dam = dam)
+	volley_duration				5
+	recharge_time				25
+	muzzle_effect				effects/MesonBeam_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_mesonproj_muzzle.wav
+	muzzle_sound_minrange		150
+
+	icon_file					GUI/Weapons/Beams.tga
+	icon_rect					"192 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+
+	range						900
+	range_planet				900
+
+	mesonprojector
+	{
+		planet_impact_effect			effects/MesonBeam_impact.effect
+		planet_impact_sound				Sounds/Weapons/bem_mesonproj_beam.wav
+		planet_impact_sound_minrange	75
+		impact_effect					effects/Mesonprojector_impact.effect
+		impact_sound					Sounds/Weapons/bem_mesonproj_beam.wav
+		impact_sound_minrange			100
+
+		planet_damage_effect			effects/Mesontorpedo_impact.effect
+		planet_damage_sound				Sounds/Weapons/bem_mesonproj_impact.wav
+		planet_damage_sound_minrange	75
+		damage_effect					effects/MesonProjector_damage.effect
+		damage_sound					Sounds/Weapons/bem_mesonproj_impact.wav
+		damage_sound_minrange			100
+
+		effect							effects/Mesonprojector_Bullet.effect
+		dam								12550
+
+		dam_pop							4921875
+		dam_infra						0.05625
+		dam_terra						0.016875
+	}
+
+	dam_est			950
+
+	rating_frate	1
+	rating_dam		10
+	rating_acc		10
+	rating_range	4
+}

@@ -1,0 +1,121 @@
+shipsection
+{
+
+	model Species/Tarkas/art/sections/Crfreighter.X
+	section_type mission
+	section_class destroyer
+	preview_ofs "0 0 1"
+
+	requires DRV_Fissn
+	requires DRV_Hyper
+	requires CCC_FTLEcon
+
+	health 9600
+	mass 15500
+	cost 50000
+	maintenance_cost		300
+	cpoints 12000
+
+	freighter 1
+	autonomous true	// actually means this is a ship with only a mission section
+	ftlspeed 2.0
+	range	8
+	crew 10
+	preview_ofs "-23 -500 0"
+
+	netforcelimits
+	{
+
+		force_forward		40000
+		force_right			40000
+		force_up			40000
+
+		torque_yaw			2.5e+7
+		torque_pitch		2.5e+7
+		torque_roll			2.5e+7
+
+		speed				73.2875
+		rotspeed			30
+	}
+
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -120
+			max_azimuth 120
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -120
+			max_azimuth 120
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+
+
+}

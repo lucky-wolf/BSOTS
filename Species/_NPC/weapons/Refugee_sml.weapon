@@ -1,0 +1,65 @@
+
+weapon
+{
+	name		@WEAPON_NPC_REFUGEE_BEAMER
+	weaponclass	beamer
+	weaponfamily	laser
+
+	turretmodel1	"Species/_NPC/art/weapons/Refugeeturret_s_standard.X"
+	model1			"Species/_NPC/art/weapons/Refugeebarrel_s_standard.X"
+
+	requires 	WEP_UVBmr
+	cost		1200
+	hpbonus		30
+	turretsize		small
+	turretclass		standard
+	burst_volleys	1
+	volley_period	5
+	volley_duration	2.5
+	lock_period		0
+	recharge_time	8
+	trackspeed_mod  .5
+	muzzle_speed	650
+	muzzle_sound	Sounds/Weapons/bem_beamer_uv.wav
+	muzzle_sound_minrange	100
+
+	muzzle_effect	effects/UVBeamer_muzzle.effect
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+
+	icon_file	GUI/WeaponIcons_2.tga
+	icon_rect	"224 32 32 32"
+
+	range	500
+	range_planet	800
+
+	beam
+	{
+		impact_effect	effects/UVBeamer_impact.effect
+		impact_sound	Sounds/Weapons/phaser_impact.wav
+		impact_sound_minrange	100
+		effect		effects/Refugee_UVBeamer_Bullet.effect
+		dam			120
+		force		0
+
+		dam_pop		4500
+		dam_infra	.0001
+		dam_terra	0
+	}
+
+	dam_est		30
+
+	rating_frate	6
+	rating_dam	1.75
+	rating_acc	9
+	rating_range	4.5
+
+}

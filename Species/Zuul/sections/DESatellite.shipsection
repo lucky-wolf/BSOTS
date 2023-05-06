@@ -1,0 +1,215 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/LightDefencePlatform.x
+	section_type			mission
+	section_class			destroyer
+
+	requires				IND_DESat
+
+	health					3200
+	mass					4000
+	cost					9000
+	maintenance_cost		250
+	cpoints					1380
+
+	entity_class			"DefencePlatform"
+	defence_platform		1
+	autonomous				true	// actually means this is a ship with only a mission section
+	node_cannon_fling		0
+	crew					0
+	preview_ofs				"-5 -50 0"
+
+	requires				IND_DEConstr
+
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward 1000000
+		force_right   1000000
+		force_up      1000000
+
+		torque_yaw    10000000
+		torque_pitch  10000000
+		torque_roll   10000000
+
+		speed         34.5
+		rotspeed      40
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -155
+			max_azimuth 155
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -155
+			max_azimuth 155
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	thruster
+	{
+		node Thruster01
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster02
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster03
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster04
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster05
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster06
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster07
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster08
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster09
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster10
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster11
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster12
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster13
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster14
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster15
+		effect effects/tempthruster.effect
+	}
+
+	thruster
+	{
+		node Thruster16
+		effect effects/tempthruster.effect
+	}
+}

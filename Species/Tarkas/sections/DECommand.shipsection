@@ -1,0 +1,72 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/DestroyerCommand.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			destroyer
+
+	health						880
+	mass						1100
+	cost						3000
+	maintenance_cost		300
+	cpoints					1200
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			1.5e+7
+		torque_pitch		1.5e+7
+		torque_roll			1.5e+7
+
+		speed				0
+		rotspeed			80
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -10
+			max_inclination 150
+		}
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -10
+			max_inclination 150
+		}
+	}
+}

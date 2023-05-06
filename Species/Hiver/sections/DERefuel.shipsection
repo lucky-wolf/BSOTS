@@ -1,0 +1,61 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DestroyerTanker.X
+	socket_aft				MissionNode
+	socket_fore				MissionNode01
+	section_type			mission
+	section_class			destroyer
+	health					320
+	mass					3200
+	cost					16000
+	maintenance_cost		300
+	cpoints					2300
+	refueling_capacity		15
+	preview_ofs				"-4 10 2.5"
+
+	death_effect			"Effects/DE_Fuel_Explosion.effect"
+	death_area_impact_effect ""
+	death_dam				600
+	death_damradius			350
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed        		-20
+		rotspeed      		-20
+	}
+}

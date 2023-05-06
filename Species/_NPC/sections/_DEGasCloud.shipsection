@@ -1,0 +1,36 @@
+shipsection
+{
+	model Species/_NPC/art/sections/DE_GasCloud.X
+	section_type mission
+	section_class destroyer
+	health 1600
+	mass 300
+
+
+
+	engine_sound Sounds/SFX/DEgascloud.wav
+	engine_sound_minrange 100
+
+
+
+	crew 0
+	autonomous true	// actually means this is a ship with only a mission section
+	tacticalsensorrange 4000
+
+	command_cost 0
+	maintenance_cost 0
+	
+	netforcelimits
+	{
+		force_forward 10000000
+		force_right   10000000
+		force_up      10000000
+		
+		torque_yaw    10000000
+		torque_pitch  10000000
+		torque_roll   10000000
+		
+		speed         110
+		rotspeed      90
+	}
+}

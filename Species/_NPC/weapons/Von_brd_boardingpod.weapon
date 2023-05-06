@@ -1,0 +1,50 @@
+weapon
+{
+	name		@WEAPON_NPC_VN_BOARDINGPOD
+	weaponclass	rider
+	cost		5000
+	requires 	IND_BrdPod
+	turretsize		large
+	turretclass		boardingpod
+	
+	burst_volleys		1
+	buildup_delay		0	// time delay before rider disconnects
+	volley_period		1
+	volley_duration		0
+	recharge_time		10
+
+	muzzle_speed 50
+	solution_tolerance	180
+
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"224 128 32 32"
+	
+	muzzle_sound	"Sounds/Ships/Zuul/zuul_pod_release.wav"
+	muzzle_sound_minrange	200
+	muzzle_effect	effects/Boarding_muzzle.effect
+
+	fc_requires_los				false
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			true
+	fc_controllable				true
+	fc_holdsfire				false
+
+	rider
+	{
+		section_file	"_VNeumannBoardingPod.shipsection"
+		entity_type		"boardingpod"
+		Impact_effect   "effects/Shuttle_Death.effect"
+		impact_sound	"Sounds/Weapons/mis_missile_impact.wav"
+		impact_sound_minrange	100
+
+		detach_effect          ""
+		detach_sound           ""
+
+		//attach_effect          "effects/Boarding_Attach.effect"
+		attach_sound           "Sounds/Ships/Zuul/zuul_pod_attach.wav"
+		attach_sound_minrange  "200"
+	}
+}

@@ -1,0 +1,17 @@
+^ Majorly reduced cost of gravboats (1/2)
+^ Increase repair capacity for Morrigi salvage vessels
+^ Fixed "Give Up To X.pl" script to not mess with xeno techs
+^ Fixed Tarka CRFission and CRPulsedFission sections medium mount to not fire into mission section
+^ Increased planetary missile ranges (were too short)
+^ Fixed Heavy Plasma Torpedo impact effect (removed the green coloration)
+^ Fixed PD Missiles speed to be faster than the fastest drones (2x former speed)
+^ Fixed PD Missiles speed to be much more lethal - 3x as powerful (~4 hits should kill a drone)
+^ Forced bio missiles to require target be in range & have LOS (not sure what effect this will have)
+^ Fixed Hiver CRBarrage.shipsection to require heavy beam weapons (not large weapons)
+^ Environmental Tailoring is core
+^ Gravitational Adaptation is more likely
+^ Drone Combat is significantly cheaper (making this a more viable early game option)
+^ Minelaying satellites!
+^ Mines drop and 1/2 their previous speed to make them not so OP (after all of the other upgrades we've given them)
+^ Reduced beamer tracking speed (but they upgrade to be as good as before by X-Ray)
+^ Miscellaneous minor tweaks (e.g. the preview image of Human Constructors fits in the designer screen properly)

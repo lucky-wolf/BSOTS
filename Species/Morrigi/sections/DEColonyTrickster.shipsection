@@ -1,0 +1,55 @@
+shipsection
+{
+
+	model Species/Morrigi/art/sections/ColonyTrickster.X
+	section_type mission
+	section_class destroyer
+	preview_ofs "0 0 1"
+
+	requires DRV_Fissn
+	requires DRV_VdCtr
+	requires DRN_Auto
+
+	health 2400
+	mass 10000
+	cost 55500
+	maintenance_cost		300
+	cpoints	9312
+
+	colony_trap true
+
+	autonomous true	// actually means this is a ship with only a mission section
+	ftlspeed 2
+	range	15
+	crew 6
+	preview_ofs "-30 -250 0"
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		43000
+		force_right			43000
+		force_up			43000
+
+		torque_yaw			5e+7
+		torque_pitch		5e+7
+		torque_roll			5e+7
+
+		speed				73.2875
+		rotspeed			45
+	}
+
+
+
+
+
+}

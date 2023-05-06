@@ -1,0 +1,91 @@
+weapon
+{
+	name						@WEAPON_BAL_AUTO_LIGHT_DUAL
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						barrel_s2_gatling.x
+	turretmodel1				turret_s2standard.x
+	model2						barrel_s2_gatling.x
+	turretmodel2				turret_s2standard.x
+	model3						barrel_s2_gatling.x
+	turretmodel3				turret_s2standard.x
+
+	turretclass					standard // missile stops them from being in strafe and drone, but restricts azimuth and turret speed :'(
+	turretsize					small
+//	munitionsize				tiny
+
+	requires					WEP_DualLtAutCan
+	cost						600		// 3x
+
+	burst_volleys				1
+	recharge_time				1.333	// 1.333
+
+	muzzle_speed				400										// 1x gauss
+	muzzle_effect				effects/l_gatling_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_ac_light.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Stormers.tga
+	icon_rect					"192 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	secondary_pd 				true		// Take on point defence role when not otherwise busy
+
+	range						800
+	range_planet				1000
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/l_gatling_bullet.effect
+		impact_effect					effects/l_gatling_impact.effect
+		expire_effect					effects/l_gatling_expire.effect
+
+		impact_sound					sounds/weapons/bal_gauss_pd_impact.wav
+		impact_sound_minrange			100
+
+		rangetable
+		{
+			pb_range		250
+			pb_range_dev	0
+			pb_range_dam	20
+
+			eff_range		500
+			eff_range_dev	1
+			eff_range_dam	20
+
+			max_range		800
+			max_range_dev	1
+			max_range_dam	20
+		}
+
+		ricochet_mod					-1.2		// 1.2 light, 1.3 med, 1.4 heavy
+		ricochet_sound					Sounds/Weapons/bal_gauss_rico.wav
+		ricochet_sound_minrange			50
+
+//		recoil_factor					0.1			// 1/5 gauss
+		mass							1
+
+		dam_pop							115			// 1/5 gauss
+		dam_infra						0.000012
+		dam_terra						0.00000001
+	}
+
+	dam_est			30		// 1.5x single barrel
+
+	rating_frate	10
+	rating_dam		3
+	rating_acc		2
+	rating_range	3
+}

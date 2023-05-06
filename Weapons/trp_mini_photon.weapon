@@ -1,0 +1,84 @@
+weapon
+{
+	name						@WEAPON_TRP_MINI_PHOTON
+
+	weaponclass					torpedo
+	weaponfamily				torpedo
+	weapondamagetype			photon
+
+	turretclass					nodemissilerider
+	turretsize					medium
+
+	requires					WEP_PhotTrp
+	cost						4000	// 1/2
+
+	burst_volleys				1
+	recharge_time				9		// 1/2
+
+	muzzle_speed				900
+	muzzle_effect				effects/PlasmaTorpedo_muzzle.effect
+	muzzle_sound				Sounds/Weapons/trp_photon_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Torpedos-Mini.tga
+	icon_rect					"0 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	pinpoint					true		// allow the weapon to target exact polygon
+
+	range						750		// 1/3
+	range_planet				1000
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		effect							effects/photonictorpedo_Bullet.effect
+
+		impact_effect					effects/photonictorpedo_impact.effect
+		impact_sound					Sounds/Weapons/trp_photon_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/trp_photon_travel.wav
+		thrust_sound_minrange			20
+
+		rangetable
+		{
+			pb_range		250				// 1/3
+			pb_range_dev	2.5
+			pb_range_dam	 67				// 1/3
+
+			eff_range		500
+			eff_range_dev	2.0
+			eff_range_dam	 67
+
+			max_range		750
+			max_range_dev	1.5
+			max_range_dam	 67
+		}
+
+		mass							.01
+		ricochet_mod					-2.5
+
+		speed							900
+
+		dam_pop							3827		// 1/3
+		dam_infra						0.000189
+		dam_terra						0
+	}
+
+	dam_est			100		// 2/3
+
+	rating_frate	2
+	rating_dam		3
+	rating_acc		5
+	rating_range	8
+}

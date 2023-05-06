@@ -1,0 +1,4 @@
+TXT
+TEXTUREFILENAME "decals/Flare.tga"
+SHADERFILENAME "decals/LightDecals.fx"
+SCALE 0.2

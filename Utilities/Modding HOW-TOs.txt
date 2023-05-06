@@ -1,0 +1,26 @@
+Fonts used in tech tree:
+------------------------
+Title: Calibri 48, bold, red
+Tech Roots: Impact 18, white
+Costs: Calibri 12 bold, yellow
+
+
+Add a shipsection:
+-------------------
+Add the .shipsection
+Add entry in _sections.txt
+Add it to Data\Strategy\AI\section_affinity
+Add it to GUI\WeaponIconPlacements.txt
+Add it 2x to Locale\EN\Strings.csv
+(use session.log to help you figure out what is missing, and where to find it...)
+
+
+Add a technology:
+-------------------
+Add new entry in MasterTechList.tech
+Add various 'allows' entries to reach that tech in MasterTechList.tech
+Add ?.tga file to techtree\ for an icon to represent the technology (this is used by the tech tree & by spy reports)
+Add TECHICON_<id> to GUI\SpriteTable.csv
+Add it as a requirement to .shipsection, or .weapon, or other techs
+Add it to the appropriate .X file in techtree\ so the player can pick it...
+Add TECHNAME_<id> and TECHDESC_<id> to Locale\EN\Strings.csv

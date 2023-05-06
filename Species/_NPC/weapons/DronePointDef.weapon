@@ -1,0 +1,56 @@
+weapon
+{
+	name		@WEAPON_NPC_DRONE_PHS_PD
+	weaponclass	beam
+	weaponfamily	conventionalbeam
+	model1		"Weapons/art/DummyBarrel.X"
+	turretmodel2	"Weapons/art/DummyTurret.X"
+	requires 	WEP_PDPhas
+	hpbonus		20
+	cost		2000
+	turretsize		tiny
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	.3
+	recharge_time	3.0
+	muzzle_effect	effects/phaser_muzzle.effect
+	muzzle_sound	Sounds/Weapons/phaser_pd_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"160 96 32 32"
+
+	range 275
+	range_planet 1050
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				false
+	fc_holdsfire				false
+
+	beam
+	{
+		impact_effect	effects/phaser_impact.effect
+		impact_sound	Sounds/Weapons/phaser_pd_impact.wav
+		impact_sound_minrange	100
+		effect		effects/pdphaser_Bullet.effect
+		dam			100
+		force		0
+
+		dam_pop		0
+		dam_infra	0	
+		dam_terra	0
+	}
+
+
+	rating_frate	6
+	rating_dam	4
+	rating_acc	9
+	rating_range	2
+
+	dam_est		15
+}

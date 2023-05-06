@@ -1,0 +1,34 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model "Species/_NPC/art/sections/mrgen.X"
+	section_type mission
+	section_class Destroyer
+	health 400
+	mass 100
+	engine_sound "Sounds/SFX/crows_travel.wav"
+	engine_idle_sound "Sounds/SFX/crows_travel.wav"
+	autonomous true	// actually means this is a ship with only a mission section
+	crew 0
+	death_effect "Effects/Swarmer_Death.effect"
+
+	option IND_RefCoat
+
+	command_cost 0
+	maintenance_cost 0
+
+
+	netforcelimits
+	{
+		force_forward 100000
+		force_right   100000
+		force_up      100000
+
+		torque_yaw    1000000
+		torque_pitch  1000000
+		torque_roll   1000000
+
+		speed         173.3
+		rotspeed      360
+	}
+}

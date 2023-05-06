@@ -1,0 +1,86 @@
+weapon
+{
+	name						@WEAPON_BAL_MEDIUM_A_DUAL
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						barrel_m2_gauss.x
+	turretmodel1				turret_m2standard.x
+	model2						barrel_m2_gauss.x
+	turretmodel2				turret_m2standard.x
+
+	turretclass					standard // missile stops them from being in strafe and drone, but restricts azimuth and turret speed :'(
+	turretsize					medium
+
+	requires					WEP_DualMasDrvr
+	cost						3000	// 3x
+
+	burst_volleys				1
+	recharge_time				6.666	// 1.33
+
+	muzzle_speed				450
+	muzzle_effect				effects/MassDriver_Muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_drv_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Ballistic.tga
+	icon_rect					"64 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1200	// 780
+	range_planet				1200
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/massdriver_bullet.effect
+		impact_effect					effects/massdriver_impact.effect
+		expire_effect					effects/md_expire.effect
+		impact_sound					sounds/weapons/bal_drv_impact.wav
+		impact_sound_minrange			200
+
+		rangetable
+		{
+			pb_range		300
+			pb_range_dev	3
+			pb_range_dam	180			// 4x gauss
+
+			eff_range		800
+			eff_range_dev	4
+			eff_range_dam	180
+
+			max_range		1200
+			max_range_dev	5
+			max_range_dam	180
+		}
+
+		ricochet_mod					-1.1		// 1.0 gauss, 1.1 mass, 1.2 heavy
+		ricochet_sound					Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange			100
+
+		mass							100
+
+		dam_pop							8202
+		dam_infra						0.000114
+		dam_terra						0.000019
+	}
+
+	dam_est			90
+
+	rating_frate	6
+	rating_dam		5
+	rating_acc		2
+	rating_range	5
+}
+

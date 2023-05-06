@@ -1,0 +1,47 @@
+4.0:
+
+Combat Construction
+	Specialized Sections are now free with the necessary prerequisites
+
+Disruptors
+	Disruptor Whip is now free (Zuul only)
+	Added dual disruptor cannons to tech tree
+	Removed "Heavy Disruptor" -- since there is already a Heavy Disruptor Cannon
+	Rearranged tech tree for these elements
+	All disruptor techs are now fission age (except dual cannons = fusion)
+	
+Dreadnoughts
+	Rearranged weapons - mainly restored medium & small mounts, but left all huge mounts alone
+	
+Drones
+	NO LONGER using any of ACM's gunship, gunboat, and drone models - they were too buggy
+
+Emitters
+	Advanced Emitters now has a tech box!
+	Emitter projectors are now free with fusion + cruisers + large emitters (reused its tech box for advanced emitters - something had to give)
+
+Fusion Torpedos
+	Tracking varieties require antimatter
+	
+Mines
+	Added link to nuclear mines from fusion warheads
+
+Point Defense
+	No longer requires large/mega combat construction
+
+Sheild Bursters
+	Removed from game - they were too buggy
+
+Smart Nanites
+	Removed link from elemental nanites (now they're enabled from any nanite weapon tech, including nanite virus)
+	
+Tech Costs
+	Reduced the number of techs that are free
+	Scaled the upper techs more evenly across the spectrum - increasing much of the early AM era techs by about 50%
+		Rationale: My games have been well paced up until AM, where everything suddenly becomes cheap and there's little tech to research after AM
+		My hope is that this will push back AM, and will make acquiring AM techs more of a wish-items in late game, instead of a quick stop in Fusion
+		before shooting on to AM shortly thereafter.
+	Scaled a few of the earlier techs to require 25% more research time as well (polarized plasma, light emitter, Dumb fire missiles, ... and a nmber of other early strong weapons)
+	
+Tech Chances
+	Reduced the number of techs that are guaranteed - restoring the whims of the fates

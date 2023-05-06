@@ -1,0 +1,2013 @@
+Human
+{
+	Ideal
+	{
+		Combat_Surface				"Models/Planets/Human/Human_Surface_Ideal.dds"
+		Combat_NoPopulation			"Models/Planets/Human_IdealPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Human_IdealPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Human_IdealPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Human_IdealPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Human/Human_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Human/Strat_Human_Surface_Ideal.dds"
+		Strat_NoPopulation			"Models/Planets/Human/Strat_Human_IdealPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Human/Strat_Human_IdealPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Human/Strat_Human_IdealPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Human/Strat_Human_IdealPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Human/Strat_Human_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0.25 0.60 0.85 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Ideal
+	{
+		Combat_Surface				"Models/Planets/Human/humanbob_ideal_surface.dds"
+		Combat_NoPopulation			"Models/Planets/humanbob_idealpop_null.dds"
+		Combat_LowPopulation		"Models/Planets/humanbob_idealpop_low.dds"
+		Combat_ModeratePopulation	"Models/Planets/humanbob_idealpop_moderate.dds"
+		Combat_HighPopulation		"Models/Planets/humanbob_idealpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Human/Human_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Human/strat_humanbob_ideal_surface.dds"
+		Strat_NoPopulation			"Models/Planets/Human/strat_humanbob_idealpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Human/strat_humanbob_idealpop_low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Human/strat_humanbob_idealpop_moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Human/strat_humanbob_idealpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Human/Strat_Human_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0.25 0.60 0.85 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Good
+	{
+		Combat_Surface				"Models/Planets/Human/Human_Surface_Nominal.dds"
+		Combat_NoPopulation			"Models/Planets/Human_NominalPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Human_NominalPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Human_NominalPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Human_NominalPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Human/Human_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Human/Strat_Human_Surface_Nominal.dds"
+		Strat_NoPopulation			"Models/Planets/Human/Strat_Human_NominalPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Human/Strat_Human_NominalPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Human/Strat_Human_NominalPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Human/Strat_Human_NominalPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Human/Strat_Human_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0.21 0.35 0.53 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Poor
+	{
+		Combat_Surface				"Models/Planets/Human/Human_Surface_Poor.dds"
+		Combat_NoPopulation			"Models/Planets/Human_PoorPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Human_PoorPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Human_PoorPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Human_PoorPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Human/Human_Atmosphere_Poor.dds"
+		
+		Strat_Surface				"Models/Planets/Human/Strat_Human_Surface_Poor.dds"
+		Strat_NoPopulation			"Models/Planets/Human/Strat_Human_PoorPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Human/Strat_Human_PoorPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Human/Strat_Human_PoorPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Human/Strat_Human_PoorPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Human/Strat_Human_Atmosphere_Poor.dds"
+
+		HazeColor			"0.3 0.31 0.37 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Dune_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Dune_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Dune_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Dune_Atmosphere.dds"
+
+		HazeColor			"0.75 0.5 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ice_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ice_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ice_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ice_Atmosphere.dds"
+
+		HazeColor			"0.7 0.7 0.7 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Barren_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Barren_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Barren_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Barren_Atmosphere.dds"
+
+		HazeColor			"0.27 0.22 0.29 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Desert_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Desert_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Desert_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Desert_Atmosphere.dds"
+
+		HazeColor			"0.7 0.63 0.60 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}	
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Gas_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Gas_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Gas_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Gas_Atmosphere.dds"
+
+		HazeColor			"0.25 0.5 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_GasDwarf_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_GasDwarf_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_GasDwarf_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_GasDwarf_Atmosphere.dds"
+
+		HazeColor			"0.0 1.0 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Lava_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Lava_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Lava_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Lava_Atmosphere.dds"
+
+		HazeColor			"0 0 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crystal_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crystal_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crystal_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crystal_Atmosphere.dds"
+
+		HazeColor			"0 1 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crater_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crater_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crater_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crater_Atmosphere.dds"
+
+		HazeColor			"0.75 0.25 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Methane_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Methane_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Methane_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Methane_Atmosphere.dds"
+
+		HazeColor			"0.5 0 1 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ocean_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ocean_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ocean_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ocean_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ancient_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ancient_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ancient_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ancient_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+}
+
+Hiver
+{
+	Ideal
+	{	
+		Combat_Surface				"Models/Planets/Hiver/Hiver_Surface_Ideal.dds"
+		Combat_NoPopulation			"Models/Planets/Hiver_IdealPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Hiver_IdealPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Hiver_IdealPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Hiver_IdealPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Hiver/Hiver_Atmosphere_Ideal.dds"
+	
+		Strat_Surface				"Models/Planets/Hiver/Strat_Hiver_Surface_Ideal.dds"
+		Strat_NoPopulation			"Models/Planets/Hiver/Strat_Hiver_IdealPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Hiver/Strat_Hiver_IdealPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Hiver/Strat_Hiver_IdealPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Hiver/Strat_Hiver_IdealPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Hiver/Strat_Hiver_Atmosphere_Ideal.dds"
+	
+		HazeColor			"0.72 0.6 0.2 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Ideal
+	{	
+		Combat_Surface				"Models/Planets/Hiver/hiverbob_ideal_surface.dds"
+		Combat_NoPopulation			"Models/Planets/hiverbob_idealpop_null.dds"
+		Combat_LowPopulation		"Models/Planets/hiverbob_idealpop_low.dds"
+		Combat_ModeratePopulation	"Models/Planets/hiverbob_idealpop_moderate.dds"
+		Combat_HighPopulation		"Models/Planets/hiverbob_idealpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Hiver/Hiver_Atmosphere_Ideal.dds"
+	
+		Strat_Surface				"Models/Planets/Hiver/strat_hiverbob_ideal_surface.dds"
+		Strat_NoPopulation			"Models/Planets/Hiver/strat_hiverbob_idealpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Hiver/strat_hiverbob_idealpop_low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Hiver/strat_hiverbob_idealpop_moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Hiver/strat_hiverbob_idealpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Hiver/Strat_Hiver_Atmosphere_Ideal.dds"
+	
+		HazeColor			"0.72 0.6 0.2 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Good
+	{	
+		Combat_Surface				"Models/Planets/Hiver/Hiver_Surface_Nominal.dds"
+		Combat_NoPopulation			"Models/Planets/Hiver_NominalPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Hiver_NominalPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Hiver_NominalPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Hiver_NominalPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Hiver/Hiver_Atmosphere_Nominal.dds"
+	
+		Strat_Surface				"Models/Planets/Hiver/Strat_Hiver_Surface_Nominal.dds"
+		Strat_NoPopulation			"Models/Planets/Hiver/Strat_Hiver_NominalPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Hiver/Strat_Hiver_NominalPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Hiver/Strat_Hiver_NominalPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Hiver/Strat_Hiver_NominalPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Hiver/Strat_Hiver_Atmosphere_Nominal.dds"
+	
+		HazeColor			"0.52 0.4 0.3 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Poor
+	{	
+		Combat_Surface				"Models/Planets/Hiver/Hiver_Surface_Poor.dds"
+		Combat_NoPopulation			"Models/Planets/Hiver_PoorPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Hiver_PoorPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Hiver_PoorPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Hiver_PoorPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Hiver/Hiver_Atmosphere_Poor.dds"
+	
+		Strat_Surface				"Models/Planets/Hiver/Strat_Hiver_Surface_Poor.dds"
+		Strat_NoPopulation			"Models/Planets/Hiver/Strat_Hiver_PoorPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Hiver/Strat_Hiver_PoorPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Hiver/Strat_Hiver_PoorPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Hiver/Strat_Hiver_PoorPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Hiver/Strat_Hiver_Atmosphere_Poor.dds"
+	
+		HazeColor			"0.69 0.23 0.14 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Dune_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Dune_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Dune_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Dune_Atmosphere.dds"
+
+		HazeColor			"0.75 0.5 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ice_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ice_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ice_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ice_Atmosphere.dds"
+
+		HazeColor			"0.7 0.7 0.7 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Barren_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Barren_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Barren_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Barren_Atmosphere.dds"
+
+		HazeColor			"0.27 0.22 0.29 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Desert_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Desert_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Desert_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Desert_Atmosphere.dds"
+
+		HazeColor			"0.7 0.63 0.60 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}	
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Gas_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Gas_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Gas_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Gas_Atmosphere.dds"
+
+		HazeColor			"0.25 0.5 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_GasDwarf_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_GasDwarf_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_GasDwarf_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_GasDwarf_Atmosphere.dds"
+
+		HazeColor			"0.0 1.0 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Lava_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Lava_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Lava_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Lava_Atmosphere.dds"
+
+		HazeColor			"0 0 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crystal_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crystal_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crystal_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crystal_Atmosphere.dds"
+
+		HazeColor			"0 1 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crater_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crater_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crater_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crater_Atmosphere.dds"
+
+		HazeColor			"0.75 0.25 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Methane_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Methane_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Methane_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Methane_Atmosphere.dds"
+
+		HazeColor			"0.5 0 1 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ocean_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ocean_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ocean_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ocean_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ancient_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ancient_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ancient_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ancient_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+}
+
+Tarkas
+{
+	Ideal
+	{	
+		Combat_Surface				"Models/Planets/Tarkas/Tarkas_Surface_Ideal.dds"
+		Combat_NoPopulation			"Models/Planets/Tarkas_IdealPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Tarkas_IdealPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Tarkas_IdealPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Tarkas_IdealPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Tarkas/Tarkas_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Tarkas/Strat_Tarkas_Surface_Ideal.dds"
+		Strat_NoPopulation			"Models/Planets/Tarkas/Strat_Tarkas_IdealPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Tarkas/Strat_Tarkas_IdealPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Tarkas/Strat_Tarkas_IdealPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Tarkas/Strat_Tarkas_IdealPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Tarkas/Strat_Tarkas_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0 0.6 0.5 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+
+	}
+
+	Ideal
+	{	
+		Combat_Surface				"Models/Planets/Tarkas/tarkbob_ideal_surface.dds"
+		Combat_NoPopulation			"Models/Planets/tarkbob_idealpop_null.dds"
+		Combat_LowPopulation		"Models/Planets/tarkbob_idealpop_low.dds"
+		Combat_ModeratePopulation	"Models/Planets/tarkbob_idealpop_moderate.dds"
+		Combat_HighPopulation		"Models/Planets/tarkbob_idealpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Tarkas/Tarkas_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Tarkas/strat_tarkbob_ideal_surface.dds"
+		Strat_NoPopulation			"Models/Planets/Tarkas/strat_tarkbob_idealpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Tarkas/strat_tarkbob_idealpop_low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Tarkas/strat_tarkbob_idealpop_moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Tarkas/strat_tarkbob_idealpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Tarkas/Strat_Tarkas_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0 0.6 0.5 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Good
+	{	
+		Combat_Surface				"Models/Planets/Tarkas/Tarkas_Surface_Nominal.dds"
+		Combat_NoPopulation			"Models/Planets/Tarkas_NominalPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Tarkas_NominalPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Tarkas_NominalPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Tarkas_NominalPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Tarkas/Tarkas_Atmosphere_Nominal.dds"
+		
+		Strat_Surface				"Models/Planets/Tarkas/Strat_Tarkas_Surface_Nominal.dds"
+		Strat_NoPopulation			"Models/Planets/Tarkas/Strat_Tarkas_NominalPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Tarkas/Strat_Tarkas_NominalPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Tarkas/Strat_Tarkas_NominalPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Tarkas/Strat_Tarkas_NominalPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Tarkas/Strat_Tarkas_Atmosphere_Nominal.dds"
+		
+		HazeColor			"0.3 0.5 0.06 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Poor
+	{	
+		Combat_Surface				"Models/Planets/Tarkas/Tarkas_Surface_Poor.dds"
+		Combat_NoPopulation			"Models/Planets/Tarkas_PoorPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Tarkas_PoorPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Tarkas_PoorPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Tarkas_PoorPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Tarkas/Tarkas_Atmosphere_Poor.dds"
+		
+		Strat_Surface				"Models/Planets/Tarkas/Strat_Tarkas_Surface_Poor.dds"
+		Strat_NoPopulation			"Models/Planets/Tarkas/Strat_Tarkas_PoorPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Tarkas/Strat_Tarkas_PoorPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Tarkas/Strat_Tarkas_PoorPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Tarkas/Strat_Tarkas_PoorPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Tarkas/Strat_Tarkas_Atmosphere_Poor.dds"
+
+		HazeColor			"0.6 0.58 0.32 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Dune_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Dune_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Dune_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Dune_Atmosphere.dds"
+
+		HazeColor			"0.75 0.5 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ice_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ice_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ice_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ice_Atmosphere.dds"
+
+		HazeColor			"0.7 0.7 0.7 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Barren_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Barren_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Barren_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Barren_Atmosphere.dds"
+
+		HazeColor			"0.27 0.22 0.29 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Desert_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Desert_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Desert_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Desert_Atmosphere.dds"
+
+		HazeColor			"0.7 0.63 0.60 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}	
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Gas_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Gas_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Gas_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Gas_Atmosphere.dds"
+
+		HazeColor			"0.25 0.5 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_GasDwarf_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_GasDwarf_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_GasDwarf_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_GasDwarf_Atmosphere.dds"
+
+		HazeColor			"0.0 1.0 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Lava_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Lava_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Lava_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Lava_Atmosphere.dds"
+
+		HazeColor			"0 0 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crystal_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crystal_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crystal_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crystal_Atmosphere.dds"
+
+		HazeColor			"0 1 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crater_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crater_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crater_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crater_Atmosphere.dds"
+
+		HazeColor			"0.75 0.25 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Methane_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Methane_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Methane_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Methane_Atmosphere.dds"
+
+		HazeColor			"0.5 0 1 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ocean_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ocean_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ocean_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ocean_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ancient_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ancient_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ancient_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ancient_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+}
+
+Liir
+{
+	Ideal
+	{	
+		Combat_Surface				"Models/Planets/Liir/Liir_Surface_Ideal.dds"
+		Combat_NoPopulation			"Models/Planets/Liir_IdealPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Liir_IdealPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Liir_IdealPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Liir_IdealPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Liir/Liir_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Liir/Strat_Liir_Surface_Ideal.dds"
+		Strat_NoPopulation			"Models/Planets/Liir/Strat_Liir_IdealPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Liir/Strat_Liir_IdealPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Liir/Strat_Liir_IdealPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Liir/Strat_Liir_IdealPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Liir/Strat_Liir_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0 0.12 0.5 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+
+	Ideal
+	{	
+		Combat_Surface				"Models/Planets/Liir/liirbob_ideal_surface.dds"
+		Combat_NoPopulation			"Models/Planets/liirbob_idealpop_null.dds"
+		Combat_LowPopulation		"Models/Planets/liirbob_idealpop_low.dds"
+		Combat_ModeratePopulation	"Models/Planets/liirbob_idealpop_moderate.dds"
+		Combat_HighPopulation		"Models/Planets/liirbob_idealpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Liir/Liir_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Liir/Strat_liirbob_ideal_surface.dds"
+		Strat_NoPopulation			"Models/Planets/Liir/strat_liirbob_idealpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Liir/strat_liirbob_idealpop_low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Liir/strat_liirbob_idealpop_moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Liir/strat_liirbob_idealpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Liir/Strat_Liir_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0 0.12 0.5 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	
+	Good
+	{	
+		Combat_Surface				"Models/Planets/Liir/Liir_Surface_Nominal.dds"
+		Combat_NoPopulation			"Models/Planets/Liir_NominalPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Liir_NominalPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Liir_NominalPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Liir_NominalPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Liir/Liir_Atmosphere_Nominal.dds"
+		
+		Strat_Surface				"Models/Planets/Liir/Strat_Liir_Surface_Nominal.dds"
+		Strat_NoPopulation			"Models/Planets/Liir/Strat_Liir_NominalPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Liir/Strat_Liir_NominalPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Liir/Strat_Liir_NominalPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Liir/Strat_Liir_NominalPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Liir/Strat_Liir_Atmosphere_Nominal.dds"
+		
+		HazeColor			"0.06 0.54 0.77 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Poor
+	{	
+		Combat_Surface				"Models/Planets/Liir/Liir_Surface_Poor.dds"
+		Combat_NoPopulation			"Models/Planets/Liir_PoorPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Liir_PoorPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Liir_PoorPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Liir_PoorPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Liir/Liir_Atmosphere_Poor.dds"
+
+		Strat_Surface				"Models/Planets/Liir/Strat_Liir_Surface_Poor.dds"
+		Strat_NoPopulation			"Models/Planets/Liir/Strat_Liir_PoorPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Liir/Strat_Liir_PoorPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Liir/Strat_Liir_PoorPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Liir/Strat_Liir_PoorPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Liir/Strat_Liir_Atmosphere_Poor.dds"
+		
+		HazeColor			"0.69 0.63 0.49 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Dune_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Dune_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Dune_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Dune_Atmosphere.dds"
+
+		HazeColor			"0.75 0.5 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ice_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ice_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ice_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ice_Atmosphere.dds"
+
+		HazeColor			"0.7 0.7 0.7 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Barren_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Barren_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Barren_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Barren_Atmosphere.dds"
+
+		HazeColor			"0.27 0.22 0.29 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Desert_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Desert_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Desert_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Desert_Atmosphere.dds"
+
+		HazeColor			"0.7 0.63 0.60 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}	
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Gas_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Gas_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Gas_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Gas_Atmosphere.dds"
+
+		HazeColor			"0.25 0.5 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_GasDwarf_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_GasDwarf_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_GasDwarf_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_GasDwarf_Atmosphere.dds"
+
+		HazeColor			"0.0 1.0 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Lava_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Lava_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Lava_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Lava_Atmosphere.dds"
+
+		HazeColor			"0 0 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crystal_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crystal_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crystal_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crystal_Atmosphere.dds"
+
+		HazeColor			"0 1 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crater_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crater_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crater_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crater_Atmosphere.dds"
+
+		HazeColor			"0.75 0.25 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Methane_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Methane_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Methane_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Methane_Atmosphere.dds"
+
+		HazeColor			"0.5 0 1 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ocean_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ocean_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ocean_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ocean_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ancient_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ancient_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ancient_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ancient_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+}
+
+Zuul
+{
+	Ideal
+	{
+		Combat_Surface				"Models/Planets/Zuul/Zuul_Surface_Ideal.dds"
+		Combat_NoPopulation			"Models/Planets/Zuul_IdealPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Zuul_IdealPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Zuul_IdealPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Zuul_IdealPop_High.dds"
+		Combat_Atmosphere			"Models/Planets/Zuul/Zuul_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Zuul/Strat_Zuul_Surface_Ideal.dds"
+		Strat_NoPopulation			"Models/Planets/Zuul/Strat_Zuul_IdealPop_Null.dds"
+		Strat_LowPopulation			"Models/Planets/Zuul/Strat_Zuul_IdealPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Zuul/Strat_Zuul_IdealPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Zuul/Strat_Zuul_IdealPop_High.dds"
+		Strat_Atmosphere			"Models/Planets/Zuul/Strat_Zuul_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0.4 0.31 0.46 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Ideal_2
+	{
+		Combat_Surface				"Models/Planets/Zuul/zuulbob_ideal_surface.dds"
+		Combat_NoPopulation			"Models/Planets/zuulbob_idealpop_null.dds"
+		Combat_LowPopulation		"Models/Planets/zuulbob_idealpop_low.dds"
+		Combat_ModeratePopulation	"Models/Planets/zuulbob_idealpop_moderate.dds"
+		Combat_HighPopulation		"Models/Planets/zuulbob_idealpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Zuul/Zuul_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Zuul/strat_zuulbob_ideal_surface.dds"
+		Strat_NoPopulation			"Models/Planets/Zuul/strat_zuulbob_idealpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Zuul/strat_zuulbob_idealpop_low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Zuul/strat_zuulbob_idealpop_moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Zuul/strat_zuulbob_idealpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Zuul/Strat_Zuul_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0.4 0.31 0.46 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	
+	Good
+	{
+		Combat_Surface				"Models/Planets/Zuul/zuul_nominal_surface.dds"
+		Combat_NoPopulation			"Models/Planets/zuul_nominalpop_null.dds"
+		Combat_LowPopulation		"Models/Planets/zuul_nominalpop_low.dds"
+		Combat_ModeratePopulation	"Models/Planets/zuul_nominalpop_moderate.dds"
+		Combat_HighPopulation		"Models/Planets/zuul_nominalpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Zuul/Zuul_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Zuul/strat_zuul_nominal_surface.dds"
+		Strat_NoPopulation			"Models/Planets/Zuul/strat_zuul_nominalpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Zuul/strat_zuul_nominalpop_low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Zuul/strat_zuul_nominalpop_moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Zuul/strat_zuul_nominalpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Zuul/strat_zuul_atmosphere_nominal.dds"
+		
+		HazeColor			"0.21 0.13 0.38 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Poor
+	{
+		Combat_Surface				"Models/Planets/Zuul/zuul_poor_surface.dds"
+		Combat_NoPopulation			"Models/Planets/zuul_poorpop_null.dds"
+		Combat_LowPopulation		"Models/Planets/zuul_poorpop_low.dds"
+		Combat_ModeratePopulation	"Models/Planets/zuul_poorpop_mod.dds"
+		Combat_HighPopulation		"Models/Planets/zuul_poorpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Zuul/Zuul_Atmosphere_Poor.dds"
+		
+		Strat_Surface				"Models/Planets/Zuul/strat_zuul_poor_surface.dds"
+		Strat_NoPopulation			"Models/Planets/Zuul/strat_zuul_poorpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Zuul/strat_zuul_poorpop_low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Zuul/strat_zuul_poorpop_mod.dds"
+		Strat_HighPopulation		"Models/Planets/Zuul/strat_zuul_poorpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Zuul/Strat_Zuul_Atmosphere_Poor.dds"
+
+		HazeColor			"0.95 0.80 0.90 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Dune_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Dune_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Dune_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Dune_Atmosphere.dds"
+
+		HazeColor			"0.75 0.5 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ice_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ice_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ice_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ice_Atmosphere.dds"
+
+		HazeColor			"0.7 0.7 0.7 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Barren_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Barren_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Barren_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Barren_Atmosphere.dds"
+
+		HazeColor			"0.27 0.22 0.29 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Desert_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Desert_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Desert_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Desert_Atmosphere.dds"
+
+		HazeColor			"0.7 0.63 0.60 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}	
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Gas_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Gas_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Gas_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Gas_Atmosphere.dds"
+
+		HazeColor			"0.25 0.5 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_GasDwarf_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_GasDwarf_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_GasDwarf_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_GasDwarf_Atmosphere.dds"
+
+		HazeColor			"0.0 1.0 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Lava_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Lava_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Lava_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Lava_Atmosphere.dds"
+
+		HazeColor			"0 0 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crystal_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crystal_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crystal_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crystal_Atmosphere.dds"
+
+		HazeColor			"0 1 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crater_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crater_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crater_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crater_Atmosphere.dds"
+
+		HazeColor			"0.75 0.25 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Methane_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Methane_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Methane_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Methane_Atmosphere.dds"
+
+		HazeColor			"0.5 0 1 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ocean_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ocean_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ocean_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ocean_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ancient_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ancient_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ancient_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ancient_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+}
+
+Morrigi
+{
+	Ideal
+	{
+		Combat_Surface				"Models/Planets/Morrigi/morrigi_surface_ideal.dds"
+		Combat_NoPopulation			"Models/Planets/morrigi_IdealPop_Null.dds"
+		Combat_LowPopulation		"Models/Planets/Morrigi_IdealPop_Low.dds"
+		Combat_ModeratePopulation	"Models/Planets/morrigi_IdealPop_Moderate.dds"
+		Combat_HighPopulation		"Models/Planets/morrigi_idealpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Morrigi/morrigi_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Morrigi/Strat_morrigi_Surface_Ideal.dds"
+		Strat_NoPopulation			"Models/Planets/Morrigi/strat_morrigi_idealpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Morrigi/Strat_Morrigi_IdealPop_Low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Morrigi/Strat_morrigi_IdealPop_Moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Morrigi/Strat_morrigi_idealpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Morrigi/Strat_Morrigi_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0 1.0 0 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Ideal
+	{
+		Combat_Surface				"Models/Planets/Morrigi/morrigibob_ideal_surface.dds"
+		Combat_NoPopulation			"Models/Planets/Morrigi/morrigibob_idealpop_null.dds"
+		Combat_LowPopulation		"Models/Planets/Morrigi/morrigibob_idealpop_low.dds"
+		Combat_ModeratePopulation	"Models/Planets/Morrigi/morrigibob_idealpop_moderate.dds"
+		Combat_HighPopulation		"Models/Planets/Morrigi/morrigibob_idealpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Morrigi/Morrigi_Atmosphere_Ideal.dds"
+		
+		Strat_Surface				"Models/Planets/Morrigi/strat_morrigibob_ideal_surface.dds"
+		Strat_NoPopulation			"Models/Planets/Morrigi/strat_morrigibob_idealpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Morrigi/strat_morrigibob_idealpop_low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Morrigi/strat_morrigibob_idealpop_moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Morrigi/strat_morrigibob_idealpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Morrigi/Strat_Morrigi_Atmosphere_Ideal.dds"
+		
+		HazeColor			"0 1.0 0 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Good
+	{
+		Combat_Surface				"Models/Planets/Morrigi/morrigi_surface_nominal.dds"
+		Combat_NoPopulation			"Models/Planets/morrigi_nominalpop_null.dds"
+		Combat_LowPopulation		"Models/Planets/morrigi_nominalpop_low.dds"
+		Combat_ModeratePopulation	"Models/Planets/morrigi_nominalpop_moderate.dds"
+		Combat_HighPopulation		"Models/Planets/morrigi_nominalpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Morrigi/morrigi_Atmosphere_nominal.dds"
+		
+		Strat_Surface				"Models/Planets/Morrigi/strat_morrigi_surface_nominal.dds"
+		Strat_NoPopulation			"Models/Planets/Morrigi/strat_morrigi_nominalpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Morrigi/strat_morrigi_nominalpop_low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Morrigi/strat_morrigi_nominalpop_moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Morrigi/strat_morrigi_nominalpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Morrigi/Strat_Morrigi_Atmosphere_nominal.dds"
+		
+		HazeColor			"0.5 0.7 0.4 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Poor
+	{
+		Combat_Surface				"Models/Planets/Morrigi/morrigi_surface_poor.dds"
+		Combat_NoPopulation			"Models/Planets/morrigi_poorpop_null.dds"
+		Combat_LowPopulation		"Models/Planets/morrigi_poorpop_low.dds"
+		Combat_ModeratePopulation	"Models/Planets/morrigi_poorpop_moderate.dds"
+		Combat_HighPopulation		"Models/Planets/morrigi_poorpop_high.dds"
+		Combat_Atmosphere			"Models/Planets/Morrigi/Morrigi_Atmosphere_Poor.dds"
+		
+		Strat_Surface				"Models/Planets/Morrigi/strat_morrigi_surface_poor.dds"
+		Strat_NoPopulation			"Models/Planets/Morrigi/strat_morrigi_poorpop_null.dds"
+		Strat_LowPopulation			"Models/Planets/Morrigi/strat_morrigi_poorpop_low.dds"
+		Strat_ModeratePopulation	"Models/Planets/Morrigi/strat_morrigi_poorpop_moderate.dds"
+		Strat_HighPopulation		"Models/Planets/Morrigi/strat_morrigi_poorpop_high.dds"
+		Strat_Atmosphere			"Models/Planets/Morrigi/Strat_Morrigi_Atmosphere_Poor.dds"
+
+		HazeColor			"0.1 0.7 0.6 1"
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Dune_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Dune_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Dune_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Dune_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Dune_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Dune_Atmosphere.dds"
+
+		HazeColor			"0.75 0.5 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ice_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ice_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ice_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ice_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ice_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ice_Atmosphere.dds"
+
+		HazeColor			"0.7 0.7 0.7 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+		
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Barren_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Barren_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Barren_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Barren_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Barren_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Barren_Atmosphere.dds"
+
+		HazeColor			"0.27 0.22 0.29 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Desert_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Desert_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Desert_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Desert_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Desert_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Desert_Atmosphere.dds"
+
+		HazeColor			"0.7 0.63 0.60 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}	
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Gas_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Gas_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Gas_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Gas_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Gas_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Gas_Atmosphere.dds"
+
+		HazeColor			"0.25 0.5 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_GasDwarf_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_GasDwarf_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_GasDwarf_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_GasDwarf_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_GasDwarf_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_GasDwarf_Atmosphere.dds"
+
+		HazeColor			"0.0 1.0 0.25 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Lava_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Lava_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Lava_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Lava_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Lava_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Lava_Atmosphere.dds"
+
+		HazeColor			"0 0 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+	
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crystal_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crystal_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crystal_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crystal_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crystal_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crystal_Atmosphere.dds"
+
+		HazeColor			"0 1 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Crater_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Crater_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Crater_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Crater_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Crater_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Crater_Atmosphere.dds"
+
+		HazeColor			"0.75 0.25 0 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Methane_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Methane_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Methane_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Methane_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Methane_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Methane_Atmosphere.dds"
+
+		HazeColor			"0.5 0 1 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ocean_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ocean_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ocean_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ocean_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ocean_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ocean_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.75 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+
+	Dead
+	{
+		Combat_Surface				"Models/Planets/Dead/Dead_Ancient_Surface.dds"
+		Combat_NoPopulation			"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_LowPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_ModeratePopulation	"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_HighPopulation		"Models/Planets/Dead/Dead_Ancient_Population.dds"
+		Combat_Atmosphere			"Models/Planets/Dead/Dead_Ancient_Atmosphere.dds"
+
+		Strat_Surface				"Models/Planets/Dead/Strat_Dead_Ancient_Surface.dds"
+		Strat_NoPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_LowPopulation			"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_ModeratePopulation	"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_HighPopulation		"Models/Planets/Dead/Strat_Dead_Ancient_Population.dds"
+		Strat_Atmosphere			"Models/Planets/Dead/Strat_Dead_Ancient_Atmosphere.dds"
+
+		HazeColor			"0.5 0.75 0.5 1"
+		
+		GlowTexture			"Models/Planets/Glow.dds"
+	}
+}

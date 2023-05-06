@@ -1,0 +1,101 @@
+shipsection
+{
+
+	model Species/_NPC/art/sections/CrowDestroyerFission.X
+	socket_fore EngineNode
+	section_type engine
+	section_class destroyer
+	engine_techera	fission
+
+	requires DRV_Fissn
+	requires DRV_Hyper
+	health 800
+	mass 1500
+	cost 6000
+	cpoints 1300
+	nodespeed 0
+	ftlspeed 2.0
+	range	4
+
+	option	IND_StlthArm
+	option	IND_MagLat
+	option	IND_ImpRfCt
+	option	DRV_RecFiss
+
+	engine_sound			Sounds/Ships/Shared/DEFission_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEFission_idle.wav
+	engine_sound_minrange 	85
+
+	netforcelimits
+	{
+		force_forward		20000
+		force_right			20000
+		force_up			20000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				90
+		rotspeed			0
+	}
+
+	anim
+	{
+		name "combatready"
+		event "StartIdle"
+		start_frame "0"
+		speed_scale "1"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/crowphaser_pulsed.weapon"
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -60
+			max_azimuth 70
+			min_inclination -10
+			max_inclination 60
+
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -60
+			max_azimuth 70
+			min_inclination -10
+			max_inclination 60
+
+		}
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+
+}

@@ -1,0 +1,94 @@
+shipsection
+{
+	model					Species/Human/art/sections/DestroyerFission.X
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			destroyer
+	requires				DRV_Fissn
+	requires				DRV_Node
+	engine_techera			fission
+	health					720
+	mass					2500
+	cost					5000
+	maintenance_cost		300
+	cpoints					2208
+	nodespeed				4
+	ftlspeed				.92
+	range					9
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option	DRV_RecFiss
+
+	engine_sound			Sounds/Ships/Shared/DEFission_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEFission_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		23000
+		force_right			23000
+		force_up			23000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				73.2875
+		rotspeed			-10
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+	thruster
+	{
+		node EngineThruster04
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode15
+			min_azimuth -140
+			max_azimuth 140
+			min_inclination -12
+			max_inclination 90
+		}
+	}
+}

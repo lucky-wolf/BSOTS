@@ -1,0 +1,21 @@
+2.1:
+^ Shields are available on most sections (almost all ships can have shields)
+^ Pulsed lasers are less likely to reflect off of uncoated (unarmored) targets
+^ DE Strafe sections are less nimble (-10 to rotation speed)
+^ DE Hammerhead sections are more nimble (+10 to rotation speed, +5 to movement speed)
+^ DE Bridge sections are more nimble (equal to strafe)
+^ CR Strafe sections are less nimble (-5 to rotation speed)
+^ CR Hammerhead sections are more nimble (+15 to rotation speed, +10 to movement speed)
+^ Mines remain during a combat, they don't self-destruct.
+^ Fixed: Many large weapons previously required Cruisers or Dreadnoughts - now they don't because they can be mounted on standard satellites! (projector based weapons do require CR or DN research)
+^ Fixed: Pulsed lasers and Beamers had estimated damage values which were confusing to the AI.  AI was mounting basic lasers over improved beamers.
+^ Fixed: Most dual weapons had already been adjusted to fire 1.33x slower than single turret varieties, but hadn't had their estimated damage values updated which affected the AI's ability to choose them correctly
+^ Phasers are now in the laser / beamer family - meaning that they ARE affected by reflectives (though they have the best resistance to ricochet effects) (this may allow reflective coated drones to last longer)
+^ Armors are now available regardless of what weapons tech you have (AP weapons still require that you research armor first)
+^ Reflectives are now available regardless of whether you have researched lasers or beamers
+^ Beast Plague and Assimilation Plague are no longer available
+^ Police available from start & cheaper (but are very limited designs, cannot travel amongst the stars at all, and lighter units than they were in vanilla)
+^ Autocannons have reduced recoil and mass for less knocking ships about (they use micro sized bullets after all)
+^ Tweaked: Light Autocannons were too weak.  They fired constantly - and took forever to do any damage to a target.  Their damage been increased by 20%, and their deflection has been reduced by 50%.  Medium and Heavy Autocannons were similarly adjusted to scale with light autocannons.
+^ Tweaked: PD systems.  Laser PD has been slightly improved - fires every 1.5 seconds instead of every 1.8.  Ballistic PD very slightly improved.  Phaser PD nerfed - fires every 2.5 seconds instead of every 2.0.  Emitter PD adjusted: fires 3.0 seconds instead of 2.8, but sustains its beam for 1 second instead of .5.  Shotgun PD should be very significantly improved: the dispersion of bulletes has been reduced by a factor of 10x, so that they should mostly strike their target instead of being a harmless cloud that misses.
+^ Cost of Fission era technology has been reduced by 2/5ths.  So it should be possible to explore more of the fission tree before fusion comes of age.  Should get new games going a little quicker.

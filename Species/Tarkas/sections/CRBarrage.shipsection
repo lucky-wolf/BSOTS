@@ -1,0 +1,175 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/CruiserBarrage.X
+	preview_ofs				"-8 50 1"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+
+	health					4080
+	mass					8000
+	cost					30000
+	maintenance_cost		3000
+	cpoints					5040
+	crew					20
+
+	requires				GRP_TORPS
+	requires				GRP_HVYBEAM
+	requires				GRP_LRGWEP
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-10
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyMissileNode01
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -2
+			max_inclination 90
+		}
+
+		mount
+		{
+			node HeavyMissileNode02
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -2
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -60
+			max_azimuth 120
+			min_inclination -100
+			max_inclination 100
+		}
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -95
+			max_azimuth 95
+			min_inclination -100
+			max_inclination 100
+		}
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -120
+			max_azimuth 60
+			min_inclination -100
+			max_inclination 100
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -60
+			max_azimuth 120
+			min_inclination -100
+			max_inclination 100
+		}
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -95
+			max_azimuth 95
+			min_inclination -100
+			max_inclination 100
+		}
+		mount
+		{
+			node LightGunNode06
+			min_azimuth -120
+			max_azimuth 60
+			min_inclination -100
+			max_inclination 100
+		}
+	}
+
+	bank
+	{
+		turretclass beam
+		turretsize large
+
+		mount
+		{
+			node TorpedoNode
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+		}
+	}
+
+	bank
+	{
+		turretclass torpedo
+		turretsize large
+
+		mount
+		{
+			node AssaultLaserNode01
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+		mount
+		{
+			node AssaultLaserNode02
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+	}
+}

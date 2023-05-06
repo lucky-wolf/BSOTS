@@ -1,0 +1,34 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model Species/Human/art/sections/Biomissile.X
+	dam_model Species/Human/art/sections/Biomissile.X
+
+	health 480
+	mass 700
+	crew 0
+	
+	command_cost 0
+	maintenance_cost 0
+	
+	netforcelimits
+	{
+		force_forward		100000
+		force_right			10000
+		force_up			10000
+		
+		torque_yaw			700000
+		torque_pitch		700000
+		torque_roll			700000
+		
+		speed				80
+		rotspeed			45
+	}
+
+	thruster
+	{
+		node Effect
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/BioMissile_Idle.effect
+	}
+}

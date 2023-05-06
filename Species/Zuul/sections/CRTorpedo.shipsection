@@ -1,0 +1,198 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/CruiserTorpedo.X
+	preview_ofs				"-1 -50 4"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+
+	health					4320
+	mass					8800
+	cost					30000
+	maintenance_cost		3000
+	cpoints					4896
+	crew					24
+
+	requires				GRP_Torps
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-5
+		rotspeed			-5
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -10
+			max_inclination 10
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass torpedo
+		turretsize large
+
+		mount
+		{
+			node TorpedoTube01
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node TorpedoTube02
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+	}
+
+	bank
+	{
+		turretclass torpedo
+		turretsize large
+
+		mount
+		{
+			node TorpedoTube03
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node TorpedoTube04
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+	}
+}

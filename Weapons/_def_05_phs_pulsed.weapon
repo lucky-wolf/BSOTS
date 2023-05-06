@@ -1,0 +1,86 @@
+weapon
+{
+	name						@WEAPON_PHS_PULSED_PD
+
+	weaponclass					beam
+	weaponfamily				conventionalbeam
+
+	model1						""						// insert barrel model for tiny mounts here if we get them
+	model2						barrel_pdlaser.X		// NOTE: model2 for tiny pd weapons in small mounts
+
+	turretclass					standard
+	turretsize					tiny
+
+	requires					WEP_PlsPhasPD
+
+	cost						2000
+
+	trackspeed_mod				2.0						// 100% faster than tier 1
+
+	burst_volleys				2
+	volley_period				0.01
+	recharge_time				1.5						// laser & pulsed phaser = 1.5, ballistic = 2.0, beamer & phaser = 2.5, emitter = 3.0
+
+	muzzle_speed				1500
+	muzzle_effect				effects/pulsedphaser_muzzle.effect
+	muzzle_sound				Sounds/Weapons/las_pd_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Lasers.tga
+	icon_rect					"64 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				false
+	fc_holdsfire				false
+
+	range						1000
+	range_planet				0
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/pulsed_phaser_impact.wav
+		impact_sound_minrange			50
+		impact_effect					effects/Pulsedphaser_impact.effect
+
+		rangetable
+		{
+			pb_range		500
+			pb_range_dev	.01
+			pb_range_dam	20
+
+			eff_range		750
+			eff_range_dev	.02
+			eff_range_dam	20			// 20 * 3 / 1.5 = 40dps
+
+			max_range		1000
+			max_range_dev	.03
+			max_range_dam	20
+		}
+
+		effect							effects/PulsedPhaser_bullet.effect
+		expire_effect					effects/PulsedPhaser_Expire.effect
+
+		ricochet_mod					-2.0
+		ricochet_sound					Sounds/Weapons/las_pd_rico.wav
+		ricochet_sound_minrange			10
+
+		dam_pop							0
+		dam_infra						0
+		dam_terra						0
+	}
+
+	dam_est			0		// PD always zero
+
+	rating_frate	9
+	rating_dam		4
+	rating_acc		9
+	rating_range	4
+}

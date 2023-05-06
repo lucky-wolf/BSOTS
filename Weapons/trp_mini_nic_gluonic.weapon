@@ -1,0 +1,85 @@
+weapon
+{
+	name						@WEAPON_TRP_MINI_GLUONIC
+
+	weaponclass					gluonictorpedo
+	weaponfamily				torpedo
+	weapondamagetype			gluon
+
+	turretclass					nodemissilerider
+	turretsize					medium
+
+	requires					WEP_GluTrp
+	cost						5000		// 1/2
+
+	burst_volleys				5
+	volley_period				.3
+	recharge_time				9			// 1/2
+
+	muzzle_speed				900
+	muzzle_effect				effects/PlasmaTorpedo_muzzle.effect
+	muzzle_sound				Sounds/Weapons/trp_gluon_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Torpedos-Mini.tga
+	icon_rect					"64 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	pinpoint					true		// allow the weapon to target exact polygon
+
+	range						1067	// 1/3
+	range_planet				1067
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		effect							effects/gluonictorpedo_bullet.effect
+
+		impact_effect					effects/gluonictorpedo_impact.effect
+		impact_sound					Sounds/Weapons/trp_photon_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/trp_photon_travel.wav
+		thrust_sound_minrange			20
+
+		rangetable
+		{
+			pb_range		1050		// 1/3
+			pb_range_dev	1
+			pb_range_dam	47			// 1/3
+
+			eff_range		717
+			eff_range_dev	1
+			eff_range_dam	40
+
+			max_range		1067
+			max_range_dev	1
+			max_range_dam	20
+		}
+
+		mass							.01
+		ricochet_mod					-2.5
+
+		speed							900
+
+		dam_pop							4921
+		dam_infra						0.000564
+		dam_terra						0
+	}
+
+	dam_est			233		// 2/3
+
+	rating_frate	2
+	rating_dam		7
+	rating_acc		7
+	rating_range	10
+}

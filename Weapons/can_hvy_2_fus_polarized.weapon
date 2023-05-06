@@ -1,0 +1,91 @@
+weapon
+{
+	name						@WEAPON_CAN_HVYFUS_POL
+
+	weaponclass					polarizedplasma
+	weaponfamily				energycannon
+
+	model1						barrel_l1_HeavyFusion.X
+
+	turretclass					standard
+	turretsize					large
+	munitionsize				medium
+
+	requires					WEP_HvyFCan
+	requires					WEP_PolPlsm
+	cost						15000
+
+	burst_volleys				3
+	volley_period				.1
+	recharge_time				7
+
+	muzzle_speed				550
+	muzzle_effect				effects/HeavyFusionCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/Dsc_Chakkar_muzzle.wav
+	muzzle_sound_minrange		100
+
+	buildup_delay				1
+	buildup_sound				Sounds/Weapons/Dsc_Chakkar_charge.wav
+	buildup_sound_minrange		100
+
+	icon_file					GUI/Weapons/Polarized.tga
+	icon_rect					"64 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						2100 // 1600
+	range_planet				2100
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/FusionCannon_Bullet.effect
+		impact_effect					effects/HeavyFusionCannon_Impact.effect
+		expire_effect					"effects/FusionCannon_Expire.effect"
+
+		impact_sound					Sounds/Weapons/can_fusion_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange			15
+
+		rangetable
+		{
+			pb_range		210		// 10% of range
+			pb_range_dev	3
+			pb_range_dam	120		// .8 fusion
+
+			eff_range		1680	// 80% of range
+			eff_range_dev	3
+			eff_range_dam	200
+
+			max_range		2100
+			max_range_dev	3
+			max_range_dam	120
+		}
+
+		ricochet_mod					-2.0
+		ricochet_sound					Sounds/Weapons/las_all_rico.wav
+		ricochet_sound_minrange			10
+
+		dam_pop							4100		// .5 fusion
+		dam_infra						0.000228	// 2x fusion
+		dam_terra						0.000019
+	}
+
+	dam_est			180
+
+	rating_frate	6
+	rating_dam		4
+	rating_acc		4
+	rating_range	8
+}

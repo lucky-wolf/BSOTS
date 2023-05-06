@@ -1,0 +1,62 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DestroyerRamScoop.X
+	requires				DRV_Rmscps
+	socket_aft				CommandNode
+	section_type			command
+	section_class			destroyer
+	health					800
+	mass					1200
+	cost					9000
+	maintenance_cost		300
+	cpoints					1160
+	range					5
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	ramscoop true
+	// Ram scoop doesn't make sense with these engines.
+	exclude "DEFission"
+	exclude "DEPulseFission"
+	exclude "DELongRangeFission"
+
+	// forces force_xxx in N
+	// torques torque_xxx in N*m
+	// speed cap in m/s
+	// rotspeed cap in deg/s
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			2e+7
+		torque_pitch		2e+7
+		torque_roll			2e+7
+
+		speed				5
+		rotspeed			40
+	}
+}
+

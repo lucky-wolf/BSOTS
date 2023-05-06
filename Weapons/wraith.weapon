@@ -1,0 +1,34 @@
+weapon
+{
+	name						@WEAPON_BRD_WRAITH
+
+	weaponclass					rider
+
+	turretclass					wraith
+	turretsize					large
+
+	cost						0
+
+	solution_tolerance			180
+	burst_volleys				1
+	buildup_delay				0	// time delay before rider disconnects
+	volley_period				1
+	volley_duration				0
+	recharge_time				10
+
+	icon_file					GUI/Weapons/Riders.tga
+	icon_rect					"128 128 64 64"
+
+	fc_requires_los				false
+	fc_requires_inrange			false
+	fc_requires_enemycolony		true
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			true
+	fc_controllable				true
+	fc_holdsfire				false
+
+	wraith
+	{
+	}
+}

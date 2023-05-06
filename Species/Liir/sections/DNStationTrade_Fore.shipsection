@@ -1,0 +1,42 @@
+shipsection
+{
+	model Species/Liir/art/sections/DNStationTrade_Fore.x
+	dam_model Species/Liir/art/sections_dam/DNStationTrade_Fore.x
+	section_type Command
+	section_class dreadnought
+	socket_aft Fore
+	dam_socket_aft fore
+
+	requires		"IND_TradeStn"
+
+	explicit_section true
+
+	health				12800
+	mass				100000
+	cost				0
+	maintenance_cost	0
+	cpoints				24000
+	crew				80
+	entity_class		"Station"
+	design_class		station
+
+	preview_ofs "-23 -40 9"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+}
+

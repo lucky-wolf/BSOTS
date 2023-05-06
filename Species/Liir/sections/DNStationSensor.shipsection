@@ -1,0 +1,52 @@
+shipsection
+{
+	model Species/Liir/art/sections/DNStationSensor.x
+	dam_model Species/liir/art/sections_dam/DNStationSensor.x
+	section_type mission
+	section_class dreadnought
+	Socket_Aft Aft
+	Socket_Fore Fore
+
+	dam_socket_aft aft
+	dam_socket_fore fore
+
+	requires		"IND_SenStn"
+
+	health				17920
+	mass				100000
+	cost				262500
+	maintenance_cost	10000
+	cpoints				22400
+	crew				40
+	entity_class		"Station"
+	design_class		station
+
+	station				sensors
+	scanrange			15
+	tacticalsensorrange 18700
+
+	explicit_command_section "DNStationSensor_Fore"
+	explicit_engine_section "DNStationSensor_Aft"
+
+	preview_ofs "-23 -1840 9"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	option	IND_PredGun
+
+	netforcelimits
+	{
+		force_forward		1e+9
+		force_right			1e+9
+		force_up			1e+9
+
+		torque_yaw			1e+9
+		torque_pitch		1e+9
+		torque_roll			1e+9
+
+		speed				30
+		rotspeed			6
+	}
+}
+

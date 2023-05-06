@@ -1,0 +1,86 @@
+2.5a:
+
+Fixed:
+	Start new game crash
+
+^ Weapons:
+	Photon Torpedos no longer ricochet
+	All Weapons can fire on a planet (have their range_planet adjusted so that they work)
+	PD turret tracking speed increased
+	2nd attempt to get corrosive and nanite mines working
+	Improved visuals for plasma, fusion, antimatter torpedos
+	Improved visuals for gluonic torpedos
+	Increased speed of tracking weapons, COL, and some direct fire weapons to account for faster ships
+	Increaed damage from corrosives and nanites substantially
+	Adjusted dam_est and rating_dam for the non-projector huge mount weapons so that the player and the Ai has a better apples-apples comparison to judge by
+	Increased the triple barrel (huge) weapon muzzle speeds and ranges to be more awesome (capital weapons)
+	Phasers (beam and pulsed) are now "conventional beams" - so they should get the normal bonuses to them, and ignore reflective coatings
+
+^ Ships:
+	Build cost reduced by 2/3 (most are now the same as vanilla) 
+		(this is in order to attempt to get the Ai to become competitive again - it was just languishing even on difficult since it spends way more resources on unnecxessary ships than a human would)
+	Build time reduced by 1/5 (so 1.6x vanilla, instead of 2x vanilla) 
+	Speed increased by 50%
+	Movement responsiveness increased by 100%
+	Strafe section now has a small maneuver penalty
+	Hammer Head section no longer gives a speed boost (only a maneuver bonus)
+	All ship sections have been adjusted to make penalties or bonuses to movement and maneuver consistent and sensible
+	(e.g. Scout sections are faster than battle, battle is faster than anything but pursuit, and heavy combat sections are no slower than support sections, which are generally the slowest and least maneuverable)
+	Drone Carriers now have a small repair capacity (to better replenish their own drones)
+	Huge construction requires at least one huge mount weapon (any projector, heavy missiles, any dual plasma cannon, etc.)
+	Can select one reflective + one deflective coating and armor (instead of one low tech, and one higher tech)
+	Removed AI Command option (still have the AI command dedicated bridge section)
+
+^ Morrigi:
+	No longer has access to mega freighters (like everyone else)
+		They don't need it at all - their economy is quite strong with standard freighters
+
+^ Tech:
+	Scaled back fusion start a little so that you barely start with Fusion, not some of the techs that require Fusion
+	Increased cost of dual gauss and dual light autocannon upgrades to be equivalent to  dual lasers / beamers
+	Fixed link from elemental nanites to smart nanites
+
+^ Stations & Constructors:
+	Constructors are all standard class ships, just differentiated by engine class (not light vs. heavy)
+	Forced all station sections to indicate viewdist of 15km & section_lod_type 1 to try to make the damn things visible further away (probably won't work)
+	Stations are all about 1/3 construction cost and maintenance cost is 10k each
+	Ship Yards now increase construction by 25% (in place of 100%)
+	Command give +25% imperial population efficiency (used to be 15%)
+	Trade Stations give +15% trade income and +1 route (used to be 25%/+1)
+
+^ Ai:
+	Should not prioritize addiction and temperance techs anymore
+	
+2.5a vs. 1.8
+--------------
+health: 1.6
+mass:	1.0
+cost:	1.0
+cpoint:	1.6
+maint:	(see below)
+
+Maintenance 2.5a vs. 1.8
+------------------------
+Satellites:	1.5x
+Stations:	2/3x
+DE/CR/DN:	3x
+
+TODO:
+-------
+
+DN* (-Station)
+	health *= 2/3 to return them to approx 1.6x vanilla (with some exceptions based on my adjustments over time, e.g. to CNC ships)
+
+
+	muzzle_sound_minrange:
+		pd		 75
+		sm		100
+		med		150
+		lrg		200
+		trp		200
+		fixed	200
+		huge	300
+
+	impact_sound_minrange:
+		(1/2 the above?)
+		

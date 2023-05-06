@@ -1,0 +1,80 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DestroyerAIC.X
+	requires				CCC_AIFrCon
+	socket_aft				CommandNode
+	section_type			command
+	section_class			destroyer
+	aicontrol true
+
+	health					1280
+	mass					1000
+	cost					35000
+	maintenance_cost		300
+	cpoints					800
+
+	rebelai_scanrange				6
+	rebelai_tacticalsensorrange		5700
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	shield_model_offset 	"0 5 0"
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	// forces force_xxx in N
+	// torques torque_xxx in N*m
+	// speed cap in m/s
+	// rotspeed cap in deg/s
+
+	netforcelimits
+	{
+		force_forward		7000
+		force_right			7000
+		force_up			7000
+
+		torque_yaw			5.8e+7
+		torque_pitch		5.8e+7
+		torque_roll			5.8e+7
+
+		speed				20
+		rotspeed			160
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize	medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+}

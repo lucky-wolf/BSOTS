@@ -1,0 +1,126 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/DreadnoughtSiegeDriver.X
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			dreadnought
+	requires				WEP_SgeDrvr
+
+	health					19200
+	mass					30000
+	cost					350000
+	maintenance_cost		15000
+	cpoints					22400
+	crew					42
+
+	preview_ofs				"0 -400 -10"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-10
+		rotspeed			-15
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -80
+			max_azimuth 45
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -80
+			max_azimuth 80
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -60
+			max_azimuth 80
+			min_inclination -20
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass siege
+		turretsize	large
+
+		mount
+		{
+			node "siege"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+}
+

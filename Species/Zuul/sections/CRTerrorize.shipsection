@@ -1,0 +1,178 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/CruiserTerror.X
+//	preview_ofs				"0 0 1"
+	preview_ofs				"0 -200 0"
+	section_type			mission
+	section_class			cruiser
+	engine_techera			fusion
+
+	health					8800
+	mass					44000
+	cost					350000
+	maintenance_cost		3000
+	cpoints					32000
+	crew					60
+
+	propaganda				1
+	autonomous				true	// actually means this is a ship with only a mission section
+	nodespeed				4.0
+	ftlspeed				.6
+	range					20
+
+	requires				DRV_Fusn
+	requires				CCC_FTLBrdB
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	engine_sound			Sounds/Ships/Shared/DEFusion_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEFusion_idle.wav
+	engine_sound_minrange	85
+
+	section_sound			"Sounds/Ships/Zuul/zuul_tunnelers.wav"
+	section_sound_repeat	2
+
+	netforcelimits
+	{
+		force_forward		85000
+		force_right			85000
+		force_up			85000
+
+		torque_yaw			3.3e+8
+		torque_pitch		3.3e+8
+		torque_roll			3.31e+8
+
+		speed				45.7875
+		rotspeed			15
+	}
+
+	bank
+	{
+		turretclass boardingpod
+		turretsize large
+
+		mount
+		{
+			node BoardingPod01
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node BoardingPod02
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node BoardingPod03
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass boardingpod
+		turretsize large
+
+		mount
+		{
+			node BoardingPod04
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node BoardingPod05
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node BoardingPod06
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+	thruster
+	{
+		node EngineThruster04
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+	thruster
+	{
+		node EngineThruster05
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+	thruster
+	{
+		node EngineThruster06
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+	thruster
+	{
+		node EngineThruster07
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+	thruster
+	{
+		node EngineThruster08
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+}

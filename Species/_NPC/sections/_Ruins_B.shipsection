@@ -1,0 +1,239 @@
+shipsection
+{
+	nodesign 1
+	entity_class "CrowRuin"
+	model Species/_NPC/art/sections/ruins_b.X
+	section_type mission
+	section_class dreadnought
+	health 28000
+	mass 5000000000
+	cost 150000
+	cpoints 14000
+	autonomous true	// actually means this is a ship with only a mission section
+	node_cannon_fling 0
+	crew 0
+	command_cost 0
+	split_traffic_volume "false"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	section_sound	"Sounds/SFX/mor_ruins_transmission.wav"
+	section_sound_repeat	15
+
+	option IND_ImpRfCt
+
+	command_cost 0
+	maintenance_cost 0
+
+	netforcelimits
+	{
+		force_forward 1000000000
+		force_right   1000000000
+		force_up      1000000000
+
+		torque_yaw    1000000000
+		torque_pitch  1000000000
+		torque_roll   1000000000
+
+		speed         50
+		rotspeed      120
+	}
+
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle01"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle02"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle03"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle04"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle05"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle06"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle07"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle08"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle09"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle10"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle11"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/crow_atk_shuttle.weapon"
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle12"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+
+}
+

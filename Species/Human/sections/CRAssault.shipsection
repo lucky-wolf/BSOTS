@@ -1,0 +1,102 @@
+shipsection
+{
+	model					Species/Human/art/sections/CruiserAssault.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					4480
+	mass					4500
+	cost					35000
+	maintenance_cost		3000
+	cpoints					2592
+	crew					35
+
+	requires				GRP_TORPS
+	requires				GRP_HVYBEAM
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			5e+8
+		torque_pitch		5e+8
+		torque_roll			5e+8
+
+		speed				-5
+		rotspeed			35
+	}
+
+	bank
+	{
+		turretclass beam
+		turretsize large
+
+		mount
+		{
+			node AssaultLaser01
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node AssaultLaser02
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+		}
+	}
+
+	bank
+	{
+		turretclass torpedo
+		turretsize large
+
+		mount
+		{
+			node Torpedo01
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+	}
+}

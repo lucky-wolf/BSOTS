@@ -1,0 +1,57 @@
+shipsection
+{
+	model					Species/Human/art/sections/DestroyerDeepScan.X
+
+	socket_aft				CommandNode
+	section_type			command
+	section_class			destroyer
+	section_sound			"Sounds/Ships/Shared/DEDeepScan.wav"
+	section_sound_repeat	5
+
+	health					720
+	cost					9000
+	maintenance_cost		300
+	cpoints					832
+	mass					800
+
+	requires				CCC_AdvSens
+	scanrange				6
+	tacticalsensorrange		5700
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			1e+7
+		torque_pitch		1e+7
+		torque_roll			1e+6
+
+		speed				0
+		rotspeed			50
+	}
+}
+

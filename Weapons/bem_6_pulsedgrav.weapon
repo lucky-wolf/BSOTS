@@ -1,0 +1,59 @@
+weapon
+{
+	name						@WEAPON_BEM_PULSEDGRAV
+
+	weaponclass					pulsedgravbeam
+
+	model1						barrel_l1_pulsegraviton.X
+
+	turretclass					standard
+	turretsize					large
+
+	requires					WEP_PulGrvBm
+	cost						17000
+
+	burst_volleys				1
+	volley_period				5
+	volley_duration				4
+	recharge_time				12
+
+	muzzle_effect				effects/Pulsed_Graviton_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_pulsed_grav_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beams.tga
+	icon_rect					"64 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1300 // 800
+	range_planet				1300
+
+	beam
+	{
+		impact_effect					effects/Graviton_Pulse_Impact.effect
+		impact_sound					Sounds/Weapons/bem_graviton_impact.wav
+		impact_sound_minrange			75
+		effect							effects/PulsedGravitonBeam_Bullet.effect
+		dam								550
+		force							3000
+
+		dam_pop							492187
+		dam_infra						0.05625
+		dam_terra						0.000094
+	}
+
+	dam_est			500
+
+	rating_frate	3
+	rating_dam		10
+	rating_acc		10
+	rating_range	6
+}

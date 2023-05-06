@@ -1,0 +1,71 @@
+# AI does a final check with this table before assigning a weapon.
+# Specifies anything that is "always better" and should be used instead
+# However, I think it only considers this for ties?  It certainly cares more about dam_est than this table...
+# weapon,replaces-weapon
+
+# why use a non-electrified grapple hook if you have access the the electrified version?!
+bal_special_grapple_disruptorwhip,bal_special_grapple
+
+# phaser point defense is just better than all of the others
+_def_05_phs,_def_01_bal
+_def_05_phs,_def_02_las
+_def_05_phs,_def_03_las_pulsed
+_def_05_phs,_def_04_emt
+_def_05_phs,_def_06_mis
+_def_05_phs_pulsed,_def_01_bal
+_def_05_phs_pulsed,_def_02_las
+_def_05_phs_pulsed,_def_03_las_pulsed
+_def_05_phs_pulsed,_def_04_emt
+_def_05_phs_pulsed,_def_06_mis
+
+# double barrel versions are just always better than their single barrel siblings
+bal_gauss_a_dual,bal_gauss_a
+bal_medium_a_dual,bal_medium_a
+bal_heavy_a_dual,bal_heavy_a
+bal_gauss_ap_dual,bal_gauss_ap
+bal_medium_ap_dual,bal_medium_ap
+bal_heavy_ap_dual,bal_heavy_ap
+bal_gauss_sniper_dual,bal_gauss_sniper
+bal_medium_sniper_dual,bal_medium_sniper
+bal_heavy_sniper_dual,bal_heavy_sniper
+
+# double barrel versions are just always better than their single barrel siblings
+can_1_plasma_dual,can_1_plasma
+can_2_fus_dual,can_2_fus
+can_3_am_dual,can_3_am
+
+# better lasers are just better
+las_laser_improved,las_laser_basic
+las_laser_uv,las_laser_improved
+las_laser_xray,las_laser_uv
+las_phs_pulsed_light,las_laser_xray
+
+# better beamers are just better
+las_beamer_improved,las_beamer_basic
+las_beamer_uv,las_beamer_improved
+las_beamer_xray,las_beamer_uv
+las_phs_light,las_beamer_xray
+
+# double barrel versions are just always better than their single barrel siblings
+las_beamer_uv_dual,las_beamer_uv
+las_beamer_xray_dual,las_beamer_xray
+las_laser_uv_dual,las_laser_uv
+las_laser_xray_dual,las_laser_xray
+las_phs_light_dual,las_phs_light
+las_phs_heavy_dual,las_phs_heavy
+las_phs_pulsed_light_dual,las_phs_pulsed_light
+las_phs_pulsed_heavy_dual,las_phs_pulsed_heavy
+
+# fast missiles are just better than standard missiles
+mis_a_fast,mis_a
+mis_small_fast,mis_small
+mis_heavy_fast,mis_heavy
+mis_huge_fast,mis_huge
+
+# double barrel versions are just always better than their single barrel siblings
+mis_a_dual,mis_a
+mis_small_dual,mis_small
+mis_heavy_dual,mis_heavy
+
+# double barrel versions are just always better than their single barrel siblings
+dsr_bolt_dual,dsr_bolt

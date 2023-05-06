@@ -1,0 +1,42 @@
+weapon
+{
+	name		@WEAPON_NPC_PMASTER_PHASPD
+	weaponclass	beam
+	model1		""						// insert barrel model for tiny mounts here if we get them
+	model2		"Species/_NPC/art/weapons/SmallEye.X"		// NOTE: model2 for tiny pd weapons in small mounts
+	turretmodel1	""
+	turretmodel2	"Species/_NPC/art/weapons/LeftEyeLash.X"
+	requires 	WEP_PDPhas
+	hpbonus		20
+	cost		2000
+	turretsize		tiny
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	.3
+	recharge_time	.5
+	muzzle_effect	effects/phaser_muzzle.effect
+	muzzle_sound	Sounds/Weapons/phaser_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"160 96 32 32"
+
+	range 475
+	range_planet 1050
+
+	beam
+	{
+		impact_effect	effects/phaser_impact.effect
+		impact_sound	Sounds/Weapons/phaser_impact.wav
+		impact_sound_minrange	75
+		effect		effects/pdphaser_Bullet.effect
+		dam			500
+		force		0
+
+		dam_pop		0
+		dam_infra	0	
+		dam_terra	0
+	}
+
+	dam_est		0
+}

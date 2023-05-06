@@ -1,0 +1,120 @@
+shipsection
+{
+	model					Species/Morrigi/art/sections/DestroyerAntiMatterZ.X
+	requires				DRV_AntiMat
+	requires				DRV_VdMstr
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			Destroyer
+	engine_techera			antimatter
+	health					1280
+	mass					1800
+	cost					33000
+	maintenance_cost		300
+	cpoints					1792
+
+	ftlspeed				4
+	range					25
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	engine_sound			Sounds/Ships/Shared/MOAM_grav.wav
+	engine_idle_sound		Sounds/Ships/Shared/MOGrav_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		112000
+		force_right			110000
+		force_up			110000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				201.7125
+		rotspeed			10
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatReady"
+		start_frame "0"
+		speed_scale "2"
+		loop "1"
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatRest"
+		start_frame "end"
+		speed_scale "-2"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -80
+			max_azimuth 80
+			min_inclination -15
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightgunnode01
+			min_inclination -10
+			max_inclination 90
+			min_azimuth -10
+			max_azimuth 140
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightgunnode02
+			min_inclination -10
+			max_inclination 90
+			min_azimuth -140
+			max_azimuth 10
+			home_inclination 0
+		}
+	}
+}
+

@@ -1,0 +1,95 @@
+weapon
+{
+	name						@WEAPON_MIS_HUGE
+
+	weaponclass					missile
+	weaponfamily				missile
+
+	model1						barrel_l2_icbm.X
+	turretmodel1				turret_l2icbm.x
+
+	turretclass					projector
+	turretsize					large
+
+// So we don't require this even though technically we create the illusion that this tech is required in order to ensure
+// that there is a projector weapon available for any section that requires it from the start.
+// In practice, nothing initially requires it - but because we cannot make dreadnoughts require GRP_PRJCTR, they are the one set of ship sections
+// that cannot be properly handed by this dependency - so just allow this if there is some way a player or NPC ends up with a section requirement without another tech available.
+//
+//	requires					WEP_PrjMsl
+
+	cost						24000			// 2x dual heavy missiles
+
+	solution_tolerance			180
+	burst_volleys				1
+	recharge_time				33
+
+	muzzle_sound				Sounds/Weapons/mis_planet_muzzle.wav
+	muzzle_sound_minrange		75
+	muzzle_effect				effects/ICBM_Muzzle.effect
+	muzzle_speed				240
+
+	icon_file					GUI/Weapons/Missiles.tga
+	icon_rect					"128 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	range						9000	// fire at 75% of max range
+	range_planet				9000
+
+	missile
+	{
+		tracking						true
+		retarget_delay					2
+		warhead_dam_scale				true
+
+		impact_decal					decals/WeaponHit.decal
+		impact_decal_width				.5
+		impact_decal_height				.5
+		impact_decal_depth				.1
+
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/mis_planet_impact.wav
+		impact_sound_minrange			200
+		impact_effect					effects/ICBM_Impact.effect
+		area_impact_effect				effects/collide_asteroid.effect
+		planet_impact_effect			effects/Missile_Planet.effect
+
+		thrust_sound					Sounds/Weapons/mis_planet_travel.wav
+
+		speed							240		// sml/std/hvy/huge: 120, 160, 200, 240
+		ttl								50		// range 12 km
+		seek_attenuation				2		// std missile 4.0 (higher better)
+
+		model							PlanetMissile.X
+		health							75				// 1.5x heavy
+		dam								150				// 1.5x heavy
+		dam_radius						105				// 1.5x heavy
+		mass							150				// 1.5x heavy
+		thrust_effect					effects/PlanetMissileTrail.effect
+		thrust_node						EffectNode
+		dumbfire_period					1.5
+
+		dam_pop							55370			// 1.5x heavy
+		dam_infra						0.00135
+		dam_terra						0.001125
+	}
+
+	dam_est			200
+
+	rating_frate	2
+	rating_dam		5
+	rating_acc		10
+	rating_range	10
+}

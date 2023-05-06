@@ -1,0 +1,88 @@
+weapon
+{
+	name						@WEAPON_MIS_HEAVY
+
+	weaponclass					missile
+	weaponfamily				missile
+
+	model1						barrel_l1_missile.X
+
+	turretclass					missile
+	turretsize					large
+
+	requires					WEP_HvyMsl
+	cost						4000
+
+	solution_tolerance			180
+	burst_volleys				1
+	recharge_time				33
+
+	muzzle_sound				Sounds/Weapons/mis_planet_muzzle.wav
+	muzzle_sound_minrange		75
+	muzzle_effect				effects/ICBM_Muzzle.effect
+	muzzle_speed				200
+
+	icon_file					GUI/Weapons/Missiles.tga
+	icon_rect					"0 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	range						6000	// fire at 75% of max range
+	range_planet				6000
+
+	missile
+	{
+		tracking						true
+		retarget_delay					2
+		warhead_dam_scale				true	// add standard missile warhead damage modifier
+
+		impact_decal					decals/WeaponHit.decal
+		impact_decal_width				.5
+		impact_decal_height				.5
+		impact_decal_depth				.1
+
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/mis_planet_impact.wav
+		impact_sound_minrange			200
+		impact_effect					effects/ICBM_Impact.effect
+		area_impact_effect				effects/collide_asteroid.effect
+		planet_impact_effect			effects/Missile_Planet.effect
+
+		thrust_sound					Sounds/Weapons/mis_planet_travel.wav
+
+		speed							200		// std missile 160
+		ttl								40		// range: 8 km
+		seek_attenuation				2.5		// std missile 4.0 (higher better)
+
+		model							PlanetMissile.X
+		health							50				// 1/2 planetary, or 5x standard
+		dam								100				// 2x standard
+		dam_radius						50				// 2x standard
+		mass							100				// 2x standard
+		thrust_effect					effects/PlanetMissileTrail.effect
+		thrust_node						EffectNode
+		dumbfire_period					1.5
+
+		dam_pop							36912			// x3 standard
+		dam_infra						0.0027
+		dam_terra						0.00075
+	}
+
+	dam_est			120
+
+	rating_frate	1
+	rating_dam		1
+	rating_acc		10
+	rating_range	10
+}

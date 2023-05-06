@@ -1,0 +1,83 @@
+shipsection
+{
+	model					Species/Human/art/sections/DestroyerHammerhead.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			destroyer
+
+	health					880
+	mass					1150
+	cost					5000
+	maintenance_cost		300
+	cpoints					1472
+
+	requires				IND_DEHmrHead
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		2000
+		force_right			2000
+		force_up			2000
+
+		torque_yaw			3.2e+7
+		torque_pitch		3.2e+7
+		torque_roll			3.2e+7
+
+		speed				0
+		rotspeed			105
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -20
+			max_azimuth 160
+			min_inclination -5
+			max_inclination 90
+
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -160
+			max_azimuth 20
+			min_inclination -5
+			max_inclination 90
+
+		}
+	}
+}

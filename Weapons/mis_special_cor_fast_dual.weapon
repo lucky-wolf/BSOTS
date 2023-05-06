@@ -1,0 +1,99 @@
+weapon
+{
+	name						@WEAPON_MIS_CORROSIVE_FAST_DUAL
+
+	weaponclass					corrosivemissile
+	weaponfamily				missile
+
+	model1						barrel_l2_icbm.X
+	turretmodel1				turret_l2icbm.x
+
+	turretclass					missile
+	turretsize					large
+
+	requires					WEP_CorMsl
+	requires					WEP_FMsl
+	requires					WEP_DualHvyMsl
+	cost						36000			// 3x
+
+	solution_tolerance			180
+	burst_volleys				1
+	recharge_time				24				// 1.5x
+
+	muzzle_sound				Sounds/Weapons/mis_nanite_muzzle.wav
+	muzzle_sound_minrange		60
+	muzzle_effect				effects/Missile_muzzle.effect
+	muzzle_speed				300				// 50% faster
+
+	icon_file					GUI/Weapons/Missiles-3.tga
+	icon_rect					"128 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			true
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_explicit_target			true
+	fc_exclusive_launch			true
+	fc_targets_expire			true
+	fc_controllable				true
+	fc_holdsfire				true
+	pinpoint					true	// ok since we are making them detonate early (see range_trigger in missile {} block below)
+	target_queue_size			10
+
+	range						6000
+	range_planet				6000
+
+	missile
+	{
+		tracking						true
+		warhead_dam_scale				false 	// not using standard warhead tech
+
+		dot_rate						225
+		dot_radius						150
+		dot_time						15
+
+		impact_decal					decals/WeaponHit.decal
+		impact_decal_width				.5
+		impact_decal_height				.5
+		impact_decal_depth				.1
+
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/mis_nanite_impact.wav
+		impact_sound_minrange			200
+		impact_effect					effects/CorrosiveMissile_Impact.effect
+		sticky_impact					false
+		area_impact_effect				effects/collide_asteroid.effect
+		planet_impact_effect			effects/Missile_Planet.effect
+		thrust_sound					Sounds/Weapons/mis_missile_travel.wav
+
+		speed							300		// 1.5x
+		ttl								26.667	// range: 8 km
+
+		seek_attenuation				5		// 2x heavy
+
+		model							Corrosivemissile.X
+		health							50		// 1x heavy
+		dam								100		// 1x heavy
+		dam_radius						50		// 1x heavy
+		mass							100		// 1x heavy
+		thrust_effect					"effects/CorrosiveMissile_Trail.effect"
+		thrust_node						EffectNode
+		dumbfire_period					2.5
+		trigger_range					"10 90"	// Random in here
+
+		dam_pop							329
+		dam_infra						0
+		dam_terra						0.0009375
+	}
+
+	dam_est			480
+
+	rating_frate	3
+	rating_dam		5
+	rating_acc		10
+	rating_range	10
+}

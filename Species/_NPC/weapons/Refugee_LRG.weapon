@@ -1,0 +1,58 @@
+
+weapon
+{
+	name		@WEAPON_NPC_REFUGEE_LRG
+	weaponclass	beam
+	weaponfamily	conventionalbeam
+
+	turretmodel1	"Species/_NPC/art/weapons/Refugeeturret_L_standard.X"
+	model1			"Species/_NPC/art/weapons/Refugeebarrel_L_standard.X"
+	requires 	WEP_PosiBm
+	cost		9000
+	hpbonus		400
+	turretsize		large
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	4
+	recharge_time	10
+	muzzle_effect	effects/PositronBeam_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bem_positron_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"64 192 32 32"
+		
+	range 800
+	range_planet 900
+	
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	beam
+	{
+		impact_effect	effects/PositronBeam_impact.effect
+		impact_sound	Sounds/Weapons/bem_positron_impact.wav
+		impact_sound_minrange	75
+		effect		effects/Refugee_PositronBeam_Bullet.effect
+		dam			350
+		force		0
+
+		dam_pop		5000000
+		dam_infra	.009	
+		dam_terra	.005
+	}
+
+	rating_frate	4
+	rating_dam	6
+	rating_acc	9
+	rating_range	4
+
+	dam_est		500
+
+}

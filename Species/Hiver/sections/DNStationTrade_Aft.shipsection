@@ -1,0 +1,42 @@
+shipsection
+{
+	model Species/Hiver/art/sections/DNStationTrade_Aft.X
+	dam_model Species/Hiver/art/sections_dam/DNStationTrade_Aft.X
+	section_type Engine
+	section_class dreadnought
+	socket_fore Aft
+	dam_socket_fore aft
+
+	requires		"IND_TradeStn"
+
+	explicit_section true
+
+	health				22400
+	mass				100000
+	cost				0
+	maintenance_cost	0
+	cpoints				26000
+	crew				150
+	entity_class		"Station"
+	design_class		station
+
+	preview_ofs "-23 -40 9"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+}
+

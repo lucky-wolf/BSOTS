@@ -1,0 +1,148 @@
+shipsection
+{
+	model					Species/Liir/art/sections/CruiserAntimatterImpSW.X
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			cruiser
+	engine_techera			antimatter
+
+	requires				DRV_AntiMat
+	requires				DRV_ImpStWrp
+
+	health					3968
+	mass					5700
+	cost					40000
+	maintenance_cost		3000
+	cpoints					3312
+	ftlspeed				11
+	range					20
+	crew					16
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	engine_sound			Sounds/Ships/Shared/CRStutterwarp_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEStutterwarp_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+		{
+		force_forward		2800000
+		force_right			2800000
+		force_up			2800000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				137.5
+		rotspeed			5
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -10
+			max_inclination 60
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -110
+			max_azimuth 70
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -70
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -110
+			max_azimuth 70
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -70
+			max_azimuth 110
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -70
+			max_azimuth 110
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -110
+			max_azimuth 70
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+}

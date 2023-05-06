@@ -1,0 +1,65 @@
+weapon
+{
+	name						@WEAPON_BEM_BEAMER_PD_2
+
+	weaponclass					beamer
+	weaponfamily				laser
+
+	model1						""						// insert barrel model for tiny mounts here if we get them
+	model2						barrel_pdlaser.X	// NOTE: model2 for tiny pd weapons in small mounts
+
+	turretclass					standard
+	turretsize					tiny
+
+	requires					WEP_PdBmr
+	requires					WEP_XrayBmr
+
+	cost						1500
+
+	trackspeed_mod				1.125					// 50% better than tier 1
+	burst_volleys				1
+	volley_duration				.3
+	lock_period					0
+	recharge_time				2.5						// laser & pulsed phaser = 1.5, ballistic = 2.0, beamer & phaser = 2.5, emitter = 3.0
+
+	muzzle_effect				effects/XRayBeamer_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_beamer_green.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beamers.tga
+	icon_rect					"128 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				false
+	fc_holdsfire				false
+
+	range						550
+	range_planet				0
+
+	beam
+	{
+		effect							effects/XRayBeamer_Bullet.effect
+		impact_effect					effects/PXRayBeamer_impact.effect
+		impact_sound					Sounds/Weapons/phaser_impact.wav
+		impact_sound_minrange			100
+
+		dam								100	// 100 * .3 / 2.5 = 12dps (30 / shot)
+		force							0
+
+		dam_pop							0
+		dam_infra						0
+		dam_terra						0
+	}
+
+	dam_est			0		// PD always zero
+
+	rating_frate	9
+	rating_dam		3
+	rating_acc		10
+	rating_range	2
+}

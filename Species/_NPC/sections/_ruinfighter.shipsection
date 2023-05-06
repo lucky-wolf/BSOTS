@@ -1,0 +1,55 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model "Species/_NPC/art/sections/ruin_fighter.X"
+	section_type mission
+	section_class Destroyer
+	health 300
+	mass 100
+	engine_sound "Sounds/SFX/crows_travel.wav"
+	engine_idle_sound "Sounds/SFX/crows_travel.wav"
+	engine_sound_minrange 85
+
+	autonomous true	// actually means this is a ship with only a mission section
+	crew 0
+	death_effect "Effects/Swarmer_Death.effect"
+
+	option IND_ImpRfCt
+
+	command_cost 0
+	maintenance_cost 0
+
+	netforcelimits
+	{
+		force_forward 100000
+		force_right   100000
+		force_up      100000
+
+		torque_yaw    1000000
+		torque_pitch  1000000
+		torque_roll   1000000
+
+		speed         175
+		rotspeed      360
+	}
+
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/ruinfighter_phaser.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node light_weapon
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+
+}

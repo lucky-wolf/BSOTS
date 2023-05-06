@@ -1,0 +1,17 @@
+@echo off
+cdd %~dp0\..\weapons
+
+echo !!!!!!!!!!!!!!!!!WARNING!!!!!!!!!!!!!!!!!!
+echo.
+echo This will likely make all of your save games INCOMPATIBLE!!!
+echo You can manually update the _weapons.txt file and append any new weapons.
+echo.
+echo However, if you proceed, they'll be inserted in alphabetical order, forcing new ID numbers throughout the file.
+echo.
+pause Press any key if you wish to proceed...
+
+echo // Weapons list updated on %_date at %_time > _weapons.txt
+set i=0 & for %f in (*.weapon) do (set i=%@inc[%i] & echo %i %f) >> _weapons.txt
+cdd %~dp0
+echo %i weapons updated
+pause

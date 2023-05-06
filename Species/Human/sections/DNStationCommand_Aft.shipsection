@@ -1,0 +1,147 @@
+shipsection
+{
+	model Species/Human/art/sections/DNStationCommand_Aft.x
+	dam_model Species/Human/art/sections_dam/DNStationCommand_Aft.x
+	section_type Engine
+	section_class dreadnought
+	socket_fore Aft
+	dam_socket_fore Aft
+
+	requires		"IND_CmdStn"
+
+	explicit_section true
+
+	health				28800
+	mass				100000
+	cost				0
+	maintenance_cost	0
+	cpoints				24000
+	crew				90
+	entity_class		"Station"
+	design_class		station
+
+	preview_ofs "-23 -40 9"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode14
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode15
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode16
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode17
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode18
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode19
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Large
+
+		mount
+		{
+			node HeavyGunNode03
+			min_azimuth -80
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Medium
+
+		mount
+		{
+			node MediumGunNode05
+			min_azimuth -80
+			max_azimuth 120
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode06
+			min_azimuth -40
+			max_azimuth 100
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+}
+

@@ -1,0 +1,120 @@
+shipsection
+{
+	model					Species/Liir/art/sections/DestroyerWar.X
+	preview_ofs				"0 0 -4"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			destroyer
+
+	health					224
+	mass					2700
+	cost					5333
+	maintenance_cost		300
+	cpoints					1008
+
+	requires				IND_DEWarEng
+	requires				GRP_MEDWEP
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-10
+		rotspeed			-5
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -75
+			max_azimuth 75
+			min_inclination -8
+			max_inclination 90
+
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+	 		min_azimuth -15
+			max_azimuth 110
+			min_inclination -7
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode02
+	 		min_azimuth -110
+			max_azimuth 15
+			min_inclination -7
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode03
+	 		min_azimuth -90
+			max_azimuth 90
+			min_inclination -3
+			max_inclination 90
+		}
+	}
+}

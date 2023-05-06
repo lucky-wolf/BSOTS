@@ -1,0 +1,117 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DreadnoughtDeflector.X
+	requires				SLD_Disr
+	socket_aft				CommandNode
+	section_type			command
+	section_class			Dreadnought
+
+	health					11200
+	mass					20000
+	cost					270000
+	maintenance_cost		15000
+	cpoints					18000
+	crew					65
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			2500000000
+		torque_pitch		2500000000
+		torque_roll			2500000000
+
+		speed				-5
+		rotspeed			7
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -20
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -20
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -90
+			max_azimuth 20
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -90
+			max_azimuth 20
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -20
+			max_inclination 90
+		}
+
+	}
+}

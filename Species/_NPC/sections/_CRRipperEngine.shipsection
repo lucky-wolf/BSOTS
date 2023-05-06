@@ -1,0 +1,85 @@
+shipsection
+{
+	nodesign 1
+	model Species/_NPC/art/sections/Ripper_engine.X
+	dam_model Species/_NPC/art/sections_dam/RipperEngine.X
+	socket_fore EngineNode
+	dam_socket_fore EngineNode
+	section_type engine
+	section_class Cruiser
+	crew false
+
+	health 8600
+	mass 5500
+	cost 35000
+	cpoints 2200
+	ftlspeed 13
+	range	20
+
+	option 	IND_PlyAlloy
+	option	IND_RefCoat
+
+	engine_sound		Sounds/Ships/Shared/DEAM_thrust_slaver.wav
+	engine_idle_sound	Sounds/Ships/Shared/DEAM_idle.wav
+	engine_sound_minrange 85
+
+
+	netforcelimits
+		{
+		force_forward		50000
+		force_right			50000
+		force_up			50000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				100
+		rotspeed			5
+	}
+
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Ripper_bem_neut.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -130
+			max_azimuth 130
+			min_inclination 0
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Ripper_guass_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+}
+

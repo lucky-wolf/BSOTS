@@ -1,0 +1,94 @@
+weapon
+{
+	name						@WEAPON_TRP_PLASMA
+
+	weaponclass					torpedo
+	weaponfamily				torpedo
+	weapondamagetype			trackingtorpedo
+
+	turretclass					torpedo
+	turretsize					large
+
+	requires					WEP_PlsmTrp
+	cost						10000
+
+	solution_tolerance			90
+	burst_volleys				1
+	recharge_time				30
+
+	muzzle_speed				240
+	muzzle_effect				effects/PlasmaTorpedo_muzzle.effect
+	muzzle_sound				Sounds/Weapons/trp_plasma_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Torpedos.tga
+	icon_rect					"0 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	range						3200		// 2/3 of actual maximum
+	range_planet				3200
+
+	torpedo
+	{
+		tracking						true
+		plasma							true
+
+		beam_origin						-3
+		beam_length						5.5
+
+		effect							effects/PlasmaTorpedo_bullet.effect
+
+		impact_effect					effects/PlasmaTorpedo_impact.effect
+		impact_sound					Sounds/Weapons/trp_plasma_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/trp_plasma_travel.wav
+		thrust_sound_minrange			20
+
+		rangetable
+		{
+			pb_range		480		// spd * 2
+			pb_range_dev	2
+			pb_range_dam	300
+
+			eff_range		1440	// spd * 6
+			eff_range_dev	2
+			eff_range_dam	600
+
+			max_range		4800	// max range
+			max_range_dev	3
+			max_range_dam	900
+		}
+
+		health							600		// eff_range_dam
+		dam_radius						0
+		mass							150
+		dumbfire_period					0.5
+
+		speed							240
+		ttl								20		// range = 4800m
+
+		seek_attenuation				2		// Higher number = tighter turns/faster accel
+
+		dam_pop							21600
+		dam_infra						0.000114
+		dam_terra						0.0000095
+	}
+
+	dam_est			200
+
+	rating_frate	1
+	rating_dam		5
+	rating_acc		10
+	rating_range	10
+}

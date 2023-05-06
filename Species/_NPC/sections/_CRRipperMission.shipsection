@@ -1,0 +1,155 @@
+shipsection
+{
+	nodesign 1
+	model Species/_NPC/art/sections/Ripper_mission.X
+	dam_model Species/_NPC/art/sections_dam/RipperMission.X
+	socket_aft EngineNode
+	socket_fore CommandNode
+	dam_socket_aft EngineNode
+	dam_socket_fore CommandNode
+	section_type mission
+	section_class cruiser
+	crew false
+	health 7000
+	mass 6500
+	cost 14000
+	cpoints 2800
+	preview_ofs "16 10 4"
+
+	option 	IND_PlyAlloy
+	option	IND_RefCoat
+
+	netforcelimits
+	{
+		force_forward			0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch			0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/RipperMedium_bal_drv_mass.weapon"
+		turretclass standard
+		turretsize Medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Ripper_guass_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Ripper_guass_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Ripper_guass_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode06
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Ripper_brd_shuttle.weapon"
+		turretclass prisonershuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+}
+

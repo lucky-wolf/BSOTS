@@ -1,0 +1,83 @@
+weapon
+{
+	name		@WEAPON_NPC_HERALD_CAN_HVYFUS
+	weaponclass	energy
+	weaponfamily	energycannon
+	model1		""
+	model2		""
+	model3		""
+	turretmodel1 ""
+	turretmodel2 ""
+	turretmodel3 ""
+	requires 	WEP_HvyFCan
+	hpbonus		210
+	cost		6500
+	turretsize		Large
+	turretclass		standard
+	burst_volleys	3
+	volley_period	.1
+	recharge_time	5
+	muzzle_speed	450
+	munitionsize	medium
+
+	muzzle_sound	Sounds/Weapons/can_plasma_muzzle.wav
+	muzzle_sound_minrange	100
+	muzzle_effect	effects/HeavyFusionCannon_muzzle.effect
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"32 224 32 32"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range 1600
+	range_planet 1600
+		
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+
+		impact_sound	Sounds/Weapons/can_fusion_impact.wav
+		impact_sound_minrange	100
+		impact_effect	effects/HeavyFusionCannon_Impact.effect
+
+		expire_effect   "effects/FusionCannon_Expire.effect"
+
+		thrust_sound	Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange	15
+		
+		rangetable
+		{
+			pb_range	650
+			pb_range_dev	2
+			pb_range_dam	100
+
+			eff_range	1100
+			eff_range_dev	2
+			eff_range_dam	250
+
+			max_range	1600
+			max_range_dev	1.5
+			max_range_dam	120
+		}
+
+		effect		effects/FusionCannon_Bullet.effect
+
+		dam_pop		150000
+		dam_infra	.0002	
+		dam_terra	0.0002
+	}
+	
+	dam_est		350
+
+	rating_frate	6
+	rating_dam	6
+	rating_acc	6
+	rating_range	7
+}

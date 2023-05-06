@@ -1,0 +1,84 @@
+weapon
+{
+	name						@WEAPON_LAS_PD_2
+
+	weaponclass					laser
+	weaponfamily				laser
+
+	model1						""						// insert barrel model for tiny mounts here if we get them
+	model2						barrel_pdlaser.X		// NOTE: model2 for tiny pd weapons in small mounts
+
+	turretclass					standard
+	turretsize					tiny
+
+	requires					WEP_PDLas
+	requires					WEP_xrylas
+
+	cost						900
+
+	trackspeed_mod				1.5						// 50% faster tracking rate for 2nd tier
+	burst_volleys				2
+	volley_period				0.01
+	recharge_time				1.5						// laser & pulsed phaser = 1.5, ballistic = 2.0, beamer & phaser = 2.5, emitter = 3.0
+
+	muzzle_speed				1500
+	muzzle_effect				effects/XRL_muzzle.effect
+	muzzle_sound				Sounds/Weapons/las_pd_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Lasers.tga
+	icon_rect					"128 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				false
+	fc_holdsfire				false
+
+	range						800
+	range_planet				0
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		effect							effects/XRayLaser_bullet.effect
+		impact_effect					effects/redlaserimpact.effect
+		impact_sound					Sounds/Weapons/las_pd_impact.wav
+		impact_sound_minrange			25
+
+		rangetable
+		{
+			pb_range		400
+			pb_range_dev	.05
+			pb_range_dam	18
+
+			eff_range		600
+			eff_range_dev	.1
+			eff_range_dam	15			// 15 * 3 / 1.5 ~= 30dps (15 / bolt)
+
+			max_range		800
+			max_range_dev	.15
+			max_range_dam	12
+		}
+
+		ricochet_mod					-1.5
+		ricochet_sound					Sounds/Weapons/las_pd_rico.wav
+		ricochet_sound_minrange			10
+
+		dam_pop							0
+		dam_infra						0
+		dam_terra						0
+	}
+
+	dam_est			0		// PD always zero
+
+	rating_frate	9
+	rating_dam		3
+	rating_acc		9
+	rating_range	3
+}

@@ -1,0 +1,84 @@
+weapon
+{
+	name						@WEAPON_DSR_BOLT_DUAL
+
+	weaponclass					disruptor
+	weaponfamily				energycannon
+
+	model1						barrel_m1_inertial.x
+	turretmodel1				turret_m2standard.x
+	model2						barrel_m1_inertial.x
+	turretmodel2				turret_m2standard.x
+
+	turretclass					standard // missile stops them from being in strafe and drone, but restricts azimuth and turret speed :'(
+	turretsize					medium
+
+	burst_volleys				1
+	recharge_time				6.67				// 1.33x
+
+	requires					WEP_DualDsrCan
+	cost						6000				// 3x
+
+	muzzle_speed				500
+	muzzle_sound				Sounds/Weapons/trp_disruptor_impact.wav
+	muzzle_sound_minrange		100
+	muzzle_effect				effects/PlasmaTorpedo_muzzle.effect
+
+	icon_file					GUI/Weapons/EMP.tga
+	icon_rect					"128 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						650
+	range_planet				1000
+
+	bolt
+	{
+		disruptor						true
+
+		beam_origin						-0.5
+		beam_length						5.5
+
+		effect							effects/Disruptor_bullet.effect
+		impact_effect					effects/Disruptor_impact.effect
+
+		impact_sound					Sounds/Weapons/trp_disruptor_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/trp_disruptor_travel.wav
+		thrust_sound_minrange			15
+
+		rangetable
+		{
+			pb_range		200
+			pb_range_dev	1
+			pb_range_dam	100
+
+			eff_range		400
+			eff_range_dev	2
+			eff_range_dam	100
+
+			max_range		650
+			max_range_dev	3
+			max_range_dam	66
+		}
+
+		dam_pop							66
+		dam_infra						0.000114
+		dam_terra						0
+	}
+
+	dam_est			90
+
+	rating_frate	6
+	rating_dam		3
+	rating_acc		5
+	rating_range	3
+}

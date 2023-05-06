@@ -1,0 +1,6 @@
+shipsection
+{
+	// we are required to have turret shipsection files in order to allow mars.exe
+	// to lookup and use the label "small" or etc. in the turret icon in the techtree
+	nodesign 1	// not registered with section dictionary
+}

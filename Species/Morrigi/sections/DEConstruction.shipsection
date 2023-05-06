@@ -1,0 +1,40 @@
+shipsection
+{
+	model Species/Morrigi/art/sections/DnConstruction.X
+	preview_ofs "-70 -930 0"
+
+	section_type mission
+	section_class destroyer
+
+	requires IND_DSCon
+
+	health					8000
+	mass 					19000
+	cost 					115000
+	maintenance_cost		2500
+	cpoints 				12800
+	crew 					0
+
+	command_cost 			0
+	construction_capacity	16350
+	autonomous 				true	// actually means this is a ship with only a mission section
+	huge 					1		// huge ship (larger than normal for ship class) gets placed above the plane in combat
+	ftlspeed 				2
+	range					7
+
+	option	DRV_RecFiss
+
+	netforcelimits
+	{
+		force_forward		43000
+		force_right			43000
+		force_up			43000
+
+		torque_yaw			2e+8
+		torque_pitch		2e+8
+		torque_roll			2e+8
+
+		speed				64.2125
+		rotspeed			45
+	}
+}

@@ -1,0 +1,1095 @@
+shipsection
+{
+	model "Species/_NPC/art/sections/Trog.X"
+	section_type mission
+	section_class Dreadnought
+	health 140000
+	mass 3e+5
+	cost 1000000
+	cpoints 50000
+	scanrange 6
+	tacticalsensorrange 6000
+	engine_sound Sounds/Ships/Shared/ortgay_engine.wav
+	engine_sound_minrange 185
+	autonomous true	// actually means this is a ship with only a mission section
+	node_cannon_fling 0
+	crew 0
+	death_effect effects/Locust_death.effect
+	split_traffic_volume "false"
+
+	requires CCC_QntChaf
+	requires CCC_AdvSens
+
+	entity_class "Ortgay"
+
+	death_effect "effects/Ort_Death.effect"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	ftlspeed	10
+	range		1e+20	// Huge range
+
+	command_cost 0
+	maintenance_cost 0
+
+	option	IND_MagLat
+	option	IND_RefCoat
+
+	netforcelimits
+	{
+		force_forward 2e+7
+		force_right   2e+7
+		force_up      2e+7
+
+		torque_yaw    2e+11
+		torque_pitch  2e+11
+		torque_roll   2e+11
+
+		speed         95
+		rotspeed      40
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatReady"
+		start_frame "0"
+		speed_scale "1"
+		loop "1"
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatRest"
+		start_frame "end"
+		speed_scale "-1"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_disintegrator.weapon"
+
+		mount
+		{
+			node disintegrator01
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_disintegrator.weapon"
+		invincible true
+
+		mount
+		{
+			node disintegrator02
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_hvyemitter.weapon"
+
+		mount
+		{
+			node hvyemitternode01
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node hvyemitternode02
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node hvyemitternode03
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node hvyemitternode04
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_hvyemitter.weapon"
+
+		mount
+		{
+			node hvyemitternode05
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node hvyemitternode06
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node hvyemitternode07
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node hvyemitternode08
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_hvyemitter.weapon"
+
+		mount
+		{
+			node hvyemitternode09
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node hvyemitternode10
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node hvyemitternode11
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node hvyemitternode12
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_hvyemitter.weapon"
+
+		mount
+		{
+			node hvyemitternode13
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node hvyemitternode14
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node hvyemitternode15
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node hvyemitternode16
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_hvyemitter.weapon"
+
+		mount
+		{
+			node hvyemitternode17
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node hvyemitternode18
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node hvyemitternode19
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node hvyemitternode20
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -5
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_EMPcannon.weapon"
+
+		mount
+		{
+			node EMPnode01
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -20
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node EMPnode02
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -20
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_EMPcannon.weapon"
+
+		mount
+		{
+			node EMPnode03
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -20
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node EMPnode04
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -20
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_EMPcannon.weapon"
+
+		mount
+		{
+			node EMPnode05
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -20
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node EMPnode06
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -20
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_EMPcannon.weapon"
+
+		mount
+		{
+			node EMPnode07
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -20
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node EMPnode08
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -20
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_EMPcannon.weapon"
+
+		mount
+		{
+			node EMPnode09
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -20
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node EMPnode10
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -20
+			max_inclination 80
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/ortgay_meson.weapon"
+
+		mount
+		{
+			node mesonnode01
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination 0
+			max_inclination 15
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node mesonnode02
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination 0
+			max_inclination 15
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node mesonnode03
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination 0
+			max_inclination 15
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node mesonnode04
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination 0
+			max_inclination 15
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node mesonnode05
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination 0
+			max_inclination 15
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+		weapon "Species/_NPC/weapons/ortgay_meson.weapon"
+
+		mount
+		{
+			node mesonnode06
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination 0
+			max_inclination 15
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node mesonnode07
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination 0
+			max_inclination 15
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node mesonnode08
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination 0
+			max_inclination 15
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node mesonnode09
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination 0
+			max_inclination 15
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node mesonnode10
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination 0
+			max_inclination 15
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_projector.weapon"
+
+		mount
+		{
+			node projectornode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node projectornode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_projector.weapon"
+
+		mount
+		{
+			node projectornode03
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node projectornode04
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_projector.weapon"
+
+		mount
+		{
+			node projectornode05
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node projectornode06
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_projector.weapon"
+
+		mount
+		{
+			node projectornode07
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node projectornode08
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_projector.weapon"
+
+		mount
+		{
+			node projectornode09
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+
+		mount
+		{
+			node projectornode10
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_shield.weapon"
+
+		mount
+		{
+			node shieldnode01
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node shieldnode02
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_shield.weapon"
+
+		mount
+		{
+			node shieldnode03
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node shieldnode04
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_shield.weapon"
+
+		mount
+		{
+			node shieldnode05
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node shieldnode06
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_shield.weapon"
+
+		mount
+		{
+			node shieldnode07
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node shieldnode08
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_shield.weapon"
+
+		mount
+		{
+			node shieldnode09
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node shieldnode10
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_shield.weapon"
+
+		mount
+		{
+			node shieldnode11
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node shieldnode12
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_shield.weapon"
+
+		mount
+		{
+			node shieldnode13
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node shieldnode14
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_shield.weapon"
+
+		mount
+		{
+			node shieldnode15
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node shieldnode16
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_shield.weapon"
+
+		mount
+		{
+			node shieldnode17
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node shieldnode18
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/ortgay_shield.weapon"
+
+		mount
+		{
+			node shieldnode19
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+
+		mount
+		{
+			node shieldnode20
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -10
+			max_inclination 10
+			home_azimuth 0
+			home_inclination 0
+		}
+	}
+
+
+}

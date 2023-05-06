@@ -1,0 +1,79 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/CruiserPropaganda.X
+	dam_model				Species/Tarkas/art/sections/CruiserPropaganda.X
+	section_type			mission
+	section_class			cruiser
+	preview_ofs				"0 0 1"
+
+	requires				DRV_Fusn
+	requires				CCC_FTLBrdB
+
+	health					7200
+	mass					43000
+	cost					452000
+	maintenance_cost		3000
+	cpoints					31680
+
+	propaganda 1
+	autonomous				true	// actually means this is a ship with only a mission section
+
+	ftlspeed				2.0
+	range					8
+	crew						35
+	preview_ofs				"0 -100 0"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option	DRV_PlsmFoc
+
+	netforcelimits
+	{
+		force_forward		80000
+		force_right			80000
+		force_up			80000
+
+		torque_yaw			4.5e+8
+		torque_pitch		4.5e+8
+		torque_roll			4.5e+8
+
+		speed				91.7125
+		rotspeed			45
+	}
+
+	thruster
+	{
+		node EngineNode01
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+	thruster
+	{
+		node EngineNode02
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+	thruster
+	{
+		node EngineNode03
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+}

@@ -1,0 +1,126 @@
+shipsection
+{
+	model Species/Zuul/art/sections/DNStationCommand.X
+	dam_model Species/zuul/art/sections_dam/DNStationCommand.x
+	section_type mission
+	section_class dreadnought
+	Socket_Aft Engine
+	Socket_Fore Command
+	dam_socket_aft Engine
+	dam_socket_fore Command
+
+	requires		"IND_CmdStn"
+
+	health				19200
+	mass				100000
+	cost				300000
+	maintenance_cost	10000
+	cpoints				22400
+	crew				100
+	entity_class		"Station"
+	design_class		station
+
+	station			command
+	command_quota	46
+
+	explicit_command_section "DNStationCommand_Fore"
+	explicit_engine_section "DNStationCommand_Aft"
+
+	preview_ofs "-60 -400 -50"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+//	requires		CCC_AdvSens		// specifying any of these makes it mutually exclusive with sensor stations
+//	scanrange 10				// force deepscan, but don't require advanced sensors (otherwise delays this too much)
+//	tacticalsensorrange 6700	// same as CR DS
+
+	option	IND_PredGun
+
+	netforcelimits
+	{
+		force_forward		1e+9
+		force_right			1e+9
+		force_up			1e+9
+
+		torque_yaw			1e+9
+		torque_pitch		1e+9
+		torque_roll			1e+9
+
+		speed				30
+		rotspeed			6
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightgunnode07
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightgunnode08
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightgunnode09
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightgunnode10
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightgunnode11
+			min_azimuth -30
+			max_azimuth 100
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Large
+
+		mount
+		{
+			node HeavyGunNode03
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+}
+

@@ -1,0 +1,59 @@
+weapon
+{
+	name						@WEAPON_BEM_GRAV_DUAL
+
+	weaponclass					tractorbeam		// it is a tbeam, not typo
+
+	model1						barrel_l2_inertial.x
+
+	turretclass					standard // missile stops them from being in strafe and drone, but restricts azimuth and turret speed :'(
+	turretsize					large
+
+	requires					WEP_DualGravBm
+	cost						36000			// 3x
+
+	burst_volleys				1
+	volley_period				5
+	volley_duration				4
+	recharge_time				13				// 1.33
+
+	muzzle_effect				effects/MesonBeam_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_graviton_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beams-2.tga
+	icon_rect					"192 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1000
+	range_planet				1000
+
+	beam
+	{
+		impact_effect					effects/MesonBeam_impact.effect
+		impact_sound					Sounds/Weapons/bem_graviton_impact.wav
+		impact_sound_minrange			75
+		effect							effects/GravitonBeam_Bullet.effect
+		dam								350
+		force							2000
+
+		dam_pop							328125
+		dam_infra						0.01125
+		dam_terra						0.000094
+	}
+
+	dam_est			450
+
+	rating_frate	3
+	rating_dam		9
+	rating_acc		10
+	rating_range	4
+}

@@ -1,0 +1,112 @@
+shipsection
+{
+	model					Species/Morrigi/art/sections/DestroyerStrafe.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			destroyer
+
+	health					480
+	mass					1050
+	cost					5520
+	maintenance_cost		300
+	cpoints					1952
+
+	requires				IND_DEStrafe
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			2.5e+7
+		torque_pitch		2.4e+7
+		torque_roll			2.5e+7
+
+		speed				0
+		rotspeed			75
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatReady"
+		start_frame "0"
+		speed_scale "2"
+		loop "1"
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatRest"
+		start_frame "end"
+		speed_scale "-2"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass strafe
+		turretsize small
+		showturrets false
+
+		mount
+		{
+			node lightgunnode01
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node lightgunnode02
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node lightgunnode03
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node lightgunnode04
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+	}
+}

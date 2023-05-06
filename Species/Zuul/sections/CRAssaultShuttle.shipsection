@@ -1,0 +1,154 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/CruiserAssaultShuttle.X
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+
+	requires				IND_CRInvasion
+
+	health					3840
+	mass					6000
+	cost					60000
+	maintenance_cost		3000
+	cpoints					4560
+	crew					55
+
+	preview_ofs				"1 -50 2"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-20
+		rotspeed			-10
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node mediumgunnode01
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node Shuttle01
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node Shuttle02
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node Shuttle03
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node Shuttle04
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node Shuttle05
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node Shuttle06
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node mediumgunnode02
+			min_azimuth -10
+			max_azimuth 110
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+}
+

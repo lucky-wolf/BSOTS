@@ -1,0 +1,14 @@
+3.0:
+
+Weapons
+	Made some small ealry weapons available w/o any of the combat construction techs (so you can get them for scouts, if you wish)
+		Autocannon
+		Light Emitter
+		Small Missiles
+		Plasma Cannon
+
+	Autocannon line now doesn't require medium drivers or heavy drivers (you can research them directly)
+	Reinforced hulls now requires antimatter (to give standard armors more a day in the sun - rather than immediately having access to reinforced hulls)
+	Large Combat tech costs as much as Fusion
+	Mega Combat tech costs as much as Antimatter
+		

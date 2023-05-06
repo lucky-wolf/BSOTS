@@ -1,0 +1,81 @@
+weapon
+{
+	name						@WEAPON_CAN_FUS_TRIPLE
+
+	weaponclass					energy
+	weaponfamily				energycannon
+
+	model1						barrel_l3_heavydriver.x
+	turretmodel1				turret_l1standard.x
+
+	turretclass					projector
+	turretsize					large
+
+	requires					WEP_DualFusCan
+	cost						9000	// 3x
+
+	burst_volleys				1
+	recharge_time				8		// 1.33
+
+	muzzle_speed				600
+	muzzle_effect				effects/FusionCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/can_fusion_muzzle.wav
+	muzzle_sound_minrange		600
+
+	icon_file					GUI/Weapons/EnergyCannons.tga
+	icon_rect					"192 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						2500
+	range_planet				2500
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/FusionCannon_Bullet.effect
+		impact_effect					effects/FusionCannon_Impact.effect
+		expire_effect					effects/FusionCannon_Expire.effect
+
+		impact_sound					Sounds/Weapons/can_fusion_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange			15
+
+		rangetable
+		{
+			pb_range		500		// 20% of range
+			pb_range_dev	3
+			pb_range_dam	150
+
+			eff_range		1750	// 70% of range
+			eff_range_dev	4
+			eff_range_dam	250
+
+			max_range		2500
+			max_range_dev	5
+			max_range_dam	150
+		}
+
+		dam_pop							8202
+		dam_infra						0.000114
+		dam_terra						0.000019
+	}
+
+	dam_est			650
+
+	rating_frate	5
+	rating_dam		8
+	rating_acc		3
+	rating_range	7
+}

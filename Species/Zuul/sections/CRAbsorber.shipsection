@@ -1,0 +1,124 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/Cruiserabsorber.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					3200
+	mass					4200
+	cost					70000
+	maintenance_cost		3000
+	cpoints					1728
+	crew					6
+
+	requires				SLD_ErgAb
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			6.2e+8
+		torque_pitch		6.2e+8
+		torque_roll			6.2e+8
+
+		speed				0
+		rotspeed			50
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -150
+			max_azimuth 45
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -150
+			max_azimuth 45
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -45
+			max_azimuth 150
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -45
+			max_azimuth 150
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode05
+			min_azimuth -75
+			max_azimuth 150
+			min_inclination -90
+			max_inclination 5
+		}
+
+		mount
+		{
+			node MediumGunNode06
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -5
+			max_inclination 90
+		}
+	}
+}

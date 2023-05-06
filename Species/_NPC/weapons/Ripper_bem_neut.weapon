@@ -1,0 +1,46 @@
+weapon
+{
+	name		@WEAPON_NPC_SLAVER_BEM_NEUT
+	weaponclass	beam
+	model1		"Species/_NPC/art/weapons/Ripperbarrel_l1standard.X"
+	turretmodel1	"Species/_NPC/art/weapons/Ripperturret_l1standard.X"
+	requires 	WEP_NeutBm
+	hpbonus		200
+	cost		6000
+	turretsize		large
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	2
+	recharge_time	9
+	muzzle_effect	effects/Neutronbeam_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bem_neutron_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"0 64 32 32"
+
+	range 700
+	range_planet 850
+			
+	beam
+	{
+		impact_effect	effects/Neutronbeam_impact.effect
+		impact_sound	Sounds/Weapons/bem_neutron_impact.wav
+		impact_sound_minrange	75
+		effect		effects/Neutronbeam_Bullet.effect
+		dam			250
+		force		0
+
+		dam_pop		200000
+		dam_infra	.0005	
+		dam_terra	0
+	}
+
+	rating_frate	4
+	rating_dam	7
+	rating_acc	9
+	rating_range	6
+
+	dam_est		300
+
+}

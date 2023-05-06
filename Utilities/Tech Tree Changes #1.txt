@@ -1,0 +1,392 @@
+BSOTS 2.0
+
+Turrets / Barrels
+*gatling come from ACM chainbl / chainbl2 which were medium & large, respectively
+
+
+Cost Rules (of thumb - the tech trees aren't organized consistently, so the prices cannot be consistent either, not across trees)
+
+Dual Small = 2x cost of base weapon
+Dual Medium = 2.5x
+Dual Large = 3x
+Upgrade dual to same size = new cost - old cost
+Polarized = 1.5x
+Heavy Cannon = 1.5x
+Projector = 2x
+
+
+Weapon costs:
+heavy = 5x
+dual = 3x
+specialization = 1x
+
+
+AP & Polarized Plasma:
+ricochet = -1.5, -2.0, -2.5
+
+F-Rate (Cycle Time) - Standard Weapons
+<= 1	10
+<= 3	9
+<= 5	8
+<= 6	7
+<= 7	6
+<= 8	5
+<= 10	4
+<= 12	3
+<= 20	2
+>  20	1
+
+Damage Table (dps) - Medium
+>  110	10
+>= 100	9
+>= 90	8
+>= 80	7
+>= 60	6
+>= 50	5
+>= 40	4
+>= 30	3
+>= 20	2
+<  20	1
+
+Damage Table (dps) - Large
+>  200	10
+>= 180	9
+>= 160	8
+>= 140	7
+>= 120	6
+>= 100	5
+>= 80	4
+>= 60	3
+>= 40	2
+<  40	1
+
+Damage Table (dps) - Projector
+>  200	10
+<= 
+<= 
+<= 
+<= 
+<= 
+<= 
+<= 
+<= 
+<= 
+
+Accuracy Table
+<= 0.1	10
+<= 0.5	9
+<= 1.0	8
+<= 1.5	7
+<= 2.0	6
+<= 2.5	5
+<= 3.0	4
+<= 4.0	3
+<= 6.0	2
+>  6.0  1
+
+Range Table
+>  3000	10
+<= 3000	9
+<= 2300	8
+<= 1750	7
+<= 1450	6
+<= 1250 5
+<= 1050	4
+<= 850	3
+<= 550	2
+<= 350	1
+
+		
+Star Drives
+	NO CHANGEES!  :D
+	
+Missiles & Mines (Warhead)
+	Added new techs:
+		WEP_AMLeapMine		AntimatterLeapMine			Antimatter Leap Mine			mine
+		WEP_AMClkMine		AntimatterCloakMine			Antimatter Cloak Mine			mine
+		WEP_DualMsl			DualMissileRacks			Dual Missile Racks				dual-medium
+		WEP_DualHvyMsl		DualHeavyRacks				Dual Heavy Missile Racks		dual-large
+	Added links:
+		WEP_AmWhd -> WEP_AmMine
+		WEP_FusMine -> WEP_ClkMine
+	Deleted links:
+		DRV_McroFus -> WEP_LpMine
+
+Shield Technology
+	Moderately Rearranged
+	Deleted links:
+		SLD_MkOne -> WEP_ShldDrvr
+		SLD_Clk -> WEP_ClkMine
+		SLD_ImpClk -> WEP_ClkMine
+	Added techs:
+		SLD_Tech		Shield Technology
+	Split Shields into Strong/Slow, and Quick/Weak
+		Mk1+M2 are Quick/Weak, Mk3+M4 are Slow/Strong
+
+Power Technology Tree
+	Mild-moderate changes, especially above antimatter to account for shield changes
+	Added links:
+		DRV_SmlFus -> DRV_McroFus
+		DRV_McroFus -> DRV_IncThrst
+	Deleted links:
+		DRV_AntiMat -> IND_TrctBm
+
+Torpedo Technology
+	Small changes relating to new disruptor based weapons off of Disruptor Torpedo
+	New Techs:
+		WEP_HvyDsr			HeavyDisruptor				Heavy Disruptor					large
+		WEP_DsrCan			DisruptorCannon				Disruptor Cannon				medium
+		WEP_HvyDsrCan		HeavyDisruptorCannon		Heavy Disruptor Cannon			large 3x shot
+		
+Energy Weapons Tree
+	Significant changes - mostly squeezing in Dual Mounts in  Energy Cannons, Beamers, and Lasers / Phasers
+	Added new techs:
+		WEP_DualPlsmCan		DualPlasmaCannon			Dual Plasma Cannon				dual medium
+		WEP_DualFusCan		DualFusionCannon			Dual Fusion Cannon				dual medium
+		WEP_DualAmCan		DualAntimatterCannon 		Dual Antimatter Cannon			dual medium
+		WEP_EmtPrj			EmitterProjector			Emitter Projector				projector
+		WEP_DualBmr			DualBeamer					Dual UV Beamers					dual small
+		WEP_DualAdvBmr		DualAdvancedBeamer			Dual X-ray Beamers 				dual small
+		WEP_DualLas			DualLaser					Dual UV Lasers					dual small
+		WEP_DualAdvLas		DualAdvancedLaser			Dual X-ray Lasers				dual small
+		WEP_DualPhas		DualPhaser					Dual Phasers					dual small
+		WEP_DualHvyPhas		DualHeavyPhaser				Dual Heavy Phasers				dual medium
+		WEP_DualPlsPhas		DualPulsedPhaser			Dual Pulsed Phasers				dual small
+		WEP_DualHvyPlsPhas	DualHeavyPulsedPhaser		Dual Heavy Pulsed Phasers		dual medium
+
+Ballistic Weapons Tree
+	Massively Rearranged / Total Overhaul
+	Added new techs:
+		WEP_PDShotgun		gauss-shotgun-pd			Gauss Shotgun Point-Defense		tiny
+		WEP_APGauss			ap-gauss					Armor Piercing Gauss			small
+		WEP_DualGauss		DualGaussDriver				Dual Gauss Drivers				dual small
+		WEP_SldBrstr		ShieldBurster				Shield Bursters					large - a burster with shield breaker submunitions
+		WEP_APMasDrvr		ap-driver					Armor Piercing Mass Driver 		medium
+		WEP_SnpMasDrvr		sniper_driver				Mass Sniper Cannon				medium
+		WEP_DualMasDrvr		DualMassDriver				Dual Mass Drivers				dual medium
+		WEP_APHvyDrvr		ap-heavy					Armor Piercing Heavy Driver		large
+		WEP_SnpHvyDrvr		sniper_heavy				Heavy Sniper Cannon				large
+		WEP_DualHvyDrvr		DualHeavyDriver				Dual Heavy Drivers				dual large
+		WEP_TriHvyDrvr		TripleHeavyDriver			Triple Heavy Drivers			triple large
+		WEP_LtAutCan		LightAutocannon				Light Autocannon				small
+		WEP_AutCan			Autocannon					Medium Autocannon				medium
+		WEP_HvyAutCan		HeavyAutocannon				Heavy Autocannon				heavy
+		WEP_DualSmlAutCan	DualLightAutocannon			Dual Light Autocannon			dual small
+		WEP_DualAutCan		DualAutocannon				Dual Autocannon					dual medium
+		WEP_DualHvyAutCan	DualHeavyAutocannon			Dual Heavy Autocannon			dual heavy
+		WEP_HugeStrmDrvr	HugeStomers					Huge Stormers					projector
+		WEP_APHugeStrmDrvr	ap_huge_stormers			Armor Piercing Huge Stormers	projector
+			
+Communications (C3)
+	Mostly moved the CNC techs to Automation (DRN) tree
+	Reorganized the spy/sensor/economy techs that remained
+
+Xenotech
+	NO CHANGES!!!
+		
+Industrial Tree
+	Massively Rearranged
+	Moved Salvage to connect to Zero-G Construction, allowing it earlier in game, to facilitate DE repair ships
+		IND_Decon -> IND_SlvgTech
+	Cruisers are an optional tech - a branch from Orbital dry docks
+	Moved Hardened Electronics here from C3 (IND_HrdElec)
+	Moved Siege drivers here from ballistic (WEP_SgeDrvr)
+	Deleted links:
+		IND_MagLat -> IND_EleNans
+		IND_GravCon -> WEP_GrvMine
+		IND_GravCon -> WEP_ThmpDrvr
+		IND_MsMine -> IND_AtProc
+	Reorganized in various ways
+	New techs:
+		IND_DEConstr	(Combat) Destroyer Construction
+		IND_DEWarEng	DE War Engineering (allows war section)
+		IND_DEStrafe	DE Strafe Mounts
+		IND_DEHmrHead	DE Hammer Head
+		IND_DEInvasion	DE Planetary Invasion
+		IND_CRWarEng	CR War Engineering (allows war section)
+		IND_CRStrafe	CR Strafe Mounts
+		IND_CRHmrHead	CR Hammer Head
+		IND_CRInvasion	CR Planetary Invasion
+		IND_DNWarEng	DN War Engineering (allows war section)
+		IND_CmdStn		Command Station
+		IND_ShipYard	Ship Yard
+		IND_HabStn		Habitat Station
+		IND_SenStn		Sensor Station
+		IND_TradeStn	Trade Station
+		IND_SciStn		Science Station
+
+Biological tree
+	Rearranged a bit to make it look nicer
+	Added links:
+		BIO_AtmoAd->BIO_SpndAni
+		BIO_EnvTail->BIO_SpndAni
+		
+Automation (Drone)
+	Moderately Rearranged, mostly to move the CNC here
+	Moved CNC techs from C3 to here:
+		CCC_AdvCnC		Holographic Command Interface
+		CCC_BtlCmp		CnC Algorithms
+		CCC_DatSyn		Improved CnC
+		CCC_CmbtAlg		Resonant Algorithms
+		CCC_ArmCom		Advanced CnC
+		CCC_HoloTac		Holographic Algorithms
+	Added new techs:
+		DRN_Assault		Assault Drones (Mini-Torpedo)
+		DRN_Mine		Mine-Laying Drones
+
+------------------------------------------------------------------------------------------------
+------------------------ TECH ID CHANGES AND ASSOCIATED ICONS AND FILES ------------------------
+------------------------------------------------------------------------------------------------
+		
+Deleted Techs:
+	IND_OrbCom			replaced by the six (6) individual techs, one per station type
+	WEP_APRtech			replaced by the three (3) individual AP techs (gauss, mass, and heavy), plus the three (3) AP-stormers
+	IND_Invasion		replaced by IND_DEInvasion, and IND_CRInvasion
+		
+Repurposed Techs:
+	-ID-				-Icon-				-Name-							-Notes-
+	IND_PlyAlloy		PolysilicateAlloy	Deflecting Armor				+ deflect ballistic attacks
+	IND_MagLat			MagnoCeramic		Improved Deflecting Armor		++ deflect ballistic attacks
+	IND_QrkRes			Quark				Reinforced Hull				 	+ hull strength
+	IND_AdmAly			Adamantite			Improved Reinforced Hull		++ hull strength
+	SLD_MkOne			ShieldsLight1		Light Shields					Fast regeneration + low strength shield
+	SLD_MkTwo			ShieldsLight2		Improved Light Shields			Improved fast regeneration + low strength shield
+	SLD_MkThree			ShieldsHeavy1		Heavy Shields					Strong shield + slow regeneration
+	SLD_MkFour			ShieldsHeavy2		Improved Heaavy Shields			Improved strong shield + slow regeneration
+
+New Techs:
+	-ID-				-Icon-						-Name-							-Notes-
+	WEP_AMLeapMine		AntimatterLeapMine			Antimatter Leap Mine			mine
+		filename  "Weapons/min_amleap.weapon"
+	WEP_AMClkMine		AntimatterCloakMine			Antimatter Cloak Mine			mine
+		filename  "Weapons/min_amcloak.weapon"
+
+	WEP_DualMsl			DualMissileRacks			Dual Missile Racks				dual-medium
+		filename  "Weapons/mis_dual.weapon"
+	WEP_DualHvyMsl		DualHeavyRacks				Dual Heavy Missile Racks		dual-large
+		filename  "Weapons/mis_dual_hvy.weapon"
+
+	SLD_Tech			ShieldTech					Shield Technology				placeholder/root of shield tree (for visual balance)
+
+	WEP_HvyDsr			HeavyDisruptor				Heavy Disruptor					large
+		filename  "Weapons/dsr_bolt_heavy.weapon"
+	WEP_DsrCan			DisruptorCannon				Disruptor Cannon				medium
+		filename  "Weapons/dsr_bolt.weapon"
+	WEP_HvyDsrCan		HeavyDisruptorCannon		Heavy Disruptor Cannon			large 3x shot
+		filename  "Weapons/dsr_heavy_cannon.weapon"
+
+	WEP_DualPlsmCan		DualPlasmaCannon			Dual Plasma Cannon				dual medium
+		filename  "Weapons/can_plasma_dual.weapon"
+	WEP_DualFusCan		DualFusionCannon			Dual Fusion Cannon				dual medium
+		filename  "Weapons/can_fusion_dual.weapon"
+	WEP_DualAmCan		DualAntimatterCannon 		Dual Antimatter Cannon			dual medium
+		filename  "Weapons/can_antimatter_dual.weapon"
+
+	WEP_EmtPrj			EmitterProjector			Emitter Projector				projector
+		filename  "Weapons/emt_proj.weapon"
+
+	WEP_DualBmr			DualBeamer					Dual UV Beamers					dual small
+		filename  "Weapons/bem_UV_dual.weapon"
+	WEP_DualAdvBmr		DualAdvancedBeamer			Dual X-ray Beamers 				dual small
+		filename  "Weapons/bem_xray_dual.weapon"
+	WEP_DualLas			DualLaser					Dual UV Lasers					dual small
+		filename  "Weapons/las_UV_dual.weapon"
+	WEP_DualAdvLas		DualAdvancedLaser			Dual X-ray Lasers				dual small
+		filename  "Weapons/las_xray_dual.weapon"
+	WEP_DualPhas		DualPhaser					Dual Phasers					dual small
+		filename  "Weapons/phs_dual.weapon"
+	WEP_DualHvyPhas		DualHeavyPhaser				Dual Heavy Phasers				dual medium
+		filename  "Weapons/phs_heavy_dual.weapon"
+	WEP_DualPlsPhas		DualPulsedPhaser			Dual Pulsed Phasers				dual small
+		filename  "Weapons/phs_pulsed_dual.weapon"
+	WEP_DualHvyPlsPhas	DualHeavyPulsedPhaser		Dual Heavy Pulsed Phasers		dual medium
+		filename  "Weapons/phs_heavy_pulsed_dual.weapon"
+
+	WEP_PDShotgun		gauss-shotgun-pd			Gauss Shotgun Point-Defense		tiny
+		filename  "Weapons/bal_gauss_shotgun_pd.weapon"
+	WEP_APGauss			ap-gauss					Armor Piercing Gauss			small
+		filename  "Weapons/bal_gauss_ap.weapon"
+	WEP_DualGauss		DualGaussDriver				Dual Gauss Drivers				dual small
+		filename  "Weapons/bal_gauss_dual.weapon"
+	WEP_SldBrstr		ShieldBurster				Shield Bursters					large - a burster with shield breaker submunitions
+		filename  "Weapons/bal_drv_shield_burster.weapon"
+	WEP_APMasDrvr		ap-driver					Armor Piercing Mass Driver 		medium
+		filename  "Weapons\bal_drv_mass_AP.weapon"
+	WEP_SnpMasDrvr		sniper_driver				Mass Sniper Cannon				medium
+		filename  "Weapons/bal_drv_sniper.weapon"
+	WEP_DualMasDrvr		DualMassDriver				Dual Mass Drivers				dual medium
+		filename  "Weapons/bal_drv_dual.weapon"
+	WEP_APHvyDrvr		ap-heavy					Armor Piercing Heavy Driver		large
+		filename  "Weapons\bal_drv_heavy_AP.weapon"
+	WEP_SnpHvyDrvr		sniper_heavy				Heavy Sniper Cannon				large
+		filename  "Weapons\bal_drv_heavy_sniper.weapon"
+	WEP_DualHvyDrvr		DualHeavyDriver				Dual Heavy Drivers				dual large
+		filename  "Weapons/bal_drv_heavy_dual.weapon"
+	WEP_TriHvyDrvr		TripleHeavyDriver			Triple Heavy Drivers			triple large
+		filename  "Weapons/bal_drv_heavy_triple.weapon"
+
+	WEP_LtAutCan		LightAutocannon				Light Autocannon				small
+		filename  "Weapons/bal_auto_light.weapon"
+	WEP_AutCan			Autocannon					Medium Autocannon				medium
+		filename  "Weapons/bal_auto_medium.weapon"
+	WEP_HvyAutCan		HeavyAutocannon				Heavy Autocannon				heavy
+		filename  "Weapons/bal_auto_heavy.weapon"
+	WEP_DualLtAutCan	DualLightAutocannon			Dual Light Autocannon			dual small
+		filename  "Weapons/bal_auto_light_dual.weapon"
+	WEP_DualAutCan		DualAutocannon				Dual Autocannon					dual medium
+		filename  "Weapons/bal_auto_medium_dual.weapon"
+	WEP_DualHvyAutCan	DualHeavyAutocannon			Dual Heavy Autocannon			dual heavy
+		filename  "Weapons/bal_auto_heavy_dual.weapon"
+	WEP_HugeStrmDrvr	HugeStomers					Huge Stormers					projector
+		filename  "Weapons/bal_hugestormer.weapon"
+	WEP_APHugeStrmDrvr	ap_huge_stormers			Armor Piercing Huge Stormers	projector
+		filename  "Weapons/bal_ap_hugestormer.weapon"
+		
+	IND_DEConstr		DestroyerConstruction		Destroyer Construction			Allows combat-oriented destroyer sections
+	IND_DEWarEng		DEWarEngineering			DE War mission 					Allows DE War section
+	IND_DEStrafe		DEStrafe					DE Strafe bridge				Allows DE Strafe section
+	IND_DEHmrHead		DEEHammerHead				DE Hammer Head					Allows DE Hammer Head section
+	IND_DEInvasion		DEPlanetaryInvasion			DE Planetary Invasion			Allows DE Planetary Invasion section
+	IND_CRWarEng		CRWarEngineering			CR War mission 					Allows CR War section
+	IND_CRStrafe		CRStrafe					CR Strafe bridge				Allows CR Strafe section
+	IND_CRHmrHead		CRHammerHead				CR Hammer Head					Allows CR Hammer Head section
+	IND_CRInvasion		CRPlanetaryInvasion			CR Planetary Invasion			Allows CR Planetary Invasion section
+	IND_DNWarEng		DNWarEngineering			DN War mission 					Allows DN War section
+
+	IND_CmdStn			CommandStation				Command Station
+	IND_ShipYard		ShipYard					Ship Yard
+	IND_HabStn			HabitatStation				Habitat Station
+	IND_SenStn			SensorStation				Sensor Station
+	IND_TradeStn		TradeStation				Trade Station
+	IND_SciStn			ScienceStation				Science Station
+
+	DRN_Assault			BomberDrone					Assault Drones					Heavy assault drones (mini-torp)
+	DRN_Mine			MineLayerDrone				Mine-Laying Drones				Mine-laying drones (mines)
+
+	WEP_CorMine			Corrosive Mines
+	WEP_NanMine			Nanite Mines
+
+	WEP_SmMis			Small Missiles
+	WEP_DualSmMis		Dual Small Missiles
+
+--------------	
+
+Got rid of platform missiles: _AsteroidMonitor, DNDefencePlatform, DNTorpedoPlatform
+>>> Now they're projector mounts, and we have projector heavy missile variants
+
+--------------	
+
+Make projector based weapons (free) with base tech:
+- double heavy missiles (allow w/o heavy missiles?)
+- triple heavy drivers
+- triple heavy lasers
+- triple heavy beamers
+- dual torpedo turrets
+- triple large-beams
+
+-OR-
+
+Make variants for the Projector-requiring sections which just have a heavy in those slots (at least for Asteroid Monitor)
+
+---------------
+

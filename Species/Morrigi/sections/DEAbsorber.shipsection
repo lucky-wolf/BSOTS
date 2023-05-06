@@ -1,0 +1,91 @@
+shipsection
+{
+	model					Species/Morrigi/art/sections/DestroyerAbsorbtion.X
+	requires				SLD_ErgAb
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			Destroyer
+	health					640
+	mass					1500
+	cost					24200
+	maintenance_cost		300
+	cpoints					1792
+	preview_ofs				"0 0 .5"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			50
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatReady"
+		start_frame "0"
+		speed_scale "2"
+		loop "1"
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatRest"
+		start_frame "end"
+		speed_scale "-2"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -120
+			max_azimuth 120
+			min_inclination -10
+			max_inclination 90
+			home_inclination 0
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -120
+			max_azimuth 120
+			min_inclination -10
+			max_inclination 90
+			home_inclination 0
+		}
+
+	}
+}

@@ -1,0 +1,51 @@
+shipsection
+{
+	model Species/Zuul/art/sections/DNStationRepair.X
+	dam_model Species/zuul/art/sections_dam/DNStationRepair.x
+	section_type mission
+	section_class dreadnought
+	Socket_aft Engine
+	Socket_fore Command
+
+	dam_socket_aft Engine
+	dam_socket_fore Command
+
+	requires		"IND_ShipYard"
+
+	health				16000
+	mass				100000
+	cost				187500
+	maintenance_cost	10000
+	cpoints				28800
+	crew				200
+	entity_class		"Station"
+	design_class		station
+
+	station				repair
+	repair_capacity 	50000
+
+	explicit_command_section "DNStationRepair_Fore"
+	explicit_engine_section "DNStationRepair_Aft"
+
+	preview_ofs "10 -340 -50"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	option	IND_PredGun
+
+	netforcelimits
+	{
+		force_forward		1e+9
+		force_right			1e+9
+		force_up			1e+9
+
+		torque_yaw			1e+9
+		torque_pitch		1e+9
+		torque_roll			1e+9
+
+		speed				30
+		rotspeed			6
+	}
+}
+

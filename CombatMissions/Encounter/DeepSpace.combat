@@ -1,0 +1,26 @@
+summary
+{
+	user_ships_allowed	1
+}
+
+combatenv
+{
+}
+
+endcondition
+{
+	elimination true
+	time 240			// 4 mins
+}
+
+orbit
+{
+	type meetingencounter
+	radius 3000 // 2000
+}
+
+orbit
+{
+	type raider
+	radius 3500
+}

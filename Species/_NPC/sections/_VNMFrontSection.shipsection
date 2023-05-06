@@ -1,0 +1,337 @@
+shipsection
+{
+	model Species/_NPC/art/sections/VNM_UCSK_Frontsection.X
+	dam_model Species/_NPC/art/sections/VNM_UCSK_Frontsection.X
+	socket_aft CommandNode
+	section_type command
+	section_class Dreadnought
+	crew false
+
+	command_quota 36
+	health 8000
+	mass 4200
+	cost 7000
+	cpoints 1500
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	option
+	{
+		option 	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward			0
+		force_right			0
+		force_up			0
+
+		torque_yaw			5e+8
+		torque_pitch			5e+8
+		torque_roll			5e+8
+
+		speed				0
+		rotspeed			65
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/SK_Mis.weapon"
+		turretclass missile
+		turretsize medium
+
+		mount
+		{
+			node MiniMissile01
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile02
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile03
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile04
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile05
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile06
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile07
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile08
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile09
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile10
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile11
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile12
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile13
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile14
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile15
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile16
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile17
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile18
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/SK_Mis.weapon"
+		turretclass Missile
+		turretsize medium
+
+		mount
+		{
+			node MiniMissile19
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile20
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile21
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile22
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile23
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile24
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile25
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile26
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile27
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile28
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node MiniMissile29
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile30
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile31
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile32
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile33
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile34
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile35
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+		mount
+		{
+			node MiniMissile36
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+
+	}
+
+
+
+}
+

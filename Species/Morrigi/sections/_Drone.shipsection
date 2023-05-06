@@ -1,0 +1,83 @@
+shipsection
+{
+	model					Species/Morrigi/art/sections/Drone.X
+	preview_ofs				"-1 40 0"
+	section_class			destroyer
+	design_class			rider
+	dam_model				Species/Morrigi/art/sections/Drone.X
+	entity_class			"DroneRider"
+
+	health					416
+	mass					300
+	command_cost			0
+	maintenance_cost		0
+	autonomous				true	// actually means this is a ship with only a mission section
+
+	requires				DRN_Cmbt
+
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		speed				400
+
+		// NOT USED BY DRONES:
+		// (Force_xxx values still used by traffic to determine whether ship can move though, so leave non-zero for now.)
+		//
+		rotspeed			110
+		force_forward		160000
+		force_right			110000
+		force_up			110000
+		torque_yaw			7100000
+		torque_pitch		7100000
+		torque_roll			7100000
+	}
+
+	bank
+	{
+		turretclass strafe
+		turretsize small
+		showturrets false
+
+		mount
+		{
+			node gunnode02
+			min_azimuth	-10
+			max_azimuth	10
+			min_inclination	-10
+			max_inclination	10
+		}
+
+		mount
+		{
+			node gunnode03
+			min_azimuth	-10
+			max_azimuth	10
+			min_inclination	-10
+			max_inclination	10
+		}
+	}
+
+	engine_sound			Sounds/Ships/Shared/_Drone_travel.wav
+
+	thruster
+	{
+		node EngineNode
+		effect effects/HumanShuttle_Thrust.effect
+		idle_effect effects/HumanShuttle_Idle.effect
+	}
+}

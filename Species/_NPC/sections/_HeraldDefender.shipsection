@@ -1,0 +1,245 @@
+shipsection
+{
+	model Species/_NPC/art/sections/_HeraldDefender.X
+	dam_model Species/Tarkas/art/sections/Hunter_Fusion.X
+	section_type mission
+	section_class destroyer
+	preview_ofs "0 0 1"
+	entity_class "HeraldDefender"
+	design_class rider
+
+	health 9000
+	mass 10000
+	cost 92000
+	cpoints 11800
+
+
+	autonomous true	// actually means this is a ship with only a mission section
+
+	ftlspeed .5
+	range	10
+	crew 	20
+	preview_ofs "2 -170 0"
+
+	option	IND_MagLat
+	option	IND_ImpRfCt
+
+	netforcelimits
+	{
+		force_forward		85000
+		force_right			85000
+		force_up			85000
+
+		torque_yaw			6.4e+7
+		torque_pitch		6.4e+7
+		torque_roll			6.4e+7
+
+		speed				165
+		rotspeed			150
+	}
+
+
+
+
+
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Ripper_guass_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -1
+			max_azimuth 150
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Ripper_guass_pd.weapon"
+		turretclass standard
+		turretsize small
+
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -170
+			max_azimuth 2
+			min_inclination -10
+			max_inclination 90
+		}
+
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -200
+			max_azimuth 5
+			min_inclination -10
+			max_inclination 90
+		}
+
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Herald_fixed_can_HvyFus.weapon"
+		turretclass standard
+		turretsize large
+		showturrets false
+
+		mount
+		{
+			node AssaultLaser01
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+
+
+	}
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Herald_bem_beamer_uv.weapon"
+		turretclass strafe
+		turretsize medium
+		showturrets false
+
+		mount
+		{
+			node MediumStrafe01
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+		mount
+		{
+			node MediumStrafe02
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+
+
+		mount
+		{
+			node MediumStrafe03
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+		mount
+		{
+			node MediumStrafe04
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+
+		mount
+		{
+			node MediumStrafe05
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -12
+			max_inclination 12
+		}
+
+
+	}
+
+
+
+
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Herald_bal_APgauss.weapon"
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -5
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -5
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Herald_can_inertial.weapon"
+		turretclass standard
+		turretsize medium
+
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+
+
+
+
+
+	thruster
+	{
+		node EngineThruster07
+		effect effects/Engine_FusionBB.effect
+		idle_effect effects/Engine_FusionIdleBB.effect
+	}
+	thruster
+	{
+		node EngineThruster08
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+	thruster
+	{
+		node EngineThruster09
+		effect effects/Engine_FusionCC.effect
+		idle_effect effects/Engine_FusionIdleCC.effect
+	}
+
+
+}

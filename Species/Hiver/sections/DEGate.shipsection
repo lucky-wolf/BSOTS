@@ -1,0 +1,65 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DestroyerGate.X
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+
+	section_type			mission
+	section_class			destroyer
+	gateship true
+
+	health					2400
+	mass					5000
+	cost					30000
+	maintenance_cost		300
+	cpoints					4600
+
+//	section_lod_type		1	// 1 for guns visible further, 0 for regular distance
+	view_dist				20000		// note: neither of these do squat until after you've already detected (seen) the ship.  So... whatever
+
+	preview_ofs				"-5 -40 0"
+
+	section_sound			"Sounds/SFX/Hiver_Gate_Hum.wav"
+	section_sound_repeat	3
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-15
+		rotspeed			-10
+	}
+}

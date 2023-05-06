@@ -1,0 +1,28 @@
+@echo off
+cdd %~dp0
+
+set source=..\techtree\MasterMasterTechList.tech
+set dest=..\techtree\MasterMasterTechList.tech
+set min=18000
+set max=9000000
+set scale=0.66666666666666666666666666
+
+querybox /e "%~n0" Minimum RP to alter: %%min
+if %_? NE 0 quit -1
+
+querybox /e "%~n0" Maximum RP to alter: %%max
+if %_? NE 0 quit -1
+
+querybox /e "%~n0" Scale Research Cost by: %%scale
+if %_? NE 0 quit -1
+
+echo This will scale all values from %min to %max by %scale
+echo the results will be placed in %dest
+echo a backup of %dest will be created
+pause
+
+copy /q "%dest" "%dest.bak"
+if "%source" = "%dest" set source=%dest.bak
+perl "ScaleRP.pl" "%source" %scale %min %max > "%dest"
+
+pause Press any key to exit %~n0...

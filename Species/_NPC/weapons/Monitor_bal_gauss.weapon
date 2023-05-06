@@ -1,0 +1,75 @@
+weapon
+{
+	name		@WEAPON_NPC_MON_GAUSS
+	weaponclass	bullet
+	model1		"Species/_NPC/art/weapons/Monitorbarrel_s1standard.X"
+	turretmodel1	"Species/_NPC/art/weapons/Monitorturret_s1standard.X"
+	cost		50
+	turretsize		small
+	turretclass		standard
+	trackspeed_mod	1.0
+	burst_volleys	1
+	recharge_time	4
+	muzzle_speed	300
+
+	muzzle_effect	effects/Guass_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bal_gauss_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"96 64 32 32"
+	range	750
+	range_planet	1075
+	
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+	
+		impact_effect	effects/guass_impact.effect
+		impact_sound	Sounds/Weapons/bal_gauss_impact.wav
+		impact_sound_minrange	50
+	
+		rangetable
+		{
+			pb_range	345
+			pb_range_dev	3
+			pb_range_dam	35
+
+			eff_range	565
+			eff_range_dev	4
+			eff_range_dam	35
+
+			max_range	725
+			max_range_dev	5
+			max_range_dam	35
+		}
+		
+		effect		effects/guass_bullet.effect
+		ricochet_mod 	-.8
+		ricochet_sound	Sounds/Weapons/bal_gauss_rico.wav
+		ricochet_sound_minrange		50
+		mass 80
+
+		dam_pop		3500
+		dam_infra	.00005	
+		dam_terra	0
+	}
+
+	dam_est		12
+
+
+	rating_frate	7
+	rating_dam	3
+	rating_acc	2
+	rating_range	5
+
+}

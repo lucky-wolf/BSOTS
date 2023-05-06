@@ -1,0 +1,85 @@
+weapon
+{
+	name		@WEAPON_NPC_WRECK_TRP_PHOTON
+	weaponclass		torpedo
+	turretclass		torpedo
+	model1		"Species\_NPC\art\weapons\Wreckagebarrel_Torp.X"
+	Turretmodel1	"Species\_NPC\art\weapons\Wreckageturret_Torp.X"
+	turretsize		large
+	requires 	WEP_PhotTrp
+	hpbonus		50
+	Cost		2000
+	burst_volleys	3
+	volley_period	.2
+	recharge_time	10
+	muzzle_speed	700
+	muzzle_effect	effects/AcidTorpedo_muzzle.effect
+	muzzle_sound	Sounds/Weapons/trp_photon_impact.wav
+	muzzle_sound_minrange	100
+	solution_tolerance	1
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"0 96 32 32"
+
+	range 1800
+	range_planet 2100
+
+	torpedo
+	{
+		disruptor 0
+		tracking 0
+
+		beam_origin	-3
+		beam_length	5.5
+
+		impact_effect	effects/photonictorpedo_impact.effect
+		impact_sound	Sounds/Weapons/trp_photon_impact.wav
+		impact_sound_minrange	50
+
+		thrust_sound		Sounds/Weapons/trp_photon_travel.wav
+		thrust_sound_minrange	25
+
+		rangetable
+		{
+			pb_range	550
+			pb_range_dev	.01
+			pb_range_dam	100
+
+			eff_range	1100
+			eff_range_dev	.05
+			eff_range_dam	100
+
+			max_range	1600
+			max_range_dev	.1
+			max_range_dam	60
+		}
+
+		effect		effects/photonictorpedo_wreckage_bullet.effect
+		health			10
+		dam_radius		0
+		mass			10
+		dumbfire_period		0.5
+
+		speed 90
+		seek_attenuation 0	// Higher number = tighter turns/faster accel
+
+//		netforcelimits
+//		{
+//			force     20000
+//			torque    30000
+//			speed     90
+//			rotspeed  120
+//		}
+
+		dam_pop		45000
+		dam_infra	.0005
+		dam_terra	0
+	}
+
+
+	rating_frate	7
+	rating_dam	4
+	rating_acc	6
+	rating_range	9
+
+	dam_est		80
+}

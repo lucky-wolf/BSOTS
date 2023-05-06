@@ -1,0 +1,96 @@
+shipsection
+{
+	model					Species/Morrigi/art/sections/DestroyerCloaking.X
+	requires				SLD_Clk
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			destroyer
+	preview_ofs				"2 0 .5"
+
+	health					640
+	mass					2000
+	cost					16500
+	maintenance_cost		300
+	cpoints					1984
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_Intang
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatReady"
+		start_frame "0"
+		speed_scale "2"
+		loop "1"
+	}
+
+	anim
+	{
+		name "combatready"
+		event "CombatRest"
+		start_frame "end"
+		speed_scale "-2"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+	 		min_azimuth -130
+			max_azimuth 130
+			min_inclination -8
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+}

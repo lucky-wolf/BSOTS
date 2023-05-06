@@ -1,0 +1,35 @@
+@echo off
+cdd %~dp0
+on break quit -1
+
+set folder=%@full[..\Species]
+set species=
+:retry_folder
+querybox /e "%~n0" Modify only which species (blank for all species): %%species
+if %_? NE 0 quit -1
+iff not isdir "%folder\%species" then
+	MSGBOX /s okcancel "%~n0" %folder\%species not found!
+	if %_? NE 10 quit -1
+	goto retry_folder
+endiff
+set folder=%folder\%species
+
+set scale=1.0
+querybox /e "%~n0" Scale by: %%scale
+if %_? NE 0 quit -1
+
+echo This will scale all DN ship's health in:
+echo ^t%folder
+echo ^tby a factor of %scale
+echo Each file will be backed up to *.bak (this will overwrite previous backups)
+pause
+
+for /r "%folder" %source in (DN*.shipsection) do (if %source !~ DNstation* gosub dofile)
+
+pause Press any key to exit %~n0...
+quit
+
+:dofile
+copy /z "%source" "%source.bak"
+perl "%~dp0\ScaleHP.pl" "%source.bak" %scale > "%source"
+return

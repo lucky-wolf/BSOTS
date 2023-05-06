@@ -1,0 +1,33 @@
+weapon
+{
+	name				@WEAPON_NPC_CROW_ATTACK_SHUTTLE
+	weaponclass			rider
+	cost				5000
+	turretsize			large
+	turretclass			assaultshuttlerider
+	
+	burst_volleys		1
+	buildup_delay		0	// time delay before rider disconnects
+	volley_period		1
+	volley_duration		0
+	recharge_time		10
+
+	muzzle_speed 		50
+	solution_tolerance	180
+
+	icon_file			GUI/WeaponIcons.tga
+	icon_rect			"128 96 32 32"
+	
+	rider
+	{
+		section_file	"_ruinfighter.shipsection"
+		entity_type		"CrowRuinFighter"
+		Impact_effect   "effects/Shuttle_Death.effect"
+		impact_sound	"Sounds/SFX/explosion_DEship_001.wav"
+		impact_sound_minrange	150
+
+		dam_pop_rate	80000
+		dam_infra_rate	0.08
+		dam_terra_rate	0
+	}
+}

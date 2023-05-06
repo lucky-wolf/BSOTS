@@ -1,0 +1,62 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/DestroyerSquadronCnC.X
+	preview_ofs				"-4 0 0.7"
+	socket_aft				MissionNode
+	socket_fore				MissionNode01
+
+	section_type			mission
+	section_class			destroyer
+	section_sound			"Sounds/Ships/Shared/DECommand.wav"
+	section_sound_repeat	4
+
+	health					880
+	mass					2100
+	cost					22333
+	maintenance_cost		300
+	cpoints					2944
+
+	requires				CCC_DatSyn
+	command_quota			32
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+}

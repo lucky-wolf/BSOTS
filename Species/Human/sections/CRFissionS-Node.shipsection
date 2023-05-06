@@ -1,0 +1,132 @@
+shipsection
+{
+	model					Species/Human/art/sections/CruiserFission.X
+
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			cruiser
+
+	requires				DRV_Fissn
+	requires				DRV_Node
+
+	health					2560
+	mass					7500
+	cost					20000
+	maintenance_cost		3000
+	cpoints					4752
+
+	engine_techera			fission
+	nodespeed				4
+	ftlspeed				.92
+	range					9
+
+	crew					15
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option	DRV_RecFiss
+
+	engine_sound			Sounds/Ships/Shared/DEFission_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEFission_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		53000
+		force_right			53000
+		force_up			53000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				73.2875
+		rotspeed			-10
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster04
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster05
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster06
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster07
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster08
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+}

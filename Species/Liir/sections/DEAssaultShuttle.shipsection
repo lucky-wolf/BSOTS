@@ -1,0 +1,73 @@
+shipsection
+{
+	model					Species/Liir/art/sections/DestroyerAssaultShuttle.X
+	preview_ofs				"0 0 -3"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			destroyer
+
+	health					192
+	mass					2000
+	cost					7000
+	maintenance_cost		300
+	cpoints					2016
+
+	requires				IND_DEInvasion
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-20
+		rotspeed			-10
+	}
+
+	bank
+	{
+		turretclass assaultshuttlerider
+		turretsize	large
+
+		mount
+		{
+			node "shuttle"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+}

@@ -1,0 +1,86 @@
+weapon
+{
+	name						@WEAPON_CAN_PLSMPROJ
+
+	weaponclass					energy
+	weaponfamily				energycannon
+
+	model1						barrel_l1_plsmproj.X
+
+	turretclass					projector
+	turretsize					large
+	munitionsize				medium
+
+	requires					WEP_PlsmProj
+	cost						6000
+
+	burst_volleys				30
+	volley_period				.03
+	recharge_time				13
+
+	muzzle_speed				300
+	muzzle_effect				effects/PlasmaProjector_Muzzle.effect
+	muzzle_sound				Sounds/Weapons/can_proj_am_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/EnergyCannons.tga
+	icon_rect					"0 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						580
+	range_planet				1000
+
+	bolt
+	{
+		volley_deviation				6
+		round_muzzle					true
+		muzzle_size						"6"
+
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/PlasmaCannon_Bullet.effect
+		impact_effect					effects/PlasmaCannon_Impact.effect
+		expire_effect					effects/PlasmaCannon_Expire.effect
+
+		impact_sound					Sounds/Weapons/can_plasma_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange			15
+
+		rangetable
+		{
+			pb_range		150
+			pb_range_dev	1
+			pb_range_dam	60
+
+			eff_range		350
+			eff_range_dev	2
+			eff_range_dam	120
+
+			max_range		580
+			max_range_dev	3
+			max_range_dam	45
+		}
+
+		dam_pop							2049
+		dam_infra						0.00003
+		dam_terra						0.000005
+	}
+
+	dam_est			500
+
+	rating_frate	2
+	rating_dam		5
+	rating_acc		1
+	rating_range	3
+}

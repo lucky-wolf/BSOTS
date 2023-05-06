@@ -1,0 +1,79 @@
+weapon
+{
+	name			@WEAPON_NPC_SYSK_MISSILE
+	weaponclass		missile
+	weaponfamily	missile
+	model1		"Species/_NPC/art/weapons/DefenceBarrel.X"
+	turretmodel2	"Species/_NPC/art/weapons/DefenceTurret.X"
+	turretsize			medium
+	cost			3000
+	turretclass			missile
+	burst_volleys		1
+	volley_period		.2
+	recharge_time		10
+	muzzle_sound		Sounds/Weapons/mis_missile_muzzle.wav
+	muzzle_sound_minrange	60
+	muzzle_effect		effects/Missile_muzzle.effect
+	muzzle_speed		190
+	solution_tolerance	90
+	icon_file		GUI/WeaponIcons.tga
+	icon_rect		"0 32 32 32"
+	range			3300
+	range_planet	3300	// Same as 'range' because missile has a fixed time-to-live. (range should be a bit less than [netforcelimits] speed x ttl)
+	
+	missile
+	{
+		tracking 1
+		retarget_delay 1
+		impact_decal	decals/WeaponHit.decal
+		impact_decal_width .5
+		impact_decal_height .5
+		impact_decal_depth .1
+
+		beam_origin		-3
+		beam_length		5.5
+
+		impact_sound		Sounds/Weapons/mis_missile_impact.wav
+		impact_sound_minrange	200
+		impact_effect		effects/Missile_Impact.effect
+		area_impact_effect "effects/collide_asteroid.effect"
+		Planet_Impact_Effect	"effects/Missile_Planet.effect"
+
+		thrust_sound		Sounds/Weapons/mis_missile_travel.wav
+		
+
+		speed 200
+		seek_attenuation 4	// Higher number = tighter turns/faster accel
+		
+//		netforcelimits
+//		{
+//			force				9000
+//			torque_yaw			9000
+//			torque_pitch		9000
+//			torque_roll			500
+//			speed				200
+//			rotspeed			820
+//		}
+		
+		ttl				30
+		model			MonitorMissile.X
+		health			20
+		dam			90
+		dam_radius		15
+		mass			50
+		thrust_effect		effects/missletrail.effect
+		thrust_node		EffectNode
+		dumbfire_period		1.5
+
+		dam_pop		45000
+		dam_infra	.0005	
+		dam_terra	.005
+	}
+
+	rating_frate	3
+	rating_dam	3
+	rating_acc	9
+	rating_range	9
+
+	dam_est		50
+}

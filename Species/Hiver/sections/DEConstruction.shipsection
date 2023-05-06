@@ -1,0 +1,214 @@
+shipsection
+{
+	model Species/Hiver/art/sections/DnConstruction.X
+	preview_ofs "-100 -1700 0"
+	section_type mission
+	section_class destroyer
+
+	requires IND_DSCon
+
+	health					8000
+	mass					25000
+	cost					115000
+	maintenance_cost		2500
+	cpoints 				14500
+	crew					0
+
+	command_cost			0
+	construction_capacity	16500
+	huge					1			// huge ship (larger than normal for ship class) gets placed above the plane in combat
+	autonomous				true	// actually means this is a ship with only a mission section
+	ftlspeed				.5
+	range					5
+
+	option	DRV_RecFiss
+
+	netforcelimits
+	{
+		force_forward		35000
+		force_right			35000
+		force_up			35000
+
+		torque_yaw			8e+7
+		torque_pitch		8e+7
+		torque_roll			8e+7
+
+		speed				64.2125
+		rotspeed			30
+	}
+
+	thruster
+	{
+		node EngineFXNode01
+		effect effects/Engine_FissionC.effect
+		idle_effect effects/Engine_FissionidleC.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode02
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode03
+		effect effects/Engine_FissionC.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode05
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode06
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode07
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode11
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode12
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode13
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode14
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode16
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode18
+		effect effects/Engine_FissionC.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode21
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode22
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode23
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode25
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode26
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode27
+		effect effects/Engine_FissionC.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode28
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_FissionidleC.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode30
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode32
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode33
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode34
+		effect effects/Engine_FissionC.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode35
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode36
+		effect effects/Engine_FissionA.effect
+		idle_effect effects/Engine_Fissionidle.effect
+	}
+}

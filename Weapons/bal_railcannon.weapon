@@ -1,0 +1,88 @@
+weapon
+{
+	name						@WEAPON_BAL_RAILCANNON
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	turretclass					railcannon
+	turretsize					large
+	munitionsize				medium
+
+	requires					WEP_RailGun
+	cost						12000
+
+	solution_tolerance			2
+	burst_volleys				1
+	volley_period				.02
+	recharge_time				16
+
+	buildup_delay				1
+	buildup_effect				effects/Rail_cannon_Warmup.effect
+
+	centered_muzzle_effect		true	// Parent muzzle effect to mount frame instead of muzzle frame (always align with fixed guns)
+	muzzle_speed				800
+	muzzle_effect				effects/Rail_Cannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_railcannon_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Ballistic-2.tga
+	icon_rect					"0 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						3500
+	range_planet				3500
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		impact_effect					effects/Rail_Cannon_impact.effect
+		expire_effect					"effects/Rail_Cannon_Expire.effect"
+		impact_sound					Sounds/Weapons/bal_drv_impact.wav
+		impact_sound_minrange			50
+
+		rangetable
+		{
+			pb_range		500
+			pb_range_dev	9
+			pb_range_dam	1500
+
+			eff_range		1500
+			eff_range_dev	3
+			eff_range_dam	1500
+
+			max_range		3500
+			max_range_dev	1
+			max_range_dam	1500
+		}
+
+		effect							effects/Rail_Cannon_Bullet.effect
+		ricochet_mod					-2.0
+		ricochet_sound					Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange			50
+
+		recoil_factor					0.25
+		mass							1000
+
+		dam_pop							49218
+		dam_infra						0.005625
+		dam_terra						0.0009375
+	}
+
+	dam_est			500
+
+	rating_frate	2
+	rating_dam		8
+	rating_acc		4
+	rating_range	10
+}

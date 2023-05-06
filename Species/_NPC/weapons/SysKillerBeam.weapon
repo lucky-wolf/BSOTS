@@ -1,0 +1,48 @@
+weapon
+{
+	name			@WEAPON_NPC_SYSK_UBERBEAM
+	weaponclass			beam
+	turretclass			beam
+	turretsize			large
+	requires 	WEP_CtngBm
+	hpbonus		700
+	cost		20000
+	burst_volleys	1
+	volley_period	.2
+	volley_duration	30
+	recharge_time	22
+	muzzle_sound	Sounds/SFX/bem_cutting_muzzle_syskiller.wav
+	muzzle_sound_minrange	250
+	muzzle_effect	effects/Lancer_muzzle.effect
+	icon_file		GUI/WeaponIcons.tga
+	icon_rect		"192 192 32 32"
+	solution_tolerance	5
+
+	range 950
+	range_planet 1550
+		
+	// dam: damage in points per second
+	//
+	beam
+	{
+		impact_sound	Sounds/Weapons/bem_cutting_impact.wav
+		impact_sound_minrange	100
+		impact_effect	effects/SysKillerbeam_impact.effect
+		effect		effects/SysKillerBeam_bullet.effect
+		Planet_Impact_Effect	"effects/SysKillerbeam_impact.effect"
+		dam			300
+		force		0
+
+		dam_pop		2000000
+		dam_infra	.002	
+		dam_terra	.001
+	}
+
+
+	rating_frate	2
+	rating_dam	9
+	rating_acc	9
+	rating_range	8
+
+	dam_est		500
+}

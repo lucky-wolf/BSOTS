@@ -1,0 +1,83 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/CruiserCloaking.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					2880
+	mass					4000
+	cost					50000
+	maintenance_cost		3000
+	cpoints					2700
+	crew					20
+
+	requires				SLD_Clk
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	shield_model_offset 	"0 5 0"
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	option
+	{
+		option	SLD_Intang
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			2.5e+8
+		torque_pitch		2.5e+8
+		torque_roll			2.5e+8
+
+		speed				-5
+		rotspeed			35
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -150
+			max_azimuth 150
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+}

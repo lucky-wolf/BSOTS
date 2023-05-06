@@ -1,0 +1,87 @@
+weapon
+{
+	name		@WEAPON_NPC_SILQUEEN_TRP
+	weaponclass		torpedo
+	weaponfamily	torpedo
+	model1		"Species/_NPC/art/weapons/DefenceBarrel.X"
+	turretmodel1	"Species/_NPC/art/weapons/HeadTurret.X"
+	turretclass		torpedo
+	turretsize		large
+	requires 	WEP_PhotTrp
+	hpbonus		50
+	Cost		2000
+	burst_volleys	5
+	volley_period	.2
+	recharge_time	4
+	muzzle_speed	900
+	muzzle_effect	effects/QueenMouth.effect
+	muzzle_sound	Sounds/Weapons/trp_photon_muzzle.wav
+	muzzle_sound_minrange	100
+	solution_tolerance	1
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"0 96 32 32"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range 1800
+	range_planet 2100
+
+	torpedo
+	{
+		disruptor 0
+		tracking 0
+
+		beam_origin	-3
+		beam_length	5.5
+
+		impact_effect	effects/photonictorpedo_impact.effect
+		impact_sound	Sounds/Weapons/trp_photon_impact.wav
+		impact_sound_minrange	100
+
+
+		thrust_sound		Sounds/Weapons/trp_photon_travel.wav
+		thrust_sound_minrange	20
+
+		rangetable
+		{
+			pb_range	750
+			pb_range_dev	.01
+			pb_range_dam	180
+
+			eff_range	1300
+			eff_range_dev	.01
+			eff_range_dam	150
+
+			max_range	1800
+			max_range_dev	.02
+			max_range_dam	90
+		}
+
+		effect		effects/photonictorpedo_Bullet.effect
+		health			10
+		dam_radius		0
+		mass			10
+		dumbfire_period		0.5
+
+		ttl 2.4
+
+		dam_pop		70000
+		dam_infra	.0005
+		dam_terra	0
+	}
+
+
+	rating_frate	7
+	rating_dam	4
+	rating_acc	6
+	rating_range	9
+
+	dam_est		80
+}

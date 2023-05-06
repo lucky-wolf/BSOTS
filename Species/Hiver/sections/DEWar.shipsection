@@ -1,0 +1,124 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DestroyerWar.X
+	preview_ofs				"-4.5 10 2.5"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			destroyer
+
+	health					800
+	mass					4000
+	cost					9500
+	maintenance_cost		300
+	cpoints					2420
+
+	requires				IND_DEWarEng
+	requires				GRP_MEDWEP
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-10
+		rotspeed			-5
+	}
+
+	bank
+	{
+		// lr
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MedGunNode01
+			min_inclination -5
+			max_inclination 90
+			min_azimuth -95
+			max_azimuth 85
+		}
+	}
+
+	bank
+	{
+		// lf
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MedGunNode02
+			min_inclination -5
+			max_inclination 90
+			min_azimuth -85
+			max_azimuth 95
+		}
+	}
+
+	bank
+	{
+		// rr
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MedGunNode03
+			min_inclination -5
+			max_inclination 90
+			min_azimuth -85
+			max_azimuth 95
+		}
+
+	}
+
+	bank
+	{
+		// rf
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MedGunNode04
+			min_inclination -5
+			max_inclination 90
+			min_azimuth -95
+			max_azimuth 85
+		}
+	}
+}

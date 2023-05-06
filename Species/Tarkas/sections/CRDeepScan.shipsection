@@ -1,0 +1,115 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/CruiserDeepScan.X
+	socket_aft				CommandNode
+
+	section_type			command
+	section_class			cruiser
+	section_sound			"Sounds/Ships/Shared/DEDeepScan.wav"
+	section_sound_repeat	5
+
+	health					3360
+	mass					3500
+	cost					27000
+	maintenance_cost		3000
+	cpoints					1872
+	crew					13
+
+	requires				CCC_AdvSens
+	scanrange				7
+	tacticalsensorrange		4700
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			2e+8
+		torque_pitch		2e+8
+		torque_roll			2e+8
+
+		speed				0
+		rotspeed			30
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -120
+			max_azimuth 120
+			min_inclination -20
+			max_inclination 100
+		}
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -120
+			max_azimuth 120
+			min_inclination -20
+			max_inclination 100
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -145
+			max_azimuth 35
+			min_inclination 0
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -35
+			max_azimuth 145
+			min_inclination 0
+			max_inclination 90
+		}
+	}
+}

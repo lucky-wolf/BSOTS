@@ -1,0 +1,89 @@
+weapon
+{
+	name						@WEAPON_BAL_GAUSS_SNIPER_DUAL
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						barrel_s2_gauss.x
+	turretmodel1				turret_s2standard.x
+	model2						barrel_s2_gauss.x
+	turretmodel2				turret_s2standard.x
+	model3						barrel_s2_gauss.x
+	turretmodel3				turret_s2standard.x
+
+	turretclass					standard // missile stops them from being in strafe and drone, but restricts azimuth and turret speed :'(
+	turretsize					small
+
+	requires					WEP_SnpCanDrvr
+	requires					WEP_DualGauss
+	cost						450		// 3x
+
+	trackspeed_mod				0.5
+	burst_volleys				1
+	recharge_time				10.0		// 1.333
+
+	muzzle_speed				667		// 5/3x gauss
+	muzzle_effect				effects/APGauss_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_sniper_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Ballistic-2.tga
+	icon_rect					"0 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1200	// 1.5 gauss
+	range_planet				1200
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/sniper_bullet.effect
+		impact_effect					effects/Sniper_impact.effect
+		expire_effect					effects/APGauss_Expire.effect
+		impact_sound					Sounds/Weapons/bal_sniper_impact.wav
+		impact_sound_minrange			100
+
+		rangetable
+		{
+			pb_range		375
+			pb_range_dev	.5
+			pb_range_dam	45
+
+			eff_range		750
+			eff_range_dev	1.0
+			eff_range_dam	45
+
+			max_range		1200
+			max_range_dev	1.5
+			max_range_dam	45
+		}
+
+		ricochet_mod					-1.0		// 1.0 gauss, 1.1 mass, 1.2 heavy
+		ricochet_sound					Sounds/Weapons/bal_sniper_rico.wav
+		ricochet_sound_minrange			50
+
+		mass							50
+
+		dam_pop							574
+		dam_infra						0.00006
+		dam_terra						0.00000005
+	}
+
+	dam_est			15
+
+	rating_frate	3
+	rating_dam		5
+	rating_acc		7
+	rating_range	5
+}

@@ -1,0 +1,229 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/CruiserAntiMatter.X
+	requires				DRV_AntiMat
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			cruiser
+	engine_techera			antimatter
+	health					5280
+	mass					6500
+	cost					50000
+	maintenance_cost		3000
+	cpoints					3168
+	nodespeed				12
+	ftlspeed				.7
+	range					38
+	crew					30
+
+	shield_model_offset "0 0 -5"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+
+	engine_sound			Sounds/Ships/Shared/DEAM_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEAM_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		120000
+		force_right			120000
+		force_up			120000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				183.2875
+		rotspeed			15
+	}
+
+	anim
+	{
+		name "Idle"
+		event "StartIdle"
+		start_frame "0 end"
+		speed_scale "0"
+		loop "1"
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -5
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -5
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -165
+			max_azimuth 70
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -45
+			max_azimuth 80
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -80
+			max_azimuth 45
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -10
+			max_inclination 10
+		}
+
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster04
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster05
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster06
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster07
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster08
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster09
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster10
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineThruster11
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+}

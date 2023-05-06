@@ -1,0 +1,87 @@
+weapon
+{
+	name						@WEAPON_PHS_PULSED
+
+	weaponclass					beam
+	weaponfamily				conventionalbeam
+
+	model1						barrel_s1_xraylaser.x
+	model2						barrel_s1_xraylaser.x
+	turretmodel2				turret_s1standard.x
+	model3						barrel_s1_xraylaser.x
+	turretmodel3				turret_s1standard.x
+
+	turretclass					standard
+	turretsize					small
+
+	requires					WEP_PlsPhas
+	cost						1000
+
+	burst_volleys				3
+	volley_period				.15
+	recharge_time				6
+
+	muzzle_speed				1500
+	muzzle_effect				effects/pulsedphaser_muzzle.effect
+	muzzle_sound				Sounds/Weapons/pulsed_phaser_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Lasers.tga
+	icon_rect					"0 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						2500
+	range_planet				2500
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		impact_sound					Sounds/Weapons/pulsed_phaser_impact.wav
+		impact_sound_minrange			50
+		impact_effect					effects/Pulsedphaser_impact.effect
+		planet_impact_effect			"effects/Laser_PlanetImpact.effect"
+
+		rangetable
+		{
+			pb_range		500
+			pb_range_dev	.25
+			pb_range_dam	54
+
+			eff_range		1500	// 3x pb_range
+			eff_range_dev	0.5
+			eff_range_dam	54
+
+			max_range		2500	// 5x pb_range
+			max_range_dev	1.0
+			max_range_dam	54
+		}
+
+		effect							effects/PulsedPhaser_bullet.effect
+		expire_effect					"effects/PulsedPhaser_Expire.effect"
+
+		ricochet_mod					-2.0
+		ricochet_sound					Sounds/Weapons/pulsed_phaser_rico.wav
+		ricochet_sound_minrange			20
+
+		dam_pop							5906
+		dam_infra						0.000024
+		dam_terra						0
+	}
+
+	dam_est			70
+
+	rating_frate	7
+	rating_dam		7
+	rating_acc		8
+	rating_range	9
+}

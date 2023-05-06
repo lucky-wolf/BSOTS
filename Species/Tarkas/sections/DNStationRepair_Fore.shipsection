@@ -1,0 +1,123 @@
+shipsection
+{
+	model Species/Tarkas/art/sections/DNStationRepairFore.X
+	dam_model Species/Tarkas/art/sections_dam/DNStationRepair_Fore.X
+	section_type Command
+	section_class dreadnought
+	socket_aft Command
+	dam_socket_aft Command
+
+	requires		"IND_ShipYard"
+
+	explicit_section true
+
+	health				28800
+	mass				100000
+	cost				0
+	maintenance_cost	0
+	cpoints				32000
+	crew				100
+	entity_class		"Station"
+	design_class		station
+
+	preview_ofs "-23 -40 9"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightgunnode01
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightgunnode02
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightgunnode05
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightgunnode06
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightgunnode07
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Medium
+
+		mount
+		{
+			node MediumGunNode05
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+}
+

@@ -1,0 +1,47 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model "Species/_NPC/art/sections/Swarmer.X"
+	section_type mission
+	section_class Destroyer
+	health 200
+	mass 100
+
+	autonomous true	// actually means this is a ship with only a mission section
+	crew 0
+	death_effect "Effects/Swarmer_Death.effect"
+
+	command_cost 0
+	maintenance_cost 0
+	
+
+	netforcelimits
+	{
+		force_forward 150000
+		force_right   150000
+		force_up      150000
+		
+		torque_yaw    1500000
+		torque_pitch  1500000
+		torque_roll   1500000
+		
+		speed         250
+		rotspeed      360
+	}
+	
+	bank
+	{
+		turretclass standard
+		turretsize medium
+		weapon "Species/_NPC/weapons/SwarmerCannon.weapon"
+
+		mount
+		{
+			node gun
+			min_azimuth -30
+			max_azimuth 30
+			min_inclination -30
+			max_inclination 30
+		}
+	}
+}

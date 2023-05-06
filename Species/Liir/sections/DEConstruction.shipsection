@@ -1,0 +1,40 @@
+shipsection
+{
+	model Species/Liir/art/sections/DnConstruction.X
+	preview_ofs "-100 -1130 0"
+
+	section_type mission
+	section_class destroyer
+
+	requires IND_DSCon
+
+	health					6400
+	mass					10000
+	cost 					115000
+	maintenance_cost		2500
+	cpoints					11680
+	crew 					0
+
+	command_cost			0
+	construction_capacity	13500
+	huge					1		// huge ship (larger than normal for ship class) gets placed above the plane in combat
+	autonomous				true	// actually means this is a ship with only a mission section
+	ftlspeed				3
+	range					6
+
+	option	DRV_RecFiss
+
+	netforcelimits
+	{
+		force_forward		450000
+		force_right			450000
+		force_up			450000
+
+		torque_yaw			4e+9
+		torque_pitch		4e+9
+		torque_roll			4e+9
+
+		speed				45.7875
+		rotspeed			45
+	}
+}

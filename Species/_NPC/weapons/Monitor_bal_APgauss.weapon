@@ -1,0 +1,79 @@
+weapon
+{
+	name			@WEAPON_NPC_MON_BAL_SNIPER
+	weaponclass		bullet
+	weaponfamily	gauss
+	requires 		WEP_SnpCanDrvr
+
+	model1			"Species/_NPC/art/weapons/Monitorbarrel_s1standard.X"
+	turretmodel1	"Species/_NPC/art/weapons/Monitorturret_s1standard.X"
+	cost			70
+	turretsize		small
+	turretclass		standard
+	trackspeed_mod	1.0
+	burst_volleys	1
+	recharge_time	8
+	muzzle_speed	800
+
+	muzzle_effect	effects/APGuass_muzzle.effect
+	muzzle_sound	Sounds/Weapons/bal_sniper_muzzle.wav
+	muzzle_sound_minrange	100
+	icon_file		GUI/WeaponIcons_2.tga
+	icon_rect		"160 32 32 32"
+	range			1455
+	range_planet	2345
+	
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+	
+		impact_effect	effects/Sniper_impact.effect
+		expire_effect   "effects/APguass_Expire.effect"
+		impact_sound	Sounds/Weapons/bal_gauss_pd_impact.wav
+		impact_sound_minrange	50
+	
+		rangetable
+		{
+			pb_range		405
+			pb_range_dev	6
+			pb_range_dam	35
+
+			eff_range		820
+			eff_range_dev	.75
+			eff_range_dam	35
+
+			max_range		1455
+			max_range_dev	.5
+			max_range_dam	35
+		}
+		
+		effect			effects/sniper_bullet.effect
+		ricochet_mod 	-1.5
+		ricochet_sound	Sounds/Weapons/bal_sniper_rico.wav
+		ricochet_sound_minrange		50
+		mass 20
+
+		dam_pop		1000
+		dam_infra	.00003	
+		dam_terra	0
+	}
+
+	dam_est		10
+
+
+	rating_frate	6
+	rating_dam		2
+	rating_acc		6
+	rating_range	9
+
+}

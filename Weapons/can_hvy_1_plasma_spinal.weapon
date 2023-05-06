@@ -1,0 +1,83 @@
+weapon
+{
+	name						@WEAPON_CAN_HVYPLASMA_SPINAL
+
+	weaponclass					energy
+	weaponfamily				energycannon
+
+	model1						barrel_l1_heavyplasma.x
+
+	turretclass					spinal
+	turretsize					large
+	munitionsize				medium
+
+	requires					WEP_HvyPCan
+	cost						3000
+
+	solution_tolerance			2
+	burst_volleys				3
+	volley_period				.1
+	recharge_time				7
+
+	muzzle_speed				450
+	muzzle_effect				effects/HeavyPlasmaCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/can_plasma_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/EnergyCannons.tga
+	icon_rect					"0 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1800 // 1300
+	range_planet				1800
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/HeavyPlasmaCannon_Bullet.effect
+		impact_effect					effects/HeavyPlasmaCannon_Impact.effect
+		expire_effect					effects/PlasmaCannon_Expire.effect
+
+		impact_sound					Sounds/Weapons/mis_kinetic_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange			15
+
+		rangetable
+		{
+			pb_range		360		// 20% of range
+			pb_range_dev	3
+			pb_range_dam	100
+
+			eff_range		1260	// 70% of range
+			eff_range_dev	3
+			eff_range_dam	180
+
+			max_range		1800
+			max_range_dev	3
+			max_range_dam	100
+		}
+
+		dam_pop							4100
+		dam_infra						0.000057
+		dam_terra						0.0000095
+	}
+
+	dam_est			140
+
+	rating_frate	6
+	rating_dam		3
+	rating_acc		3
+	rating_range	8
+}

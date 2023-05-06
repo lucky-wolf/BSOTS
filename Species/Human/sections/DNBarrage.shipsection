@@ -1,0 +1,291 @@
+shipsection
+{
+	model					Species/Human/art/sections/DreadnoughtBarrage.X
+	preview_ofs				"-11 -40 6"
+	socket_aft				MissionNode02
+	socket_fore				MissionNode01
+	section_type			mission
+	section_class			dreadnought
+
+	health					20800
+	mass					40000
+	cost					350000
+	maintenance_cost		15000
+	cpoints					28800
+	crew					80
+
+	requires				GRP_TORPS
+	requires				GRP_HVYBEAM
+	requires				GRP_LRGWEP
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-10
+		rotspeed			-5
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode03
+			min_azimuth -170
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode11
+			min_azimuth -10
+			max_azimuth 170
+			min_inclination -10
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode12
+			min_azimuth -140
+			max_azimuth 140
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node HeavyGunNode13
+			min_azimuth -140
+			max_azimuth 140
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass beam
+		turretsize large
+
+		mount
+		{
+			node AssaultLaserNode05
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node AssaultLaserNode06
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node AssaultLaserNode07
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node AssaultLaserNode08
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+	}
+
+	bank
+	{
+		turretclass beam
+		turretsize large
+
+		mount
+		{
+			node AssaultLaserNode09
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node AssaultLaserNode10
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node AssaultLaserNode11
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node AssaultLaserNode12
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+	}
+
+	bank
+	{
+		turretclass torpedo
+		turretsize large
+
+		mount
+		{
+			node TorpedoNode15
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node TorpedoNode16
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+
+		mount
+		{
+			node TorpedoNode17
+			min_azimuth -10
+			max_azimuth 10
+			min_inclination -10
+			max_inclination 10
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode14
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode16
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 45
+		}
+
+		mount
+		{
+			node MediumGunNode17
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 45
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode15
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode18
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 45
+		}
+
+		mount
+		{
+			node MediumGunNode19
+			min_azimuth -90
+			max_azimuth  90
+			min_inclination -15
+			max_inclination 45
+		}
+	}
+}

@@ -1,0 +1,66 @@
+weapon
+{
+	name						@WEAPON_COL_TARPIT
+
+	weaponclass					col
+
+	turretclass					col
+	turretsize					large
+
+	requires					DRN_TPCOL
+	cost						100000
+
+	solution_tolerance			5
+	burst_volleys				1
+	buildup_delay				0
+	volley_period				1
+	volley_duration				0
+	recharge_time				25
+
+	muzzle_speed				360
+	muzzle_effect				"effects/COL_muzzle.effect"
+	muzzle_sound				"Sounds/Weapons/col_muzzle.wav"
+	muzzle_sound_minrange		200
+
+	icon_file					GUI/Weapons/COL.tga
+	icon_rect					"192 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			true
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_explicit_target			true
+	fc_exclusive_launch			true
+	fc_targets_expire			true
+	fc_controllable				true
+	fc_holdsfire				true
+	pinpoint					false
+	target_queue_size			1
+
+	col
+	{
+		entity_type						"TarpitCol"
+		model							"tarpit.X"
+		mass							"1000"
+		dumbfire_period					"5"
+		expire_time						"55"
+		health							"4000"
+		travel_effect					"effects/COL_TAR_Transit.effect"
+		impact_effect					"effects/GravMine_trigger.effect"
+		impact_sound					"Sounds/Weapons/min_gravity_det.wav"
+		impact_sound_minrange			"100"
+		expire_effect					"effects/Missile_Impact.effect"
+		expire_sound					"Sounds/Weapons/mis_missile_impact.wav"
+		expire_sound_minrange			"100"
+
+		gravradius						2000
+		gravforce						535000
+	}
+
+	rating_frate	1
+	rating_dam		0
+	rating_acc		4
+	rating_range	10
+}

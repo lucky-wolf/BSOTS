@@ -1,0 +1,77 @@
+weapon
+{
+	name		@WEAPON_NPC_HERALD_CAN_INERTIAL
+	weaponclass	inertialcannon
+	weaponfamily	energycannon
+	model1		"Species/Zuul/art/weapons/barrel_m1_inertial.X"
+	turretmodel1	"Species/Zuul/art/weapons/turret_m1standard.X"
+	requires 	WEP_IntCan
+	hpbonus		30
+	cost		5000
+	turretsize		medium
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	recharge_time	2
+	muzzle_speed	700
+	muzzle_sound	Sounds/Weapons/can_inertial_muzzle.wav
+	muzzle_sound_minrange	100
+	muzzle_effect	effects/Inertial_Cannon_Muzzle.effect
+	icon_file	GUI/WeaponIcons_2.tga
+	icon_rect	"0 160 32 32"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range 1200		
+	range_planet  1500
+	
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+
+		impact_sound	Sounds/Weapons/can_hvy_inertial_impact.wav
+		impact_sound_minrange	100
+		impact_effect	effects/Inertial_Cannon_Impact.effect
+
+		expire_effect   "effects/Inertial_Cannon_Expire.effect"
+
+		thrust_sound	Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange	15
+
+		rangetable
+		{
+			pb_range	400
+			pb_range_dev	1
+			pb_range_dam	150
+
+			eff_range	800
+			eff_range_dev	1.5
+			eff_range_dam	140
+
+			max_range	1500
+			max_range_dev	2
+			max_range_dam	120
+		}
+		
+		effect		effects/Inertial_Cannon_Bullet.effect
+
+		dam_pop		250
+		dam_infra	0	
+		dam_terra	0
+	}
+	
+	dam_est		100
+
+	rating_frate	8
+	rating_dam	2
+	rating_acc	7.5
+	rating_range	6
+}

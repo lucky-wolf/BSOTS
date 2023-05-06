@@ -1,0 +1,55 @@
+shipsection
+{
+	model					Species/Liir/art/sections/CruiserPropaganda.X
+	dam_model				Species/Liir/art/sections/CruiserPropaganda.X
+	section_type			mission
+	section_class			cruiser
+	requires				DRV_Fusn
+	requires				CCC_FTLBrdB
+
+	preview_ofs				"0 0 1"
+
+	health					8960
+	mass					25000
+	cost					382000
+	maintenance_cost		3000
+	cpoints					54080
+
+	propaganda 1
+	autonomous				true	// actually means this is a ship with only a mission section
+	ftlspeed				3
+	range					9
+	crew						12
+	preview_ofs				"20 -600 0"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		650000
+		force_right			650000
+		force_up			650000
+
+		torque_yaw			6e+9
+		torque_pitch		6e+9
+		torque_roll			6e+9
+
+		speed				55
+		rotspeed			65
+	}
+}

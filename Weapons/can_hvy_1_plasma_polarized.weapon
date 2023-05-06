@@ -1,0 +1,92 @@
+weapon
+{
+	name						@WEAPON_CAN_HVYPLASMA_POL
+
+	weaponclass					polarizedplasma
+	weaponfamily				energycannon
+
+	model1						barrel_l1_heavyplasma.x
+
+	turretclass					standard
+	turretsize					large
+	munitionsize				medium
+
+	requires					WEP_HvyPCan
+	requires					WEP_PolPlsm
+	cost						3000
+
+	burst_volleys				3
+	volley_period				.1
+	recharge_time				7
+
+	muzzle_speed				450
+	muzzle_effect				effects/HeavyPlasmaCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/Dsc_WarQ_muzzle.wav
+	muzzle_sound_minrange		100
+
+	buildup_delay				1
+	buildup_sound				Sounds/Weapons/Dsc_WarQ_charge.wav
+	buildup_sound_minrange		100
+
+	icon_file					GUI/Weapons/Polarized.tga
+	icon_rect					"0 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1800 // 1300
+	range_planet				1800
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		effect							effects/WarQuoit_Bullet.effect
+		impact_effect					effects/WarQuoit_Impact.effect
+		expire_effect					"effects/WarQuoit_Expire.effect"
+		planet_impact_effect			"effects/Laser_PlanetImpact.effect"
+
+		impact_sound					Sounds/Weapons/can_plasma_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange			15
+
+		rangetable
+		{
+			pb_range		360		// 20% of range
+			pb_range_dev	3
+			pb_range_dam	80		// .8 plasma
+
+			eff_range		1260	// 70% of range
+			eff_range_dev	3
+			eff_range_dam	144
+
+			max_range		1800
+			max_range_dev	3
+			max_range_dam	80
+		}
+
+		ricochet_mod					-1.5
+		ricochet_sound					Sounds/Weapons/las_all_rico.wav
+		ricochet_sound_minrange			10
+
+		dam_pop							2049			// .5 plasma
+		dam_infra						0.000114		// 2 plasma
+		dam_terra						0.0000095
+	}
+
+	dam_est			120
+
+	rating_frate	6
+	rating_dam		2
+	rating_acc		4
+	rating_range	8
+}

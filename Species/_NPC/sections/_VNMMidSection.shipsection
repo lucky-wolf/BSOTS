@@ -1,0 +1,54 @@
+shipsection
+{
+	model Species/_NPC/art/sections/VNM_UCSK_Midsection.X
+	dam_model Species/_NPC/art/sections/VNM_UCSK_Midsection.X
+	socket_aft EngineNode
+	socket_fore CommandNode
+	section_type mission
+	section_class Dreadnought
+	crew false
+	health 7000
+	mass 6500
+	cost 14000
+	cpoints 2800
+	preview_ofs "3 -2000 2"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	entity_class "VNIncompleteSystemKiller"
+
+	option
+	{
+		option 	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward			0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch			0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+
+
+
+}
+

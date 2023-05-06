@@ -1,0 +1,17 @@
+
+# distrib-weight: units to tailor the distribution of roid types (ex. simply a 2 is worth 2x 1's).
+# ceil: ceiling above/below plane (in meters) for placement.
+# child-id: <id> of child asteroids to spawn when destroyed.
+# min-childs: min number of child asteroids to spawn when destroyed.
+# max-childs: max number of child asteroids to spawn when destroyed.
+
+# <id> <distrib-weight> <model> <visible-range> <health> <dmgpop> <dmginfra> <explo-effect> <explo-sound> <ceil> <child-id> <min-childs> <max-childs> <size> <res-weight> <res-loss-factor>
+ 1, 1,"Models/Asteroids/Asteroid_S01.X",  5000,   188,    4000000,  1,  "Effects/Blastoid1.effect",  "Sounds/SFX/explosion_asteroid_mas_002.wav",   20, 0,  0,  0, 0,  10, 1.00
+ 2, 2,"Models/Asteroids/Asteroid_S02.X",  6000,   375,    8000000,  1,  "Effects/Blastoid1.effect",  "Sounds/SFX/explosion_asteroid_lrg_001.wav",   30, 1,  1,  2, 0,  50, 0.20
+ 3, 1,"Models/Asteroids/Asteroid_S01.X",  5000,   188,    4000000,  1,  "Effects/Blastoid1.effect",  "Sounds/SFX/explosion_asteroid_mas_002.wav",   20, 0,  0,  0, 0,  10, 1.00
+ 4, 2,"Models/Asteroids/Asteroid_S02.X",  6000,   375,    8000000,  1,  "Effects/Blastoid1.effect",  "Sounds/SFX/explosion_asteroid_lrg_001.wav",   30, 1,  1,  2, 0,  50, 0.20
+ 5, 4,"Models/Asteroids/Asteroid_S03.X",  7000,   750,   16000000,  2,  "Effects/Blastoid1.effect",  "Sounds/SFX/explosion_asteroid_med_002.wav",   40, 1,  2,  3, 1,  50, 0.20
+ 6, 8,"Models/Asteroids/Asteroid_S04.X",  8000,  1500,   32000000,  4,  "Effects/Blastoid2.effect",  "Sounds/SFX/explosion_asteroid_sml_001.wav",   60, 1,  4,  6, 1,  50, 0.20
+ 7,16,"Models/Asteroids/Asteroid_S05.X", 10000,  2250,   60000000,  8,  "Effects/Blastoid2.effect",  "Sounds/SFX/explosion_asteroid_sml_002.wav",  100, 2,  6, 10, 2, 125, 0.20
+ 8,32,"Models/Asteroids/Asteroid_S06.X", 12000,  3000,   75000000, 12,  "Effects/Blastoid3.effect",  "Sounds/SFX/explosion_asteroid_sml_001.wav",  175, 2,  6, 12, 2, 125, 0.20
+ 9,64,"Models/Asteroids/Asteroid_S07.X", 16000,  3750,  100000000, 16,  "Effects/Blastoid3.effect",  "Sounds/SFX/explosion_asteroid_sml_002.wav",  350, 3, 10, 14, 2, 200, 0.20

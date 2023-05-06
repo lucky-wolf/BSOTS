@@ -1,0 +1,389 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model "Species/_NPC/art/sections/VNeumannDisc_Tank.X"
+	section_type mission
+	section_class Destroyer
+	health 20000
+	mass 2000
+	cost 100000
+	cpoints 5000
+	engine_sound ""
+	engine_idle_sound ""
+	autonomous true	// actually means this is a ship with only a mission section
+	crew 0
+
+	command_cost 0
+	maintenance_cost 0
+
+	option	IND_MagLat
+	option	IND_ImpRfCt
+
+	netforcelimits
+	{
+		force_forward 100000
+		force_right   100000
+		force_up      100000
+
+		torque_yaw    10000000
+		torque_pitch  10000000
+		torque_roll   10000000
+
+		speed         120
+		rotspeed      30
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APdrv_heavy.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node WeaponNode31
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APdrv_heavy.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node WeaponNode32
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APdrv_heavy.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node WeaponNode33
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APdrv_heavy.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node WeaponNode34
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APdrv_heavy.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node WeaponNode35
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APdrv_heavy.weapon"
+		turretclass standard
+		turretsize large
+
+		mount
+		{
+			node WeaponNode36
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APdrv_mass.weapon"
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node WeaponNode37
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode38
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode39
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode40
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APdrv_mass.weapon"
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node WeaponNode41
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode42
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode43
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode44
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APgauss.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node WeaponNode45
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode46
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode47
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode48
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APgauss.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node WeaponNode49
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode50
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode51
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode52
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APgauss.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node WeaponNode53
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode54
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode55
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode56
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_bal_APgauss.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node WeaponNode57
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode58
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode59
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node WeaponNode60
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+}

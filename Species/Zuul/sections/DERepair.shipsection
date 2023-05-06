@@ -1,0 +1,64 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/DERepair.X
+	preview_ofs				"3 0 -1"
+
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+
+	section_type			mission
+	section_class			Destroyer
+
+	health					480
+	mass					1000
+	cost					5000
+	maintenance_cost		300
+	cpoints					928
+
+	requires				IND_SlvgTech
+	repair_capacity			2500
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	section_sound			"Sounds/Ships/Shared/DEDeepScan.wav"
+	section_sound_repeat	5
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed        		-20
+		rotspeed      		-20
+	}
+}

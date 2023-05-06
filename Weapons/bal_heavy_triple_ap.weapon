@@ -1,0 +1,85 @@
+weapon
+{
+	name						@WEAPON_BAL_HEAVY_TRIPLE_AP
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						barrel_l3_heavydriver.x
+	turretmodel1				turret_l1standard.x
+
+	turretclass					standard
+	turretsize					large
+
+	requires					WEP_APHvyDrvr
+	requires					WEP_TriHvyDrvr
+	cost						50000
+
+	burst_volleys				1
+	recharge_time				6.667
+
+	muzzle_speed				800		// 4/3x
+	muzzle_effect				effects/APHeavyDriver_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_hvy_driver_muzzle.wav
+	muzzle_sound_minrange		600
+
+	icon_file					GUI/Weapons/Ballistic.tga
+	icon_rect					"192 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						3000	// 1.5 heavy
+	range_planet				3000
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/APHeavyDriver_bullet.effect
+		impact_effect					effects/HeavyDriver_impact.effect
+		expire_effect					effects/AP_HeavyGauss_Expire.effect
+
+		impact_sound					Sounds/Weapons/bal_drv_impact.wav
+		impact_sound_minrange			600
+
+		rangetable
+		{
+			pb_range		750		// 1.5 heavy
+			pb_range_dev	3
+			pb_range_dam	360			// .8 heavy
+
+			eff_range		1800
+			eff_range_dev	4
+			eff_range_dam	360
+
+			max_range		3000
+			max_range_dev	5
+			max_range_dam	360
+		}
+
+		ricochet_mod					-2.8
+		ricochet_sound					Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange			300
+
+		mass							150			// .5
+
+		dam_pop							12304		// .5 heavy
+		dam_infra						0.00045	// 2x heavy
+		dam_terra						0.0000375
+	}
+
+	dam_est			750
+
+	rating_frate	6
+	rating_dam		8
+	rating_acc		3
+	rating_range	8
+}

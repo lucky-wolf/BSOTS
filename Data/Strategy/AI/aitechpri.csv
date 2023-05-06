@@ -1,0 +1,459 @@
+# <tech>,HUMAN,HIVER,TARKAS,LIIR,ZUUL,MORRIGI
+#
+# <tech>: tech label
+# <RACE>: tech cost on a scale of 0-255
+# lower number = higher priority
+# hence 0 is highest priority, and 255 lowest
+# (Note: Original docs indicate 0 was ignore: but testing puts paid to the lie)
+#
+# ex:
+# CCC_ComRaid,30,255,5,20,5,30
+# ^ CCC_ComRaid is ignored by hiver but prioritized by others
+#
+################## Terraforming ##################
+BIO_AtmoAd,5,5,5,5,5,5
+BIO_Btrans,5,5,5,5,5,5
+BIO_EnvTail,10,10,10,10,10,10
+BIO_GnMod,5,5,5,5,5,5
+BIO_GrvAdpt,10,10,10,10,10,10
+BIO_SpndAni,5,5,5,5,5,5
+BIO_TerBac,10,10,10,10,10,10
+IND_EleNans,5,5,5,5,5,5
+IND_AtProc,10,10,10,10,10,10
+#
+####################### AI #######################
+CCC_AI,30,30,30,30,30,30
+CCC_AIAdmin,30,30,30,30,30,30
+CCC_AIFac,30,30,30,30,30,30
+CCC_AIFrCon,30,30,30,30,30,30
+#
+################### AI Control ###################
+CCC_AISlv,10,10,10,10,10,10
+CCC_AIVrus,20,20,20,20,20,20
+#
+###################### CnC #######################
+CCC_AdvCnC,10,10,10,10,10,10
+CCC_BtlCmp,10,10,10,10,10,10
+CCC_DatSyn,20,20,20,20,20,20
+CCC_CmbtAlg,10,10,10,10,10,10
+CCC_ArmCom,20,20,20,20,20,20
+CCC_HoloTac,10,10,10,10,10,10
+CCC_FCCom,20,20,20,20,20,20
+#
+################ Sensors & E-War #################
+CCC_AdvSens,10,10,10,10,10,10
+CCC_DatCor,30,30,30,30,30,30
+CCC_FTLBrdB,5,5,5,5,5,5
+CCC_HypCom,255,255,20,255,255,255
+CCC_IntSens,10,10,10,10,10,10
+CCC_NdTrkHum,30,30,30,30,30,30
+CCC_NdTrkZul,30,30,30,30,30,30
+CCC_QntChaf,20,20,20,20,20,20
+CCC_ScanSats,20,20,20,20,20,20
+CCC_SnsJam,10,10,10,10,10,10
+CCC_SpJam,30,30,30,30,30,30
+CCC_SpyBm,30,30,30,30,30,30
+CCC_TunSens,20,20,20,20,20,20
+IND_AdvEWAR,20,20,20,20,20,20
+IND_HrdElec,20,20,20,20,20,20
+#
+#################### Commerce ####################
+CCC_FTLCom,5,5,5,5,5,5
+CCC_FTLEcon,5,5,5,5,5,5
+CCC_ComRaid,255,255,255,255,255,255
+IND_MegFrght,30,30,30,30,30,30
+IND_ModCon,30,30,30,30,30,30
+#
+############### Human Star Drives ################
+DRV_Node,5,255,255,255,255,255
+DRV_NodFoc,5,255,255,255,255,255
+DRV_NodPath,5,255,255,255,255,255
+#
+############### Hiver Star Drives ################
+DRV_TpGate,255,5,255,255,255,255
+DRV_GatAmp,255,5,255,255,255,255
+DRV_FarCast,255,5,255,255,255,255
+DRV_LRFiss,255,5,255,255,255,255
+DRV_LRFusn,255,5,255,255,255,255
+DRV_Rmscps,255,20,255,255,255,255
+#
+############### Tarkas Star Drives ###############
+DRV_Hyper,255,255,5,255,255,255
+DRV_HyprFld,255,255,5,255,255,255
+DRV_Warp,255,255,5,255,255,255
+#
+################ Liir Star Drives ################
+DRV_Flicker,255,255,255,5,255,255
+DRV_ImpStWrp,255,255,255,5,255,255
+DRV_StrWrp,255,255,255,5,255,255
+#
+################ Zuul Star Drives ################
+DRV_Rad,255,255,255,255,5,255
+DRV_Rend,255,255,255,255,5,255
+DRV_Rip,255,255,255,255,5,255
+#
+############## Morrigi Star Drives ###############
+DRV_VdCrv,255,255,255,255,255,5
+DRV_VdCtr,255,255,255,255,255,5
+DRV_VdMstr,255,255,255,255,255,5
+DRV_GrvSyn,255,255,255,255,255,10
+#
+############## Star Drives Boosters ##############
+DRV_RecFiss,5,5,5,5,5,5
+DRV_PlsFiss,5,5,5,5,5,5
+DRV_PlsmFoc,5,5,5,5,5,5
+DRV_OvrThrust,10,10,10,10,10,10
+#
+################### Power Tech ###################
+DRV_Fissn,30,30,30,30,30,30
+DRV_Fusn,30,30,30,30,30,30
+DRV_AntiMat,30,30,30,30,30,30
+DRV_SmlFus,10,10,20,20,20,10
+DRV_McroFus,20,10,10,20,20,20
+DRV_IncThrst,5,5,5,5,5,5
+DRV_McrFlkr,255,255,255,10,255,255
+#
+#################### Salvage #####################
+IND_Decon,5,5,5,5,5,5
+IND_SlvgTech,5,5,5,5,5,5
+#
+################ Economic Boosts #################
+IND_CyberInt,5,5,5,5,5,5
+DRN_AdvRob,5,5,5,5,5,5
+IND_Waldo,5,5,5,5,5,5
+IND_AstMine,5,5,5,5,5,5
+IND_MsMine,30,10,30,50,5,30
+IND_ExpSys,10,10,10,10,10,10
+IND_GravCon,10,10,10,10,10,10
+IND_HrdStrct,10,10,10,10,10,10
+IND_ArcCon,10,10,10,10,10,10
+IND_OrbFound,10,10,10,10,10,10
+IND_DSCon,10,10,10,10,10,10
+IND_OrbDry,10,10,10,10,10,10
+IND_HvyPlat,10,10,10,10,10,10
+#
+################### Starships ####################
+IND_DEConstr,8,8,8,8,8,8
+IND_CruisCon,30,30,30,30,30,30
+IND_DreadCon,30,30,30,30,30,30
+IND_SpnlMnt,10,10,10,10,10,8
+IND_DEHmrHead,8,10,10,20,10,10
+IND_CRHmrHead,20,20,20,20,20,20
+IND_DEStrafe,8,8,8,10,8,10
+IND_CRStrafe,10,10,10,10,10,10
+IND_BrdPod,30,30,30,255,8,30
+IND_DEWarEng,8,8,8,8,8,8
+IND_CRWarEng,8,8,8,8,8,8
+IND_DNWarEng,10,10,10,10,10,10
+WEP_SgeDrvr,20,50,30,50,30,50
+DRN_BtlRdrs,255,255,10,255,255,255
+IND_DEInvasion,20,20,20,20,20,20
+IND_CRInvasion,10,10,10,10,10,10
+IND_PredGun,10,10,10,10,10,10
+WEP_PDtech,20,30,10,50,30,30
+IND_TrpSat,30,30,30,30,30,30
+#
+################ Orbital Stations ################
+IND_HabStn,255,255,255,255,255,5
+IND_ShipYard,5,5,5,5,5,5
+IND_TradeStn,5,5,5,5,5,5
+IND_CmdStn,20,20,20,20,20,20
+IND_SciStn,20,20,20,20,20,20
+IND_AstMon,30,30,30,30,30,30
+IND_SenStn,50,50,50,50,50,50
+#
+#################### Armors ####################
+IND_TrkStl,255,255,5,255,255,255
+IND_PlyAlloy,20,10,10,20,20,20
+IND_MagLat,20,10,10,20,20,20
+IND_QrkRes,15,15,15,15,15,15
+IND_AdmAly,15,15,15,15,15,15
+IND_RefCoat,20,20,20,10,20,10
+IND_ImpRfCt,20,20,20,10,20,10
+#
+#################### Shields ####################
+SLD_Tech,5,5,5,5,5,5
+SLD_Def,20,20,20,40,20,30
+SLD_Disr,20,20,20,40,20,20
+SLD_MkOne,20,40,40,15,40,30
+SLD_MkTwo,20,40,40,15,40,30
+SLD_MkThree,30,30,30,30,40,15
+SLD_MkFour,30,30,30,30,40,15
+SLD_ErgAb,20,30,30,10,40,10
+DRV_QntCap,20,30,30,10,40,10
+SLD_Magni,20,30,30,5,40,5
+SLD_Focus,255,255,255,5,255,255
+SLD_GrvShld,50,50,50,50,50,50
+SLD_MesShld,50,50,50,50,50,50
+SLD_Proj,50,50,50,50,50,50
+#
+#################### Stealth #####################
+SLD_Clk,30,30,30,30,30,10
+SLD_ImpClk,30,30,30,30,30,10
+IND_StlthArm,30,10,30,30,30,10
+#
+##################### Mines ######################
+WEP_NukMine,30,20,30,30,30,30
+WEP_CorMine,30,20,30,30,30,30
+WEP_NanMine,30,20,30,30,30,30
+WEP_FusMine,30,20,30,30,30,30
+WEP_ClkMine,30,20,30,30,30,30
+WEP_LpMine,30,20,30,30,30,30
+WEP_AmMine,30,20,30,30,30,30
+WEP_AMClkMine,30,20,30,30,30,30
+WEP_AMLeapMine,30,20,30,30,30,30
+WEP_GrvMine,30,30,30,30,30,20
+WEP_ImpMine,30,30,30,30,30,20
+#
+#################### Missiles ####################
+WEP_Nukes,20,20,30,30,20,30
+WEP_NukeWhd,20,20,30,30,20,30
+WEP_GmaWhd,20,20,30,30,20,30
+WEP_FusWhd,20,20,30,30,20,30
+WEP_AmWhd,20,20,30,30,20,30
+WEP_Missile,20,20,30,30,30,30
+WEP_DualMsl,20,20,30,30,30,30
+WEP_SmMis,10,20,30,30,30,30
+WEP_DualSmMis,10,20,30,30,30,30
+WEP_HvyMsl,20,20,20,20,20,20
+WEP_DualHvyMsl,20,20,20,20,20,20
+WEP_CorMsl,40,40,20,40,20,40
+WEP_NanMsl,40,40,20,40,20,40
+WEP_DFMsl,30,30,20,40,20,40
+WEP_MWMsl,30,30,30,40,40,30
+DRV_Ints,255,255,255,255,255,255
+WEP_FMsl,20,20,20,20,20,20
+WEP_KKMsl,20,20,20,40,20,40
+WEP_NdMsl,255,255,255,255,255,255
+#
+############### Planetary Missiles ###############
+WEP_PMsl,10,10,10,10,10,10
+WEP_HvyPMsl,10,10,10,10,10,10
+WEP_MWPMsl,10,10,10,10,10,10
+#
+################### Ballistics ###################
+WEP_VRFtech,20,20,20,20,20,20
+WEP_AccAmp,20,20,20,20,20,20
+WEP_NeutRnd,20,20,20,20,20,20
+#
+WEP_GsDrvr,20,20,20,40,20,50
+WEP_APGauss,30,20,20,40,30,50
+WEP_SnpCanDrvr,30,20,20,40,30,50
+WEP_DualGauss,20,10,10,30,20,40
+#
+WEP_PDBal,30,20,20,40,20,50
+WEP_PDShotgun,30,20,20,40,20,50
+#
+WEP_BrstrDrvr,30,10,30,40,30,40
+WEP_ErgDrain,30,30,30,30,30,20
+WEP_ShldDrvr,30,30,30,30,30,30
+WEP_ThmpDrvr,30,30,30,30,30,20
+#
+WEP_MasDrvr,30,20,20,40,20,50
+WEP_APMasDrvr,30,20,20,40,20,50
+WEP_SnpMasDrvr,30,20,20,40,20,50
+WEP_DualMasDrvr,20,10,10,30,20,40
+#
+WEP_HvyDrvr,30,20,20,40,20,50
+WEP_APHvyDrvr,30,20,20,40,20,50
+WEP_SnpHvyDrvr,30,20,20,40,20,50
+WEP_DualHvyDrvr,20,10,10,30,20,40
+WEP_TriHvyDrvr,10,5,5,20,10,30
+#
+WEP_LtAutCan,20,30,30,40,30,50
+WEP_DualLtAutCan,20,10,10,30,20,40
+WEP_AutCan,20,30,30,40,30,50
+WEP_DualAutCan,20,10,10,30,20,40
+WEP_HvyAutCan,20,30,30,40,30,50
+WEP_DualHvyAutCan,20,10,10,30,20,40
+#
+WEP_StrmDrvr,30,30,20,50,20,40
+WEP_APStrmDrvr,30,30,20,50,20,40
+WEP_HStrmDrvr,30,30,20,50,20,40
+WEP_APHStrmDrvr,30,30,20,50,20,40
+WEP_HugeStrmDrvr,30,30,20,50,20,40
+WEP_APHugeStrmDrvr,30,30,20,50,20,40
+#
+WEP_RailGun,10,10,10,10,10,10
+#
+################### Disruptors ###################
+WEP_Dsrptr,30,30,30,30,20,20
+WEP_EmPulse,30,30,30,30,20,20
+WEP_PlsTrp,30,30,30,30,20,20
+WEP_DsrptrWhp,255,255,255,255,5,255
+WEP_DsrPrj,30,30,30,30,20,20
+WEP_DsrCan,30,30,30,30,20,20
+WEP_DualDsrCan,30,30,30,30,20,20
+WEP_HvyDsrCan,30,30,30,30,10,10
+WEP_IntCan,30,30,30,30,20,20
+WEP_HvyIntCan,30,30,30,30,10,10
+#
+#################### Energy ######################
+WEP_PlsmCan,30,30,30,20,30,20
+WEP_PolPlsm,30,30,30,20,30,20
+WEP_HvyPCan,30,30,30,15,30,15
+WEP_PlsmProj,30,30,30,20,30,20
+WEP_DualPlsmCan,30,30,30,15,30,15
+WEP_FusCan,30,30,30,20,30,20
+WEP_PolFus,30,30,30,20,30,20
+WEP_HvyFCan,30,30,30,15,30,15
+WEP_FusProj,30,30,30,20,30,20
+WEP_DualFusCan,30,30,30,15,30,15
+WEP_AmCan,30,30,30,20,30,20
+WEP_PolAm,30,30,30,20,30,20
+WEP_HvyACan,30,30,30,15,30,15
+WEP_AmProj,30,30,30,20,30,20
+WEP_DualAmCan,30,30,30,15,30,15
+WEP_MesProj,20,30,30,30,30,20
+#
+################ Energy Torpedos #################
+WEP_PlsmTrp,40,20,40,20,40,40
+WEP_FusTrp,40,20,40,20,40,40
+WEP_DtFsTrp,40,20,40,20,40,40
+WEP_AmTrp,40,20,40,20,40,40
+WEP_DtAmTrp,40,20,40,20,40,40
+#
+################ Photon Torpedos #################
+WEP_PhotTrp,20,40,30,40,40,40
+WEP_PhotTrp2,20,40,30,40,40,40
+WEP_PhotTrp3,20,40,30,40,40,40
+WEP_GluTrp,30,40,20,40,40,40
+WEP_KelTrp,30,40,20,40,40,40
+WEP_MesTrp,30,40,20,40,40,40
+#
+################### Emitters #####################
+WEP_EmitrPD,20,30,30,20,30,30
+WEP_LtEmitr,20,30,30,20,30,30
+WEP_Emitr,20,30,30,20,30,30
+WEP_HvyEmitr,20,30,30,20,30,30
+WEP_EmtPrj,20,30,30,20,30,30
+#
+################## Heavy Beams ###################
+WEP_PrtBm,20,40,40,40,40,20
+WEP_PosiBm,20,40,40,40,40,20
+WEP_DualPosiBm,20,40,40,40,40,20
+WEP_NeutBm,20,40,40,40,40,20
+WEP_DualNeutBm,20,40,40,40,40,20
+WEP_MesBm,20,40,40,40,40,20
+WEP_DualMesBm,20,40,40,40,40,20
+WEP_GravBm,20,40,40,40,40,20
+WEP_DualGravBm,20,40,40,40,40,20
+WEP_PulGrvBm,10,20,20,20,20,10
+WEP_DualPulGrvBm,10,20,20,20,20,10
+IND_TrctBm,20,10,20,20,20,20
+#
+################# Assault Beams ##################
+WEP_HCLas,30,30,30,30,20,10
+WEP_Lancer,30,30,30,30,20,10
+WEP_CtngBm,30,30,30,30,20,10
+#
+#################### Beamers #####################
+WEP_PDBmr,30,30,30,30,20,20
+WEP_PDPhas,30,30,30,30,10,10
+WEP_RedBmr,30,30,30,30,20,20
+WEP_GrnBmr,30,30,30,30,20,20
+WEP_UvBmr,30,30,30,30,20,20
+WEP_DualBmr,30,30,30,30,10,10
+WEP_XrayBmr,30,30,30,30,20,20
+WEP_DualAdvBmr,30,30,30,30,10,10
+WEP_Phas,30,30,30,30,20,20
+WEP_DualPhas,30,30,30,30,10,10
+WEP_HvyPhas,30,30,30,30,20,20
+WEP_DualHvyPhas,30,30,30,30,10,10
+#
+#################### Lasers ######################
+WEP_PDLas,20,30,30,20,30,30
+WEP_PlsPhasPD,10,30,30,10,30,30
+WEP_RedLas,20,30,30,20,30,30
+WEP_GrnLas,20,30,30,20,30,30
+WEP_UvLas,20,30,30,20,30,30
+WEP_DualLas,10,30,30,10,30,30
+WEP_XryLas,20,30,30,20,30,30
+WEP_DualAdvLas,10,30,30,10,30,30
+WEP_PlsPhas,20,30,30,20,30,30
+WEP_DualPlsPhas,10,30,30,10,30,30
+WEP_HvyPlsPhas,20,30,30,20,30,30
+WEP_DualHvyPlsPhas,10,30,30,10,30,30
+#
+##################### Drones #####################
+DRN_Auto,255,255,255,255,255,255
+DRN_Cmbt,10,10,20,20,20,10
+DRN_Squad,20,20,30,30,30,20
+DRN_AdvFrm,10,10,20,20,20,10
+DRN_Assault,10,20,20,20,20,10
+DRN_Mine,20,10,30,30,30,30
+DRN_WingMan,20,20,30,30,30,20
+DRN_Sats,20,20,30,30,30,20
+#
+###################### COL #######################
+DRN_COL,20,20,30,30,30,20
+DRN_CrakCOL,30,20,30,30,30,30
+DRN_CryCOL,50,50,50,50,50,40
+DRN_TPCOL,255,255,255,255,255,20
+#
+############### Biological Warfare ###############
+BIO_AsPlg,50,50,50,50,50,50
+BIO_AsPlgVac,50,50,50,50,50,50
+BIO_Bst,50,50,50,50,50,50
+BIO_BstVac,50,50,50,50,50,50
+BIO_ConNan,50,50,50,50,50,50
+BIO_NanVir,50,50,50,50,50,50
+BIO_Plg,50,50,50,50,50,50
+BIO_PlgVac,50,50,50,50,50,50
+BIO_RtPlg,50,50,50,50,50,50
+BIO_RtPlgVac,50,50,50,50,50,50
+BIO_SmrtNan,10,10,10,10,10,10
+BIO_UniAnti,50,50,50,50,50,50
+#
+###################### Xeno ######################
+CCC_TrnsHum,30,30,30,30,30,30
+CCC_TrnsHvr,30,30,30,30,30,30
+CCC_TrnsLir,30,30,30,30,30,30
+CCC_TrnsMorr,30,30,30,30,30,30
+CCC_TrnsTrk,30,30,30,30,30,30
+CCC_TrnsZul,30,30,30,30,30,30
+XNC_AccHum,30,30,30,30,30,30
+XNC_AccHvr,30,30,30,30,30,30
+XNC_AccLir,30,30,30,30,30,30
+XNC_AccMorr,30,30,30,30,30,30
+XNC_AccTrk,30,30,30,30,30,30
+XNC_AdctHum,255,255,255,255,255,255
+XNC_AdctHvr,255,255,255,255,255,255
+XNC_AdctLir,255,255,255,255,255,255
+XNC_AdctMorr,255,255,255,255,255,255
+XNC_AdctTrk,255,255,255,255,255,255
+XNC_DomZuul,30,30,30,30,30,30
+XNC_IncHum,30,30,30,30,30,30
+XNC_IncHvr,30,30,30,30,30,30
+XNC_IncLir,30,30,30,30,30,30
+XNC_IncMorr,30,30,30,30,30,30
+XNC_IncTrk,30,30,30,30,30,30
+XNC_ProfHum,30,30,30,30,30,30
+XNC_ProfHvr,30,30,30,30,30,30
+XNC_ProfLir,30,30,30,30,30,30
+XNC_ProfMorr,30,30,30,30,30,30
+XNC_ProfTrk,30,30,30,30,30,30
+XNC_ROOT,30,30,30,30,30,30
+XNC_SubHum,30,30,30,30,30,30
+XNC_SubHvr,30,30,30,30,30,30
+XNC_SubLir,30,30,30,30,30,30
+XNC_SubMorr,30,30,30,30,30,30
+XNC_SubTrk,30,30,30,30,30,30
+XNC_SubZuul,30,30,30,30,30,30
+XNC_TempHum,255,255,255,255,255,255
+XNC_TempHvr,255,255,255,255,255,255
+XNC_TempLir,255,255,255,255,255,255
+XNC_TempMorr,255,255,255,255,255,255
+XNC_TempTrk,255,255,255,255,255,255
+XNC_TrnsHum2,30,30,30,30,30,30
+XNC_TrnsHum3,30,30,30,30,30,30
+XNC_TrnsHvr2,30,30,30,30,30,30
+XNC_TrnsHvr3,30,30,30,30,30,30
+XNC_TrnsLir2,30,30,30,30,30,30
+XNC_TrnsLir3,30,30,30,30,30,30
+XNC_TrnsMorr2,30,30,30,30,30,30
+XNC_TrnsMorr3,30,30,30,30,30,30
+XNC_TrnsTrk2,30,30,30,30,30,30
+XNC_TrnsTrk3,30,30,30,30,30,30
+XNC_TrnsZuul2,30,30,30,30,30,30
+#

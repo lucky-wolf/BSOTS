@@ -1,0 +1,118 @@
+shipsection
+{
+	model					Species/Human/art/sections/Cruiserbattlebridge.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			cruiser
+
+	health					4480
+	mass					4500
+	cost					35000
+	maintenance_cost		3000
+	cpoints					2592
+	crew					35
+
+	requires				GRP_LRGWEP
+	requires				GRP_HVYBEAM
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			4e+8
+		torque_pitch		4e+8
+		torque_roll			4e+8
+
+		speed				0
+		rotspeed			40
+	}
+
+	bank
+	{
+		turretclass beam
+		turretsize large
+
+		mount
+		{
+			node AssaultNode01
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -7
+			max_inclination 7
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -135
+			max_azimuth 135
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -70
+			max_azimuth 150
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth 70
+			max_azimuth -150
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+}

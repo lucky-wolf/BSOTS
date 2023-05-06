@@ -1,0 +1,38 @@
+@echo off
+cdd %~dp0
+on break quit -1
+
+set folder=%@full[..\Weapons]
+set filter=*
+:retry_filter
+querybox /e "%~n0" Specify filename filter (* for all): %%filter
+if %_? NE 0 quit -1
+
+iff not exist "%folder\%filter.weapon" then
+	MSGBOX /s okcancel "%~n0" %folder\%filter.weapon not found!
+	if %_? NE 10 quit -1
+	goto retry_filter
+endiff
+dir "%folder\%filter.weapon" /b
+
+set scale=1.0
+querybox /e "%~n0" Scale Pop Damage by: %%scale
+if %_? NE 0 quit -1
+
+echo This will scale pop damage by a factor of %scale
+echo Each file will be backed up to *.bak (this will overwrite previous backups)
+pause
+
+for /r "%folder" %source in (%filter.weapon) (copy /z "%source" "%source.bak" & perl "%~dp0\ScalePopDmg.pl" "%source.bak" %scale > "%source")
+
+MSGBOX /1"Leave" /2"Delete" /3"Revert" /W yesno "%~n0" do you want to delete the .bak files?
+set choice=%_?
+iff %choice = 21 then
+	echo Leaving .bak files there
+elseiff %choice = 22 then
+	erase "%folder\%filter.weapon.bak"
+elseiff %choice = 23 then
+	for /r "%folder" %source in (%filter.weapon.bak) (move /z "%source" "%@path[%source]%@name[%source]")
+endiff
+
+pause Press any key...

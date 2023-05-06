@@ -1,0 +1,376 @@
+# section,species,purpose
+# engines not listed since they are for a single purpose
+# max 50 sections per purpose, rest are excluded without a warning in session log
+# Some purposes use only ONE section per ship class and will not build the other, no error reported
+#
+# puroses:
+# bal_aid
+# bal_cm
+# cloaking_aid
+# cnc_aid
+# colonize
+# colonize_cheap
+# construction
+# damage_cm
+# default
+# deflector_cm
+# drone_rider
+# energy_cm
+# gate
+# hunteram_rider
+# hunterfus_rider
+# jammer_aid
+# las_cm
+# mine_cm
+# minelayer
+# miner
+# missile_cm
+# nodebore
+# orbit_def
+# orbit_def_attack
+# planet_attack
+# planet_attack_bio
+# refinery
+# reflect_cm
+# repair_aid
+# scavenger_rider
+# scout
+# sensor_aid
+# shield_cm
+# shuttle_rider
+# station_command
+# station_habitat
+# station_repair
+# station_science
+# station_sensor
+# station_trade
+# tanker
+
+# default (battle)
+DECommand,any,default
+CRCommand,any,default
+DNCommand,any,default
+DEHammerhead,any,default
+CRHammerhead,any,default
+CRBattleBridge,any,default
+DNBattleBridge,any,default
+DEAIC,any,default
+CRAIC,any,default
+DNAIC,any,default
+DEBattle,any,default
+CRBattle,any,default
+DNArmour,any,default
+DESpinalMount,any,default
+DEStrafe,any,default
+CRStrafe,any,default
+CRBlazer,any,default
+DNBlazer,any,default
+DETorpedo,any,default
+CRTorpedo,any,default
+CRAssault,any,default
+DNAssault,any,default
+CRBarrage,any,default
+DNBarrage,any,default
+DECloaking,any,default
+CRCloaking,any,default
+CRProjector,any,default
+DNProjector,any,default
+DEDrone,any,default
+CRDrone,any,default
+DNDrone,any,default
+CRImpactor,any,default
+DNImpactor,any,default
+DEWar,any,default
+CRWar,any,default
+DNWar,any,default
+DNCarrier,tarkas,default
+DNGuard,hiver,default
+
+# freighter
+DEFreighter,human,freighter
+DEFreighter,hiver,freighter
+DEFreighter,liir,freighter
+DEFreighter,tarkas,freighter
+DEFreighter,morrigi,freighter
+CRFreighterQ,human,freighter
+CRFreighterQ,hiver,freighter
+CRFreighterQ,liir,freighter
+CRFreighterQ,tarkas,freighter
+CRFreighterQ,morrigi,freighter
+CRFreighter,human,freighter
+CRFreighter,hiver,freighter
+CRFreighter,liir,freighter
+CRFreighter,tarkas,freighter
+CRFreighter,morrigi,freighter
+
+# minelayer
+DEMinelayer,any,minelayer
+CRMinelayer,any,minelayer
+CRCOL,any,minelayer
+DNCOL,any,minelayer
+_DroneMinelayer,any,minelayer
+
+# colonizers
+DEColony,any,colonize
+CRBiomeColonizer,any,colonize
+
+DEColony,any,colonize_cheap
+CRBiomeColonizer,any,colonize_cheap
+
+# gate
+DEGate,hiver,gate
+CRGate,hiver,gate
+
+# nodebore
+DENodeBore,zuul,nodebore
+DEPulsedFissionNodeBore,zuul,nodebore
+CRNodeBore,zuul,nodebore
+DNNodeBore,zuul,nodebore
+
+# tanker
+DERefuel,any,tanker
+DNSupport,any,tanker
+DEGravboat,morrigi,tanker
+CRGravboat,morrigi,tanker
+DNGravboat,morrigi,tanker
+
+# refinery
+CRRefinery,any,refinery
+DNSupport,any,refinery
+CRGravboat,morrigi,refinery
+DNGravboat,morrigi,refinery
+
+# miner
+CRMining,any,miner
+
+# counter missiles
+DEJammer,any,missile_cm
+DEWildWeasel,any,missile_cm
+DEDeflector,any,missile_cm
+DEPointDefence,any,missile_cm
+CRPointDefence,any,missile_cm
+CRDeflector,any,missile_cm
+DNDeflector,any,missile_cm
+CRProtectorate,liir,missile_cm
+DNProtectorate,liir,missile_cm
+DNEW,any,missile_cm
+CREW,any,missile_cm
+CRAntimatterShapedHyperFieldAlt,tarkas,missile_cm
+CRAntimatterWarpAlt,tarkas,missile_cm
+
+# counter minelayers
+DEPointDefence,any,mine_cm
+CRPointDefence,any,mine_cm
+CREW,any,mine_cm
+
+# improved firecontrol
+DEAIC,any,bal_aid
+CRAIC,any,bal_aid
+DNAIC,any,bal_aid
+
+# DAMN!  no way to indicate improved fire control for energy weapons
+#DEAIC,any,energy_aid
+#CRAIC,any,energy_aid
+#DNAIC,any,energy_aid
+#DEFireControl,any,energy_aid
+#CRFireControl,any,energy_aid
+
+# counter ballistics
+DEDeflector,any,bal_cm
+CRDeflector,any,bal_cm
+DNDeflector,any,bal_cm
+CRProtectorate,liir,bal_cm
+DNProtectorate,liir,bal_cm
+
+# counter energy weapons
+DEAbsorber,any,energy_cm
+CRAbsorber,any,energy_cm
+DNAbsorber,any,energy_cm
+DEDisruptor,any,energy_cm
+CRDisruptor,any,energy_cm
+DNDisruptor,any,energy_cm
+CRProtectorate,liir,energy_cm
+DNProtectorate,liir,energy_cm
+
+# counter laser weapons
+DEAbsorber,any,las_cm
+CRAbsorber,any,las_cm
+DNAbsorber,any,las_cm
+DEDisruptor,any,las_cm
+CRDisruptor,any,las_cm
+DNDisruptor,any,las_cm
+CRProtectorate,liir,las_cm
+DNProtectorate,liir,las_cm
+
+# scouts
+DEScout,human,scout
+DEScout,tarkas,scout
+DEScout,liir,scout
+DEScout,zuul,scout
+DEScout,morrigi,scout
+CRExtendedRange,human,scout
+CRExtendedRange,tarkas,scout
+CRExtendedRange,liir,scout
+CRExtendedRange,zuul,scout
+CRExtendedRange,morrigi,scout
+DEDeepScan,any,scout
+CRDeepScan,any,scout
+
+# planetary conquest
+CRAssault,any,planet_attack
+DEAssaultShuttle,any,planet_attack
+CRAssaultShuttle,any,planet_attack
+CRBarrage,any,planet_attack
+DNBiowar,hiver,planet_attack
+DEBiowar,hiver,planet_attack
+CRBiowar,hiver,planet_attack
+DNBiowar,human,planet_attack
+DEBiowar,human,planet_attack
+CRBiowar,human,planet_attack
+DNBiowar,liir,planet_attack
+DEBiowar,liir,planet_attack
+CRBiowar,liir,planet_attack
+DNBiowar,tarkas,planet_attack
+DEBiowar,tarkas,planet_attack
+CRBiowar,tarkas,planet_attack
+DNBlazer,any,planet_attack
+CRBlazer,any,planet_attack
+DENodeMissile,human,planet_attack
+CRScavenger,zuul,planet_attack
+DNSiegeDriver,any,planet_attack
+DESpinalMount,any,planet_attack
+DEStrafe,any,planet_attack
+CRStrafe,any,planet_attack
+DETorpedo,any,planet_attack
+CRTorpedo,any,planet_attack
+
+# counter planetary defense
+CRAssault,any,orbit_def_attack
+CRBarrage,any,orbit_def_attack
+DEPursuit,any,orbit_def_attack
+DETorpedo,any,orbit_def_attack
+CRTorpedo,any,orbit_def_attack
+DEWar,any,orbit_def_attack
+CRWar,any,orbit_def_attack
+DNWar,any,orbit_def_attack
+
+# planetary defense
+DESatellite,any,orbit_def
+CRDefencePlatform,any,orbit_def
+DNDefencePlatform,any,orbit_def
+CRTorpedoPlatform,any,orbit_def
+DNTorpedoPlatform,any,orbit_def
+CRDeepScanPlatform,any,orbit_def
+CRDronePlatform,any,orbit_def
+DNDronePlatform,any,orbit_def
+
+# cnc
+DESquadronCNC,any,cnc_aid
+CRSquadronCNC,any,cnc_aid
+DNSquadronCNC,any,cnc_aid
+DEStrikeForceCNC,any,cnc_aid
+CRStrikeForceCNC,any,cnc_aid
+DNStrikeForceCNC,any,cnc_aid
+DEArmadaCNC,any,cnc_aid
+CRArmadaCNC,any,cnc_aid
+DNArmadaCNC,any,cnc_aid
+DNFlagship,any,cnc_aid
+
+# jammers
+DEJammer,any,jammer_aid
+DNEW,any,jammer_aid
+CREW,any,jammer_aid
+
+# repair
+DERepair,any,repair_aid
+CRRepairandSalvage,any,repair_aid
+DNSupport,any,repair_aid
+
+# sensors
+DEDeepScan,any,sensor_aid
+CRDeepScan,any,sensor_aid
+DNEW,any,sensor_aid
+CREW,any,sensor_aid
+
+# cloaking
+DECloaking,any,cloaking_aid
+CRCloaking,any,cloaking_aid
+
+# stations
+DNStationCommand,any,station_command
+DNStationCommand_Aft,any,station_command
+DNStationCommand_Fore,any,station_command
+DNStationHabitat,Morrigi,station_habitat
+DNStationHabitat_Aft,morrigi,station_habitat
+DNStationHabitat_Fore,morrigi,station_habitat
+DNStationRepair,any,station_repair
+DNStationRepair_Aft,any,station_repair
+DNStationRepair_Fore,any,station_repair
+DNStationScience,any,station_science
+DNStationScience_Aft,any,station_science
+DNStationScience_Fore,any,station_science
+DNStationSensor,any,station_sensor
+DNStationSensor_Aft,any,station_sensor
+DNStationSensor_Fore,any,station_sensor
+DNStationTrade,hiver,station_trade
+DNStationTrade,human,station_trade
+DNStationTrade,liir,station_trade
+DNStationTrade,morrigi,station_trade
+DNStationTrade,tarkas,station_trade
+DNStationTrade_Aft,hiver,station_trade
+DNStationTrade_Aft,human,station_trade
+DNStationTrade_Aft,liir,station_trade
+DNStationTrade_Aft,morrigi,station_trade
+DNStationTrade_Aft,tarkas,station_trade
+DNStationTrade_Fore,hiver,station_trade
+DNStationTrade_Fore,human,station_trade
+DNStationTrade_Fore,liir,station_trade
+DNStationTrade_Fore,morrigi,station_trade
+DNStationTrade_Fore,tarkas,station_trade
+
+# construction ships
+DEConstruction,any,construction
+DEPulsedFissionConstruction,hiver,construction
+DEPulsedFissionConstruction,human,construction
+DEPulsedFissionConstruction,tarkas,construction
+DEPulsedFissionConstruction,zuul,construction
+CRConstruction,any,construction
+CRConstructionFC,morrigi,construction
+CRConstructionFNF,human,construction
+CRConstructionSHFF,tarkas,construction
+CRConstructionFISW,liir,construction
+
+# police cutters
+DEPolice,human,police
+DEPolice,hiver,police
+DEPolice,liir,police
+DEPolice,tarkas,police
+DEPolice,morrigi,police
+
+# tricksters
+DEColonyTrickster,morrigi,colony_trap
+DEBeltTrickster,morrigi,mining_trap
+
+# assault shuttles
+_AssaultShuttle_Advanced,any,shuttle_rider
+
+# drones
+_Drone,any,drone_rider
+_DroneHeavy,any,drone_rider
+_DroneBomber,any,drone_rider
+_DroneMinelayer,any,drone_rider
+
+# Hunter Carrier Riders
+_HunterShip_Antimatter,tarkas,hunteram_rider
+_HunterShip_Fusion,tarkas,hunterfus_rider
+
+# Scavenger Riders
+_ZuulAssaultShuttle,zuul,scavenger_rider
+
+# removed propaganda & terror - AI shouldn't waste time & money on these!
+#CRPropaganda,human,propaganda
+#CRPropaganda,hiver,propaganda
+#CRPropaganda,liir,propaganda
+#CRPropaganda,tarkas,propaganda
+#CRPropaganda,morrigi,propaganda
+#CRTerrorize,zuul,propaganda

@@ -1,0 +1,224 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/MediumDeepScanPlatform.x
+	preview_ofs				"-15 150 2"
+
+	section_type			mission
+	section_class			cruiser
+	entity_class			"DefencePlatform"
+	defence_platform		1
+	autonomous				true	// actually means this is a ship with only a mission section
+	node_cannon_fling		0
+
+	requires				IND_CRSat
+	requires				CCC_ScanSats
+
+	health					9600
+	mass					6000
+	cost					80000
+	maintenance_cost		750
+	cpoints					5160
+	crew					0
+
+	tacticalsensorrange		1500
+	scanrange				6	// DG- to force deep scan ability
+
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward 20000000
+		force_right   20000000
+		force_up      20000000
+
+		torque_yaw    100000000
+		torque_pitch  100000000
+		torque_roll   100000000
+
+		speed         34.5
+		rotspeed      30
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node mediumGunNode01
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node mediumGunNode02
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node mediumGunNode03
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node mediumGunNode04
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -110
+			max_azimuth 45
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -45
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode03
+			min_azimuth -110
+			max_azimuth 45
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node LightGunNode04
+			min_azimuth -45
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode05
+			min_azimuth -110
+			max_azimuth 45
+			min_inclination -15
+			max_inclination 90
+
+		}
+
+		mount
+		{
+			node LightGunNode06
+			min_azimuth -45
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode07
+			min_azimuth -110
+			max_azimuth 45
+			min_inclination -15
+			max_inclination 90
+
+		}
+
+		mount
+		{
+			node LightGunNode08
+			min_azimuth -45
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+
+		}
+	}
+}

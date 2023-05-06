@@ -1,0 +1,88 @@
+weapon
+{
+	name						@WEAPON_BAL_GAUSS_A
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						barrel_s1_gauss.x
+	turretmodel1				turret_s1standard.x
+	model2						barrel_s1_gauss.x
+	turretmodel2				turret_s1standard.x
+	model3						barrel_s1_gauss.x
+	turretmodel3				turret_s1standard.x
+
+	turretclass					standard
+	turretsize					small
+
+	requires					WEP_GsDrvr
+	cost						100
+
+	burst_volleys				1
+	recharge_time				5
+
+	muzzle_speed				400
+	muzzle_effect				effects/Gauss_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_gauss_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Ballistic.tga
+	icon_rect					"0 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						800
+	range_planet				1000
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/gauss_bullet.effect
+		impact_effect					effects/gauss_impact.effect
+		expire_effect					effects/gauss_Expire.effect
+
+		impact_sound					Sounds/Weapons/bal_gauss_impact.wav
+		impact_sound_minrange			100
+
+		rangetable
+		{
+			pb_range		250
+			pb_range_dev	3
+			pb_range_dam	45
+
+			eff_range		500
+			eff_range_dev	4
+			eff_range_dam	45
+
+			max_range		800
+			max_range_dev	5
+			max_range_dam	45
+		}
+
+		ricochet_mod					-1.0		// 1.0 gauss, 1.1 mass, 1.2 heavy
+		ricochet_sound					Sounds/Weapons/bal_gauss_rico.wav
+		ricochet_sound_minrange			50
+
+		mass							50
+
+		dam_pop							574
+		dam_infra						0.00006
+		dam_terra						0.00000005
+	}
+
+	dam_est			10
+
+	rating_frate	8
+	rating_dam		3
+	rating_acc		2
+	rating_range	3
+}

@@ -1,0 +1,77 @@
+shipsection
+{
+	model "Species/_NPC/art/sections/SiliciodQueen.X"
+	section_type mission
+	section_class Dreadnought
+	health 20000
+	mass 5e+6
+	cost 1000000
+	cpoints 50000
+	engine_sound Sounds/SFX/systemkiller_pulse.wav
+	engine_sound_minrange 185
+	autonomous true	// actually means this is a ship with only a mission section
+	node_cannon_fling 0
+	crew 0
+
+	command_cost 0
+	maintenance_cost 0
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	ftlspeed	0.99
+	range		1e+20	// Huge range
+
+	option	IND_ImpRfCt
+
+	netforcelimits
+	{
+		force_forward 1e+8
+		force_right   1e+7
+		force_up      1e+7
+
+		torque_yaw    1e+11
+		torque_pitch  1e+10
+		torque_roll   1e+10
+
+		speed         60
+		rotspeed      20
+	}
+
+
+
+	bank
+	{
+		turretclass torpedo
+		turretsize large
+		weapon "Species/_NPC/weapons/SilicoidQueen_photon.weapon"
+
+		mount
+		{
+			node HeadTurret
+			min_azimuth -45
+			max_azimuth 45
+			min_inclination -20
+			max_inclination 20
+		}
+	}
+
+
+	bank
+	{
+		turretclass standard
+		turretsize large
+		weapon "Species/_NPC/weapons/SiliciodQueenBeam.weapon"
+
+		mount
+		{
+			node EyeTurret
+			min_azimuth -45
+			max_azimuth 45
+			min_inclination -5
+			max_inclination 5
+		}
+	}
+
+
+}

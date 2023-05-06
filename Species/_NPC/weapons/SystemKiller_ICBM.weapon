@@ -1,0 +1,76 @@
+weapon
+{
+	name			@WEAPON_NPC_SYSK_ICBM
+	weaponclass		missile
+	model1		"Species/_NPC/art/weapons/DefenceBarrel.X"
+	turretmodel2	"Species/_NPC/art/weapons/DefenceTurret.X"
+	turretsize			medium
+	cost			3000
+	turretclass			PlanetMissile
+	burst_volleys		1
+	volley_period		1
+	recharge_time		3
+	muzzle_sound		Sounds/Weapons/mis_planet_muzzle.wav
+	muzzle_sound_minrange	60
+	muzzle_effect		effects/ICBM_Muzzle.effect
+	muzzle_speed		190
+	solution_tolerance	180
+	icon_file		GUI/WeaponIcons.tga
+	icon_rect		"0 32 32 32"
+	
+	missile
+	{
+		tracking 1
+		retarget_delay 3
+		impact_decal	decals/WeaponHit.decal
+		impact_decal_width .5
+		impact_decal_height .5
+		impact_decal_depth .1
+
+		beam_origin		-3
+		beam_length		5.5
+
+		impact_sound		Sounds/Weapons/mis_planet_impact.wav
+		impact_sound_minrange	200
+		impact_effect		effects/Missile_Impact.effect
+		Planet_Impact_Effect	"effects/Missile_Planet.effect"
+
+		thrust_sound		Sounds/Weapons/mis_planet_travel.wav
+
+
+		speed 500
+		seek_attenuation 5	// Higher number = tighter turns/faster accel
+		
+		
+		//netforcelimits
+		//{
+		//	force				20000
+		//	torque_yaw			20000
+		//	torque_pitch		20000
+		//	torque_roll			300
+		//	speed				500
+		//	rotspeed			820
+		//}
+		
+		ttl				30
+		model			MonitorMissile.X
+		health			150
+		dam			300
+		dam_radius		35
+		mass			50
+		thrust_effect		effects/PlanetMissileTrail.effect
+		thrust_node		EffectNode
+		dumbfire_period		10
+
+		dam_pop		45000
+		dam_infra	.0005	
+		dam_terra	.005
+	}
+
+	rating_frate	3
+	rating_dam	3
+	rating_acc	9
+	rating_range	9
+
+	dam_est		50
+}

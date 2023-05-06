@@ -1,0 +1,80 @@
+shipsection
+{
+	model					Species/Morrigi/art/sections/CruiserProjector.X
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+	requires				GRP_PRJCTR
+	health					6400
+	mass					10000
+	cost					38500
+	maintenance_cost		3000
+	cpoints					6320
+	crew					45
+
+	preview_ofs				"0 -60 0"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+		invincible false
+
+		mount
+		{
+			node Projector
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -30
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -150
+			max_azimuth 150
+			min_inclination -10
+			max_inclination 90
+			home_inclination 0
+		}
+	}
+}

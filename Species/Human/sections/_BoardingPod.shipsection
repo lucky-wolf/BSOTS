@@ -1,0 +1,43 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model Species/Human/art/sections/boardingpod.X
+	dam_model Species/Human/art/sections/boardingpod.X
+
+	health	160
+	mass	300
+	crew	31
+
+	command_cost 0
+	maintenance_cost 0
+	
+	netforcelimits
+	{
+		force_forward		100000
+		force_right			100000
+		force_up			100000
+		
+		torque_yaw			7000000
+		torque_pitch		7000000
+		torque_roll			7000000
+		
+		speed				90
+		rotspeed			100
+	}
+
+	engine_sound		Sounds/Ships/Shared/_AssaultShuttle_travel.wav
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/HumanShuttle_Thrust.effect
+		idle_effect effects/HumanShuttle_Idle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster02
+		effect effects/HumanShuttle_Thrust.effect
+		idle_effect effects/HumanShuttle_Idle.effect
+	}
+}

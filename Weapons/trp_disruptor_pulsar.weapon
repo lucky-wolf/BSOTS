@@ -1,0 +1,99 @@
+weapon
+{
+	name						@WEAPON_TRP_PULSAR
+
+	weaponclass					torpedo
+	weaponfamily				torpedo
+	weapondamagetype			trackingtorpedo
+
+	turretclass					torpedo
+	turretsize					large
+
+	requires					WEP_PlsTrp
+	cost						12000
+
+	solution_tolerance			90
+	burst_volleys				1
+	volley_period				.2
+	recharge_time				18
+
+	muzzle_speed				250
+	muzzle_effect				effects/PlasmaTorpedo_muzzle.effect
+	muzzle_sound				Sounds/Weapons/trp_pulsar_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/EMP.tga
+	icon_rect					"192 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	range						2000 // 1500
+	range_planet				2000
+
+	torpedo
+	{
+		tracking						true
+		plasma							false
+		disruptor						true	// drain guns
+		empradius						0		// direct hit only
+		emptime							6
+
+		beam_origin						-3
+		beam_length						5.5
+
+		effect							effects/Pulsar_bullet.effect
+
+		impact_effect					effects/Pulsar_impact.effect
+		impact_sound					Sounds/Weapons/trp_pulsar_impact.wav
+		impact_sound_minrange			100
+		area_impact_effect				"effects/collide_asteroid.effect"
+
+		thrust_sound					Sounds/Weapons/trp_pulsar_travel.wav
+		thrust_sound_minrange			20
+
+		rangetable
+		{
+			pb_range		500
+			pb_range_dev	2
+			pb_range_dam	100
+
+			eff_range		1000
+			eff_range_dev	2
+			eff_range_dam	100
+
+			max_range		2000 // 1500
+			max_range_dev	3
+			max_range_dam	100
+		}
+
+		health							200		// same as max damage
+		dam_radius						200
+		mass							500
+		dumbfire_period					0.5
+
+		speed							250
+		ttl								12		// actual range: 2080m
+
+		seek_attenuation				2		// Higher number = tighter turns/faster accel
+
+		dam_pop							656
+		dam_infra						0.0225
+		dam_terra						0
+	}
+
+	dam_est			200
+
+	rating_frate	1
+	rating_dam		1
+	rating_acc		10
+	rating_range	8
+}

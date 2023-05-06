@@ -1,0 +1,237 @@
+shipsection
+{
+	model Species/_NPC/art/sections/VNeumannMoonbase.X
+	section_type mission
+	section_class Dreadnought
+	health 100000
+	mass 5000000000
+	cost 100000
+	cpoints 5000
+	preview_ofs "3 -3000 2"
+	split_traffic_volume "false"
+
+	entity_class "VNMoonBase"
+	autonomous true	// actually means this is a ship with only a mission section
+	node_cannon_fling 0
+	crew 0
+	scanrange 6
+	tacticalsensorrange 2000
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist 8000
+
+	command_cost 0
+	maintenance_cost 0
+
+	option
+	{
+		option 	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward 100000000
+		force_right   100000000
+		force_up      100000000
+
+		torque_yaw    1000000000
+		torque_pitch  1000000000
+		torque_roll   1000000000
+
+		speed         34.5
+		rotspeed      20
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/SystemKiller_ICBM.weapon"
+		turretclass PlanetMissile
+		turretsize Large
+
+		mount
+		{
+			node ICBM01
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node ICBM02
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node ICBM03
+			min_azimuth 0
+			max_azimuth 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/SystemKiller_ICBM.weapon"
+		turretclass PlanetMissile
+		turretsize Large
+
+		mount
+		{
+			node ICBM04
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node ICBM05
+			min_azimuth 0
+			max_azimuth 0
+		}
+
+		mount
+		{
+			node ICBM06
+			min_azimuth 0
+			max_azimuth 0
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node VonNeumann_PDF01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node VonNeumann_PDF05
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node VonNeumann_PDF04
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node VonNeumann_PDF06
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node VonNeumann_PDF07
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node VonNeumann_PDF08
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node VonNeumann_PDF02
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node VonNeumann_PDF03
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		weapon "Species/_NPC/weapons/Von_phs_pd.weapon"
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node VonNeumann_PDF09
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+
+		mount
+		{
+			node VonNeumann_PDF10
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -40
+			max_inclination 90
+		}
+	}
+
+}

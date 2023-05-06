@@ -1,0 +1,87 @@
+shipsection
+{
+	model Species/Tarkas/art/sections/DNStationCommandFore.X
+	dam_model Species/Tarkas/art/sections_dam/DNStationCommand_Fore.X
+	section_type Command
+	section_class dreadnought
+	socket_aft Command
+	dam_socket_aft Command
+
+	requires		"IND_CmdStn"
+
+	explicit_section true
+
+	health				32000
+	mass				100000
+	cost				0
+	maintenance_cost	0
+	cpoints				25600
+	crew				100
+	entity_class		"Station"
+	design_class		station
+
+	preview_ofs "-23 -40 9"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				0
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Large
+
+		mount
+		{
+			node HeavyGunNode03
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode09
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode10
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+}
+

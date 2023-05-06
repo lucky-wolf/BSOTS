@@ -1,0 +1,99 @@
+weapon
+{
+	name						@WEAPON_TRP_FUSDET
+
+	weaponclass					dettorpedo
+	weaponfamily				torpedo
+	weapondamagetype			trackingtorpedo
+
+	turretclass					torpedo
+	turretsize					large
+
+	requires					WEP_DtFsTrp
+	cost						15000
+
+	solution_tolerance			90
+	burst_volleys				1
+	recharge_time				30
+
+	muzzle_speed				300
+	muzzle_effect				effects/PlasmaTorpedo_muzzle.effect
+	muzzle_sound				Sounds/Weapons/trp_det_fusion_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Torpedos.tga
+	icon_rect					"64 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false	// automatic (not manual)
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+	pinpoint					false
+
+	range						4000	// 2/3 of actual maximum
+	range_planet				4000
+
+	torpedo
+	{
+		tracking						true
+		plasma							true
+
+		retarget_delay					1.0		// retargetable!
+
+		beam_origin						-3
+		beam_length						5.5
+
+		effect							effects/DetFusTorpedo_bullet.effect
+
+		impact_effect					effects/DetonationFusionTorpedo_Impact.effect
+		impact_sound					Sounds/Weapons/trp_det_fusion_impact.wav
+		impact_sound_minrange			100
+
+		area_impact_effect				"effects/collide_asteroid.effect"
+
+		thrust_sound					Sounds/Weapons/trp_det_fusion_travel.wav
+		thrust_sound_minrange			20
+
+		rangetable
+		{
+			pb_range		600		// spd * 2
+			pb_range_dev	2
+			pb_range_dam	450
+
+			eff_range		1800	// spd * 6
+			eff_range_dev	2
+			eff_range_dam	900
+
+			max_range		6000	// actual maximum
+			max_range_dev	3
+			max_range_dam	1275
+		}
+
+		health							900		// same as eff damage
+		dam_radius						200
+		mass							300
+		dumbfire_period					0.5
+//		trigger_range					"10 90"	// mod: with this, it seems to do little or no damage
+
+		speed							300
+		ttl								20		// actual range = 6000m
+
+		seek_attenuation				2		// Higher number = tighter turns/faster accel
+
+		dam_pop							41014
+		dam_infra						0.00225
+		dam_terra						0.000094
+	}
+
+	dam_est			400
+
+	rating_frate	1
+	rating_dam		7
+	rating_acc		10
+	rating_range	10
+}

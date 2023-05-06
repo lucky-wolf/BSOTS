@@ -1,0 +1,230 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/HeavyTorpedoPlatform.X
+	preview_ofs				"10 -340 9"
+	section_type			mission
+	section_class			Dreadnought
+	entity_class			"DefencePlatform"
+	defence_platform		1
+	autonomous				true	// actually means this is a ship with only a mission section
+
+	health					19200
+	mass					50000
+	cost					450000
+	maintenance_cost		1500
+	cpoints					8000
+	crew					0
+
+	requires				IND_DNSat
+	requires				IND_TrpSat
+
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward 100000000
+		force_right   100000000
+		force_up      100000000
+
+		torque_yaw    1000000000
+		torque_pitch  1000000000
+		torque_roll   1000000000
+
+		speed         34.5
+		rotspeed      10
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -110
+			max_azimuth 30
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node HeavyGunNode02
+			min_azimuth -60
+			max_azimuth 30
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Large
+
+		mount
+		{
+			node HeavyGunNode03
+			min_azimuth -120
+			max_azimuth 120
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node HeavyGunNode04
+			min_azimuth -150
+			max_azimuth 120
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass torpedo
+		turretsize large
+
+		mount
+		{
+			node Torpedo04
+			min_azimuth -15
+			max_azimuth 15
+			min_inclination -15
+			max_inclination 15
+		}
+	}
+
+	bank
+	{
+		turretclass torpedo
+		turretsize large
+
+		mount
+		{
+			node Torpedo01
+			min_azimuth -15
+			max_azimuth 15
+			min_inclination -15
+			max_inclination 15
+		}
+	}
+
+	bank
+	{
+		turretclass torpedo
+		turretsize large
+
+		mount
+		{
+			node Torpedo03
+			min_azimuth -15
+			max_azimuth 15
+			min_inclination -15
+			max_inclination 15
+		}
+	}
+
+	bank
+	{
+		turretclass torpedo
+		turretsize large
+
+		mount
+		{
+			node Torpedo02
+			min_azimuth -15
+			max_azimuth 15
+			min_inclination -15
+			max_inclination 15
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -90
+			max_azimuth 60
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -30
+			max_azimuth 70
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode03
+			min_azimuth -90
+			max_azimuth 90
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -100
+			max_azimuth 100
+			min_inclination -15
+			max_inclination 90
+
+		}
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize Large
+
+		mount
+		{
+			node IcbmNode
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -3
+			max_inclination 90
+		}
+
+	}
+}

@@ -1,0 +1,61 @@
+weapon
+{
+	name						@WEAPON_EMT_HEAVY_SPINAL_ADV
+
+	weaponclass					emitter
+	weaponfamily				emitter
+
+	model1						barrel_l1_heavyemitter.X
+
+	turretclass					spinal
+	turretsize					large
+
+	requires					WEP_HvyEmitr
+	requires					WEP_EmtAdv
+	cost						15000			// 3x
+
+	solution_tolerance			2
+	burst_volleys				1
+	volley_duration				.75
+	recharge_time				7.5			// 25% faster
+
+	muzzle_effect				effects/heavyEmitter_muzzle_adv.effect
+	muzzle_sound				Sounds/Weapons/emt_light_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/EMP-2.tga
+	icon_rect					"192 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	blindfire					false
+
+	range						1000	// +250m
+	range_planet				1000
+
+	chainlightning
+	{
+		impact_sound					Sounds/Weapons/emt_light_impact.wav
+		impact_sound_minrange			75
+		effect							effects/heavyEmitter_Bullet_adv.effect
+
+		dam								550			// 2x
+		branches						9			// +1
+		dam_pop							32000
+		dam_infra						0.000225
+		dam_terra						0
+	}
+
+	dam_est			500
+
+	rating_frate	5
+	rating_dam		10
+	rating_acc		10
+	rating_range	4
+}

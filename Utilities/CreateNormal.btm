@@ -1,0 +1,5 @@
+@echo off
+cdd %~dp0
+pause This will change your tech tree to use the normal odds and gives no starting tech...
+copy /q "..\techtree\MasterMasterTechList.tech" "..\techtree\MasterTechList.tech"
+pause

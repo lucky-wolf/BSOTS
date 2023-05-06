@@ -1,0 +1,85 @@
+weapon
+{
+	name						@WEAPON_BAL_DISRUPTORWHIP
+
+	weaponclass					grapple
+
+	model1						barrel_m1_grapple.X
+	model2						barrel_l2_grapple.X
+
+	turretclass					grapple
+	turretsize					medium
+
+	requires					WEP_DsrptrWhp
+	exclusive_species			zuul
+	cost						1000
+
+	burst_volleys				1
+	volley_period				5
+	volley_duration				5
+	recharge_time				25
+
+	muzzle_effect				effects/AntimatterCannon_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_grapple_muzzle.wav
+	muzzle_sound_minrange		100
+	muzzle_speed				400
+
+	icon_file					GUI/Weapons/EMP.tga
+	icon_rect					"0 192 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			true
+	fc_controllable				true
+	fc_holdsfire				true
+	pinpoint					true
+
+	range						500
+	range_planet				0
+
+	grapple
+	{
+		reel_speed				30
+		target_length			130
+
+		impact_effect			effects/Grapple_Impact.effect
+		impact_sound			Sounds/Weapons/bal_grapple_impact.wav
+		impact_sound_minrange	75
+		dam						50
+		break_force				7500000
+		break_sound				Sounds/Weapons/bal_grapple_break.wav
+		break_sound_minrange						200
+		hook_effect				"Effects/Grapple_bullet.effect"
+		chain_fx				"Effects/PSS_wrap_generic.fx"
+		chain_tex				"Effects/chain.tga"
+		chain_visdist			1000
+
+		electric_fx				"Effects/PSS_OneOneBlend.fx"
+		electric_tex			"Effects/LightningBeam.tga"
+
+		electic1_alpha			"-1 1"
+		electric1_thickness		"0.01 3"
+		electric1_offset		"-2 2"
+
+		electic2_alpha			"-1 1"
+		electric2_thickness		"0.01 10"
+		electric2_offset		"-2 2"
+
+		disruptor                true
+		disruptor_delay          0.5
+		disruptor_sound          ""
+		disruptor_sound_minrange "50"
+
+		lifetime				20
+	}
+
+//	dam_est			0
+
+	rating_frate	1
+	rating_dam		1
+	rating_acc		10
+	rating_range	2
+}

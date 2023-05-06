@@ -1,0 +1,92 @@
+weapon
+{
+	name						@WEAPON_BAL_STORMER_AP
+
+	weaponclass					stormer
+	weaponfamily				gauss
+
+	model1						barrel_m1_massdriver.x
+	model2						barrel_m1_massdriver.x
+	turretmodel2				turret_m1standard.x
+
+	turretclass					missile
+	turretsize					medium
+	munitionsize				small
+
+	requires					WEP_APStrmDrvr
+	cost						1000
+
+	trackspeed_mod				.6
+	burst_volleys				10
+	volley_period				.01
+	recharge_time				10
+
+	muzzle_speed				500
+	muzzle_effect				effects/Stormer_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_stormer_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Stormers.tga
+	icon_rect					"64 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						975	// 475
+	range_planet				975
+
+	bolt
+	{
+		volley_deviation				1.0
+		round_muzzle					true
+		muzzle_size						"6"
+
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/APGauss_bullet.effect
+		impact_effect					effects/APGauss_impact.effect
+		expire_effect					effects/APGauss_Expire.effect
+		impact_sound					Sounds/Weapons/bal_gauss_impact.wav
+		impact_sound_minrange			50
+
+		rangetable
+		{
+			pb_range		145
+			pb_range_dev	4
+			pb_range_dam	32	// .8
+
+			eff_range		590 // 340
+			eff_range_dev	5
+			eff_range_dam	32
+
+			max_range		975 // 475
+			max_range_dev	6
+			max_range_dam	32
+		}
+
+		ricochet_mod					-1.5
+		ricochet_sound					Sounds/Weapons/bal_gauss_rico.wav
+		ricochet_sound_minrange			50
+
+		recoil_factor					0.02
+		mass							2.5			// .5
+
+		dam_pop							40
+		dam_infra						0.000012
+		dam_terra						0
+	}
+
+	dam_est			80
+
+	rating_frate	4
+	rating_dam		3
+	rating_acc		1
+	rating_range	4
+}

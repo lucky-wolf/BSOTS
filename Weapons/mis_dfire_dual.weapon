@@ -1,0 +1,91 @@
+weapon
+{
+	name						@WEAPON_MIS_DF_DUAL
+
+	weaponclass					dumbfiremissile
+	weaponfamily				gauss
+
+	model1						barrel_l2_rackmissile.x
+	turretmodel1				turret_l2rackmissile.x
+	model2						barrel_l2_rackmissile.x
+	turretmodel2				turret_l2rackmissile.x
+
+	turretclass					missile
+	turretsize					medium
+
+	requires					WEP_DFMsl
+	requires					WEP_DualMsl
+	cost						9000			// 3x single
+
+	burst_volleys				10
+	volley_period				.1
+	recharge_time				15
+
+	muzzle_speed				300
+	muzzle_effect				effects/D_Missile_Muzzle.effect
+	muzzle_sound				Sounds/Weapons/mis_multi_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Missiles-3.tga
+	icon_rect					"64 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						900
+	range_planet				1000
+
+	bolt
+	{
+		warhead_dam_scale				true // add standard missile warhead damage modifier
+
+		round_muzzle					0
+		muzzle_size						"5 1"
+
+		beam_origin						-0.5
+		beam_length						1.5
+
+		impact_effect					"effects/D_Missile_impact.effect"
+		expire_effect					"effects/D_Missile_Expire.effect"
+		impact_sound					Sounds/Weapons/mis_missile_impact.wav
+		impact_sound_minrange			200
+
+		rangetable
+		{
+			pb_range		200
+			pb_range_dev	2
+			pb_range_dam	10
+
+			eff_range		500
+			eff_range_dev	3
+			eff_range_dam	10
+
+			max_range		900
+			max_range_dev	4
+			max_range_dam	10
+		}
+
+		effect							"effects/D_Missile_Bullet.effect"
+		ricochet_mod					-1.4
+		ricochet_sound					Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange			50
+		mass							25
+
+		dam_pop							1312
+		dam_infra						0.000033
+		dam_terra						0
+	}
+
+	dam_est			120
+
+	rating_frate	2
+	rating_dam		2
+	rating_acc		4
+	rating_range	4
+}

@@ -1,0 +1,49 @@
+shipsection
+{
+	model Species/Human/art/sections/DNStationTrade.x
+	dam_model Species/Human/art/sections_dam/DNStationTrade.x
+	section_type mission
+	section_class dreadnought
+
+	requires		"IND_TradeStn"
+
+	socket_aft Aft
+	socket_fore Fore
+
+	dam_socket_aft Aft
+	dam_socket_fore Fore
+
+	health				19200
+	mass				100000
+	cost				225000
+	maintenance_cost	10000
+	cpoints				22400
+	crew				150
+	entity_class		"Station"
+	design_class		station
+	station				trade
+	tradingpost			true
+
+	explicit_command_section "DNStationTrade_Fore"
+	explicit_engine_section "DNStationTrade_Aft"
+
+	preview_ofs "0 -340 9"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	netforcelimits
+	{
+		force_forward		1e+9
+		force_right			1e+9
+		force_up			1e+9
+
+		torque_yaw			1e+9
+		torque_pitch		1e+9
+		torque_roll			1e+9
+
+		speed				30
+		rotspeed			6
+	}
+}
+

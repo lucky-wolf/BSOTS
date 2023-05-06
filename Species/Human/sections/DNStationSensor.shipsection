@@ -1,0 +1,148 @@
+shipsection
+{
+	model Species/Human/art/sections/DNStationSensor.x
+	dam_model Species/Human/art/sections_dam/DNStationSensor.x
+	section_type mission
+	section_class dreadnought
+	Socket_Aft Aft
+	Socket_Fore FOre
+
+	dam_socket_aft aft
+	dam_socket_fore fore
+
+	requires		"IND_SenStn"
+
+	health				25600
+	mass				100000
+	cost				187500
+	maintenance_cost	10000
+	cpoints				20800
+	crew				60
+	entity_class		"Station"
+	design_class		station
+	station				sensors
+
+	scanrange 15
+	tacticalsensorrange 17700
+
+	explicit_command_section "DNStationSensor_Fore"
+	explicit_engine_section "DNStationSensor_Aft"
+
+	preview_ofs "120 -440 40"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	option	IND_PredGun
+
+	netforcelimits
+	{
+		force_forward		1e+9
+		force_right			1e+9
+		force_up			1e+9
+
+		torque_yaw			1e+9
+		torque_pitch		1e+9
+		torque_roll			1e+9
+
+		speed				30
+		rotspeed			6
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightgunnode06
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightgunnode07
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightgunnode08
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node lightgunnode09
+			min_azimuth -60
+			max_azimuth 60
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Medium
+
+		mount
+		{
+			node MediumGunNode04
+			min_azimuth -110
+			max_azimuth 80
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode05
+			min_azimuth -80
+			max_azimuth 110
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize Medium
+
+		mount
+		{
+			node MediumGunNode06
+			min_azimuth -70
+			max_azimuth 40
+			min_inclination -15
+			max_inclination 90
+		}
+
+		mount
+		{
+			node MediumGunNode07
+			min_azimuth -50
+			max_azimuth 70
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+}
+

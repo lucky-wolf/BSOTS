@@ -1,0 +1,85 @@
+weapon
+{
+	name						@WEAPON_BAL_MEDIUM_SNIPER
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						barrel_m1_massdriver.x
+	model2						barrel_m1_massdriver.x
+	turretmodel2				turret_m1standard.x
+
+	turretclass					standard
+	turretsize					medium
+
+	requires					WEP_SnpMasDrvr
+	cost						1500
+
+	trackspeed_mod				0.5
+	burst_volleys				1
+	recharge_time				7.5		// 1.5x
+
+	muzzle_speed				750		// 5/3x mass driver
+	muzzle_effect				effects/APMassDriver_Muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_sniper_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Ballistic-2.tga
+	icon_rect					"64 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1800	// 1.5 medium
+	range_planet				1800
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/MassDriver_bullet.effect
+		impact_effect					effects/MassDriver_impact.effect
+		expire_effect					effects/MD_Expire.effect
+		impact_sound					Sounds/Weapons/bal_drv_impact.wav
+		impact_sound_minrange			200
+
+		rangetable
+		{
+			pb_range		450
+			pb_range_dev	.5
+			pb_range_dam	180			// 4x gauss
+
+			eff_range		1200
+			eff_range_dev	1
+			eff_range_dam	180
+
+			max_range		1800
+			max_range_dev	1.5
+			max_range_dam	180
+		}
+
+		ricochet_mod					-1.1		// 1.0 gauss, 1.1 mass, 1.2 heavy
+		ricochet_sound					Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange			100
+
+		mass							100
+
+		dam_pop							8202
+		dam_infra						0.000114
+		dam_terra						0.000019
+	}
+
+	dam_est			60
+
+	rating_frate	5
+	rating_dam		3
+	rating_acc		7
+	rating_range	8
+}

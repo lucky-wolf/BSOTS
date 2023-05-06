@@ -1,0 +1,211 @@
+shipsection
+{
+	model					Species/Hiver/art/sections/DreadnoughtAntimatter.X
+	requires				DRV_AntiMat
+	socket_fore				EngineNode01
+	section_type			engine
+	section_class			dreadnought
+	engine_techera			antimatter
+
+	health					22400
+	mass					70000
+	cost					300000
+	maintenance_cost		15000
+	cpoints					12000
+	ftlspeed				.99
+	range					25
+	crew					125
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	engine_sound			Sounds/Ships/Shared/DEAM_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEAM_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		560000
+		force_right			560000
+		force_up			560000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				155.7875
+		rotspeed			5
+	}
+
+	thruster
+	{
+		node EngineFXNode01
+		effect effects/Engine_AntimatterC.effect
+		idle_effect effects/EngineAntimatterIdleC.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode02
+		effect effects/Engine_AntimatterC.effect
+		idle_effect effects/EngineAntimatterIdleC.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode03
+		effect effects/Engine_AntimatterC.effect
+		idle_effect effects/EngineAntimatterIdleC.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode04
+		effect effects/Engine_AntimatterC.effect
+		idle_effect effects/EngineAntimatterIdleC.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode05
+		effect effects/Engine_AntimatterA.effect
+		idle_effect effects/EngineAntimatterIdleA.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode06
+		effect effects/Engine_AntimatterA.effect
+		idle_effect effects/EngineAntimatterIdleA.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode07
+		effect effects/Engine_AntimatterA.effect
+		idle_effect effects/EngineAntimatterIdleA.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode08
+		effect effects/Engine_AntimatterA.effect
+		idle_effect effects/EngineAntimatterIdleA.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode09
+		effect effects/Engine_AntimatterA.effect
+		idle_effect effects/EngineAntimatterIdleA.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode10
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	thruster
+	{
+		node EngineFXNode11
+		effect effects/Engine_AntimatterB.effect
+		idle_effect effects/EngineAntimatterIdleB.effect
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode01
+			min_azimuth -180
+			max_azimuth 0
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node HeavyGunNode02
+			min_azimuth 0
+			max_azimuth 180
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+
+		mount
+		{
+			node HeavyGunNode03
+			min_azimuth 0
+			max_azimuth 180
+			min_inclination -10
+			max_inclination 90
+		}
+
+		mount
+		{
+			node HeavyGunNode04
+			min_azimuth -180
+			max_azimuth 0
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 10
+			max_inclination 90
+
+		}
+
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination 10
+			max_inclination 90
+
+		}
+	}
+}

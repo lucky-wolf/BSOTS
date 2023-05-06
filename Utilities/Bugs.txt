@@ -1,0 +1,4 @@
+Maybe we need to add these but then make them require "IND_Hidden"?
+
+Warning: Weapon not found: "Weapons/trp_plasma.weapon" - Was it added to the index file?
+Warning: Weapon not found: "Weapons/phs_pd.weapon" - Was it added to the index file?

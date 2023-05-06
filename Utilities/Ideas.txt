@@ -1,0 +1,61 @@
+Advanced Robotics - move to industrial tree, so that drones are off of cybernetics root - so that they can be researched early & often. :)
+
+New Ideas:
+
+	Make Smart Nanites available off of Elemental Nanites, but requires any of the militarized nanite techs (missile, mine, bio-war)
+	Have a lesser torpedo (barrage) section in fusion age, and the full crazy one in AM age...
+	Have a lesser assault (beamer) section in fusion age, then the full crazy one in AM age...
+
+	Increase Maint cost of CRs by 2x.
+	
+	give repair points to constructors
+	Have a full line of heavy and light constructors with fission & fusion engines
+	
+	Add techs for Barrage and Assault (combat?) - do not just give them because you got the weapons (you get blazer and torpedo automatically with the weapons)
+	^^^ Just bridge sections?  Barrage and Assault bridges must be bought?...
+
+Add projector weapons:
+	Large Beams
+	Fixed Beams
+	Laser (UV+)
+	Beamer (UV+)
+	
+Weapons:
+	Shield-Disruptor beam (large mount)
+	
+Great models from ACM/Combined:
+
+	_enforcer DE police?
+	_hunter & _interceptor (also various l/m/h gunship- models) - "hunter" and "gunshp"
+	sdp.x (siege defense platform) - liir looks amazing!
+	ACM's Zuul gunbots waaaay better than stock
+	Zuul - ACM - cr-raider.x - gunbot carrier... nice
+	hbeamsat.x - heavy beam sat
+
+Mini-torpedos for drones...?
+	Make complete use of planetmissile turrets for drones, with specialized weapons for them?
+
+DONE:	
+	Increase CR scout range.
+	Move all constructors to DE class ships.
+	Differentiate CNC by HP (squad/strike/armada)
+	move all phasers to antimatter
+	fix heavy plasma cannons: orange!
+	fix sound for all plasma - NOT SIZZLING!  What then?
+
+Sections
+
+Cruiser:
+	Battle (mission)
+		Hammer head (bridge)
+	Combat (mission) [barrage]
+		Combat (bridge) [assault]
+	War (mission)
+		Strafe (bridge)
+	Assault (mission) [blazer]
+		Assault (bridge) [strafe]
+	Barrage (mission) [torpedo]
+		
+	Drone Tender
+	Escort [point-defense]
+	

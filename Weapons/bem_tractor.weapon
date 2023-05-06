@@ -1,0 +1,60 @@
+weapon
+{
+	name						@WEAPON_BEM_TRACTOR
+
+	weaponclass					tractorbeam
+
+	turretmodel1				turret_l1standard.x
+	model1						barrel_l1_Gravitronbeam.x
+
+	turretclass					projector
+	turretsize					large
+
+	requires					IND_TrctBm
+	cost						5000
+
+	burst_volleys				1
+	volley_period				5
+	volley_duration				6
+	recharge_time				10
+
+	muzzle_effect				effects/TractorBeam_Muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_tractor_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beams.tga
+	icon_rect					"192 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						900
+	range_planet				0
+
+	beam
+	{
+		impact_effect					effects/TractorBeam_Impact.effect
+		impact_sound					Sounds/Weapons/bem_tractor_impact.wav
+		impact_sound_minrange			75
+		effect							effects/TractorBeam_bullet.effect
+		dam								0
+		force							3000
+
+		dam_pop							0
+		dam_infra						0
+		dam_terra						0
+	}
+
+//	dam_est			0
+
+	rating_frate	4
+	rating_dam		0
+	rating_acc		10
+	rating_range	4
+}

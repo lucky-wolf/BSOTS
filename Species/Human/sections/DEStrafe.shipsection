@@ -1,0 +1,96 @@
+shipsection
+{
+	model					Species/Human/art/sections/DestroyerStrafe.X
+	socket_aft				CommandNode
+	section_type			command
+	section_class			destroyer
+
+	health					640
+	mass					1050
+	cost					4800
+	maintenance_cost		300
+	cpoints					1440
+
+	requires				IND_DEStrafe
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			2.2e+7
+		torque_pitch		2.2e+7
+		torque_roll			2.2e+7
+
+		speed				0
+		rotspeed			75
+	}
+
+	bank
+	{
+		turretclass strafe
+		turretsize small
+		showturrets false
+
+		mount
+		{
+			node gunnode01
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node gunnode02
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node gunnode03
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+		mount
+		{
+			node gunnode04
+			min_azimuth -7
+			max_azimuth 7
+			min_inclination -7
+			max_inclination 7
+		}
+
+	}
+}

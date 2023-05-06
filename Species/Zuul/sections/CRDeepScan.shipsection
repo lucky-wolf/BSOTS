@@ -1,0 +1,99 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/CruiserDeepScan.X
+	socket_aft				CommandNode
+
+	section_type			command
+	section_class			cruiser
+	section_sound			"Sounds/Ships/Shared/DEDeepScan.wav"
+	section_sound_repeat	5
+
+	health					1920
+	mass					2000
+	cost					22000
+	maintenance_cost		3000
+	cpoints					1296
+	crew					12
+
+	requires				CCC_AdvSens
+	scanrange				10
+	tacticalsensorrange		6700
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+	option
+	{
+		option	IND_PredGun
+//		option	CCC_AIFrCon
+	}
+
+	shield_model_offset "0 -10 0"
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			4.2e+8
+		torque_pitch		4.2e+8
+		torque_roll			4.2e+8
+
+		speed				0
+		rotspeed			40
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -140
+			max_azimuth 65
+			min_inclination -15
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode02
+			min_azimuth -45
+			max_azimuth 165
+			min_inclination -15
+			max_inclination 90
+		}
+
+	}
+}

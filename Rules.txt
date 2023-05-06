@@ -1,0 +1,133 @@
+
+======================
+     Ships 
+======================
+
+2.5a vs. 1.8
+--------------
+health: 		1.6
+mass:			1.0
+cost:			1.0
+construction:	1.6
+
+Maintenance 2.5a vs. 1.8
+------------------------
+Satellites:		1.5x
+Stations:		2/3x
+DE/CR/DN:		3x
+	
+Ship Sections
+------------------------
+
+Common Names & Function (irrespective of position)
+----------------------------------------------------------------------------------------------
+Assault			HCLs (i.e. assault class weapons)
+Barrage			Torpedos + HCLs
+Battle			General purpose combat (mix of standard mount sizes)
+
+Bridge Sectoins		Sizes		Notes
+----------------------------------------------------------------------------------------------
+Absorber			   CR,DN	Energy Absorber Array
+AI					DE,CR,DN	AI controlled (+maneuverable, +accuracy)
+Assault				   CR,DN	HCL focused (formerly "Battle Bridge", "Assault")
+Barrage				   CR,DN	Torpedos + HCL focused (depending on the race - formerly "Assault")
+Battle				DE,CR,DN	Maneuverabile & Weapons (formerly "Hammerhead", "Command")
+Bridge				DE,CR		Standard bridge (Sometimes best for PD)
+Cloaking			   CR		Cloaking Generator
+Deepscan			DE,CR		Advanced Sensors (improved sensor ranges + detect cloaked)
+Deflector			   CR,DN	Deflector Generator
+EWAR				      DN	deepscan & electronic warfare & chaff
+Ramscoop			DE			Infinite fuel, no guns, Hiver only
+Reflector			   CR,DN	Reflector Generator
+Strafe				DE,CR		Multiple forward facing fixed-arc weapons (DE=small, CR=medium)
+
+Mission Sectoins	Sizes		Notes
+----------------------------------------------------------------------------------------------
+Battle				DE,CR,DN	General purpose battle (formerly "Armor")
+Battle, Absorber	DE			Energy Absorber Array
+Battle, Assault		   CR		HCLs (formerly "Blazer")
+Battle, Barrage		   CR,DN	Torps + HCLs
+Battle, Broadside	      DN	Broadside focused (formerly "DN War")
+Battle, Cloaking	DE			Cloaking Generator
+Battle, Commandos	   CR		Commandos (Space Marines) (formerly "Boarding Pods")
+Battle, Deflector	DE			Deflector Generator
+Battle, Dominator	   CR,DN	Huge mount focused (formerly "Projector")
+Battle, Escort		DE,CR		Small mount heavy (formerly "Point Defense")
+Battle, EWAR		   CR		deepscan & electronic warfare & chaff
+Battle, Impactor	   CR,DN	Railcannon mounts
+Battle, Minelayer	DE,CR		Minelayer mounts
+Battle, Pursuit		DE			++Speed
+Battle, Reflector	DE			Reflector Generator
+Battle, Seige		      DN	Siege mount
+Battle, Spinal		DE			Spinal mount (a fixed arc heavy weapon)
+Battle, Torpedo		DE,CR		Torpedo mounts
+Battle, War			DE,CR		Heavy mount focused (DE = mediums, CR = larges)
+Carrier, Attack		      DN	Attack Carrier (formerly "Hunter Carrier")
+Carrier, COL		   CR,DN	Complex Ordinance Launchers
+Carrier, Drones		DE,CR,DN	Drone Carrier (DE = 2, CR = 6, DN = 18)
+Carrier, Troops		DE,CR		Ground Troop Carrier (DE = 2, CR = 6)
+CNC, Flagship		DE,CR,DN	Flagship CNC	(CNC + 24 standard ships)
+CNC, Advanced		DE,CR,DN	Advanced CNC	(CNC + 18 Standard Ships)
+CNC, Improved		DE,CR,DN	Improved CNC	(CNC + 15 Standard Ships)
+CNC, Standard		DE,CR,DN	Basic CNC		(CNC + 11 Standard Ships)
+Scout				DE			Moderately armed long-range explorer
+Scout, Heavy		   CR		Moderately armed long-range explorer
+
+
+======================
+      Weapons
+======================
+
+Ballistic Weaons' Mass (AP = .5x):
+
+NAME		   BSOTS	SOTS
+Shotgun PD		   1	   -
+PD				   5	  40
+Small			  50	 100
+Medium			 100	 250
+Heavy			 300	 900
+Rail Cannon		1000	1000
+Stormers	       5	   8
+Heavy Stormers	  20	  25
+Huge Stormers	  50	   -
+Sm Autocannon	   1	   -
+Md Autocannon	   5	   -
+Hv Autocannon     20	   -
+Kinetic Msl		2000	5000
+
+Note: knock-back is also based on the speed of the projectile, not merely the mass
+      BSOTS increases most weapons speed as well, thus increasing the overall knock-back 
+	  (so it is less than in SOTS, but not as drastically less if you only consider the mass)
+
+Fast Missiles = 2x speed of standard missiles, and 1+1/3 faster ROF (i.e. .75 cycle time) => 1+1/3 DPS (and able to hunt down faster targets)
+Dual Weapons (other than missiles) are 1+1/3 slower ROF, making them have 1.5x DPS potential = 2/1.333 => 1.5
+		
+TURRET Classes:
+
+	_class_					_allows_					_displays_				_notes_
+	Standard				A: standard, missile		standard turret
+	Strafe					A: standard, missile		-
+	Spinal					A: spnial					-
+	Projector				A: projector				projector turret
+	Missile					A: missile					missile turret			w/ default 45' max Y & slow tracking
+	Planetmissile			A: planetmissile, missile	ICBM dual turret		used to be for ICBM (huge missiles) - are we not already handling that viz large missile + explicit turrets (or projector + explicit turrets)
+	Beam					A: heavybeam 				-						beam turretclass really means heavybeam weapons (HCL, etc.), and beam weapons means standard turretclass
+	Freebeam				A: freebeam					freebeam turret			zuul only, heavybeam weapons (HCL, etc.)
+	Grapple					A: grapple					standard turret
+	Torpedo					A: torpedo					-
+	Nodemissilerider		A: nodemissilerider			-						commandeered for use by drones as "mini torps"
+	Mine					A: mine						-
+	Railcannon				A: railcannon				-
+
+	(following are all riders)
+	assaultshuttlerider
+	boardingpod
+	col
+	dronerider
+	missilerider																plagues
+	nodecannon
+	prisonershuttlerider	
+	siege
+	spyship
+	tarkahunter
+	wraith

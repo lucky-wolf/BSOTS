@@ -1,0 +1,59 @@
+weapon
+{
+	name						@WEAPON_BEM_NEUT
+
+	weaponclass					beam
+	weaponfamily				conventionalbeam
+
+	model1						barrel_l1_Neutronbeam.x
+
+	turretclass					standard
+	turretsize					large
+
+	requires					WEP_NeutBm
+	cost						8000
+
+	burst_volleys				1
+	volley_duration				2
+	recharge_time				10
+
+	muzzle_effect				effects/Neutronbeam_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_neutron_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beams.tga
+	icon_rect					"64 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1250 // 700
+	range_planet				1250
+
+	beam
+	{
+		impact_effect					effects/Neutronbeam_impact.effect
+		impact_sound					Sounds/Weapons/bem_neutron_impact.wav
+		impact_sound_minrange			75
+		effect							effects/Neutronbeam_Bullet.effect
+		dam								250
+		force							0
+
+		dam_pop							196875
+		dam_infra						0.005625
+		dam_terra						0
+	}
+
+	dam_est			120
+
+	rating_frate	4
+	rating_dam		5
+	rating_acc		10
+	rating_range	5
+}

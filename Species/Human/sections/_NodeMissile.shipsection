@@ -1,0 +1,70 @@
+shipsection
+{
+
+	// IMPORTANT: This is the battle rider component of the node missile host.
+	// For the host's parameters, please see DestroyerNodeMissile.shipsection
+	// instead.
+	
+	nodesign 1	// not registered with section dictionary
+	model Species/Human/art/sections/NodeMissile.X
+	dam_model Species/Human/art/sections/NodeMissile.X
+	crew 0
+	
+	requires	WEP_NdMsl
+	health 960
+	mass 500
+	cost 10000
+
+	command_cost 2
+	
+	netforcelimits
+	{
+		force_forward 300000
+		force_right   500000
+		force_up      500000
+		
+		torque_yaw    5000000
+		torque_pitch  5000000
+		torque_roll   5000000
+		
+		speed		  150
+		rotspeed	  120
+	}
+
+	thruster
+	{
+		node Effect01
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/NodeMissile_Idle.effect
+	}
+	thruster
+	{
+		node Effect02
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/BioMissile_Idle.effect
+	}
+	thruster
+	{
+		node Effect03
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/BioMissile_Idle.effect
+	}
+	thruster
+	{
+		node Effect04
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/BioMissile_Idle.effect
+	}
+	thruster
+	{
+		node Effect05
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/BioMissile_Idle.effect
+	}
+	thruster
+	{
+		node Effect06
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/BioMissile_Idle.effect
+	}
+}

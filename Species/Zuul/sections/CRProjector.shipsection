@@ -1,0 +1,64 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/CruiserProjector.X
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			cruiser
+	requires				GRP_PRJCTR
+	health					5600
+	mass					6000
+	cost					15000
+	maintenance_cost		3000
+	cpoints					4032
+	crew					12
+
+	preview_ofs				"0 -50 -6"
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				10
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass projector
+		turretsize large
+		invincible false
+
+		mount
+		{
+			node Projector
+			min_azimuth -110
+			max_azimuth 110
+			min_inclination -20
+			max_inclination 90
+		}
+	}
+}

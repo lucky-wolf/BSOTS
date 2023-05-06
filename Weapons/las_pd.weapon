@@ -1,0 +1,81 @@
+weapon
+{
+	name		"las_pd"			// This is here just to stop mars.exe from generating endless complaints in the session.log
+	requires	IND_HIDDEN
+
+	weaponclass	laser
+	weaponfamily	laser
+	model1		""						// insert barrel model for tiny mounts here if we get them
+	model2		barrel_pdlaser.X		// NOTE: model2 for tiny pd weapons in small mounts
+	requires	WEP_PDtech
+	hpbonus		5
+	cost		300
+	turretsize		tiny
+	turretclass		standard
+	trackspeed_mod	6.0
+	burst_volleys	3
+	volley_period	.1
+	recharge_time	1.8
+	muzzle_speed	1500
+	muzzle_sound	Sounds/Weapons/las_pd_muzzle.wav
+	muzzle_sound_minrange	100
+	muzzle_effect	effects/PDLaser_muzzle.effect
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"64 64 32 32"
+	range	875
+	range_planet	850
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				false
+	fc_holdsfire				false
+
+	bolt
+	{
+		beam_origin	-3
+		beam_length	5.5
+
+		impact_sound	Sounds/Weapons/las_pd_impact.wav
+		impact_sound_minrange	25
+		impact_effect	effects/redlaserimpact.effect
+
+		rangetable
+		{
+			pb_range	425
+			pb_range_dev	0
+			pb_range_dam	8
+
+			eff_range	625
+			eff_range_dev	.01
+			eff_range_dam	8
+
+			max_range	875
+			max_range_dev	.015
+			max_range_dam	5
+		}
+
+		effect		effects/PDlaser_bullet.effect
+		ricochet_mod	-1.5
+		ricochet_sound	Sounds/Weapons/las_pd_rico.wav
+		ricochet_sound_minrange		10
+		mass 0
+
+		dam_pop		0
+		dam_infra	0
+		dam_terra	0
+	}
+
+
+	rating_frate	9
+	rating_dam	.3
+	rating_acc	8
+	rating_range	5
+
+//	dam_est		0
+
+
+}

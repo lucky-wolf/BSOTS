@@ -1,0 +1,28 @@
+@echo off
+cdd %~dp0
+
+echo !!!!!!!!!!!!!!!!!WARNING!!!!!!!!!!!!!!!!!!
+echo.
+echo This will likely make all of your save games INCOMPATIBLE!!!
+echo You can manually update each race's _shipsections.txt file and append any new ship sections for each race.
+echo.
+echo However, if you proceed, they'll be inserted in alphabetical order, forcing new ID numbers throughout the file.
+echo.
+pause Press any key if you wish to proceed...
+
+gosub Update Hiver
+gosub Update Human
+gosub Update Liir
+gosub Update Morrigi
+gosub Update Tarkas
+gosub Update Zuul
+cdd %~dp0
+pause
+quit
+
+:Update [name]
+cdd %~dp0\..\Species\%name\sections
+echo // %name Ship Sections updated on %_date at %_time > _shipsections.txt
+set i=1 & for %f in (*.shipsection) do (echo %i%%@char[9]%%f & set i=%@inc[%i]) >> _shipsections.txt
+echo %i ship sections updated for %name
+return

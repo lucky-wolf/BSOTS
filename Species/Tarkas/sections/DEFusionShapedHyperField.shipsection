@@ -1,0 +1,86 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/DestroyerShapedHyperFieldFusion.X
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			destroyer
+	engine_techera			fusion
+
+	requires				DRV_Fusn
+	requires				DRV_HyprFld
+
+	health					1080
+	mass					1300
+	cost					15000
+	maintenance_cost		300
+	cpoints					1840
+
+	ftlspeed				6.0
+	range					10
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option	DRV_PlsmFoc
+
+	engine_sound			Sounds/Ships/Shared/DEFusion_SH_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEWarp_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		23000
+		force_right			23000
+		force_up			23000
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				128.2875
+		rotspeed			0
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -125
+			max_azimuth 125
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FusionA.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+}

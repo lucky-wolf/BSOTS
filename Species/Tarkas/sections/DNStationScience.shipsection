@@ -1,0 +1,48 @@
+shipsection
+{
+	model Species/Tarkas/art/sections/DNStationScience.X
+	dam_model Species/tarkas/art/sections_dam/DNStationScience.x
+	section_type mission
+	section_class dreadnought
+	Socket_aft Engine
+	Socket_fore Command
+	dam_socket_aft Engine
+	dam_socket_fore Command
+
+	requires		"IND_SciStn"
+
+	health				32000
+	mass				100000
+	cost				300000
+	maintenance_cost	10000
+	cpoints				22400
+	crew				50
+	entity_class		"Station"
+	design_class		station
+
+	station			science
+	science			1
+
+	explicit_command_section "DNStationScience_Fore"
+	explicit_engine_section "DNStationScience_Aft"
+
+	preview_ofs "-40 -440 90"
+
+	section_lod_type 1	// 1 for guns visible further, 0 for regular distance
+	view_dist			150000
+
+	netforcelimits
+	{
+		force_forward		1e+9
+		force_right			1e+9
+		force_up			1e+9
+
+		torque_yaw			1e+9
+		torque_pitch		1e+9
+		torque_roll			1e+9
+
+		speed				30
+		rotspeed			6
+	}
+}
+

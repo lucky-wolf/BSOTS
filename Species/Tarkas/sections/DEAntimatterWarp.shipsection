@@ -1,0 +1,96 @@
+shipsection
+{
+	model					Species/Tarkas/art/sections/DestroyerAntiMatterWarp.X
+	socket_fore				EngineNode
+	section_type			engine
+	section_class			Destroyer
+	engine_techera			antimatter
+
+	requires				DRV_AntiMat
+	requires				DRV_Warp
+
+	health					1280
+	mass					1000
+	cost					40000
+	maintenance_cost		300
+	cpoints					1840
+
+	ftlspeed				12.0
+	range					20
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	engine_sound			Sounds/Ships/Shared/DEWarp_thrust.wav
+	engine_idle_sound		Sounds/Ships/Shared/DEWarp_idle.wav
+	engine_sound_minrange	85
+
+	netforcelimits
+	{
+		force_forward		50000
+		force_right			50000
+		force_up			50000
+
+		torque_yaw			15000
+		torque_pitch		15000
+		torque_roll			15000
+
+		speed				174.2125
+		rotspeed			20
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node LightGunNode01
+			min_azimuth -40
+			max_azimuth 65
+			min_inclination -10
+			max_inclination 90
+
+		}
+		mount
+		{
+			node LightGunNode02
+			min_azimuth -65
+			max_azimuth 40
+			min_inclination -10
+			max_inclination 90
+		}
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize medium
+
+		mount
+		{
+			node MediumGunNode01
+			min_azimuth -120
+			max_azimuth 120
+			min_inclination -5
+			max_inclination 90
+
+		}
+
+	}
+}

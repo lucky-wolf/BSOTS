@@ -1,0 +1,87 @@
+shipsection
+{
+
+	model Species/Human/art/sections/DestroyerNodeMissile.x
+	dam_model Species/Human/art/sections/DestroyerNodeMissile.x
+	section_type mission
+	section_class destroyer
+	health 480
+	mass 500
+	cost 75000
+	maintenance_cost		300
+	cpoints	2752
+	engine_sound		Sounds/Ships/Shared/DEFission_thrust.wav
+	engine_idle_sound	Sounds/Ships/Shared/DEFission_idle.wav
+	engine_sound_minrange 85
+
+
+
+	command_cost 2
+	node_missile 1
+	autonomous true	// actually means this is a ship with only a mission section
+	nodespeed 10
+	ftlspeed .97
+	range	32
+	crew 0
+	preview_ofs "-10 0 0"
+
+	requires WEP_NdMsl
+	requires IND_Hidden		// disable this!!! (we've comandeered "nodemissilerider" to be for our mini-torpedos (it is the exclusive mount type for them)
+
+	netforcelimits
+	{
+		force_forward 10000
+		force_right   10000
+		force_up      10000
+
+		torque_yaw    100000
+		torque_pitch  100000
+		torque_roll   100000
+
+		speed         55
+		rotspeed      90
+	}
+
+	bank
+	{
+		turretclass nodemissilerider
+		turretsize	large
+
+		mount
+		{
+			node "Missile"
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster02
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster03
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+
+	thruster
+	{
+		node EngineThruster08
+		effect effects/BioMissileFlare.effect
+		idle_effect effects/Engine_FusionIdle.effect
+	}
+}

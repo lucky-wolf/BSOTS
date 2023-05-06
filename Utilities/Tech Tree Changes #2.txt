@@ -1,0 +1,58 @@
+BSOTS 2.1
+
+Tech Tree Changes:
+
+Moved cloaking from Shields to Sensors tree (aka communications & trade)
+deleted Fusn -> Clk
+added sensor jammers -> clk
+added ftlcom -> Clk
+
+Reorganized Power Tech in fusion era
+moved micro fusion drives to Warhead tree
+moved small fusion drives to Drone tree
+deleted fusn -> small fusion
+deleted long range fusion -> ramscoops
+added fusn -> ramscoops
+deleted ionic -> everything else
+
+Reorganized Energy Tree around Disruptors & Swapped Beams/Emitters
+disruptor cannon are disconnected from disruptor torpedos
+deleted plasma cannon -> plasma torpedo
+linked disruptors to intcan
+swapped beams and emitters (will facilitate future links between beamers and beams)
+
+Reorganized Industrial Tech
+added new DEDrone (linked from DEConstr)
+added new CRDrone (linked from Cruiser Construction)
+added new DNDrone (linked from Dreadnought Construction)
+moved point defense here (linked from DEConstr) -> Renamed to "DEPtDfs"
+added CRPointDefense cruiser point defense (linked from cruiscons)
+reorganized hardened structures & tractor beams & etc. (top of industrial tree)
+
+Reorganized Cybernetics (Automation/Drone)
+moved small fusion here from power tech (linked from advanced drone frames)
+reorganized advanced robotics and moved most of the COL techs to branch from there
+moved predictive gunnery to hang off of expert systems
+reordered resonant algorithsm & other CNC techs to be "CnC" -> "Bonus CnC" -> "Improved CnC" -> "Bonus CnC" -> "Advanced CnC" -> "Flag CnC"
+
+Reorganized / Expanded Warhead tree
+added DualDFMsl
+added HvyDFMsl
+added DualHvyDFMsl
+moved micro fusion drives here (linked from fusion warhead)
+reorganized nanite missiles, and various parts of this tree
+
+
+Summary of new tech IDs and their corresponding icons:
+
+DEDrone "drone_squadron.tga"
+CRDrone "drone_flight.tga"
+DNDrone "drone_wing_management.tga"
+
+DEPD "DEPointDefense.tga"
+CRPD "CRPointDefense.tga"
+
+DualDFMsl "DumbFire_Dual.tga"
+HvyDFMsl "DumbFire_Heavy.tga"
+DualHvyDFMsl "DumbFire_Heavy_Dual.tga"
+

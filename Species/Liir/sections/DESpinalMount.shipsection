@@ -1,0 +1,73 @@
+shipsection
+{
+	model					Species/Liir/art/sections/DestroyerSpinalMount.X
+	preview_ofs				"0 0 -4"
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			destroyer
+
+	health					640
+	mass					2400
+	cost					11000
+	maintenance_cost		300
+	cpoints					2016
+
+	requires				IND_SpnlMnt
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward 0
+		force_right   0
+		force_up      0
+
+		torque_yaw    0
+		torque_pitch  0
+		torque_roll   0
+
+		speed         -10
+		rotspeed      -10
+	}
+
+	bank
+	{
+		turretclass spinal
+		turretsize large
+
+		mount
+		{
+			node BarrelNode
+			min_azimuth -5
+			max_azimuth 5
+			min_inclination -5
+			max_inclination 5
+		}
+	}
+}

@@ -1,0 +1,66 @@
+shipsection
+{
+	model Species/Tarkas/art/sections/DnConstruction.X
+	preview_ofs "-0 -1700 0"
+	section_type mission
+	section_class destroyer
+	engine_techera	fusion
+
+	requires IND_DSCon
+	requires DRV_Fusn
+
+	health					8000
+	mass					21500
+	cost 					115000
+	maintenance_cost		2500
+	cpoints					5600
+	crew					0
+
+	command_cost			0
+	construction_capacity	16200
+	huge					1		// huge ship (larger than normal for ship class) gets placed above the plane in combat
+	autonomous 				true	// actually means this is a ship with only a mission section
+	ftlspeed  				4
+	range					10
+
+	option	DRV_PlsmFoc
+
+	netforcelimits
+	{
+		force_forward		70000
+		force_right			70000
+		force_up			70000
+
+		torque_yaw			4.5e+7
+		torque_pitch		4.5e+7
+		torque_roll			4.5e+7
+
+		speed				73.2875
+		rotspeed			40
+	}
+
+	thruster
+	{
+		node EngineThruster01
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+	thruster
+	{
+		node EngineThruster02
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+	thruster
+	{
+		node EngineThruster03
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+	thruster
+	{
+		node EngineThruster04
+		effect effects/Engine_FissionB.effect
+		idle_effect effects/Engine_FissionidleB.effect
+	}
+}

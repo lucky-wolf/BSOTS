@@ -1,0 +1,77 @@
+weapon
+{
+	name		@WEAPON_NPC_HERALD_CAN_FUS
+	weaponclass	energy
+	weaponfamily	energycannon
+	model1		"Species/Zuul/art/weapons/barrel_m1_Fusioncannon.X"
+	turretmodel1	"Species/Zuul/art/weapons/turret_m1standard.X"
+	requires 	WEP_FusCan
+	hpbonus		70
+	cost		3000
+	turretsize		medium
+	turretclass		standard
+	burst_volleys	1
+	volley_period	.2
+	recharge_time	4
+	muzzle_speed	300
+	muzzle_sound	Sounds/Weapons/can_fusion_muzzle.wav
+	muzzle_sound_minrange	100
+	muzzle_effect	effects/FusionCannon_muzzle.effect
+	icon_file	GUI/WeaponIcons.tga
+	icon_rect	"224 0 32 32"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range 850
+	range_planet 1200
+		
+	bolt
+	{
+		beam_origin	-0.5
+		beam_length	1.5
+
+		impact_sound	Sounds/Weapons/can_fusion_impact.wav
+		impact_sound_minrange	100
+		impact_effect	effects/FusionCannon_Impact.effect
+
+		expire_effect   "effects/FusionCannon_Expire.effect"
+
+		thrust_sound	Sounds/Weapons/can_plasma_travel.wav
+		thrust_sound_minrange	15
+		
+		rangetable
+		{
+			pb_range	150
+			pb_range_dev	3
+			pb_range_dam	150
+
+			eff_range	600
+			eff_range_dev	4
+			eff_range_dam	250
+
+			max_range	850
+			max_range_dev	5
+			max_range_dam	120
+		}
+
+		effect		effects/FusionCannon_Bullet.effect
+
+		dam_pop		50000
+		dam_infra	.0001	
+		dam_terra	0.0001
+	}
+	
+	dam_est		180
+
+	rating_frate	7
+	rating_dam	4
+	rating_acc	4
+	rating_range	4
+}

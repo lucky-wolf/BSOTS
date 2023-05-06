@@ -1,0 +1,59 @@
+weapon
+{
+	name						@WEAPON_BEM_GRAV
+
+	weaponclass					tractorbeam		// it is a tbeam, not typo
+
+	model1						barrel_l1_Gravitronbeam.x
+
+	turretclass					standard
+	turretsize					large
+
+	requires					WEP_GravBm
+	cost						12000
+
+	burst_volleys				1
+	volley_period				5
+	volley_duration				4
+	recharge_time				10
+
+	muzzle_effect				effects/MesonBeam_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bem_graviton_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Beams.tga
+	icon_rect					"0 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						1000
+	range_planet				1000
+
+	beam
+	{
+		impact_effect					effects/MesonBeam_impact.effect
+		impact_sound					Sounds/Weapons/bem_graviton_impact.wav
+		impact_sound_minrange			75
+		effect							effects/GravitonBeam_Bullet.effect
+		dam								350
+		force							2000
+
+		dam_pop							328125
+		dam_infra						0.01125
+		dam_terra						0.000094
+	}
+
+	dam_est			300
+
+	rating_frate	4
+	rating_dam		8
+	rating_acc		10
+	rating_range	4
+}

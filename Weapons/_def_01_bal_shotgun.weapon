@@ -1,0 +1,87 @@
+weapon
+{
+	name						@WEAPON_BAL_GAUSS_PD_SHOTGUN
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						""						// insert barrel model for tiny mounts here if we get them
+	model2						barrel_pdgauss.X		// NOTE: model2 for tiny pd weapons in small mounts
+
+	turretclass					standard
+	turretsize					tiny
+
+	requires					WEP_PDShotgun
+	cost						1000
+
+	trackspeed_mod				1.5
+
+	burst_volleys				5
+	volley_period				0.01
+	recharge_time				2.5						// laser & pulsed phaser = 1.5, ballistic = 2.0, beamer & phaser = 2.5, emitter = 3.0
+
+	muzzle_speed				700
+	muzzle_effect				effects/APGauss_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_shotgun_muzzle.wav
+	muzzle_sound_minrange		50
+
+	icon_file					GUI/Weapons/Ballistic-2.tga
+	icon_rect					"192 0 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				false
+	fc_holdsfire				false
+
+	range						800
+	range_planet				0
+
+	bolt
+	{
+		volley_deviation				0.05
+
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/pdgauss_bullet.effect
+		impact_effect					effects/gauss_impact.effect
+		impact_sound					sounds/weapons/bal_gauss_pd_impact.wav
+		impact_sound_minrange			50
+
+		rangetable
+		{
+			pb_range		400
+			pb_range_dev	.1
+			pb_range_dam	20	// stock is 40, but that makes this too strong
+
+			eff_range		600
+			eff_range_dev	.1
+			eff_range_dam	20	// 20 * 5 / 2.5 = 40 dps
+
+			max_range		800
+			max_range_dev	.1
+			max_range_dam	20
+		}
+
+		ricochet_mod					-1.7
+		ricochet_sound					Sounds/Weapons/bal_gauss_pd_rico.wav
+		ricochet_sound_minrange			20
+
+		mass							5
+
+		dam_pop							0
+		dam_infra						0
+		dam_terra						0
+	}
+
+	dam_est			0		// PD always zero
+
+	rating_frate	7
+	rating_dam		4
+	rating_acc		7
+	rating_range	3
+}

@@ -1,0 +1,86 @@
+weapon
+{
+	name						@WEAPON_BAL_HEAVY_DUAL_SNIPER
+
+	weaponclass					bullet
+	weaponfamily				gauss
+
+	model1						barrel_l2_HeavyDriver.X
+	turretmodel1				turret_l2standard.x
+
+	turretclass					standard // missile stops them from being in strafe and drone, but restricts azimuth and turret speed :'(
+	turretsize					large
+
+	requires					WEP_SnpHvyDrvr
+	requires					WEP_DualHvyDrvr
+	cost						45000	// 3x
+
+	trackspeed_mod				0.5
+	burst_volleys				1
+	recharge_time				10	// 1.333
+
+	muzzle_speed				833		// 5/3x heavy
+	muzzle_effect				effects/APHeavyDriver_muzzle.effect
+	muzzle_sound				Sounds/Weapons/bal_sniper_muzzle.wav
+	muzzle_sound_minrange		400
+
+	icon_file					GUI/Weapons/Ballistic-2.tga
+	icon_rect					"128 64 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+
+	range						3000	// 1.5 heavy
+	range_planet				3000
+
+	bolt
+	{
+		beam_origin						-0.5
+		beam_length						1.5
+
+		effect							effects/HeavyDriver_bullet.effect
+		impact_effect					effects/HeavyDriver_impact.effect
+		expire_effect					effects/HeavyDriver_Expire.effect
+
+		impact_sound					Sounds/Weapons/bal_drv_impact.wav
+		impact_sound_minrange			400
+
+		rangetable
+		{
+			pb_range		750	// 1.5 heavy
+			pb_range_dev	.5
+			pb_range_dam	450
+
+			eff_range		1800
+			eff_range_dev	1
+			eff_range_dam	450
+
+			max_range		3000
+			max_range_dev	1.5
+			max_range_dam	450
+		}
+
+		ricochet_mod					-1.2		// 1.0 gauss, 1.1 mass, 1.2 heavy
+		ricochet_sound					Sounds/Weapons/bal_drv_rico.wav
+		ricochet_sound_minrange			200
+
+		mass							300
+
+		dam_pop							24608
+		dam_infra						0.000225
+		dam_terra						0.0000375
+	}
+
+	dam_est			240		// 1.5x
+
+	rating_frate	4
+	rating_dam		6
+	rating_acc		7
+	rating_range	10
+}

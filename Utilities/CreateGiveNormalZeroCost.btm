@@ -1,0 +1,9 @@
+@echo off
+cdd %~dp0
+
+echo This will change your tech tree to give all techs but with normal odds:
+pause so each race will be as if they'd researched their entire tree for a normal game...
+
+perl "give normal zero cost.pl" "..\techtree\MasterMasterTechList.tech" > "..\techtree\MasterTechList.tech"
+
+pause Press any key to exit %~n0...

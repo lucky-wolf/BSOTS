@@ -1,0 +1,65 @@
+shipsection
+{
+	nodesign 1	// not registered with section dictionary
+	model "Species/_NPC/art/sections/Drone.X"
+	section_type mission
+	section_class Destroyer
+	health 700
+	mass 100
+	engine_sound "Sounds/SFX/Silicoid_Flight.wav"
+	engine_idle_sound "Sounds/SFX/Silicoid_Flight.wav"
+	autonomous true	// actually means this is a ship with only a mission section
+	crew 0
+	death_effect "Effects/Swarmer_Death.effect"
+
+	command_cost 0
+	maintenance_cost 0
+
+
+	netforcelimits
+	{
+		force_forward 10000
+		force_right   4000
+		force_up      4000
+
+		torque_yaw    1000000
+		torque_pitch  300000
+		torque_roll   300000
+
+		speed         175
+		rotspeed      150
+	}
+
+	bank
+	{
+		turretclass strafe
+		turretsize medium
+		weapon "Species/_NPC/weapons/DroneFusionCannon.weapon"
+
+		mount
+		{
+			node CannonNode
+			min_azimuth	-10
+			max_azimuth	10
+			min_inclination	-10
+			max_inclination	10
+		}
+	}
+
+	bank
+	{
+		turretclass strafe
+		turretsize small
+		weapon "Species/_NPC/weapons/DronePointDef.weapon"
+
+		mount
+		{
+			node PointDefenseNode
+			min_azimuth	-10
+			max_azimuth	10
+			min_inclination	-10
+			max_inclination	10
+		}
+	}
+
+}

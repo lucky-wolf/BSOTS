@@ -1,0 +1,164 @@
+combattechvars
+{
+	// ricochet probability eqn:
+	// ( 1 - angle/90 + b + c ) * ( k + 1 ) = R
+	// ricochet modifiers (b/c) are "RicMod"
+	// ricochet probability modifiers (k) are "RicProbMod"
+
+	// shield health modifiers & armor health modifiers
+	// 1 = +100%
+	// 0 for indestructible
+
+	// recharge times are in secs
+	// recharge mods (+ is % reduction in time [faster], - is % added to time [slower])
+	// emp time mods (+ is % reduction in time, - is % increase in time)
+	// damage mods (% increase)
+	// mass mods (% increase)
+	// payload speed mods (% increase)
+	// accuracy mods (% increase)
+	// speed mods (% increase)
+
+	// Laser Coatings	
+	IND_REFCOAT_RicMod			 1.00	// affects laser ricochet
+	IND_RefCoat_BeamerDamMod	-0.25	// dam reduction of beamers vs ship with refcoat
+	IND_IMPRFCT_RicMod			 1.50
+	IND_ImpRfCt_BeamerDamMod	-0.50	// dam reduction of beamers vs ship with improved refcoat
+
+	// Deflection Armors (b/c)
+	IND_PLYALLOY_RicMod			 1.00	// affects ballistic ricochet
+	IND_PLYALLOY_HealthMod		 0.00
+	IND_MAGLAT_RicMod			 1.50
+	IND_MAGLAT_HealthMod		 0.00
+
+	// Ricochet Armors (k)
+	IND_TRKSTL_RicProbMod		 0.20	// (see also StrategyVars.txt - regeneration modifier)
+	
+	// Hull Reinforcement Armors
+	IND_QRKRES_HealthMod		 0.50	// +50% hp (1.5x)
+	IND_QRKRES_RicMod			 0.00
+	IND_ADMALY_HealthMod		 1.00	// +100% hp (2.0x)
+	IND_ADMALY_RicMod			 0.00
+
+	// Hemispherical Shields
+	SLD_DEF_RicMod				 2.00	// ballistic ricochet
+	SLD_DEF_Recharge			30.00
+	SLD_DISR_RicMod				 2.00	// laser ricochet
+	SLD_DISR_Recharge			30.00
+
+	// Special-purpose shields	
+	SLD_MesShld_Health			 0.00	// Invincible versus all except beams
+	SLD_MesShld_Recharge		30.00	// does this ever happen??? maybe with shield breakers?!
+	SLD_GrvShld_Health			 0.00	// Only stops grav effects, all else goes through
+	SLD_GrvShld_Recharge		30.00	// does this ever happen??? maybe with shield breakers?!
+
+	// Energy Absorbers
+	SLD_ErgAb_DamMod			-0.75	// 75% damage reduction vs hit ship section
+
+	// Hardened Electronics Effects
+	IND_HrdElec_EmpTimeMod		 0.50	// 50% less duration for EMP effects
+	IND_HrdElec_DamMod			-0.50	// 50% damage reduction of emitters & disruptors vs player with hardened elec tech
+
+	///////////////////////////////////////////////////////////////////////////////////
+	// Vanilla Shields        Rapid Shields     Heavy Shields
+	//   I     800 / 20          500 / 10         1500 / 30
+	//  II    1200 / 15
+	// III    1500 / 10         1000 / 5		  3000 / 15
+	//  IV    2500 / 10
+ 
+	// Light / Fast Recharge Shields
+	SLD_MKONE_Health			  500
+	SLD_MKONE_Recharge			   10
+
+	SLD_MKTWO_Health			 1000
+	SLD_MKTWO_Recharge			    5
+
+	// Heavy / Slow Recharge Shields	
+	SLD_MKTHREE_Health			 1500
+	SLD_MKTHREE_Recharge		   30
+
+	SLD_MKFOUR_Health			 3000
+	SLD_MKFOUR_Recharge			   15
+
+	// Shield Amplification Technology Bonuses
+	SLD_MAGNI_ShieldHealthMod	 0.50	// +50%
+	DRV_QNTCAP_ShieldHealthMod	 0.50	// +50%
+
+	// Cloaking Device
+	SLD_CLK_Recharge			   30
+	SLD_CLK_SpdMod				-0.10	// 10% slower when cloaked
+
+	// Improved Cloaking Device
+	SLD_IMPCLK_Recharge			   20
+	SLD_IMPCLK_ChargeMod		-0.25	// 25% slower when combat cloaked
+
+	// Intangibility
+	SLD_INTANG_Recharge			    3
+	SLD_INTANG_Duration			    3
+	SLD_Intang_SpdMod			-0.15	// 15% slower
+
+	//////////////////////////
+	// Weapons Modifiers
+
+	// Accuracy Modifiers
+	IND_PREDGUN_AccMod			 0.60	// Predictive Gunnery...+60% accuracy (stock 75%)
+	CCC_AIFrCon_AccMod			 0.90	// AI Fire Control......+90% accuracy (stock 95%)
+	
+	// VRF Tech
+	WEP_VRFtech_ChargeMod 		 0.2	// 25% faster (1/.8)
+	
+	// Accelerator Amplifiers 
+	WEP_AccAmp_DamMod			 0.25	// 125% damage
+	WEP_AccAmp_SpdMod			 0.25	// 125% projectile speed
+
+	// Neutronium Rounds
+	WEP_NeutRnd_DamMod			 0.50	// Neutronium increases ballistics by 50%
+	WEP_NeutRnd_MassMod			 0.50	// Ballistics have 50% more knock-factor
+
+	// Quantum Capacitors
+	DRV_QNTCAP_BeamChargeMod	 0.2	// 25% faster (1/.8) recharge for beam weapons
+
+	// Warhead Damage Modifiers
+	WEP_NukeWhd_DamMod			 0.50	// 150% Shaped
+	WEP_GmaWhd_DamMod			 1.00	// 200% Gamma
+	WEP_FusWhd_DamMod			 2.50	// 350% Fusion
+	WEP_AmWhd_DamMod			 4.00	// 500% Antimatter
+
+	// Counter Nanites
+	BIO_ConNan_DamMod			-0.50	// Dam reduction of nanites vs player with counter-nanite tech
+
+	//////////////////////////////////////
+	// Thruster Improvements
+
+	DRV_McroFus_SpdMod			 0.50	// Micro Fusion (Missiles)
+	DRV_IncThrst_SpdMod			 0.50	// Ionic Thrusters (Ships)
+	DRV_SmlFus_SpdMod			 0.75	// Small Fusion (Drones & Shuttles)
+
+	//////////////////////////////////////
+	// command quota mods (point increase)
+
+	CCC_CmbtAlg_CmdMod			6		// 1 CR or 3 DEs
+	CCC_HoloTac_CmdMod			6		//
+
+	//////////////////////////////////////
+	// FTLPrepTime (minimum time in encounter before fleeing)
+
+	DRV_Node_FTLPrepTime		120.0
+	DRV_NodFoc_FTLPrepTime		90.0
+	DRV_NodPath_FTLPrepTime		60.0
+
+	DRV_StrWrp_FTLPrepTime		100.0
+	DRV_ImpStWrp_FTLPrepTime	75.0
+	DRV_Flicker_FTLPrepTime		30.0
+
+	DRV_Hyper_FTLPrepTime		130.0
+	DRV_HyprFld_FTLPrepTime		85.0
+	DRV_Warp_FTLPrepTime		40.0
+
+	DRV_Rip_FTLPrepTime			60.0
+	DRV_Rend_FTLPrepTime		40.0
+	DRV_Rad_FTLPrepTime			20.0
+
+	DRV_VdCtr_FTLPrepTime		45.0
+	DRV_VdCrv_FTLPrepTime		30.0
+	DRV_VdMstr_FTLPrepTime		15.0
+}

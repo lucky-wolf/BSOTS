@@ -1,0 +1,103 @@
+﻿=================
+Begin Activation Context Generation.
+Input Parameter:
+	Flags = 0
+	ProcessorArchitecture = Wow32
+	CultureFallBacks = en-US;en
+	ManifestPath = C:\Users\steve\Downloads\marstools_20090721\sotsany\Apollo.exe
+	AssemblyDirectory = C:\Users\steve\Downloads\marstools_20090721\sotsany\
+	Application Config File = 
+-----------------
+INFO: Parsing Manifest File C:\Users\steve\Downloads\marstools_20090721\sotsany\Apollo.exe.
+	INFO: Manifest Definition Identity is (null).
+	INFO: Reference: Microsoft.VC80.CRT,processorArchitecture="x86",publicKeyToken="1fc8b3b9a1e18e3b",type="win32",version="8.0.50608.0"
+	INFO: Reference: Microsoft.VC80.MFC,processorArchitecture="x86",publicKeyToken="1fc8b3b9a1e18e3b",type="win32",version="8.0.50608.0"
+INFO: Resolving reference Microsoft.VC80.CRT,processorArchitecture="x86",publicKeyToken="1fc8b3b9a1e18e3b",type="win32",version="8.0.50608.0".
+	INFO: Resolving reference for ProcessorArchitecture WOW64.
+		INFO: Resolving reference for culture Neutral.
+			INFO: Applying Binding Policy.
+				INFO: No publisher policy found.
+				INFO: No binding policy redirect found.
+			INFO: Begin assembly probing.
+				INFO: Did not find the assembly in WinSxS.
+				INFO: Attempt to probe manifest at C:\WINDOWS\assembly\GAC_32\Microsoft.VC80.CRT\8.0.50608.0__1fc8b3b9a1e18e3b\Microsoft.VC80.CRT.DLL.
+				INFO: Did not find manifest for culture Neutral.
+			INFO: End assembly probing.
+	INFO: Resolving reference for ProcessorArchitecture x86.
+		INFO: Resolving reference for culture Neutral.
+			INFO: Applying Binding Policy.
+				INFO: Find publisher policy at C:\WINDOWS\WinSxS\manifests\x86_policy.8.0.microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9193_none_517238e30f451516.manifest
+				INFO: Publisher Policy redirected assembly version.
+				INFO: Post policy assembly identity is Microsoft.VC80.CRT,processorArchitecture="x86",publicKeyToken="1fc8b3b9a1e18e3b",type="win32",version="8.0.50727.9193".
+			INFO: Begin assembly probing.
+				INFO: Attempt to probe manifest at C:\WINDOWS\WinSxS\manifests\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9193_none_d09188224426efcd.manifest.
+				INFO: Manifest found at C:\WINDOWS\WinSxS\manifests\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9193_none_d09188224426efcd.manifest.
+			INFO: End assembly probing.
+INFO: Resolving reference Microsoft.VC80.CRT.mui,language="&#x2a;",processorArchitecture="x86",publicKeyToken="1fc8b3b9a1e18e3b",type="win32",version="8.0.50727.9193".
+	INFO: Resolving reference for ProcessorArchitecture WOW64.
+		INFO: Resolving reference for culture en-US.
+			INFO: Applying Binding Policy.
+				INFO: No publisher policy found.
+				INFO: No binding policy redirect found.
+			INFO: Begin assembly probing.
+				INFO: Did not find the assembly in WinSxS.
+				INFO: Attempt to probe manifest at C:\WINDOWS\assembly\GAC_32\Microsoft.VC80.CRT.mui\8.0.50727.9193_en-US_1fc8b3b9a1e18e3b\Microsoft.VC80.CRT.mui.DLL.
+				INFO: Did not find manifest for culture en-US.
+			INFO: End assembly probing.
+		INFO: Resolving reference for culture en.
+			INFO: Applying Binding Policy.
+				INFO: No publisher policy found.
+				INFO: No binding policy redirect found.
+			INFO: Begin assembly probing.
+				INFO: Did not find the assembly in WinSxS.
+				INFO: Attempt to probe manifest at C:\WINDOWS\assembly\GAC_32\Microsoft.VC80.CRT.mui\8.0.50727.9193_en_1fc8b3b9a1e18e3b\Microsoft.VC80.CRT.mui.DLL.
+				INFO: Did not find manifest for culture en.
+			INFO: End assembly probing.
+	INFO: Resolving reference for ProcessorArchitecture x86.
+		INFO: Resolving reference for culture en-US.
+			INFO: Applying Binding Policy.
+				INFO: No publisher policy found.
+				INFO: No binding policy redirect found.
+			INFO: Begin assembly probing.
+				INFO: Did not find the assembly in WinSxS.
+				INFO: Attempt to probe manifest at C:\WINDOWS\assembly\GAC_32\Microsoft.VC80.CRT.mui\8.0.50727.9193_en-US_1fc8b3b9a1e18e3b\Microsoft.VC80.CRT.mui.DLL.
+				INFO: Did not find manifest for culture en-US.
+			INFO: End assembly probing.
+		INFO: Resolving reference for culture en.
+			INFO: Applying Binding Policy.
+				INFO: No publisher policy found.
+				INFO: No binding policy redirect found.
+			INFO: Begin assembly probing.
+				INFO: Did not find the assembly in WinSxS.
+				INFO: Attempt to probe manifest at C:\WINDOWS\assembly\GAC_32\Microsoft.VC80.CRT.mui\8.0.50727.9193_en_1fc8b3b9a1e18e3b\Microsoft.VC80.CRT.mui.DLL.
+				INFO: Did not find manifest for culture en.
+			INFO: End assembly probing.
+INFO: Resolving reference Microsoft.VC80.MFC,processorArchitecture="x86",publicKeyToken="1fc8b3b9a1e18e3b",type="win32",version="8.0.50608.0".
+	INFO: Resolving reference for ProcessorArchitecture WOW64.
+		INFO: Resolving reference for culture Neutral.
+			INFO: Applying Binding Policy.
+				INFO: No publisher policy found.
+				INFO: No binding policy redirect found.
+			INFO: Begin assembly probing.
+				INFO: Did not find the assembly in WinSxS.
+				INFO: Attempt to probe manifest at C:\WINDOWS\assembly\GAC_32\Microsoft.VC80.MFC\8.0.50608.0__1fc8b3b9a1e18e3b\Microsoft.VC80.MFC.DLL.
+				INFO: Did not find manifest for culture Neutral.
+			INFO: End assembly probing.
+	INFO: Resolving reference for ProcessorArchitecture x86.
+		INFO: Resolving reference for culture Neutral.
+			INFO: Applying Binding Policy.
+				INFO: No publisher policy found.
+				INFO: No binding policy redirect found.
+			INFO: Begin assembly probing.
+				INFO: Did not find the assembly in WinSxS.
+				INFO: Attempt to probe manifest at C:\WINDOWS\assembly\GAC_32\Microsoft.VC80.MFC\8.0.50608.0__1fc8b3b9a1e18e3b\Microsoft.VC80.MFC.DLL.
+				INFO: Attempt to probe manifest at C:\Users\steve\Downloads\marstools_20090721\sotsany\Microsoft.VC80.MFC.DLL.
+				INFO: Attempt to probe manifest at C:\Users\steve\Downloads\marstools_20090721\sotsany\Microsoft.VC80.MFC.MANIFEST.
+				INFO: Attempt to probe manifest at C:\Users\steve\Downloads\marstools_20090721\sotsany\Microsoft.VC80.MFC\Microsoft.VC80.MFC.DLL.
+				INFO: Attempt to probe manifest at C:\Users\steve\Downloads\marstools_20090721\sotsany\Microsoft.VC80.MFC\Microsoft.VC80.MFC.MANIFEST.
+				INFO: Did not find manifest for culture Neutral.
+			INFO: End assembly probing.
+	ERROR: Cannot resolve reference Microsoft.VC80.MFC,processorArchitecture="x86",publicKeyToken="1fc8b3b9a1e18e3b",type="win32",version="8.0.50608.0".
+ERROR: Activation Context generation failed.
+End Activation Context Generation.
+

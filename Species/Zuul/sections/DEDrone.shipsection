@@ -1,0 +1,104 @@
+shipsection
+{
+	model					Species/Zuul/art/sections/DestroyerDrone.X
+	preview_ofs				"1 -10 0"
+
+	socket_aft				EngineNode
+	socket_fore				CommandNode
+	section_type			mission
+	section_class			Destroyer
+
+	requires				IND_DEConstr
+	requires				DRN_Cmbt
+
+	health					400
+	mass					2000
+	cost					15500
+	maintenance_cost		300
+	cpoints					1440
+
+	repair_capacity			833	// small amount of repair to better handle replenishing drones
+
+	option	IND_StlthArm
+	option
+	{
+		option	IND_PlyAlloy
+		option	IND_MagLat
+	}
+	option
+	{
+		option	IND_RefCoat
+		option	IND_ImpRfCt
+	}
+	option
+	{
+		option	IND_QrkRes
+		option	IND_AdmAly
+	}
+
+	option
+	{
+		option	SLD_MkOne
+		option	SLD_MkTwo
+		option	SLD_MkThree
+		option	SLD_MkFour
+		option	SLD_MesShld
+		option	SLD_GrvShld
+	}
+
+	netforcelimits
+	{
+		force_forward		0
+		force_right			0
+		force_up			0
+
+		torque_yaw			0
+		torque_pitch		0
+		torque_roll			0
+
+		speed				-20
+		rotspeed			-5
+	}
+
+	bank
+	{
+		turretclass standard
+		turretsize small
+
+		mount
+		{
+			node lightgunnode01
+			min_azimuth -180
+			max_azimuth 180
+			min_inclination -3
+			max_inclination 90
+		}
+
+	}
+
+	bank
+	{
+		turretclass dronerider
+		turretsize large
+
+		mount
+		{
+			node Drone01
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+		mount
+		{
+			node Drone02
+			min_azimuth 0
+			max_azimuth 0
+			min_inclination 0
+			max_inclination 0
+		}
+
+	}
+}
+

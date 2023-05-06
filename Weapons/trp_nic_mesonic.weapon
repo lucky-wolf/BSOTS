@@ -1,0 +1,85 @@
+weapon
+{
+	name						@WEAPON_TRP_MESONIC
+
+	weaponclass					mesonictorpedo
+	weaponfamily				torpedo
+	weapondamagetype			meson
+
+	turretclass					torpedo
+	turretsize					large
+
+	requires					WEP_MesTrp
+	cost						20000
+
+	burst_volleys				5
+	volley_period				.2
+	recharge_time				18
+
+	muzzle_speed				900
+	muzzle_effect				effects/PlasmaTorpedo_muzzle.effect
+	muzzle_sound				Sounds/Weapons/trp_meson_muzzle.wav
+	muzzle_sound_minrange		100
+
+	icon_file					GUI/Weapons/Torpedos.tga
+	icon_rect					"128 128 64 64"
+
+	fc_requires_los				true
+	fc_requires_inrange			true
+	fc_requires_enemycolony		false
+	fc_manual_target			false
+	fc_manual_toggle			false
+	fc_manual_launch			false
+	fc_controllable				true
+	fc_holdsfire				true
+	pinpoint					true		// allow the weapon to target exact polygon
+
+	range						3500
+	range_planet				3500
+
+	bolt
+	{
+		beam_origin						-3
+		beam_length						5.5
+
+		effect							effects/mesontorpedo_Bullet.effect
+
+		impact_effect					effects/mesontorpedo_impact.effect
+		impact_sound					Sounds/Weapons/trp_photon_impact.wav
+		impact_sound_minrange			100
+
+		thrust_sound					Sounds/Weapons/trp_photon_travel.wav
+		thrust_sound_minrange			20
+
+		rangetable
+		{
+			pb_range		1550
+			pb_range_dev	1
+			pb_range_dam	180
+
+			eff_range		2500
+			eff_range_dev	1
+			eff_range_dam	150
+
+			max_range		3500
+			max_range_dev	1
+			max_range_dam	100
+		}
+
+		mass							.01
+		ricochet_mod					-2.5
+
+		speed							900
+
+		dam_pop							18046
+		dam_infra						0.003375
+		dam_terra						0.000002
+	}
+
+	dam_est			425
+
+	rating_frate	2
+	rating_dam		9
+	rating_acc		7
+	rating_range	10
+}
