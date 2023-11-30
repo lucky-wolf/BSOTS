@@ -31,7 +31,7 @@ COMMON_NODESPACE,Nodespace,,Used for location name when combat occurs in nodespa
 COMMON_YES,Yes,,
 COMMON_NO,No,,
 COMMON_NOTAVAIL,n/a,,A short string for columns of stats to indicate the stat is not applicable/not available
-COMMON_SORTBY,Sort By…,,For popup menus to sort a list
+COMMON_SORTBY,Sort Byï¿½,,For popup menus to sort a list
 COMMON_SEND,Send,,
 COMMON_CLOSE,Close,,
 COMMON_EARTH,Earth,,
@@ -84,8 +84,8 @@ AUTOJOINERR_TITLE,Connection Error,,
 AUTOJOINERR_NOADDRESS,Missing host address for '/join' command.,,
 AUTOJOINERR_INVALIDADDRESS,Invalid address format for '/join' command.\n Address must be of the form 'xxx.xxx.xxx.xxx[:port]'\n,,
 
-JOINGAMEDLG_CONNECTING,Connecting to host…,,
-JOINGAMEDLG_CANCELLING,Canceling…,,
+JOINGAMEDLG_CONNECTING,Connecting to hostï¿½,,
+JOINGAMEDLG_CANCELLING,Cancelingï¿½,,
 
 ENDGAMESPLASH_WIN_LOCALPLAYER,You\nare,,
 ENDGAMESPLASH_WIN_LOCALPLAYER_BOLD,VICTORIOUS!,,
@@ -250,7 +250,7 @@ GAMESETUP_SCENARIO_NUMPLAYERS,%s Players,127,params: number of players
 GAMESETUP_SCENARIO_PAGETITLE_DESC,Description,,
 GAMESETUP_SCENARIO_PAGETITLE_RULES,Rules,,
 GAMESETUP_SCENARIO_PAGETITLE_OBJS,Objectives,,
-GAMESETUP_PROGRESS,Initializing Game…,,game initializing dialog
+GAMESETUP_PROGRESS,Initializing Gameï¿½,,game initializing dialog
 GAMESETUP_SYSTEM_COUNT,Number of Stars,,
 GAMESETUP_SYSTEM_DISTANCE,Distance
 GAMESETUP_SYSTEM_DISTANCE_UNITS,ly
@@ -333,7 +333,7 @@ AIDESIGN_LIIR_18,Shuulsi Ma
 AIDESIGN_LIIR_19,Day Oluum
 AIDESIGN_LIIR_20,Niishini Nu
 AIDESIGN_LIIR_21,Uulani
-AIDESIGN_LIIR_22,Shuu’nan
+AIDESIGN_LIIR_22,Shuuï¿½nan
 AIDESIGN_LIIR_23,Biima Bo
 AIDESIGN_LIIR_24,Miirio Ma
 AIDESIGN_LIIR_25,Wuuna Wan
@@ -386,7 +386,7 @@ AIDESIGN_TARKAS_34,Vornaku Kaan
 AIDESIGN_TARKAS_35,Glory Bound
 
 AIDESIGN_HIVER_1,Thunderous
-AIDESIGN_HIVER_2,Queen’s Ire
+AIDESIGN_HIVER_2,Queenï¿½s Ire
 AIDESIGN_HIVER_3,Defender
 AIDESIGN_HIVER_4,Vengeance
 AIDESIGN_HIVER_5,Blossom
@@ -403,10 +403,10 @@ AIDESIGN_HIVER_15,Mezek
 AIDESIGN_HIVER_16,Zokis Gaz
 AIDESIGN_HIVER_17,Chazak Ti
 AIDESIGN_HIVER_18,Rizokis Hex
-AIDESIGN_HIVER_19,Za’traxin
+AIDESIGN_HIVER_19,Zaï¿½traxin
 AIDESIGN_HIVER_20,Chep Tiza
 AIDESIGN_HIVER_21,Ipriskin Ti
-AIDESIGN_HIVER_22,Kek’kep
+AIDESIGN_HIVER_22,Kekï¿½kep
 AIDESIGN_HIVER_23,Rapa Cha
 AIDESIGN_HIVER_24,Feeder
 AIDESIGN_HIVER_25,The Way
@@ -463,18 +463,18 @@ AIDESIGN_ZUUL_38,Kamlang
 AIDESIGN_ZUUL_39,Pchanh Pchal
 AIDESIGN_ZUUL_40,Etthi Pol
 
-AIDESIGN_MORRIGI_1,Thiva’s Dream
-AIDESIGN_MORRIGI_2,Akilleos’ Wrath
-AIDESIGN_MORRIGI_3,Khan’s Fist
+AIDESIGN_MORRIGI_1,Thivaï¿½s Dream
+AIDESIGN_MORRIGI_2,Akilleosï¿½ Wrath
+AIDESIGN_MORRIGI_3,Khanï¿½s Fist
 AIDESIGN_MORRIGI_4,Purpose Served
 AIDESIGN_MORRIGI_5,Fire Bringer
 AIDESIGN_MORRIGI_6,Ruins of Muur
-AIDESIGN_MORRIGI_7,Terra’s End
-AIDESIGN_MORRIGI_8,Ke’Kona’s Sorrow
-AIDESIGN_MORRIGI_9,Tcho’to Pre’s Tears
+AIDESIGN_MORRIGI_7,Terraï¿½s End
+AIDESIGN_MORRIGI_8,Keï¿½Konaï¿½s Sorrow
+AIDESIGN_MORRIGI_9,Tchoï¿½to Preï¿½s Tears
 AIDESIGN_MORRIGI_10,Zuul-Scourge
-AIDESIGN_MORRIGI_11,War’s End
-AIDESIGN_MORRIGI_12,Profit’s Price
+AIDESIGN_MORRIGI_11,Warï¿½s End
+AIDESIGN_MORRIGI_12,Profitï¿½s Price
 AIDESIGN_MORRIGI_13,Whip Strike
 AIDESIGN_MORRIGI_14,Holy Defender
 AIDESIGN_MORRIGI_15,Shield Arm
@@ -518,7 +518,7 @@ AIPLAYER_HUMAN_15,Wu Zetian
 AIPLAYER_HUMAN_16,Queen Talleah
 AIPLAYER_HUMAN_17,First Imperium
 
-AIPLAYER_TARKAS_1,Var’Ish Tho’Orr
+AIPLAYER_TARKAS_1,Varï¿½Ish Thoï¿½Orr
 AIPLAYER_TARKAS_2,Imperial Armada
 AIPLAYER_TARKAS_3,Angels of Sardo Kal
 AIPLAYER_TARKAS_4,Fane Lao
@@ -530,7 +530,7 @@ AIPLAYER_TARKAS_9,Tarka Concordiate
 AIPLAYER_TARKAS_10,Varrush Wing
 AIPLAYER_TARKAS_11,Var Kona's Legions
 AIPLAYER_TARKAS_12,Fen Law
-AIPLAYER_TARKAS_13,Var’Sardo Ko’Taal
+AIPLAYER_TARKAS_13,Varï¿½Sardo Koï¿½Taal
 AIPLAYER_TARKAS_14,The Eternal Empire
 AIPLAYER_TARKAS_15,The Imperial Domain
 AIPLAYER_TARKAS_16,Fane Kona
@@ -540,8 +540,8 @@ AIPLAYER_HIVER_2,Clans of Fire Lotus
 AIPLAYER_HIVER_3,Blood-Dappled Blossom
 AIPLAYER_HIVER_4,Motherless Sons
 AIPLAYER_HIVER_5,Vagabond Princess
-AIPLAYER_HIVER_6,Cheken’zek
-AIPLAYER_HIVER_7,Queen’s Dominion
+AIPLAYER_HIVER_6,Chekenï¿½zek
+AIPLAYER_HIVER_7,Queenï¿½s Dominion
 AIPLAYER_HIVER_8,Imperial Hive
 AIPLAYER_HIVER_9,Hiver Expanse
 AIPLAYER_HIVER_10,Ravenous Cycle
@@ -550,7 +550,7 @@ AIPLAYER_HIVER_12,Queen Chaka'zek
 AIPLAYER_HIVER_13,The Mad Brood
 AIPLAYER_HIVER_14,The Twelve Regents
 AIPLAYER_HIVER_15,The Kyzan Domain
-AIPLAYER_HIVER_16,Matriarchate of Che’Kor
+AIPLAYER_HIVER_16,Matriarchate of Cheï¿½Kor
 
 AIPLAYER_LIIR_1,Black Swimmers
 AIPLAYER_LIIR_2,The Drowned
@@ -592,7 +592,7 @@ AIPLAYER_MORRIGI_7,Djutmeos the Savage
 AIPLAYER_MORRIGI_8,Akhilleos the Swift
 AIPLAYER_MORRIGI_9,Atreus the Bloody
 AIPLAYER_MORRIGI_10,Xhodysseos the Cunning
-AIPLAYER_MORRIGI_11,Khu’khul the Great
+AIPLAYER_MORRIGI_11,Khuï¿½khul the Great
 AIPLAYER_MORRIGI_12,Khubilai the Peacemaker
 AIPLAYER_MORRIGI_13,Temuur of the Burning Claws
 AIPLAYER_MORRIGI_14,Mongkha Who Strikes Last
@@ -612,41 +612,41 @@ AIPLAYER_MORRIGI_27,Tuathal of the Jade Wing
 AIPLAYER_MORRIGI_28,Serapion the Bold
 AIPLAYER_MORRIGI_29,Amenopheos the Holy
 
-AIDIP_HUMAN_ALLIANCE_REQUEST1,Let’s work together. We’ll both win.
-AIDIP_HUMAN_ALLIANCE_REQUEST2,There’s no reason that we can’t join forces.
-AIDIP_HUMAN_ALLIANCE_REQUEST3,"Oh come on. We’re all carbon-based life forms, right?"
-AIDIP_HUMAN_ALLIANCE_REQUEST4,I’m gonna make you an offer you can’t refuse…
+AIDIP_HUMAN_ALLIANCE_REQUEST1,Letï¿½s work together. Weï¿½ll both win.
+AIDIP_HUMAN_ALLIANCE_REQUEST2,Thereï¿½s no reason that we canï¿½t join forces.
+AIDIP_HUMAN_ALLIANCE_REQUEST3,"Oh come on. Weï¿½re all carbon-based life forms, right?"
+AIDIP_HUMAN_ALLIANCE_REQUEST4,Iï¿½m gonna make you an offer you canï¿½t refuseï¿½
 AIDIP_HUMAN_ALLIANCE_ACCEPT1,I think this is the beginning of a beautiful friendship!
-AIDIP_HUMAN_ALLIANCE_ACCEPT2,"All right, let’s give it a whirl."
-AIDIP_HUMAN_ALLIANCE_ACCEPT3,"Well, they say that many hands make light work—you DO have hands, right?"
+AIDIP_HUMAN_ALLIANCE_ACCEPT2,"All right, letï¿½s give it a whirl."
+AIDIP_HUMAN_ALLIANCE_ACCEPT3,"Well, they say that many hands make light workï¿½you DO have hands, right?"
 AIDIP_HUMAN_ALLIANCE_ACCEPT4,"Welcome aboard, stranger."
-AIDIP_HUMAN_ALLIANCE_REJECT1,There’s no way we’ll join forces with the likes of you.
+AIDIP_HUMAN_ALLIANCE_REJECT1,Thereï¿½s no way weï¿½ll join forces with the likes of you.
 AIDIP_HUMAN_ALLIANCE_REJECT2,"Sorry, but we have nothing in common."
-AIDIP_HUMAN_ALLIANCE_REJECT3,Sorry--just don’t see what we have to gain.
+AIDIP_HUMAN_ALLIANCE_REJECT3,Sorry--just donï¿½t see what we have to gain.
 AIDIP_HUMAN_ALLIANCE_REJECT4,This is not happening on my watch.
 AIDIP_HUMAN_ALLIANCE_LEAVE1,This partnership is at an end.
-AIDIP_HUMAN_ALLIANCE_LEAVE2,"I think we’re about done playing house, thanks."
-AIDIP_HUMAN_ALLIANCE_LEAVE3,We’re dissolving the current agreement.
-AIDIP_HUMAN_ALLIANCE_LEAVE4,"From now on, you’re on your own."
-AIDIP_HUMAN_ALLIANCE_OTHER_LEAVE1,So you don’t want to be friends anymore? Fine.
-AIDIP_HUMAN_ALLIANCE_OTHER_LEAVE2,"Yeah, right. There’s the door, “friend”."
+AIDIP_HUMAN_ALLIANCE_LEAVE2,"I think weï¿½re about done playing house, thanks."
+AIDIP_HUMAN_ALLIANCE_LEAVE3,Weï¿½re dissolving the current agreement.
+AIDIP_HUMAN_ALLIANCE_LEAVE4,"From now on, youï¿½re on your own."
+AIDIP_HUMAN_ALLIANCE_OTHER_LEAVE1,So you donï¿½t want to be friends anymore? Fine.
+AIDIP_HUMAN_ALLIANCE_OTHER_LEAVE2,"Yeah, right. Thereï¿½s the door, ï¿½friendï¿½."
 AIDIP_HUMAN_ALLIANCE_OTHER_LEAVE3,Was it something we said?
 AIDIP_HUMAN_ALLIANCE_OTHER_LEAVE4,"Plenty of other bugs in the rug, pal. "
-AIDIP_HUMAN_NONAGGRO_REQUEST1,"It works like this: you don’t shoot at us, we don’t shoot at you. Got it?"
-AIDIP_HUMAN_NONAGGRO_REQUEST2,"Just keep your guns to yourself, and we’ll do the same."
+AIDIP_HUMAN_NONAGGRO_REQUEST1,"It works like this: you donï¿½t shoot at us, we donï¿½t shoot at you. Got it?"
+AIDIP_HUMAN_NONAGGRO_REQUEST2,"Just keep your guns to yourself, and weï¿½ll do the same."
 AIDIP_HUMAN_NONAGGRO_REQUEST3,"You keep it holstered, we'll keep it holstered, and everyone's happy, alright?"
-AIDIP_HUMAN_NONAGGRO_REQUEST4,"Look, we’d just like to be at peace with SOMEONE."
-AIDIP_HUMAN_NONAGGRO_REJECT1,Sorry. We’ve still got plenty of ammunition.
-AIDIP_HUMAN_NONAGGRO_REJECT2,Nope. Couldn’t make our people stop shooting you if we tried.
-AIDIP_HUMAN_NONAGGRO_REJECT3,We don’t make promises that we can’t keep.
-AIDIP_HUMAN_NONAGGRO_REJECT4,Sorry. You’re just too damned ugly to live.
+AIDIP_HUMAN_NONAGGRO_REQUEST4,"Look, weï¿½d just like to be at peace with SOMEONE."
+AIDIP_HUMAN_NONAGGRO_REJECT1,Sorry. Weï¿½ve still got plenty of ammunition.
+AIDIP_HUMAN_NONAGGRO_REJECT2,Nope. Couldnï¿½t make our people stop shooting you if we tried.
+AIDIP_HUMAN_NONAGGRO_REJECT3,We donï¿½t make promises that we canï¿½t keep.
+AIDIP_HUMAN_NONAGGRO_REJECT4,Sorry. Youï¿½re just too damned ugly to live.
 AIDIP_HUMAN_NONAGGRO_BREAK1,"Ready or not, here we come."
 AIDIP_HUMAN_NONAGGRO_BREAK2,No more Mr. Nice Guy!
-AIDIP_HUMAN_NONAGGRO_BREAK3,We’re done playing nice.
+AIDIP_HUMAN_NONAGGRO_BREAK3,Weï¿½re done playing nice.
 AIDIP_HUMAN_NONAGGRO_BREAK4,"Aw, to hell with it."
 AIDIP_HUMAN_NONAGGRO_OTHER_BREAK1,"Did you just SHOOT at us, you son-of-a!?"
 AIDIP_HUMAN_NONAGGRO_OTHER_BREAK2,"You just made my day, creep."
-AIDIP_HUMAN_NONAGGRO_OTHER_BREAK3,Fine and dandy. Let’s dance.
+AIDIP_HUMAN_NONAGGRO_OTHER_BREAK3,Fine and dandy. Letï¿½s dance.
 AIDIP_HUMAN_NONAGGRO_OTHER_BREAK4,"You just shot at the wrong monkey, pal."
 AIDIP_HUMAN_SURRENDER1,We cannot sustain this war. We Surrender.
 AIDIP_HUMAN_SURRENDER2,We surrender in accordance to the treaty of Procyon.
@@ -675,7 +675,7 @@ AIDIP_HUMAN_REJECT_DEFEND_AT_DONT_LIKE_YOU1,And we should care because?
 AIDIP_HUMAN_REJECT_DEFEND_AT_DONT_LIKE_YOU2,You are going to get butt kicked without our help? Excellent!
 AIDIP_HUMAN_REJECT_DEFEND_AT_CANT_MAKE_IT1,We can't get any ships there in time. You are on your own.
 AIDIP_HUMAN_REJECT_DEFEND_AT_CANT_MAKE_IT2,"%s is a lost cause, we can't afford to send any ships into that grinder."
-AIDIP_HUMAN_CONFIRM_STOP_HARASSING_ME1,Apologies…we thought you were someone else.
+AIDIP_HUMAN_CONFIRM_STOP_HARASSING_ME1,Apologiesï¿½we thought you were someone else.
 AIDIP_HUMAN_CONFIRM_STOP_HARASSING_ME2,Recon in force will cease for now.
 AIDIP_HUMAN_REJECT_STOP_HARASSING_ME1,"If you want us to stop, then make us."
 AIDIP_HUMAN_REJECT_STOP_HARASSING_ME2,"When SolForce arrives, smart sentients out of the way."
@@ -698,7 +698,7 @@ AIDIP_HUMAN_CONFIRM_RESEARCH_REQUEST1,We will send a science team to help your p
 AIDIP_HUMAN_CONFIRM_RESEARCH_REQUEST2,We will open up our research database to you.
 AIDIP_HUMAN_REJECT_RESEARCH_REQUEST1,"Sorry, we just can't spare the researchers at the moment."
 AIDIP_HUMAN_REJECT_RESEARCH_REQUEST2,There are no science teams ready for an extended foreign mission right now.
-AIDIP_HUMAN_REJECT_RESEARCH_REQUEST_DONT_LIKE_YOU1,We like you the way you are…backwards and exploitable.
+AIDIP_HUMAN_REJECT_RESEARCH_REQUEST_DONT_LIKE_YOU1,We like you the way you areï¿½backwards and exploitable.
 AIDIP_HUMAN_REJECT_RESEARCH_REQUEST_DONT_LIKE_YOU2,We do not help our enemies build better weapons.
 AIDIP_HUMAN_CONFIRM_SEVER_ALLIANCE_WITH1,"You are right, %s is a bad investment."
 AIDIP_HUMAN_CONFIRM_SEVER_ALLIANCE_WITH2,SolForce will break off relations with %s.
@@ -721,7 +721,7 @@ AIDIP_TARKAS_ALLIANCE_REQUEST1,We seem to have common interests.
 AIDIP_TARKAS_ALLIANCE_REQUEST2,Shall we join forces?
 AIDIP_TARKAS_ALLIANCE_REQUEST3,We offer an alliance.
 AIDIP_TARKAS_ALLIANCE_REQUEST4,You have impressed us.
-AIDIP_TARKAS_ALLIANCE_ACCEPT1,Yes…this alliance will be mutually beneficial.
+AIDIP_TARKAS_ALLIANCE_ACCEPT1,Yesï¿½this alliance will be mutually beneficial.
 AIDIP_TARKAS_ALLIANCE_ACCEPT2,We agree to your terms. Let us work together.
 AIDIP_TARKAS_ALLIANCE_ACCEPT3,We welcome you as an ally.
 AIDIP_TARKAS_ALLIANCE_ACCEPT4,We both have much to gain from cooperation.
@@ -733,10 +733,10 @@ AIDIP_TARKAS_ALLIANCE_LEAVE1,This arrangement is now at an end.
 AIDIP_TARKAS_ALLIANCE_LEAVE2,We have no reason to continue as your allies.
 AIDIP_TARKAS_ALLIANCE_LEAVE3,This alliance is now terminated.
 AIDIP_TARKAS_ALLIANCE_LEAVE4,Our interests are no longer being served by this treaty.
-AIDIP_TARKAS_ALLIANCE_OTHER_LEAVE1,You have broken our alliance—we will now look to our own interests.
+AIDIP_TARKAS_ALLIANCE_OTHER_LEAVE1,You have broken our allianceï¿½we will now look to our own interests.
 AIDIP_TARKAS_ALLIANCE_OTHER_LEAVE2,"As you wish, of course."
-AIDIP_TARKAS_ALLIANCE_OTHER_LEAVE3,Do as you must—so will we.
-AIDIP_TARKAS_ALLIANCE_OTHER_LEAVE4,An interesting decision—we part ways for now.
+AIDIP_TARKAS_ALLIANCE_OTHER_LEAVE3,Do as you mustï¿½so will we.
+AIDIP_TARKAS_ALLIANCE_OTHER_LEAVE4,An interesting decisionï¿½we part ways for now.
 AIDIP_TARKAS_NONAGGRO_REQUEST1,"We will leave you unharmed, if you do not attack us first. Agreed? "
 AIDIP_TARKAS_NONAGGRO_REQUEST2,We see no reason to rush to war.
 AIDIP_TARKAS_NONAGGRO_REQUEST3,"We will not fire, if you do not."
@@ -747,12 +747,12 @@ AIDIP_TARKAS_NONAGGRO_REJECT3,The Tarka armada cannot be turned aside so easily.
 AIDIP_TARKAS_NONAGGRO_REJECT4,Do not get in the way.
 AIDIP_TARKAS_NONAGGRO_BREAK1,We are finished dancing with you. Prepare to die.
 AIDIP_TARKAS_NONAGGRO_BREAK2,Time to see who is stronger.
-AIDIP_TARKAS_NONAGGRO_BREAK3,From now on—run or perish.
+AIDIP_TARKAS_NONAGGRO_BREAK3,From now onï¿½run or perish.
 AIDIP_TARKAS_NONAGGRO_BREAK4,This nonsense has gone on long enough.
 AIDIP_TARKAS_NONAGGRO_OTHER_BREAK1,So you think you can fight the Tarka armada? Good luck.
 AIDIP_TARKAS_NONAGGRO_OTHER_BREAK2,You wish to fight? Good. Life was getting dull.
 AIDIP_TARKAS_NONAGGRO_OTHER_BREAK3,So you are not complete cowards!
-AIDIP_TARKAS_NONAGGRO_OTHER_BREAK4,So many guns you have—so few brains.
+AIDIP_TARKAS_NONAGGRO_OTHER_BREAK4,So many guns you haveï¿½so few brains.
 AIDIP_TARKAS_SURRENDER1,Your power overwhelms us. Victory is yours.
 AIDIP_TARKAS_SURRENDER2,We expect an honorable response to our surrender.
 AIDIP_TARKAS_SURRENDER_TO1,Our leaders have failed us. We turn to you.
@@ -777,10 +777,10 @@ AIDIP_TARKAS_REJECT_ATTACK_AT_CANT_MAKE_IT2,%s is beyond the reach of our forces
 AIDIP_TARKAS_CONFIRM_DEFEND_AT1,We will defend %s at your request.
 AIDIP_TARKAS_CONFIRM_DEFEND_AT2,The %s system will not fall without a fight.
 AIDIP_TARKAS_REJECT_DEFEND_AT_DONT_LIKE_YOU1,We are not your watchdogs. Defend the %s system yourself.
-AIDIP_TARKAS_REJECT_DEFEND_AT_DONT_LIKE_YOU2,"So, you are unable to defend %s? How very…interesting."
+AIDIP_TARKAS_REJECT_DEFEND_AT_DONT_LIKE_YOU2,"So, you are unable to defend %s? How veryï¿½interesting."
 AIDIP_TARKAS_REJECT_DEFEND_AT_CANT_MAKE_IT1,We cannot defend the %s system.
 AIDIP_TARKAS_REJECT_DEFEND_AT_CANT_MAKE_IT2,Our forces cannot come to the aid of %s in time.
-AIDIP_TARKAS_CONFIRM_STOP_HARASSING_ME1,The word has gone out to all fleets—attacks on your people will cease at once.
+AIDIP_TARKAS_CONFIRM_STOP_HARASSING_ME1,The word has gone out to all fleetsï¿½attacks on your people will cease at once.
 AIDIP_TARKAS_CONFIRM_STOP_HARASSING_ME2,The Supreme Commander has ordered all hostilities against your empire to halt.
 AIDIP_TARKAS_REJECT_STOP_HARASSING_ME1,Var Kona will continue his campaign for as long as he sees fit.
 AIDIP_TARKAS_REJECT_STOP_HARASSING_ME2,Our policy where your people are concerned will remain unchanged.
@@ -798,7 +798,7 @@ AIDIP_TARKAS_CONFIRM_MONEY_REQUEST2,The funds you have requested are well within
 AIDIP_TARKAS_REJECT_MONEY_REQUEST1,"The Supreme is unable to open his coffers to you, at the moment."
 AIDIP_TARKAS_REJECT_MONEY_REQUEST2,It is not possible to provide money at this time.
 AIDIP_TARKAS_REJECT_MONEY_REQUEST_DONT_LIKE_YOU1,Do not humiliate your people by begging. We are not your friends.
-AIDIP_TARKAS_REJECT_MONEY_REQUEST_DONT_LIKE_YOU2,Var Kona recommends you tax your people…rather than his patience.
+AIDIP_TARKAS_REJECT_MONEY_REQUEST_DONT_LIKE_YOU2,Var Kona recommends you tax your peopleï¿½rather than his patience.
 AIDIP_TARKAS_CONFIRM_RESEARCH_REQUEST1,The Supreme will send a team of scientists immediately.
 AIDIP_TARKAS_CONFIRM_RESEARCH_REQUEST2,Naturally we will assist you in your quest for new knowledge.
 AIDIP_TARKAS_REJECT_RESEARCH_REQUEST1,Var Kona cannot spare scientific personnel at the moment.
@@ -806,13 +806,13 @@ AIDIP_TARKAS_REJECT_RESEARCH_REQUEST2,Our scientists are busy with their own res
 AIDIP_TARKAS_REJECT_RESEARCH_REQUEST_DONT_LIKE_YOU1,We have no reason to enlighten your people. We are not your allies.
 AIDIP_TARKAS_REJECT_RESEARCH_REQUEST_DONT_LIKE_YOU2,"The Supreme recommends that you seek knowledge from friends, not foes."
 AIDIP_TARKAS_CONFIRM_SEVER_ALLIANCE_WITH1,Var Kona will sever all ties with %s immediately.
-AIDIP_TARKAS_CONFIRM_SEVER_ALLIANCE_WITH2,The Supreme agrees—it is time to end the alliance with %s.
+AIDIP_TARKAS_CONFIRM_SEVER_ALLIANCE_WITH2,The Supreme agreesï¿½it is time to end the alliance with %s.
 AIDIP_TARKAS_REJECT_SEVER_ALLIANCE_WITH1,The Supreme Commander still finds his alliance with %s useful.
 AIDIP_TARKAS_REJECT_SEVER_ALLIANCE_WITH2,Var Kona will remain friends with whomever he pleases.
 AIDIP_TARKAS_CONFIRM_STOP_HARASSING_PLAYER1,It is agreed that attacks against %s will cease.
 AIDIP_TARKAS_CONFIRM_STOP_HARASSING_PLAYER2,"The Supreme Commander will spare the people of %s, if you insist."
 AIDIP_TARKAS_REJECT_STOP_HARASSING_PLAYER1,Our campaign against %s will continue until our objectives are met.
-AIDIP_TARKAS_REJECT_STOP_HARASSING_PLAYER2,"Unfortunately, %s is in the way of Var Kona’s plans. It is nothing personal."
+AIDIP_TARKAS_REJECT_STOP_HARASSING_PLAYER2,"Unfortunately, %s is in the way of Var Konaï¿½s plans. It is nothing personal."
 AIDIP_TARKAS_NOT_HARASSING_PLAYER1,The Supreme has not attacked %s.
 AIDIP_TARKAS_NOT_HARASSING_PLAYER2,Our forces have not engaged %s in battle.
 AIDIP_TARKAS_CONFIRM_STOP_HARASSING_SYSTEM1,We regret the misunderstanding. All attacks at %s will cease immediately.
@@ -838,7 +838,7 @@ AIDIP_HIVER_ALLIANCE_LEAVE1,"From this day forward, you are no longer one with t
 AIDIP_HIVER_ALLIANCE_LEAVE2,The Queen no longer calls you her children.
 AIDIP_HIVER_ALLIANCE_LEAVE3,Your clan is cast out from the Hive.
 AIDIP_HIVER_ALLIANCE_LEAVE4,Our bond is now broken.
-AIDIP_HIVER_ALLIANCE_OTHER_LEAVE1,"Very well—go your own way, we will go ours."
+AIDIP_HIVER_ALLIANCE_OTHER_LEAVE1,"Very wellï¿½go your own way, we will go ours."
 AIDIP_HIVER_ALLIANCE_OTHER_LEAVE2,The Queen grieves at your going.
 AIDIP_HIVER_ALLIANCE_OTHER_LEAVE3,You would abandon your brothers?
 AIDIP_HIVER_ALLIANCE_OTHER_LEAVE4,Your ways are strange. Farewell.
@@ -854,7 +854,7 @@ AIDIP_HIVER_NONAGGRO_BREAK1,We can wait no longer. The Queen hungers!
 AIDIP_HIVER_NONAGGRO_BREAK2,We are finished waiting. Attack!
 AIDIP_HIVER_NONAGGRO_BREAK3,The Queen now demands your blood!
 AIDIP_HIVER_NONAGGRO_BREAK4,Enough of this. You must die.
-AIDIP_HIVER_NONAGGRO_OTHER_BREAK1,You have attacked the Children—you fool!
+AIDIP_HIVER_NONAGGRO_OTHER_BREAK1,You have attacked the Childrenï¿½you fool!
 AIDIP_HIVER_NONAGGRO_OTHER_BREAK2,Now you will face the fury of the Swarm!
 AIDIP_HIVER_NONAGGRO_OTHER_BREAK3,Very well. You choose to die.
 AIDIP_HIVER_NONAGGRO_OTHER_BREAK4,This will not be forgotten.
@@ -874,17 +874,17 @@ AIDIP_HIVER_CONFIRM_RALLY_AT1,The Children will meet you at %s.
 AIDIP_HIVER_CONFIRM_RALLY_AT2,We will join as brothers at %s system.
 AIDIP_HIVER_REJECT_RALLY_AT_DONT_LIKE_YOU1,Why do you summon the Children to %s? We are not your friends.
 AIDIP_HIVER_REJECT_RALLY_AT_DONT_LIKE_YOU2,"We will not meet you at %s, unless it be as enemies."
-AIDIP_HIVER_REJECT_RALLY_AT_CANT_MAKE_IT1,The Queen’s forces are unable to reach %s.
+AIDIP_HIVER_REJECT_RALLY_AT_CANT_MAKE_IT1,The Queenï¿½s forces are unable to reach %s.
 AIDIP_HIVER_REJECT_RALLY_AT_CANT_MAKE_IT2,The %s system cannot be reached by the Children in time.
-AIDIP_HIVER_CONFIRM_ATTACK_AT1,The Queen’s forces will strike at %s as requested.
+AIDIP_HIVER_CONFIRM_ATTACK_AT1,The Queenï¿½s forces will strike at %s as requested.
 AIDIP_HIVER_CONFIRM_ATTACK_AT2,The Hive will descend upon %s as you wish.
 AIDIP_HIVER_REJECT_ATTACK_AT_DONT_LIKE_YOU1,The Queen has no grudge against the %s system--but She is not fond of you.
 AIDIP_HIVER_REJECT_ATTACK_AT_DONT_LIKE_YOU2,The Children do not attack at random. We have no quarrel with %s.
 AIDIP_HIVER_REJECT_ATTACK_AT_CANT_MAKE_IT1,Our forces cannot reach the %s for the attack.
-AIDIP_HIVER_REJECT_ATTACK_AT_CANT_MAKE_IT2,Her Majesty’s ships will not be able to assault %s.
+AIDIP_HIVER_REJECT_ATTACK_AT_CANT_MAKE_IT2,Her Majestyï¿½s ships will not be able to assault %s.
 AIDIP_HIVER_CONFIRM_DEFEND_AT1,The Children will defend %s with their lives.
 AIDIP_HIVER_CONFIRM_DEFEND_AT2,None shall pass at %s without a battle from the Queen.
-AIDIP_HIVER_REJECT_DEFEND_AT_DONT_LIKE_YOU1,The Queen defends Her own interests—not yours.
+AIDIP_HIVER_REJECT_DEFEND_AT_DONT_LIKE_YOU1,The Queen defends Her own interestsï¿½not yours.
 AIDIP_HIVER_REJECT_DEFEND_AT_DONT_LIKE_YOU2,"If you cannot mount a defense at %s, perhaps we will take it ourselves."
 AIDIP_HIVER_REJECT_DEFEND_AT_CANT_MAKE_IT1,Our ships cannot reach %s to defend it from attack.
 AIDIP_HIVER_REJECT_DEFEND_AT_CANT_MAKE_IT2,The %s system cannot be defended by the Children.
@@ -904,7 +904,7 @@ AIDIP_HIVER_DO_NOT_UNDERSTAND,We fail to comprehend.
 AIDIP_HIVER_CONFIRM_MONEY_REQUEST1,Her Majesty will send the funds you need immediately.
 AIDIP_HIVER_CONFIRM_MONEY_REQUEST2,The Children will supply your people with resources while we can.
 AIDIP_HIVER_REJECT_MONEY_REQUEST1,The Queen cannot presently spare the funds you have requested.
-AIDIP_HIVER_REJECT_MONEY_REQUEST2,Her Majesty has limited resources at present—she cannot supply your needs.
+AIDIP_HIVER_REJECT_MONEY_REQUEST2,Her Majesty has limited resources at presentï¿½she cannot supply your needs.
 AIDIP_HIVER_REJECT_MONEY_REQUEST_DONT_LIKE_YOU1,The Queen suggests that you beg for charity elsewhere.
 AIDIP_HIVER_REJECT_MONEY_REQUEST_DONT_LIKE_YOU2,Her Majesty does not understand why you ask the Children for money.
 AIDIP_HIVER_CONFIRM_RESEARCH_REQUEST1,The Children can help you with your research.
@@ -959,10 +959,10 @@ AIDIP_LIIR_NONAGGRO_REJECT2,This cannot end so easily.
 AIDIP_LIIR_NONAGGRO_REJECT3,We cannot trust you to spare us in the future.
 AIDIP_LIIR_NONAGGRO_REJECT4,No. We can make no such promise.
 AIDIP_LIIR_NONAGGRO_BREAK1,We can no longer remain neutral.
-AIDIP_LIIR_NONAGGRO_BREAK2,Suul’ka must be destroyed!
+AIDIP_LIIR_NONAGGRO_BREAK2,Suulï¿½ka must be destroyed!
 AIDIP_LIIR_NONAGGRO_BREAK3,You have driven us to attack.
-AIDIP_LIIR_NONAGGRO_BREAK4,We can stand by no longer—the screams grow louder.
-AIDIP_LIIR_NONAGGRO_OTHER_BREAK1,We hoped for more…but expected no better.
+AIDIP_LIIR_NONAGGRO_BREAK4,We can stand by no longerï¿½the screams grow louder.
+AIDIP_LIIR_NONAGGRO_OTHER_BREAK1,We hoped for moreï¿½but expected no better.
 AIDIP_LIIR_NONAGGRO_OTHER_BREAK2,Dying time has come.
 AIDIP_LIIR_NONAGGRO_OTHER_BREAK3,Your violent nature manifests at last.
 AIDIP_LIIR_NONAGGRO_OTHER_BREAK4,"Alas, your kind can never be at peace for long."
@@ -984,7 +984,7 @@ AIDIP_LIIR_REJECT_RALLY_AT_CANT_MAKE_IT2,Our ships cannot reach the rally point 
 AIDIP_LIIR_CONFIRM_ATTACK_AT1,There will be blood in the water at %s.
 AIDIP_LIIR_CONFIRM_ATTACK_AT2,We will bring fire and death to %s.
 AIDIP_LIIR_REJECT_ATTACK_AT_DONT_LIKE_YOU1,"If war comes to %s, it will not be for your sake."
-AIDIP_LIIR_REJECT_ATTACK_AT_DONT_LIKE_YOU2,"We do not take orders from you, Suul’ka."
+AIDIP_LIIR_REJECT_ATTACK_AT_DONT_LIKE_YOU2,"We do not take orders from you, Suulï¿½ka."
 AIDIP_LIIR_REJECT_ATTACK_AT_CANT_MAKE_IT1,We cannot reach the %s system for this attack.
 AIDIP_LIIR_REJECT_ATTACK_AT_CANT_MAKE_IT2,The %s sector is beyond our reach at present.
 AIDIP_LIIR_CONFIRM_DEFEND_AT1,Our people will fight to the death at %s.
@@ -996,7 +996,7 @@ AIDIP_LIIR_REJECT_DEFEND_AT_CANT_MAKE_IT2,We will not be able to defend the %s s
 AIDIP_LIIR_CONFIRM_STOP_HARASSING_ME1,The Black agrees that your people should be left in peace.
 AIDIP_LIIR_CONFIRM_STOP_HARASSING_ME2,There will be no more war against your people.
 AIDIP_LIIR_REJECT_STOP_HARASSING_ME1,We are duty-bound to protect our people from such as you.
-AIDIP_LIIR_REJECT_STOP_HARASSING_ME2,"The war will not end until you are defeated, Suul’ka."
+AIDIP_LIIR_REJECT_STOP_HARASSING_ME2,"The war will not end until you are defeated, Suulï¿½ka."
 AIDIP_LIIR_CONFIRM_STOP_COLONIZING_AT1,"If you wish it, our people will not colonize the %s system."
 AIDIP_LIIR_CONFIRM_STOP_COLONIZING_AT2,There are other seas than those of %s for our people.
 AIDIP_LIIR_REJECT_STOP_COLONIZING_AT1,The %s system must be taken for the Liir.
@@ -1010,7 +1010,7 @@ AIDIP_LIIR_CONFIRM_MONEY_REQUEST1,The Black agrees that these resources are best
 AIDIP_LIIR_CONFIRM_MONEY_REQUEST2,We trust that you will use these funds wisely.
 AIDIP_LIIR_REJECT_MONEY_REQUEST1,We do not have the resources to meet this request.
 AIDIP_LIIR_REJECT_MONEY_REQUEST2,The Black does not have funds to give at this time.
-AIDIP_LIIR_REJECT_MONEY_REQUEST_DONT_LIKE_YOU1,"We do not give our blood to sharks, nor our money to Suul’ka."
+AIDIP_LIIR_REJECT_MONEY_REQUEST_DONT_LIKE_YOU1,"We do not give our blood to sharks, nor our money to Suulï¿½ka."
 AIDIP_LIIR_REJECT_MONEY_REQUEST_DONT_LIKE_YOU2,Nothing that is ours will be given to you willingly.
 AIDIP_LIIR_CONFIRM_RESEARCH_REQUEST1,We will send a research team immediately.
 AIDIP_LIIR_CONFIRM_RESEARCH_REQUEST2,Several scientists have volunteered to work with your people. Please treat them well.
@@ -1044,12 +1044,12 @@ AIDIP_ZUUL_ALLIANCE_ACCEPT2,Perhaps you too were created by the Great Masters.
 AIDIP_ZUUL_ALLIANCE_ACCEPT3,We are not so different in the end.
 AIDIP_ZUUL_ALLIANCE_ACCEPT4,The Divine works in mysterious ways.
 AIDIP_ZUUL_ALLIANCE_REJECT1,We do not make alliances with slaves.
-AIDIP_ZUUL_ALLIANCE_REJECT2,Your people will serve us—not vice versa.
+AIDIP_ZUUL_ALLIANCE_REJECT2,Your people will serve usï¿½not vice versa.
 AIDIP_ZUUL_ALLIANCE_REJECT3,We do not ally ourselves with the weak.
 AIDIP_ZUUL_ALLIANCE_REJECT4,We will never join with a race of heretics.
 AIDIP_ZUUL_ALLIANCE_LEAVE1,We can endure your heresy no longer.
 AIDIP_ZUUL_ALLIANCE_LEAVE2,This farce has gone on long enough.
-AIDIP_ZUUL_ALLIANCE_LEAVE3,We no longer need your “help”.
+AIDIP_ZUUL_ALLIANCE_LEAVE3,We no longer need your ï¿½helpï¿½.
 AIDIP_ZUUL_ALLIANCE_LEAVE4,You are no longer useful to the Zuul.
 AIDIP_ZUUL_ALLIANCE_OTHER_LEAVE1,"As you wish, heretic."
 AIDIP_ZUUL_ALLIANCE_OTHER_LEAVE2,Our prophets warned this day would come.
@@ -1063,9 +1063,9 @@ AIDIP_ZUUL_NONAGGRO_REJECT1,We have no reason to spare your lives.
 AIDIP_ZUUL_NONAGGRO_REJECT2,"If you cannot earn our respect, do not beg our mercy."
 AIDIP_ZUUL_NONAGGRO_REJECT3,Peace is not the way of the Zuul.
 AIDIP_ZUUL_NONAGGRO_REJECT4,"What we need, we will take."
-AIDIP_ZUUL_NONAGGRO_BREAK1,We are tired of “peace”.
+AIDIP_ZUUL_NONAGGRO_BREAK1,We are tired of ï¿½peaceï¿½.
 AIDIP_ZUUL_NONAGGRO_BREAK2,Enough of this slow suffocation.
-AIDIP_ZUUL_NONAGGRO_BREAK3,The Divine does not reward our “patience”.
+AIDIP_ZUUL_NONAGGRO_BREAK3,The Divine does not reward our ï¿½patienceï¿½.
 AIDIP_ZUUL_NONAGGRO_BREAK4,We can wait no longer to fulfill our destiny.
 AIDIP_ZUUL_NONAGGRO_OTHER_BREAK1,"Ready to show your teeth, slave?"
 AIDIP_ZUUL_NONAGGRO_OTHER_BREAK2,"At last, you fight."
@@ -1084,7 +1084,7 @@ AIDIP_ZUUL_YOU_CANT_HAVE_SYSTEM_STATS1,%s is a wonderful place. A pity you have 
 AIDIP_ZUUL_YOU_CANT_HAVE_SYSTEM_STATS2,A shame you cannot explore the %s system yourself.
 AIDIP_ZUUL_CONFIRM_RALLY_AT1,Our ships will meet you at %s.
 AIDIP_ZUUL_CONFIRM_RALLY_AT2,We will be at %s at the appointed time.
-AIDIP_ZUUL_REJECT_RALLY_AT_DONT_LIKE_YOU1,A battle at %s? Perhaps we will come…later.
+AIDIP_ZUUL_REJECT_RALLY_AT_DONT_LIKE_YOU1,A battle at %s? Perhaps we will comeï¿½later.
 AIDIP_ZUUL_REJECT_RALLY_AT_DONT_LIKE_YOU2,We appreciate the information. We can always make use of your dead.
 AIDIP_ZUUL_REJECT_RALLY_AT_CANT_MAKE_IT1,We are unable to reach %s for this meeting.
 AIDIP_ZUUL_REJECT_RALLY_AT_CANT_MAKE_IT2,The %s system is beyond the reach of the Zuul.
@@ -1093,7 +1093,7 @@ AIDIP_ZUUL_CONFIRM_ATTACK_AT2,"Indeed, %s looks ripe for the picking."
 AIDIP_ZUUL_REJECT_ATTACK_AT_DONT_LIKE_YOU1,We are not your wives. Attack %s yourself.
 AIDIP_ZUUL_REJECT_ATTACK_AT_DONT_LIKE_YOU2,"If you are not strong enough to attack %s yourself, do not think to command the Zuul."
 AIDIP_ZUUL_REJECT_ATTACK_AT_CANT_MAKE_IT1,We cannot reach %s in time for an assault
-AIDIP_ZUUL_REJECT_ATTACK_AT_CANT_MAKE_IT2,The %s system is beyond the reach of the Zuul…for now.
+AIDIP_ZUUL_REJECT_ATTACK_AT_CANT_MAKE_IT2,The %s system is beyond the reach of the Zuulï¿½for now.
 AIDIP_ZUUL_CONFIRM_DEFEND_AT1,The Zuul will defend %s if we must.
 AIDIP_ZUUL_CONFIRM_DEFEND_AT2,Those who enter the %s must face the Zuul.
 AIDIP_ZUUL_REJECT_DEFEND_AT_DONT_LIKE_YOU1,"Is the %s system defenseless, then? Interesting."
@@ -1120,14 +1120,14 @@ AIDIP_ZUUL_REJECT_MONEY_REQUEST2,"What we have, we must keep for ourselves."
 AIDIP_ZUUL_REJECT_MONEY_REQUEST_DONT_LIKE_YOU1,We do not throw even bones to such as you.
 AIDIP_ZUUL_REJECT_MONEY_REQUEST_DONT_LIKE_YOU2,"We do not send tribute to the weak, heretic."
 AIDIP_ZUUL_CONFIRM_RESEARCH_REQUEST1,Agreed. We will show you our methods of investigation.
-AIDIP_ZUUL_CONFIRM_RESEARCH_REQUEST2,We will send an inquisitor. Your scientists will be…greatly inspired.
+AIDIP_ZUUL_CONFIRM_RESEARCH_REQUEST2,We will send an inquisitor. Your scientists will beï¿½greatly inspired.
 AIDIP_ZUUL_REJECT_RESEARCH_REQUEST1,"Our inquisitors are very busy, at the moment."
 AIDIP_ZUUL_REJECT_RESEARCH_REQUEST2,Our scientists are all engaged in vital interrogations.
 AIDIP_ZUUL_REJECT_RESEARCH_REQUEST_DONT_LIKE_YOU1,"You will meet our scientists soon enough, slave."
-AIDIP_ZUUL_REJECT_RESEARCH_REQUEST_DONT_LIKE_YOU2,We still have much to learn…from YOUR people.
+AIDIP_ZUUL_REJECT_RESEARCH_REQUEST_DONT_LIKE_YOU2,We still have much to learnï¿½from YOUR people.
 AIDIP_ZUUL_CONFIRM_SEVER_ALLIANCE_WITH1,Agreed. %s makes a poor ally.
 AIDIP_ZUUL_CONFIRM_SEVER_ALLIANCE_WITH2,We shall cut our ties with %s immediately.
-AIDIP_ZUUL_REJECT_SEVER_ALLIANCE_WITH1,We find %s useful. The alliance will continue—for now.
+AIDIP_ZUUL_REJECT_SEVER_ALLIANCE_WITH1,We find %s useful. The alliance will continueï¿½for now.
 AIDIP_ZUUL_REJECT_SEVER_ALLIANCE_WITH2,We respect the strength of %s.
 AIDIP_ZUUL_CONFIRM_STOP_HARASSING_PLAYER1,We did not realize that %'s was your vassal.
 AIDIP_ZUUL_CONFIRM_STOP_HARASSING_PLAYER2,"If %'s is under your protection, so be it."
@@ -1518,7 +1518,7 @@ LOBBY_WARNING_NOSLOT_KICK,"If you have not chosen a slot, you will be kicked fro
 LOBBY_WARNING_NOSLOT_NEWSLOT,"If you have not chosen a slot, you will be assigned one automatically.",,
 
 HOSTMIG_HOSTLEFT,The host has left the game.,,
-HOSTMIG_MIGRATING,Migrating Host…,,
+HOSTMIG_MIGRATING,Migrating Hostï¿½,,
 HOSTMIG_MIGRATING_FAILED,Migrating Host Failed.,,
 HOSTMIG_RESTARTGAME_QUERY,Do you want to restart the game as host using the autosave file?,,
 HOSTMIG_RESTARTGAME_FILENAME,The autosave file is %s.,255,params: name of file
@@ -2608,7 +2608,7 @@ TECHDESC_BIO_TerBac,Genetically engineered mass-growth bacteria that can alter a
 TECHNAME_BIO_EnvTail,Environmental Tailoring
 TECHDESC_BIO_EnvTail,Allows you to genetically modify the entire physiology of your colonists to improve population growth and optimize terraforming on alien worlds. This increases population growth by 20% and terraforming effeciency by 35%.
 TECHNAME_BIO_GrvAdpt,Gravitational Adaptation
-TECHDESC_BIO_GrvAdpt,Allows you to genetically modify the race’s skeleton and musculature to better deal with high gravity worlds and thus makes a larger range of worlds suitable for colonization. This increases your races Enviro Hazard tolerance by 150 points while increasing terraforming efficiency by 25% and population growth on all worlds by 10%.
+TECHDESC_BIO_GrvAdpt,Allows you to genetically modify the raceï¿½s skeleton and musculature to better deal with high gravity worlds and thus makes a larger range of worlds suitable for colonization. This increases your races Enviro Hazard tolerance by 150 points while increasing terraforming efficiency by 25% and population growth on all worlds by 10%.
 TECHNAME_BIO_Plg,Plague
 TECHDESC_BIO_Plg,A bio-weapon designed to kill any carbon-based species. Delivered to enemy planets via large bio-missiles. Each impact should infect 20% of planetary population unless the enemy possesses the vaccine.
 TECHNAME_BIO_PlgVac,Plague Vaccine
@@ -2618,7 +2618,7 @@ TECHDESC_BIO_RtPlg,A retro-virus bio-weapon designed to kill any carbon-based sp
 TECHNAME_BIO_RtPlgVac,Retro Plague Vaccine
 TECHDESC_BIO_RtPlgVac,An antidote to the retro-virus plague. Makes your race immune to the effects of the Retro-Plague Bio-Weapon.
 TECHNAME_BIO_Bst,Beast Bomb
-TECHDESC_BIO_Bst,A tailored virus that destroys the awareness centers of a creature’s brain and reduces them to the level of animals. This causes chaos and massive destruction for a planetary society.
+TECHDESC_BIO_Bst,A tailored virus that destroys the awareness centers of a creatureï¿½s brain and reduces them to the level of animals. This causes chaos and massive destruction for a planetary society.
 TECHNAME_BIO_BstVac,Beast Bomb Vaccine
 TECHDESC_BIO_BstVac,An antidote to the Beast plague. Makes your race immune to the effects of the Beast Plague Bio-Weapon.
 TECHNAME_BIO_AsPlg,Assimilation Plague
@@ -2628,9 +2628,9 @@ TECHDESC_BIO_AsPlgVac,An antidote to the Assimilation Plague Virus. Makes your r
 TECHNAME_BIO_UniAnti,Universal Antigen
 TECHDESC_BIO_UniAnti,A universal Vaccine for all bio-weapons rendering your race immune to them.
 TECHNAME_BIO_NanVir,Nanite Virus
-TECHDESC_BIO_NanVir,"A nanobot based “plague” which is designed to attack and breakdown all artificial structures such as buildings, machines and electronics. Extremely effective against AI rebellion planets."
+TECHDESC_BIO_NanVir,"A nanobot based ï¿½plagueï¿½ which is designed to attack and breakdown all artificial structures such as buildings, machines and electronics. Extremely effective against AI rebellion planets."
 TECHNAME_BIO_ConNan,Counter Nanites
-TECHDESC_BIO_ConNan,"Nanobots designed to “counter attack” enemy nanobot incursions and repair the damage made by them. Counter nanites ""cure"" NanoVirus outbreaks as well as reducing the damage taken from ships hit by nano-missiles."
+TECHDESC_BIO_ConNan,"Nanobots designed to ï¿½counter attackï¿½ enemy nanobot incursions and repair the damage made by them. Counter nanites ""cure"" NanoVirus outbreaks as well as reducing the damage taken from ships hit by nano-missiles."
 TECHNAME_BIO_SmrtNan,Smart Nanites
 TECHDESC_BIO_SmrtNan,This generation of offensive nanites is designed to recognize unique molecular signatures in the hulls of friendly vessels and does not attack them. This creates a nano-missile that ONLY damages enemy ships.
 TECHNAME_CCC_FTLCom,FTL Communications
@@ -2641,7 +2641,7 @@ TECHNAME_CCC_NdTrkHum,Node Tracking: Human
 TECHDESC_CCC_NdTrkHum,A system for tracking human ships traveling in node space and deriving their origins and destinations via drive radiation and decoded transmissions.
 TECHNAME_CCC_TrnsHum,Translate Military Jargon
 TECHDESC_CCC_TrnsHum,"Having encountered the Human race, this tech allows you to translate basic military communications from them and form Ceasefire agreements. This tech also allows the Morrigi to establish trade routes with this species."
-TECHNAME_CCC_TrnsHvr,Translate Ri’kap-ken
+TECHNAME_CCC_TrnsHvr,Translate Riï¿½kap-ken
 TECHDESC_CCC_TrnsHvr,"Having encountered the Hiver race, this tech allows you to translate basic military communications from them and form Ceasefire agreements. This tech also allows the Morrigi to establish trade routes with this species."
 TECHNAME_CCC_TrnsTrk,Translate Urdu Kai
 TECHDESC_CCC_TrnsTrk,"Having encountered the Tarka race, this tech allows you to translate basic military communications from them and form Ceasefire agreements. This tech also allows the Morrigi to establish trade routes with this species."
@@ -2748,7 +2748,7 @@ TECHDESC_DRV_NodFoc,A refinement of the node ring technology that allows more ef
 TECHNAME_DRV_NodPath,Harmonic Node Ring Drive
 TECHDESC_DRV_NodPath,The ultimate refinement in node drive technology allowing for longer range and faster travel times.
 TECHNAME_DRV_Rip,Rip Drive
-TECHDESC_DRV_Rip,This FTL technology allows specialized Ripper “tunneling ships” to literally tear open a hole between “normal” and node space. This lets the Rippers create their own node line network at will. The only drawback to artificial node lines is that they are unstable and will collapse over time and through extended disruption by ships’ mass. A node line that collapses will destroy any ship in transit down it.
+TECHDESC_DRV_Rip,This FTL technology allows specialized Ripper ï¿½tunneling shipsï¿½ to literally tear open a hole between ï¿½normalï¿½ and node space. This lets the Rippers create their own node line network at will. The only drawback to artificial node lines is that they are unstable and will collapse over time and through extended disruption by shipsï¿½ mass. A node line that collapses will destroy any ship in transit down it.
 TECHNAME_DRV_Rend,Rend Drive
 TECHDESC_DRV_Rend,"A more powerful version of the Zuul Rip Drive, Rending drives tear open space more efficiently and create a more stable node line but require more power and the use of a larger tunneler ship."
 TECHNAME_DRV_Rad,Radiant Drive
@@ -2772,11 +2772,11 @@ TECHDESC_DRV_TpGate,The technology Hivers use to teleport their ships instantane
 TECHNAME_DRV_GatAmp,Gate Amplifiers
 TECHDESC_DRV_GatAmp,A set of energy amplifiers that increase the number of ships the Hiver gate network can transport at any given time. Results in a gate capacity increase of 3 for every gate.
 TECHNAME_DRV_FarCast,FarCasters
-TECHDESC_DRV_FarCast,This advancement in gate technology allows a Hiver gate to transport a Hiver fleet up to ten light-years WITHOUT a receiver gate. There are some issues with accuracy as the fleet will arrive on target + or – 2 light-years.
+TECHDESC_DRV_FarCast,This advancement in gate technology allows a Hiver gate to transport a Hiver fleet up to ten light-years WITHOUT a receiver gate. There are some issues with accuracy as the fleet will arrive on target + or ï¿½ 2 light-years.
 TECHNAME_DRV_IncThrst,Ionic Thrusters
 TECHDESC_DRV_IncThrst,These highly efficient thrusters use heavy elements driven to relativistic speeds for thrusting power. Increases turn thrust on all ships and missiles by 50%
 TECHNAME_DRV_QntCap,Quantum Capacitors
-TECHDESC_DRV_QntCap,The technology utilizes advanced quantum systems to store energy at previously unheard of levels while remaining small enough to be used in ship’s systems. The result in increased beam weapon rates of fire and +50% stronger shields.
+TECHDESC_DRV_QntCap,The technology utilizes advanced quantum systems to store energy at previously unheard of levels while remaining small enough to be used in shipï¿½s systems. The result in increased beam weapon rates of fire and +50% stronger shields.
 TECHNAME_DRV_VdCtr,Void Cutter Drive
 TECHDESC_DRV_VdCtr,This FTL technology of the Morrigi race pulls their ships into FTL channels using focused gravity to infinitely curve space-time. This allows them to accelerate and maneuver sub-light as well without using vented reactor plasma.
 TECHNAME_DRV_VdCrv,Void Carver Drive
@@ -3028,9 +3028,9 @@ TECHDESC_WEP_DualSmMis,Dual small missile launcher
 TECHNAME_WEP_FMsl,Fast Missiles
 TECHDESC_WEP_FMsl,"A faster version of missiles which come with a faster turret, offering greater chances to get through point defense due to speed and overwhelming numbers. Can also catch targets that could outrun the slower, standard missiles.
 TECHNAME_WEP_CorMsl,Corrosive Missile
-TECHDESC_WEP_CorMsl,A large missile capable of dispersing a cloud of powerful molecular acid contained in mini-spheres that bind to a passing ship’s hull and eat into it causing damage over time. Requires a large turret mount.
+TECHDESC_WEP_CorMsl,A large missile capable of dispersing a cloud of powerful molecular acid contained in mini-spheres that bind to a passing shipï¿½s hull and eat into it causing damage over time. Requires a large turret mount.
 TECHNAME_WEP_NanMsl,Nanite Missile
-TECHDESC_WEP_NanMsl,A large missile capable of dispersing a large cloud of powerful nano-disassemblers that bind to a passing ship’s hull and do a large amount of erosion damage over time. Requires a large turret mount.
+TECHDESC_WEP_NanMsl,A large missile capable of dispersing a large cloud of powerful nano-disassemblers that bind to a passing shipï¿½s hull and do a large amount of erosion damage over time. Requires a large turret mount.
 TECHNAME_WEP_NdMsl,Node Missile
 TECHDESC_WEP_NdMsl,A smart missile using miniaturized node drive technology that allows them to travel to and strike another star system on their own.
 TECHNAME_WEP_Nukes,Explosive Warhead
@@ -3065,7 +3065,7 @@ TECHNAME_WEP_ClkMine,Cloaked Space Mine
 TECHDESC_WEP_ClkMine,This technology allows for a small cloak generator to be attached to a standard fusion mine rendering them invisible to visual and standard sensors. The energy drain caused by the cloaking module does reduce the active lifespan of the mine though.
 TECHNAME_WEP_DFMsl,Direct Fire Missile Rack
 TECHDESC_WEP_DFMsl,"A large array of missile tubes mounted on a medium turret station. These unguided missiles are much smaller than the standard missile and pack a smaller warhead, though they save some space for explosive force by not using large electronic modules."
-TECHNAME_WEP_GsDrvr,Guass Driver
+TECHNAME_WEP_GsDrvr,Gauss Driver
 TECHDESC_WEP_GsDrvr,These ballistic weapons use magnetic fields to hurl dense metallic spheres at very high speeds at a target. The spheres do intense kinetic damage at impact.
 TECHNAME_WEP_MasDrvr,Mass Driver
 TECHDESC_WEP_MasDrvr,A heavier ballistic system using advanced power systems to magnetically hurl larger rounds and designed for a medium turret mount.
@@ -3198,7 +3198,7 @@ TECHDESC_WEP_HugeStrmDrvr,"Scaled to dedicated huge gun mounts, the huge stormer
 TECHNAME_WEP_APHugeStrmDrvr,Huge Armor-Piercing Stormers
 TECHDESC_WEP_APHugeStrmDrvr,"Scaled to dedicated huge gun mounts, the huge stormer is able to fire a burst of heavy armor-piercing mass driver rounds with reasonable accuracy at range."
 TECHNAME_XNC_TrnsHum2,Translate Latin
-TECHDESC_XNC_TrnsHum2,"This deeper understanding of this race’s common language allows you to communicate directly with all aspects of their society, and allows you to form NAP/Alliance agreements as well as establish trade routes with them."
+TECHDESC_XNC_TrnsHum2,"This deeper understanding of this raceï¿½s common language allows you to communicate directly with all aspects of their society, and allows you to form NAP/Alliance agreements as well as establish trade routes with them."
 TECHNAME_XNC_IncHum,Incorporate Human
 TECHDESC_XNC_IncHum,"With deeper study, members of this species living in enclaves on your worlds can be fully incorporated into your society. This allows them to be a fully functional portion of your civilian society on any given world."
 TECHNAME_XNC_AdctHum,Addict Human
@@ -3206,23 +3206,23 @@ TECHDESC_XNC_AdctHum,"Intimate knowledge of this alien species coupled with expa
 TECHNAME_XNC_TempHum,Human Temperance
 TECHDESC_XNC_TempHum,This development is in response to a dependency spreading though the human portions of the empire. Temperance is social and biochemical response to negate to the effect of these dependencies entering from other empires.
 TECHNAME_XNC_TrnsHum3,Translate Hanzi
-TECHDESC_XNC_TrnsHum3,This deeper understanding of this race’s highest governmental and scientific language allows you to access the deepest levels of human culture and government. With this level of language you can create Science Missions to teach aspects of technology that would otherwise be lost to this race as well as try to force a planetary surrender in the face of overwhelming power.
+TECHDESC_XNC_TrnsHum3,This deeper understanding of this raceï¿½s highest governmental and scientific language allows you to access the deepest levels of human culture and government. With this level of language you can create Science Missions to teach aspects of technology that would otherwise be lost to this race as well as try to force a planetary surrender in the face of overwhelming power.
 TECHNAME_XNC_SubHum,Subjugate Human
 TECHDESC_XNC_SubHum,"Allows you to take full control of a human culture, which not only allows new possibilities in assimilation but also allows you a chance to absorb much weaker human empires into your own without firing a shot."
 TECHNAME_XNC_AccHum,Accommodate Human
 TECHDESC_XNC_AccHum,"Complete understanding of human physiology coupled with the social sciences allows you to integrate the life support needs of human seamlessly into your culture, thus removing the need to take into account planetary hazard ratings for them."
 TECHNAME_XNC_ProfHum,Proliferate Human
 TECHDESC_XNC_ProfHum,This technology makes your worlds and culture more hospitable to humans and gives them the ability to spontaneously attract human civilian populations as well as increasing the overall alien population limit on all your worlds.
-TECHNAME_XNC_TrnsHvr2,Translate K’en-Ken
-TECHDESC_XNC_TrnsHvr2,"This deeper understanding of this race’s common language allows you to communicate directly with all aspects of their society, and allows you to form NAP/Alliance agreements as well as establish trade routes with them."
+TECHNAME_XNC_TrnsHvr2,Translate Kï¿½en-Ken
+TECHDESC_XNC_TrnsHvr2,"This deeper understanding of this raceï¿½s common language allows you to communicate directly with all aspects of their society, and allows you to form NAP/Alliance agreements as well as establish trade routes with them."
 TECHNAME_XNC_IncHvr,Incorporate Hiver
 TECHDESC_XNC_IncHvr,"With deeper study, members of this species living in enclaves on your worlds can be fully incorporated into your society. This allows them to be a fully functional portion of your civilian society on any given world."
 TECHNAME_XNC_AdctHvr,Addict Hiver
 TECHDESC_XNC_AdctHvr,"Intimate knowledge of this alien species coupled with expanding experience in bio-weapons research allows for the development of a variety of highly addictive chemical products designed specifically for the Hiver species and to which they have very little resistance. This results in a large bonus for trade routes into Hiver space, and a slow decline in Hiver production due to addiction problems as well as an increased chance of planetary surrender."
 TECHNAME_XNC_TempHvr,Hiver Temperance
 TECHDESC_XNC_TempHvr,This development is in response to a dependency spreading though the Hiver portions of the empire. Temperance is social and biochemical response to negate to the effect of these dependencies entering from other empires.
-TECHNAME_XNC_TrnsHvr3,Translate Tcho’to-Ken
-TECHDESC_XNC_TrnsHvr3,This deeper understanding of this race’s highest governmental and scientific language allows you to access the deepest levels of Hiver culture and government. With this level of language you can create Science Missions to teach aspects of technology that would otherwise be lost to this race as well as try to force a planetary surrender in the face of overwhelming power.
+TECHNAME_XNC_TrnsHvr3,Translate Tchoï¿½to-Ken
+TECHDESC_XNC_TrnsHvr3,This deeper understanding of this raceï¿½s highest governmental and scientific language allows you to access the deepest levels of Hiver culture and government. With this level of language you can create Science Missions to teach aspects of technology that would otherwise be lost to this race as well as try to force a planetary surrender in the face of overwhelming power.
 TECHNAME_XNC_SubHvr,Subjugate Hiver
 TECHDESC_XNC_SubHvr,"Allows you to take full control of a Hiver culture, which not only allows new possibilities in assimilation but also allows you a chance to absorb much weaker Hiver empires into your own without firing a shot."
 TECHNAME_XNC_AccHvr,Accommodate Hiver
@@ -3230,7 +3230,7 @@ TECHDESC_XNC_AccHvr,"Complete understanding of Hiver physiology coupled with the
 TECHNAME_XNC_ProfHvr,Proliferate Hiver
 TECHDESC_XNC_ProfHvr,This technology makes your worlds and culture more hospitable to Hivers and gives them the ability to spontaneously attract Hiver civilian populations as well as increasing the overall alien population limit on all your worlds.
 TECHNAME_XNC_TrnsTrk2,Translate Gutter Dialect
-TECHDESC_XNC_TrnsTrk2,"This deeper understanding of this race’s common language allows you to communicate directly with all aspects of their society, and allows you to form NAP/Alliance agreements as well as establish trade routes with them."
+TECHDESC_XNC_TrnsTrk2,"This deeper understanding of this raceï¿½s common language allows you to communicate directly with all aspects of their society, and allows you to form NAP/Alliance agreements as well as establish trade routes with them."
 TECHNAME_XNC_IncTrk,Incorporate Tarka
 TECHDESC_XNC_IncTrk,"With deeper study, members of this species living in enclaves on your worlds can be fully incorporated into your society. This allows them to be a fully functional portion of your civilian society on any given world."
 TECHNAME_XNC_AdctTrk,Addict Tarka
@@ -3238,7 +3238,7 @@ TECHDESC_XNC_AdctTrk,"Intimate knowledge of this alien species coupled with expa
 TECHNAME_XNC_TempTrk,Tarka Temperance
 TECHDESC_XNC_TempTrk,This development is in response to a dependency spreading though the Tarka portions of the empire. Temperance is social and biochemical response to negate to the effect of these dependencies entering from other empires.
 TECHNAME_XNC_TrnsTrk3,Translate Kona Kai
-TECHDESC_XNC_TrnsTrk3,This deeper understanding of this race’s highest governmental and scientific language allows you to access the deepest levels of Tarkasian culture and government. With this level of language you can create Science Missions to teach aspects of technology that would otherwise be lost to this race as well as try to force a planetary surrender in the face of overwhelming power.
+TECHDESC_XNC_TrnsTrk3,This deeper understanding of this raceï¿½s highest governmental and scientific language allows you to access the deepest levels of Tarkasian culture and government. With this level of language you can create Science Missions to teach aspects of technology that would otherwise be lost to this race as well as try to force a planetary surrender in the face of overwhelming power.
 TECHNAME_XNC_SubTrk,Subjugate Tarka
 TECHDESC_XNC_SubTrk,"Allows you to take full control of a Tarka culture, which not only allows new possibilities in assimilation but also allows you a chance to absorb much weaker Tarka empires into your own without firing a shot."
 TECHNAME_XNC_AccTrk,Accommodate Tarka
@@ -3246,7 +3246,7 @@ TECHDESC_XNC_AccTrk,"Complete understanding of Tarkasian physiology coupled with
 TECHNAME_XNC_ProfTrk,Proliferate Tarka
 TECHDESC_XNC_ProfTrk,This technology makes your worlds and culture more hospitable to Tarka and gives them the ability to spontaneously attract Tarkasian civilian populations as well as increasing the overall alien population limit on all your worlds.
 TECHNAME_XNC_TrnsLir2,Translate SteelSong
-TECHDESC_XNC_TrnsLir2,"This deeper understanding of this race’s common language allows you to communicate directly with all aspects of their society, and allows you to form NAP/Alliance agreements with them."
+TECHDESC_XNC_TrnsLir2,"This deeper understanding of this raceï¿½s common language allows you to communicate directly with all aspects of their society, and allows you to form NAP/Alliance agreements with them."
 TECHNAME_XNC_IncLir,Incorporate Liir
 TECHDESC_XNC_IncLir,"With deeper study, members of this species living in enclaves on your worlds can be fully incorporated into your society. This allows them to be a fully functional portion of your civilian society on any given world."
 TECHNAME_XNC_AdctLir,Addict Liir
@@ -3254,7 +3254,7 @@ TECHDESC_XNC_AdctLir,"Intimate knowledge of this alien species coupled with expa
 TECHNAME_XNC_TempLir,Liir Temperance
 TECHDESC_XNC_TempLir,This development is in response to a dependency spreading though the Liir portions of the empire. Temperance is social and biochemical response to negate to the effect of these dependencies entering from other empires.
 TECHNAME_XNC_TrnsLir3,MetaConcert
-TECHDESC_XNC_TrnsLir3,This deeper understanding of this race’s highest governmental and scientific language allows you to access the deepest levels of Liir culture and government. With this level of language you can create Science Missions to teach aspects of technology that would otherwise be lost to this race as well as try to force a planetary surrender in the face of overwhelming power.
+TECHDESC_XNC_TrnsLir3,This deeper understanding of this raceï¿½s highest governmental and scientific language allows you to access the deepest levels of Liir culture and government. With this level of language you can create Science Missions to teach aspects of technology that would otherwise be lost to this race as well as try to force a planetary surrender in the face of overwhelming power.
 TECHNAME_XNC_SubLir,Subjugate Liir
 TECHDESC_XNC_SubLir,"Allows you to take full control of a Liir culture, which not only allows new possibilities in assimilation but also allows you a chance to absorb much weaker Liir empires into your own without firing a shot."
 TECHNAME_XNC_AccLir,Accommodate Liir
@@ -3270,7 +3270,7 @@ TECHDESC_XNC_SubZuul,"Allows you to take full control of a Zuul culture, which n
 TECHNAME_CCC_TrnsMorr,Translate Trade Creole
 TECHDESC_CCC_TrnsMorr,"Allows you to translate basic communications from Morrigi players, form Ceasefire agreements and establish trade routes with them. Also provides a 15% bonus to all Xeno-culture research."
 TECHNAME_XNC_TrnsMorr2,Translate Female Dialect
-TECHDESC_XNC_TrnsMorr2,"This deeper understanding of this race’s common language allows you to communicate directly with all aspects of their society, and allows you to form NAP/Alliance agreements as well as establish trade routes with them."
+TECHDESC_XNC_TrnsMorr2,"This deeper understanding of this raceï¿½s common language allows you to communicate directly with all aspects of their society, and allows you to form NAP/Alliance agreements as well as establish trade routes with them."
 TECHNAME_XNC_IncMorr,Incorporate Morrigi
 TECHDESC_XNC_IncMorr,"With deeper study, members of this species living in enclaves on your worlds can be fully incorporated into your society. This allows them to be a fully functional portion of your civilian society on any given world."
 TECHNAME_XNC_AdctMorr,Addict Morrigi
@@ -3278,7 +3278,7 @@ TECHDESC_XNC_AdctMorr,"Intimate knowledge of this alien species coupled with exp
 TECHNAME_XNC_TempMorr,Morrigi Temperance
 TECHDESC_XNC_TempMorr,This development is in response to a dependency spreading though the Morrigi portions of the empire. Temperance is social and biochemical response to negate to the effect of these dependencies entering from other empires.
 TECHNAME_XNC_TrnsMorr3,Translate Ancient Morrigi
-TECHDESC_XNC_TrnsMorr3,This deeper understanding of this race’s highest governmental and scientific language allows you to access the deepest levels of Morrigi culture and government. With this level of language you can create Science Missions to teach aspects of technology that would otherwise be lost to this race as well as try to force a planetary surrender in the face of overwhelming power. Aspects of Ancient Morrigi also allow you circumvent Colony and Asteroid Traps as well as make taking control of Asteroid Monitors much easier.
+TECHDESC_XNC_TrnsMorr3,This deeper understanding of this raceï¿½s highest governmental and scientific language allows you to access the deepest levels of Morrigi culture and government. With this level of language you can create Science Missions to teach aspects of technology that would otherwise be lost to this race as well as try to force a planetary surrender in the face of overwhelming power. Aspects of Ancient Morrigi also allow you circumvent Colony and Asteroid Traps as well as make taking control of Asteroid Monitors much easier.
 TECHNAME_XNC_SubMorr,Subjugate Morrigi
 TECHDESC_XNC_SubMorr,"Allows you to take full control of a Morrigi culture, which not only allows new possibilities in assimilation but also allows you a chance to absorb much weaker Morrigi empires into your own without firing a shot."
 TECHNAME_XNC_AccMorr,Accommodate Morrigi
@@ -3646,7 +3646,7 @@ SECTIONDESC_CRRamscoop,"By minimizing the bridge and installing a ramscoop struc
 SECTIONDESC_CRRefinery,"Besides carrying a large supply of fuel for other ships, this section can be ordered to stop in-system and convert resources in the area to fuel, replenishing its supply. Carrying this supply of fuel as well as processing equipment makes this section extremely slow and vulnerable."
 SECTIONDESC_CRRepairandSalvage,"Each salvage and repair ship can repair a certain amount of damage to other ships, per year."
 SECTIONDESC_CRScavenger,This section is designed to carry the Zuul slave disk and transport captured prisoners. It is light but durable as well. It has a capacity of 50 million slaves in cold storage.
-SECTIONDESC_CRShield,"A shield generator produces a quantum field around the ship that blocks high-energy weapons. This field can be overwhelmed by too much incoming energy – to avoid a back surge to the engines, which would result, at the very least, in the destruction of the engine section, the shields will temporarily power-down and the system is reset. It may be possible to improve the field through research."
+SECTIONDESC_CRShield,"A shield generator produces a quantum field around the ship that blocks high-energy weapons. This field can be overwhelmed by too much incoming energy ï¿½ to avoid a back surge to the engines, which would result, at the very least, in the destruction of the engine section, the shields will temporarily power-down and the system is reset. It may be possible to improve the field through research."
 SECTIONDESC_CRSquadronCNC,"Standard CnC - can command 9 DE, or 3 CR, or 1 DN (more for Zuul)"
 SECTIONDESC_CRStrikeForceCNC,"Improved CnC - can command 15 DE, or 5 CR, or 1 DN (and change)... (more for Zuul)"
 SECTIONDESC_CRTorpedo,"A mission specialized in mounting as many torpedo launchers as possible on to a large starship."
@@ -3661,7 +3661,7 @@ SECTIONDESC_DEAntimatterFlickerWarp,The cycling computers in this drive section 
 SECTIONDESC_DEAntimatterImpSW,More efficient use of the Stutter drive allows for an increase in movement near gravity wells.
 SECTIONDESC_DEAntimatterStutterWarp,"By teleporting an entire ship an imperceptible distance, the Stutter Drive are an inertia-free drive system, limited only by the availability of power and the ability of the system to cycle."
 SECTIONDESC_DEArmadaCNC,"Advanced CnC - can command 27 starships, or 8 large, or 2 huge starships and change... (more for Zuul)"
-SECTIONDESC_DEAssaultShuttle,"Often a small attack shuttle can be more effective at assaulting an enemy world than a ship in orbit. However the shuttles cannot sustain much damage, and should be deployed carefully – while they are away, their carrier ships should also be careful, so they can be there to pick the shuttles up after their attack run. It may be possible to upgrade the basic engine systems through research."
+SECTIONDESC_DEAssaultShuttle,"Often a small attack shuttle can be more effective at assaulting an enemy world than a ship in orbit. However the shuttles cannot sustain much damage, and should be deployed carefully ï¿½ while they are away, their carrier ships should also be careful, so they can be there to pick the shuttles up after their attack run. It may be possible to upgrade the basic engine systems through research."
 SECTIONDESC_DEBattle,A general-purpose combat section which provides a balanced mixture of standard weapons with flexible firing arcs.
 SECTIONDESC_DEBiowar,"Through research, a variety of biological agents can be developed for war, but only one system can deliver them onto an enemy world. Bio Missiles cannot sustain much damage, and should be deployed with care. Bio War sections can be re-armed between combat rounds. It may be possible to upgrade the basic engine systems through research."
 SECTIONDESC_DECloaking,"A complex system of sensor counter-measures and light masking renders a ship effectively invisible to opponents. Cloaked ships cannot be targeted directly, so care should be taken to avoid accidentally taking fire. As well, cloaked ships cannot fire while cloaked, though scientists believe they may be able to solve this problem with research."
@@ -3688,7 +3688,7 @@ SECTIONDESC_DENodeBore,"A specialized ship design to tear open holes in space ti
 SECTIONDESC_DENodeMissile,"Simple, but effective, Node Missiles are unmanned missile systems outfitted with a one-time node drive collar, allowing them to travel from one system to another, where they can be targeting on planets or large targets."
 SECTIONDESC_DEAntimatterH-Node,"This engine works on the same system improvements as "Harmonic Node Ring, Fusion", but the use of the more powerful Antimatter power plant provides the best combination strategy speed and range found in any engine design."
 SECTIONDESC_DEFusionH-Node,"Harmonic Node Ring systems not only increase the strategy range of ships, but improves the node jump calculations greatly, allowing ships to travel along node lines much faster."
-SECTIONDESC_DEPointDefence,"Designed specifically to provide large firing arcs to multiple point defense turrets, Point Defense ships aren’t front-line combat vessels, but are critical support against an enemy with missile systems."
+SECTIONDESC_DEPointDefence,"Designed specifically to provide large firing arcs to multiple point defense turrets, Point Defense ships arenï¿½t front-line combat vessels, but are critical support against an enemy with missile systems."
 SECTIONDESC_DEPulsedFission,"By re-fusing drive plasma, these engines can produce extra maneuvering thrust that a Fission power plant cannot produce alone."
 SECTIONDESC_DEPulsedFissionHyperdrive,"By re-fusing drive plasma, these engines can produce extra maneuvering thrust that a Fission power plant cannot produce alone."
 SECTIONDESC_DEPulsedFissionNodeBore,"A faster version of the Rip Bore, which takes advantage of Pulsed Fission technology."
@@ -3700,11 +3700,11 @@ SECTIONDESC_DERepair,"Each salvage and repair ship can repair a certain amount o
 SECTIONDESC_DESatellite,"Standard satellites are inexpensive to produce and can be built and deployed quickly. Two large turrets are common to all designs, but four light turrets can be outfitted as required."
 SECTIONDESC_DEMinelayerSatellite,"A variation on a standard satellite that replaces the two large weapons with a single minelayer. This creates a web of mines surrounding your world when attacked."
 SECTIONDESC_DEScout,"By trading weapons systems and hull armor for extra fuel capacity, Scout ships can strategically travel nearly three times as far as other ship designs, making them perfect for reconnaissance and exploration."
-SECTIONDESC_DEShield,"A shield generator produces a quantum field around the ship that blocks high-energy weapons. This field can be overwhelmed by too much incoming energy – to avoid a back surge to the engines, which would result, at the very least, in the destruction of the engine section, the shields will temporarily power-down and the system is reset. It may be possible to improve the field through research."
-SECTIONDESC_DESpinalMount,"Destroyers simply aren’t big enough to be outfitted with heavy beam weapons, but by devoting an entire section, these ships can wield a single heavy beam weapon. There is a trade-off, as smaller, flexible weapon systems are exchanged for a single, devastating attack."
+SECTIONDESC_DEShield,"A shield generator produces a quantum field around the ship that blocks high-energy weapons. This field can be overwhelmed by too much incoming energy ï¿½ to avoid a back surge to the engines, which would result, at the very least, in the destruction of the engine section, the shields will temporarily power-down and the system is reset. It may be possible to improve the field through research."
+SECTIONDESC_DESpinalMount,"Destroyers simply arenï¿½t big enough to be outfitted with heavy beam weapons, but by devoting an entire section, these ships can wield a single heavy beam weapon. There is a trade-off, as smaller, flexible weapon systems are exchanged for a single, devastating attack."
 SECTIONDESC_DESquadronCNC,"Standard CnC - can command 9 DE, or 3 CR, or 1 DN (more for Zuul)"
 SECTIONDESC_DEStrikeForceCNC,"Improved CnC - can command 15 DE, or 5 CR, or 1 DN (and change)... (more for Zuul)"
-SECTIONDESC_DETorpedo,"Destroyers simply aren’t big enough to be outfitted with torpedo bays, but by devoting an entire section, a destroyer can house a single torpedo system. Like all torpedo ships, they are best deployed just outside of range of front-line combat vessels."
+SECTIONDESC_DETorpedo,"Destroyers simply arenï¿½t big enough to be outfitted with torpedo bays, but by devoting an entire section, a destroyer can house a single torpedo system. Like all torpedo ships, they are best deployed just outside of range of front-line combat vessels."
 SECTIONDESC_DEWar,"In response to the development of heavier calibre weapon systems, our engineers have devised the War section to maximize their use. Based on the standard Battle section it employs fewer but larger turrets in order to bring heavier weapons to battle. The cost of these hasty modifications is a small reduction in durability, maneuverability and speed."
 SECTIONDESC_DEWildWeasel,"On-board EW systems work not to hide this ship, but rather to make it the most obvious target in combat for all tracking-weapons, drawing them away from fleet-critical ships."
 SECTIONDESC_DEWraith,"The Wraith Abductor is a specialized assault vessel designed for both light FTL travel via node lines and atmospheric assaults and landings. Wraiths can be commanded to enter the atmosphere in the same way assault shuttles can but will also return from a successful run with 50,000 slaves aboard in cold storage. Zuul soldiers that fall during the assault release their young, creating an infection of Zuul spawn that continues to kill population after the Wraiths have withdrawn."
@@ -3813,50 +3813,50 @@ SPECPROJECT_CONFIRM_CANCEL_WARNING,"Once a project is cancelled, it will no long
 
 SPRJ_BACKENG_CCC_1,Project Colossus,,,,
 SPRJ_BACKENG_CCC_2,The One Ring Project,,,,
-SPRJ_BACKENG_CCC_3,Rotwang’s Maria,,,,
-SPRJ_BACKENG_CCC_4,Aelita’s Song,,,,
-SPRJ_BACKENG_CCC_5,Project Zam Yat’in,,,,
+SPRJ_BACKENG_CCC_3,Rotwangï¿½s Maria,,,,
+SPRJ_BACKENG_CCC_4,Aelitaï¿½s Song,,,,
+SPRJ_BACKENG_CCC_5,Project Zam Yatï¿½in,,,,
 SPRJ_BACKENG_CCC_6,Vox Domitiani,,,,
-SPRJ_BACKENG_CCC_7,Throne of Mora’Thing,,,,
-SPRJ_BACKENG_CCC_8,Watson’s Summon,,,,
+SPRJ_BACKENG_CCC_7,Throne of Moraï¿½Thing,,,,
+SPRJ_BACKENG_CCC_8,Watsonï¿½s Summon,,,,
 SPRJ_BACKENG_CCC_9,The Roar of Lia Fail
-SPRJ_BACKENG_CCC_10,De Salva’s Secret
+SPRJ_BACKENG_CCC_10,De Salvaï¿½s Secret
 SPRJ_BACKENG_CCC_11,The Utterance of Ibur
 
 SPRJ_BACKENG_IND_1,The Frederson Project
-SPRJ_BACKENG_IND_2,Fulton’s Folly
+SPRJ_BACKENG_IND_2,Fultonï¿½s Folly
 SPRJ_BACKENG_IND_3,The Omus Plan
 SPRJ_BACKENG_IND_4,Project Shoggoth
 SPRJ_BACKENG_IND_5,The Song of Solomon
-SPRJ_BACKENG_IND_6,The Drones of Dar’pa
-SPRJ_BACKENG_IND_7,Engelberger’s Unimate
+SPRJ_BACKENG_IND_6,The Drones of Darï¿½pa
+SPRJ_BACKENG_IND_7,Engelbergerï¿½s Unimate
 SPRJ_BACKENG_IND_8,The Mines of Orichalcum
 SPRJ_BACKENG_IND_9,The Nine-Tail Incentive
-SPRJ_BACKENG_IND_10,Yan Shi’s Artifice
-SPRJ_BACKENG_IND_11,Capek’s Legions
+SPRJ_BACKENG_IND_10,Yan Shiï¿½s Artifice
+SPRJ_BACKENG_IND_11,Capekï¿½s Legions
 
 SPRJ_BACKENG_BIO_1,Projekt Golem
 SPRJ_BACKENG_BIO_2,The Nostromo Mystery
 SPRJ_BACKENG_BIO_3,Project Blood Symphony
 SPRJ_BACKENG_BIO_4,The Shelley Technique
-SPRJ_BACKENG_BIO_5,Tyrell’s Candles
-SPRJ_BACKENG_BIO_6,Nu’tricuula’s Flowering
+SPRJ_BACKENG_BIO_5,Tyrellï¿½s Candles
+SPRJ_BACKENG_BIO_6,Nuï¿½tricuulaï¿½s Flowering
 SPRJ_BACKENG_BIO_7,The Fangs of Ping
 SPRJ_BACKENG_BIO_8,The Crystals of Chrysopeia
-SPRJ_BACKENG_BIO_9,Gargantua’s Get
+SPRJ_BACKENG_BIO_9,Gargantuaï¿½s Get
 SPRJ_BACKENG_BIO_10,Doom of Kaffa
-SPRJ_BACKENG_BIO_11,The Bones of Ul’iir
+SPRJ_BACKENG_BIO_11,The Bones of Ulï¿½iir
 
 SPRJ_BACKENG_BAL_1,Project Failsafe
-SPRJ_BACKENG_BAL_2,Barbicane’s Bullet
+SPRJ_BACKENG_BAL_2,Barbicaneï¿½s Bullet
 SPRJ_BACKENG_BAL_3,The Sky Net
 SPRJ_BACKENG_BAL_4,The Chak Ram Project
-SPRJ_BACKENG_BAL_5,Projekt Pin’aa Ka
-SPRJ_BACKENG_BAL_6,Kissinger’s Christmas
-SPRJ_BACKENG_BAL_7,Chak An’taw
-SPRJ_BACKENG_BAL_8,Mystery of Mo’ab
+SPRJ_BACKENG_BAL_5,Projekt Pinï¿½aa Ka
+SPRJ_BACKENG_BAL_6,Kissingerï¿½s Christmas
+SPRJ_BACKENG_BAL_7,Chak Anï¿½taw
+SPRJ_BACKENG_BAL_8,Mystery of Moï¿½ab
 SPRJ_BACKENG_BAL_9,Guns of Goddard
-SPRJ_BACKENG_BAL_10,Wendell’s Wadcutter
+SPRJ_BACKENG_BAL_10,Wendellï¿½s Wadcutter
 SPRJ_BACKENG_BAL_11,The Propulsion Mirror
 
 SPRJ_BACKENG_WHD_1,Project Strangelove
@@ -3865,7 +3865,7 @@ SPRJ_BACKENG_WHD_3,The Gung Nir Agenda
 SPRJ_BACKENG_WHD_4,Project Kusunagi
 SPRJ_BACKENG_WHD_5,The Hauteclere Crystal
 SPRJ_BACKENG_WHD_6,The Power of Vix
-SPRJ_BACKENG_WHD_7,Rage of L’uu
+SPRJ_BACKENG_WHD_7,Rage of Lï¿½uu
 SPRJ_BACKENG_WHD_8,Heart of Bartholomew
 SPRJ_BACKENG_WHD_9,Gift of Ska Thak
 SPRJ_BACKENG_WHD_10,Project Peleus
@@ -3873,8 +3873,8 @@ SPRJ_BACKENG_WHD_11,The Mystery of Qilin
 
 SPRJ_BACKENG_NRG_1,The Krell Project
 SPRJ_BACKENG_NRG_2,Project Coppertop
-SPRJ_BACKENG_NRG_3,Nemo’s Star
-SPRJ_BACKENG_NRG_4,The Mystery of Claíomh Solais
+SPRJ_BACKENG_NRG_3,Nemoï¿½s Star
+SPRJ_BACKENG_NRG_4,The Mystery of Claï¿½omh Solais
 SPRJ_BACKENG_NRG_5,The Breath of Huracan
 SPRJ_BACKENG_NRG_6,Winds of Castle Bravo
 SPRJ_BACKENG_NRG_7,The Jewels of Ame No Nuboko
@@ -3891,7 +3891,7 @@ SPRJ_BACKENG_EWP_5,The Power of Hrun Ting
 SPRJ_BACKENG_EWP_6,Secret of Caliburn
 SPRJ_BACKENG_EWP_7,The Light of Kongo
 SPRJ_BACKENG_EWP_8,Gandiva Technology
-SPRJ_BACKENG_EWP_9,Garin’s Hyperboloid
+SPRJ_BACKENG_EWP_9,Garinï¿½s Hyperboloid
 SPRJ_BACKENG_EWP_10,The Quest of Qwi Xux
 SPRJ_BACKENG_EWP_11,The Mind of Minovsky
 
@@ -3904,17 +3904,17 @@ SPRJ_BACKENG_TRP_6,The Tiwaz Enigma
 SPRJ_BACKENG_TRP_7,Projekt Gridrod
 SPRJ_BACKENG_TRP_8,Thunder of Chintamani
 SPRJ_BACKENG_TRP_9,The Mystery of Asroc
-SPRJ_BACKENG_TRP_10,Intibah’s Bane
+SPRJ_BACKENG_TRP_10,Intibahï¿½s Bane
 SPRJ_BACKENG_TRP_11,The Bangalore of Baan
 
 SPRJ_BACKENG_SLD_1,Project Duban
 SPRJ_BACKENG_SLD_2,The Ochain Project
-SPRJ_BACKENG_SLD_3,The Song of A’ kil Ys
+SPRJ_BACKENG_SLD_3,The Song of Aï¿½ kil Ys
 SPRJ_BACKENG_SLD_4,Prid Wen Energy
 SPRJ_BACKENG_SLD_5,The Secret of Sudar Shan
 SPRJ_BACKENG_SLD_6,Project Palladium
-SPRJ_BACKENG_SLD_7,Leviathan’s Hide
-SPRJ_BACKENG_SLD_8,The Babr’e Bayan
+SPRJ_BACKENG_SLD_7,Leviathanï¿½s Hide
+SPRJ_BACKENG_SLD_8,The Babrï¿½e Bayan
 SPRJ_BACKENG_SLD_9,Secret of Alberich,,
 SPRJ_BACKENG_SLD_10,Mystery of Volundir,,
 SPRJ_BACKENG_SLD_11,The Gorgonean Defense,,
@@ -3941,7 +3941,7 @@ MATCHINGSERVICEDLG_BTN_CONTINUE,Continue,,
 MATCHINGSERVICEDLG_BTN_CANCEL,Cancel Game,,
 
 COMBAT_WAITINGFORPLAYER,Waiting for player: %s\n,,
-COMBAT_WAITINGFORSERVER,Waiting for server…,256,for during combat intro ( the \n should stay at the end )
+COMBAT_WAITINGFORSERVER,Waiting for serverï¿½,256,for during combat intro ( the \n should stay at the end )
 
 CHAT_NICKERR_IN_USE,%s is already used by another user. Please choose another nickname.,,
 CHAT_NICKERR_INVALID,%s is not a valid nickname. Please choose another.,255,params: old nickname
@@ -4005,71 +4005,71 @@ TUTORIAL_PrevPage,Previous,
 
 TUTORIAL_PAGE1_Title,Tutorial,
 TUTORIAL_PAGE1_Text1,"\t\t\t This simple step-by-step walkthrough will introduce you to the basics of the game. The tutorial game is completely open for you to play around in and you can move through these tutorial pages as you like. However, if you added any AI to the game, better learn the basics sooner, rather than later, eh?\n\n",
-TUTORIAL_PAGE1_Text2,"\t\t\t There are two parts to a game of Sword of the Stars – the strategy portion and the tactical combat portion. You are currently in the strategy portion of the game, where you control your empire.\n\n \t\t\t Tactical combat takes place when you bump into another player – when you do, you will be prompted for each fight you have. You select which ones you’d like to handle personally, and which ones you would like the game to fight on your behalf. If all combatants in a given fight choose AI, then the fight will be auto-resolved. Those fights you handle directly will begin and you will take command of your ships in real-time 3D combat!",
+TUTORIAL_PAGE1_Text2,"\t\t\t There are two parts to a game of Sword of the Stars ï¿½ the strategy portion and the tactical combat portion. You are currently in the strategy portion of the game, where you control your empire.\n\n \t\t\t Tactical combat takes place when you bump into another player ï¿½ when you do, you will be prompted for each fight you have. You select which ones youï¿½d like to handle personally, and which ones you would like the game to fight on your behalf. If all combatants in a given fight choose AI, then the fight will be auto-resolved. Those fights you handle directly will begin and you will take command of your ships in real-time 3D combat!",
 
 TUTORIAL_PAGE2_Title,Combat,
-TUTORIAL_PAGE2_Text1,"\t\t\t Combat is easy – left click is used to select your own ships as well as set a ships target – where you click is where the ship will attempt to hit, so get sneaky! Try targeting a specific section, like a ship's engine or a weapon turret.\n\n\t\t\t Left click and drag will bandbox select multiple ships from your fleet. You can use Tab to jump between all your various ships. Right click will set the point to which you would like your ship or ships to move. \n\n"
+TUTORIAL_PAGE2_Text1,"\t\t\t Combat is easy ï¿½ left click is used to select your own ships as well as set a ships target ï¿½ where you click is where the ship will attempt to hit, so get sneaky! Try targeting a specific section, like a ship's engine or a weapon turret.\n\n\t\t\t Left click and drag will bandbox select multiple ships from your fleet. You can use Tab to jump between all your various ships. Right click will set the point to which you would like your ship or ships to move. \n\n"
 TUTORIAL_PAGE2_Text2,\t\t\t Right click and hold will allow you to move your camera view around. The mouse wheel will zoom you in and out. And the third mouse button will lock the camera on a new target (very handy for picking those very specific targets.)\n\n
 TUTORIAL_PAGE2_Text3,\t\t\t Those are the basics to getting into the action! It really is as simple as how you move your ship and where you shoot.\n\n
 TUTORIAL_PAGE2_Text4,\t\t\t Let us have a look at the Strategy turn now.
 
 TUTORIAL_PAGE3_Title,Strategy Screen
 TUTORIAL_PAGE3_Text1,"\t\t\t In your first round, your homeworld is already selected. It is the planet with a Star marking it on the 3D starmap. All your colony worlds will be similarly marked with your player color, so it will be easy to see your empire as a whole whenever you are zoomed out. \n\n"
-TUTORIAL_PAGE3_Text2,"\t\t\t Clicking a star or planet will select it – double clicking them will move the camera’s focus onto them. \n\n\t\t\tWhen you have selected one of your worlds, such as your homeworld, you can put it to work. "
+TUTORIAL_PAGE3_Text2,"\t\t\t Clicking a star or planet will select it ï¿½ double clicking them will move the cameraï¿½s focus onto them. \n\n\t\t\tWhen you have selected one of your worlds, such as your homeworld, you can put it to work. "
 
 TUTORIAL_PAGE4_Title,Research
-TUTORIAL_PAGE4_Text1,"\t\t\t Click “Research” or “R”. The Research screen will appear – Here you can still see the different technology trees and their branches. Much like the Strategy map, your mouse controls your camera view – double clicking a technology icon will zoom in, revealing more information about that technology. Double clicking again will zoom back out.\n\n "
-TUTORIAL_PAGE4_Text2,"\t\t\t Pick a technology and click to begin research – a progress bar and the number of years it should take to complete will appear. The higher up the tree the technology appears, the more it will take to research, and so it will take longer. As you can see on the top right, you can divert money away from savings and into research to speed things up.\n\n"
-TUTORIAL_PAGE4_Text3,"\t\t\t Keep in mind that the tech tree in Sword of the Stars is dynamic – every time you start a new game, each player gets a tree with some randomly generated branches. The core technologies will always be there – you will always be able to build bigger, faster ships – but you cannot count on favorite weapons or technology always being there."
+TUTORIAL_PAGE4_Text1,"\t\t\t Click ï¿½Researchï¿½ or ï¿½Rï¿½. The Research screen will appear ï¿½ Here you can still see the different technology trees and their branches. Much like the Strategy map, your mouse controls your camera view ï¿½ double clicking a technology icon will zoom in, revealing more information about that technology. Double clicking again will zoom back out.\n\n "
+TUTORIAL_PAGE4_Text2,"\t\t\t Pick a technology and click to begin research ï¿½ a progress bar and the number of years it should take to complete will appear. The higher up the tree the technology appears, the more it will take to research, and so it will take longer. As you can see on the top right, you can divert money away from savings and into research to speed things up.\n\n"
+TUTORIAL_PAGE4_Text3,"\t\t\t Keep in mind that the tech tree in Sword of the Stars is dynamic ï¿½ every time you start a new game, each player gets a tree with some randomly generated branches. The core technologies will always be there ï¿½ you will always be able to build bigger, faster ships ï¿½ but you cannot count on favorite weapons or technology always being there."
 
 TUTORIAL_PAGE5_Title,Design
-TUTORIAL_PAGE5_Text1,"\t\t\t Click “Design” or “D” and the ship design screen will appear. At the start of a game, you will have three standard starship designs prepared for you – Colonizers, Armors, and Tankers. \n\n\t\t\t There is one mission section available that is not part of any of the initial ship designs – Scout. Click the arrow buttons underneath the mission section until the Scout section appears or click the mission section name for a drop-down list of available sections.\n\n"
-TUTORIAL_PAGE5_Text2,"\t\t\t As you progress through the game and more sections become available, you can mix and match the three ship sections – Bridge, Mission, and Engine – to suit your plans. You can even selected specific weapons for your designs using the weapons panel to the left.\n\n"
-TUTORIAL_PAGE5_Text3,"\t\t\t Click “Confirm” to add this ship to your list of designs. You will be prompted to provide your design with a custom name, if you like – otherwise a default name will be assigned.\n\n"
+TUTORIAL_PAGE5_Text1,"\t\t\t Click ï¿½Designï¿½ or ï¿½Dï¿½ and the ship design screen will appear. At the start of a game, you will have three standard starship designs prepared for you ï¿½ Colonizers, Armors, and Tankers. \n\n\t\t\t There is one mission section available that is not part of any of the initial ship designs ï¿½ Scout. Click the arrow buttons underneath the mission section until the Scout section appears or click the mission section name for a drop-down list of available sections.\n\n"
+TUTORIAL_PAGE5_Text2,"\t\t\t As you progress through the game and more sections become available, you can mix and match the three ship sections ï¿½ Bridge, Mission, and Engine ï¿½ to suit your plans. You can even selected specific weapons for your designs using the weapons panel to the left.\n\n"
+TUTORIAL_PAGE5_Text3,"\t\t\t Click ï¿½Confirmï¿½ to add this ship to your list of designs. You will be prompted to provide your design with a custom name, if you like ï¿½ otherwise a default name will be assigned.\n\n"
 TUTORIAL_PAGE5_Text4,\t\t\t Click the Exit button at the bottom right to return to the Strategy Screen.
 
 TUTORIAL_PAGE6_Title,Build
-TUTORIAL_PAGE6_Text1,"\t\t\t Click “Build” or “B” to access the ship building screen. All your available ship designs will be displayed on this screen. Select the ship design with the Scout section. Double click to add this design to the build queue. Repeat for any other combat starships and a colonizer starship as well. \n\n\t\t\t When you exit the screen you can go back at any time - even in subsequent years - to remove ships from the build queue, so long as they are still waiting for, or in the middle of, production."
+TUTORIAL_PAGE6_Text1,"\t\t\t Click ï¿½Buildï¿½ or ï¿½Bï¿½ to access the ship building screen. All your available ship designs will be displayed on this screen. Select the ship design with the Scout section. Double click to add this design to the build queue. Repeat for any other combat starships and a colonizer starship as well. \n\n\t\t\t When you exit the screen you can go back at any time - even in subsequent years - to remove ships from the build queue, so long as they are still waiting for, or in the middle of, production."
 
 TUTORIAL_PAGE7_Title,Moving
-TUTORIAL_PAGE7_Text1,"\t\t\t Once you are ready to end the turn click “End Turn” at the bottom left. This will set building in motion and a new turn will begin. New ships will begin appearing every turn until your production orders are met. Once you have built ships, you can begin moving them around.\n\n"
-TUTORIAL_PAGE7_Text2,"\t\t\t In the Strategy Screen, when you have a planet selected, like your home planet, you can see a list of all fleets stationed there. Click a fleet from the list, then click “Move” or “M”. \n\n"
-TUTORIAL_PAGE7_Text3,"\t\t\t Move the mouse over a nearby star and a movement line will appear between it and your home planet – if any part of this line appears red, your fleet does not have to range to travel there without refueling. This is not a problem if you have a tanker with you to refuel ships along the way.\n\n\t\t\t Left click on a star to select it as the destination for your fleet or click on the starting planet to cancel. "
+TUTORIAL_PAGE7_Text1,"\t\t\t Once you are ready to end the turn click ï¿½End Turnï¿½ at the bottom left. This will set building in motion and a new turn will begin. New ships will begin appearing every turn until your production orders are met. Once you have built ships, you can begin moving them around.\n\n"
+TUTORIAL_PAGE7_Text2,"\t\t\t In the Strategy Screen, when you have a planet selected, like your home planet, you can see a list of all fleets stationed there. Click a fleet from the list, then click ï¿½Moveï¿½ or ï¿½Mï¿½. \n\n"
+TUTORIAL_PAGE7_Text3,"\t\t\t Move the mouse over a nearby star and a movement line will appear between it and your home planet ï¿½ if any part of this line appears red, your fleet does not have to range to travel there without refueling. This is not a problem if you have a tanker with you to refuel ships along the way.\n\n\t\t\t Left click on a star to select it as the destination for your fleet or click on the starting planet to cancel. "
 
 TUTORIAL_PAGE8_Title,Node Travel
 TUTORIAL_PAGE8_Text1,"\t\t\t If you are playing Human or Hiver, how you move your fleets through the galaxy is unique.\n\n"
 TUTORIAL_PAGE8_Text2,"\t\t\t Humans have developed a method of traveling between stars using space-time fractures, which they call Node Lines. Travel along these lines is extremely fast, but absolute. Human ships cannot refuel while traveling along node lines, so if any ships in a fleet do not have the range to cover the distance between two star systems, they will either have to find another route or a ship designed with greater range will have to take their place. \n\n"
-TUTORIAL_PAGE8_Text3,"\t\t\t Human ships can travel off these Node Lines, but at slower-than-light speeds – this is usually reserved for desperate situations. At slower-than-light speeds human tankers can refuel in transit.\n\nThe Zuul also travel use Node drives, only they ""tunnel"" their own node lines rather than using natural lines as the Humans do. These lines must be maintained by sending Node boring ships across them from time to time, or they will collapse."
+TUTORIAL_PAGE8_Text3,"\t\t\t Human ships can travel off these Node Lines, but at slower-than-light speeds ï¿½ this is usually reserved for desperate situations. At slower-than-light speeds human tankers can refuel in transit.\n\nThe Zuul also travel use Node drives, only they ""tunnel"" their own node lines rather than using natural lines as the Humans do. These lines must be maintained by sending Node boring ships across them from time to time, or they will collapse."
 
 TUTORIAL_PAGE9_Title,Hiver Gates
-TUTORIAL_PAGE9_Text1,"\t\t\t Hivers are a patient race and have never developed faster-than-light travel – they have however discovered a method of teleporting mass over great distances. Hiver fleets travel between systems at slower-than-light speeds, requiring a great many years to traverse – however once there, they can set up one of their teleport Gate ships and ships can travel to any other gate, anywhere in the galaxy, in a single turn.\n\n"
-TUTORIAL_PAGE9_Text2,"\t\t\t As such, playing the Hiver means keeping two things in mind – the first is that Hiver fleets traveling to a new planet should always take a gate ship along. The second is that gate ships are a juicy target that enemies will always attempt to destroy, so guard them carefully! \n\n"
-TUTORIAL_PAGE9_Text3,"\t\t\t This web of gates has its limits – the amount of ships that can be moved around the gate system depends on the amount of active gates the player owns. Each deployed gate ship (special actions, such as deploying a gate ship, is explained in a later page) adds points to the gate network – the size of the network and how much of the traffic limit being used in a given turn is displayed at the top of the 3D map. "
+TUTORIAL_PAGE9_Text1,"\t\t\t Hivers are a patient race and have never developed faster-than-light travel ï¿½ they have however discovered a method of teleporting mass over great distances. Hiver fleets travel between systems at slower-than-light speeds, requiring a great many years to traverse ï¿½ however once there, they can set up one of their teleport Gate ships and ships can travel to any other gate, anywhere in the galaxy, in a single turn.\n\n"
+TUTORIAL_PAGE9_Text2,"\t\t\t As such, playing the Hiver means keeping two things in mind ï¿½ the first is that Hiver fleets traveling to a new planet should always take a gate ship along. The second is that gate ships are a juicy target that enemies will always attempt to destroy, so guard them carefully! \n\n"
+TUTORIAL_PAGE9_Text3,"\t\t\t This web of gates has its limits ï¿½ the amount of ships that can be moved around the gate system depends on the amount of active gates the player owns. Each deployed gate ship (special actions, such as deploying a gate ship, is explained in a later page) adds points to the gate network ï¿½ the size of the network and how much of the traffic limit being used in a given turn is displayed at the top of the 3D map. "
 TUTORIAL_PAGE9_Text4,\t\t\t Any planet with a deployed gate in-system will have a gate marker.
 
 TUTORIAL_PAGE10_Title,Fleet Information
 TUTORIAL_PAGE10_Text1,"\t\t\t Once you have given a move command and you end your turn, the fleet will move out. It may take a couple of years for them to reach their destination. This is good time to point out a few things about fleets. \n\n"
-TUTORIAL_PAGE10_Text2,"\t\t\t When you select a fleet in transit or a planet with fleets stationed there, you will see to the left a list of every fleet, the ships in those fleets, where the fleet is moving to, how long it will take to get there, and to the right of each ship its fuel, range, and health status.\n\n\t\t\t It is important to note that when a ship’s health is orange, it has taken a notable amount of damage, but if it is red, then the ship has suffered serious damage resulting in the loss of a section. If that section is the engine section – you will know, because the fuel / range listings will read 0/0 - that ship will not be able to travel between star systems.\n\n"
-TUTORIAL_PAGE10_Text3,"\t\t\t If you click on “Manage Fleets” or “F”, you’ll be able to drag and drop ships between fleets, or even into newly created fleets – later on, when you have developed command and control technology, you will be able to set the ships in to custom formations and squads."
+TUTORIAL_PAGE10_Text2,"\t\t\t When you select a fleet in transit or a planet with fleets stationed there, you will see to the left a list of every fleet, the ships in those fleets, where the fleet is moving to, how long it will take to get there, and to the right of each ship its fuel, range, and health status.\n\n\t\t\t It is important to note that when a shipï¿½s health is orange, it has taken a notable amount of damage, but if it is red, then the ship has suffered serious damage resulting in the loss of a section. If that section is the engine section ï¿½ you will know, because the fuel / range listings will read 0/0 - that ship will not be able to travel between star systems.\n\n"
+TUTORIAL_PAGE10_Text3,"\t\t\t If you click on ï¿½Manage Fleetsï¿½ or ï¿½Fï¿½, youï¿½ll be able to drag and drop ships between fleets, or even into newly created fleets ï¿½ later on, when you have developed command and control technology, you will be able to set the ships in to custom formations and squads."
 
 TUTORIAL_PAGE11_Title,Planet Info
-TUTORIAL_PAGE11_Text1,"\t\t\t Once you arrive at a planet, you will learn some information about it – its name, climate hazard, size, available resources, as well as information about its economic viability – when you colonize a planet, you will have control of that economy and its development.\n\n"
-TUTORIAL_PAGE11_Text2,"\t\t\t Climate hazards are different for each race in each game, so some games you may find yourself competing with another race for certain planets. In others you may not have to compete for them at all – which is not always as good as it sounds! \n\n"
-TUTORIAL_PAGE11_Text3,"\t\t\t Regardless, any planet with a climate value plus or minus 500 off your perfect climate, you can colonize and terraform, though the worse the planet, the more expensive it is to transform. Anything past 500 and you cannot do anything with it – certain technologies can increase your terraforming abilities so you can deal with worse planets, but there will always be some that are just uninhabitable."
+TUTORIAL_PAGE11_Text1,"\t\t\t Once you arrive at a planet, you will learn some information about it ï¿½ its name, climate hazard, size, available resources, as well as information about its economic viability ï¿½ when you colonize a planet, you will have control of that economy and its development.\n\n"
+TUTORIAL_PAGE11_Text2,"\t\t\t Climate hazards are different for each race in each game, so some games you may find yourself competing with another race for certain planets. In others you may not have to compete for them at all ï¿½ which is not always as good as it sounds! \n\n"
+TUTORIAL_PAGE11_Text3,"\t\t\t Regardless, any planet with a climate value plus or minus 500 off your perfect climate, you can colonize and terraform, though the worse the planet, the more expensive it is to transform. Anything past 500 and you cannot do anything with it ï¿½ certain technologies can increase your terraforming abilities so you can deal with worse planets, but there will always be some that are just uninhabitable."
 
 TUTORIAL_PAGE12_Title,Colonizing
-TUTORIAL_PAGE12_Text1,"\t\t\t If you have a colonizer at a planet within your ability to terraform, you can click Special, and select Colonize. Once you end your turn and the new turn begins, you will have colonized the planet – new information and controls will appear, allowing you to tweak how you wish to develop the planet. \n\n"
+TUTORIAL_PAGE12_Text1,"\t\t\t If you have a colonizer at a planet within your ability to terraform, you can click Special, and select Colonize. Once you end your turn and the new turn begins, you will have colonized the planet ï¿½ new information and controls will appear, allowing you to tweak how you wish to develop the planet. \n\n"
 TUTORIAL_PAGE12_Text2,"\t\t\t New colonies are vulnerable, so you should be prepared to protect them - as you will have to build up the infrastructure and population before they can efficiently produce new ships, building guard ships at another planet and then sending them to the new colony is not a bad idea."
 
 TUTORIAL_PAGE13_Title,Special Functions
-TUTORIAL_PAGE13_Text1,"\t\t\t There are a number of special abilities in the game – repair ships can fix damaged ships, tankers can refuel nearby fleets and both can be set to auto-refuel other ships.\n\n\t\t\t You can also scuttle ships, order mining and refinery ships to begin operations, and the Hiver race can deploy their star spanning Gate ships. If you ever change your mind and wish to cancel an order, most of these special functions can be stopped or started through this drop-down menu. Keep in mind that once you commit to your turn, there is no going back on scuttled ships. Just as important is that even before you commit to your turn, refueling or repairs are finalized once you leave their pop-up windows.\n\n\t\t\t Planets can refuel ships automatically, but have to be directed to repair ships, the same as a repair ship - just how much damage they can repair depends on the output of the planet."
+TUTORIAL_PAGE13_Text1,"\t\t\t There are a number of special abilities in the game ï¿½ repair ships can fix damaged ships, tankers can refuel nearby fleets and both can be set to auto-refuel other ships.\n\n\t\t\t You can also scuttle ships, order mining and refinery ships to begin operations, and the Hiver race can deploy their star spanning Gate ships. If you ever change your mind and wish to cancel an order, most of these special functions can be stopped or started through this drop-down menu. Keep in mind that once you commit to your turn, there is no going back on scuttled ships. Just as important is that even before you commit to your turn, refueling or repairs are finalized once you leave their pop-up windows.\n\n\t\t\t Planets can refuel ships automatically, but have to be directed to repair ships, the same as a repair ship - just how much damage they can repair depends on the output of the planet."
 
 TUTORIAL_PAGE14_Title,Final Notes
 TUTORIAL_PAGE14_Text1,"\t\t\t Sword of the Stars is a deep and challenging game, but it is designed to be as accessible as possible. While not every aspect of the game is covered in this tutorial, the functions of everything in the game should be readily apparent to anyone familiar with the genre and easy to experiment with for anyone who is not.\n\n"
 TUTORIAL_PAGE14_Text2,\t\t\t The keys to the galaxy are now yours! \n\n\t\t\t Try not to lose the place.
 
 SCENARIO_CROWNJEWELS_TITLE,Jewels Of The Crown
-SCENARIO_CROWNJEWELS_DESC1,"\t\t\t Hivers attack all comers in their genocidal fury. The Hiver Queen has died and her precious royal gems have gone missing. A faction has secreted the crown jewels on a hidden world, somewhere on the map. Without the crown jewels, no princess can become Queen—and the entire Hiver race has now become a headless giant, lashing out madly in all directions."
+SCENARIO_CROWNJEWELS_DESC1,"\t\t\t Hivers attack all comers in their genocidal fury. The Hiver Queen has died and her precious royal gems have gone missing. A faction has secreted the crown jewels on a hidden world, somewhere on the map. Without the crown jewels, no princess can become Queenï¿½and the entire Hiver race has now become a headless giant, lashing out madly in all directions."
 SCENARIO_CROWNJEWELS_OBJ1,Human:\n\t\t\t Hold on to the Jewels long enough to complete a special research project.\n\n
 SCENARIO_CROWNJEWELS_OBJ2,Tarkas:\n\t\t\t Deliver the Jewels to your Homeworld and hold them there for 10 years.\n\n
 SCENARIO_CROWNJEWELS_OBJ3,Liir:\n\t\t\t Deliver the Jewels to the Hiver Homeworld.\n\n,,
@@ -4108,7 +4108,7 @@ CROWNJEWELSOBJ_TARKAS_HOLD_ONETURN,Hold the Jewels at your homeworld for 1 more 
 CROWNJEWELSOBJ_TARKAS_HOLD_NTURNS,Hold the Jewels at your homeworld for %s more years!,,,255,params: number of years left
 
 SCENARIO_HIVERINVASION_TITLE,Hungry Children,,,,
-SCENARIO_HIVERINVASION_DESC1,"\t\t\t The Hivers have lost their home. The Queen’s homeworld and all Her original colonies are gone, destroyed by a sun gone supernova.\n\n\t\t\t Rather than accept a quick death for Her Children, the Queen used the last of Her resources to gather ships and provisions for dozens of Her strongest daughters, and is now leading them into the farthest reaches of space to conquer new lands and form a new Hiver Imperium.",,,,
+SCENARIO_HIVERINVASION_DESC1,"\t\t\t The Hivers have lost their home. The Queenï¿½s homeworld and all Her original colonies are gone, destroyed by a sun gone supernova.\n\n\t\t\t Rather than accept a quick death for Her Children, the Queen used the last of Her resources to gather ships and provisions for dozens of Her strongest daughters, and is now leading them into the farthest reaches of space to conquer new lands and form a new Hiver Imperium.",,,,
 SCENARIO_HIVERINVASION_DESC2,"\t\t\t Hundreds of Hiver ships are coming, organized into dozens of fleets; they must colonize new worlds or face slow death in the void.\n\n\t\t\t Can the other three races beat back the Hiver incursion before they become entrenched on new worlds, and turn into an unstoppable force?",,,,
 SCENARIO_HIVERINVASION_OBJ1,Human / Liir / Tarkas:\n\t\t\t Defeat the Hiver fleets.\n\n,,,,
 SCENARIO_HIVERINVASION_OBJ2,Hiver:\n\t\t\t Conquer the galaxy.\n\n,,,,
@@ -4118,11 +4118,11 @@ HIVERINVOBJ_HIVER_KILLALL,Defeat all threats to the Queen's coterie.,,,,
 HIVERINVOBJ_OTHER_KILLHIVERS,Defeat the hiver incursion.,,,,
 
 SCENARIO_EARTHVSTARKAS_TITLE,Upstart Apes,,,,
-SCENARIO_EARTHVSTARKAS_DESC1,"\t\t\t Throwing off the lingering effects of the Hiver attack, the human race steps cautiously away from their homeworld — and runs straight into the arms of the ancient and decadent Tarka Imperium. \n\n\t\t\tThe scrappy humans will have to learn fast and be exceptionally clever in order to carve their own colonies from the far-flung outposts of an older empire — while the Tarka commander must balance the needs and demands of the great imperium against his new problem with this upstart race of talking monkeys!",,,,
+SCENARIO_EARTHVSTARKAS_DESC1,"\t\t\t Throwing off the lingering effects of the Hiver attack, the human race steps cautiously away from their homeworld ï¿½ and runs straight into the arms of the ancient and decadent Tarka Imperium. \n\n\t\t\tThe scrappy humans will have to learn fast and be exceptionally clever in order to carve their own colonies from the far-flung outposts of an older empire ï¿½ while the Tarka commander must balance the needs and demands of the great imperium against his new problem with this upstart race of talking monkeys!",,,,
 SCENARIO_EARTHVSTARKAS_OBJ1,Human:\n\t\t\t Build an empire of at least 10 worlds and hold them for 20 years.\n\n,,,,
 SCENARIO_EARTHVSTARKAS_OBJ2,Tarkas:\n\t\t\t Conquer Earth and hold for 10 years.\n\n
 SCENARIO_EARTHVSTARKAS_RULES1,1) Tarkas player researches at 1/50 normal speed.\n\n
-SCENARIO_EARTHVSTARKAS_RULES2,"2) The Tarkas player can go as deep into debt as they wish, but for every 100K of debt, there is a 2% chance of the Tarka commander being “recalled to capital” to answer for mismanagement - if this happens, they have lost the game.\n\n"
+SCENARIO_EARTHVSTARKAS_RULES2,"2) The Tarkas player can go as deep into debt as they wish, but for every 100K of debt, there is a 2% chance of the Tarka commander being ï¿½recalled to capitalï¿½ to answer for mismanagement - if this happens, they have lost the game.\n\n"
 SCENARIO_EARTHVSTARKAS_RULES3,"3) Based on the changing whims of the Tarkas Emperor, limitations on what can be built and demands on how ships can be used will be made. The Tarkas commander will have to be resourceful."
 SCENARIO_EARTHVSTARKAS_SOLFORCE,Sol Force
 SCENARIO_EARTHVSTARKAS_TARKAEMPIRE,Tarka Empire
@@ -4199,7 +4199,7 @@ UPSTARTOBJ_HUMAN_HOLDEMPIRE_COMPLETE,Your new colonies are now well established.
 UPSTARTOBJ_HUMAN_RETAKEEARTH,Retake %s before the enemy can secure it!,,255,params: name of earth
 
 SCENARIO_HOLYLANDS_TITLE,Holy Lands,,,,,
-SCENARIO_HOLYLANDS_DESC1,"\t\t\t Every sentient species has its own political aims and agendas — but they also have religious beliefs, and a sense of the sacred. The idea that a certain place is holy is universal among all races — and so is the notion of the spiritual pilgrimage. ",,,,,
+SCENARIO_HOLYLANDS_DESC1,"\t\t\t Every sentient species has its own political aims and agendas ï¿½ but they also have religious beliefs, and a sense of the sacred. The idea that a certain place is holy is universal among all races ï¿½ and so is the notion of the spiritual pilgrimage. ",,,,,
 SCENARIO_HOLYLANDS_OBJ1,"\t\t\t At the beginning of the scenario, each player will be given the name and location of a holy place. You must go to this place and form a colony; when you have communed with this sacred planet, the name and location of the next holy planet on your spiritual path will be revealed. This will continue until you have built colonies on five sacred worlds; to win the game, you must hold these holy lands for ten years.\n\n",,,,,
 SCENARIO_HOLYLANDS_RULES1,1) Opponents will not be made aware of what planet's are on any other player's list.\n,,,,,
 HOLYLANDSOBJ_DONE,Done.,,,,,
@@ -4225,7 +4225,7 @@ SCENARIO_CIVILWAR_INGAME_SOLFORCE_OBJ1,Eliminate all Frontier Alliance forces.,5
 SCENARIO_CIVILWAR_INGAME_SOLFORCE_OBJ1B,The Frontier Alliance will achieve victory in %s years if not stopped!,511,params: number of years before frontier alliance wins.
 SCENARIO_CIVILWAR_INGAME_REBEL_OBJ1,Maintain control of %s systems for %s years.\n\nor\n\nTake control of %s.,511,"params: number of systems, number of years remaining, name of system to control(Earth)"
 
-SCENARIO_CIVILWAR_DESC1,"\t\t\t The Frontier Alliance attempts to split away from the militaristic bonds of SolForce. Earth rejects their claim to sovereignty and uses force to retrieve the wayward colonies. It would be a simple job, if it weren’t for the three alien races looking to exploit the division of the human race, and form alliances with the new human faction. ",,
+SCENARIO_CIVILWAR_DESC1,"\t\t\t The Frontier Alliance attempts to split away from the militaristic bonds of SolForce. Earth rejects their claim to sovereignty and uses force to retrieve the wayward colonies. It would be a simple job, if it werenï¿½t for the three alien races looking to exploit the division of the human race, and form alliances with the new human faction. ",,
 SCENARIO_CIVILWAR_OBJ1,"The Frontier Alliance:\n\t\t\t In order to win, the Frontier Alliance must maintain at least three worlds for 150 years or capture Earth itself.\n\n"
 SCENARIO_CIVILWAR_OBJ2,SolForce:\n\t\t\t SolForce wins if it can capture all Frontier worlds.\n\n
 SCENARIO_CIVILWAR_OBJ3,Liir / Hiver / Tarkas:\n\t\t\t How do they win?\n\n
@@ -4240,8 +4240,8 @@ MASTERVOICEOBJ_RESEARCH_LANG,We must learn more of the heathen %s tongue to furt
 MASTERVOICEOBJ_DEFEAT_HOME,The %s infestation must be cleansed at its source: %s. Destroy the heretics and claim this system.
 
 SCENARIO_BROKENEMPIRE_TITLE,Lords of a Broken Empire
-SCENARIO_BROKENEMPIRE_DESC1,"\t\t\t The Emperor is dead - the Hanakuum needs a new, strong Var’Bente to rise up and unite the colony worlds before everything shatters to pieces. You are the Var’Kona of one of the three strongest provincial territories. You must dominate the other two, while dealing with the gutter trash, upstart colonies at the outer edges of Tarkan space. And if times were not interesting enough, there have been reports of raiding parties on Tarka colonies, and Tarka citizens reported missing... \n\n"
-SCENARIO_BROKENEMPIRE_RULES1,"\t\t\t You must bring the 4 unaligned splinters of the empire under your control while fending off 2 other contenders for the crown. But don’t let the Zuul grow to strong, or you will have no Empire to claim.\n\n"
+SCENARIO_BROKENEMPIRE_DESC1,"\t\t\t The Emperor is dead - the Hanakuum needs a new, strong Varï¿½Bente to rise up and unite the colony worlds before everything shatters to pieces. You are the Varï¿½Kona of one of the three strongest provincial territories. You must dominate the other two, while dealing with the gutter trash, upstart colonies at the outer edges of Tarkan space. And if times were not interesting enough, there have been reports of raiding parties on Tarka colonies, and Tarka citizens reported missing... \n\n"
+SCENARIO_BROKENEMPIRE_RULES1,"\t\t\t You must bring the 4 unaligned splinters of the empire under your control while fending off 2 other contenders for the crown. But donï¿½t let the Zuul grow to strong, or you will have no Empire to claim.\n\n"
 SCENARIO_BROKENEMPIRE_OBJ1,\t\t\t There is only one objective in this scenario.\n\n
 SCENARIO_BROKENEMPIRE_OBJ2,\t\t\t Rule or perish.\n\n
 BROKENEMPIREOBJ_HIGHSCORE,You have an opportunity to gain a strong tailhold here Var'kona. Earn greater respect than your foes by achieving the objectives below.\n\nCurrent score: %s
@@ -4256,14 +4256,14 @@ ENDFLESHOBJ_KILLAI,"This is a fight to the death between flesh and machine for t
 
 SCENARIO_TUTORIAL_TITLE,Basic Tutorial
 SCENARIO_TUTORIAL_DESC1,\t\t\t Welcome to the Sword of the Stars tutorial!\n\n
-SCENARIO_TUTORIAL_DESC2,"\t\t\t Sword of the Stars is easy to learn, but a challenge to master. In this tutorial we will introduce you the essentials of how to play the game — once you understand them, it doesn’t take long before you’re comfortably playing. Advanced instructions on how to play the game can be found in the manual — take a moment to have a look through it. This tutorial will introduce you to the basics of the game, but the manual will take you through the game in detail.\n\n"
-SCENARIO_TUTORIAL_DESC3,"\t\t\t To start this tutorial game, click “Create Game” below and you will be taken to the game lobby. There, you can set your game profile — name, race, avatars, badges, and player color. Depending on how brave you are feeling, you can include up to three AI players (click on an AI’s box to activate them).\n\n"
-SCENARIO_TUTORIAL_DESC4,"\t\t\t As a first time player, we recommend you play as any race but the Hivers — you can try them out later, when you’re more comfortable with the game, as their method of moving between the stars is extremely powerful and unique — better to have some basic practice with the game first.\n\n"
-SCENARIO_TUTORIAL_DESC5,"\t\t\t Ready? Then start the game — once you begin, a tutorial panel will appear to the right which you can refer to as often as you like.\n\n"
+SCENARIO_TUTORIAL_DESC2,"\t\t\t Sword of the Stars is easy to learn, but a challenge to master. In this tutorial we will introduce you the essentials of how to play the game ï¿½ once you understand them, it doesnï¿½t take long before youï¿½re comfortably playing. Advanced instructions on how to play the game can be found in the manual ï¿½ take a moment to have a look through it. This tutorial will introduce you to the basics of the game, but the manual will take you through the game in detail.\n\n"
+SCENARIO_TUTORIAL_DESC3,"\t\t\t To start this tutorial game, click ï¿½Create Gameï¿½ below and you will be taken to the game lobby. There, you can set your game profile ï¿½ name, race, avatars, badges, and player color. Depending on how brave you are feeling, you can include up to three AI players (click on an AIï¿½s box to activate them).\n\n"
+SCENARIO_TUTORIAL_DESC4,"\t\t\t As a first time player, we recommend you play as any race but the Hivers ï¿½ you can try them out later, when youï¿½re more comfortable with the game, as their method of moving between the stars is extremely powerful and unique ï¿½ better to have some basic practice with the game first.\n\n"
+SCENARIO_TUTORIAL_DESC5,"\t\t\t Ready? Then start the game ï¿½ once you begin, a tutorial panel will appear to the right which you can refer to as often as you like.\n\n"
 SCENARIO_TUTORIAL_OBJ1,"\t\t\t The tutorial game is a simple, random map and the goal is to conquer!\n\n"
 SCENARIO_TUTORIAL_OBJ2,"\t\t\t Either way, the strategy portion of Sword of the Stars is turn-based, which means you will have lots of time to play with the game controls before you ever commit to your first turn.\n\n"
 SCENARIO_TUTORIAL_OBJ3,\t\t\t Beat your opponent and the galaxy is yours!\n\n
-SCENARIO_TUTORIAL_RULES1,"\t\t\t There are no special rules to this tutorial scenario, though you will have access to a special “Basics” window, which will provide helpful information on playing Sword of the Stars. This window can be expanded and collapsed using the arrow on its left edge.\n\n\t\t\t If you find there is something you do not understand, a complete guide to every aspect to the game can be found in the manual.\n\n"
+SCENARIO_TUTORIAL_RULES1,"\t\t\t There are no special rules to this tutorial scenario, though you will have access to a special ï¿½Basicsï¿½ window, which will provide helpful information on playing Sword of the Stars. This window can be expanded and collapsed using the arrow on its left edge.\n\n\t\t\t If you find there is something you do not understand, a complete guide to every aspect to the game can be found in the manual.\n\n"
 
 MADE_UP_STRING,"Hang in there, Space Cowboy. You can play the game soon. Finish reading that manual."
 
@@ -5433,8 +5433,8 @@ AIDIP_HUMAN_CEASEFIRE_REJECT2,We won't stop till you give us better reason too.
 AIDIP_HUMAN_CEASEFIRE_BREAK1,That's it! Enough talk!
 AIDIP_HUMAN_CEASEFIRE_BREAK2,We see what you're up to! This ceasefire is over!
 AIDIP_HUMAN_CEASEFIRE_OTHER_BREAK1,Fine! Let's get ready to rumble!
-AIDIP_HUMAN_CEASEFIRE_OTHER_BREAK2,It’s your funeral!
-AIDIP_HUMAN_DISPOSITION_WAR1,“Loathing” does not quite cover how we feel about you.
+AIDIP_HUMAN_CEASEFIRE_OTHER_BREAK2,Itï¿½s your funeral!
+AIDIP_HUMAN_DISPOSITION_WAR1,ï¿½Loathingï¿½ does not quite cover how we feel about you.
 AIDIP_HUMAN_DISPOSITION_WAR2,Elimination or assimilation... it's your choice.
 AIDIP_HUMAN_DISPOSITION_CEASEFIRE1,"You are great to talk to, but not much else at this point."
 AIDIP_HUMAN_DISPOSITION_CEASEFIRE2,We are definitely tired of shooting at you.
@@ -5446,7 +5446,7 @@ AIDIP_HUMAN_DISPOSITION_ALLIANCE2,"Between us, we could carve up this galaxy!"
 AIDIP_HIVER_NONAGGRO_ACCEPT1,"Yes, peace between our hives."
 AIDIP_HIVER_NONAGGRO_ACCEPT2,Agreed... you tend to your hive and we will attend to ours.
 AIDIP_HIVER_CEASEFIRE_REQUEST1,"You do not shoot, we do not shoot, and we can talk, yes?"
-AIDIP_HIVER_CEASEFIRE_REQUEST2,Wasting brothers is pointless – perhaps we can talk to an agreement?
+AIDIP_HIVER_CEASEFIRE_REQUEST2,Wasting brothers is pointless ï¿½ perhaps we can talk to an agreement?
 AIDIP_HIVER_CEASEFIRE_ACCEPT1,Agreed... we will not fire. You do not fire.
 AIDIP_HIVER_CEASEFIRE_ACCEPT2,"Our brothers will stand down, but remain alert."
 AIDIP_HIVER_CEASEFIRE_REJECT1,"No, there is no exit from this path."
@@ -5529,7 +5529,7 @@ AIDIP_ZUUL_DISPOSITION_ALLIANCE2,You remind us of father.
 
 AIDIP_MORRIGI_NONAGGRO_ACCEPT1,"Yes, peace is profit."
 AIDIP_MORRIGI_NONAGGRO_ACCEPT2,"You show wisdom, so we accept."
-AIDIP_MORRIGI_CEASEFIRE_REQUEST1,Let us stop killing each other’s explorers.
+AIDIP_MORRIGI_CEASEFIRE_REQUEST1,Let us stop killing each otherï¿½s explorers.
 AIDIP_MORRIGI_CEASEFIRE_REQUEST2,These petty deaths must end.
 AIDIP_MORRIGI_CEASEFIRE_ACCEPT1,"Very well, we will stay away from each other's nests."
 AIDIP_MORRIGI_CEASEFIRE_ACCEPT2,This is wise. Deep space belongs to both of our peoples.
@@ -5682,12 +5682,12 @@ SECTIONDESC_CREW,"A hybrid of a Point Defense mission coupled with advanced EWAR
 SECTIONDESC_DNFlagship,"The Flagship of your fleets. Flagships are the most heavily armed and armored Command ships you can take into battle."
 SECTIONDESC_DNStationCommand,"A Command station functions as an immobile command and control ship. Due to improved administration, Imperial population output is +25%."
 SECTIONDESC_DNStationRepair,"A Ship Yard increases a system's ship production by 25%, increases repair capacity, and increases the amount of resources recovered post-battle"
-SECTIONDESC_DNStationScience,"Science stations provide a 5% bonus to an empire’s research output. Science station bonsues are cumulative. Also offers a chance of detecting unusual types of threats before they arrive."
+SECTIONDESC_DNStationScience,"Science stations provide a 5% bonus to an empireï¿½s research output. Science station bonsues are cumulative. Also offers a chance of detecting unusual types of threats before they arrive."
 SECTIONDESC_DNStationSensor,"A sensor station provides a powerful strategic sensor to the system that hosts it. With Tunneling Sensor technology, it has a chance of detecting a cloaked enemy fleet on the Galaxy Map."
 SECTIONDESC_DNStationTrade,"A Trade station adds one trade route which does not decrese system output, unlike planet based trade routes. A trade station boosts trade income by 15% for all trade in that system. The increased alien traffic provides a wealth of information to Xenotech scientists, helping to reduce the cost of researching Xenotechnologies."
 SECTIONDESC_DNStationHabitat,"A Morrigi station that provides an extra 100 million civilian and 100 million Imperial citizens a home in a system. As mentioned, this is the only station that allows multiple builds of the same type, at a single planet."
 SECTIONDESC_DEpolice,"With a growing, non-military population, positive civilian morale is aided by having patrols of peace officers. Particularly in a multi-race population, keeping the peace is sometimes just as comforting, or at least helps keep tempers calm, as keeping a system safe from attack. Police Cutters minimize the impact of morale damaging events."
-SECTIONDESC_DNGuard,"The Flagship of your fleets. Take care of it – you only can only build and maintain one at any given time. If you lose it, you can build another, but you don’t want to lose it. Flagships are the most heavily armed and armored command ships you can take into battle."
+SECTIONDESC_DNGuard,"The Flagship of your fleets. Take care of it ï¿½ you only can only build and maintain one at any given time. If you lose it, you can build another, but you donï¿½t want to lose it. Flagships are the most heavily armed and armored command ships you can take into battle."
 SECTIONDESC_DNStationCommand_Aft,Command Station
 SECTIONDESC_DNStationCommand_Fore,Command Station
 SECTIONDESC_DNStationHabitat_Aft,Habitat Station
@@ -5700,20 +5700,20 @@ SECTIONDESC_DNStationSensor_Aft,Sensor Station
 SECTIONDESC_DNStationSensor_Fore,Sensor Station
 SECTIONDESC_DNStationTrade_Aft,Trade Station
 SECTIONDESC_DNStationTrade_Fore,Trade Station
-SECTIONDESC__Drone,"An unmanned, autonomous combat platform – unable to travel on its own between systems, it requires a carrier ship for transport."
-SECTIONDESC__ZuulAssaultShuttle,"Technically a planetary assault craft, the Zuul have included special considerations into their design – cargo holds for their captured slaves."
+SECTIONDESC__Drone,"An unmanned, autonomous combat platform ï¿½ unable to travel on its own between systems, it requires a carrier ship for transport."
+SECTIONDESC__ZuulAssaultShuttle,"Technically a planetary assault craft, the Zuul have included special considerations into their design ï¿½ cargo holds for their captured slaves."
 
 SCENARIO_PROGRESSIONWARS_TITLE,Progression Wars
-SCENARIO_PROGRESSIONWARS_DESC1,"Dominating a galaxy is one thing – but what about the universe?\n\n The challenge of Progression Wars is unique – build up your presence in a small galaxy as normal, but be prepared to send a fleet to the galaxy next door and start the process all over again.\n\n Your fleet will grow in strength of design and your bring some of your previous technology and money with you, but your opponents will get harder and harder.\n\n How long can you survive?!"
+SCENARIO_PROGRESSIONWARS_DESC1,"Dominating a galaxy is one thing ï¿½ but what about the universe?\n\n The challenge of Progression Wars is unique ï¿½ build up your presence in a small galaxy as normal, but be prepared to send a fleet to the galaxy next door and start the process all over again.\n\n Your fleet will grow in strength of design and your bring some of your previous technology and money with you, but your opponents will get harder and harder.\n\n How long can you survive?!"
 SCENARIO_PROGRESSIONWARS_OBJ1,"There is no objective, other than staying alive. "
-SCENARIO_PROGRESSIONWARS_OBJ2,"You will have to prepare a fleet to act as a multi-generational convoy to the next galaxy – watch for the warning and be ready to act.\n\n ”The game just kept getting harder and faster and until you died. \nJust like life! Those video games built character, Sonny Jim!” \n\n -Ernie Cline, “When I Was A Kid”"
+SCENARIO_PROGRESSIONWARS_OBJ2,"You will have to prepare a fleet to act as a multi-generational convoy to the next galaxy ï¿½ watch for the warning and be ready to act.\n\n ï¿½The game just kept getting harder and faster and until you died. \nJust like life! Those video games built character, Sonny Jim!ï¿½ \n\n -Ernie Cline, ï¿½When I Was A Kidï¿½"
 SCENARIO_PROGRESSIONWARS_RULES1,"Build, expand, conquer as normal, and then get ready to move on and do it again.\n\n"
-SCENARIO_PROGRESSIONWARS_RULES2,"You have a set number of years per map to build up your empire, money, technology and ships. You will be warned before the turn limit is up – build your best fleet at your homeworld. That fleet will strike out as a generational fleet, traveling to the next nearest galaxy. That fleet will start with a percentage of your last empire's money and all but some of your top-tier technologies. But beware, your opposition will not be a pushover. \n\n"
+SCENARIO_PROGRESSIONWARS_RULES2,"You have a set number of years per map to build up your empire, money, technology and ships. You will be warned before the turn limit is up ï¿½ build your best fleet at your homeworld. That fleet will strike out as a generational fleet, traveling to the next nearest galaxy. That fleet will start with a percentage of your last empire's money and all but some of your top-tier technologies. But beware, your opposition will not be a pushover. \n\n"
 SCENARIO_PROGRESSIONWARS_RULES3,"IMPORTANT: It should go without saying, but multiple generations is a long time traveling to discover you didn't bring a colony ship. Make sure your generational fleet has at least one colony ship. More would be wiser. \n"
 SCENARIO_PROGRESSIONWARS_OBJ_GENERAL_GALAXY,Galaxy %s
 SCENARIO_PROGRESSIONWARS_OBJ_GENERAL,"Expand your Empire and make preparations for the Generational Convoy to set out by year %s. Be prepared for anything in the next galaxy, but in particular, be ready to colonize a new Homeworld."
 SCENARIO_PROGRESSIONWARS_OBJ_GENERAL_COUNTDOWN,** Years remaining: %s **
-SCENARIO_PROGRESSIONWARS_OBJ_CONVOY,Ships at %s will be selected for the Generational Convoy. Priority message from Command – ensure colonizer launch preparations above all others!
+SCENARIO_PROGRESSIONWARS_OBJ_CONVOY,Ships at %s will be selected for the Generational Convoy. Priority message from Command ï¿½ ensure colonizer launch preparations above all others!
 SCENARIO_PROGRESSIONWARS_OBJ_CONVOY_STATUS_NOFLEET,Status: No ships present. Have ships here by year %s or the game will end!
 SCENARIO_PROGRESSIONWARS_OBJ_CONVOY_STATUS_FLEET,Status: %s/%s command points allocated.
 SCENARIO_PROGRESSIONWARS_OBJ_CONVOY_STATUS_TOOLARGE,There are presently too many ships. You will have an opportunity to select which of these will depart just before the convoy sets out.
@@ -5736,12 +5736,12 @@ SCENARIO_PROGRESSIONWARS_DLG_CONVOYLAUNCHED_TITLE,Generational Convoy Launched,,
 SCENARIO_PROGRESSIONWARS_DLG_CONVOYLAUNCHED_TEXT,"Good luck and fair journey to you, our brothers and sisters of the \nGenerational Fleet. May you find peace in your new galaxy.",,
 
 SCENARIO_GATHERING_TITLE,The Gathering,,
-SCENARIO_GATHERING_DESC1,"For centuries the thinkers, the spiritual, the philosophical have tried to tell us the secret – we are stronger together than we are apart. \n\nThe path to galactic peace lies in unity! And to that end, you must be the first to attract civilians from the various races and unite them in harmony!",,
+SCENARIO_GATHERING_DESC1,"For centuries the thinkers, the spiritual, the philosophical have tried to tell us the secret ï¿½ we are stronger together than we are apart. \n\nThe path to galactic peace lies in unity! And to that end, you must be the first to attract civilians from the various races and unite them in harmony!",,
 SCENARIO_GATHERING_OBJ1,The main objective is to acquire civilians from the various races.,,
 SCENARIO_GATHERING_OBJ2," Force should be applied carefully, as the game ends in failure for all if any one empire is destroyed!",,
 SCENARIO_GATHERING_RULES1,There ,,
 SCENARIO_GATHERING_RULES2,are ,,
-SCENARIO_GATHERING_RULES3,"no rules, other than “Do not eliminate other empires.” \n\n How can there be true unity without all of the races of the galaxy?",,
+SCENARIO_GATHERING_RULES3,"no rules, other than ï¿½Do not eliminate other empires.ï¿½ \n\n How can there be true unity without all of the races of the galaxy?",,
 SCENARIO_GATHERING_OBJ_GENERAL,Annex civilians to build a diverse and prosperous empire.,,
 SCENARIO_GATHERING_OBJ_GENERAL_VICTORYDESC,"To win, you must be the first to achieve prosperity by gathering civilians from each of the other races scattered amongst the stars.",,
 SCENARIO_GATHERING_OBJ_GENERAL_NOBRUTALITYDESC,"But beware, this victory cannot be achieved through absolute brutality! Should any empire be eliminated, all hope of unity will be lost.",,
@@ -5782,9 +5782,9 @@ MESTR_ADDICTION_PHASE1,Alien contraband is making citizens happy.
 MESTR_ADDICTION_PHASE3,Dependence on alien contraband is making citizens mad.
 
 EVENTSUM_SPY_DEPLOYED,Spy Deployed at %s
-EVENTMSG_SPY_DEPLOYED,A spycraft has been successfully inserted into the asteroid belt around %s – they will break radio silence should they uncover an information or be discovered.
+EVENTMSG_SPY_DEPLOYED,A spycraft has been successfully inserted into the asteroid belt around %s ï¿½ they will break radio silence should they uncover an information or be discovered.
 EVENTSUM_SPY_PICKEDUP,Spy Retrieved from %s
-EVENTMSG_SPY_PICKEDUP,"The spycraft at %s has been successfully retrieved – If they have messaged having information prior to pick-up, return to the nearest colony world to process their report."
+EVENTMSG_SPY_PICKEDUP,"The spycraft at %s has been successfully retrieved ï¿½ If they have messaged having information prior to pick-up, return to the nearest colony world to process their report."
 
 PLAYERSETUP_NAME_NOEDIT,Name
 PLAYERSETUP_SPECIES_NOEDIT,Species
@@ -6069,13 +6069,13 @@ TECHDESC_WEP_AccAmp,Breakthroughs in superconductors allows a boost in ballistic
 TECHNAME_WEP_RailGun,Rail Guns
 TECHDESC_WEP_RailGun,Taking further advantage of accelerator amplification technology this enables extremely large rail gun cannons to be affixed to a new ship model offering devastating damage from extreme range.
 TECHNAME_WEP_PolPlsm,Polarized Plasmatics
-TECHDESC_WEP_PolPlsm,"This focusing technology allows for the creation of weaponized plasma forms, which are polarized to “spin” along a horizontal axis. The result plasma focuses its thermal release along a very narrow plane upon contact with the target and achieves a “slicing” effect that defeats ship armor. This weapon has been nicknamed the “War Quoit” by human ship crews."
+TECHDESC_WEP_PolPlsm,"This focusing technology allows for the creation of weaponized plasma forms, which are polarized to ï¿½spinï¿½ along a horizontal axis. The result plasma focuses its thermal release along a very narrow plane upon contact with the target and achieves a ï¿½slicingï¿½ effect that defeats ship armor. This weapon has been nicknamed the ï¿½War Quoitï¿½ by human ship crews."
 TECHNAME_WEP_PolFus,Polarized Fusion
 TECHDESC_WEP_PolFus,The polarized fusion cannon is the advancement of polarized plasmatics into the fusion era resulting in longer range and heavier hitting power while still retaining the ability to cut through armor plating as if it were not there.
 TECHNAME_WEP_PolAm,Polarized Antimatter
 TECHDESC_WEP_PolAm,"The upscaled polarized plasmatic weapon for use at antimatter power levels. Damage is increased, along with overall effective range."
 TECHNAME_WEP_IntCan,Inertial Cannon
-TECHDESC_WEP_IntCan,"Deeper understanding of field physics allows the projection of contained fields that induce a temporary shift in the targets acceleration vs. inertia ratio. The result is a small reduction in the target’s speed that slowly fades over time. Multiple hits by this weapon increases the effect. While the inertial field does no contact damage per se, the stress of the inertial shift does damage the target vessel’s support structure."
+TECHDESC_WEP_IntCan,"Deeper understanding of field physics allows the projection of contained fields that induce a temporary shift in the targets acceleration vs. inertia ratio. The result is a small reduction in the targetï¿½s speed that slowly fades over time. Multiple hits by this weapon increases the effect. While the inertial field does no contact damage per se, the stress of the inertial shift does damage the target vesselï¿½s support structure."
 TECHNAME_WEP_HvyIntCan,Heavy Inertial Cannon
 TECHDESC_WEP_HvyIntCan,A heavy barrel triple pulse version of the Inertial Cannon
 TECHNAME_WEP_KelTrp,Kelvinic Torpedoes
@@ -6192,7 +6192,7 @@ MAPSHAPE_MOUNTAIN,Mountain
 MAPSHAPE_HELIX,Helix
 
 SCENARIO_ANTIQUARIANS_TITLE,Antiquarians
-SCENARIO_ANTIQUARIANS_DESC1,"\t\t\tWith the morning’s intelligence report it has become clear; the race is on.\n\n\t\t\tIt has been confirmed that enemy scientists have been thinking along the same lines as your own – the ruined, yet half-operational derelicts found from time to time, suggest a larger whole, and if enough of them can be found and collected, the thinkers believe they can put them back together again.\n\n\t\t\tImagine the possibilities of possessing a fully operational, exotic alien technology!\n\n\t\t\tHunt the derelicts down and bring them to the Homeworld for study. Do NOT let them fall into the hands of the other empires!\n\n"
+SCENARIO_ANTIQUARIANS_DESC1,"\t\t\tWith the morningï¿½s intelligence report it has become clear; the race is on.\n\n\t\t\tIt has been confirmed that enemy scientists have been thinking along the same lines as your own ï¿½ the ruined, yet half-operational derelicts found from time to time, suggest a larger whole, and if enough of them can be found and collected, the thinkers believe they can put them back together again.\n\n\t\t\tImagine the possibilities of possessing a fully operational, exotic alien technology!\n\n\t\t\tHunt the derelicts down and bring them to the Homeworld for study. Do NOT let them fall into the hands of the other empires!\n\n"
 SCENARIO_ANTIQUARIANS_OBJ1,Bring all of the artifacts to your homeworld for analysis.
 SCENARIO_ANTIQUARIANS_RULES1,"An artifact can only be retrieved by a salvage and repair ship, and only if it is uncontested."
 SCENARIO_ANTIQUARIANS_RULES2,An artifact is contested if:
