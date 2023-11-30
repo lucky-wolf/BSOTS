@@ -1,6 +1,9 @@
 # Bastard Sword of the Stars
 
 - [Bastard Sword of the Stars](#bastard-sword-of-the-stars)
+	- [Latest Changes](#latest-changes)
+		- [v4.0.2](#v402)
+		- [v4.0.1](#v401)
 	- [Major Rules Changes](#major-rules-changes)
 		- [The technology tree](#the-technology-tree)
 		- [Weapon changes](#weapon-changes)
@@ -21,6 +24,15 @@
 		- [Racial Affinity](#racial-affinity)
 	- [Configuration Options](#configuration-options)
 	- [Credits](#credits)
+
+## Latest Changes
+
+### v4.0.2
+- Fixed hiver barrel_l3_HeavyDriver.X by replacing it with the Morrigi version
+
+### v4.0.1
+- This was the first version I pushed to this repo, a collection of changes and updates spanning more than a decade of work
+
 
 ## Major Rules Changes
 
