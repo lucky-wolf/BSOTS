@@ -12,7 +12,7 @@ weapon
 	model3						barrel_s1_gatling.x
 	turretmodel3				turret_s1standard.x
 
-	turretclass					missile
+	turretclass					standard
 	turretsize					small
 //	munitionsize				tiny
 

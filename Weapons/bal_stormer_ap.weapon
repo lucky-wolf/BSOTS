@@ -9,7 +9,7 @@ weapon
 	model2						barrel_m1_massdriver.x
 	turretmodel2				turret_m1standard.x
 
-	turretclass					missile
+	turretclass					standard
 	turretsize					medium
 	munitionsize				small
 

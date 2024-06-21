@@ -7,7 +7,7 @@ weapon
 
 	model1						barrel_l1_HeavyDriver.X
 
-	turretclass					missile
+	turretclass					standard
 	turretsize					large
 	munitionsize				medium
 
